@@ -210,10 +210,10 @@ online potranno validare nei propri sistemi i voucher di acquisto di
 beni da parte dei 18enni utilizzando uno specifico servizio web di cui
 si forniscono di seguito le specifiche di utilizzo.
 
-***In merito agli endpoint, si precisa che al momento l’indirizzo
+In merito agli endpoint, si precisa che al momento l’indirizzo
 referenziato nel wsdl
 (`http://bonus.mibact.it/VerificaVoucher <http://bonus.mibact.it/VerificaVoucher>`__)
-è provvisorio.***
+è provvisorio.
 
 Il servizio web di **verifica del voucher** da parte degli esercenti
 rende disponibili 2 principali operazioni (“**Check**\ ” e
@@ -540,47 +540,44 @@ LINEE GUIDA PER ESERCENTI PAG. 15 DI 26
 WSDL VerificaVoucher.wsdl
 =========================
 
-targetnamespace:
-`**http://bonus.mibact.it/VerificaVoucher/** <http://bonus.mibact.it/VerificaVoucher/>`__
+targetnamespace: http://bonus.mibact.it/VerificaVoucher/
 
 services bindings porttypes messages types
 
 `VerificaVouc <#_bookmark0>`__ `her <#_bookmark0>`__
 ''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-**`VerificaVoucherS <#_bookmark2>`__ `OAP <#_bookmark2>`__**
+`VerificaVoucherS <#_bookmark2>`__ `OAP <#_bookmark2>`__
 
-**`VerificaVouc <#_bookmark3>`__ `her <#_bookmark3>`__**
+`VerificaVouc <#_bookmark3>`__ `her <#_bookmark3>`__
 
-**`CheckRequest <#_bookmark6>`__ `Check <#_bookmark18>`__**
+`CheckRequest <#_bookmark6>`__ `Check <#_bookmark18>`__
 
-**`CheckRespons <#_bookmark7>`__ `e <#_bookmark7>`__
+`CheckRespons <#_bookmark7>`__ `e <#_bookmark7>`__
 `ConfirmReque <#_bookmark8>`__ `st <#_bookmark8>`__
-`ConfirmRespo <#_bookmark9>`__ `nse <#_bookmark9>`__**
+`ConfirmRespo <#_bookmark9>`__ `nse <#_bookmark9>`__
 
-**`CheckRequestObj <#_bookmark10>`__ `CheckResponse <#_bookmark22>`__**
+`CheckRequestObj <#_bookmark10>`__ `CheckResponse <#_bookmark22>`__
 
-**`CheckResponseO <#_bookmark12>`__ `bj <#_bookmark12>`__**
+`CheckResponseO <#_bookmark12>`__ `bj <#_bookmark12>`__
 
-**`Confirm <#_bookmark28>`__ `ConfirmRequestO <#_bookmark14>`__
-`bj <#_bookmark14>`__**
+`Confirm <#_bookmark28>`__ `ConfirmRequestO <#_bookmark14>`__
+`bj <#_bookmark14>`__
 
-`**ConfirmResponse** <#_bookmark32>`__
+`ConfirmResponse <#_bookmark32>`__
 
-**`ConfirmResponse <#_bookmark16>`__ `Obj <#_bookmark16>`__**
+`ConfirmResponse <#_bookmark16>`__ `Obj <#_bookmark16>`__
 
 attributeFormDefault: elementFormDefault:
 
-targetNamespace:
-`**http://bonus.mibact.it/VerificaVoucher/** <http://bonus.mibact.it/VerificaVoucher/>`__
+targetNamespace: http://bonus.mibact.it/VerificaVoucher/
 
 Elements Complex types
 
-**`CheckRequestObj <#_bookmark10>`__ `Check <#_bookmark18>`__
+`CheckRequestObj <#_bookmark10>`__ `Check <#_bookmark18>`__
 `CheckResponseObj <#_bookmark12>`__ `CheckResponse <#_bookmark22>`__
 `ConfirmRequestObj <#_bookmark14>`__ `Confirm <#_bookmark28>`__
-`ConfirmResponseObj <#_bookmark16>`__
-`ConfirmResponse <#_bookmark32>`__**
+`ConfirmResponseObj <#_bookmark16>`__ `ConfirmResponse <#_bookmark32>`__
 
 service **VerificaVoucher**
 
@@ -590,8 +587,8 @@ service **VerificaVoucher**
 | ports                             | \ **VerificaVoucherSOAP**         |
 |                                   |                                   |
 |                                   | binding                           |
-|                                   | `**tns:VerificaVoucherSOAP** <#_b |
-|                                   | ookmark2>`__                      |
+|                                   | `tns:VerificaVoucherSOAP <#_bookm |
+|                                   | ark2>`__                          |
 |                                   |                                   |
 |                                   | extensibility <soap:address       |
 |                                   |                                   |
@@ -628,8 +625,8 @@ binding **VerificaVoucherSOAP**
 +-----------------------------------+-----------------------------------+
 | diagram                           | |image6|                          |
 +===================================+===================================+
-| type                              | `**tns:VerificaVoucher** <#_bookm |
-|                                   | ark3>`__                          |
+| type                              | `tns:VerificaVoucher <#_bookmark3 |
+|                                   | >`__                              |
 +-----------------------------------+-----------------------------------+
 | extensibility                     | <soap:binding style="document"    |
 |                                   | transport=\ `"http://schemas.xmls |
@@ -659,11 +656,10 @@ binding **VerificaVoucherSOAP**
 |                                   | output <soap:body use="literal"/> |
 +-----------------------------------+-----------------------------------+
 | used by                           | Port                              |
-|                                   | `**VerificaVoucherSOAP** <#_bookm |
-|                                   | ark1>`__                          |
-|                                   | in Service                        |
-|                                   | `**VerificaVoucher** <#_bookmark0 |
+|                                   | `VerificaVoucherSOAP <#_bookmark1 |
 |                                   | >`__                              |
+|                                   | in Service                        |
+|                                   | `VerificaVoucher <#_bookmark0>`__ |
 +-----------------------------------+-----------------------------------+
 | source                            | <wsdl:binding                     |
 |                                   | name="VerificaVoucherSOAP"        |
@@ -729,35 +725,35 @@ LINEE GUIDA PER ESERCENTI PAG. 17 DI 26
 
 porttype **VerificaVoucher**
 
-+------------+---------------------------------------------------+
-| diagram    | |image7|                                          |
-+============+===================================================+
-| operations | \ **Check**                                       |
-|            |                                                   |
-|            | input `**tns:CheckRequest** <#_bookmark6>`__      |
-|            |                                                   |
-|            | output `**tns:CheckResponse** <#_bookmark7>`__    |
-|            |                                                   |
-|            | \ **Confirm**                                     |
-|            |                                                   |
-|            | input `**tns:ConfirmRequest** <#_bookmark8>`__    |
-|            |                                                   |
-|            | output `**tns:ConfirmResponse** <#_bookmark9>`__  |
-+------------+---------------------------------------------------+
-| used by    | binding `**VerificaVoucherSOAP** <#_bookmark2>`__ |
-+------------+---------------------------------------------------+
-| source     | <wsdl:portType name="VerificaVoucher">            |
-|            |                                                   |
-|            | <wsdl:operation name="Check">                     |
-|            |                                                   |
-|            | <wsdl:input message="tns:CheckRequest"/>          |
-|            |                                                   |
-|            | <wsdl:output message="tns:CheckResponse"/>        |
-|            |                                                   |
-|            | </wsdl:operation>                                 |
-|            |                                                   |
-|            | <wsdl:operation name="Confirm">                   |
-+------------+---------------------------------------------------+
++------------+-----------------------------------------------+
+| diagram    | |image7|                                      |
++============+===============================================+
+| operations | \ **Check**                                   |
+|            |                                               |
+|            | input `tns:CheckRequest <#_bookmark6>`__      |
+|            |                                               |
+|            | output `tns:CheckResponse <#_bookmark7>`__    |
+|            |                                               |
+|            | \ **Confirm**                                 |
+|            |                                               |
+|            | input `tns:ConfirmRequest <#_bookmark8>`__    |
+|            |                                               |
+|            | output `tns:ConfirmResponse <#_bookmark9>`__  |
++------------+-----------------------------------------------+
+| used by    | binding `VerificaVoucherSOAP <#_bookmark2>`__ |
++------------+-----------------------------------------------+
+| source     | <wsdl:portType name="VerificaVoucher">        |
+|            |                                               |
+|            | <wsdl:operation name="Check">                 |
+|            |                                               |
+|            | <wsdl:input message="tns:CheckRequest"/>      |
+|            |                                               |
+|            | <wsdl:output message="tns:CheckResponse"/>    |
+|            |                                               |
+|            | </wsdl:operation>                             |
+|            |                                               |
+|            | <wsdl:operation name="Confirm">               |
++------------+-----------------------------------------------+
 
 APPLICAZIONE 18APP ALLEGATO
 
@@ -779,14 +775,13 @@ message **CheckRequest**
 | parts                             | **parameters**                    |
 |                                   |                                   |
 |                                   | element                           |
-|                                   | `**tns:CheckRequestObj** <#_bookm |
-|                                   | ark10>`__                         |
+|                                   | `tns:CheckRequestObj <#_bookmark1 |
+|                                   | 0>`__                             |
 +===================================+===================================+
-| used by                           | Operation                         |
-|                                   | `**Check** <#_bookmark4>`__ in    |
-|                                   | PortType                          |
-|                                   | **`VerificaVouche <#_bookmark3>`_ |
-|                                   | _\ r**                            |
+| used by                           | Operation `Check <#_bookmark4>`__ |
+|                                   | in PortType                       |
+|                                   | `VerificaVouche <#_bookmark3>`__\ |
+|                                   |  r                                |
 +-----------------------------------+-----------------------------------+
 | source                            | <wsdl:message                     |
 |                                   | name="CheckRequest">              |
@@ -803,14 +798,13 @@ message **CheckResponse**
 | parts                             | **parameters**                    |
 |                                   |                                   |
 |                                   | element                           |
-|                                   | `**tns:CheckResponseObj** <#_book |
-|                                   | mark12>`__                        |
+|                                   | `tns:CheckResponseObj <#_bookmark |
+|                                   | 12>`__                            |
 +===================================+===================================+
-| used by                           | Operation                         |
-|                                   | `**Check** <#_bookmark4>`__ in    |
-|                                   | PortType                          |
-|                                   | **`VerificaVouche <#_bookmark3>`_ |
-|                                   | _\ r**                            |
+| used by                           | Operation `Check <#_bookmark4>`__ |
+|                                   | in PortType                       |
+|                                   | `VerificaVouche <#_bookmark3>`__\ |
+|                                   |  r                                |
 +-----------------------------------+-----------------------------------+
 | source                            | <wsdl:message                     |
 |                                   | name="CheckResponse">             |
@@ -827,14 +821,14 @@ message **ConfirmRequest**
 | parts                             | **parameters**                    |
 |                                   |                                   |
 |                                   | element                           |
-|                                   | `**tns:ConfirmRequestObj** <#_boo |
-|                                   | kmark14>`__                       |
+|                                   | `tns:ConfirmRequestObj <#_bookmar |
+|                                   | k14>`__                           |
 +===================================+===================================+
 | used by                           | Operation                         |
-|                                   | `**Confirm** <#_bookmark5>`__ in  |
+|                                   | `Confirm <#_bookmark5>`__ in      |
 |                                   | PortType                          |
-|                                   | **`VerificaVouche <#_bookmark3>`_ |
-|                                   | _\ r**                            |
+|                                   | `VerificaVouche <#_bookmark3>`__\ |
+|                                   |  r                                |
 +-----------------------------------+-----------------------------------+
 | source                            | <wsdl:message                     |
 |                                   | name="ConfirmRequest">            |
@@ -868,7 +862,7 @@ element **CheckRequestObj**
 +------------+-------------------------------------------------+
 | properties | content complex                                 |
 +------------+-------------------------------------------------+
-| children   | `**checkReq** <#_bookmark11>`__                 |
+| children   | `checkReq <#_bookmark11>`__                     |
 +------------+-------------------------------------------------+
 | source     | <xsd:element name="CheckRequestObj">            |
 |            |                                                 |
@@ -890,15 +884,14 @@ element **CheckRequestObj/checkReq**
 +-----------------------------------+-----------------------------------+
 | diagram                           | |image10|                         |
 +===================================+===================================+
-| type                              | `**tns:Check** <#_bookmark18>`__  |
+| type                              | `tns:Check <#_bookmark18>`__      |
 +-----------------------------------+-----------------------------------+
 | properties                        | content complex                   |
 +-----------------------------------+-----------------------------------+
-| children                          | **`tipoOperazione <#_bookmark19>` |
-|                                   | __                                |
+| children                          | `tipoOperazione <#_bookmark19>`__ |
 |                                   | `codiceVoucher <#_bookmark20>`__  |
 |                                   | `partitaIvaEsercente <#_bookmark2 |
-|                                   | 1>`__**                           |
+|                                   | 1>`__                             |
 +-----------------------------------+-----------------------------------+
 | source                            | <xsd:element name="checkReq"      |
 |                                   | type="tns:Check"/>                |
@@ -913,7 +906,7 @@ element **CheckResponseObj**
 +------------+-----------------------------------------+
 | properties | content complex                         |
 +------------+-----------------------------------------+
-| children   | `**checkResp** <#_bookmark13>`__        |
+| children   | `checkResp <#_bookmark13>`__            |
 +------------+-----------------------------------------+
 | source     | <xsd:element name="CheckResponseObj">   |
 +------------+-----------------------------------------+
@@ -941,19 +934,19 @@ element **CheckResponseObj/checkResp**
 +-----------------------------------+-----------------------------------+
 | diagram                           | |image13|                         |
 +===================================+===================================+
-| type                              | `**tns:CheckResponse** <#_bookmar |
-|                                   | k22>`__                           |
+| type                              | `tns:CheckResponse <#_bookmark22> |
+|                                   | `__                               |
 +-----------------------------------+-----------------------------------+
 | properties                        | content complex                   |
 +-----------------------------------+-----------------------------------+
-| children                          | **`nominativoBeneficiario <#eleme |
-|                                   | nt-checkresponsenominativobenefic |
-|                                   | iario>`__                         |
+| children                          | `nominativoBeneficiario <#element |
+|                                   | -checkresponsenominativobeneficia |
+|                                   | rio>`__                           |
 |                                   | `partitaIvaEsercente <#_bookmark2 |
 |                                   | 4>`__                             |
 |                                   | `ambito <#_bookmark25>`__         |
 |                                   | `bene <#_bookmark26>`__           |
-|                                   | `importo <#_bookmark27>`__**      |
+|                                   | `importo <#_bookmark27>`__        |
 +-----------------------------------+-----------------------------------+
 | source                            | <xsd:element name="checkResp"     |
 |                                   | type="tns:CheckResponse"/>        |
@@ -968,7 +961,7 @@ element **ConfirmRequestObj**
 +------------+---------------------------------------------------+
 | properties | content complex                                   |
 +------------+---------------------------------------------------+
-| children   | `**checkReq** <#_bookmark15>`__                   |
+| children   | `checkReq <#_bookmark15>`__                       |
 +------------+---------------------------------------------------+
 | source     | <xsd:element name="ConfirmRequestObj">            |
 |            |                                                   |
@@ -994,15 +987,13 @@ element **ConfirmRequestObj/checkReq**
 +-----------------------------------+-----------------------------------+
 | diagram                           | |image16|                         |
 +===================================+===================================+
-| type                              | `**tns:Confirm** <#_bookmark28>`_ |
-|                                   | _                                 |
+| type                              | `tns:Confirm <#_bookmark28>`__    |
 +-----------------------------------+-----------------------------------+
 | properties                        | content complex                   |
 +-----------------------------------+-----------------------------------+
-| children                          | **`tipoOperazione <#_bookmark29>` |
-|                                   | __                                |
+| children                          | `tipoOperazione <#_bookmark29>`__ |
 |                                   | `codiceVoucher <#_bookmark30>`__  |
-|                                   | `importo <#_bookmark31>`__**      |
+|                                   | `importo <#_bookmark31>`__        |
 +-----------------------------------+-----------------------------------+
 | source                            | <xsd:element name="checkReq"      |
 |                                   | type="tns:Confirm"/>              |
@@ -1017,7 +1008,7 @@ element **ConfirmResponseObj**
 +------------+------------------------------------------------------------+
 | properties | content complex                                            |
 +------------+------------------------------------------------------------+
-| children   | `**checkResp** <#_bookmark17>`__                           |
+| children   | `checkResp <#_bookmark17>`__                               |
 +------------+------------------------------------------------------------+
 | source     | <xsd:element name="ConfirmResponseObj">                    |
 |            |                                                            |
@@ -1036,11 +1027,11 @@ element **ConfirmResponseObj**
 
 element **ConfirmResponseObj/checkResp**
 
-+---------+--------------------------------------------+
-| diagram | |image18|                                  |
-+=========+============================================+
-| type    | `**tns:ConfirmResponse** <#_bookmark32>`__ |
-+---------+--------------------------------------------+
++---------+----------------------------------------+
+| diagram | |image18|                              |
++=========+========================================+
+| type    | `tns:ConfirmResponse <#_bookmark32>`__ |
++---------+----------------------------------------+
 
 APPLICAZIONE 18APP ALLEGATO
 
@@ -1049,7 +1040,7 @@ LINEE GUIDA PER ESERCENTI PAG. 22 DI 26
 +------------+------------------------------------------------------------+
 | properties | content complex                                            |
 +============+============================================================+
-| children   | `**esito** <#_bookmark33>`__                               |
+| children   | `esito <#_bookmark33>`__                                   |
 +------------+------------------------------------------------------------+
 | source     | <xsd:element name="checkResp" type="tns:ConfirmResponse"/> |
 +------------+------------------------------------------------------------+
@@ -1062,15 +1053,14 @@ complexType **Check**
 | namespace                         | http://bonus.mibact.it/VerificaVo |
 |                                   | ucher/                            |
 +-----------------------------------+-----------------------------------+
-| children                          | **`tipoOperazione <#_bookmark19>` |
-|                                   | __                                |
+| children                          | `tipoOperazione <#_bookmark19>`__ |
 |                                   | `codiceVoucher <#_bookmark20>`__  |
 |                                   | `partitaIvaEsercente <#_bookmark2 |
-|                                   | 1>`__**                           |
+|                                   | 1>`__                             |
 +-----------------------------------+-----------------------------------+
 | used by                           | element                           |
-|                                   | `**CheckRequestObj/checkReq** <#_ |
-|                                   | bookmark11>`__                    |
+|                                   | `CheckRequestObj/checkReq <#_book |
+|                                   | mark11>`__                        |
 +-----------------------------------+-----------------------------------+
 | source                            | <xsd:complexType name="Check">    |
 |                                   |                                   |
@@ -1155,18 +1145,18 @@ complexType **CheckResponse**
 | namespace                         | http://bonus.mibact.it/VerificaVo |
 |                                   | ucher/                            |
 +-----------------------------------+-----------------------------------+
-| children                          | **`nominativoBeneficiario <#eleme |
-|                                   | nt-checkresponsenominativobenefic |
-|                                   | iario>`__                         |
+| children                          | `nominativoBeneficiario <#element |
+|                                   | -checkresponsenominativobeneficia |
+|                                   | rio>`__                           |
 |                                   | `partitaIvaEsercente <#_bookmark2 |
 |                                   | 4>`__                             |
 |                                   | `ambito <#_bookmark25>`__         |
 |                                   | `bene <#_bookmark26>`__           |
-|                                   | `importo <#_bookmark27>`__**      |
+|                                   | `importo <#_bookmark27>`__        |
 +-----------------------------------+-----------------------------------+
 | used by                           | element                           |
-|                                   | `**CheckResponseObj/checkResp** < |
-|                                   | #_bookmark13>`__                  |
+|                                   | `CheckResponseObj/checkResp <#_bo |
+|                                   | okmark13>`__                      |
 +-----------------------------------+-----------------------------------+
 | source                            | <xsd:complexType                  |
 |                                   | name="CheckResponse">             |
@@ -1289,14 +1279,13 @@ complexType **Confirm**
 | namespace                         | http://bonus.mibact.it/VerificaVo |
 |                                   | ucher/                            |
 +-----------------------------------+-----------------------------------+
-| children                          | **`tipoOperazione <#_bookmark29>` |
-|                                   | __                                |
+| children                          | `tipoOperazione <#_bookmark29>`__ |
 |                                   | `codiceVoucher <#_bookmark30>`__  |
-|                                   | `importo <#_bookmark31>`__**      |
+|                                   | `importo <#_bookmark31>`__        |
 +-----------------------------------+-----------------------------------+
 | used by                           | element                           |
-|                                   | `**ConfirmRequestObj/checkReq** < |
-|                                   | #_bookmark15>`__                  |
+|                                   | `ConfirmRequestObj/checkReq <#_bo |
+|                                   | okmark15>`__                      |
 +-----------------------------------+-----------------------------------+
 | source                            | <xsd:complexType name="Confirm">  |
 |                                   |                                   |
@@ -1375,11 +1364,11 @@ complexType **ConfirmResponse**
 | namespace                         | http://bonus.mibact.it/VerificaVo |
 |                                   | ucher/                            |
 +-----------------------------------+-----------------------------------+
-| children                          | `**esito** <#_bookmark33>`__      |
+| children                          | `esito <#_bookmark33>`__          |
 +-----------------------------------+-----------------------------------+
 | used by                           | element                           |
-|                                   | `**ConfirmResponseObj/checkResp** |
-|                                   |  <#_bookmark17>`__                |
+|                                   | `ConfirmResponseObj/checkResp <#_ |
+|                                   | bookmark17>`__                    |
 +-----------------------------------+-----------------------------------+
 | source                            | <xsd:complexType                  |
 |                                   | name="ConfirmResponse">           |

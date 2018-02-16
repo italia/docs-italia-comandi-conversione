@@ -18,4 +18,4 @@ $(docs)/%.html:$(docs)/%.rst
 
 update:
 	touch $(docs)/*.docx
-	make $(docs)/*.rst
+	make $(docs)/*.html
