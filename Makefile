@@ -3,7 +3,7 @@ version = frankenstein
 docs = raw-docx
 
 $(docs)/linee-guida-*.rst:$(docs)/linee-guida-*.docx
-	./$(version) $< --filter filters/add-headers.hs --filter filters/remove-quotes.hs -o $@
+	./$(version) $< --filter filters/add-headers.hs --filter filters/remove-quotes.hs --wrap none -o $@
 $(docs)/cond-gen-esercenti.rst:$(docs)/cond-gen-esercenti.docx
 	./$(version) $< --filter filters/remove-quotes.hs -o $@
 
