@@ -1,3 +1,15 @@
+header added by pandoc
+======================
+
+header added by pandoc
+----------------------
+
+header added by pandoc
+~~~~~~~~~~~~~~~~~~~~~~
+
+header added by pandoc
+^^^^^^^^^^^^^^^^^^^^^^
+
 WEB APP “18APP” LINEE GUIDA PER ESERCENTI
 '''''''''''''''''''''''''''''''''''''''''
 
@@ -34,6 +46,12 @@ LINEE GUIDA PER ESERCENTI
 REGISTRAZIONE AL SERVIZIO
 -------------------------
 
+header added by pandoc
+----------------------
+
+header added by pandoc
+~~~~~~~~~~~~~~~~~~~~~~
+
 “18app” può essere utilizzato solo dagli esercenti con credenziali di accesso ai Servizi Telematici dell’Agenzia delle Entrate e che hanno incaricato dei soggetti ad operare per proprio conto. Gli esercenti si devono, quindi, obbligatoriamente registrare alla web app per poter vendere i propri prodotti.
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -61,6 +79,12 @@ LINEE GUIDA PER ESERCENTI
 
 VENDITA
 -------
+
+header added by pandoc
+----------------------
+
+header added by pandoc
+~~~~~~~~~~~~~~~~~~~~~~
 
 La web app mette a disposizione degli esercenti 2 tipologie di vendita: nell’esercizio fisico oppure on-line (in fase di registrazione è possibile indicare l’utilizzo anche di entrambe le tipologie). In caso di vendita nell’esercizio fisico, l’esercente può indicare tutti i punti vendita dove i diciottenni potranno esibire i “buoni” di spesa con l’indicazione delle categorie di prodotto e dei prodotti disponibili. I punti vendita potranno essere geolocalizzati nell’applicazione dei 18enni.
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -103,6 +127,12 @@ LINEE GUIDA PER ESERCENTI
 
 CONTROLLO E RISCOSSIONE DEI BUONI D’ACQUISTO
 --------------------------------------------
+
+header added by pandoc
+----------------------
+
+header added by pandoc
+~~~~~~~~~~~~~~~~~~~~~~
 
 A partire da settembre 2017 e fino al 31 dicembre 2018 gli esercenti possono verificare e riscuotere i buoni generati dai 18enni nati nel 1999 nelle funzionalità dell’applicazione loro dedicate ed identificati da uno specifico codice.
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -171,6 +201,12 @@ LINEE GUIDA PER ESERCENTI
 FATTURAZIONE
 ------------
 
+header added by pandoc
+----------------------
+
+header added by pandoc
+~~~~~~~~~~~~~~~~~~~~~~
+
 Agli esercenti viene riconosciuto un credito per ogni buono riscosso da dichiarare in sede di fatturazione elettronica.
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -190,6 +226,9 @@ esercente**\ ” disponibili nell’applicazione 18app.
 APPLICAZIONE 18APP ALLEGATO
 
 LINEE GUIDA PER ESERCENTI PAG. 8 DI 26
+
+header added by pandoc
+^^^^^^^^^^^^^^^^^^^^^^
 
 ALLEGATO 1
 ''''''''''
@@ -221,6 +260,18 @@ rende disponibili 2 principali operazioni (“**Check**\ ” e
 necessaria per valorizzare adeguatamente i campi di input. Pertanto le
 operazioni esposte dall’interfaccia wsdl possono essere descritte come
 segue:
+
+header added by pandoc
+======================
+
+header added by pandoc
+----------------------
+
+header added by pandoc
+~~~~~~~~~~~~~~~~~~~~~~
+
+header added by pandoc
+^^^^^^^^^^^^^^^^^^^^^^
 
 Check
 '''''
@@ -543,6 +594,18 @@ WSDL VerificaVoucher.wsdl
 targetnamespace: http://bonus.mibact.it/VerificaVoucher/
 
 services bindings porttypes messages types
+
+header added by pandoc
+======================
+
+header added by pandoc
+----------------------
+
+header added by pandoc
+~~~~~~~~~~~~~~~~~~~~~~
+
+header added by pandoc
+^^^^^^^^^^^^^^^^^^^^^^
 
 `VerificaVouc <#_bookmark0>`__ `her <#_bookmark0>`__
 ''''''''''''''''''''''''''''''''''''''''''''''''''''
