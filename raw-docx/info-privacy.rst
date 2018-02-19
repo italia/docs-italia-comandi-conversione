@@ -1,4 +1,4 @@
-    *18app – infoprivacy*
+*18app – infoprivacy*
 
 Privacy policy
 ==============

@@ -1,4 +1,4 @@
-    **Domande frequenti SPID**
+**Domande frequenti SPID**
 
 Cos’è SPID?
 ===========
@@ -30,14 +30,14 @@ l’intestatario del contratto).
 A chi mi devo rivolgere e cosa devo fare per ottenere SPID?
 ===========================================================
 
-    Per ottenere le tue credenziali SPID devi rivolgerti ad Aruba,
-    Infocert, Poste Italiane, Register, Sielte e Tim.
+Per ottenere le tue credenziali SPID devi rivolgerti ad Aruba, Infocert,
+Poste Italiane, Register, Sielte e Tim.
 
-    Questi soggetti (che vengono chiamati Identity Provider) ti offrono
-    diverse modalità per richiedere e ottenere SPID. Puoi scegliere
-    quella più adatta alle tue esigenze. Tutte le informazioni su dove e
-    come chiedere le tue credenziali sul sito
-    `spid.gov.it/richiedi-spid <http://spid.gov.it/richiedi-spid>`__.
+Questi soggetti (che vengono chiamati Identity Provider) ti offrono
+diverse modalità per richiedere e ottenere SPID. Puoi scegliere quella
+più adatta alle tue esigenze. Tutte le informazioni su dove e come
+chiedere le tue credenziali sul sito
+`spid.gov.it/richiedi-spid <http://spid.gov.it/richiedi-spid>`__.
 
 Prima di cominciare a richiedere le tue credenziali SPID ricordati che
 hai bisogno di questi documenti. Quali documenti mi servono per poter
@@ -56,15 +56,14 @@ cosa devo fare per ottenere SPID?
 Esistono anche altre modalità per ottenere SPID?
 ================================================
 
-    Si, esiste anche un’altra modalità che prevede l’utilizzo di carta
-    d’identità elettronica (CIE) o carta nazionale dei servizi (CNS)
-    preventivamente abilitate per l’utilizzo dei servizi on line e di un
-    lettore di smart card da collegare al tuo computer.
+Si, esiste anche un’altra modalità che prevede l’utilizzo di carta
+d’identità elettronica (CIE) o carta nazionale dei servizi (CNS)
+preventivamente abilitate per l’utilizzo dei servizi on line e di un
+lettore di smart card da collegare al tuo computer.
 
-    Se ne sei in possesso, puoi completare la procedura online con
-    Infocert, Poste Italiane, Sielte, Register e Tim. Maggiori
-    informazioni su
-    `spid.gov.it/richiedi-spid <https://www.18app.italia.it/%23/>`__.
+Se ne sei in possesso, puoi completare la procedura online con Infocert,
+Poste Italiane, Sielte, Register e Tim. Maggiori informazioni su
+`spid.gov.it/richiedi-spid <https://www.18app.italia.it/%23/>`__.
 
 Ci sono differenze tra i soggetti a cui posso decidere di richiedere SPID?
 ==========================================================================
@@ -121,37 +120,30 @@ Non ti preoccupare, è sempre possibile recuperare le tue credenziali.
 
 -  Se hai richiesto SPID a Register segui la procedura di recupero qui:
 
-..
-
-    (username dimenticata)
-    `https://spid.register.it/selfcare/recovery/username <https://spid.register.it/selfcare/recovery/username>`__
-    (password dimenticata)
-    `https://spid.register.it/selfcare/recovery/password <https://spid.register.it/selfcare/recovery/password>`__
+(username dimenticata)
+`https://spid.register.it/selfcare/recovery/username <https://spid.register.it/selfcare/recovery/username>`__
+(password dimenticata)
+`https://spid.register.it/selfcare/recovery/password <https://spid.register.it/selfcare/recovery/password>`__
 
 -  Se hai richiesto SPID a Sielte segui la procedura di recupero qui:
 
-..
-
-    (username dimenticata)
-    `https://myid.sieltecloud.it/profile/forgotUsername <https://myid.sieltecloud.it/profile/forgotUsername>`__
-    (password dimenticata)
-    `https://myid.sieltecloud.it/profile/forgotPassword <https://myid.sieltecloud.it/profile/forgotPassword>`__
+(username dimenticata)
+`https://myid.sieltecloud.it/profile/forgotUsername <https://myid.sieltecloud.it/profile/forgotUsername>`__
+(password dimenticata)
+`https://myid.sieltecloud.it/profile/forgotPassword <https://myid.sieltecloud.it/profile/forgotPassword>`__
 
 -  Se hai richiesto SPID a Tim segui la procedura di recupero qui:
    (username dimenticata)
 
-..
-
-    `https://login.id.tim.it/iam/im/spidpub/ui7/index.jsp?task.tag=ForgottenUserid <https://login.id.tim.it/iam/im/spidpub/ui7/index.jsp?task.tag=ForgottenUserid>`__
-    (password dimenticata)
-    `https://login.id.tim.it/iam/im/spidpub/ui7/index.jsp?task.tag=ForgottenPassword <https://login.id.tim.it/iam/im/spidpub/ui7/index.jsp?task.tag=ForgottenPassword>`__
+`https://login.id.tim.it/iam/im/spidpub/ui7/index.jsp?task.tag=ForgottenUserid <https://login.id.tim.it/iam/im/spidpub/ui7/index.jsp?task.tag=ForgottenUserid>`__
+(password dimenticata)
+`https://login.id.tim.it/iam/im/spidpub/ui7/index.jsp?task.tag=ForgottenPassword <https://login.id.tim.it/iam/im/spidpub/ui7/index.jsp?task.tag=ForgottenPassword>`__
 
 Cosa posso fare con SPID oltre ad accedere a “18app”?
 =====================================================
 
-    Puoi usare tue credenziali SPID anche per accedere ai servizi online
-    del tuo comune, della tua regione o - per esempio - della tua
-    università.
+Puoi usare tue credenziali SPID anche per accedere ai servizi online del
+tuo comune, della tua regione o - per esempio - della tua università.
 
 12) **Posso annullare la richiesta dell’identità ad un Identity Provider
     e sceglierne un altro?** Si, in ogni momento è possibile annullare

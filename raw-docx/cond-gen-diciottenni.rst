@@ -38,7 +38,7 @@ L’utente prende atto che i buoni generabili attraverso il servizio
 possono essere utilizzati esclusivamente per l’acquisto dei seguenti
 beni e servizi:
 
-    Per i nati nel 1998 (bonus 2016)
+Per i nati nel 1998 (bonus 2016)
 
 a. biglietti per rappresentazioni teatrali e cinematografiche e
    spettacoli dal vivo;
@@ -48,9 +48,7 @@ b. libri;
 c. titoli di accesso a musei, mostre ed eventi culturali, monumenti,
    gallerie, aree archeologiche, parchi naturali.
 
-..
-
-    Per i nati nel 1999 (bonus 2017)
+Per i nati nel 1999 (bonus 2017)
 
 a) biglietti per rappresentazioni teatrali e cinematografiche e
    spettacoli dal vivo;
@@ -103,9 +101,9 @@ dovesse risultare inutilizzabile per effetto del verificarsi di
 eventuali problemi tecnici, nessuna responsabilità graverà sul Ministero
 dei beni e delle attività culturali.
 
-    La SOGEI (Società Generale d’ Informatica) garantisce il valore
-    soglia del 98% per l’operatività dell’applicazione “18app” attiva 7
-    giorni alla settimana h24.
+La SOGEI (Società Generale d’ Informatica) garantisce il valore soglia
+del 98% per l’operatività dell’applicazione “18app” attiva 7 giorni alla
+settimana h24.
 
 L’utente prende altresì atto che qualora l’impossibilità di utilizzare
 il presente servizio dipendesse dall’indisponibilità o dal
