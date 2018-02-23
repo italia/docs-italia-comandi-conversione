@@ -1,458 +1,121 @@
-header added by pandoc
-======================
+**18APP**
 
-header added by pandoc
-----------------------
+**Linee guida per la fatturazione**
 
-header added by pandoc
-~~~~~~~~~~~~~~~~~~~~~~
+13 settembre 2017
 
-header added by pandoc
-^^^^^^^^^^^^^^^^^^^^^^
-
-WEB APP “18APP” LINEE GUIDA PER ESERCENTI
-'''''''''''''''''''''''''''''''''''''''''
-
-WEB APP 18APP PAG. 2 DI 26
-
-LINEE GUIDA PER ESERCENTI
-
-La Legge n. 232 dell’11 dicembre 2016 assegna un bonus di 500 euro ai cittadini residenti in Italia (in possesso, ove previsto, di permesso di soggiorno in corso di validità) che compiono diciotto anni nel 2017.
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-La gestione del bonus può avvenire tramite qualunque tipo device (smartphone, tablet, computer) connesso ad Internet, sia da parte dei diciottenni che da parte degli esercenti (soggetti pubblici o privati) presso i quali acquistare i prodotti previsti riconducibili alle seguenti categorie: cinema, musica e concerti, eventi culturali, libri, musei, monumenti, parchi naturali ed aree archeologiche, teatro e danza, corsi di musica, di teatro o di lingua straniera.
-
-In particolare, nella web app gli esercenti avranno a disposizione le seguenti funzionalità:
-
-1. registrazione al servizio;
-
-2. vendita attraverso esercizio fisico oppure on line
-
-3. controllo e riscossione dei buoni di acquisto
-
-4. fatturazione
-
-WEB APP 18APP PAG. 3 DI 26
-
-LINEE GUIDA PER ESERCENTI
-
-REGISTRAZIONE AL SERVIZIO
--------------------------
-
-header added by pandoc
-----------------------
-
-header added by pandoc
-~~~~~~~~~~~~~~~~~~~~~~
-
-“18app” può essere utilizzato solo dagli esercenti con credenziali di accesso ai Servizi Telematici dell’Agenzia delle Entrate e che hanno incaricato dei soggetti ad operare per proprio conto. Gli esercenti si devono, quindi, obbligatoriamente registrare alla web app per poter vendere i propri prodotti.
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Le fasi della registrazione:
-
--  **entro il 30 giugno 2018** registrazione alla web app con indicazione dei dati generali dell’esercente (dati anagrafici, di residenza, codice ATECO, recapiti telefonici, mail ed eventuale sito internet, accettazione della normativa vigente).
-
--  **entro il 30 giugno 2018** indicazione di categorie di prodotto e prodotti vendibili sia nel proprio esercizio fisico che in quello online.
-
-Al termine della registrazione, il sistema assegnerà automaticamente a ciascun esercente un “codice esercente” di 5 caratteri alfanumerici da utilizzare in fase di riscossione dei buoni. Gli esercenti possono modificare le informazioni registrate ogni qual volta vorranno (ad esempio: variazione dati, inserimento/cancellazione dei punti vendita fisici).
-
-WEB APP 18APP PAG. 4 DI 26
-
-LINEE GUIDA PER ESERCENTI
-
-VENDITA
--------
-
-header added by pandoc
-----------------------
-
-header added by pandoc
-~~~~~~~~~~~~~~~~~~~~~~
-
-La web app mette a disposizione degli esercenti 2 tipologie di vendita: nell’esercizio fisico oppure on-line (in fase di registrazione è possibile indicare l’utilizzo anche di entrambe le tipologie). In caso di vendita nell’esercizio fisico, l’esercente può indicare tutti i punti vendita dove i diciottenni potranno esibire i “buoni” di spesa con l’indicazione delle categorie di prodotto e dei prodotti disponibili. I punti vendita potranno essere geolocalizzati nell’applicazione dei 18enni.
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-In caso di vendita online, l’esercente dovrà prima dotarsi di un certificato da applicare al web-service (**vd. allegato 1**) richiamabile dai propri sistemi per la verifica e validazione dei buoni di spesa.
-
-In particolare dovrà:
-
--  richiedere il certificato in fase di registazione;
-
--  scaricare il certificato nei propri sistemi;
-
--  verificare l’istallazione del certificato tramite specifica chiamata del web-service, come da indicazioni in allegato1.
-
-Si precisa che sarà possibile anche per gli esercenti che scelgono la vendita presso l’esercizio fisico scegliere l’utilizzo delle API services che prevedono il download ed istallazione di un certificato nei propri sistemi, secondo il procedimento descritto per la vendità online.
-
-Si precisa, inoltre, che per gli esercenti che utilizzeranno il web-services per la validazione dei buoni sono previsti i seguenti stati di lavorazione legati alle attività di configurazione dei propri sistemi in cui dovrà essere istallato il certificato:
-
-+----------------+---+---------------------------------------------------+
-| -  da attivare |  | certificato da scaricare dall’ applicazione 18app |
-+================+===+===================================================+
-| -  attivabile  |  | certificato scaricato, ma non istallato           |
-+----------------+---+---------------------------------------------------+
-| -  attivo      |  | certificato istallato (vd. allegato 1).           |
-+----------------+---+---------------------------------------------------+
-
-WEB APP 18APP PAG. 5 DI 26
-
-LINEE GUIDA PER ESERCENTI
-
-CONTROLLO E RISCOSSIONE DEI BUONI D’ACQUISTO
---------------------------------------------
-
-header added by pandoc
-----------------------
-
-header added by pandoc
-~~~~~~~~~~~~~~~~~~~~~~
-
-A partire da settembre 2017 e fino al 31 dicembre 2018 gli esercenti possono verificare e riscuotere i buoni generati dai 18enni nati nel 1999 nelle funzionalità dell’applicazione loro dedicate ed identificati da uno specifico codice.
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-La verifica e validazione è differente in caso di vendita nell’esercizio fisico oppure online.
-
-**Verifica in caso di vendita nell’esercizio fisico**
-
-Nell’area non autenticata della web app gli esercenti possono;
-
--  indicare il codice del buono esibito dal beneficiario insieme al “codice esercente”;
-
--  leggere il QR code o il codice a barre del buono.
-
-In caso di riconoscimento del codice del buono, la web app restituisce le informazioni generali dell’acquisto (categoria di prodotto, bene, importo e cognome/nome del beneficiario); eventualmente l’esercente può verificare il beneficiario anche tramite l’esibizione di un documento d’identità. A questo punto, l’esercente può validare il buono esibito consentendo di “scalare” l’importo dal bonus totale di 500 euro del diciottenne.
-
-**Verifica in caso di vendita online**
-
-Nel proprio sito internet, l’esercente consente al diciottenne di indicare il codice del buono da verificare e riscuotere tramite chiamata al web-service le cui specifiche sono reperibili nell’allegato 1.
-
-Gli esercenti possono visualizzare la lista dei buoni riscossi utilizzando eventuali filtri di ricerca per data di generazione del buono e/o per tipologia di vendita (esercizio fisico oppure online), per categoria di prodotto e per buoni fatturati o data fatturare.
-
-Nelle liste verrano visualizzate le seguenti informazioni:
-
--  categoria di prodotto
-
--  dettagli del prodotto acquistato (tipologia ed esercente/punto vendita)
-
--  identificativo del buono
-
--  identificativo della fattura elettronica in cui è stato indicato il bene acquistato
-
--  informazione sull’eventuale download della lista esportabile in formato .csv.
-
-WEB APP 18APP PAG. 6 DI 26
-
-LINEE GUIDA PER ESERCENTI
-
-Le liste visualizzate potranno essere scaricate in formato .csv per facilitare la preparazione della fattura elettronica.
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Nella “lista dei buoni”, resa disponibile nella web app 18app, gli esercenti possono, inoltre, verificare se il numero di buoni convalidati coincide con quello delle fatture.
-
-WEB APP 18APP PAG. 7 DI 26
-
-LINEE GUIDA PER ESERCENTI
-
-FATTURAZIONE
-------------
-
-header added by pandoc
-----------------------
-
-header added by pandoc
-~~~~~~~~~~~~~~~~~~~~~~
-
-Agli esercenti viene riconosciuto un credito per ogni buono riscosso da dichiarare in sede di fatturazione elettronica.
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-L’esercente dovrà preparare la fattura in formato elettronico secondo il tracciato stabilito per la fatturazione elettronica verso la pubblica amministrazione (“Schema del file xml FatturaPA - versione 1.1” reperibile nel sito `www.fatturapa.gov.it, <http://www.fatturapa.gov.it/>`__ sezione Norme e regole, Documentazione FatturaPA).
-
-La valorizzazione degli elementi del tracciato xml dovrà rispettare i requisiti formali e di obbligatorietà previsti e, con particolare riferimento al blocco 2.2.1 <DettaglioLinee>, dovrà tener conto delle indicazioni riportate nel documento “\ **Linee guida fatturazione esercente**\ ” disponibili nell’applicazione 18app.
-
-APPLICAZIONE 18APP ALLEGATO
-
-LINEE GUIDA PER ESERCENTI PAG. 8 DI 26
-
-header added by pandoc
-^^^^^^^^^^^^^^^^^^^^^^
-
-ALLEGATO 1
-''''''''''
-
-**Allegato 1 – Specifica WS online**
-
-APPLICAZIONE 18APP ALLEGATO
-
-LINEE GUIDA PER ESERCENTI PAG. 9 DI 26
-
-18app
-=====
-
-**Servizio Web per verifica voucher degli esercenti**
-
-Gli esercenti registrati al servizio “\ **18app**\ ” per la vendita online potranno validare nei propri sistemi i voucher di acquisto di beni da parte dei 18enni utilizzando uno specifico servizio web di cui si forniscono di seguito le specifiche di utilizzo.
-
-In merito agli endpoint, si precisa che al momento l’indirizzo referenziato nel wsdl (`http://bonus.mibact.it/VerificaVoucher <http://bonus.mibact.it/VerificaVoucher>`__) è provvisorio.
-
-Il servizio web di **verifica del voucher** da parte degli esercenti rende disponibili 2 principali operazioni (“**Check**\ ” e “\ **Confirm**\ ”). La seguente descrizione delle operazioni è necessaria per valorizzare adeguatamente i campi di input. Pertanto le operazioni esposte dall’interfaccia wsdl possono essere descritte come segue:
+Introduzione
+============
 
 header added by pandoc
 ======================
 
+Per ottenere il pagamento dei buoni validati, l’esercente deve provvedere a emettere corrispondenti fatture elettroniche nei confronti della pubblica amministrazione usando **la piattaforma di fatturazione elettronica della PA**, seguendo le istruzioni di seguito indicate.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+*Nota Bene*
+
+-  .. rubric:: **Le fatture così emesse non hanno rilevanza ai fini fiscali** – essendo l’evento fiscale già regolato mediante il biglietto o la ricevuta fiscale emessa dall’esercente all’atto dell’accettazione del buono – ma servono unicamente a consentire il riscontro dei buoni validati prima di procedere al loro pagamento.
+      :name: le-fatture-così-emesse-non-hanno-rilevanza-ai-fini-fiscali-essendo-levento-fiscale-già-regolato-mediante-il-biglietto-o-la-ricevuta-fiscale-emessa-dallesercente-allatto-dellaccettazione-del-buono-ma-servono-unicamente-a-consentire-il-riscontro-dei-buoni-validati-prima-di-procedere-al-loro-pagamento.
+
+-  A tal proposito si comunica che **non è necessario l’assolvimento dell’imposta di bollo.**
+
+-  .. rubric:: Al fine di limitare la possibilità di incorrere in errore in fase di caricamento ed invio della fattura si consiglia di utilizzare il portale web per la fatturazione elettronica disponibile gratuitamente all’indirizzo: `http://ivaservizi.agenziaentrate.gov.it/ <http://ivaservizi.agenziaentrate.gov.it/>`__
+      :name: al-fine-di-limitare-la-possibilità-di-incorrere-in-errore-in-fase-di-caricamento-ed-invio-della-fattura-si-consiglia-di-utilizzare-il-portale-web-per-la-fatturazione-elettronica-disponibile-gratuitamente-allindirizzo-httpivaservizi.agenziaentrate.gov.it
+
+Per accedere a questa funzionalità è necessario autenticarsi utilizzando **credenziali Entratel/Fisconline** oppure una **Carta Nazionale Servizi (CNS)** precedentemente abilitata ai servizi telematici dell’Agenzia delle Entrate o **SPID**.
+
+-  .. rubric:: Le presenti linee guida sono state redatte utilizzando la citata piattaforma web. Altri software disponibili per la compilazione delle fatture elettroniche potrebbero riportare campi e funzioni diverse; in ogni caso i campi essenziali
+      :name: le-presenti-linee-guida-sono-state-redatte-utilizzando-la-citata-piattaforma-web.-altri-software-disponibili-per-la-compilazione-delle-fatture-elettroniche-potrebbero-riportare-campi-e-funzioni-diverse-in-ogni-caso-i-campi-essenziali
+
+per la compilazione della fattura intestata all’iniziativa sono quelli descritti in questo documento.
+
+**Formato e contenuto della fattura**
+
+L’esercente deve predisporre la fattura in formato elettronico seguendo le regole tecniche stabilite per la fatturazione elettronica verso la pubblica amministrazione reperibili all’indirizzo `www.fatturapa.gov.it <http://www.fatturapa.gov.it/>`__
+
+Dopo aver compilato la fattura è necessario firmare il file digitalmente prima di inviarlo al Sistema d’Interscambio secondo una delle modalità previste illustrate al citato indirizzo internet.
+
+**Istruzioni per la compilazione di una fattura**
+
+Si illustrano di seguito i passi necessari per compilare la fattura utilizzando il portale web `http://ivaservizi.agenziaentrate.gov.it/ <http://ivaservizi.agenziaentrate.gov.it/>`__
+
+**Passo 1**
+
 header added by pandoc
 ----------------------
 
-header added by pandoc
-~~~~~~~~~~~~~~~~~~~~~~
+I MIEI DATI
+~~~~~~~~~~~
 
-header added by pandoc
-^^^^^^^^^^^^^^^^^^^^^^
+I. **Valorizzare i campi relativi all’esercente come descritto di seguito**
 
-Check
-'''''
+   -  Partita Iva: es. 011111111
 
-+---------+----------------------------------------+------------------------------+
-| INPUT:  | tipo operazione                        | *“1”, “2”*                   |
-+=========+========================================+==============================+
-| OUTPUT: | codice voucher nominativo beneficiario | *CF o Nome e Cognome*        |
-+---------+----------------------------------------+------------------------------+
-|         | partita IVA esercente ambito           | *cinema, teatro, libreria…*  |
-+---------+----------------------------------------+------------------------------+
-|         | bene                                   | *libri, spettacoli…*         |
-+---------+----------------------------------------+------------------------------+
-|         | importo                                | *importo totale del voucher* |
-+---------+----------------------------------------+------------------------------+
+   -  Codice Fiscale: es. 0111111111
 
-Se **tipo operazione** verrà valorizzato con **“1”**, il check del voucher restituerà all’esercente i campi previsti in output senza consumare il voucher e quindi senza scalare l’importo dal borsellino del beneficiario. Questa modalità di utilizzo dell’operazione non è obbligatoria, ma lascia all’esercente la possibilità di eseguire un controllo tra il nominativo del beneficiario e quello del suo cliente in sessione.
+   -  Denominazione: es. Libreria Mario Rossi
 
-Se **tipo operazione** verrà valorizzato con **“2”**, il check del voucher consumerà direttamente l’importo, scalandolo dal borsellino del beneficiario, e restituerà comunque le informazioni previste in output. L’esercente potrà scegliere di usare direttamente questa modalità oppure effettuare due chiamate successive: la prima per il controllo del beneficiario e la seconda per l’effettivo utilizzo del voucher.
+   -  Regime Fiscale: selezionare dal menù a tendina (Vedi tabella dei regimi fiscali riportata in appendice)
 
-Il sequence diagram seguente descrive ad alto livello l’interazione tra i vari sistemi coinvolti, nei casi fin qui descritti:
+   -  Indirizzo: es. Via Esempio
+
+   -  N civico: es. 1
+
+   -  CAP: es. 00100
+
+   -  Comune: es. ROMA
+
+   -  Provincia: es.RM
+
+   -  Nazione: es. IT
 
 |image0|
 
-APPLICAZIONE 18APP ALLEGATO
-
-LINEE GUIDA PER ESERCENTI PAG. 10 DI 26
-
-Confirm
-'''''''
-
-+---------+------------------------+-------------------------------------+
-| INPUT:  | tipo operazione        | *“1”*                               |
-+=========+========================+=====================================+
-|         | codice voucher importo | *importo confermato dall’esercente* |
-+---------+------------------------+-------------------------------------+
-| OUTPUT: | esito                  |                                     |
-+---------+------------------------+-------------------------------------+
-
-In questa versione del servizio il **tipo operazione** verrà valorizzato sempre con **“1”** e l’esercente potrà comunicare la quota utilizzata rispetto all’importo totale del voucher, momentaneamente impegnato. Il sistema scalerà l’importo dal borsellino del beneficiario, riaccreditando la parte non utilizzata, calcolata come differenza tra il valore totale del voucher e l’importo comunicato dall’esercente.
-
-L’\ **esito** dell’operazione (**“OK”** / **“KO”**) sarà restituito all’esercente che potrà eventualmente fornire un feedback al beneficiario.
-
-APPLICAZIONE 18APP ALLEGATO
-
-LINEE GUIDA PER ESERCENTI PAG. 11 DI 26
-
-Modalità di autenticazione
-==========================
-
-Per consumare il web service di verifica del voucher, ogni esercente dovrà essere dotato di un **certificato di autenticazione** da installare nel proprio client del servizio e da utilizzare nella chiamata SOAP per effettuare l’autenticazione in modalità SSL con certificato client.
-
-Tale certificato X509 sarà generabile e scaricabile in formato .cer direttamente tramite l’applicazione web dedicata agli esercenti, in area autenticata. In particolare il processo di generazione del certificato prevede due step:
-
-1. Il primo step di richiesta del certificato; a seguito di questa operazione il sistema prende in carico la richiesta.
-
-2. Il secondo step di verifica esito della richiesta; questa operazione controlla se è pronto il certificato emesso da CA dedicata ed eventualmente lo rende disponibile per il download.
-
-Durante il primo step sarà necessario caricare un file .der rappresentante la richiesta di certificato alla CA dedicata al progetto. Tale csr deve presentare le seguenti caratteristiche:
-
--  Algoritmo generazione chiavi: RSA
-
--  Lunghezza chiavi: 2048 bit
-
-Una volta scaricato il certificato X509 va installato, insieme alla corrispondente chiave privata, nel client utilizzato per il servizio di verifica voucher. Pertanto l’evento di download del certificato non può rappresentare la definitiva attivazione dell’esercente. E’ stato previsto uno step di attivazione, di tipo “Check” con i seguenti valori di input:
-
--  tipo operazione = 1
-
--  codice voucher = 11aa22bb
-
-Questa operazione equivale ad una transazione di attivazione, il cui unico effetto è quello di portare l’esercente nello stato attivo. Da questo momento in poi i beneficiari potranno generare voucher reali per tale esercente.
-
-Endpoint del servizio
-
-Il servizio risponde ai seguenti endpoint `https://wstest.18app.italia.it/VerificaVoucherWEB/VerificaVoucher <https://wstest.18app.italia.it/VerificaVoucherWEB/VerificaVoucher>`__ (ambiente di prova) `https://ws.18app.italia.it/VerificaVoucherWEB/VerificaVoucher <https://ws.18app.italia.it/VerificaVoucherWEB/VerificaVoucher>`__ (ambiente reale)
-
-APPLICAZIONE 18APP ALLEGATO
-
-LINEE GUIDA PER ESERCENTI PAG. 12 DI 26
-
-Codici di errore
-================
-
-La seguente tabella rappresenta i possibili errori gestiti dal sistema:
-
-+-----------------+-------------------------------------------------------------------------------------------------------------------+
-| **Codice/Code** | **Descrizione/Description**                                                                                       |
-+=================+===================================================================================================================+
-| 01              | Errore nel formato dei parametri in input, verificarli e riprovare                                                |
-+-----------------+-------------------------------------------------------------------------------------------------------------------+
-|                 | Error in the input parameters, check and try again                                                                |
-+-----------------+-------------------------------------------------------------------------------------------------------------------+
-| 02              | Il buono richiesto non è disponibile sul sistema o è già stato riscosso o annullato                               |
-+-----------------+-------------------------------------------------------------------------------------------------------------------+
-|                 | The requested voucher is not available on the system. It could be already collected or canceled                   |
-+-----------------+-------------------------------------------------------------------------------------------------------------------+
-| 03              | Impossibile attivare l'esercente. Verificare che i dati siano corretti e che                                      |
-|                 |                                                                                                                   |
-|                 | l'esercente non sia già stato attivato                                                                            |
-+-----------------+-------------------------------------------------------------------------------------------------------------------+
-|                 | Impossible to activate the user. Please verify input parameters and that the user has not been already activated. |
-+-----------------+-------------------------------------------------------------------------------------------------------------------+
-| 04              | L'importo richiesto è superiore all'importo del buono selezionato                                                 |
-+-----------------+-------------------------------------------------------------------------------------------------------------------+
-|                 | The amount claimed is greater than the amount of the selected voucher                                             |
-+-----------------+-------------------------------------------------------------------------------------------------------------------+
-| 05              | Non si può verificare o consumare il buono poichè l'esercente risulta non attivo                                  |
-+-----------------+-------------------------------------------------------------------------------------------------------------------+
-|                 | User inactive, voucher impossible to verify.                                                                      |
-+-----------------+-------------------------------------------------------------------------------------------------------------------+
-| 06              | Ambito e bene del buono non coincidono con ambiti e beni trattati dall’esercente                                  |
-+-----------------+-------------------------------------------------------------------------------------------------------------------+
-|                 | Category and type of this voucher are not aligned with category and type managed by the user.                     |
-+-----------------+-------------------------------------------------------------------------------------------------------------------+
+Nel campo “Altri dati” cliccare su Aggiungi
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 |image1|
 
-APPLICAZIONE 18APP ALLEGATO
-
-LINEE GUIDA PER ESERCENTI PAG. 13 DI 26
-
-Esempi di request/response
-==========================
-
-Di seguito si riportano due esempi di request e relativa response, sia per l’operation “Check” che per l’operation “Confirm”.
-
-“Check”
-
-Check request:
-
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ver="http://bonus.mibact.it/VerificaVoucher/">
-
-<soapenv:Header/>
-
-<soapenv:Body>
-
-<ver:CheckRequestObj>
-
-<checkReq>
-
-<tipoOperazione>1</tipoOperazione>
-
-<codiceVoucher>2a75f266</codiceVoucher>
-
-<!--Optional:
-
-<partitaIvaEsercente>?</partitaIvaEsercente>
-
--->
-
-</checkReq>
-
-</ver:CheckRequestObj>
-
-</soapenv:Body>
-
-</soapenv:Envelope> Check response:
-
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
-
-<soapenv:Body>
-
-<a:CheckResponseObj xmlns:a="http://bonus.mibact.it/VerificaVoucher/">
-
-<checkResp>
-
-<nominativoBeneficiario>AAABBB10X10X111D</nominativoBeneficiario>
-
-<partitaIvaEsercente>01043931003</partitaIvaEsercente>
+III. **Spuntare “Contatti” quindi cliccare su Seleziona**
 
 |image2|
 
-APPLICAZIONE 18APP ALLEGATO
+IV. **Inserire i recapiti ai quali si potrà essere eventualmente ricontattati in caso di problemi di fatturazione**
 
-LINEE GUIDA PER ESERCENTI PAG. 14 DI 26
+    -  Numero di telefono: es. 12345678
 
-<ambito>Teatro</ambito>
+    -  E-mail: es. esempio@esempio.it
 
-<bene>Biglietti</bene>
+|image3|
 
-<importo>40.5</importo>
+Passo 2
+=======
 
-</checkResp>
+**CLIENTE** (Inserire i dati della pubblica amministrazione nei confronti della quale si emette la fattura)
 
-</a:CheckResponseObj>
+I. .. rubric:: Valorizzare i campi come descritto di seguito (dati reali)
+      :name: valorizzare-i-campi-come-descritto-di-seguito-dati-reali
 
-</soapenv:Body>
+   -  Codice Fiscale: 97904380587
 
-</soapenv:Envelope>
+   -  Denominazione: Ministero dei Beni e delle Attività Culturali e del Turismo
 
-“Confirm”
+   -  Indirizzo: Via del Collegio Romano
 
-Confirm request:
+   -  Numero Civico: 27
 
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ver="http://bonus.mibact.it/VerificaVoucher/">
+o Cap: 00186
 
-<soapenv:Header/>
+-  Comune: Roma
 
-<soapenv:Body>
+-  Provincia: RM
 
-<ver:ConfirmRequestObj>
+-  Nazione: IT
 
-<checkReq>
+-  Codice Destinatario: CY0MHE
 
-<tipoOperazione>1</tipoOperazione>
-
-<codiceVoucher>2a75f266</codiceVoucher>
-
-<importo>30.20</importo>
-
-</checkReq>
-
-</ver:ConfirmRequestObj>
-
-</soapenv:Body>
-
-</soapenv:Envelope> Confirm response:
-
-<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
-
-<soapenv:Body>
-
-<a:ConfirmResponseObj xmlns:a="http://bonus.mibact.it/VerificaVoucher/">
-
-<checkResp>
-
-<esito>OK</esito>
-
-</checkResp>
-
-</a:ConfirmResponseObj>
-
-</soapenv:Body>
-
-</soapenv:Envelope>
-
-APPLICAZIONE 18APP ALLEGATO
-
-LINEE GUIDA PER ESERCENTI PAG. 15 DI 26
-
-WSDL VerificaVoucher.wsdl
-=========================
-
-targetnamespace: http://bonus.mibact.it/VerificaVoucher/
-
-services bindings porttypes messages types
+|image4|
 
 header added by pandoc
 ======================
@@ -460,785 +123,681 @@ header added by pandoc
 header added by pandoc
 ----------------------
 
-header added by pandoc
-~~~~~~~~~~~~~~~~~~~~~~
+Quindi cliccare su >Vai a Dati Fattura
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+**Passo 3**
+
+**DATI DELLA FATTURA** (Inserisci i dati della fattura)
+
+I. .. rubric:: Valorizzare i campi come descritto di seguito
+      :name: valorizzare-i-campi-come-descritto-di-seguito
+
+   -  Tipo documento: Dal menù a tendina selezionare <Fattura>
+
+   -  Numero: Numero che identifica univocamente la fattura
+
+   -  Data: Inserire data
+
+|image5|
+
+II.  .. rubric:: Nel campo Beni e Servizi cliccare su Aggiungi
+        :name: nel-campo-beni-e-servizi-cliccare-su-aggiungi
+
+III. **Valorizzare i campi come descritto di seguito**
+
+     -  Descrizione: Pagamento Buono
+
+     -  Quantità: 1
+
+     -  Prezzo unitario: Inserire importo in euro del singolo buono es. 10,00
+
+     -  Aliquota IVA: 0%
+
+     -  |image6|\ Natura: Non soggette Quindi cliccare su >\ **Altri Dati**
+
+IV.  .. rubric:: Valorizzare i campi come descritto di seguito
+        :name: valorizzare-i-campi-come-descritto-di-seguito-1
+
+     -  Codice Tipo: 18APP
+
+     -  Codice Valore: *Inserire esclusivamente il codice del buono (sensibile alla differenza tra caratteri maiuscoli e minuscoli) senza ulteriori valori (come riportato nella successiva immagine).*\ 1 **NB:**. Per prevenire il rischio di errore suggeriamo di inserire i codici dei buoni attraverso le funzionalità di copia/incolla direttamente dal portale.
+
+Quindi cliccare su Salva
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+|image7|
+
+*È possibile inserire in fattura più di un buono cliccando di nuovo su <Aggiungi> nel Campo Beni e Servizi*
+
+1 Campo obbligatorio al fine di ottenere il rimborso per la fattura. Attenzione: alcuni software potrebbero riportare campi nominati diversamente.
+
+.. _nel-campo-altri-dati-cliccare-su-aggiungi-1:
+
+Nel campo Altri dati cliccare su Aggiungi
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+|image8|
+
+VI. **Spuntare “Dati di Pagamento” quindi cliccare su Seleziona**
+
+|image9|
+
+VII. **Inserire i dati relativi al pagamento come descritto di seguito:**
+
+-  Condizioni pagamento: Pagamento completo
+
+-  Beneficiario: Inserire il beneficiario es. Mario Rossi
+
+-  Modalità di pagamento: Bonifico
+
+-  Importo Pagamento: Inserire importo totale della fattura
+
+-  IBAN: Inserire IBAN es. IT00000000000000002
+
+|image10|
+
+Quindi cliccare su >Verifica Dati
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+2 **Attenzione**: L’omissione di IBAN o la sua errata compilazione non è segnalata come errore dal sistema. Accertarsi di averlo compilato correttamente prima di inviare la fattura.
+
+Passo 4
+=======
 
 header added by pandoc
-^^^^^^^^^^^^^^^^^^^^^^
-
-`VerificaVouc <#_bookmark0>`__ `her <#_bookmark0>`__
-''''''''''''''''''''''''''''''''''''''''''''''''''''
-
-`VerificaVoucherS <#_bookmark2>`__ `OAP <#_bookmark2>`__
-
-`VerificaVouc <#_bookmark3>`__ `her <#_bookmark3>`__
-
-`CheckRequest <#_bookmark6>`__ `Check <#_bookmark18>`__
-
-`CheckRespons <#_bookmark7>`__ `e <#_bookmark7>`__ `ConfirmReque <#_bookmark8>`__ `st <#_bookmark8>`__ `ConfirmRespo <#_bookmark9>`__ `nse <#_bookmark9>`__
-
-`CheckRequestObj <#_bookmark10>`__ `CheckResponse <#_bookmark22>`__
-
-`CheckResponseO <#_bookmark12>`__ `bj <#_bookmark12>`__
-
-`Confirm <#_bookmark28>`__ `ConfirmRequestO <#_bookmark14>`__ `bj <#_bookmark14>`__
-
-`ConfirmResponse <#_bookmark32>`__
-
-`ConfirmResponse <#_bookmark16>`__ `Obj <#_bookmark16>`__
-
-attributeFormDefault: elementFormDefault:
-
-targetNamespace: http://bonus.mibact.it/VerificaVoucher/
-
-Elements Complex types
-
-`CheckRequestObj <#_bookmark10>`__ `Check <#_bookmark18>`__ `CheckResponseObj <#_bookmark12>`__ `CheckResponse <#_bookmark22>`__ `ConfirmRequestObj <#_bookmark14>`__ `Confirm <#_bookmark28>`__ `ConfirmResponseObj <#_bookmark16>`__ `ConfirmResponse <#_bookmark32>`__
-
-service **VerificaVoucher**
-
-+---------+--------------------------------------------------------------------------+
-| diagram | |image3|                                                                 |
-+=========+==========================================================================+
-| ports   | \ **VerificaVoucherSOAP**                                                |
-|         |                                                                          |
-|         | binding `tns:VerificaVoucherSOAP <#_bookmark2>`__                        |
-|         |                                                                          |
-|         | extensibility <soap:address                                              |
-|         |                                                                          |
-|         | location="https://bonus.mibact.it/VerificaVoucherWEB/VerificaVoucher"/>  |
-+---------+--------------------------------------------------------------------------+
-| source  | <wsdl:service name="VerificaVoucher">                                    |
-|         |                                                                          |
-|         | <wsdl:port name="VerificaVoucherSOAP" binding="tns:VerificaVoucherSOAP"> |
-+---------+--------------------------------------------------------------------------+
-
-APPLICAZIONE 18APP ALLEGATO
-
-LINEE GUIDA PER ESERCENTI PAG. 16 DI 26
-
-+--+---------------------------------------------------------------------------------------+
-|  | <soap:address location="https://bonus.mibact.it/VerificaVoucherWEB/VerificaVoucher"/> |
-|  |                                                                                       |
-|  | </wsdl:port>                                                                          |
-|  |                                                                                       |
-|  | </wsdl:service>                                                                       |
-+--+---------------------------------------------------------------------------------------+
-
-binding **VerificaVoucherSOAP**
-
-+---------------+----------------------------------------------------------------------------------------------------------------------------------+
-| diagram       | |image4|                                                                                                                         |
-+===============+==================================================================================================================================+
-| type          | `tns:VerificaVoucher <#_bookmark3>`__                                                                                            |
-+---------------+----------------------------------------------------------------------------------------------------------------------------------+
-| extensibility | <soap:binding style="document" transport=\ `"http://schemas.xmlsoap.org/soap/http <http://schemas.xmlsoap.org/soap/http>`__"/>   |
-+---------------+----------------------------------------------------------------------------------------------------------------------------------+
-| operations    | **Check**                                                                                                                        |
-|               |                                                                                                                                  |
-|               | extensibility <soap:operation                                                                                                    |
-|               |                                                                                                                                  |
-|               | soapAction="http://bonus.mibact.it/VerificaVoucher/Check"/>                                                                      |
-|               |                                                                                                                                  |
-|               | input <soap:body use="literal"/>                                                                                                 |
-|               |                                                                                                                                  |
-|               | output <soap:body use="literal"/>                                                                                                |
-|               |                                                                                                                                  |
-|               | **Confirm**                                                                                                                      |
-|               |                                                                                                                                  |
-|               | extensibility <soap:operation                                                                                                    |
-|               |                                                                                                                                  |
-|               | soapAction="http://bonus.mibact.it/VerificaVoucher/Confirm"/>                                                                    |
-|               |                                                                                                                                  |
-|               | input <soap:body use="literal"/>                                                                                                 |
-|               |                                                                                                                                  |
-|               | output <soap:body use="literal"/>                                                                                                |
-+---------------+----------------------------------------------------------------------------------------------------------------------------------+
-| used by       | Port `VerificaVoucherSOAP <#_bookmark1>`__ in Service `VerificaVoucher <#_bookmark0>`__                                          |
-+---------------+----------------------------------------------------------------------------------------------------------------------------------+
-| source        | <wsdl:binding name="VerificaVoucherSOAP" type="tns:VerificaVoucher">                                                             |
-|               |                                                                                                                                  |
-|               | <soap:binding style="document" transport=\ `"http://schemas.xmlsoap.org/soap/http <http://schemas.xmlsoap.org/soap/http>`__"/>   |
-|               |                                                                                                                                  |
-|               | <wsdl:operation name="Check">                                                                                                    |
-|               |                                                                                                                                  |
-|               | <soap:operation soapAction=\ `"http://bonus.mibact.it/VerificaVoucher/Check <http://bonus.mibact.it/VerificaVoucher/Check>`__"/> |
-|               |                                                                                                                                  |
-|               | <wsdl:input>                                                                                                                     |
-|               |                                                                                                                                  |
-|               | <soap:body use="literal"/>                                                                                                       |
-+---------------+----------------------------------------------------------------------------------------------------------------------------------+
-
-APPLICAZIONE 18APP ALLEGATO
-
-LINEE GUIDA PER ESERCENTI PAG. 17 DI 26
-
-+--+--------------------------------------------------------------------------------------------------------------------------------------+
-|  | </wsdl:input>                                                                                                                        |
-|  |                                                                                                                                      |
-|  | <wsdl:output>                                                                                                                        |
-|  |                                                                                                                                      |
-|  | <soap:body use="literal"/>                                                                                                           |
-|  |                                                                                                                                      |
-|  | </wsdl:output>                                                                                                                       |
-|  |                                                                                                                                      |
-|  | </wsdl:operation>                                                                                                                    |
-|  |                                                                                                                                      |
-|  | <wsdl:operation name="Confirm">                                                                                                      |
-|  |                                                                                                                                      |
-|  | <soap:operation soapAction=\ `"http://bonus.mibact.it/VerificaVoucher/Confirm <http://bonus.mibact.it/VerificaVoucher/Confirm>`__"/> |
-|  |                                                                                                                                      |
-|  | <wsdl:input>                                                                                                                         |
-|  |                                                                                                                                      |
-|  | <soap:body use="literal"/>                                                                                                           |
-|  |                                                                                                                                      |
-|  | </wsdl:input>                                                                                                                        |
-|  |                                                                                                                                      |
-|  | <wsdl:output>                                                                                                                        |
-|  |                                                                                                                                      |
-|  | <soap:body use="literal"/>                                                                                                           |
-|  |                                                                                                                                      |
-|  | </wsdl:output>                                                                                                                       |
-|  |                                                                                                                                      |
-|  | </wsdl:operation>                                                                                                                    |
-|  |                                                                                                                                      |
-|  | </wsdl:binding>                                                                                                                      |
-+--+--------------------------------------------------------------------------------------------------------------------------------------+
-
-porttype **VerificaVoucher**
-
-+------------+-----------------------------------------------+
-| diagram    | |image5|                                      |
-+============+===============================================+
-| operations | \ **Check**                                   |
-|            |                                               |
-|            | input `tns:CheckRequest <#_bookmark6>`__      |
-|            |                                               |
-|            | output `tns:CheckResponse <#_bookmark7>`__    |
-|            |                                               |
-|            | \ **Confirm**                                 |
-|            |                                               |
-|            | input `tns:ConfirmRequest <#_bookmark8>`__    |
-|            |                                               |
-|            | output `tns:ConfirmResponse <#_bookmark9>`__  |
-+------------+-----------------------------------------------+
-| used by    | binding `VerificaVoucherSOAP <#_bookmark2>`__ |
-+------------+-----------------------------------------------+
-| source     | <wsdl:portType name="VerificaVoucher">        |
-|            |                                               |
-|            | <wsdl:operation name="Check">                 |
-|            |                                               |
-|            | <wsdl:input message="tns:CheckRequest"/>      |
-|            |                                               |
-|            | <wsdl:output message="tns:CheckResponse"/>    |
-|            |                                               |
-|            | </wsdl:operation>                             |
-|            |                                               |
-|            | <wsdl:operation name="Confirm">               |
-+------------+-----------------------------------------------+
-
-APPLICAZIONE 18APP ALLEGATO
-
-LINEE GUIDA PER ESERCENTI PAG. 18 DI 26
-
-+--+----------------------------------------------+
-|  | <wsdl:input message="tns:ConfirmRequest"/>   |
-|  |                                              |
-|  | <wsdl:output message="tns:ConfirmResponse"/> |
-|  |                                              |
-|  | </wsdl:operation>                            |
-|  |                                              |
-|  | </wsdl:portType>                             |
-+--+----------------------------------------------+
-
-message **CheckRequest**
-
-+---------+-----------------------------------------------------------------------------------+
-| parts   | **parameters**                                                                    |
-|         |                                                                                   |
-|         | element `tns:CheckRequestObj <#_bookmark10>`__                                    |
-+=========+===================================================================================+
-| used by | Operation `Check <#_bookmark4>`__ in PortType `VerificaVouche <#_bookmark3>`__\ r |
-+---------+-----------------------------------------------------------------------------------+
-| source  | <wsdl:message name="CheckRequest">                                                |
-|         |                                                                                   |
-|         | <wsdl:part name="parameters" element="tns:CheckRequestObj"/>                      |
-|         |                                                                                   |
-|         | </wsdl:message>                                                                   |
-+---------+-----------------------------------------------------------------------------------+
-
-message **CheckResponse**
-
-+---------+-----------------------------------------------------------------------------------+
-| parts   | **parameters**                                                                    |
-|         |                                                                                   |
-|         | element `tns:CheckResponseObj <#_bookmark12>`__                                   |
-+=========+===================================================================================+
-| used by | Operation `Check <#_bookmark4>`__ in PortType `VerificaVouche <#_bookmark3>`__\ r |
-+---------+-----------------------------------------------------------------------------------+
-| source  | <wsdl:message name="CheckResponse">                                               |
-|         |                                                                                   |
-|         | <wsdl:part name="parameters" element="tns:CheckResponseObj"/>                     |
-|         |                                                                                   |
-|         | </wsdl:message>                                                                   |
-+---------+-----------------------------------------------------------------------------------+
-
-message **ConfirmRequest**
-
-+---------+-------------------------------------------------------------------------------------+
-| parts   | **parameters**                                                                      |
-|         |                                                                                     |
-|         | element `tns:ConfirmRequestObj <#_bookmark14>`__                                    |
-+=========+=====================================================================================+
-| used by | Operation `Confirm <#_bookmark5>`__ in PortType `VerificaVouche <#_bookmark3>`__\ r |
-+---------+-------------------------------------------------------------------------------------+
-| source  | <wsdl:message name="ConfirmRequest">                                                |
-|         |                                                                                     |
-|         | <wsdl:part name="parameters" element="tns:ConfirmRequestObj"/>                      |
-|         |                                                                                     |
-|         | </wsdl:message>                                                                     |
-+---------+-------------------------------------------------------------------------------------+
-
-message **ConfirmResponse**
-
-**Codice campo modificato Codice campo modificato**
-
-**Codice campo modificato Codice campo modificato**
-
-**Codice campo modificato Codice campo modificato**
-
-**Codice campo modificato Codice campo modificato**
-
-APPLICAZIONE 18APP ALLEGATO
-
-LINEE GUIDA PER ESERCENTI PAG. 19 DI 26
-
-element **CheckRequestObj**
-
-+------------+-------------------------------------------------+
-| diagram    | |image6|                                        |
-+============+=================================================+
-| namespace  | http://bonus.mibact.it/VerificaVoucher/         |
-+------------+-------------------------------------------------+
-| properties | content complex                                 |
-+------------+-------------------------------------------------+
-| children   | `checkReq <#_bookmark11>`__                     |
-+------------+-------------------------------------------------+
-| source     | <xsd:element name="CheckRequestObj">            |
-|            |                                                 |
-|            | <xsd:complexType>                               |
-|            |                                                 |
-|            | <xsd:sequence>                                  |
-|            |                                                 |
-|            | <xsd:element name="checkReq" type="tns:Check"/> |
-|            |                                                 |
-|            | </xsd:sequence>                                 |
-|            |                                                 |
-|            | </xsd:complexType>                              |
-|            |                                                 |
-|            | </xsd:element>                                  |
-+------------+-------------------------------------------------+
-
-element **CheckRequestObj/checkReq**
-
-+------------+-----------------------------------------------------------------------------------------------------------+
-| diagram    | |image7|                                                                                                  |
-+============+===========================================================================================================+
-| type       | `tns:Check <#_bookmark18>`__                                                                              |
-+------------+-----------------------------------------------------------------------------------------------------------+
-| properties | content complex                                                                                           |
-+------------+-----------------------------------------------------------------------------------------------------------+
-| children   | `tipoOperazione <#_bookmark19>`__ `codiceVoucher <#_bookmark20>`__ `partitaIvaEsercente <#_bookmark21>`__ |
-+------------+-----------------------------------------------------------------------------------------------------------+
-| source     | <xsd:element name="checkReq" type="tns:Check"/>                                                           |
-+------------+-----------------------------------------------------------------------------------------------------------+
-
-element **CheckResponseObj**
-
-+------------+-----------------------------------------+
-| diagram    | |image8|                                |
-+============+=========================================+
-| namespace  | http://bonus.mibact.it/VerificaVoucher/ |
-+------------+-----------------------------------------+
-| properties | content complex                         |
-+------------+-----------------------------------------+
-| children   | `checkResp <#_bookmark13>`__            |
-+------------+-----------------------------------------+
-| source     | <xsd:element name="CheckResponseObj">   |
-+------------+-----------------------------------------+
-
-APPLICAZIONE 18APP ALLEGATO
-
-LINEE GUIDA PER ESERCENTI PAG. 20 DI 26
-
-+--+----------------------------------------------------------+
-|  | <xsd:complexType>                                        |
-|  |                                                          |
-|  | <xsd:sequence>                                           |
-|  |                                                          |
-|  | <xsd:element name="checkResp" type="tns:CheckResponse"/> |
-|  |                                                          |
-|  | </xsd:sequence>                                          |
-|  |                                                          |
-|  | </xsd:complexType>                                       |
-|  |                                                          |
-|  | </xsd:element>                                           |
-+--+----------------------------------------------------------+
-
-element **CheckResponseObj/checkResp**
-
-+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| diagram    | |image9|                                                                                                                                                                                      |
-+============+===============================================================================================================================================================================================+
-| type       | `tns:CheckResponse <#_bookmark22>`__                                                                                                                                                          |
-+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| properties | content complex                                                                                                                                                                               |
-+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| children   | `nominativoBeneficiario <#element-checkresponsenominativobeneficiario>`__ `partitaIvaEsercente <#_bookmark24>`__ `ambito <#_bookmark25>`__ `bene <#_bookmark26>`__ `importo <#_bookmark27>`__ |
-+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| source     | <xsd:element name="checkResp" type="tns:CheckResponse"/>                                                                                                                                      |
-+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-element **ConfirmRequestObj**
-
-+------------+---------------------------------------------------+
-| diagram    | |image10|                                         |
-+============+===================================================+
-| namespace  | http://bonus.mibact.it/VerificaVoucher/           |
-+------------+---------------------------------------------------+
-| properties | content complex                                   |
-+------------+---------------------------------------------------+
-| children   | `checkReq <#_bookmark15>`__                       |
-+------------+---------------------------------------------------+
-| source     | <xsd:element name="ConfirmRequestObj">            |
-|            |                                                   |
-|            | <xsd:complexType>                                 |
-|            |                                                   |
-|            | <xsd:sequence>                                    |
-|            |                                                   |
-|            | <xsd:element name="checkReq" type="tns:Confirm"/> |
-|            |                                                   |
-|            | </xsd:sequence>                                   |
-|            |                                                   |
-|            | </xsd:complexType>                                |
-|            |                                                   |
-|            | </xsd:element>                                    |
-+------------+---------------------------------------------------+
-
-APPLICAZIONE 18APP ALLEGATO
-
-LINEE GUIDA PER ESERCENTI PAG. 21 DI 26
-
-element **ConfirmRequestObj/checkReq**
-
-+------------+-----------------------------------------------------------------------------------------------+
-| diagram    | |image11|                                                                                     |
-+============+===============================================================================================+
-| type       | `tns:Confirm <#_bookmark28>`__                                                                |
-+------------+-----------------------------------------------------------------------------------------------+
-| properties | content complex                                                                               |
-+------------+-----------------------------------------------------------------------------------------------+
-| children   | `tipoOperazione <#_bookmark29>`__ `codiceVoucher <#_bookmark30>`__ `importo <#_bookmark31>`__ |
-+------------+-----------------------------------------------------------------------------------------------+
-| source     | <xsd:element name="checkReq" type="tns:Confirm"/>                                             |
-+------------+-----------------------------------------------------------------------------------------------+
-
-element **ConfirmResponseObj**
-
-+------------+------------------------------------------------------------+
-| diagram    | |image12|                                                  |
-+============+============================================================+
-| namespace  | http://bonus.mibact.it/VerificaVoucher/                    |
-+------------+------------------------------------------------------------+
-| properties | content complex                                            |
-+------------+------------------------------------------------------------+
-| children   | `checkResp <#_bookmark17>`__                               |
-+------------+------------------------------------------------------------+
-| source     | <xsd:element name="ConfirmResponseObj">                    |
-|            |                                                            |
-|            | <xsd:complexType>                                          |
-|            |                                                            |
-|            | <xsd:sequence>                                             |
-|            |                                                            |
-|            | <xsd:element name="checkResp" type="tns:ConfirmResponse"/> |
-|            |                                                            |
-|            | </xsd:sequence>                                            |
-|            |                                                            |
-|            | </xsd:complexType>                                         |
-|            |                                                            |
-|            | </xsd:element>                                             |
-+------------+------------------------------------------------------------+
-
-element **ConfirmResponseObj/checkResp**
-
-+---------+----------------------------------------+
-| diagram | |image13|                              |
-+=========+========================================+
-| type    | `tns:ConfirmResponse <#_bookmark32>`__ |
-+---------+----------------------------------------+
-
-APPLICAZIONE 18APP ALLEGATO
-
-LINEE GUIDA PER ESERCENTI PAG. 22 DI 26
-
-+------------+------------------------------------------------------------+
-| properties | content complex                                            |
-+============+============================================================+
-| children   | `esito <#_bookmark33>`__                                   |
-+------------+------------------------------------------------------------+
-| source     | <xsd:element name="checkResp" type="tns:ConfirmResponse"/> |
-+------------+------------------------------------------------------------+
-
-complexType **Check**
-
-+-----------+-----------------------------------------------------------------------------------------------------------+
-| diagram   | |image14|                                                                                                 |
-+===========+===========================================================================================================+
-| namespace | http://bonus.mibact.it/VerificaVoucher/                                                                   |
-+-----------+-----------------------------------------------------------------------------------------------------------+
-| children  | `tipoOperazione <#_bookmark19>`__ `codiceVoucher <#_bookmark20>`__ `partitaIvaEsercente <#_bookmark21>`__ |
-+-----------+-----------------------------------------------------------------------------------------------------------+
-| used by   | element `CheckRequestObj/checkReq <#_bookmark11>`__                                                       |
-+-----------+-----------------------------------------------------------------------------------------------------------+
-| source    | <xsd:complexType name="Check">                                                                            |
-|           |                                                                                                           |
-|           | <xsd:sequence>                                                                                            |
-|           |                                                                                                           |
-|           | <xsd:element name="tipoOperazione" type="xsd:string" minOccurs="1" maxOccurs="1"/>                        |
-|           |                                                                                                           |
-|           | <xsd:element name="codiceVoucher" type="xsd:string" minOccurs="1" maxOccurs="1"/>                         |
-|           |                                                                                                           |
-|           | <xsd:element name="partitaIvaEsercente" type="xsd:string" minOccurs="0" maxOccurs="1"/>                   |
-|           |                                                                                                           |
-|           | </xsd:sequence>                                                                                           |
-|           |                                                                                                           |
-|           | </xsd:complexType>                                                                                        |
-+-----------+-----------------------------------------------------------------------------------------------------------+
-
-element **Check/tipoOperazione**
-
-+------------+------------------------------------------------------------------------------------+
-| diagram    | |image15|                                                                          |
-+============+====================================================================================+
-| type       | **xsd:string**                                                                     |
-+------------+------------------------------------------------------------------------------------+
-| properties | content simple                                                                     |
-+------------+------------------------------------------------------------------------------------+
-| source     | <xsd:element name="tipoOperazione" type="xsd:string" minOccurs="1" maxOccurs="1"/> |
-+------------+------------------------------------------------------------------------------------+
-
-element **Check/codiceVoucher**
-
-+---------+-----------+
-| diagram | |image16| |
-+---------+-----------+
-
-APPLICAZIONE 18APP ALLEGATO
-
-LINEE GUIDA PER ESERCENTI PAG. 23 DI 26
-
-+------------+-----------------------------------------------------------------------------------+
-| type       | **xsd:string**                                                                    |
-+============+===================================================================================+
-| properties | content simple                                                                    |
-+------------+-----------------------------------------------------------------------------------+
-| source     | <xsd:element name="codiceVoucher" type="xsd:string" minOccurs="1" maxOccurs="1"/> |
-+------------+-----------------------------------------------------------------------------------+
-
-element **Check/partitaIvaEsercente**
-
-+------------+-----------------------------------------------------------------------------------------+
-| diagram    | |image17|                                                                               |
-+============+=========================================================================================+
-| type       | **xsd:string**                                                                          |
-+------------+-----------------------------------------------------------------------------------------+
-| properties | minOcc 0                                                                                |
-|            |                                                                                         |
-|            | maxOcc 1 content simple                                                                 |
-+------------+-----------------------------------------------------------------------------------------+
-| source     | <xsd:element name="partitaIvaEsercente" type="xsd:string" minOccurs="0" maxOccurs="1"/> |
-+------------+-----------------------------------------------------------------------------------------+
-
-complexType **CheckResponse**
-
-+-----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| diagram   | |image18|                                                                                                                                                                                     |
-+===========+===============================================================================================================================================================================================+
-| namespace | http://bonus.mibact.it/VerificaVoucher/                                                                                                                                                       |
-+-----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| children  | `nominativoBeneficiario <#element-checkresponsenominativobeneficiario>`__ `partitaIvaEsercente <#_bookmark24>`__ `ambito <#_bookmark25>`__ `bene <#_bookmark26>`__ `importo <#_bookmark27>`__ |
-+-----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| used by   | element `CheckResponseObj/checkResp <#_bookmark13>`__                                                                                                                                         |
-+-----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| source    | <xsd:complexType name="CheckResponse">                                                                                                                                                        |
-|           |                                                                                                                                                                                               |
-|           | <xsd:sequence>                                                                                                                                                                                |
-|           |                                                                                                                                                                                               |
-|           | <xsd:element name="nominativoBeneficiario" type="xsd:string" minOccurs="1" maxOccurs="1"/>                                                                                                    |
-|           |                                                                                                                                                                                               |
-|           | <xsd:element name="partitaIvaEsercente" type="xsd:string" minOccurs="1" maxOccurs="1"/>                                                                                                       |
-|           |                                                                                                                                                                                               |
-|           | <xsd:element name="ambito" type="xsd:string" minOccurs="1" maxOccurs="1"/>                                                                                                                    |
-|           |                                                                                                                                                                                               |
-|           | <xsd:element name="bene" type="xsd:string" minOccurs="1" maxOccurs="1"/>                                                                                                                      |
-|           |                                                                                                                                                                                               |
-|           | <xsd:element name="importo" type="xsd:double" minOccurs="1" maxOccurs="1"/>                                                                                                                   |
-|           |                                                                                                                                                                                               |
-|           | </xsd:sequence>                                                                                                                                                                               |
-|           |                                                                                                                                                                                               |
-|           | </xsd:complexType>                                                                                                                                                                            |
-+-----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-APPLICAZIONE 18APP ALLEGATO
-
-LINEE GUIDA PER ESERCENTI PAG. 24 DI 26
-
-element CheckResponse/nominativoBeneficiario
-''''''''''''''''''''''''''''''''''''''''''''
-
-+------------+--------------------------------------------------------------------------------------------+
-| diagram    | |image19|                                                                                  |
-+============+============================================================================================+
-| type       | **xsd:string**                                                                             |
-+------------+--------------------------------------------------------------------------------------------+
-| properties | content simple                                                                             |
-+------------+--------------------------------------------------------------------------------------------+
-| source     | <xsd:element name="nominativoBeneficiario" type="xsd:string" minOccurs="1" maxOccurs="1"/> |
-+------------+--------------------------------------------------------------------------------------------+
-
-element **CheckResponse/partitaIvaEsercente**
-
-+------------+-----------------------------------------------------------------------------------------+
-| diagram    | |image20|                                                                               |
-+============+=========================================================================================+
-| type       | **xsd:string**                                                                          |
-+------------+-----------------------------------------------------------------------------------------+
-| properties | content simple                                                                          |
-+------------+-----------------------------------------------------------------------------------------+
-| source     | <xsd:element name="partitaIvaEsercente" type="xsd:string" minOccurs="1" maxOccurs="1"/> |
-+------------+-----------------------------------------------------------------------------------------+
-
-element **CheckResponse/ambito**
-
-+------------+----------------------------------------------------------------------------+
-| diagram    | |image21|                                                                  |
-+============+============================================================================+
-| type       | **xsd:string**                                                             |
-+------------+----------------------------------------------------------------------------+
-| properties | content simple                                                             |
-+------------+----------------------------------------------------------------------------+
-| source     | <xsd:element name="ambito" type="xsd:string" minOccurs="1" maxOccurs="1"/> |
-+------------+----------------------------------------------------------------------------+
-
-element **CheckResponse/bene**
-
-+------------+--------------------------------------------------------------------------+
-| diagram    | |image22|                                                                |
-+============+==========================================================================+
-| type       | **xsd:string**                                                           |
-+------------+--------------------------------------------------------------------------+
-| properties | content simple                                                           |
-+------------+--------------------------------------------------------------------------+
-| source     | <xsd:element name="bene" type="xsd:string" minOccurs="1" maxOccurs="1"/> |
-+------------+--------------------------------------------------------------------------+
-
-APPLICAZIONE 18APP ALLEGATO
-
-LINEE GUIDA PER ESERCENTI PAG. 25 DI 26
-
-element **CheckResponse/importo**
-
-+------------+-----------------------------------------------------------------------------+
-| diagram    | |image23|                                                                   |
-+============+=============================================================================+
-| type       | **xsd:double**                                                              |
-+------------+-----------------------------------------------------------------------------+
-| properties | content simple                                                              |
-+------------+-----------------------------------------------------------------------------+
-| source     | <xsd:element name="importo" type="xsd:double" minOccurs="1" maxOccurs="1"/> |
-+------------+-----------------------------------------------------------------------------+
-
-complexType **Confirm**
-
-+-----------+-----------------------------------------------------------------------------------------------+
-| diagram   | |image24|                                                                                     |
-+===========+===============================================================================================+
-| namespace | http://bonus.mibact.it/VerificaVoucher/                                                       |
-+-----------+-----------------------------------------------------------------------------------------------+
-| children  | `tipoOperazione <#_bookmark29>`__ `codiceVoucher <#_bookmark30>`__ `importo <#_bookmark31>`__ |
-+-----------+-----------------------------------------------------------------------------------------------+
-| used by   | element `ConfirmRequestObj/checkReq <#_bookmark15>`__                                         |
-+-----------+-----------------------------------------------------------------------------------------------+
-| source    | <xsd:complexType name="Confirm">                                                              |
-|           |                                                                                               |
-|           | <xsd:sequence>                                                                                |
-|           |                                                                                               |
-|           | <xsd:element name="tipoOperazione" type="xsd:string" minOccurs="1" maxOccurs="1"/>            |
-|           |                                                                                               |
-|           | <xsd:element name="codiceVoucher" type="xsd:string" minOccurs="1" maxOccurs="1"/>             |
-|           |                                                                                               |
-|           | <xsd:element name="importo" type="xsd:double" minOccurs="1" maxOccurs="1"/>                   |
-|           |                                                                                               |
-|           | </xsd:sequence>                                                                               |
-|           |                                                                                               |
-|           | </xsd:complexType>                                                                            |
-+-----------+-----------------------------------------------------------------------------------------------+
-
-element **Confirm/tipoOperazione**
-
-+------------+------------------------------------------------------------------------------------+
-| diagram    | |image25|                                                                          |
-+============+====================================================================================+
-| type       | **xsd:string**                                                                     |
-+------------+------------------------------------------------------------------------------------+
-| properties | content simple                                                                     |
-+------------+------------------------------------------------------------------------------------+
-| source     | <xsd:element name="tipoOperazione" type="xsd:string" minOccurs="1" maxOccurs="1"/> |
-+------------+------------------------------------------------------------------------------------+
-
-APPLICAZIONE 18APP ALLEGATO
-
-LINEE GUIDA PER ESERCENTI PAG. 26 DI 26
-
-element **Confirm/codiceVoucher**
-
-+------------+-----------------------------------------------------------------------------------+
-| diagram    | |image26|                                                                         |
-+============+===================================================================================+
-| type       | **xsd:string**                                                                    |
-+------------+-----------------------------------------------------------------------------------+
-| properties | content simple                                                                    |
-+------------+-----------------------------------------------------------------------------------+
-| source     | <xsd:element name="codiceVoucher" type="xsd:string" minOccurs="1" maxOccurs="1"/> |
-+------------+-----------------------------------------------------------------------------------+
-
-element **Confirm/importo**
-
-+------------+-----------------------------------------------------------------------------+
-| diagram    | |image27|                                                                   |
-+============+=============================================================================+
-| type       | **xsd:double**                                                              |
-+------------+-----------------------------------------------------------------------------+
-| properties | content simple                                                              |
-+------------+-----------------------------------------------------------------------------+
-| source     | <xsd:element name="importo" type="xsd:double" minOccurs="1" maxOccurs="1"/> |
-+------------+-----------------------------------------------------------------------------+
-
-complexType **ConfirmResponse**
-
-+-----------+---------------------------------------------------------------------------+
-| diagram   | |image28|                                                                 |
-+===========+===========================================================================+
-| namespace | http://bonus.mibact.it/VerificaVoucher/                                   |
-+-----------+---------------------------------------------------------------------------+
-| children  | `esito <#_bookmark33>`__                                                  |
-+-----------+---------------------------------------------------------------------------+
-| used by   | element `ConfirmResponseObj/checkResp <#_bookmark17>`__                   |
-+-----------+---------------------------------------------------------------------------+
-| source    | <xsd:complexType name="ConfirmResponse">                                  |
-|           |                                                                           |
-|           | <xsd:sequence>                                                            |
-|           |                                                                           |
-|           | <xsd:element name="esito" type="xsd:string" minOccurs="1" maxOccurs="1"/> |
-|           |                                                                           |
-|           | </xsd:sequence>                                                           |
-|           |                                                                           |
-|           | </xsd:complexType>                                                        |
-+-----------+---------------------------------------------------------------------------+
-
-element **ConfirmResponse/esito**
-
-+------------+---------------------------------------------------------------------------+
-| diagram    | |image29|                                                                 |
-+============+===========================================================================+
-| type       | **xsd:string**                                                            |
-+------------+---------------------------------------------------------------------------+
-| properties | content simple                                                            |
-+------------+---------------------------------------------------------------------------+
-| source     | <xsd:element name="esito" type="xsd:string" minOccurs="1" maxOccurs="1"/> |
-+------------+---------------------------------------------------------------------------+
+======================
+
+header added by pandoc
+----------------------
+
+VERIFICA DATI
+~~~~~~~~~~~~~
+
+**I. Nel campo Riepilogo Importi Aliquota inserire:**
+
+o Rif. Normativo: Art. 2 DPR 633/72
+
+|image11|
+
+Quindi cliccare su >\ **Vai a Riepilogo**
+
+Passo 5
+=======
+
+header added by pandoc
+======================
+
+header added by pandoc
+----------------------
+
+DATI DI RIEPILOGO
+~~~~~~~~~~~~~~~~~
+
+In questa sezione è possibile verificare le informazioni inserite e scaricare il file *XML* da firmare digitalmente e da trasmettere attraverso una delle modalità previste dal Sistema d’Interscambio.
+
+Si raccomanda di verificare la correttezza formale della fattura prodotta prima di firmarla digitalmente e di inviarla al sistema d’interscambio.
+
+A tal fine, cliccando su “\ **Controlla”** è possibile accertare che la fattura non contenga errori.
+
+|image12|
+
+Trattamento delle fatture elettroniche inviate
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Consap provvede al riscontro delle fatture ricevute, alla loro verifica rispetto ai buoni validati e alla loro liquidazione.
+
+A seguito della verifica effettuata da Consap, l’esercente riceve dalla Piattaforma di Interscambio appositi messaggi di notifica dell’esito della verifica delle fatture inviate: se l’esito è negativo, la relativa notifica contiene anche le motivazioni del rigetto; in caso positivo, le fatture sono mandate al pagamento con bonifico sull’IBAN indicato dal beneficiario. La liquidazione avviene entro 30 giorni dalla presa in carico della fattura. A pagamento effettuato verrà inviata una mail automatica di notifica di avvenuto accredito. A tal proposito si ricorda di
+
+valorizzare la sezione “Contatti” all’interno della fattura elettronica, inserendo l’indirizzo e-mail.
+
+L’esercente ha inoltre la possibilità di verificare, sull’applicazione 18APP, i buoni liquidati.
+
+Attraverso l’applicazione web raggiungibile dal sito `http://18app.consap.it <http://18app.consap.it/>`__ sarà possibile consultare lo stato di avanzamento delle fatture inviate così distinto:
+
+-  Accettate: fatture correttamente importate nel sistema, già liquidate o prossime alla liquidazione.
+
+-  In elaborazione: fatture in fase di controllo.
+
+-  Rifiutate: fatture scartate a causa di uno o più errori bloccanti. In questo caso sarà possibile consultare l’elenco degli errori riscontrati. Tali fatture dovranno essere corrette e riemesse.
+
+Assistenza
+~~~~~~~~~~
+
+Per le problematiche amministrative connesse alla fatturazione, è disponibile un Contact Center dedicato agli esercenti, aperto dal lunedì al venerdì, dalle ore 9.00 alle ore 17.00 raggiungibile ai seguenti recapiti:
+
+tel. 06/85.796.338
+
+email: `18app@consap.it <mailto:18app@consap.it>`__ (Utilizzabile esclusivamente da mail ordinaria. Per motivi tecnici non saranno riscontrati messaggi inviati da PEC.)
+
+Appendice 1 - Codici dei Regimi fiscali
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
++------------+---------------------------------------------------------------------------------------------------------------+
+| **Codice** | **Descrizione**                                                                                               |
++============+===============================================================================================================+
+| **RF01**   | Ordinario                                                                                                     |
++------------+---------------------------------------------------------------------------------------------------------------+
+| **RF02**   | Contribuenti minimi (art.1, c.96-117, L. 244/07)                                                              |
++------------+---------------------------------------------------------------------------------------------------------------+
+| **RF03**   | Nuove iniziative produttive (art.13, L. 388/00)                                                               |
++------------+---------------------------------------------------------------------------------------------------------------+
+| **RF04**   | Agricoltura e attività connesse e pesca (artt.34 e 34-bis, DPR 633/72)                                        |
++------------+---------------------------------------------------------------------------------------------------------------+
+| **RF05**   | Vendita sali e tabacchi (art.74, c.1, DPR. 633/72)                                                            |
++------------+---------------------------------------------------------------------------------------------------------------+
+| **RF06**   | Commercio fiammiferi (art.74, c.1, DPR 633/72)                                                                |
++------------+---------------------------------------------------------------------------------------------------------------+
+| **RF07**   | Editoria (art.74, c.1, DPR 633/72)                                                                            |
++------------+---------------------------------------------------------------------------------------------------------------+
+| **RF08**   | Gestione servizi telefonia pubblica (art.74, c.1, DPR 633/72)                                                 |
++------------+---------------------------------------------------------------------------------------------------------------+
+| **RF09**   | Rivendita documenti di trasporto pubblico e di sosta (art.74, c.1, DPR 633/72)                                |
++------------+---------------------------------------------------------------------------------------------------------------+
+| **RF10**   | Intrattenimenti, giochi e altre attività di cui alla tariffa allegata al DPR 640/72 (art.74, c.6, DPR 633/72) |
++------------+---------------------------------------------------------------------------------------------------------------+
+| **RF11**   | Agenzie viaggi e turismo (art.74-ter, DPR 633/72)                                                             |
++------------+---------------------------------------------------------------------------------------------------------------+
+| **RF12**   | Agriturismo (art.5, c.2, L. 413/91)                                                                           |
++------------+---------------------------------------------------------------------------------------------------------------+
+| **RF13**   | Vendite a domicilio (art.25-bis, c.6, DPR 600/73)                                                             |
++------------+---------------------------------------------------------------------------------------------------------------+
+| **RF14**   | Rivendita beni usati, oggetti d’arte, d’antiquariato o da collezione (art.36, DL 41/95)                       |
++------------+---------------------------------------------------------------------------------------------------------------+
+| **RF15**   | Agenzie di vendite all’asta di oggetti d’arte, antiquariato o da collezione (art.40-bis, DL 41/95)            |
++------------+---------------------------------------------------------------------------------------------------------------+
+| **RF16**   | IVA per cassa P.A. (art.6, c.5, DPR 633/72)                                                                   |
++------------+---------------------------------------------------------------------------------------------------------------+
+| **RF17**   | IVA per cassa (art. 32-bis, DL 83/2012)                                                                       |
++------------+---------------------------------------------------------------------------------------------------------------+
+| **RF18**   | Altro                                                                                                         |
++------------+---------------------------------------------------------------------------------------------------------------+
+| **RF19**   | Regime forfettario (art.1, c.54-89, L. 190/2014)                                                              |
++------------+---------------------------------------------------------------------------------------------------------------+
+
+**Appendice 2 - Esempio di fattura elettronica (formato .xml) compilata per l’iniziativa 18APP**
+
+Si riporta nel seguito un esempio di fattura elettronica in formato XML conforme allo standard di fatturazione elettronica e alle linee guida specifiche fornite per l’iniziativa 18APP.
+
+<ns2:FatturaElettronica versione='FPA12' `xmlns:ns2='http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2'> <http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2%27>`__
+
+<FatturaElettronicaHeader>
+
+<DatiTrasmissione>
+
+<IdTrasmittente>
+
+<IdPaese>IT</IdPaese>
+
+<IdCodice>ABCDFG00A11B123C</IdCodice>
+
+</IdTrasmittente>
+
+<ProgressivoInvio>0</ProgressivoInvio>
+
+<FormatoTrasmissione>FPA12</FormatoTrasmissione>
+
+<CodiceDestinatario>CY0MHE</CodiceDestinatario>
+
+</DatiTrasmissione>
+
+<CedentePrestatore>
+
+<DatiAnagrafici>
+
+<IdFiscaleIVA>
+
+<IdPaese>IT</IdPaese>
+
+<IdCodice>1000000000</IdCodice>
+
+</IdFiscaleIVA>
+
+<CodiceFiscale>10000000</CodiceFiscale>
+
+<Anagrafica>
+
+<Denominazione>Libreria Mario Rossi</Denominazione>
+
+</Anagrafica>
+
+<RegimeFiscale>RF01</RegimeFiscale>
+
+</DatiAnagrafici>
+
+<Sede>
+
+<Indirizzo>Via Esempio</Indirizzo>
+
+<NumeroCivico>1</NumeroCivico>
+
+<CAP>00100</CAP>
+
+<Comune>Roma</Comune>
+
+<Provincia>RM</Provincia>
+
+<Nazione>IT</Nazione>
+
+</Sede>
+
+<Contatti>
+
+<Telefono>123456789</Telefono>
+
+`<Email>esempio@esempio.it</Email> <mailto:esempio@esempio.it>`__
+
+</Contatti>
+
+</CedentePrestatore>
+
+<CessionarioCommittente>
+
+<Sede>
+
+<Nazione>IT</Nazione>
+
+<Indirizzo>Via del Collegio Romano</Indirizzo>
+
+<NumeroCivico>27</NumeroCivico>
+
+<CAP>00186</CAP>
+
+<Comune>Roma</Comune>
+
+<Provincia>RM</Provincia>
+
+</Sede>
+
+<DatiAnagrafici>
+
+<CodiceFiscale>97904380587</CodiceFiscale>
+
+<Anagrafica>
+
+<Denominazione>Ministero dei Beni e delle Attività Culturali e del Turismo</Denominazione>
+
+</Anagrafica>
+
+</DatiAnagrafici>
+
+</CessionarioCommittente>
+
+</FatturaElettronicaHeader>
+
+<FatturaElettronicaBody>
+
+<DatiBeniServizi>
+
+<DettaglioLinee>
+
+<CodiceArticolo>
+
+<CodiceValore>hul09Tk</CodiceValore>
+
+<CodiceTipo>18app</CodiceTipo>
+
+</CodiceArticolo>
+
+<PrezzoTotale>10.00</PrezzoTotale>
+
+<Descrizione>Pagamento Buono</Descrizione>
+
+<Quantita>1.00</Quantita>
+
+<PrezzoUnitario>10.00</PrezzoUnitario>
+
+<AliquotaIVA>0.00</AliquotaIVA>
+
+<Natura>N2</Natura>
+
+<NumeroLinea>1</NumeroLinea>
+
+</DettaglioLinee>
+
+<DatiRiepilogo>
+
+<AliquotaIVA>0.00</AliquotaIVA>
+
+<ImponibileImporto>10.00</ImponibileImporto>
+
+<Natura>N2</Natura>
+
+<Imposta>0.00</Imposta>
+
+<RiferimentoNormativo>Art. 2 DPR 633/72</RiferimentoNormativo>
+
+</DatiRiepilogo>
+
+</DatiBeniServizi>
+
+<DatiGenerali>
+
+<DatiGeneraliDocumento>
+
+<TipoDocumento>TD01</TipoDocumento>
+
+<Numero>1</Numero>
+
+<Data>2017-01-10</Data>
+
+<ImportoTotaleDocumento>10.00</ImportoTotaleDocumento>
+
+<Divisa>EUR</Divisa>
+
+</DatiGeneraliDocumento>
+
+</DatiGenerali>
+
+<DatiPagamento>
+
+<DettaglioPagamento>
+
+<Beneficiario>Mario Rossi</Beneficiario>
+
+<ModalitaPagamento>MP05</ModalitaPagamento>
+
+<ImportoPagamento>10.00</ImportoPagamento>
+
+<IBAN>IT0000000000000000</IBAN>
+
+</DettaglioPagamento>
+
+<CondizioniPagamento>TP02</CondizioniPagamento>
+
+</DatiPagamento>
+
+</FatturaElettronicaBody>
+
+</ns2:FatturaElettronica>
+
+Appendice 3: regole tecniche di dettaglio per la compilazione della fattura
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+La valorizzazione degli elementi del tracciato xml deve rispettare i requisiti formali e di obbligatorietà previsti dalle regole di fatturazione elettronica e deve tener conto delle ulteriori indicazioni riportate nella tabella seguente:
+
++----------------------------------+--------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------+----------+
+|                                  |                                | **ID e Nome Tag XML**                                                                                                                                                                                                                                                                                                                                                                 | **Descrizione funzionale**           | **NOTE** |
++==================================+================================+=======================================================================================================================================================================================================================================================================================================================================================================================+======================================+==========+
+| **1 <FatturaElettronicaHeader>** |                                |                                                                                                                                                                                                                                                                                                                                                                                       |                                      |          |
++----------------------------------+--------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------+----------+
+|                                  | **1.1 <DatiTrasmissione>**     | blocco sempre obbligatorio contenente informazioni che identificano univocamente il soggetto che trasmette, il documento trasmesso, il                                                                                                                                                                                                                                                |                                      |          |
+|                                  |                                |                                                                                                                                                                                                                                                                                                                                                                                       |                                      |          |
+|                                  |                                | formato in cui è stato trasmesso il documento, il soggetto destinatario                                                                                                                                                                                                                                                                                                               |                                      |          |
++----------------------------------+--------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------+----------+
+|                                  | **1.1.1 <IdTrasmittente>**     | è l’identificativo univoco del soggetto trasmittente; per i soggetti residenti in Italia, siano essi persone fisiche o giuridiche, corrisponde al codice fiscale preceduto da **IT**; per i soggetti non residenti corrisponde al numero identificativo IVA (dove i primi due caratteri rappresentano il paese secondo lo standard ISO 3166-1 alpha-2 code, ed i restanti, fino ad un |                                      |          |
+|                                  |                                |                                                                                                                                                                                                                                                                                                                                                                                       |                                      |          |
+|                                  |                                | massimo di 28, il codice vero e proprio)                                                                                                                                                                                                                                                                                                                                              |                                      |          |
++----------------------------------+--------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------+----------+
+|                                  | **1.1.1.1 <IdPaese>**          | codice della nazione espresso secondo lo standard ISO 3166-1 alpha-2 code                                                                                                                                                                                                                                                                                                             | [**IT**], [**ES**], [**DK**],[**…**] |          |
++----------------------------------+--------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------+----------+
+|                                  | **1.1.1.2 <IdCodice>**         | codice identificativo fiscale                                                                                                                                                                                                                                                                                                                                                         | formato alfanumerico                 |          |
++----------------------------------+--------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------+----------+
+|                                  | **1.1.2 <ProgressivoInvio>**   | progressivo univoco, attribuito dal soggetto che trasmette, relativo ad ogni singolo documento fattura                                                                                                                                                                                                                                                                                | formato alfanumerico                 |          |
++----------------------------------+--------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------+----------+
+|                                  | **1.1.3**                      | contiene il codice identificativo del formato/versione con cui è stato trasmesso il documento fattura                                                                                                                                                                                                                                                                                 | valori ammessi: [**FPA12**]          |          |
+|                                  |                                |                                                                                                                                                                                                                                                                                                                                                                                       |                                      |          |
+|                                  | **<FormatoTrasmissione>**      |                                                                                                                                                                                                                                                                                                                                                                                       |                                      |          |
++----------------------------------+--------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------+----------+
+|                                  | **1.1.4 <CodiceDestinatario>** | codice dell'ufficio dell’amministrazione dello stato destinatario della                                                                                                                                                                                                                                                                                                               | codice IPA da indicare: **CY0MHE**   |          |
+|                                  |                                |                                                                                                                                                                                                                                                                                                                                                                                       |                                      |          |
+|                                  |                                | fattura, definito dall'amministrazione di appartenenza come riportato nella rubrica “Indice PA”.                                                                                                                                                                                                                                                                                      |                                      |          |
++----------------------------------+--------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------+----------+
+|                                  | **1.2 <CedentePrestatore>**    | blocco sempre obbligatorio contenente dati relativi al cedente / prestatore                                                                                                                                                                                                                                                                                                           |                                      |          |
++----------------------------------+--------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------+----------+
+|                                  | **1.2.1<DatiAnagrafici>**      | blocco sempre obbligatorio contenente i dati anagrafici, professionali e fiscali del cedente / prestatore                                                                                                                                                                                                                                                                             |                                      |          |
++----------------------------------+--------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------+----------+
+|                                  | **1.2.1.1 <IdFiscaleIVA>**     | numero di identificazione fiscale ai fini IVA; i primi due caratteri rappresentano il paese ( **IT**, **DE**, **ES** …..) ed i restanti (fino ad un massimo di 28) il codice vero e proprio che, per i residenti in Italia, corrisponde al                                                                                                                                            |                                      |          |
+|                                  |                                |                                                                                                                                                                                                                                                                                                                                                                                       |                                      |          |
+|                                  |                                | numero di partita IVA.                                                                                                                                                                                                                                                                                                                                                                |                                      |          |
++----------------------------------+--------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------+----------+
+|                                  | **1.2.1.1.1 <IdPaese>**        | codice della nazione espresso secondo lo standard ISO 3166-1 alpha-2 code                                                                                                                                                                                                                                                                                                             | [**IT**], [**ES**], [**DK**],[**…**] |          |
++----------------------------------+--------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------+----------+
+|                                  | **1.2.1.1.2 <IdCodice>**       | codice identificativo fiscale                                                                                                                                                                                                                                                                                                                                                         | formato alfanumerico                 |          |
++----------------------------------+--------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------+----------+
+|                                  | **1.2.1.2 <CodiceFiscale>**    | numero di Codice Fiscale                                                                                                                                                                                                                                                                                                                                                              | formato alfanumerico                 |          |
++----------------------------------+--------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------+----------+
+|                                  | **1.2.1.3 <Anagrafica>**       | dati anagrafici identificativi del cedente / prestatore                                                                                                                                                                                                                                                                                                                               |                                      |          |
++----------------------------------+--------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------+----------+
+|                                  | **1.2.1.3.1**                  | ditta, denominazione o ragione sociale (ditta, impresa, società, ente), da valorizzare in alternativa ai campi **1.2.1.3.2** e **1.2.1.3.3**                                                                                                                                                                                                                                          | formato alfanumerico                 |          |
+|                                  |                                |                                                                                                                                                                                                                                                                                                                                                                                       |                                      |          |
+|                                  | **<Denominazione>**            |                                                                                                                                                                                                                                                                                                                                                                                       |                                      |          |
++----------------------------------+--------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------+----------+
+|                                  | **1.2.1.3.2 <Nome>**           | nome della persona fisica. Da valorizzare insieme al campo **1.2.1.3.3** ed in alternativa al campo **1.2.1.3.1**                                                                                                                                                                                                                                                                     | formato alfanumerico                 |          |
++----------------------------------+--------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------+----------+
+|                                  | **1.2.1.3.3**                  | cognome della persona fisica. Da valorizzare insieme al campo **1.2.1.3.2**                                                                                                                                                                                                                                                                                                           | formato alfanumerico                 |          |
+|                                  |                                |                                                                                                                                                                                                                                                                                                                                                                                       |                                      |          |
+|                                  | **<Cognome>**                  | ed in alternativa al campo **1.2.1.3.1**                                                                                                                                                                                                                                                                                                                                              |                                      |          |
++----------------------------------+--------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------+----------+
+|                                  | **1.2.1.3.5 <CodEORI>**        | numero del Codice EORI (Economic Operator Registration and                                                                                                                                                                                                                                                                                                                            | formato alfanumerico                 |          |
+|                                  |                                |                                                                                                                                                                                                                                                                                                                                                                                       |                                      |          |
+|                                  |                                | Identification) in base al Regolamento (CE) n. 312 del 16 aprile 2009. In vigore dal 1 luglio 2009                                                                                                                                                                                                                                                                                    |                                      |          |
++----------------------------------+--------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------+----------+
+
++--+-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+----------+
+|  |                                   | **ID e Nome Tag XML**                                                                                                                                                                                                                       | **Descrizione funzionale**                                                                       | **NOTE** |
++==+===================================+=============================================================================================================================================================================================================================================+==================================================================================================+==========+
+|  | **1.2.1.8 <RegimeFiscale>**       | regime fiscale                                                                                                                                                                                                                              | valori ammessi:                                                                                  |          |
+|  |                                   |                                                                                                                                                                                                                                             |                                                                                                  |          |
+|  |                                   |                                                                                                                                                                                                                                             | **vedi tabella dei Codici dei regimi fiscali riportata in Appendice 1**                          |          |
++--+-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+----------+
+|  | **1.2.2 <Sede>**                  | blocco sempre obbligatorio contenente i dati della sede del cedente / prestatore                                                                                                                                                            |                                                                                                  |          |
++--+-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+----------+
+|  | **1.2.2.1 <Indirizzo>**           | indirizzo della sede del cedente o prestatore (nome della via, piazza etc.)                                                                                                                                                                 | formato alfanumerico                                                                             |          |
++--+-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+----------+
+|  | **1.2.2.2 <NumeroCivico>**        | numero civico riferito all'indirizzo (non indicare se già presente nel campo indirizzo)                                                                                                                                                     | formato alfanumerico                                                                             |          |
++--+-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+----------+
+|  | **1.2.2.3 <CAP>**                 | Codice Avviamento Postale                                                                                                                                                                                                                   | formato numerico                                                                                 |          |
++--+-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+----------+
+|  | **1.2.2.4 <Comune>**              | comune relativo alla sede del cedente / prestatore                                                                                                                                                                                          | formato alfanumerico                                                                             |          |
++--+-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+----------+
+|  | **1.2.2.5 <Provincia>**           | sigla della provincia di appartenenza del comune indicato nel campo                                                                                                                                                                         | [**RM**], [**MI**], [**…**]                                                                      |          |
+|  |                                   |                                                                                                                                                                                                                                             |                                                                                                  |          |
+|  |                                   | **1.2.2.4**                                                                                                                                                                                                                                 |                                                                                                  |          |
++--+-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+----------+
+|  | **1.2.2.6 <Nazione>**             | codice della nazione espresso secondo lo standard ISO 3166-1 alpha-2 code                                                                                                                                                                   | [**IT**], [**ES**], [**DK**],[**…**]                                                             |          |
++--+-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+----------+
+|  | **1.2.5 <Contatti>**              | dati relativi ai contatti del cedente / prestatore                                                                                                                                                                                          |                                                                                                  |          |
++--+-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+----------+
+|  | **1.2.5.1 <Telefono>**            | contatto telefonico fisso o mobile                                                                                                                                                                                                          | Necessariamente da valorizzare per                                                               |          |
+|  |                                   |                                                                                                                                                                                                                                             |                                                                                                  |          |
+|  |                                   |                                                                                                                                                                                                                                             | essere eventualmente contattati per chiarimenti                                                  |          |
++--+-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+----------+
+|  | **1.2.5.3 <Email>**               | indirizzo di posta elettronica                                                                                                                                                                                                              | Necessariamente da valorizzare per essere eventualmente contattati per                           |          |
+|  |                                   |                                                                                                                                                                                                                                             |                                                                                                  |          |
+|  |                                   |                                                                                                                                                                                                                                             | chiarimenti                                                                                      |          |
++--+-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+----------+
+|  | **1.2.6**                         | codice identificativo del cedente / prestatore ai fini amministrativo-contabili                                                                                                                                                             | Necessariamente da valorizzare riportando fedelmente il Codice esercente assegnato all’esercente |          |
+|  |                                   |                                                                                                                                                                                                                                             |                                                                                                  |          |
+|  | **<RiferimentoAmministrazion e>** |                                                                                                                                                                                                                                             | dall’applicazione 18APP3                                                                         |          |
++--+-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+----------+
+|  | **1.4**                           | blocco sempre obbligatorio contenente dati relativi al cessionario / committente                                                                                                                                                            | **Dati relativi al Ministero dei**                                                               |          |
+|  |                                   |                                                                                                                                                                                                                                             |                                                                                                  |          |
+|  | **<CessionarioCommittente>**      |                                                                                                                                                                                                                                             | **Beni e delle Attività Culturali e del Turismo**                                                |          |
++--+-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+----------+
+|  | **1.4.1 <DatiAnagrafici>**        | blocco contenente i dati fiscali e anagrafici del cessionario/committente                                                                                                                                                                   |                                                                                                  |          |
++--+-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+----------+
+|  | **1.4.1.2 <CodiceFiscale>**       | numero di Codice Fiscale                                                                                                                                                                                                                    | valore da indicare: **97904380587**                                                              |          |
++--+-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+----------+
+|  | **1.4.1.3 <Anagrafica>**          | dati anagrafici identificativi del cessionario/committente                                                                                                                                                                                  |                                                                                                  |          |
++--+-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+----------+
+|  | **1.4.1.3.1**                     | ditta, denominazione o ragione sociale (ditta, impresa, società, ente), da valorizzare in alternativa ai campi **1.4.1.3.2** e **1.4.1.3.3**                                                                                                | Ministero dei Beni e delle Attività Culturali e del Turismo                                      |          |
+|  |                                   |                                                                                                                                                                                                                                             |                                                                                                  |          |
+|  | **<Denominazione>**               |                                                                                                                                                                                                                                             |                                                                                                  |          |
++--+-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+----------+
+|  | **1.4.2 <Sede>**                  | blocco sempre obbligatorio contenente i dati della sede del cessionario / committente (nel caso di somministrazione di servizi quali energia elettrica, gas … , i dati possono fare riferimento all'ubicazione dell'utenza, ex DM 370/2000) |                                                                                                  |          |
++--+-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+----------+
+|  | **1.4.2.1 <Indirizzo>**           | indirizzo della sede del cessionario / committente (nome della via, piazza etc.)                                                                                                                                                            | Via del Collegio Romano                                                                          |          |
++--+-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+----------+
+|  | **1.4.2.2 <NumeroCivico>**        | numero civico riferito all'indirizzo (non indicare se già presente nel campo indirizzo)                                                                                                                                                     | 27                                                                                               |          |
++--+-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+----------+
+|  | **1.4.2.3 <CAP>**                 | Codice Avviamento Postale                                                                                                                                                                                                                   | 00186                                                                                            |          |
++--+-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+----------+
+|  | **1.4.2.4 <Comune>**              | comune relativo alla stabile organizzazione in Italia                                                                                                                                                                                       | ROMA                                                                                             |          |
++--+-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+----------+
+
+3 Riportare fedelmente tale codice, per il quale sono significativi e distinti i caratteri maiuscoli da quelli minuscoli (codice *case sensitive*)
+
++--------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+----------+
+|                                |                                                                                                                                                     | **ID e Nome Tag XML**                                                                                                                                                                                                              | **Descrizione funzionale**                                                           | **NOTE** |
++================================+=====================================================================================================================================================+====================================================================================================================================================================================================================================+======================================================================================+==========+
+|                                | **1.4.2.5 <Provincia>**                                                                                                                             | sigla della provincia di appartenenza del comune indicato nel campo                                                                                                                                                                | RM                                                                                   |          |
+|                                |                                                                                                                                                     |                                                                                                                                                                                                                                    |                                                                                      |          |
+|                                |                                                                                                                                                     | **1.4.2.4**                                                                                                                                                                                                                        |                                                                                      |          |
++--------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+----------+
+|                                | **1.4.2.6 <Nazione>**                                                                                                                               | codice della nazione espresso secondo lo standard ISO 3166-1 alpha-2 code                                                                                                                                                          | IT                                                                                   |          |
++--------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+----------+
+| **2 <FatturaElettronicaBody>** | il blocco ha molteplicità pari a 1 nel caso di fattura singola; nel caso di lotto di fatture, si ripete per ogni fattura componente il lotto stesso |                                                                                                                                                                                                                                    |                                                                                      |          |
++--------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+----------+
+|                                | **2.1 <DatiGenerali>**                                                                                                                              | blocco sempre obbligatorio contenente i dati generali del documento principale ed i dati dei documenti correlati                                                                                                                   |                                                                                      |          |
++--------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+----------+
+|                                | **2.1.1**                                                                                                                                           | blocco sempre obbligatorio contenente i dati generali del documento principale                                                                                                                                                     |                                                                                      |          |
+|                                |                                                                                                                                                     |                                                                                                                                                                                                                                    |                                                                                      |          |
+|                                | **<DatiGeneraliDocumento>**                                                                                                                         |                                                                                                                                                                                                                                    |                                                                                      |          |
++--------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+----------+
+|                                | **2.1.1.1**                                                                                                                                         | tipologia di documento                                                                                                                                                                                                             | valore ammesso: TD01                                                                 |          |
+|                                |                                                                                                                                                     |                                                                                                                                                                                                                                    |                                                                                      |          |
+|                                | **<TipoDocumento>**                                                                                                                                 |                                                                                                                                                                                                                                    |                                                                                      |          |
++--------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+----------+
+|                                | **2.1.1.2 <Divisa>**                                                                                                                                | codice (espresso secondo lo standard ISO 4217 alpha-3:2001) della valuta utilizzata per l'indicazione degli importi                                                                                                                | valore ammesso: EUR                                                                  |          |
++--------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+----------+
+|                                | **2.1.1.3 <Data>**                                                                                                                                  | data del documento (secondo il formato ISO 8601:2004)                                                                                                                                                                              | formato ISO 8601:2004, con la precisione seguente: **YYYY-MM-DD**                    |          |
++--------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+----------+
+|                                | **2.1.1.4 <Numero>**                                                                                                                                | numero progressivo del documento                                                                                                                                                                                                   | formato alfanumerico                                                                 |          |
++--------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+----------+
+|                                | **2.1.1.6 <DatiBollo>**                                                                                                                             | blocco dati relativi al bollo                                                                                                                                                                                                      |                                                                                      |          |
++--------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+----------+
+|                                | **2.1.1.6.1**                                                                                                                                       | bollo assolto ai sensi del decreto MEF 17 giugno 2014 (art. 6)                                                                                                                                                                     | valore ammesso                                                                       |          |
+|                                |                                                                                                                                                     |                                                                                                                                                                                                                                    |                                                                                      |          |
+|                                | **<BolloVirtuale>**                                                                                                                                 |                                                                                                                                                                                                                                    | **[NO]**                                                                             |          |
++--------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+----------+
+|                                | **2.1.1.9**                                                                                                                                         | importo totale del documento al netto dell'eventuale sconto e comprensivo di imposta a debito del cessionario / committente                                                                                                        | formato numerico; i decimali vanno separati dall'intero con il carattere '.' (punto) |          |
+|                                |                                                                                                                                                     |                                                                                                                                                                                                                                    |                                                                                      |          |
+|                                | **<ImportoTotaleDocument o>**                                                                                                                       |                                                                                                                                                                                                                                    | valore ammesso: valore del campo                                                     |          |
+|                                |                                                                                                                                                     |                                                                                                                                                                                                                                    |                                                                                      |          |
+|                                |                                                                                                                                                     |                                                                                                                                                                                                                                    | 2.2.2.5 ImponibileImporto                                                            |          |
++--------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+----------+
+|                                | **2.2 <DatiBeniServizi>**                                                                                                                           | blocco sempre obbligatorio contenente natura, qualità e quantità dei beni / servizi formanti oggetto dell'operazione                                                                                                               |                                                                                      |          |
++--------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+----------+
+|                                | **2.2.1 <DettaglioLinee>**                                                                                                                          | blocco sempre obbligatorio contenente le linee di dettaglio del documento (i campi del blocco si ripetono per ogni riga di dettaglio)                                                                                              |                                                                                      |          |
++--------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+----------+
+|                                | **2.2.1.1 <NumeroLinea>**                                                                                                                           | numero della riga di dettaglio del documento                                                                                                                                                                                       | formato numerico                                                                     |          |
++--------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+----------+
+|                                | **2.2.1.3 <CodiceArticolo>**                                                                                                                        | eventuale codifica dell'articolo (la molteplicità N del blocco consente di gestire la presenza di più codifiche)                                                                                                                   |                                                                                      |          |
++--------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+----------+
+|                                | **2.2.1.3.1**                                                                                                                                       | indica la tipologia di codice articolo (TARIC, CPV, EAN, SSC, ...)                                                                                                                                                                 | valore ammesso: 18APP                                                                |          |
+|                                |                                                                                                                                                     |                                                                                                                                                                                                                                    |                                                                                      |          |
+|                                | **<CodiceTipo>**                                                                                                                                    |                                                                                                                                                                                                                                    |                                                                                      |          |
++--------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+----------+
+|                                | **2.2.1.3.2**                                                                                                                                       | indica il valore del codice articolo corrispondente alla tipologia riportata nel campo 2.2.1.3.1.                                                                                                                                  | Valore obbligatorio da indicare: codice identificativo buono4                        |          |
+|                                |                                                                                                                                                     |                                                                                                                                                                                                                                    |                                                                                      |          |
+|                                | **<CodiceValore>**                                                                                                                                  |                                                                                                                                                                                                                                    |                                                                                      |          |
++--------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+----------+
+|                                | **2.2.1.4 <Descrizione>**                                                                                                                           | natura e qualità dell'oggetto della cessione/prestazione; può fare anche riferimento ad un precedente documento emesso a titolo di 'anticipo/acconto' , nel qual caso il valore del campo **2.2.1.9** e **2.2.1.11** sarà negativo | valore ammesso: PAGAMENTO BUONO                                                      |          |
++--------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+----------+
+|                                | **2.2.1.9 <PrezzoUnitario>**                                                                                                                        | prezzo unitario del bene/servizio; nel caso di beni ceduti a titolo di sconto, premio o abbuono, l'importo indicato rappresenta il "valore normale"                                                                                | formato numerico; i decimali vanno separati dall'intero con il carattere '.'         |          |
+|                                |                                                                                                                                                     |                                                                                                                                                                                                                                    |                                                                                      |          |
+|                                |                                                                                                                                                     |                                                                                                                                                                                                                                    | (punto) – valore da indicare: importo                                                |          |
++--------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+----------+
+
+4 Riportare fedelmente tale codice, per il quale sono significativi e distinti i caratteri maiuscoli da quelli minuscoli (codice *case sensitive*)
+
++--+-----------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+----------+
+|  |                             | **ID e Nome Tag XML**                                                                                                                          | **Descrizione funzionale**                                                                                                               | **NOTE** |
++==+=============================+================================================================================================================================================+==========================================================================================================================================+==========+
+|  |                             |                                                                                                                                                | del buono                                                                                                                                |          |
++--+-----------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+----------+
+|  | **2.2.1.11 <PrezzoTotale>** | importo totale del bene/servizio (che tiene conto di eventuali sconti / maggiorazioni) IVA esclusa                                             | formato numerico; i decimali vanno separati dall'intero con il carattere '.' (punto) – valore da indicare: importo                       |          |
+|  |                             |                                                                                                                                                |                                                                                                                                          |          |
+|  |                             |                                                                                                                                                | del buono                                                                                                                                |          |
++--+-----------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+----------+
+|  | **2.2.1.12 <AliquotaIVA>**  | aliquota (%) IVA applicata al bene/servizio                                                                                                    | formato numerico; i decimali vanno separati dall'intero con il carattere '.' (punto) – valore da indicare 0.00                           |          |
++--+-----------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+----------+
+|  | **2.2.1.14 <Natura>**       | natura dell'operazione se non rientra tra quelle imponibili (il campo                                                                          | valore ammesso: N2                                                                                                                       |          |
+|  |                             |                                                                                                                                                |                                                                                                                                          |          |
+|  |                             | **2.2.1.12** deve essere valorizzato a zero)                                                                                                   |                                                                                                                                          |          |
++--+-----------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+----------+
+|  | **2.2.2 <DatiRiepilogo>**   | blocco sempre obbligatorio contenente i dati di riepilogo per ogni aliquota IVA o natura                                                       |                                                                                                                                          |          |
++--+-----------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+----------+
+|  | **2.2.2.1 <AliquotaIVA>**   | aliquota (%) IVA                                                                                                                               | formato numerico; i decimali vanno separati dall'intero con il carattere '.' (punto) – valore da indicare 0.00                           |          |
++--+-----------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+----------+
+|  | **2.2.2.2 <Natura>**        | natura delle operazioni qualora non rientrino tra quelle 'imponibili' o nei casi di inversione contabile                                       | valore ammesso: N2                                                                                                                       |          |
++--+-----------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+----------+
+|  | **2.2.2.5**                 | questo valore rappresenta:                                                                                                                     | formato numerico; i decimali vanno separati dall'intero con il carattere '.' (punto) – valore da indicare: somma degli importi dei buoni |          |
+|  |                             |                                                                                                                                                |                                                                                                                                          |          |
+|  | **<ImponibileImporto>**     | **base imponibile**, per le operazioni soggette ad IVA;                                                                                        |                                                                                                                                          |          |
+|  |                             |                                                                                                                                                |                                                                                                                                          |          |
+|  |                             | **importo**, per le operazioni che non rientrano tra quelle 'imponibili' (campo                                                                |                                                                                                                                          |          |
+|  |                             |                                                                                                                                                |                                                                                                                                          |          |
+|  |                             | **2.2.2.2** valorizzato)                                                                                                                       |                                                                                                                                          |          |
++--+-----------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+----------+
+|  | **2.2.2.6 <Imposta>**       | imposta risultante dall'applicazione dell'aliquota IVA all'imponibile                                                                          | formato numerico; i decimali vanno separati dall'intero con il carattere '.' (punto) – valore da indicare 0.00                           |          |
++--+-----------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+----------+
+|  | **2.2.2.8**                 | norma di riferimento (obbligatoria nei casi in cui il campo **2.2.2.2** è valorizzato)                                                         | valore ammesso: ART. 2 DPR 633/72                                                                                                        |          |
+|  |                             |                                                                                                                                                |                                                                                                                                          |          |
+|  | **<RiferimentoNormativo>**  |                                                                                                                                                |                                                                                                                                          |          |
++--+-----------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+----------+
+|  | **2.4 <DatiPagamento>**     | dati relativi al pagamento                                                                                                                     |                                                                                                                                          |          |
++--+-----------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+----------+
+|  | **2.4.1**                   | condizioni di pagamento                                                                                                                        | Valore ammesso:                                                                                                                          |          |
+|  |                             |                                                                                                                                                |                                                                                                                                          |          |
+|  | **<CondizioniPagamento>**   |                                                                                                                                                | [**TP02**]: pagamento completo                                                                                                           |          |
++--+-----------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+----------+
+|  | **2.4.2**                   | dati di dettaglio del pagamento                                                                                                                |                                                                                                                                          |          |
+|  |                             |                                                                                                                                                |                                                                                                                                          |          |
+|  | **<DettaglioPagamento>**    |                                                                                                                                                |                                                                                                                                          |          |
++--+-----------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+----------+
+|  | **2.4.2.2**                 | modalità di pagamento                                                                                                                          | Valore ammesso: [**MP05**]: bonifico                                                                                                     |          |
+|  |                             |                                                                                                                                                |                                                                                                                                          |          |
+|  | **<ModalitaPagamento>**     |                                                                                                                                                |                                                                                                                                          |          |
++--+-----------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+----------+
+|  | **2.4.2.6**                 | importo relativo al pagamento                                                                                                                  | formato numerico; i decimali vanno separati dall'intero con il carattere '.' (punto)                                                     |          |
+|  |                             |                                                                                                                                                |                                                                                                                                          |          |
+|  | **<ImportoPagamento>**      |                                                                                                                                                | valore da indicare: lo stesso valore del campo 2.1.1.9                                                                                   |          |
+|  |                             |                                                                                                                                                |                                                                                                                                          |          |
+|  |                             |                                                                                                                                                | ImportoTotaleDocumento                                                                                                                   |          |
++--+-----------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+----------+
+|  | **2.4.2.13 <IBAN>**         | International Bank Account Number (coordinata bancaria internazionale che consente di identificare, in maniera standard, il conto corrente del | Valore da indicare: IBAN del conto sul quale sarà effettuato il bonifico                                                                 |          |
+|  |                             |                                                                                                                                                |                                                                                                                                          |          |
+|  |                             | beneficiario )                                                                                                                                 |                                                                                                                                          |          |
++--+-----------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+----------+
 
 .. |image0| image:: media/image1.png
-.. |image1| image:: media/image2.jpeg
-.. |image2| image:: media/image3.jpeg
+   :width: 6.37509in
+   :height: 3.04792in
+.. |image1| image:: media/image2.png
+   :width: 6.26532in
+   :height: 0.24969in
+.. |image2| image:: media/image3.png
+   :width: 6.15254in
+   :height: 2.83771in
 .. |image3| image:: media/image4.png
-   :width: 3.23748in
-   :height: 0.49875in
+   :width: 6.72788in
+   :height: 2.66062in
 .. |image4| image:: media/image5.png
-   :width: 2.8175in
-   :height: 2.26625in
+   :width: 6.34206in
+   :height: 2.87083in
 .. |image5| image:: media/image6.png
-   :width: 2.52in
-   :height: 1.89in
+   :width: 6.31661in
+   :height: 2.03646in
 .. |image6| image:: media/image7.png
-   :width: 2.52877in
-   :height: 0.30625in
+   :width: 5.54583in
+   :height: 3.26653in
 .. |image7| image:: media/image8.png
-   :width: 2.85249in
-   :height: 1.2775in
+   :width: 6.4197in
+   :height: 4.80937in
 .. |image8| image:: media/image9.png
-   :width: 2.67741in
-   :height: 0.30625in
+   :width: 6.43932in
+   :height: 2.72708in
 .. |image9| image:: media/image10.png
-   :width: 3.08875in
-   :height: 1.855in
-.. |image10| image:: media/image11.png
-   :width: 2.61629in
-   :height: 0.30625in
+   :width: 6.36253in
+   :height: 4.29167in
+.. |image10| image:: media/image11.jpeg
+   :width: 6.40927in
+   :height: 3.08729in
 .. |image11| image:: media/image12.png
-   :width: 2.65994in
-   :height: 1.2775in
+   :width: 6.39227in
+   :height: 2.27604in
 .. |image12| image:: media/image13.png
-   :width: 2.76493in
-   :height: 0.30625in
-.. |image13| image:: media/image14.png
-   :width: 2.33625in
-   :height: 0.7in
-.. |image14| image:: media/image15.png
-   :width: 2.46753in
-   :height: 0.88375in
-.. |image15| image:: media/image16.png
-   :width: 1.08498in
-   :height: 0.30625in
-.. |image16| image:: media/image17.png
-   :width: 1.07624in
-   :height: 0.30625in
-.. |image17| image:: media/image18.png
-   :width: 1.27748in
-   :height: 0.30625in
-.. |image18| image:: media/image19.png
-   :width: 3.1327in
-   :height: 1.46125in
-.. |image19| image:: media/image20.png
-   :width: 1.45255in
-   :height: 0.30625in
-.. |image20| image:: media/image21.png
-   :width: 1.27748in
-   :height: 0.30625in
-.. |image21| image:: media/image22.png
-   :width: 0.68249in
-   :height: 0.30625in
-.. |image22| image:: media/image23.png
-   :width: 0.665in
-   :height: 0.30625in
-.. |image23| image:: media/image24.png
-   :width: 0.73499in
-   :height: 0.30625in
-.. |image24| image:: media/image25.png
-   :width: 2.3625in
-   :height: 0.88375in
-.. |image25| image:: media/image16.png
-   :width: 1.08498in
-   :height: 0.30625in
-.. |image26| image:: media/image17.png
-   :width: 1.07624in
-   :height: 0.30625in
-.. |image27| image:: media/image24.png
-   :width: 0.73499in
-   :height: 0.30625in
-.. |image28| image:: media/image26.png
-   :width: 2.30997in
-   :height: 0.30625in
-.. |image29| image:: media/image27.png
-   :width: 0.665in
-   :height: 0.30625in
+   :width: 5.15247in
+   :height: 1.42708in
