@@ -55,7 +55,7 @@ I fornitori di Identità SPID garantiscono i livelli di servizio come riportato 
 
 -  Infocert S.p.A. - Infocert ID (pagina 38) http://www.agid.gov.it/sites/default/files/manuale_operativo_spid.pdf
 
--  Poste Italiane S.p.A. - Poste ID (pagina 48) http://www.agid.gov.it/sites/default/files/manuale_operativo.pdf
+-  Poste Italiane S.p.A. - Poste ID (pagina 48) \ http://www.agid.gov.it/sites/default/files/manuale_operativo.pdf
 
 -  SIELTE S.p.A. - Sielte ID (pagina 27) http://www.sielteid.it/documents/ManualeOperativo.pdf
 

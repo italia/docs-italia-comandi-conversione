@@ -192,7 +192,7 @@ LINEE GUIDA PER ESERCENTI PAG. 9 DI 26
 
 Gli esercenti registrati al servizio “\ **18app**\ ” per la vendita online potranno validare nei propri sistemi i voucher di acquisto di beni da parte dei 18enni utilizzando uno specifico servizio web di cui si forniscono di seguito le specifiche di utilizzo.
 
-In merito agli endpoint, si precisa che al momento l’indirizzo referenziato nel wsdl (`http://bonus.mibact.it/VerificaVoucher <http://bonus.mibact.it/VerificaVoucher>`__) è provvisorio.
+**In merito agli endpoint, si precisa che al momento l’indirizzo referenziato nel wsdl (**\ `http://bonus.mibact.it/VerificaVoucher <http://bonus.mibact.it/VerificaVoucher>`__\ **) è provvisorio.**
 
 Il servizio web di **verifica del voucher** da parte degli esercenti rende disponibili 2 principali operazioni (“**Check**\ ” e “\ **Confirm**\ ”). La seguente descrizione delle operazioni è necessaria per valorizzare adeguatamente i campi di input. Pertanto le operazioni esposte dall’interfaccia wsdl possono essere descritte come segue:
 
@@ -469,23 +469,23 @@ header added by pandoc
 `VerificaVouc <#_bookmark0>`__ `her <#_bookmark0>`__
 ''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-`VerificaVoucherS <#_bookmark2>`__ `OAP <#_bookmark2>`__
+`VerificaVoucherS <#_bookmark2>`__\ ****\ `OAP <#_bookmark2>`__
 
-`VerificaVouc <#_bookmark3>`__ `her <#_bookmark3>`__
+`VerificaVouc <#_bookmark3>`__\ ****\ `her <#_bookmark3>`__
 
-`CheckRequest <#_bookmark6>`__ `Check <#_bookmark18>`__
+`CheckRequest <#_bookmark6>`__\ ****\ `Check <#_bookmark18>`__
 
-`CheckRespons <#_bookmark7>`__ `e <#_bookmark7>`__ `ConfirmReque <#_bookmark8>`__ `st <#_bookmark8>`__ `ConfirmRespo <#_bookmark9>`__ `nse <#_bookmark9>`__
+`CheckRespons <#_bookmark7>`__\ ****\ `e <#_bookmark7>`__\ ****\ `ConfirmReque <#_bookmark8>`__\ ****\ `st <#_bookmark8>`__\ ****\ `ConfirmRespo <#_bookmark9>`__\ ****\ `nse <#_bookmark9>`__
 
-`CheckRequestObj <#_bookmark10>`__ `CheckResponse <#_bookmark22>`__
+`CheckRequestObj <#_bookmark10>`__\ ****\ `CheckResponse <#_bookmark22>`__
 
-`CheckResponseO <#_bookmark12>`__ `bj <#_bookmark12>`__
+`CheckResponseO <#_bookmark12>`__\ ****\ `bj <#_bookmark12>`__
 
-`Confirm <#_bookmark28>`__ `ConfirmRequestO <#_bookmark14>`__ `bj <#_bookmark14>`__
+`Confirm <#_bookmark28>`__\ ****\ `ConfirmRequestO <#_bookmark14>`__\ ****\ `bj <#_bookmark14>`__
 
 `ConfirmResponse <#_bookmark32>`__
 
-`ConfirmResponse <#_bookmark16>`__ `Obj <#_bookmark16>`__
+`ConfirmResponse <#_bookmark16>`__\ ****\ `Obj <#_bookmark16>`__
 
 attributeFormDefault: elementFormDefault:
 
@@ -493,14 +493,14 @@ targetNamespace: http://bonus.mibact.it/VerificaVoucher/
 
 Elements Complex types
 
-`CheckRequestObj <#_bookmark10>`__ `Check <#_bookmark18>`__ `CheckResponseObj <#_bookmark12>`__ `CheckResponse <#_bookmark22>`__ `ConfirmRequestObj <#_bookmark14>`__ `Confirm <#_bookmark28>`__ `ConfirmResponseObj <#_bookmark16>`__ `ConfirmResponse <#_bookmark32>`__
+`CheckRequestObj <#_bookmark10>`__\ ****\ `Check <#_bookmark18>`__\ ****\ `CheckResponseObj <#_bookmark12>`__\ ****\ `CheckResponse <#_bookmark22>`__\ ****\ `ConfirmRequestObj <#_bookmark14>`__\ ****\ `Confirm <#_bookmark28>`__\ ****\ `ConfirmResponseObj <#_bookmark16>`__\ ****\ `ConfirmResponse <#_bookmark32>`__
 
 service **VerificaVoucher**
 
 +---------+--------------------------------------------------------------------------+
 | diagram | |image3|                                                                 |
 +=========+==========================================================================+
-| ports   | \ **VerificaVoucherSOAP**                                                |
+| ports   | **VerificaVoucherSOAP**                                                  |
 |         |                                                                          |
 |         | binding `tns:VerificaVoucherSOAP <#_bookmark2>`__                        |
 |         |                                                                          |
@@ -610,13 +610,13 @@ porttype **VerificaVoucher**
 +------------+-----------------------------------------------+
 | diagram    | |image5|                                      |
 +============+===============================================+
-| operations | \ **Check**                                   |
+| operations | **Check**                                     |
 |            |                                               |
 |            | input `tns:CheckRequest <#_bookmark6>`__      |
 |            |                                               |
 |            | output `tns:CheckResponse <#_bookmark7>`__    |
 |            |                                               |
-|            | \ **Confirm**                                 |
+|            | **Confirm**                                   |
 |            |                                               |
 |            | input `tns:ConfirmRequest <#_bookmark8>`__    |
 |            |                                               |
@@ -653,51 +653,51 @@ LINEE GUIDA PER ESERCENTI PAG. 18 DI 26
 
 message **CheckRequest**
 
-+---------+-----------------------------------------------------------------------------------+
-| parts   | **parameters**                                                                    |
-|         |                                                                                   |
-|         | element `tns:CheckRequestObj <#_bookmark10>`__                                    |
-+=========+===================================================================================+
-| used by | Operation `Check <#_bookmark4>`__ in PortType `VerificaVouche <#_bookmark3>`__\ r |
-+---------+-----------------------------------------------------------------------------------+
-| source  | <wsdl:message name="CheckRequest">                                                |
-|         |                                                                                   |
-|         | <wsdl:part name="parameters" element="tns:CheckRequestObj"/>                      |
-|         |                                                                                   |
-|         | </wsdl:message>                                                                   |
-+---------+-----------------------------------------------------------------------------------+
++---------+---------------------------------------------------------------------------------------+
+| parts   | **parameters**                                                                        |
+|         |                                                                                       |
+|         | element `tns:CheckRequestObj <#_bookmark10>`__                                        |
++=========+=======================================================================================+
+| used by | Operation `Check <#_bookmark4>`__ in PortType `VerificaVouche <#_bookmark3>`__\ **r** |
++---------+---------------------------------------------------------------------------------------+
+| source  | <wsdl:message name="CheckRequest">                                                    |
+|         |                                                                                       |
+|         | <wsdl:part name="parameters" element="tns:CheckRequestObj"/>                          |
+|         |                                                                                       |
+|         | </wsdl:message>                                                                       |
++---------+---------------------------------------------------------------------------------------+
 
 message **CheckResponse**
 
-+---------+-----------------------------------------------------------------------------------+
-| parts   | **parameters**                                                                    |
-|         |                                                                                   |
-|         | element `tns:CheckResponseObj <#_bookmark12>`__                                   |
-+=========+===================================================================================+
-| used by | Operation `Check <#_bookmark4>`__ in PortType `VerificaVouche <#_bookmark3>`__\ r |
-+---------+-----------------------------------------------------------------------------------+
-| source  | <wsdl:message name="CheckResponse">                                               |
-|         |                                                                                   |
-|         | <wsdl:part name="parameters" element="tns:CheckResponseObj"/>                     |
-|         |                                                                                   |
-|         | </wsdl:message>                                                                   |
-+---------+-----------------------------------------------------------------------------------+
++---------+---------------------------------------------------------------------------------------+
+| parts   | **parameters**                                                                        |
+|         |                                                                                       |
+|         | element `tns:CheckResponseObj <#_bookmark12>`__                                       |
++=========+=======================================================================================+
+| used by | Operation `Check <#_bookmark4>`__ in PortType `VerificaVouche <#_bookmark3>`__\ **r** |
++---------+---------------------------------------------------------------------------------------+
+| source  | <wsdl:message name="CheckResponse">                                                   |
+|         |                                                                                       |
+|         | <wsdl:part name="parameters" element="tns:CheckResponseObj"/>                         |
+|         |                                                                                       |
+|         | </wsdl:message>                                                                       |
++---------+---------------------------------------------------------------------------------------+
 
 message **ConfirmRequest**
 
-+---------+-------------------------------------------------------------------------------------+
-| parts   | **parameters**                                                                      |
-|         |                                                                                     |
-|         | element `tns:ConfirmRequestObj <#_bookmark14>`__                                    |
-+=========+=====================================================================================+
-| used by | Operation `Confirm <#_bookmark5>`__ in PortType `VerificaVouche <#_bookmark3>`__\ r |
-+---------+-------------------------------------------------------------------------------------+
-| source  | <wsdl:message name="ConfirmRequest">                                                |
-|         |                                                                                     |
-|         | <wsdl:part name="parameters" element="tns:ConfirmRequestObj"/>                      |
-|         |                                                                                     |
-|         | </wsdl:message>                                                                     |
-+---------+-------------------------------------------------------------------------------------+
++---------+-----------------------------------------------------------------------------------------+
+| parts   | **parameters**                                                                          |
+|         |                                                                                         |
+|         | element `tns:ConfirmRequestObj <#_bookmark14>`__                                        |
++=========+=========================================================================================+
+| used by | Operation `Confirm <#_bookmark5>`__ in PortType `VerificaVouche <#_bookmark3>`__\ **r** |
++---------+-----------------------------------------------------------------------------------------+
+| source  | <wsdl:message name="ConfirmRequest">                                                    |
+|         |                                                                                         |
+|         | <wsdl:part name="parameters" element="tns:ConfirmRequestObj"/>                          |
+|         |                                                                                         |
+|         | </wsdl:message>                                                                         |
++---------+-----------------------------------------------------------------------------------------+
 
 message **ConfirmResponse**
 
@@ -741,17 +741,17 @@ element **CheckRequestObj**
 
 element **CheckRequestObj/checkReq**
 
-+------------+-----------------------------------------------------------------------------------------------------------+
-| diagram    | |image7|                                                                                                  |
-+============+===========================================================================================================+
-| type       | `tns:Check <#_bookmark18>`__                                                                              |
-+------------+-----------------------------------------------------------------------------------------------------------+
-| properties | content complex                                                                                           |
-+------------+-----------------------------------------------------------------------------------------------------------+
-| children   | `tipoOperazione <#_bookmark19>`__ `codiceVoucher <#_bookmark20>`__ `partitaIvaEsercente <#_bookmark21>`__ |
-+------------+-----------------------------------------------------------------------------------------------------------+
-| source     | <xsd:element name="checkReq" type="tns:Check"/>                                                           |
-+------------+-----------------------------------------------------------------------------------------------------------+
++------------+-------------------------------------------------------------------------------------------------------------------------+
+| diagram    | |image7|                                                                                                                |
++============+=========================================================================================================================+
+| type       | `tns:Check <#_bookmark18>`__                                                                                            |
++------------+-------------------------------------------------------------------------------------------------------------------------+
+| properties | content complex                                                                                                         |
++------------+-------------------------------------------------------------------------------------------------------------------------+
+| children   | `tipoOperazione <#_bookmark19>`__\ ****\ `codiceVoucher <#_bookmark20>`__\ ****\ `partitaIvaEsercente <#_bookmark21>`__ |
++------------+-------------------------------------------------------------------------------------------------------------------------+
+| source     | <xsd:element name="checkReq" type="tns:Check"/>                                                                         |
++------------+-------------------------------------------------------------------------------------------------------------------------+
 
 element **CheckResponseObj**
 
@@ -787,17 +787,17 @@ LINEE GUIDA PER ESERCENTI PAG. 20 DI 26
 
 element **CheckResponseObj/checkResp**
 
-+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| diagram    | |image9|                                                                                                                                                                                      |
-+============+===============================================================================================================================================================================================+
-| type       | `tns:CheckResponse <#_bookmark22>`__                                                                                                                                                          |
-+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| properties | content complex                                                                                                                                                                               |
-+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| children   | `nominativoBeneficiario <#element-checkresponsenominativobeneficiario>`__ `partitaIvaEsercente <#_bookmark24>`__ `ambito <#_bookmark25>`__ `bene <#_bookmark26>`__ `importo <#_bookmark27>`__ |
-+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| source     | <xsd:element name="checkResp" type="tns:CheckResponse"/>                                                                                                                                      |
-+------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| diagram    | |image9|                                                                                                                                                                                                                  |
++============+===========================================================================================================================================================================================================================+
+| type       | `tns:CheckResponse <#_bookmark22>`__                                                                                                                                                                                      |
++------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| properties | content complex                                                                                                                                                                                                           |
++------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| children   | `nominativoBeneficiario <#element-checkresponsenominativobeneficiario>`__\ ****\ `partitaIvaEsercente <#_bookmark24>`__\ ****\ `ambito <#_bookmark25>`__\ ****\ `bene <#_bookmark26>`__\ ****\ `importo <#_bookmark27>`__ |
++------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| source     | <xsd:element name="checkResp" type="tns:CheckResponse"/>                                                                                                                                                                  |
++------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 element **ConfirmRequestObj**
 
@@ -831,17 +831,17 @@ LINEE GUIDA PER ESERCENTI PAG. 21 DI 26
 
 element **ConfirmRequestObj/checkReq**
 
-+------------+-----------------------------------------------------------------------------------------------+
-| diagram    | |image11|                                                                                     |
-+============+===============================================================================================+
-| type       | `tns:Confirm <#_bookmark28>`__                                                                |
-+------------+-----------------------------------------------------------------------------------------------+
-| properties | content complex                                                                               |
-+------------+-----------------------------------------------------------------------------------------------+
-| children   | `tipoOperazione <#_bookmark29>`__ `codiceVoucher <#_bookmark30>`__ `importo <#_bookmark31>`__ |
-+------------+-----------------------------------------------------------------------------------------------+
-| source     | <xsd:element name="checkReq" type="tns:Confirm"/>                                             |
-+------------+-----------------------------------------------------------------------------------------------+
++------------+-------------------------------------------------------------------------------------------------------------+
+| diagram    | |image11|                                                                                                   |
++============+=============================================================================================================+
+| type       | `tns:Confirm <#_bookmark28>`__                                                                              |
++------------+-------------------------------------------------------------------------------------------------------------+
+| properties | content complex                                                                                             |
++------------+-------------------------------------------------------------------------------------------------------------+
+| children   | `tipoOperazione <#_bookmark29>`__\ ****\ `codiceVoucher <#_bookmark30>`__\ ****\ `importo <#_bookmark31>`__ |
++------------+-------------------------------------------------------------------------------------------------------------+
+| source     | <xsd:element name="checkReq" type="tns:Confirm"/>                                                           |
++------------+-------------------------------------------------------------------------------------------------------------+
 
 element **ConfirmResponseObj**
 
@@ -891,29 +891,29 @@ LINEE GUIDA PER ESERCENTI PAG. 22 DI 26
 
 complexType **Check**
 
-+-----------+-----------------------------------------------------------------------------------------------------------+
-| diagram   | |image14|                                                                                                 |
-+===========+===========================================================================================================+
-| namespace | http://bonus.mibact.it/VerificaVoucher/                                                                   |
-+-----------+-----------------------------------------------------------------------------------------------------------+
-| children  | `tipoOperazione <#_bookmark19>`__ `codiceVoucher <#_bookmark20>`__ `partitaIvaEsercente <#_bookmark21>`__ |
-+-----------+-----------------------------------------------------------------------------------------------------------+
-| used by   | element `CheckRequestObj/checkReq <#_bookmark11>`__                                                       |
-+-----------+-----------------------------------------------------------------------------------------------------------+
-| source    | <xsd:complexType name="Check">                                                                            |
-|           |                                                                                                           |
-|           | <xsd:sequence>                                                                                            |
-|           |                                                                                                           |
-|           | <xsd:element name="tipoOperazione" type="xsd:string" minOccurs="1" maxOccurs="1"/>                        |
-|           |                                                                                                           |
-|           | <xsd:element name="codiceVoucher" type="xsd:string" minOccurs="1" maxOccurs="1"/>                         |
-|           |                                                                                                           |
-|           | <xsd:element name="partitaIvaEsercente" type="xsd:string" minOccurs="0" maxOccurs="1"/>                   |
-|           |                                                                                                           |
-|           | </xsd:sequence>                                                                                           |
-|           |                                                                                                           |
-|           | </xsd:complexType>                                                                                        |
-+-----------+-----------------------------------------------------------------------------------------------------------+
++-----------+-------------------------------------------------------------------------------------------------------------------------+
+| diagram   | |image14|                                                                                                               |
++===========+=========================================================================================================================+
+| namespace | http://bonus.mibact.it/VerificaVoucher/                                                                                 |
++-----------+-------------------------------------------------------------------------------------------------------------------------+
+| children  | `tipoOperazione <#_bookmark19>`__\ ****\ `codiceVoucher <#_bookmark20>`__\ ****\ `partitaIvaEsercente <#_bookmark21>`__ |
++-----------+-------------------------------------------------------------------------------------------------------------------------+
+| used by   | element `CheckRequestObj/checkReq <#_bookmark11>`__                                                                     |
++-----------+-------------------------------------------------------------------------------------------------------------------------+
+| source    | <xsd:complexType name="Check">                                                                                          |
+|           |                                                                                                                         |
+|           | <xsd:sequence>                                                                                                          |
+|           |                                                                                                                         |
+|           | <xsd:element name="tipoOperazione" type="xsd:string" minOccurs="1" maxOccurs="1"/>                                      |
+|           |                                                                                                                         |
+|           | <xsd:element name="codiceVoucher" type="xsd:string" minOccurs="1" maxOccurs="1"/>                                       |
+|           |                                                                                                                         |
+|           | <xsd:element name="partitaIvaEsercente" type="xsd:string" minOccurs="0" maxOccurs="1"/>                                 |
+|           |                                                                                                                         |
+|           | </xsd:sequence>                                                                                                         |
+|           |                                                                                                                         |
+|           | </xsd:complexType>                                                                                                      |
++-----------+-------------------------------------------------------------------------------------------------------------------------+
 
 element **Check/tipoOperazione**
 
@@ -961,33 +961,33 @@ element **Check/partitaIvaEsercente**
 
 complexType **CheckResponse**
 
-+-----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| diagram   | |image18|                                                                                                                                                                                     |
-+===========+===============================================================================================================================================================================================+
-| namespace | http://bonus.mibact.it/VerificaVoucher/                                                                                                                                                       |
-+-----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| children  | `nominativoBeneficiario <#element-checkresponsenominativobeneficiario>`__ `partitaIvaEsercente <#_bookmark24>`__ `ambito <#_bookmark25>`__ `bene <#_bookmark26>`__ `importo <#_bookmark27>`__ |
-+-----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| used by   | element `CheckResponseObj/checkResp <#_bookmark13>`__                                                                                                                                         |
-+-----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| source    | <xsd:complexType name="CheckResponse">                                                                                                                                                        |
-|           |                                                                                                                                                                                               |
-|           | <xsd:sequence>                                                                                                                                                                                |
-|           |                                                                                                                                                                                               |
-|           | <xsd:element name="nominativoBeneficiario" type="xsd:string" minOccurs="1" maxOccurs="1"/>                                                                                                    |
-|           |                                                                                                                                                                                               |
-|           | <xsd:element name="partitaIvaEsercente" type="xsd:string" minOccurs="1" maxOccurs="1"/>                                                                                                       |
-|           |                                                                                                                                                                                               |
-|           | <xsd:element name="ambito" type="xsd:string" minOccurs="1" maxOccurs="1"/>                                                                                                                    |
-|           |                                                                                                                                                                                               |
-|           | <xsd:element name="bene" type="xsd:string" minOccurs="1" maxOccurs="1"/>                                                                                                                      |
-|           |                                                                                                                                                                                               |
-|           | <xsd:element name="importo" type="xsd:double" minOccurs="1" maxOccurs="1"/>                                                                                                                   |
-|           |                                                                                                                                                                                               |
-|           | </xsd:sequence>                                                                                                                                                                               |
-|           |                                                                                                                                                                                               |
-|           | </xsd:complexType>                                                                                                                                                                            |
-+-----------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
++-----------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| diagram   | |image18|                                                                                                                                                                                                                 |
++===========+===========================================================================================================================================================================================================================+
+| namespace | http://bonus.mibact.it/VerificaVoucher/                                                                                                                                                                                   |
++-----------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| children  | `nominativoBeneficiario <#element-checkresponsenominativobeneficiario>`__\ ****\ `partitaIvaEsercente <#_bookmark24>`__\ ****\ `ambito <#_bookmark25>`__\ ****\ `bene <#_bookmark26>`__\ ****\ `importo <#_bookmark27>`__ |
++-----------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| used by   | element `CheckResponseObj/checkResp <#_bookmark13>`__                                                                                                                                                                     |
++-----------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| source    | <xsd:complexType name="CheckResponse">                                                                                                                                                                                    |
+|           |                                                                                                                                                                                                                           |
+|           | <xsd:sequence>                                                                                                                                                                                                            |
+|           |                                                                                                                                                                                                                           |
+|           | <xsd:element name="nominativoBeneficiario" type="xsd:string" minOccurs="1" maxOccurs="1"/>                                                                                                                                |
+|           |                                                                                                                                                                                                                           |
+|           | <xsd:element name="partitaIvaEsercente" type="xsd:string" minOccurs="1" maxOccurs="1"/>                                                                                                                                   |
+|           |                                                                                                                                                                                                                           |
+|           | <xsd:element name="ambito" type="xsd:string" minOccurs="1" maxOccurs="1"/>                                                                                                                                                |
+|           |                                                                                                                                                                                                                           |
+|           | <xsd:element name="bene" type="xsd:string" minOccurs="1" maxOccurs="1"/>                                                                                                                                                  |
+|           |                                                                                                                                                                                                                           |
+|           | <xsd:element name="importo" type="xsd:double" minOccurs="1" maxOccurs="1"/>                                                                                                                                               |
+|           |                                                                                                                                                                                                                           |
+|           | </xsd:sequence>                                                                                                                                                                                                           |
+|           |                                                                                                                                                                                                                           |
+|           | </xsd:complexType>                                                                                                                                                                                                        |
++-----------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 APPLICAZIONE 18APP ALLEGATO
 
@@ -1060,29 +1060,29 @@ element **CheckResponse/importo**
 
 complexType **Confirm**
 
-+-----------+-----------------------------------------------------------------------------------------------+
-| diagram   | |image24|                                                                                     |
-+===========+===============================================================================================+
-| namespace | http://bonus.mibact.it/VerificaVoucher/                                                       |
-+-----------+-----------------------------------------------------------------------------------------------+
-| children  | `tipoOperazione <#_bookmark29>`__ `codiceVoucher <#_bookmark30>`__ `importo <#_bookmark31>`__ |
-+-----------+-----------------------------------------------------------------------------------------------+
-| used by   | element `ConfirmRequestObj/checkReq <#_bookmark15>`__                                         |
-+-----------+-----------------------------------------------------------------------------------------------+
-| source    | <xsd:complexType name="Confirm">                                                              |
-|           |                                                                                               |
-|           | <xsd:sequence>                                                                                |
-|           |                                                                                               |
-|           | <xsd:element name="tipoOperazione" type="xsd:string" minOccurs="1" maxOccurs="1"/>            |
-|           |                                                                                               |
-|           | <xsd:element name="codiceVoucher" type="xsd:string" minOccurs="1" maxOccurs="1"/>             |
-|           |                                                                                               |
-|           | <xsd:element name="importo" type="xsd:double" minOccurs="1" maxOccurs="1"/>                   |
-|           |                                                                                               |
-|           | </xsd:sequence>                                                                               |
-|           |                                                                                               |
-|           | </xsd:complexType>                                                                            |
-+-----------+-----------------------------------------------------------------------------------------------+
++-----------+-------------------------------------------------------------------------------------------------------------+
+| diagram   | |image24|                                                                                                   |
++===========+=============================================================================================================+
+| namespace | http://bonus.mibact.it/VerificaVoucher/                                                                     |
++-----------+-------------------------------------------------------------------------------------------------------------+
+| children  | `tipoOperazione <#_bookmark29>`__\ ****\ `codiceVoucher <#_bookmark30>`__\ ****\ `importo <#_bookmark31>`__ |
++-----------+-------------------------------------------------------------------------------------------------------------+
+| used by   | element `ConfirmRequestObj/checkReq <#_bookmark15>`__                                                       |
++-----------+-------------------------------------------------------------------------------------------------------------+
+| source    | <xsd:complexType name="Confirm">                                                                            |
+|           |                                                                                                             |
+|           | <xsd:sequence>                                                                                              |
+|           |                                                                                                             |
+|           | <xsd:element name="tipoOperazione" type="xsd:string" minOccurs="1" maxOccurs="1"/>                          |
+|           |                                                                                                             |
+|           | <xsd:element name="codiceVoucher" type="xsd:string" minOccurs="1" maxOccurs="1"/>                           |
+|           |                                                                                                             |
+|           | <xsd:element name="importo" type="xsd:double" minOccurs="1" maxOccurs="1"/>                                 |
+|           |                                                                                                             |
+|           | </xsd:sequence>                                                                                             |
+|           |                                                                                                             |
+|           | </xsd:complexType>                                                                                          |
++-----------+-------------------------------------------------------------------------------------------------------------+
 
 element **Confirm/tipoOperazione**
 
