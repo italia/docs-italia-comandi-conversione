@@ -1,9 +1,6 @@
 Che cos’è Docs Italia
 =====================
 
-header added by pandoc
-======================
-
 Che cos’è
 ---------
 
@@ -41,9 +38,6 @@ Docs Italia si ispira a cinque principi, funzionali a costruire un linguaggio co
 
 5. il quinto è che i documenti vengono fruiti sempre più spesso su Internet, e in particolare su smartphone: la semplicità di lettura fa la differenza.
 
-header added by pandoc
-----------------------
-
 Nuove funzionalità
 ~~~~~~~~~~~~~~~~~~
 
@@ -69,9 +63,6 @@ La `roadmap di Docs Italia <https://trello.com/b/jQUgRzRe/docs-italiasviluppo>`_
 
 Architettura dell’informazione
 ------------------------------
-
-header added by pandoc
-----------------------
 
 Pagina publisher
 ~~~~~~~~~~~~~~~~
@@ -163,9 +154,6 @@ Puoi utilizzare il kit come riferimento per le procedure descritte qui di seguit
 Come partecipare
 ================
 
-header added by pandoc
-======================
-
 Prerequisiti
 ------------
 
@@ -176,9 +164,6 @@ Per pubblicare un documento, è necessario avere:
 1. Un **account utente su GitHub** (obbligatorio);
 
 2. Un’\ **organizzazione su GitHub** (facoltativa).
-
-header added by pandoc
-----------------------
 
 Account utente su GitHub
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -225,9 +210,6 @@ La pubblicazione di un documento su Docs Italia avviene secondo le seguenti fasi
 4. Caricamento e modifica dei file nel repository del documento.
 
 I primi due punti (autorizzazione e inizializzazione) sono richiesti soltanto al primo accesso a Docs Italia. Il caricamento e la modifica dei file contenuti nei repository di configurazione e di documento rientrano, invece, in un processo iterativo, che può essere svolto anche in maniera collaborativa.
-
-header added by pandoc
-----------------------
 
 Procedure di autorizzazione e di inizializzazione
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -318,9 +300,6 @@ Le attività di pubblicazione utilizzando GitHub e Docs Italia sono a carico del
 Scrivere un documento
 =====================
 
-header added by pandoc
-======================
-
 Il formato reStructuredText (RST)
 ---------------------------------
 
@@ -352,9 +331,6 @@ Tabella 1. Confronto fra testo RST e testo interpretato.
 
 Strumenti utili
 ---------------
-
-header added by pandoc
-----------------------
 
 Editor di testo
 ~~~~~~~~~~~~~~~
@@ -414,9 +390,6 @@ Migrazione su Docs Italia di documentazione esistente
 
 Nel caso in cui si abbiano già dei documenti di partenza (per esempio, in formato DOCX o PDF), questi devono essere convertiti in RST per poter essere pubblicati su Docs Italia. La conversione è in parte automatica ma necessita di una revisione manuale.
 
-header added by pandoc
-----------------------
-
 Conversione con pandoc
 ~~~~~~~~~~~~~~~~~~~~~~
 
@@ -469,9 +442,6 @@ Dopo aver scritto la documentazione in formato RST, è possibile avviare la fase
 
 In questo capitolo vengono forniti alcuni chiarimenti sul repository di configurazione, sul repository del documento e sul backend di Docs Italia.
 
-header added by pandoc
-======================
-
 Repository di configurazione
 ----------------------------
 
@@ -490,9 +460,6 @@ Puoi modificare i file nel repository di configurazione presente nello Starter k
 |                                                                                                                                                                       |
 | Lo `Starter kit <#starter-kit>`__ contiene un esempio di repository di configurazione. Consulta le istruzioni contenute nel kit per conoscere come modificare i file. |
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-
-header added by pandoc
-----------------------
 
 Contenuto del repository
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -697,9 +664,6 @@ Prima di pubblicare il documento su Docs Italia, l’utente deve:
 5. Modificare il file document_settings.yml.
 
 Consulta le sezioni seguenti per maggiori informazioni su come modificare questi file.
-
-header added by pandoc
-----------------------
 
 Struttura del repository
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -944,9 +908,6 @@ Docs Italia è completamente integrato con `Forum Italia <https://forum.italia.i
 
 Tramite le funzionalità di `Discourse <https://discourse.org/>`__, è possibile aggiungere dei commenti ai propri documenti. Ciascun commento inserito su Docs Italia è automaticamente visibile anche su uno specifico topic in Forum Italia. Viceversa, quando vengono inseriti dei commenti nel topic sul Forum, questi sono subito visibili anche nel documento su Docs Italia.
 
-header added by pandoc
-----------------------
-
 Aggiungere i commenti nel documento
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -1003,9 +964,6 @@ L’utente può accedere al backend di Docs Italia con il proprio account GitHub
 Il backend permette di modificare le impostazioni avanzate, come l’attivazione o meno di determinate versioni di un documento o l’aggiornamento manuale delle pagine. Da qui, l’utente potrà gestire tutti i documenti corrispondenti ai repository di una determinata organizzazione per i quali ha i permessi di scrittura.
 
 Dal backend sarà possibile accedere ad alcuni widget relativi al publisher, ai progetti o ai documenti. Per esempio, la lista dei progetti, la lista dei documenti e l’indice di un documento.
-
-header added by pandoc
-----------------------
 
 Nome del documento
 ~~~~~~~~~~~~~~~~~~
@@ -1069,16 +1027,10 @@ Per problemi con la creazione di documenti multilingue è possibile contattare g
 Gestione dei documenti
 ======================
 
-header added by pandoc
-======================
-
 Visibilità del documento
 ------------------------
 
 Dopo aver pubblicato il documento su Docs Italia, è utile eseguire le seguenti operazioni per aumentarne la visibilità.
-
-header added by pandoc
-----------------------
 
 Presentazione sul proprio sito web
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1121,9 +1073,6 @@ Operazioni di manutenzione
 
 Dopo la pubblicazione, sono necessarie alcune operazioni per **mantenere i documenti aggiornati**. Le modifiche possono essere necessarie a seguito di cambi nella legislazione, di segnalazioni degli utenti tramite issue su GitHub e Forum, o semplicemente per migliorare la documentazione stessa.
 
-header added by pandoc
-----------------------
-
 Modifiche alla documentazione
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -1148,9 +1097,6 @@ Questi strumenti permettono agli utenti di segnalare eventuali errori e possibil
 
 Appendice 1. Il versionamento
 =============================
-
-header added by pandoc
-======================
 
 Introduzione
 ------------
@@ -1234,9 +1180,6 @@ Appendice 2. Guida di stile
 
 Questa appendice fornisce alcune indicazioni sull’organizzazione dei contenuti e lo stile dei documenti su Docs Italia e integra le indicazioni fornite nelle `Linee guida di design per i servizi web della PA <https://design-italia.readthedocs.io>`__.
 
-header added by pandoc
-======================
-
 Organizzazione dei contenuti
 ----------------------------
 
@@ -1292,9 +1235,6 @@ Stile e linguaggio
 ------------------
 
 Relativamente allo stile da utilizzare, è possibile far riferimento alle `Linee Guida di Design <https://design-italia.readthedocs.io/it/stable/doc/content-design/linguaggio.html#>`__, applicando qualche ulteriore accorgimento dettagliato di seguito.
-
-header added by pandoc
-----------------------
 
 Caratteri speciali
 ~~~~~~~~~~~~~~~~~~
@@ -1395,9 +1335,6 @@ Per maggiori informazioni sull’ottimizzazione SEO, puoi consultare il `capitol
 Appendice 3. Procedure e convenzioni su GitHub
 ==============================================
 
-header added by pandoc
-======================
-
 Procedure di caricamento sul repository remoto
 ----------------------------------------------
 
@@ -1408,9 +1345,6 @@ Per caricare i file presenti in un repository locale in un repository remoto, so
 2. Upload da repository Git locale tramite i comandi *clone* e *push*.
 
 Il primo metodo è adatto per chi ha poca familiarità con gli strumenti di controllo versione, mentre il secondo consente maggiore flessibilità ed è adatta a utenti mediamente esperti.
-
-header added by pandoc
-----------------------
 
 Upload tramite interfaccia grafica
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -7,9 +7,6 @@
 Introduzione
 ============
 
-header added by pandoc
-======================
-
 Per ottenere il pagamento dei buoni validati, l’esercente deve provvedere a emettere corrispondenti fatture elettroniche nei confronti della pubblica amministrazione usando **la piattaforma di fatturazione elettronica della PA**, seguendo le istruzioni di seguito indicate.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -41,9 +38,6 @@ Dopo aver compilato la fattura è necessario firmare il file digitalmente prima 
 Si illustrano di seguito i passi necessari per compilare la fattura utilizzando il portale web `http://ivaservizi.agenziaentrate.gov.it/ <http://ivaservizi.agenziaentrate.gov.it/>`__
 
 **Passo 1**
-
-header added by pandoc
-----------------------
 
 I MIEI DATI
 ~~~~~~~~~~~
@@ -116,9 +110,6 @@ o Cap: 00153
 -  Codice Destinatario: QGGT71
 
 |image4|
-
-header added by pandoc
-======================
 
 header added by pandoc
 ----------------------
@@ -206,9 +197,6 @@ Passo 4
 =======
 
 header added by pandoc
-======================
-
-header added by pandoc
 ----------------------
 
 VERIFICA DATI
@@ -224,9 +212,6 @@ Quindi cliccare su >\ **Vai a Riepilogo**
 
 Passo 5
 =======
-
-header added by pandoc
-======================
 
 header added by pandoc
 ----------------------

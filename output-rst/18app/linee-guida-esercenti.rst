@@ -40,9 +40,6 @@ REGISTRAZIONE AL SERVIZIO
 -------------------------
 
 header added by pandoc
-----------------------
-
-header added by pandoc
 ~~~~~~~~~~~~~~~~~~~~~~
 
 “18app” può essere utilizzato solo dagli esercenti con credenziali di accesso ai Servizi Telematici dell’Agenzia delle Entrate e che hanno incaricato dei soggetti ad operare per proprio conto. Gli esercenti si devono, quindi, obbligatoriamente registrare alla web app per poter vendere i propri prodotti.
@@ -62,9 +59,6 @@ LINEE GUIDA PER ESERCENTI
 
 VENDITA
 -------
-
-header added by pandoc
-----------------------
 
 header added by pandoc
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -100,9 +94,6 @@ LINEE GUIDA PER ESERCENTI
 
 CONTROLLO E RISCOSSIONE DEI BUONI D’ACQUISTO
 --------------------------------------------
-
-header added by pandoc
-----------------------
 
 header added by pandoc
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -157,9 +148,6 @@ FATTURAZIONE
 ------------
 
 header added by pandoc
-----------------------
-
-header added by pandoc
 ~~~~~~~~~~~~~~~~~~~~~~
 
 Agli esercenti viene riconosciuto un credito per ogni buono riscosso da dichiarare in sede di fatturazione elettronica.
@@ -172,9 +160,6 @@ La valorizzazione degli elementi del tracciato xml dovrà rispettare i requisiti
 APPLICAZIONE 18APP ALLEGATO
 
 LINEE GUIDA PER ESERCENTI PAG. 8 DI 26
-
-header added by pandoc
-^^^^^^^^^^^^^^^^^^^^^^
 
 ALLEGATO 1
 ''''''''''
@@ -195,9 +180,6 @@ Gli esercenti registrati al servizio “\ **18app**\ ” per la vendita online p
 **In merito agli endpoint, si precisa che al momento l’indirizzo referenziato nel wsdl (**\ `http://bonus.mibact.it/VerificaVoucher <http://bonus.mibact.it/VerificaVoucher>`__\ **) è provvisorio.**
 
 Il servizio web di **verifica del voucher** da parte degli esercenti rende disponibili 2 principali operazioni (“**Check**\ ” e “\ **Confirm**\ ”). La seguente descrizione delle operazioni è necessaria per valorizzare adeguatamente i campi di input. Pertanto le operazioni esposte dall’interfaccia wsdl possono essere descritte come segue:
-
-header added by pandoc
-======================
 
 header added by pandoc
 ----------------------
@@ -453,9 +435,6 @@ WSDL VerificaVoucher.wsdl
 targetnamespace: http://bonus.mibact.it/VerificaVoucher/
 
 services bindings porttypes messages types
-
-header added by pandoc
-======================
 
 header added by pandoc
 ----------------------

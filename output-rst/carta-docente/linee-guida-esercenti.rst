@@ -78,9 +78,6 @@ Gli esercenti o gli enti di formazione possono verificare e riscuotere i buoni d
 
 La verifica e validazione è differente in caso di vendita presso l’esercizio fisico oppure online.
 
-header added by pandoc
-----------------------
-
 Verifica in caso di vendita nell’esercizio fisico
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
