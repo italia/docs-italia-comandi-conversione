@@ -1,4 +1,4 @@
-k=( 18app carta-docente )
+k=$( ls input-docx )
 cd ~/docs2rst/
 filters=$(ls filters/ | while read f; do echo -n " --filter filters/${f}"; done)
 a="--wrap none ${filters}"
