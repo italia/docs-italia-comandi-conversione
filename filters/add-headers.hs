@@ -11,23 +11,30 @@ import GHC.Integer (absInteger)
 {-
 
 not sure about the precise constraint, my guess is that levels should
-move just one step up or one step down and not more than that. for
-example if the last header had lever 3, the next one cannot have a
-level less than 4
+move just up or one step down and not more than that. for example if
+the last header had lever 3, the next one cannot have a level less
+than 4
 
 -}
 
-amended :: Block -> [Block] -> [Block]
-amended h [] = []
-amended h (b@(Header _ _ _):bs) = additional h b <> amended b bs 
-amended h (b:bs) = b:amended h bs
 
-additional :: Block -> Block -> [Block]
-additional (Header expected _ _) h@(Header available _ _) = 
-  let padding n = Header n ("", [], []) [Str "header added by pandoc"]
-  in map padding [expected..available-1] <> [h]
+pandocHeader n = Header n ("", [], []) [Str "header added by pandoc"]
 
-amend = amended (Header 1 ("", [], []) [])
+between :: Int -> Int -> [Block]
+between last next = map pandocHeader [last+1..next-1]
+
+amended :: Maybe Int -> [Block] -> [Block]
+amended Nothing (b@(Header n _ _):bs) = start <> [b] <> amended (Just n) bs 
+  where start
+          | n == 1 = []
+          | otherwise = pandocHeader 1 : between 1 n
+amended (Just last) (b@(Header n _ _):bs) = between last n <>
+                                            [b] <>
+                                            amended (Just n) bs 
+amended m (b:bs) = b:amended m bs
+amended m [] = []
+
+amend = amended Nothing
 
 f :: Pandoc -> Pandoc
 f (Pandoc m b) = Pandoc m (amend b)

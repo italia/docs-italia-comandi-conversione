@@ -78,9 +78,6 @@ Gli esercenti o gli enti di formazione possono verificare e riscuotere i buoni d
 
 La verifica e validazione è differente in caso di vendita presso l’esercizio fisico oppure online.
 
-header added by pandoc
-----------------------
-
 Verifica in caso di vendita nell’esercizio fisico
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -347,23 +344,23 @@ targetnamespace: http://bonus.miur.it/VerificaVoucher/
 
 services bindings porttypes messages types
 
-`VerificaVouc <#_bookmark0>`__ `her <#_bookmark0>`__
+`VerificaVouc <#_bookmark0>`__\ ****\ `her <#_bookmark0>`__
 
-`VerificaVoucherS <#_bookmark1>`__ `OAP <#_bookmark1>`__
+`VerificaVoucherS <#_bookmark1>`__\ ****\ `OAP <#_bookmark1>`__
 
-`VerificaVouc <#_bookmark2>`__ `her <#_bookmark2>`__
+`VerificaVouc <#_bookmark2>`__\ ****\ `her <#_bookmark2>`__
 
-`CheckRequest <#_bookmark3>`__ `Check <#_bookmark11>`__
+`CheckRequest <#_bookmark3>`__\ ****\ `Check <#_bookmark11>`__
 
-`CheckRespons <#_bookmark4>`__ `e <#_bookmark4>`__ `ConfirmReque <#_bookmark5>`__ `st <#_bookmark5>`__ `ConfirmRespo <#_bookmark6>`__ `nse <#_bookmark6>`__
+`CheckRespons <#_bookmark4>`__\ ****\ `e <#_bookmark4>`__\ ****\ `ConfirmReque <#_bookmark5>`__\ ****\ `st <#_bookmark5>`__\ ****\ `ConfirmRespo <#_bookmark6>`__\ ****\ `nse <#_bookmark6>`__
 
 `CheckRequestObj <#_bookmark7>`__
 
 `CheckResponse <#_bookmark12>`__
 
-`CheckResponseO <#_bookmark8>`__ `bj <#_bookmark8>`__
+`CheckResponseO <#_bookmark8>`__\ ****\ `bj <#_bookmark8>`__
 
-`Confirm <#_bookmark13>`__ `ConfirmRequestO <#_bookmark9>`__ `bj <#_bookmark9>`__ `ConfirmResponse <#_bookmark14>`__ `ConfirmResponse <#_bookmark10>`__ `Obj <#_bookmark10>`__
+`Confirm <#_bookmark13>`__\ ****\ `ConfirmRequestO <#_bookmark9>`__\ ****\ `bj <#_bookmark9>`__\ ****\ `ConfirmResponse <#_bookmark14>`__\ ****\ `ConfirmResponse <#_bookmark10>`__\ ****\ `Obj <#_bookmark10>`__
 
 attributeFormDefault: elementFormDefault:
 
