@@ -1,0 +1,37 @@
+#!/usr/bin/env stack
+-- stack --resolver lts-10.3 script --package turtle --package text --package filepath
+{-# LANGUAGE OverloadedStrings #-}
+
+import Turtle hiding (splitDirectories, replaceExtensions)
+import Data.List (intersperse)
+import Data.Text (pack, unpack)
+import System.FilePath.Posix
+
+parser :: Parser (Text, Text)
+parser = (,) <$> optText "to" 't' "destination format"
+             <*> optText "docx" 'd' "DOCX file"
+
+filters = concat $ intersperse " " $ map addOpt files
+  where files = ["add-headers.hs",
+                 "merge-code.hs",
+                 "remove-divs.hs",
+                 "remove-quotes.hs"]
+        addOpt f = "--filter filters/" <> f
+
+opts = pack $ "--wrap none " <> filters
+
+makeCommand :: Text -> Text -> Text
+makeCommand dt ft = "./fork " <> dt <> " " <> opts <> " -o " <> outFile
+  where outFile = pack $ joinPath ["output-rst", dir, rep]
+        dir = (head . drop 1 . reverse . splitDirectories) d
+        rep = addExtension (takeBaseName d) f
+        d = unpack dt
+        f = unpack ft
+
+main = do
+  (format, docx) <- options "translate DOCX file" parser
+  print (makeCommand docx format)
+  shell (makeCommand docx format) empty
+
+
+
