@@ -1,6 +1,6 @@
 e=/tmp/syntax-check-errors
 : > $e
-lt output-rst/*/* | while read f
+lt output-rst/*/*.rst | while read f
 do
     rst2html "$f" > /dev/null 2>> $e
 done
