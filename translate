@@ -12,10 +12,12 @@ parser = (,) <$> optText "to" 't' "destination format"
              <*> optText "docx" 'd' "DOCX file"
 
 filters = concat $ intersperse " " $ map addOpt files
-  where files = ["add-headers.hs",
-                 "merge-code.hs",
-                 "remove-divs.hs",
-                 "remove-quotes.hs"]
+  where files = [ "add-headers.hs"
+                , "merge-code.hs"
+                , "remove-divs.hs"
+                , "remove-quotes.hs"
+                , "flatten.hs"
+                ]
         addOpt f = "--filter filters/" <> f
 
 opts = pack $ "--wrap none " <> filters
