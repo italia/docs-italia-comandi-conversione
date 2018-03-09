@@ -17,6 +17,7 @@ filters = concat $ intersperse " " $ map addOpt files
                 , "remove-divs.hs"
                 , "remove-quotes.hs"
                 , "flatten.hs"
+                , "loosen-lists.hs"
                 ]
         addOpt f = "--filter filters/" <> f
 
