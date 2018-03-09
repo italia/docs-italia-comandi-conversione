@@ -10,7 +10,7 @@ Introduzione
 Per ottenere il pagamento dei buoni validati, l’esercente deve provvedere a emettere corrispondenti fatture elettroniche nei confronti della pubblica amministrazione usando **la piattaforma di fatturazione elettronica della PA**, seguendo le istruzioni di seguito indicate.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-**Nota Bene**
+\ **Nota Bene**\ 
 
 -  .. rubric:: **Le fatture così emesse non hanno rilevanza ai fini fiscali** – essendo l’evento fiscale già regolato mediante il biglietto o la ricevuta fiscale emessa dall’esercente all’atto dell’accettazione del buono – ma servono unicamente a consentire il riscontro dei buoni validati prima di procedere al loro pagamento.
       :name: le-fatture-così-emesse-non-hanno-rilevanza-ai-fini-fiscali-essendo-levento-fiscale-già-regolato-mediante-il-biglietto-o-la-ricevuta-fiscale-emessa-dallesercente-allatto-dellaccettazione-del-buono-ma-servono-unicamente-a-consentire-il-riscontro-dei-buoni-validati-prima-di-procedere-al-loro-pagamento.
@@ -152,14 +152,14 @@ IV.  .. rubric:: Valorizzare i campi come descritto di seguito
 
      -  Codice Tipo: 18APP
 
-     -  Codice Valore: **Inserire esclusivamente il codice del buono (sensibile alla differenza tra caratteri maiuscoli e minuscoli) senza ulteriori valori (come riportato nella successiva immagine).**\ 1 **NB:**. Per prevenire il rischio di errore suggeriamo di inserire i codici dei buoni attraverso le funzionalità di copia/incolla direttamente dal portale.
+     -  Codice Valore: \ **Inserire esclusivamente il codice del buono (sensibile alla differenza tra caratteri maiuscoli e minuscoli) senza ulteriori valori (come riportato nella successiva immagine).**\ \ 1 **NB:**. Per prevenire il rischio di errore suggeriamo di inserire i codici dei buoni attraverso le funzionalità di copia/incolla direttamente dal portale.
 
 Quindi cliccare su Salva
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 |image7|
 
-**È possibile inserire in fattura più di un buono cliccando di nuovo su <Aggiungi> nel Campo Beni e Servizi**
+\ **È possibile inserire in fattura più di un buono cliccando di nuovo su <Aggiungi> nel Campo Beni e Servizi**\ 
 
 1 Campo obbligatorio al fine di ottenere il rimborso per la fattura. Attenzione: alcuni software potrebbero riportare campi nominati diversamente.
 
