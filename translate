@@ -23,13 +23,15 @@ filters = concat $ intersperse " " $ map addOpt files
 
 opts = pack $ "--wrap none " <> filters
 
+
 makeCommand :: Text -> Text -> Text
-makeCommand dt ft = "./fork " <> dt <> " " <> opts <> " -o " <> outFile
+makeCommand dt ft = "./fork " <> (x dt) <> " " <> opts <> " -o " <> (x outFile)
   where outFile = pack $ joinPath ["output-" <> f, dir, rep]
         dir = (head . drop 1 . reverse . splitDirectories) d
         rep = addExtension (takeBaseName d) f
         d = unpack dt
         f = unpack ft
+        x f = "\"" <> f <> "\""
 
 main = do
   (format, docx) <- options "translate DOCX file" parser
