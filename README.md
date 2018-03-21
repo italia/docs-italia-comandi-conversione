@@ -4,17 +4,13 @@
 
 This repo collects small scripts to automate the translation using the
 italian fork of pandoc and a set of custom options and filters. It is
-intended to be cloned in a directory containing also
-[italia/pandoc-filters](https://github.com/italia/pandoc-filters), so
-for example if you keep your Github repos in a `repos/` directory you
-want to have:
+using a set of filters from
+[italia/pandoc-filters](https://github.com/italia/pandoc-filters)
+which is expected to be cloned in this repo's root directory, so you
+want to have the two repos nested like this:
 
-    repos/
-        pandoc-docs2rst/
+    pandoc-docs2rst/
         pandoc-filters/
-
-So that the commands in `pandoc-docs2rst` can find the filters where
-they expec them to be
 
 #### Sample documents
 

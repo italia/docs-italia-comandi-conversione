@@ -19,7 +19,7 @@ filters = concat $ intersperse " " $ map addOpt files
                 , "flatten.hs"
                 , "loosen-lists.hs"
                 ]
-        addOpt f = "--filter filters/" <> f
+        addOpt f = "--filter pandoc-filters/filters/" <> f
 
 opts = pack $ "--wrap none " <> filters
 
