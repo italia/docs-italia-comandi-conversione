@@ -1,5 +1,5 @@
 #!/usr/bin/env stack
--- stack --resolver lts-10.3 script --package turtle --package text --package filepath --package directory
+-- stack --resolver lts-10.10 script --package turtle --package text --package filepath --package directory
 {-# LANGUAGE OverloadedStrings #-}
 
 import Turtle hiding (splitDirectories, replaceExtensions, stdout, stderr, fork)
