@@ -74,7 +74,7 @@ main = do
   withCurrentDirectory (fileToFolder (unpack i)) (do
       shell (makeDocument i f) empty
       shell makeSphinx empty
-      shell "cp -r media index" empty -- for Sphinx
+      shell "test -e media && cp -r media index" empty -- for Sphinx
     )
 
 
