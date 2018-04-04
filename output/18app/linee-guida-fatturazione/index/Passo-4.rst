@@ -1,0 +1,22 @@
+Passo 4
+=======
+
+.. _header-added-by-pandoc-1:
+
+header added by pandoc
+----------------------
+
+VERIFICA DATI
+~~~~~~~~~~~~~
+
+**I. Nel campo Riepilogo Importi Aliquota inserire:**
+
+o Rif. Normativo: Art. 2 DPR 633/72
+
+|image11|
+
+Quindi cliccare su >\ **Vai a Riepilogo**
+
+.. |image11| image:: media/media/image12.png
+   :width: 6.39227in
+   :height: 2.27604in
