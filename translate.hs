@@ -14,7 +14,7 @@ parser = (,) <$> optText "to" 't' "destination format"
 
 offset = "../../../"
 
-filters = concat $ intersperse " " $ map addOpt files
+filters = concat $ intersperse " " $ map addFilter files
   where files = [ "add-headers.hs"
                 , "merge-code.hs"
                 , "remove-divs.hs"
@@ -22,7 +22,8 @@ filters = concat $ intersperse " " $ map addOpt files
                 , "flatten.hs"
                 , "loosen-lists.hs"
                 ]
-        addOpt f = "--filter " <> unpack offset <> "pandoc-filters/filters/" <> f
+
+addFilter f = "--filter " <> unpack offset <> "pandoc-filters/filters/" <> f
 
 opts = pack $ " --wrap none --extract-media media " <> filters
 
@@ -54,21 +55,26 @@ inToOut = addExtension "document"
 
 fork = offset <> "fork"
 
--- | build the pandoc command
-makeCommand :: Text -> Text -> Text
-makeCommand it ft = fork <> " " <> (x inFile) <> " " <> opts <> " -o " <> (x outFile)
+-- | translate applying most filters
+makeDocument :: Text -> Text -> Text
+makeDocument it ft = fork <> " " <> (x inFile) <> " " <> opts <> " -o " <> (x outFile)
   where outFile = pack $ inToOut f
         inFile = pack $ inputName i
         i = unpack it
         f = unpack ft
         x f = "\"" <> f <> "\""
 
+-- | translate again applying the `to-sphinx` filter
+makeSphinx = fork <> " document.rst -o index.rst " <> (pack $ addFilter "to-sphinx.hs")
+
 main = do
   (f, i) <- options "translate DOCX file" parser
   createDirectoryIfMissing True (fileToFolder (unpack i))
   copyFile (unpack i) (inToCopy (unpack i))
-  withCurrentDirectory (fileToFolder (unpack i)) (
-      shell (makeCommand i f) empty
+  withCurrentDirectory (fileToFolder (unpack i)) (do
+      shell (makeDocument i f) empty
+      shell makeSphinx empty
+      shell "cp -r media index" empty -- for Sphinx
     )
 
 
