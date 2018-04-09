@@ -26,7 +26,6 @@ CONSAP, quale soggetto responsabile del pagamento.
   :maxdepth: 2
   :caption: Indice dei contenuti
 
-  index/Oggetto-del-servizio.rst
   index/Registrazione-ed-utilizzo-del-servizio.rst
   index/Incasso-dei-buono-di-spesa.rst
   index/Vigilanza-e-sanzioni.rst

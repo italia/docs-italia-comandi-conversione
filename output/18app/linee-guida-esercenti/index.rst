@@ -232,7 +232,6 @@ LINEE GUIDA PER ESERCENTI PAG. 9 DI 26
   :maxdepth: 2
   :caption: Indice dei contenuti
 
-  index/header-added-by-pandoc.rst
   index/18app.rst
   index/Modalità-di-autenticazione.rst
   index/Codici-di-errore.rst

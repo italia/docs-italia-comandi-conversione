@@ -14,7 +14,6 @@ Maggiori informazioni sul sito spid.gov.it
   :maxdepth: 2
   :caption: Indice dei contenuti
 
-  index/Domande-frequenti-diciottenni--SISTEMA-PUBBLICO-D.rst
   index/Perché-devo-avere-delle-credenziali-SPID-per-poter.rst
   index/Quali-documenti-mi-servono-per-poter-richiedere-SP.rst
   index/A-chi-mi-devo-rivolgere-e-cosa-devo-fare-per-otten.rst
