@@ -74,6 +74,7 @@ main = do
   copyFile (unpack i) (inToCopy (unpack i))
   withCurrentDirectory (fileToFolder (unpack i)) (do
       shell (makeDocument i f) empty
+      -- print (makeDocument i f) -- for troubleshooting
       shell makeSphinx empty
       shell "test -e media && cp -r media index" empty -- for Sphinx
     )
