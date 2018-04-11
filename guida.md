@@ -10,3 +10,4 @@ Pandoc viene eseguito con le opzioni `--wrap none` in modo da evitare errori di 
 ### Filtri
 
 Le funzionalità dei vari filtri sono brevemente descritte [nel loro repository](https://github.com/italia/pandoc-filters/blob/master/filters/guida.md)
+

@@ -1,39 +1,75 @@
-# pandoc-docs2rst
 
-> establishing a workflow for converting documents to RST
+# Docs To RST
 
-This repo collects small scripts to automate the translation using the
-italian fork of pandoc and a set of custom options and filters. It is
-using a set of filters from
-[italia/pandoc-filters](https://github.com/italia/pandoc-filters)
-which is expected to be cloned in this repo's root directory, so you
-want to have the two repos nested like this:
+> See [README-en](README-en.md) for a description in English
+
+Questo repo è il tuo punto di partenza se vuoi convertire un documento
+`.docx` o `.odt` trasformandolo in un insieme di files `.rst` da
+caricare su ReadTheDocs o su Docs Italia.
+
+Gli script qui inclusi si basano principalmente su Pandoc, che viene
+invocato con un insieme di opzioni e filtri che ci sono sembrati utili
+in passato. Qualsiasi contributo o suggerimento è benvenuto e può
+essere proposto tramite le issues.
+
+#### È semplice
+
+Vogliamo che l'utilizzo di questi script sia il più semplice
+possibile. Dopo l'installazione si può tradurre un documento
+salvandolo in `input-docx/loose` ed eseguendo:
+
+    docs2rst $ ./translate.hs -i input-docx/loose/document.docx -t rst
+
+Se non si verificano errori troverai i files `.rst` nella cartella
+`output/loose/document`, se `document` era il nome del tuo documento
+
+### Installazione
+
+Per usare questo repo serve fondamentalmente una versione recente di
+Pandoc ed il comando `stack` per gestire le dipendenze Haskell, le
+istruzioni per averli sono linkate di seguito, in inglese:
+
+- [come installare stack](https://docs.haskellstack.org/en/stable/README/#how-to-install)
+- [come installare pandoc con stack](http://pandoc.org/installing.html#quick-stack-method)
+
+Installare pandoc con stack ti permetterà di usare la versione più
+recente di pandoc sulla tua macchina. Docs Italia contribuisce
+costantemente al miglioramento di pandoc e le modifiche più recenti
+sono disponibili solo installando in questo modo.
+
+Quando `stack` e `pandoc` saranno disponibili sul tuo sistema basterà:
+
+- clonare questo repo
+- clonare il repo coi filtri
+
+Clona così:
+
+   docs2rst $ git clone git@github.com:italia/pandoc-filters.git
+
+In modo che il secondo repo sia contenuto nel primo secondo la
+seguente struttura:
 
     pandoc-docs2rst/
         pandoc-filters/
 
-#### Sample documents
+- test finale opzionale
 
-Some sample documents are included here to test the translation, help
-finding regression errors, or to keep track of use cases that we want
-to improve
+Questo repo contiene anche dei documenti già convertiti. Se vuoi
+essere sicur* di usare la versione più recente di pandoc e che gli
+script di conversione funzionino come ci si aspetta, puoi eseguire
+`docs2rst $ . update-all.sh`. Il comando impiegherà un po' di tempo
+per convertire tutti i documenti di nuovo, non dovrebbe esserci nessun
+output e dopo l'esecuzione il comando `git status` non dovrebbe
+mostrare nessun cambiamento.
 
-#### Current syntax status
-
-The following command
-
-    $ . syntax-check.sh
-
-Will try to convert all RST documents to HTML, counting detected syntax errors
-
-##### Documents License
+### Documents License
 
 Sample documents are collected from the forum at docs.italia.it or
 from other public domain sources. Where not specified differently, the
 license is CC-BY 3.0 as written
 [here](https://developers.italia.it/en/note-legali/)
 
-##### Software License
+### Software License
 
 Copyright (c) the respective contributors, as shown by the AUTHORS file.
 

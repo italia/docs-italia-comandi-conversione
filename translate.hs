@@ -2,7 +2,7 @@
 -- stack --resolver lts-10.10 script --package turtle --package text --package filepath --package directory
 {-# LANGUAGE OverloadedStrings #-}
 
-import Turtle hiding (splitDirectories, replaceExtensions, stdout, stderr, fork)
+import Turtle hiding (splitDirectories, replaceExtensions, stdout, stderr)
 import Data.List (intersperse)
 import Data.Text (pack, unpack)
 import System.FilePath.Posix
@@ -53,11 +53,12 @@ inToCopy i = joinPath [fileToFolder i, inputName i]
 -- "document.newExt"
 inToOut = addExtension "document"
 
-fork = offset <> "fork"
+version = "pandoc"
+--version = offset <> "fork" -- in order to use a local fork
 
 -- | translate applying most filters
 makeDocument :: Text -> Text -> Text
-makeDocument it ft = fork <> " " <> (x inFile) <> " " <> opts <> " -o " <> (x outFile)
+makeDocument it ft = version <> " " <> (x inFile) <> " " <> opts <> " -o " <> (x outFile)
   where outFile = pack $ inToOut f
         inFile = pack $ inputName i
         i = unpack it
@@ -65,7 +66,7 @@ makeDocument it ft = fork <> " " <> (x inFile) <> " " <> opts <> " -o " <> (x ou
         x f = "\"" <> f <> "\""
 
 -- | translate again applying the `to-sphinx` filter
-makeSphinx = fork <> " document.rst -o index.rst " <> (pack $ addFilter "to-sphinx.hs")
+makeSphinx = version <> " document.rst -o index.rst " <> (pack $ addFilter "to-sphinx.hs")
 
 main = do
   (f, i) <- options "translate DOCX file" parser
