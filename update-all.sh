@@ -1,10 +1,9 @@
-k=$( ls input-docx )
+k=$( ls input )
 for s in ${k[@]}
 do
-    mkdir -p "output-rst/$s/"
-    ls input-docx/$s/* | while read f
+    ls input/$s/* | while read f
     do
-        ./convert "$f"
+        ./convert.hs "$f"
     done
 done
 

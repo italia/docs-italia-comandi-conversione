@@ -1,4 +1,4 @@
 #!/usr/bin/env stack
 -- stack --resolver lts-10.10 script --package turtle --package text --package filepath --package doctest
 import Test.DocTest
-main = doctest ["-isrc", "-XOverloadedStrings", "translate.hs"]
+main = doctest ["-isrc", "-XOverloadedStrings", "convert.hs"]
