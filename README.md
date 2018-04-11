@@ -18,10 +18,15 @@ Vogliamo che l'utilizzo di questi script sia il più semplice
 possibile. Dopo l'installazione si può tradurre un documento
 salvandolo in `input-docx/loose` ed eseguendo:
 
-    docs2rst $ ./convert -i input-docx/loose/document.docx -t rst
+    docs2rst $ ./convert input-docx/loose/document.docx
 
 Se non si verificano errori troverai i files `.rst` nella cartella
 `output/loose/document`, se `document` era il nome del tuo documento
+
+#### Conversione di intere cartelle
+
+Se si vuole convertire una cartella piena di documenti lo si può fare
+salvando la cartella in `input` ed eseguendo `$ . update all`
 
 ### Installazione
 

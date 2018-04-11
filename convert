@@ -8,9 +8,10 @@ import Data.Text (pack, unpack)
 import System.FilePath.Posix
 import System.Directory (createDirectoryIfMissing, withCurrentDirectory, copyFile)
 
-parser :: Parser (Text, Text)
-parser = (,) <$> optText "to" 't' "destination format"
-             <*> optText "input" 'i' "file to translate"
+parser :: Parser (Text)
+parser = argText "doc" "document to convert"
+        --   <*> optText "to" 't' "destination format"
+
 
 offset = "../../../"
 
@@ -57,24 +58,25 @@ version = "pandoc"
 --version = offset <> "fork" -- in order to use a local fork
 
 -- | translate applying most filters
-makeDocument :: Text -> Text -> Text
-makeDocument it ft = version <> " " <> (x inFile) <> " " <> opts <> " -o " <> (x outFile)
+makeDocument :: Text -> Text
+makeDocument it = version <> " " <> (x inFile) <> " " <> opts <> " -o " <> (x outFile)
   where outFile = pack $ inToOut f
         inFile = pack $ inputName i
         i = unpack it
         f = unpack ft
         x f = "\"" <> f <> "\""
+        ft = "rst"
 
 -- | translate again applying the `to-sphinx` filter
 makeSphinx = version <> " document.rst -o index.rst " <> (pack $ addFilter "to-sphinx.hs")
 
 main = do
-  (f, i) <- options "translate DOCX file" parser
-  createDirectoryIfMissing True (fileToFolder (unpack i))
-  copyFile (unpack i) (inToCopy (unpack i))
-  withCurrentDirectory (fileToFolder (unpack i)) (do
-      shell (makeDocument i f) empty
-      -- print (makeDocument i f) -- for troubleshooting
+  (d) <- options "translate DOCX file" parser
+  createDirectoryIfMissing True (fileToFolder (unpack d))
+  copyFile (unpack d) (inToCopy (unpack d))
+  withCurrentDirectory (fileToFolder (unpack d)) (do
+      shell (makeDocument d) empty
+      -- print (makeDocument d) -- for troubleshooting
       shell makeSphinx empty
       shell "test -e media && cp -r media index" empty -- for Sphinx
     )
