@@ -4,7 +4,7 @@ do
     mkdir -p "output-rst/$s/"
     ls input-docx/$s/* | while read f
     do
-        ./translate.hs -i "$f" -t rst
+        ./convert -i "$f" -t rst
     done
 done
 

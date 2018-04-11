@@ -18,7 +18,7 @@ Vogliamo che l'utilizzo di questi script sia il più semplice
 possibile. Dopo l'installazione si può tradurre un documento
 salvandolo in `input-docx/loose` ed eseguendo:
 
-    docs2rst $ ./translate.hs -i input-docx/loose/document.docx -t rst
+    docs2rst $ ./convert -i input-docx/loose/document.docx -t rst
 
 Se non si verificano errori troverai i files `.rst` nella cartella
 `output/loose/document`, se `document` era il nome del tuo documento
