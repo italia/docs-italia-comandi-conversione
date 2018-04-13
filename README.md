@@ -71,6 +71,10 @@ per convertire tutti i documenti di nuovo, non dovrebbe esserci nessun
 output e dopo l'esecuzione il comando `git status` non dovrebbe
 mostrare nessun cambiamento.
 
+Se riscontri delle differenze c`è qualcosa che non va,
+[qui](https://github.com/italia/pandoc-docs2rst/blob/master/in-caso-di-differenze.md)
+trovi alcuni suggerimenti su come risolvere il problema.
+
 ### Documents License
 
 Sample documents are collected from the forum at docs.italia.it or
