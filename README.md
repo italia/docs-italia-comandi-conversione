@@ -15,8 +15,8 @@ essere proposto tramite le issues.
 #### È semplice
 
 Vogliamo che l'utilizzo di questi script sia il più semplice
-possibile. Dopo l'installazione si può tradurre un documento
-salvandolo in `input/loose` ed eseguendo:
+possibile. [Dopo l'installazione](#installazione) si può tradurre un
+documento salvandolo in `input/loose` ed eseguendo:
 
     docs2rst $ ./convert.hs input/loose/document.docx
 
@@ -56,6 +56,10 @@ seguente struttura:
 
     pandoc-docs2rst/
         pandoc-filters/
+
+A questo punto puoi eseguire `./convert.hs`. La prima esecuzione sarà
+molto più lenta perchè installerà tutte le dipendenze. Le esecuzioni
+successive di `convert.hs` dovrebbero richiedere pochi secondi.
 
 - test finale opzionale
 
