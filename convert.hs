@@ -69,7 +69,7 @@ makeDocument it = version <> " " <> (x inFile) <> " " <> opts <> " -o " <> (x ou
         ft = "rst"
 
 -- | translate again applying the `to-sphinx` filter
-makeSphinx = version <> " document.rst -o index.rst " <> (pack $ addFilter "to-sphinx.hs")
+makeSphinx = version <> " document.rst --wrap none -o index.rst " <> (pack $ addFilter "to-sphinx.hs")
 
 main = do
   (d) <- options "translate DOCX file" parser
