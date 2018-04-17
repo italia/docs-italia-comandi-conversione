@@ -1,5 +1,13 @@
 #!/usr/bin/env stack
--- stack --resolver lts-10.10 script --package turtle --package text --package filepath --package directory --package pandoc --package aeson
+{- stack script
+--resolver lts-10.10
+--package turtle
+--package text
+--package filepath
+--package directory
+--package pandoc
+--package aeson
+-}
 -- pandoc and aeson are there for the filters
 {-# LANGUAGE OverloadedStrings #-}
 
