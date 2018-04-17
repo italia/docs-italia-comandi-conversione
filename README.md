@@ -23,6 +23,20 @@ documento salvandolo in `input/loose` ed eseguendo:
 Se non si verificano errori troverai i files `.rst` nella cartella
 `output/loose/document`, se `document` era il nome del tuo documento
 
+#### Documento convertito e files strutturati
+
+Trovi il documento convertito in un file chiamato `document.rst`. A
+partire da quello proviamo anche a strutturare automaticamente i
+contenuti in un formato adatto a Sphinx, producendo un file
+`index.rst` e altri files `.rst` collegati ad esso.
+
+Se i files strutturati in sezioni ti soddisfano puoi semplicemente
+ignorare o rimuovere `document.rst`. In caso contrario puoi partire da
+`document.rst` e strutturare manualmente i files per Sphinx.
+
+In ogni caso invitiamo a segnalare ogni errore di conversione o
+strutturazione tramite le issues
+
 #### Conversione di intere cartelle
 
 Se si vuole convertire una cartella piena di documenti lo si può fare
