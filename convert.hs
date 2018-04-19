@@ -15,14 +15,14 @@ import Turtle hiding (splitDirectories, replaceExtensions, stdout, stderr)
 import Data.List (intersperse)
 import Data.Text (pack, unpack)
 import System.FilePath.Posix
-import System.Directory (createDirectoryIfMissing, withCurrentDirectory, copyFile)
+import System.Directory
 
 parser :: Parser (Text)
 parser = argText "doc" "document to convert"
         --   <*> optText "to" 't' "destination format"
 
 
-offset = "../../../"
+offset = "../../../" :: String
 
 filters = concat $ intersperse " " $ map addFilter files
   where files = [ "add-headers.hs"
@@ -33,9 +33,12 @@ filters = concat $ intersperse " " $ map addFilter files
                 , "loosen-lists.hs"
                 ]
 
-addFilter f = "--filter " <> unpack offset <> "pandoc-filters/filters/" <> f
+addFilter f = "--filter " <> offset <> "pandoc-filters/filters/" <> f
 
-opts = pack $ " --wrap none --extract-media media " <> filters
+-- options to use every time we write an RST
+writeOpts = "--wrap none"
+
+opts = writeOpts <> " --extract-media media " <> filters
 
 
 -- | convert the input file to the output folder
@@ -67,27 +70,38 @@ version = "pandoc"
 --version = offset <> "fork" -- in order to use a local fork
 
 -- | translate applying most filters
-makeDocument :: Text -> Text
-makeDocument it = version <> " " <> (x inFile) <> " " <> opts <> " -o " <> (x outFile)
-  where outFile = pack $ inToOut f
-        inFile = pack $ inputName i
+makeDocument it = shell (pack command) empty
+  where command = version <> " " <> (x inFile) <> " " <> opts <> " -o " <> doc
+        inFile = inputName i
         i = unpack it
-        f = unpack ft
         x f = "\"" <> f <> "\""
-        ft = "rst"
 
--- | translate again applying the `to-sphinx` filter
-makeSphinx = version <> " document.rst --wrap none -o index.rst " <> (pack $ addFilter "to-sphinx.hs")
+linker = offset <> "xmLeges-Linker-1.13a.exe"
+doc = "document.rst" :: String
+doc2 = "document-2.rst" :: String
+
+linkNormattiva = do
+  t <- doesFileExist linker
+  when t (do
+    shell (pack command) empty
+    renameFile doc2 doc
+    )
+  where command = version <> " " <> doc <> " -t html | " <> linker <> " | pandoc -f html -o " <> doc2 <> " " <> writeOpts
+
+
+makeSphinx = do
+  shell (pack command) empty
+  shell "test -e media && cp -r media index" empty -- for Sphinx
+    where command = version <> " " <> doc <> " --wrap none -o index.rst " <> addFilter "to-sphinx.hs"
 
 main = do
   (d) <- options "translate DOCX file" parser
   createDirectoryIfMissing True (fileToFolder (unpack d))
   copyFile (unpack d) (inToCopy (unpack d))
   withCurrentDirectory (fileToFolder (unpack d)) (do
-      shell (makeDocument d) empty
-      -- print (makeDocument d) -- for troubleshooting
-      shell makeSphinx empty
-      shell "test -e media && cp -r media index" empty -- for Sphinx
+      makeDocument d
+      linkNormattiva
+      makeSphinx
     )
 
 
