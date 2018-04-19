@@ -12,6 +12,10 @@ invocato con un insieme di opzioni e filtri che ci sono sembrati utili
 in passato. Qualsiasi contributo o suggerimento è benvenuto e può
 essere proposto tramite le issues.
 
+Questi script richiedono un sistema operativo compatibile con Posix,
+il che include Linux e Mac. Usare questi script con un sistema Windows
+richiederà lavoro aggiuntivo
+
 #### È semplice
 
 Vogliamo che l'utilizzo di questi script sia il più semplice
@@ -75,7 +79,13 @@ A questo punto puoi eseguire `./convert.hs`. La prima esecuzione sarà
 molto più lenta perchè installerà tutte le dipendenze. Le esecuzioni
 successive di `convert.hs` dovrebbero richiedere pochi secondi.
 
-- test finale opzionale
+- collegamenti automatici alla normativa (opzionale)
+
+Questa funzionalità è disponibile solo per utenti Linux. Trovate i
+dettagli
+[qui](https://github.com/italia/pandoc-docs2rst/blob/master/link-normattiva.md).
+
+- test finale (opzionale)
 
 Questo repo contiene anche dei documenti già convertiti. Se vuoi
 essere sicur* di usare la versione più recente di pandoc e che gli
