@@ -30,13 +30,12 @@ filters = concat $ intersperse " " $ map addFilter files
                 , "remove-divs.hs"
                 , "remove-quotes.hs"
                 , "flatten.hs"
-                , "loosen-lists.hs"
                 ]
 
 addFilter f = "--filter " <> offset <> "pandoc-filters/filters/" <> f
 
 -- options to use every time we write an RST
-writeOpts = "--wrap none"
+writeOpts = "--wrap none " <> addFilter "loosen-lists.hs"
 
 opts = writeOpts <> " --extract-media media " <> filters
 
