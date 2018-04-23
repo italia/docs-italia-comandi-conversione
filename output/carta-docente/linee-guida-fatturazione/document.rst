@@ -751,4 +751,3 @@ La valorizzazione degli elementi del tracciato xml deve rispettare i requisiti f
 .. |image10| image:: media/media/image11.jpeg
 .. |image11| image:: media/media/image12.png
 .. |image12| image:: media/media/image13.png
-

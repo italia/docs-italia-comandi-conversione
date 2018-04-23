@@ -35,7 +35,7 @@ filters = concat $ intersperse " " $ map addFilter files
 addFilter f = "--filter " <> offset <> "pandoc-filters/filters/" <> f
 
 -- options to use every time we write an RST
-writeOpts = "--wrap none " <> addFilter "loosen-lists.hs"
+writeOpts = "--wrap none " <> addFilter "loosen-lists.hs" <> " --standalone"
 
 opts = writeOpts <> " --extract-media media " <> filters
 

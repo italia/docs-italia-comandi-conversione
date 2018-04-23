@@ -1022,4 +1022,3 @@ element **ConfirmResponse/esito**
 .. |image27| image:: media/media/image28.png
 .. |image28| image:: media/media/image29.png
 .. |image29| image:: media/media/image30.png
-

@@ -1,5 +1,8 @@
+Accessibilità delle immagini
+============================
+
 Test di conversione
-===================
+-------------------
 
 Questo è un paragrafo prima dell’immagine.
 
