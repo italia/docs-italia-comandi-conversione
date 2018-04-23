@@ -64,23 +64,23 @@ Ho perso le mie credenziali SPID, cosa devo fare per farmele rimandare?
 
 Non ti preoccupare, è sempre possibile recuperare le tue credenziali.
 
--  Se hai richiesto SPID a Aruba, segui la procedura di recupero qui: `http://guide.pec.it/spid/recupero-dati/procedure-di-recupero-dati-smarriti.aspx <http://guide.pec.it/spid/recupero-dati/procedure-di-recupero-dati-smarriti.aspx>`__
+-  Se hai richiesto SPID a Aruba, segui la procedura di recupero qui: http://guide.pec.it/spid/recupero-dati/procedure-di-recupero-dati-smarriti.aspx
 
 -  Se hai richiesto SPID a Infocert segui la procedura di recupero qui: `https://my.infocert.it/selfcare/#/recoveryPin <https://my.infocert.it/selfcare/%23/recoveryPin>`__
 
--  Se hai richiesto SPID a Poste Italiane segui la procedura di recupero qui: `https://posteid.poste.it/recuperocredenziali.shtml <https://posteid.poste.it/recuperocredenziali.shtml>`__
+-  Se hai richiesto SPID a Poste Italiane segui la procedura di recupero qui: https://posteid.poste.it/recuperocredenziali.shtml
 
--  Se hai richiesto SPID a Register segui la procedura di recupero qui: (username dimenticata) `https://spid.register.it/selfcare/recovery/username <https://spid.register.it/selfcare/recovery/username>`__
+-  Se hai richiesto SPID a Register segui la procedura di recupero qui: (username dimenticata) https://spid.register.it/selfcare/recovery/username
 
-(password dimenticata) `https://spid.register.it/selfcare/recovery/password <https://spid.register.it/selfcare/recovery/password>`__
+(password dimenticata) https://spid.register.it/selfcare/recovery/password
 
 -  Se hai richiesto SPID a Sielte segui la procedura di recupero qui:
 
-(username dimenticata) `https://myid.sieltecloud.it/profile/forgotUsername <https://myid.sieltecloud.it/profile/forgotUsername>`__ (password dimenticata) `https://myid.sieltecloud.it/profile/forgotPassword <https://myid.sieltecloud.it/profile/forgotPassword>`__
+(username dimenticata) https://myid.sieltecloud.it/profile/forgotUsername (password dimenticata) https://myid.sieltecloud.it/profile/forgotPassword
 
 -  Se hai richiesto SPID a Tim segui la procedura di recupero qui: (username dimenticata)
 
-`https://login.id.tim.it/iam/im/spidpub/ui7/index.jsp?task.tag=ForgottenUserid <https://login.id.tim.it/iam/im/spidpub/ui7/index.jsp?task.tag=ForgottenUserid>`__ (password dimenticata) `https://login.id.tim.it/iam/im/spidpub/ui7/index.jsp?task.tag=ForgottenPassword <https://login.id.tim.it/iam/im/spidpub/ui7/index.jsp?task.tag=ForgottenPassword>`__
+https://login.id.tim.it/iam/im/spidpub/ui7/index.jsp?task.tag=ForgottenUserid (password dimenticata) https://login.id.tim.it/iam/im/spidpub/ui7/index.jsp?task.tag=ForgottenPassword
 
 Cosa posso fare con SPID oltre ad accedere a “18app”?
 =====================================================
@@ -89,8 +89,7 @@ Puoi usare tue credenziali SPID anche per accedere ai servizi online del tuo com
 
 12. **Posso annullare la richiesta dell’identità ad un Identity Provider e sceglierne un altro?** Si, in ogni momento è possibile annullare la procedura di registrazione avviata con ciascun gestore d’identità senza alcun tipo di obbligo o conseguenza. Per avere indicazioni specifiche sulla procedura da seguire puoi contattare i singoli gestori di identità. In ogni caso, puoi richiedere la tua identità digitale a un altro operatore anche senza aspettare l’annullamento della registrazione precedente.
 
-13. .. rubric:: Esistono modalità di registrazione e ottenimento SPID per le persone con disabilità?
-       :name: esistono-modalità-di-registrazione-e-ottenimento-spid-per-le-persone-con-disabilità
+13. **Esistono modalità di registrazione e ottenimento SPID per le persone con disabilità?**
 
 Il processo di erogazione delle credenziali SPID per persone fisiche soggette a tutela o amministrazione di sostegno è previsto da Poste Italiane.
 
@@ -103,7 +102,7 @@ Se hai già cominciato la procedura di richiesta delle credenziali SPID e hai un
 
 Per domande generiche o assistenza sulle modalità di ottenimento di SPID puoi contattare il numero 06.82888.736, dal lunedì al venerdì dalle 9:30 alle 16 (il costo della telefonata è definita in base al piano tariffario applicato dal tuo gestore telefonico). Oppure puoi
 
-scrivere all’assistenza tramite email su `https://helpdesk.spid.gov.it/ <https://helpdesk.spid.gov.it/>`__, otterrai una risposta entro 48 ore.
+scrivere all’assistenza tramite email su https://helpdesk.spid.gov.it/, otterrai una risposta entro 48 ore.
 
 Quali sono le modalità di richiesta di spid per i ragazzi con disabilità accompagnati/assistiti da un amministratore di sostegno legalmente riconosciuto?
 =========================================================================================================================================================
@@ -265,8 +264,7 @@ b. **Accedi a 18app:** Effettua l’accesso a 18app immettendo le tue credenzial
 
 c. **Scegli se compiere l’acquisto presso un esercente fisico oppure online** e successivamente seleziona l’ambito ed il tipo di bene da acquistare.
 
-d. .. rubric:: Genera il buono del valore economico pari al bene da acquistare: inserisci, nel
-      :name: genera-il-buono-del-valore-economico-pari-al-bene-da-acquistare-inserisci-nel
+d. **Genera il buono del valore economico pari al bene da acquistare: inserisci, nel**
 
 riquadro, l’importo e seleziona la voce “CREA BUONO”. Se il buono è stato generato correttamente riceverai immediata comunicazione. Nota bene: se hai scelto di generare un buono per visitare Musei, Monumenti o Parchi non potrai annullare subito il buono, ma dovrai attendere qualche giorno.
 
@@ -290,8 +288,7 @@ I Musei, i Monumenti e i Parchi seguono un processo differente di validazione de
 
 4. **Posso compiere un acquisto utilizzando in parte il Bonus Cultura e in parte denaro?** Certo! Puoi effettuare i tuoi acquisti generando un buono per il valore che desideri utilizzare e aggiungere la parte rimanente in contanti. È possibile però che non tutti gli esercenti accettino il pagamento “misto” (buono+contanti o carta di credito). In quel caso dovrai attenerti alle regole interne (o proprie) dell’esercente.
 
-5. .. rubric:: Cosa succede se il mio ultimo acquisto supera i 500€?
-      :name: cosa-succede-se-il-mio-ultimo-acquisto-supera-i-500
+5. **Cosa succede se il mio ultimo acquisto supera i 500€?**
 
 Potrai comunque usufruire del valore residuo del tuo Bonus Cultura, in modo tale da esaurirlo completamente e aggiungere in contanti (o con altro metodo di pagamento accettato dall’esercente) la parte rimanente per effettuare l’acquisto.
 

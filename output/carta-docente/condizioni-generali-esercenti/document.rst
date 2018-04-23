@@ -1,7 +1,7 @@
 Oggetto del servizio
 ====================
 
-Il presente servizio è volto a consentire agli esercenti o agli enti di formazione, accreditati/qualificati ai sensi della Direttiva 170/2016, attraverso l'apposita applicazione web, di registrarsi al servizio ed offrire ai docenti la vendita dei beni o servizi previsti dall’art.1, comma 121 della legge 107/2015 (Buona Scuola). I docenti hanno 500 euro da spendere per il loro aggiornamento professionale. Potranno utilizzarli per acquistare, fra l’altro, libri, riviste, ingressi nei musei, biglietti per eventi culturali, teatro e cinema, per l’iscrizione a corsi di laurea o master universitari, per l’iscrizione a corsi per attività di aggiornamento, svolti da enti accreditati presso il Ministero dell'Istruzione, dell'Università e della Ricerca.
+Il presente servizio è volto a consentire agli esercenti o agli enti di formazione, accreditati/qualificati ai sensi della Direttiva 170/2016, attraverso l'apposita applicazione web, di registrarsi al servizio ed offrire ai docenti la vendita dei beni o servizi previsti dall’\ `art.1, comma 121 della legge 107/2015 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2015;107~art1-com121>`__ (Buona Scuola). I docenti hanno 500 euro da spendere per il loro aggiornamento professionale. Potranno utilizzarli per acquistare, fra l’altro, libri, riviste, ingressi nei musei, biglietti per eventi culturali, teatro e cinema, per l’iscrizione a corsi di laurea o master universitari, per l’iscrizione a corsi per attività di aggiornamento, svolti da enti accreditati presso il Ministero dell'Istruzione, dell'Università e della Ricerca.
 
 Gli esercenti o gli enti di formazione potranno validare i buoni di spesa generati dai docenti. Il controvalore dei buoni validati sarà liquidato dalla società Consap per conto del Ministero dell’Istruzione, dell’Università e della Ricerca .
 
@@ -23,23 +23,23 @@ Incasso dei buono di spesa
 
 L’esercente o l’ente di formazione prende atto che i buoni di spesa generati attraverso cartadeldocente.istruzione.it possono essere utilizzati esclusivamente per la vendita, al solo docente il cui nome è riportato sui buoni medesimi, dei seguenti beni e servizi:
 
-a) libri e testi, anche in formato digitale, pubblicazioni e riviste comunque utili all'aggiornamento professionale;
+a. libri e testi, anche in formato digitale, pubblicazioni e riviste comunque utili all'aggiornamento professionale;
 
-b) hardware e software;
+b. hardware e software;
 
-c) iscrizione a corsi per attività di aggiornamento e di qualificazione delle competenze professionali, svolti da enti accreditati presso il Ministero dell'istruzione, dell'università e della ricerca;
+c. iscrizione a corsi per attività di aggiornamento e di qualificazione delle competenze professionali, svolti da enti accreditati presso il Ministero dell'istruzione, dell'università e della ricerca;
 
-d) iscrizione a corsi di laurea, di laurea magistrale, specialistica o a ciclo unico, inerenti al profilo professionale, ovvero a corsi post lauream o a master universitari inerenti al profilo professionale;
+d. iscrizione a corsi di laurea, di laurea magistrale, specialistica o a ciclo unico, inerenti al profilo professionale, ovvero a corsi post lauream o a master universitari inerenti al profilo professionale;
 
-e) titoli di accesso per rappresentazioni teatrali e cinematografiche;
+e. titoli di accesso per rappresentazioni teatrali e cinematografiche;
 
-f) titoli per l’ingresso a musei, mostre ed eventi culturali e spettacoli dal vivo;
+f. titoli per l’ingresso a musei, mostre ed eventi culturali e spettacoli dal vivo;
 
-g) iniziative coerenti con le attività individuate nell'ambito del piano triennale dell'offerta formativa delle scuole e del Piano nazionale di formazione, di cui articolo 1, comma 124, della legge n. 107 del 2015(Buona Scuola).
+g. iniziative coerenti con le attività individuate nell'ambito del piano triennale dell'offerta formativa delle scuole e del Piano nazionale di formazione, di cui `articolo 1, comma 124, della legge n. 107 del 2015 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2015;107~art1-com124>`__\ (Buona Scuola).
 
 È , pertanto, vietato incassare i buoni di spesa generati attraverso il servizio da un soggetto diverso rispetto al titolare del buono il cui nome è riportato sullo stesso e/o a fronte della vendita di beni o servizi diversi rispetto a quelli di cui alle lettere da a) a g) che precedono.
 
-Gli acquisti non possono dunque, essere delegati ad altre persone e i buoni di spesa sono strettamente nominali. L’incasso dei buoni di spesa e la richiesta di liquidazione del relativo valore, previa fatturazione elettronica al Ministero dell’Istruzione, dell’Università e della Ricerca, dovrà avvenire in conformità alle istruzioni disponibili qui: `https://cartadeldocente.istruzione.it/static/Linee%20Guida%20Fatturazione.pdf <https://cartadeldocente.istruzione.it/static/Linee%20Guida%20Fatturazione.pdf>`__
+Gli acquisti non possono dunque, essere delegati ad altre persone e i buoni di spesa sono strettamente nominali. L’incasso dei buoni di spesa e la richiesta di liquidazione del relativo valore, previa fatturazione elettronica al Ministero dell’Istruzione, dell’Università e della Ricerca, dovrà avvenire in conformità alle istruzioni disponibili qui: https://cartadeldocente.istruzione.it/static/Linee%20Guida%20Fatturazione.pdf
 
 Vigilanza e sanzioni
 ====================
@@ -66,9 +66,9 @@ Privacy
 
 Il titolare del trattamento è il Ministero dell’Istruzione, dell’Università e della Ricerca.
 
-I dati personali dell’esercente saranno trattati esclusivamente per consentirgli di accedere ed utilizzare il servizio in conformità a quanto riportato nell’apposita informativa al seguente link: `https://cartadeldocente.istruzione.it/static/cartadeldocente_infoprivacy.pdf <https://cartadeldocente.istruzione.it/static/cartadeldocente_infoprivacy.pdf>`__
+I dati personali dell’esercente saranno trattati esclusivamente per consentirgli di accedere ed utilizzare il servizio in conformità a quanto riportato nell’apposita informativa al seguente link: https://cartadeldocente.istruzione.it/static/cartadeldocente_infoprivacy.pdf
 
 Disciplina applicabile
 ======================
 
-Per tutto quanto non espressamente previsto nelle presenti condizioni, sarà applicabile la disciplina prevista dall’art.1della Legge 107/2015 e dal DPCM del 28 novembre 2016 disponibile al seguente link: `http://www.gazzettaufficiale.it/eli/id/2016/12/1/16A08470/sg <http://www.gazzettaufficiale.it/eli/id/2016/12/1/16A08470/sg>`__
+Per tutto quanto non espressamente previsto nelle presenti condizioni, sarà applicabile la disciplina prevista dall’art.1della `Legge 107/2015 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2015;107>`__ e dal `DPCM del 28 novembre 2016 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.consiglio.ministri:decreto:2016-11-28>`__ disponibile al seguente link: http://www.gazzettaufficiale.it/eli/id/2016/12/1/16A08470/sg

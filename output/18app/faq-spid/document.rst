@@ -64,33 +64,32 @@ Ho perso le mie credenziali SPID, cosa devo fare per farmele rimandare?
 
 Non ti preoccupare, è sempre possibile recuperare le tue credenziali.
 
--  Se hai richiesto SPID a Aruba, segui la procedura di recupero qui: `http://guide.pec.it/spid/recupero-dati/procedure-di-recupero-dati-smarriti.aspx <http://guide.pec.it/spid/recupero-dati/procedure-di-recupero-dati-smarriti.aspx>`__
+-  Se hai richiesto SPID a Aruba, segui la procedura di recupero qui: http://guide.pec.it/spid/recupero-dati/procedure-di-recupero-dati-smarriti.aspx
 
 -  Se hai richiesto SPID a Infocert segui la procedura di recupero qui: `https://my.infocert.it/selfcare/#/recoveryPin <https://my.infocert.it/selfcare/%23/recoveryPin>`__
 
--  Se hai richiesto SPID a Poste Italiane segui la procedura di recupero qui: `https://posteid.poste.it/recuperocredenziali.shtml <https://posteid.poste.it/recuperocredenziali.shtml>`__
+-  Se hai richiesto SPID a Poste Italiane segui la procedura di recupero qui: https://posteid.poste.it/recuperocredenziali.shtml
 
 -  Se hai richiesto SPID a Register segui la procedura di recupero qui:
 
-(username dimenticata) `https://spid.register.it/selfcare/recovery/username <https://spid.register.it/selfcare/recovery/username>`__ (password dimenticata) `https://spid.register.it/selfcare/recovery/password <https://spid.register.it/selfcare/recovery/password>`__
+(username dimenticata) https://spid.register.it/selfcare/recovery/username (password dimenticata) https://spid.register.it/selfcare/recovery/password
 
 -  Se hai richiesto SPID a Sielte segui la procedura di recupero qui:
 
-(username dimenticata) `https://myid.sieltecloud.it/profile/forgotUsername <https://myid.sieltecloud.it/profile/forgotUsername>`__ (password dimenticata) `https://myid.sieltecloud.it/profile/forgotPassword <https://myid.sieltecloud.it/profile/forgotPassword>`__
+(username dimenticata) https://myid.sieltecloud.it/profile/forgotUsername (password dimenticata) https://myid.sieltecloud.it/profile/forgotPassword
 
 -  Se hai richiesto SPID a Tim segui la procedura di recupero qui: (username dimenticata)
 
-`https://login.id.tim.it/iam/im/spidpub/ui7/index.jsp?task.tag=ForgottenUserid <https://login.id.tim.it/iam/im/spidpub/ui7/index.jsp?task.tag=ForgottenUserid>`__ (password dimenticata) `https://login.id.tim.it/iam/im/spidpub/ui7/index.jsp?task.tag=ForgottenPassword <https://login.id.tim.it/iam/im/spidpub/ui7/index.jsp?task.tag=ForgottenPassword>`__
+https://login.id.tim.it/iam/im/spidpub/ui7/index.jsp?task.tag=ForgottenUserid (password dimenticata) https://login.id.tim.it/iam/im/spidpub/ui7/index.jsp?task.tag=ForgottenPassword
 
 Cosa posso fare con SPID oltre ad accedere a “18app”?
 =====================================================
 
 Puoi usare tue credenziali SPID anche per accedere ai servizi online del tuo comune, della tua regione o - per esempio - della tua università.
 
-12) **Posso annullare la richiesta dell’identità ad un Identity Provider e sceglierne un altro?** Si, in ogni momento è possibile annullare la procedura di registrazione avviata con ciascun gestore d’identità senza alcun tipo di obbligo o conseguenza. Per avere indicazioni specifiche sulla procedura da seguire puoi contattare i singoli gestori di identità. In ogni caso, puoi richiedere la tua identità digitale a un altro operatore anche senza aspettare l’annullamento della registrazione precedente.
+12. **Posso annullare la richiesta dell’identità ad un Identity Provider e sceglierne un altro?** Si, in ogni momento è possibile annullare la procedura di registrazione avviata con ciascun gestore d’identità senza alcun tipo di obbligo o conseguenza. Per avere indicazioni specifiche sulla procedura da seguire puoi contattare i singoli gestori di identità. In ogni caso, puoi richiedere la tua identità digitale a un altro operatore anche senza aspettare l’annullamento della registrazione precedente.
 
-13) .. rubric:: Esistono modalità di registrazione e ottenimento SPID per le persone con disabilità?
-       :name: esistono-modalità-di-registrazione-e-ottenimento-spid-per-le-persone-con-disabilità
+13. **Esistono modalità di registrazione e ottenimento SPID per le persone con disabilità?**
 
 Il processo di erogazione delle credenziali SPID per persone fisiche soggette a tutela o amministrazione di sostegno è previsto da Poste Italiane.
 
@@ -103,7 +102,7 @@ Se hai già cominciato la procedura di richiesta delle credenziali SPID e hai un
 
 Per domande generiche o assistenza sulle modalità di ottenimento di SPID puoi contattare il numero 06.82888.736, dal lunedì al venerdì dalle 9:30 alle 16 (il costo della telefonata è definita in base al piano tariffario applicato dal tuo gestore telefonico). Oppure puoi
 
-scrivere all’assistenza tramite email su `https://helpdesk.spid.gov.it/ <https://helpdesk.spid.gov.it/>`__, otterrai una risposta entro 48 ore.
+scrivere all’assistenza tramite email su https://helpdesk.spid.gov.it/, otterrai una risposta entro 48 ore.
 
 Quali sono le modalità di richiesta di spid per i ragazzi con disabilità accompagnati/assistiti da un amministratore di sostegno legalmente riconosciuto?
 =========================================================================================================================================================

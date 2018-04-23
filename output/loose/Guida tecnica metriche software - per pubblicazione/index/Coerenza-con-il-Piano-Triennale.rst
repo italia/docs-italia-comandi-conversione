@@ -1,14 +1,11 @@
 Coerenza con il Piano Triennale
 -------------------------------
 
-Nel seguito, per ogni capitolo del Piano Triennale, si evidenziano le
-indicazioni/raccomandazioni che:
+Nel seguito, per ogni capitolo del Piano Triennale, si evidenziano le indicazioni/raccomandazioni che:
 
--  possono essere favorite, nella loro implementazione, dall’uso di
-   metriche del software;
+-  possono essere favorite, nella loro implementazione, dall’uso di metriche del software;
 -  impattano sull’uso di metriche;
--  hanno determinato le scelte e le ipotesi di lavoro del Tavolo di
-   lavoro.
+-  hanno determinato le scelte e le ipotesi di lavoro del Tavolo di lavoro.
 
 Tabella 42: indicazioni del Piano Triennale e metriche
 

@@ -1,6 +1,3 @@
-Passo 5
-=======
-
 .. _header-added-by-pandoc-2:
 
 header added by pandoc
@@ -9,141 +6,232 @@ header added by pandoc
 DATI DI RIEPILOGO
 ~~~~~~~~~~~~~~~~~
 
-In questa sezione è possibile verificare le informazioni inserite e
-scaricare il file *XML* da firmare digitalmente e da trasmettere
-attraverso una delle modalità previste dal Sistema d’Interscambio.
+In questa sezione è possibile verificare le informazioni inserite e scaricare il file *XML* da firmare digitalmente e da trasmettere attraverso una delle modalità previste dal Sistema d’Interscambio.
 
-Si raccomanda di verificare la correttezza formale della fattura
-prodotta prima di firmarla digitalmente e di inviarla al sistema
-d’interscambio.
+Si raccomanda di verificare la correttezza formale della fattura prodotta prima di firmarla digitalmente e di inviarla al sistema d’interscambio.
 
-A tal fine, cliccando su “\ **Controlla”** è possibile accertare che la
-fattura non contenga errori.
+A tal fine, cliccando su “\ **Controlla”** è possibile accertare che la fattura non contenga errori.
 
 |image12|
 
 Trattamento delle fatture elettroniche inviate
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Consap provvede al riscontro delle fatture ricevute, alla loro verifica
-rispetto ai buoni validati e alla loro liquidazione.
+Consap provvede al riscontro delle fatture ricevute, alla loro verifica rispetto ai buoni validati e alla loro liquidazione.
 
-A seguito della verifica effettuata da Consap, l’esercente riceve dalla
-Piattaforma di Interscambio appositi messaggi di notifica dell’esito
-della verifica delle fatture inviate: se l’esito è negativo, la relativa
-notifica contiene anche le motivazioni del rigetto; in caso positivo, le
-fatture sono mandate al pagamento con bonifico sull’IBAN indicato dal
-beneficiario. La liquidazione avviene entro 30 giorni dalla presa in
-carico della fattura. A pagamento effettuato verrà inviata una mail
-automatica di notifica di avvenuto accredito. A tal proposito si ricorda
-di
+A seguito della verifica effettuata da Consap, l’esercente riceve dalla Piattaforma di Interscambio appositi messaggi di notifica dell’esito della verifica delle fatture inviate: se l’esito è negativo, la relativa notifica contiene anche le motivazioni del rigetto; in caso positivo, le fatture sono mandate al pagamento con bonifico sull’IBAN indicato dal beneficiario. La liquidazione avviene entro 30 giorni dalla presa in carico della fattura. A pagamento effettuato verrà inviata una mail automatica di notifica di avvenuto accredito. A tal proposito si ricorda di
 
-valorizzare la sezione “Contatti” all’interno della fattura elettronica,
-inserendo l’indirizzo e-mail.
+valorizzare la sezione “Contatti” all’interno della fattura elettronica, inserendo l’indirizzo e-mail.
 
-L’esercente ha inoltre la possibilità di verificare, sull’applicazione
-18APP, i buoni liquidati.
+L’esercente ha inoltre la possibilità di verificare, sull’applicazione 18APP, i buoni liquidati.
 
-Attraverso l’applicazione web raggiungibile dal sito
-`http://18app.consap.it <http://18app.consap.it/>`__ sarà possibile
-consultare lo stato di avanzamento delle fatture inviate così distinto:
+Attraverso l’applicazione web raggiungibile dal sito `http://18app.consap.it <http://18app.consap.it/>`__ sarà possibile consultare lo stato di avanzamento delle fatture inviate così distinto:
 
--  Accettate: fatture correttamente importate nel sistema, già liquidate
-   o prossime alla liquidazione.
+-  Accettate: fatture correttamente importate nel sistema, già liquidate o prossime alla liquidazione.
 -  In elaborazione: fatture in fase di controllo.
--  Rifiutate: fatture scartate a causa di uno o più errori bloccanti. In
-   questo caso sarà possibile consultare l’elenco degli errori
-   riscontrati. Tali fatture dovranno essere corrette e riemesse.
+-  Rifiutate: fatture scartate a causa di uno o più errori bloccanti. In questo caso sarà possibile consultare l’elenco degli errori riscontrati. Tali fatture dovranno essere corrette e riemesse.
 
 Assistenza
 ~~~~~~~~~~
 
-Per le problematiche amministrative connesse alla fatturazione, è
-disponibile un Contact Center dedicato agli esercenti, aperto dal lunedì
-al venerdì, dalle ore 9.00 alle ore 17.00 raggiungibile ai seguenti
-recapiti:
+Per le problematiche amministrative connesse alla fatturazione, è disponibile un Contact Center dedicato agli esercenti, aperto dal lunedì al venerdì, dalle ore 9.00 alle ore 17.00 raggiungibile ai seguenti recapiti:
 
 tel. 06/85.796.338
 
-email: `18app@consap.it <mailto:18app@consap.it>`__ (Utilizzabile
-esclusivamente da mail ordinaria. Per motivi tecnici non saranno
-riscontrati messaggi inviati da PEC.)
+email: 18app@consap.it (Utilizzabile esclusivamente da mail ordinaria. Per motivi tecnici non saranno riscontrati messaggi inviati da PEC.)
 
 Appendice 1 - Codici dei Regimi fiscali
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-+------+---------------------------------------------------------------+
-| **Co | **Descrizione**                                               |
-| dice |                                                               |
-| **   |                                                               |
-+======+===============================================================+
-| **RF | Ordinario                                                     |
-| 01** |                                                               |
-+------+---------------------------------------------------------------+
-| **RF | Contribuenti minimi (art.1, c.96-117, L. 244/07)              |
-| 02** |                                                               |
-+------+---------------------------------------------------------------+
-| **RF | Nuove iniziative produttive (art.13, L. 388/00)               |
-| 03** |                                                               |
-+------+---------------------------------------------------------------+
-| **RF | Agricoltura e attività connesse e pesca (artt.34 e 34-bis,    |
-| 04** | DPR 633/72)                                                   |
-+------+---------------------------------------------------------------+
-| **RF | Vendita sali e tabacchi (art.74, c.1, DPR. 633/72)            |
-| 05** |                                                               |
-+------+---------------------------------------------------------------+
-| **RF | Commercio fiammiferi (art.74, c.1, DPR 633/72)                |
-| 06** |                                                               |
-+------+---------------------------------------------------------------+
-| **RF | Editoria (art.74, c.1, DPR 633/72)                            |
-| 07** |                                                               |
-+------+---------------------------------------------------------------+
-| **RF | Gestione servizi telefonia pubblica (art.74, c.1, DPR 633/72) |
-| 08** |                                                               |
-+------+---------------------------------------------------------------+
-| **RF | Rivendita documenti di trasporto pubblico e di sosta (art.74, |
-| 09** | c.1, DPR 633/72)                                              |
-+------+---------------------------------------------------------------+
-| **RF | Intrattenimenti, giochi e altre attività di cui alla tariffa  |
-| 10** | allegata al DPR 640/72 (art.74, c.6, DPR 633/72)              |
-+------+---------------------------------------------------------------+
-| **RF | Agenzie viaggi e turismo (art.74-ter, DPR 633/72)             |
-| 11** |                                                               |
-+------+---------------------------------------------------------------+
-| **RF | Agriturismo (art.5, c.2, L. 413/91)                           |
-| 12** |                                                               |
-+------+---------------------------------------------------------------+
-| **RF | Vendite a domicilio (art.25-bis, c.6, DPR 600/73)             |
-| 13** |                                                               |
-+------+---------------------------------------------------------------+
-| **RF | Rivendita beni usati, oggetti d’arte, d’antiquariato o da     |
-| 14** | collezione (art.36, DL 41/95)                                 |
-+------+---------------------------------------------------------------+
-| **RF | Agenzie di vendite all’asta di oggetti d’arte, antiquariato o |
-| 15** | da collezione (art.40-bis, DL 41/95)                          |
-+------+---------------------------------------------------------------+
-| **RF | IVA per cassa P.A. (art.6, c.5, DPR 633/72)                   |
-| 16** |                                                               |
-+------+---------------------------------------------------------------+
-| **RF | IVA per cassa (art. 32-bis, DL 83/2012)                       |
-| 17** |                                                               |
-+------+---------------------------------------------------------------+
-| **RF | Altro                                                         |
-| 18** |                                                               |
-+------+---------------------------------------------------------------+
-| **RF | Regime forfettario (art.1, c.54-89, L. 190/2014)              |
-| 19** |                                                               |
-+------+---------------------------------------------------------------+
++---+--------------------------------------------------------------------+
+| * | **Descrizione**                                                    |
+| * |                                                                    |
+| C |                                                                    |
+| o |                                                                    |
+| d |                                                                    |
+| i |                                                                    |
+| c |                                                                    |
+| e |                                                                    |
+| * |                                                                    |
+| * |                                                                    |
++===+====================================================================+
+| * | Ordinario                                                          |
+| * |                                                                    |
+| R |                                                                    |
+| F |                                                                    |
+| 0 |                                                                    |
+| 1 |                                                                    |
+| * |                                                                    |
+| * |                                                                    |
++---+--------------------------------------------------------------------+
+| * | Contribuenti minimi (art.1, c.96-117, `L.                          |
+| * | 244/07 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge: |
+| R | 2007;244>`__)                                                      |
+| F |                                                                    |
+| 0 |                                                                    |
+| 2 |                                                                    |
+| * |                                                                    |
+| * |                                                                    |
++---+--------------------------------------------------------------------+
+| * | Nuove iniziative produttive (`art.13, L.                           |
+| * | 388/00 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge: |
+| R | 2000;388~art13>`__)                                                |
+| F |                                                                    |
+| 0 |                                                                    |
+| 3 |                                                                    |
+| * |                                                                    |
+| * |                                                                    |
++---+--------------------------------------------------------------------+
+| * | Agricoltura e attività connesse e pesca (artt.34 e 34-bis, `DPR    |
+| * | 633/72 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.r |
+| R | epubblica:decreto:1972;633>`__)                                    |
+| F |                                                                    |
+| 0 |                                                                    |
+| 4 |                                                                    |
+| * |                                                                    |
+| * |                                                                    |
++---+--------------------------------------------------------------------+
+| * | Vendita sali e tabacchi (`art.74, c.1, DPR.                        |
+| * | 633/72 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.r |
+| R | epubblica:decreto:1972;633~art74-com1>`__)                         |
+| F |                                                                    |
+| 0 |                                                                    |
+| 5 |                                                                    |
+| * |                                                                    |
+| * |                                                                    |
++---+--------------------------------------------------------------------+
+| * | Commercio fiammiferi (`art.74, c.1, DPR                            |
+| * | 633/72 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.r |
+| R | epubblica:decreto:1972;633~art74-com1>`__)                         |
+| F |                                                                    |
+| 0 |                                                                    |
+| 6 |                                                                    |
+| * |                                                                    |
+| * |                                                                    |
++---+--------------------------------------------------------------------+
+| * | Editoria (`art.74, c.1, DPR                                        |
+| * | 633/72 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.r |
+| R | epubblica:decreto:1972;633~art74-com1>`__)                         |
+| F |                                                                    |
+| 0 |                                                                    |
+| 7 |                                                                    |
+| * |                                                                    |
+| * |                                                                    |
++---+--------------------------------------------------------------------+
+| * | Gestione servizi telefonia pubblica (`art.74, c.1, DPR             |
+| * | 633/72 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.r |
+| R | epubblica:decreto:1972;633~art74-com1>`__)                         |
+| F |                                                                    |
+| 0 |                                                                    |
+| 8 |                                                                    |
+| * |                                                                    |
+| * |                                                                    |
++---+--------------------------------------------------------------------+
+| * | Rivendita documenti di trasporto pubblico e di sosta (`art.74,     |
+| * | c.1, DPR                                                           |
+| R | 633/72 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.r |
+| F | epubblica:decreto:1972;633~art74-com1>`__)                         |
+| 0 |                                                                    |
+| 9 |                                                                    |
+| * |                                                                    |
+| * |                                                                    |
++---+--------------------------------------------------------------------+
+| * | Intrattenimenti, giochi e altre attività di cui alla tariffa       |
+| * | allegata al `DPR                                                   |
+| R | 640/72 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.r |
+| F | epubblica:decreto:1972;640>`__                                     |
+| 1 | (`art.74, c.6, DPR                                                 |
+| 0 | 633/72 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.r |
+| * | epubblica:decreto:1972;633~art74-com6>`__)                         |
+| * |                                                                    |
++---+--------------------------------------------------------------------+
+| * | Agenzie viaggi e turismo (`art.74-ter, DPR                         |
+| * | 633/72 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.r |
+| R | epubblica:decreto:1972;633~art74ter>`__)                           |
+| F |                                                                    |
+| 1 |                                                                    |
+| 1 |                                                                    |
+| * |                                                                    |
+| * |                                                                    |
++---+--------------------------------------------------------------------+
+| * | Agriturismo (`art.5, c.2, L.                                       |
+| * | 413/91 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge: |
+| R | 1991;413~art5-com2>`__)                                            |
+| F |                                                                    |
+| 1 |                                                                    |
+| 2 |                                                                    |
+| * |                                                                    |
+| * |                                                                    |
++---+--------------------------------------------------------------------+
+| * | Vendite a domicilio (`art.25-bis, c.6, DPR                         |
+| * | 600/73 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.r |
+| R | epubblica:decreto:1973;600~art25bis-com6>`__)                      |
+| F |                                                                    |
+| 1 |                                                                    |
+| 3 |                                                                    |
+| * |                                                                    |
+| * |                                                                    |
++---+--------------------------------------------------------------------+
+| * | Rivendita beni usati, oggetti d’arte, d’antiquariato o da          |
+| * | collezione (art.36, DL 41/95)                                      |
+| R |                                                                    |
+| F |                                                                    |
+| 1 |                                                                    |
+| 4 |                                                                    |
+| * |                                                                    |
+| * |                                                                    |
++---+--------------------------------------------------------------------+
+| * | Agenzie di vendite all’asta di oggetti d’arte, antiquariato o da   |
+| * | collezione (art.40-bis, DL 41/95)                                  |
+| R |                                                                    |
+| F |                                                                    |
+| 1 |                                                                    |
+| 5 |                                                                    |
+| * |                                                                    |
+| * |                                                                    |
++---+--------------------------------------------------------------------+
+| * | IVA per cassa P.A. (`art.6, c.5, DPR                               |
+| * | 633/72 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.r |
+| R | epubblica:decreto:1972;633~art6-com5>`__)                          |
+| F |                                                                    |
+| 1 |                                                                    |
+| 6 |                                                                    |
+| * |                                                                    |
+| * |                                                                    |
++---+--------------------------------------------------------------------+
+| * | IVA per cassa (art. 32-bis, DL 83/2012)                            |
+| * |                                                                    |
+| R |                                                                    |
+| F |                                                                    |
+| 1 |                                                                    |
+| 7 |                                                                    |
+| * |                                                                    |
+| * |                                                                    |
++---+--------------------------------------------------------------------+
+| * | Altro                                                              |
+| * |                                                                    |
+| R |                                                                    |
+| F |                                                                    |
+| 1 |                                                                    |
+| 8 |                                                                    |
+| * |                                                                    |
+| * |                                                                    |
++---+--------------------------------------------------------------------+
+| * | Regime forfettario (art.1, c.54-89, `L.                            |
+| * | 190/2014 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legg |
+| R | e:2014;190>`__)                                                    |
+| F |                                                                    |
+| 1 |                                                                    |
+| 9 |                                                                    |
+| * |                                                                    |
+| * |                                                                    |
++---+--------------------------------------------------------------------+
 
-**Appendice 2 - Esempio di fattura elettronica (formato .xml) compilata
-per l’iniziativa 18APP**
+**Appendice 2 - Esempio di fattura elettronica (formato .xml) compilata per l’iniziativa 18APP**
 
-Si riporta nel seguito un esempio di fattura elettronica in formato XML
-conforme allo standard di fatturazione elettronica e alle linee guida
-specifiche fornite per l’iniziativa 18APP.
+Si riporta nel seguito un esempio di fattura elettronica in formato XML conforme allo standard di fatturazione elettronica e alle linee guida specifiche fornite per l’iniziativa 18APP.
 
-<ns2:FatturaElettronica versione='FPA12'
-`xmlns:ns2='http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2'> <http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2%27>`__
+<ns2:FatturaElettronica versione='FPA12' `xmlns:ns2='http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2'> <http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2%27>`__
 
 <FatturaElettronicaHeader>
 
@@ -209,7 +297,7 @@ specifiche fornite per l’iniziativa 18APP.
 
 <Telefono>123456789</Telefono>
 
-<Email>esempio@esempio.it</Email> <mailto:esempio@esempio.it>_\_
+<Email>esempio@esempio.it\ </Email> <`mailto:esempio@esempio.it <mailto:esempio@esempio.it>`__>_\_
 
 </Contatti>
 
@@ -239,8 +327,7 @@ specifiche fornite per l’iniziativa 18APP.
 
 <Anagrafica>
 
-<Denominazione>Ministero dei Beni e delle Attività Culturali e del
-Turismo</Denominazione>
+<Denominazione>Ministero dei Beni e delle Attività Culturali e del Turismo</Denominazione>
 
 </Anagrafica>
 
@@ -290,7 +377,7 @@ Turismo</Denominazione>
 
 <Imposta>0.00</Imposta>
 
-<RiferimentoNormativo>Art. 2 DPR 633/72</RiferimentoNormativo>
+<RiferimentoNormativo>`Art. 2 DPR 633/72 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1972;633~art2>`__\ </RiferimentoNormativo>
 
 </DatiRiepilogo>
 
@@ -339,10 +426,7 @@ Turismo</Denominazione>
 Appendice 3: regole tecniche di dettaglio per la compilazione della fattura
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-La valorizzazione degli elementi del tracciato xml deve rispettare i
-requisiti formali e di obbligatorietà previsti dalle regole di
-fatturazione elettronica e deve tener conto delle ulteriori indicazioni
-riportate nella tabella seguente:
+La valorizzazione degli elementi del tracciato xml deve rispettare i requisiti formali e di obbligatorietà previsti dalle regole di fatturazione elettronica e deve tener conto delle ulteriori indicazioni riportate nella tabella seguente:
 
 +----+---+-----------------------------------------------------+----+---+
 |    |   | **ID e Nome Tag XML**                               | ** | * |
@@ -827,11 +911,11 @@ riportate nella tabella seguente:
 |    | * | numero del Codice EORI (Economic Operator           | fo |   |
 |    | * | Registration and                                    | rm |   |
 |    | 1 |                                                     | at |   |
-|    | . | Identification) in base al Regolamento (CE) n. 312  | o  |   |
-|    | 2 | del 16 aprile 2009. In vigore dal 1 luglio 2009     | al |   |
-|    | . |                                                     | fa |   |
-|    | 1 |                                                     | nu |   |
-|    | . |                                                     | me |   |
+|    | . | Identification) in base al `Regolamento (CE) n. 312 | o  |   |
+|    | 2 | del 16 aprile                                       | al |   |
+|    | . | 2009 <http://www.normattiva.it/uri-res/N2Ls?urn:nir | fa |   |
+|    | 1 | :comunita.europee:regolamento:2009-04-16;312>`__.   | nu |   |
+|    | . | In vigore dal 1 luglio 2009                         | me |   |
 |    | 3 |                                                     | ri |   |
 |    | . |                                                     | co |   |
 |    | 5 |                                                     |    |   |
@@ -1069,9 +1153,7 @@ riportate nella tabella seguente:
 |   | *   |                                           |                 |   |
 +---+-----+-------------------------------------------+-----------------+---+
 
-3 Riportare fedelmente tale codice, per il quale sono significativi e
-distinti i caratteri maiuscoli da quelli minuscoli (codice *case
-sensitive*)
+3 Riportare fedelmente tale codice, per il quale sono significativi e distinti i caratteri maiuscoli da quelli minuscoli (codice *case sensitive*)
 
 +---+--------------------+-------------------------------+-----------+---+
 |   |                    | **ID e Nome Tag XML**         | **Descriz | * |
@@ -1252,9 +1334,7 @@ sensitive*)
 |   |                    |                               | importo   |   |
 +---+--------------------+-------------------------------+-----------+---+
 
-4 Riportare fedelmente tale codice, per il quale sono significativi e
-distinti i caratteri maiuscoli da quelli minuscoli (codice *case
-sensitive*)
+4 Riportare fedelmente tale codice, per il quale sono significativi e distinti i caratteri maiuscoli da quelli minuscoli (codice *case sensitive*)
 
 +---+-----+------------------------------+-----------------------------+---+
 |   |     | **ID e Nome Tag XML**        | **Descrizione funzionale**  | * |
@@ -1347,11 +1427,11 @@ sensitive*)
 |   | ta> |                              |                             |   |
 |   | **  |                              |                             |   |
 +---+-----+------------------------------+-----------------------------+---+
-|   | **2 | norma di riferimento         | valore ammesso: ART. 2 DPR  |   |
-|   | .2. | (obbligatoria nei casi in    | 633/72                      |   |
-|   | 2.8 | cui il campo **2.2.2.2** è   |                             |   |
-|   | **  | valorizzato)                 |                             |   |
-|   |     |                              |                             |   |
+|   | **2 | norma di riferimento         | valore ammesso: `ART. 2 DPR |   |
+|   | .2. | (obbligatoria nei casi in    | 633/72 <http://www.normatti |   |
+|   | 2.8 | cui il campo **2.2.2.2** è   | va.it/uri-res/N2Ls?urn:nir: |   |
+|   | **  | valorizzato)                 | presidente.repubblica:decre |   |
+|   |     |                              | to:1972;633~art2>`__        |   |
 |   | **< |                              |                             |   |
 |   | Rif |                              |                             |   |
 |   | eri |                              |                             |   |
@@ -1437,5 +1517,3 @@ sensitive*)
 +---+-----+------------------------------+-----------------------------+---+
 
 .. |image12| image:: media/media/image13.png
-   :width: 5.15247in
-   :height: 1.42708in

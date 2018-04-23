@@ -1,185 +1,135 @@
 Il tavolo di lavoro
 -------------------
 
-Il presente documento è stato redatto dal Tavolo di lavoro dell’Agenzia
-per l’Italia Digitale, istituito con determinazione del Direttore
-generale n. 165 del 9 giugno 2017. Al Tavolo di lavoro, coordinato da
-Francesco Grasso, hanno partecipato per l’AgID Francesca Villani,
-Gaetano Bruno, Salvatore Del Pizzo, Giovanni Di Iasio.
+Il presente documento è stato redatto dal Tavolo di lavoro dell’Agenzia per l’Italia Digitale, istituito con determinazione del Direttore generale n. 165 del 9 giugno 2017. Al Tavolo di lavoro, coordinato da Francesco Grasso, hanno partecipato per l’AgID Francesca Villani, Gaetano Bruno, Salvatore Del Pizzo, Giovanni Di Iasio.
 
-Hanno fatto parte del Tavolo di lavoro anche i seguenti esperti esterni,
-nominati nella medesima determinazione n. 165 e selezionati tra quanti
-avevano presentato la propria candidatura a seguito dell’avviso
-pubblicato dall’Agenzia sul proprio sito web il 4 maggio 2017:
+Hanno fatto parte del Tavolo di lavoro anche i seguenti esperti esterni, nominati nella medesima determinazione n. 165 e selezionati tra quanti avevano presentato la propria candidatura a seguito dell’avviso pubblicato dall’Agenzia sul proprio sito web il 4 maggio 2017:
 
 -  Ivana Beni, Almaviva;
--  Giulio Borsari, Ministero della Giustizia [1]_;
+-  Giulio Borsari, Ministero della Giustizia:sup:4\ `#fn4 <#fn4>`__;
 -  Luigi Buglione, GUFPI-ISMA;
 -  Michele Canalini, Consip;
 -  Marco Caprio, Agenzia delle Entrate;
 -  Carlo Contavalli, Digital Team (PCM);
 -  Iginia De Fent, Insiel;
 -  Sergio Di Martino, Università degli Studi di Napoli;
--  Gianluca Ferri [2]_, SQS;
+-  Gianluca Ferri:sup:5\ `#fn5 <#fn5>`__, SQS;
 -  Marco Geraci, CAST;
 -  Vittorio Goletti, FID;
 -  Gianfranco Lanza, CSI Piemonte;
 -  Gabriele Massarelli, Consip;
--  Roberto Meli, DPO [3]_;
+-  Roberto Meli, DPO:sup:6\ `#fn6 <#fn6>`__;
 -  Antonio Messina, Agenzia delle Entrate;
 -  Domenico Natale, UNINFO;
 -  Simone Piunno, Digital Team (PCM);
 -  Antonella Rampini, Consip;
 -  Michele Slocovich, OMG-CISQ.
 
-Nel corso delle attività, svoltesi tra il giugno 2017 e il febbraio
-2018, il Tavolo di lavoro ha effettuato 5 riunioni aperte ai componenti
-esterni. Nel luglio 2017 si è tenuta un’audizione di Francesco Teseo e
-Giuseppe Lo Presti di Accenture, durante la quale è stata illustrata
-l’esperienza di detta società nel campo oggetto d’indagine. Nel febbraio
-2018 si è tenuta un’audizione di Andrea Gelli, della società QSM
-Switzerland, che ha rappresentato lo stato dell’arte delle gare
-pubbliche nella Confederazione Elvetica. Oltre a tali incontri,
-l’interazione tra i componenti del Tavolo di lavoro è avvenuta tramite
-scambio di documenti e strumenti di *collaboration* remota.
+Nel corso delle attività, svoltesi tra il giugno 2017 e il febbraio 2018, il Tavolo di lavoro ha effettuato 5 riunioni aperte ai componenti esterni. Nel luglio 2017 si è tenuta un’audizione di Francesco Teseo e Giuseppe Lo Presti di Accenture, durante la quale è stata illustrata l’esperienza di detta società nel campo oggetto d’indagine. Nel febbraio 2018 si è tenuta un’audizione di Andrea Gelli, della società QSM Switzerland, che ha rappresentato lo stato dell’arte delle gare pubbliche nella Confederazione Elvetica. Oltre a tali incontri, l’interazione tra i componenti del Tavolo di lavoro è avvenuta tramite scambio di documenti e strumenti di *collaboration* remota.
 
 Le attività del Tavolo di lavoro si sono articolate nelle seguenti fasi:
 
-1) ricognizione a livello internazionale di esperienze e casi di studio
-   sulle metriche del software;
-2) ricognizione di metriche non funzionali, confronto di strumenti,
-   metodologie, proposte a disposizione;
-3) analisi del modello strategico del Piano Triennale, con lo studio
-   delle possibili applicazioni a tale modello delle metriche non
-   funzionali;
-4) studio dell’impatto delle metriche non funzionali su capitolati e
-   schemi contrattuali delle pubbliche amministrazioni;
-5) redazione del testo finale del documento.
+1. ricognizione a livello internazionale di esperienze e casi di studio sulle metriche del software;
+2. ricognizione di metriche non funzionali, confronto di strumenti, metodologie, proposte a disposizione;
+3. analisi del modello strategico del Piano Triennale, con lo studio delle possibili applicazioni a tale modello delle metriche non funzionali;
+4. studio dell’impatto delle metriche non funzionali su capitolati e schemi contrattuali delle pubbliche amministrazioni;
+5. redazione del testo finale del documento.
 
-La guida tecnica è stata approvata dall’Agenzia per l’Italia Digitale
-con determinazione n. xx del xxx.
+La guida tecnica è stata approvata dall’Agenzia per l’Italia Digitale con determinazione n. xx del xxx.
 
-Analogamente ad altri documenti di natura tecnica pubblicati in passato
-dall’Agenzia, la presente guida tecnica sarà aggiornata in rapporto
-all’evoluzione delle tecnologie ICT e del contesto
-normativo/organizzativo delle pubbliche amministrazioni italiane.
+Analogamente ad altri documenti di natura tecnica pubblicati in passato dall’Agenzia, la presente guida tecnica sarà aggiornata in rapporto all’evoluzione delle tecnologie ICT e del contesto normativo/organizzativo delle pubbliche amministrazioni italiane.
 
 Ricognizione a livello internazionale
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Come prima attività, il Tavolo di lavoro ha effettuato una ricognizione
-presso alcune pubbliche amministrazioni estere che svolgono funzioni
-analoghe ad AgID e organismi di altri Paesi che si occupano di standard
-per la misurazione del software.
+Come prima attività, il Tavolo di lavoro ha effettuato una ricognizione presso alcune pubbliche amministrazioni estere che svolgono funzioni analoghe ad AgID e organismi di altri Paesi che si occupano di standard per la misurazione del software.
 
-I destinatari della ricognizione sono stati individuati nel corso della
-prima riunione del Tavolo di lavoro, attingendo a riferimenti
-istituzionali e all’esperienza dei partecipanti esterni del Tavolo che
-fanno parte di comitati e organizzazioni internazionali. Ai destinatari
-è stata inoltrata una richiesta a mezzo posta elettronica, illustrando
-le finalità dello studio in corso e chiedendo contributi sulla tematica.
+I destinatari della ricognizione sono stati individuati nel corso della prima riunione del Tavolo di lavoro, attingendo a riferimenti istituzionali e all’esperienza dei partecipanti esterni del Tavolo che fanno parte di comitati e organizzazioni internazionali. Ai destinatari è stata inoltrata una richiesta a mezzo posta elettronica, illustrando le finalità dello studio in corso e chiedendo contributi sulla tematica.
 
 In particolare sono state chieste:
 
--  informazioni riguardo le modalità utilizzate per la misurazione del
-   software;
--  se sono state sperimentate metriche per le caratteristiche non
-   funzionali del software.
+-  informazioni riguardo le modalità utilizzate per la misurazione del software;
+-  se sono state sperimentate metriche per le caratteristiche non funzionali del software.
 
-Nella tabella che segue sono riepilogati i destinatari della
-ricognizione.
+Nella tabella che segue sono riepilogati i destinatari della ricognizione.
 
 Tabella 1: destinatari della ricognizione internazionale
 
-+------------------------------------------+---------------------------+
-| **Organizzazione**                       | **Riferimento**           |
-+==========================================+===========================+
-| Directeur de l’Agence du numérique –     | `agence.numerique@finance |
-| Francia                                  | s.gouv.fr <mailto:agence. |
-|                                          | numerique@finances.gouv.f |
-|                                          | r>`__                     |
-+------------------------------------------+---------------------------+
-| Secretary at the Federal Ministry of the | `Besucherdienst@bmi.bund. |
-| Interior and Federal Government          | de <mailto:Besucherdienst |
-| Commissioner for Information Technology  | @bmi.bund.de>`__          |
-| - Germania                               |                           |
-+------------------------------------------+---------------------------+
-| Government Digital Service – UK          | `kevin.cunnington@digital |
-|                                          | .cabinet-office.gov.uk <m |
-|                                          | ailto:kevin.cunnington@di |
-|                                          | gital.cabinet-office.gov. |
-|                                          | uk>`__                    |
-+------------------------------------------+---------------------------+
-| Office of the Government Chief           | `barry.lowry@per.gov.ie < |
-| Information Officer (OGCIO) - Irlanda    | mailto:barry.lowry@per.go |
-|                                          | v.ie>`__                  |
-+------------------------------------------+---------------------------+
-| Director of the Digital Services Unit;   | `Kristiina.Luukkonen@vm.f |
-| National Architecture for Digital        | i <mailto:Kristiina.Luukk |
-| Services – Finlandia                     | onen@vm.fi>`__            |
-+------------------------------------------+---------------------------+
-| KERC - Korea-EU Research Centre          | `ockwon@etri.re.kr <mailt |
-|                                          | o:ockwon@etri.re.kr>`__   |
-+------------------------------------------+---------------------------+
-| EU-Japan Centre for Industrial           | fabrizio.mura@eu-japan.gr |
-| Cooperation                              | .jp                       |
-+------------------------------------------+---------------------------+
-| Ministerio de Modernización Gobierno     | digital@modernizacion.gob |
-| Digital - Argentina                      | .ar                       |
-+------------------------------------------+---------------------------+
-| Ministerio de Hacienda y Función Pública | secretaria.sgiadsc@seap.m |
-| - Secretaría General de Administración   | inhap.es                  |
-| Digital - Subdirección General de        |                           |
-| Impulso de la Administración Digital y   |                           |
-| Servicios al Ciudadano – Spagna          |                           |
-+------------------------------------------+---------------------------+
-| Minister of Digital Affairs – Polonia    | `apiasecki@ibemag.pl <mai |
-|                                          | lto:apiasecki@ibemag.pl>` |
-|                                          | __                        |
-+------------------------------------------+---------------------------+
-| Minister of Entrepreneurship and         | `info@mkm.ee <mailto:info |
-| Information Technology of the Republic   | @mkm.ee>`__               |
-| of Estonia                               |                           |
-+------------------------------------------+---------------------------+
-| AEMES (associazione spagnola per la      | `admon@aemes.org <mailto: |
-| governance, la misurazione delle         | admon@aemes.org>`__       |
-| tecnologie dell'informazione e la        |                           |
-| gestione)                                |                           |
-+------------------------------------------+---------------------------+
-| ASSEMI                                   | `Secretariat@assemi.org < |
-| (ASSociation pour l'Etude des Métriques  | mailto:Secretariat@assemi |
-| Informatiques)                           | .org>`__                  |
-| - Francia                                |                           |
-+------------------------------------------+---------------------------+
-| DASMA (Deutschsprachige Anwendergruppe   | `info@dasma.org <mailto:i |
-| für Software-Metrik und Aufwandschätzung | nfo@dasma.org>`__         |
-| e.V.) – Germania                         |                           |
-+------------------------------------------+---------------------------+
-| ITSA (Korea Information Technology       | `hijeong@itsa.or.kr <mail |
-| Service Industry Association)            | to:hijeong@itsa.or.kr>`__ |
-+------------------------------------------+---------------------------+
-| NESMA (Netherlands Software Metrics      | office@nesma.org;\ https: |
-| users Association) - Olanda              | //nesma.org/2018/01/non-f |
-|                                          | unctional-requirements/   |
-+------------------------------------------+---------------------------+
-| PSMO (Associazione polacca per le misure | `kontakt@psmo.pl <mailto: |
-| del software)                            | kontakt@psmo.pl>`__       |
-+------------------------------------------+---------------------------+
-| JFPUG (Japan Function Point User Group)  | `office@jfpug.gr.jp <mail |
-|                                          | to:office@jfpug.gr.jp>`__ |
-+------------------------------------------+---------------------------+
-| Programme Office eGovernment Switzerland | `info@egovernment.ch <mai |
-|                                          | lto:info@egovernment.ch>` |
-|                                          | __                        |
-|                                          | `anna.faoro@egovernment.c |
-|                                          | h <mailto:anna.faoro@egov |
-|                                          | ernment.ch>`__            |
-+------------------------------------------+---------------------------+
++--------------------------------------------------+-------------------+
+| **Organizzazione**                               | **Riferimento**   |
++==================================================+===================+
+| Directeur de l’Agence du numérique – Francia     | agence.numerique@ |
+|                                                  | finances.gouv.fr  |
++--------------------------------------------------+-------------------+
+| Secretary at the Federal Ministry of the         | Besucherdienst@bm |
+| Interior and Federal Government Commissioner for | i.bund.de         |
+| Information Technology - Germania                |                   |
++--------------------------------------------------+-------------------+
+| Government Digital Service – UK                  | kevin.cunnington@ |
+|                                                  | digital.cabinet-o |
+|                                                  | ffice.gov.uk      |
++--------------------------------------------------+-------------------+
+| Office of the Government Chief Information       | barry.lowry@per.g |
+| Officer (OGCIO) - Irlanda                        | ov.ie             |
++--------------------------------------------------+-------------------+
+| Director of the Digital Services Unit; National  | Kristiina.Luukkon |
+| Architecture for Digital Services – Finlandia    | en@vm.fi          |
++--------------------------------------------------+-------------------+
+| KERC - Korea-EU Research Centre                  | ockwon@etri.re.kr |
++--------------------------------------------------+-------------------+
+| EU-Japan Centre for Industrial Cooperation       | fabrizio.mura@eu- |
+|                                                  | japan.gr.jp       |
++--------------------------------------------------+-------------------+
+| Ministerio de Modernización Gobierno Digital -   | digital@moderniza |
+| Argentina                                        | cion.gob.ar       |
++--------------------------------------------------+-------------------+
+| Ministerio de Hacienda y Función Pública -       | secretaria.sgiads |
+| Secretaría General de Administración Digital -   | c@seap.minhap.es  |
+| Subdirección General de Impulso de la            |                   |
+| Administración Digital y Servicios al Ciudadano  |                   |
+| – Spagna                                         |                   |
++--------------------------------------------------+-------------------+
+| Minister of Digital Affairs – Polonia            | apiasecki@ibemag. |
+|                                                  | pl                |
++--------------------------------------------------+-------------------+
+| Minister of Entrepreneurship and Information     | info@mkm.ee       |
+| Technology of the Republic of Estonia            |                   |
++--------------------------------------------------+-------------------+
+| AEMES (associazione spagnola per la governance,  | admon@aemes.org   |
+| la misurazione delle tecnologie                  |                   |
+| dell'informazione e la gestione)                 |                   |
++--------------------------------------------------+-------------------+
+| ASSEMI                                           | Secretariat@assem |
+| (ASSociation pour l'Etude des Métriques Informat | i.org             |
+| iques)                                           |                   |
+| - Francia                                        |                   |
++--------------------------------------------------+-------------------+
+| DASMA (Deutschsprachige Anwendergruppe für       | info@dasma.org    |
+| Software-Metrik und Aufwandschätzung e.V.) –     |                   |
+| Germania                                         |                   |
++--------------------------------------------------+-------------------+
+| ITSA (Korea Information Technology Service       | hijeong@itsa.or.k |
+| Industry Association)                            | r                 |
++--------------------------------------------------+-------------------+
+| NESMA (Netherlands Software Metrics users        | office@nesma.org; |
+| Association) - Olanda                            | \ https://nesma.o |
+|                                                  | rg/2018/01/non-fu |
+|                                                  | nctional-requirem |
+|                                                  | ents/             |
++--------------------------------------------------+-------------------+
+| PSMO (Associazione polacca per le misure del     | kontakt@psmo.pl   |
+| software)                                        |                   |
++--------------------------------------------------+-------------------+
+| JFPUG (Japan Function Point User Group)          | office@jfpug.gr.j |
+|                                                  | p                 |
++--------------------------------------------------+-------------------+
+| Programme Office eGovernment Switzerland         | info@egovernment. |
+|                                                  | ch                |
+|                                                  | anna.faoro@egover |
+|                                                  | nment.ch          |
++--------------------------------------------------+-------------------+
 
-Non tutti gli interpellati hanno risposto. In alcuni casi, forse a causa
-della insufficiente conoscenza della tematica, le risposte ricevute non
-sono sembrate pertinenti. Nella tabella che segue sono sintetizzati i
-contributi più significativi tra quelli acquisiti.
+Non tutti gli interpellati hanno risposto. In alcuni casi, forse a causa della insufficiente conoscenza della tematica, le risposte ricevute non sono sembrate pertinenti. Nella tabella che segue sono sintetizzati i contributi più significativi tra quelli acquisiti.
 
 Tabella 2: esiti della ricognizione internazionale
 
@@ -299,36 +249,22 @@ Tabella 2: esiti della ricognizione internazionale
 |     | all’aggiudicazione.                                            |
 +-----+----------------------------------------------------------------+
 
-A seguito della ricognizione effettuata e dalla lettura dei contributi
-pervenuti, si può affermare quanto segue:
+A seguito della ricognizione effettuata e dalla lettura dei contributi pervenuti, si può affermare quanto segue:
 
--  poter misurare i requisiti non funzionali di un software è
-   un’esigenza sentita dalla maggior parte delle amministrazioni
-   pubbliche dei Paesi rispondenti, tuttavia non sembra emergere un
-   reale impiego di metriche o sperimentazioni degne di nota;
--  i metodi attualmente disponibili sono giudicati non sufficientemente
-   maturi; si avverte la necessità di un loro consolidamento, o almeno
-   di una loro integrazione, prima di suggerirne l’uso;
--  l’Italia, con la costituzione del presente Tavolo di lavoro, può
-   ritenersi in posizione più avanzata sull’argomento rispetto alle
-   nazioni interpellate.
+-  poter misurare i requisiti non funzionali di un software è un’esigenza sentita dalla maggior parte delle amministrazioni pubbliche dei Paesi rispondenti, tuttavia non sembra emergere un reale impiego di metriche o sperimentazioni degne di nota;
+-  i metodi attualmente disponibili sono giudicati non sufficientemente maturi; si avverte la necessità di un loro consolidamento, o almeno di una loro integrazione, prima di suggerirne l’uso;
+-  l’Italia, con la costituzione del presente Tavolo di lavoro, può ritenersi in posizione più avanzata sull’argomento rispetto alle nazioni interpellate.
 
 Ricognizione delle metriche non funzionali disponibili
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-La seconda attività svolta dal Tavolo di lavoro è stata la raccolta di
-documentazione tecnica inerente l’oggetto dello studio, in particolare
-inerente le metriche per quantificare le caratteristiche non funzionali
-del software.
+La seconda attività svolta dal Tavolo di lavoro è stata la raccolta di documentazione tecnica inerente l’oggetto dello studio, in particolare inerente le metriche per quantificare le caratteristiche non funzionali del software.
 
 Si è proceduto:
 
 -  ricercando documentazione in rete;
--  acquisendo contributi proposti dai componenti non AgID del Tavolo di
-   lavoro;
--  tramite confronto con altri tavoli di lavoro presenti in AgID o a cui
-   l’AgID partecipa (es. GLU – Gruppo di Lavoro sull’Usabilità della
-   Funzione Pubblica e MiSE);
+-  acquisendo contributi proposti dai componenti non AgID del Tavolo di lavoro;
+-  tramite confronto con altri tavoli di lavoro presenti in AgID o a cui l’AgID partecipa (es. GLU – Gruppo di Lavoro sull’Usabilità della Funzione Pubblica e MiSE);
 -  svolgendo due audizioni di società private.
 
 I documenti raccolti sono elencati nella tabella che segue.
@@ -685,10 +621,12 @@ Tabella 3: elenco documenti acquisiti
 +------------------------------------------------------------+-------+---+
 | CAPITOLATO TECNICO e ALLEGATO 1–LIVELLI DI SERVIZIO al     | INPS  | 2 |
 | Capitolato Tecnico - Procedura aperta, di carattere        |       | 0 |
-| comunitario, ai sensi dell’art. 55, comma 5, del D.L.vo    |       | 1 |
-| 163/2006 per l’affidamento di servizi di Application       |       | 6 |
-| Development and Maintenance del software applicativo -     |       |   |
-| Indicatori di qualità della fornitura                      |       |   |
+| comunitario, ai sensi dell’\ `art. 55, comma 5, del D.L.vo |       | 1 |
+| 163/2006 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:st |       | 6 |
+| ato:decreto.legislativo:2006;163~art55-com5>`__            |       |   |
+| per l’affidamento di servizi di Application Development    |       |   |
+| and Maintenance del software applicativo - Indicatori di   |       |   |
+| qualità della fornitura                                    |       |   |
 +------------------------------------------------------------+-------+---+
 | Capitolato TecnicoLotto1“Servizi a progetto per lo         | RAI   | 2 |
 | sviluppodei Sistemi Informativi RAI–Ambito Istituzionale”  |       | 0 |
@@ -1056,11 +994,13 @@ Tabella 3: elenco documenti acquisiti
 +------------------------------------------------------------+-------+---+
 | From Software Sizing to Productivity Measurement           | CAST  |   |
 +------------------------------------------------------------+-------+---+
-| Gara 3/2014/LI -Procedura aperta ai sensi del D.Lgs. n.    | Lomba | 2 |
-| 163/2006 per l’affidamento dei servizi di supporto al      | rdia  | 0 |
-| demand management, sviluppo, manutenzione, assistenzaper   | Infor | 1 |
-| la realizzazione dei modelli di e-government (allegati     | matic | 5 |
-| 1.2, 1.3, 1.4, 1.6, 1A, 1B, 1C, 1D)                        | a     |   |
+| Gara 3/2014/LI -Procedura aperta ai sensi del `D.Lgs. n.   | Lomba | 2 |
+| 163/2006 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:st | rdia  | 0 |
+| ato:decreto.legislativo:2006;163>`__                       | Infor | 1 |
+| per l’affidamento dei servizi di supporto al demand        | matic | 5 |
+| management, sviluppo, manutenzione, assistenzaper la       | a     |   |
+| realizzazione dei modelli di e-government (allegati 1.2,   |       |   |
+| 1.3, 1.4, 1.6, 1A, 1B, 1C, 1D)                             |       |   |
 +------------------------------------------------------------+-------+---+
 | Gara n. 9103 Servizi informatici per la manutenzione       | Gesto | 2 |
 | ordinaria ed evolutiva delle Applicazioni informatiche del | re    | 0 |
@@ -1840,22 +1780,13 @@ Tabella 3: elenco documenti acquisiti
 | Relationships                                              |       |   |
 +------------------------------------------------------------+-------+---+
 
-Prima di esaminare i documenti acquisiti, essi sono stati selezionati
-escludendo:
+Prima di esaminare i documenti acquisiti, essi sono stati selezionati escludendo:
 
--  quelli troppo datati, per ridurre il rischio di recepire eventuali
-   concetti obsoleti o superati dall’evoluzione della tematica;
--  quelli il cui contenuto non risulta affine agli obiettivi del Tavolo
-   di lavoro (descritti al §1.5), in modo da focalizzare lo studio e
-   massimizzare l’efficacia dei risultati;
--  i documenti riferiti a contesti significativamente diversi dal
-   settore pubblico, i cui contenuti non sono coerenti con le normative
-   vigenti (anche se, in via teorica, alcune indicazioni della presente
-   guida tecnica potrebbero tradursi in proposte per il legislatore).
+-  quelli troppo datati, per ridurre il rischio di recepire eventuali concetti obsoleti o superati dall’evoluzione della tematica;
+-  quelli il cui contenuto non risulta affine agli obiettivi del Tavolo di lavoro (descritti al §1.5), in modo da focalizzare lo studio e massimizzare l’efficacia dei risultati;
+-  i documenti riferiti a contesti significativamente diversi dal settore pubblico, i cui contenuti non sono coerenti con le normative vigenti (anche se, in via teorica, alcune indicazioni della presente guida tecnica potrebbero tradursi in proposte per il legislatore).
 
-Nella tabella che segue sono elencati i documenti così filtrati e
-giudicati più rilevanti. Per ogni documento è riportato un breve
-*abstract* utile per inquadrarne i contenuti.
+Nella tabella che segue sono elencati i documenti così filtrati e giudicati più rilevanti. Per ogni documento è riportato un breve *abstract* utile per inquadrarne i contenuti.
 
 Tabella 4: sintesi dei documenti più rilevanti
 
@@ -2368,319 +2299,134 @@ Tabella 4: sintesi dei documenti più rilevanti
 |   | per AFP.                                                             |
 +---+----------------------------------------------------------------------+
 
-Le risultanze più significative emerse da questa fase di ricognizione
-sono:
+Le risultanze più significative emerse da questa fase di ricognizione sono:
 
-1) Nel corso degli ultimi anni la tematica della misurazione del
-   software è stata esaminata e approfondita da una pluralità di
-   soggetti (aziende private, enti pubblici/governativi, ricercatori,
-   consulenti, strutture del mondo accademico). Tali soggetti hanno
-   operato in modo disomogeneo, anche partendo da concetti e definizioni
-   distanti tra loro. Come conseguenza, oggi esistono numerose “scuole
-   di pensiero” parzialmente in contrapposizione, che seguono ciascuna
-   una propria evoluzione e che è difficile integrare. Si riscontra
-   sovrabbondanza anche di proposte di soluzioni e metodologie, poche
-   delle quali hanno raggiunto un grado di diffusione tale da poterne
-   valutare oggettivamente l’efficacia. Anche solo un confronto tra le
-   varie soluzioni disponibili è arduo, mancando persino un’unica
-   tassonomia di riferimento.
-2) Anche con riferimento alle sole metriche, esiste una pluralità di
-   definizioni e classificazioni spesso incoerenti tra loro, che va
-   risolta prima di intraprendere qualunque analisi.
-3) La tematica è oggettivamente ampia e soggetta a evoluzione molto
-   rapida. Essa comprende non solo questioni tecniche, ma anche
-   economiche, giuridiche e di mercato.
-4) I soggetti che si occupano della tematica hanno ruoli distinti
-   (sviluppatori di software, venditori, integratori, clienti,
-   normatori, utenti finali). Essi sono, legittimamente, portatori di
-   interessi diversi, a volte in contrasto tra loro, e ciò si riflette
-   anche su come la tematica viene percepita e sulla posizione espressa
-   dalle varie tipologie di soggetti.
+1. Nel corso degli ultimi anni la tematica della misurazione del software è stata esaminata e approfondita da una pluralità di soggetti (aziende private, enti pubblici/governativi, ricercatori, consulenti, strutture del mondo accademico). Tali soggetti hanno operato in modo disomogeneo, anche partendo da concetti e definizioni distanti tra loro. Come conseguenza, oggi esistono numerose “scuole di pensiero” parzialmente in contrapposizione, che seguono ciascuna una propria evoluzione e che è difficile integrare. Si riscontra sovrabbondanza anche di proposte di soluzioni e metodologie, poche delle quali hanno raggiunto un grado di diffusione tale da poterne valutare oggettivamente l’efficacia. Anche solo un confronto tra le varie soluzioni disponibili è arduo, mancando persino un’unica tassonomia di riferimento.
+2. Anche con riferimento alle sole metriche, esiste una pluralità di definizioni e classificazioni spesso incoerenti tra loro, che va risolta prima di intraprendere qualunque analisi.
+3. La tematica è oggettivamente ampia e soggetta a evoluzione molto rapida. Essa comprende non solo questioni tecniche, ma anche economiche, giuridiche e di mercato.
+4. I soggetti che si occupano della tematica hanno ruoli distinti (sviluppatori di software, venditori, integratori, clienti, normatori, utenti finali). Essi sono, legittimamente, portatori di interessi diversi, a volte in contrasto tra loro, e ciò si riflette anche su come la tematica viene percepita e sulla posizione espressa dalle varie tipologie di soggetti.
 
-Sulla base delle risultanze di cui sopra e delle esperienze maturate nel
-settore dai partecipanti, il Tavolo di lavoro ha individuato e condiviso
-le seguenti asserzioni:
+Sulla base delle risultanze di cui sopra e delle esperienze maturate nel settore dai partecipanti, il Tavolo di lavoro ha individuato e condiviso le seguenti asserzioni:
 
-a. Occorre delimitare con attenzione il perimetro dello studio. Nello
-   specifico, il Tavolo sceglie di occuparsi delle metriche di prodotto,
-   escludendo quindi le metriche di processo e di servizio. Ciò non
-   significa che queste ultime vengano reputate poco importanti:
-   semplicemente, nell’economia dei lavori ci si concentrerà sulle
-   metriche di prodotto, delegando l’approfondimento delle altre a
-   successive iniziative.
-b. Allo stesso modo, si limita il perimetro dello studio al software
-   applicativo realizzato ad hoc, benché alcune delle considerazioni
-   espresse possano riguardare anche prodotti di mercato venduti a
-   licenza d’uso.
-c. Tenuto conto dei precedenti due punti, le metriche su cui il Tavolo
-   di lavoro concentra il suo esame devono consentire di quantificare le
-   caratteristiche di un software e dunque il suo “valore” [4]_ come
-   bene dell’amministrazione che lo ha commissionato e/o lo detiene.
-d. Sono d’interesse per il Tavolo metriche diffuse, se possibile
-   conformi a standard [5]_ riconosciuti, comprensibili all’utente e non
-   solo alle figure tecniche, adeguate al modo di operare della pubblica
-   amministrazione e alla normativa in vigore, che non richiedano
-   investimenti eccessivi per la loro applicazione.
-e. Sono d’interesse per il Tavolo metriche facilmente fruibili e
-   semplici da utilizzare, come già rappresentato al §1.5. In altre
-   parole, sono d’interesse metriche che si prestino a un uso
-   flessibile, applicabile a contesti d’uso tra loro assai diversi e
-   scalabile, cioè adattabile ad acquisizioni di piccola e grande
-   rilevanza.
+a. Occorre delimitare con attenzione il perimetro dello studio. Nello specifico, il Tavolo sceglie di occuparsi delle metriche di prodotto, escludendo quindi le metriche di processo e di servizio. Ciò non significa che queste ultime vengano reputate poco importanti: semplicemente, nell’economia dei lavori ci si concentrerà sulle metriche di prodotto, delegando l’approfondimento delle altre a successive iniziative.
+b. Allo stesso modo, si limita il perimetro dello studio al software applicativo realizzato ad hoc, benché alcune delle considerazioni espresse possano riguardare anche prodotti di mercato venduti a licenza d’uso.
+c. Tenuto conto dei precedenti due punti, le metriche su cui il Tavolo di lavoro concentra il suo esame devono consentire di quantificare le caratteristiche di un software e dunque il suo “valore”:sup:7\ `#fn7 <#fn7>`__ come bene dell’amministrazione che lo ha commissionato e/o lo detiene.
+d. Sono d’interesse per il Tavolo metriche diffuse, se possibile conformi a standard:sup:8\ `#fn8 <#fn8>`__ riconosciuti, comprensibili all’utente e non solo alle figure tecniche, adeguate al modo di operare della pubblica amministrazione e alla normativa in vigore, che non richiedano investimenti eccessivi per la loro applicazione.
+e. Sono d’interesse per il Tavolo metriche facilmente fruibili e semplici da utilizzare, come già rappresentato al §1.5. In altre parole, sono d’interesse metriche che si prestino a un uso flessibile, applicabile a contesti d’uso tra loro assai diversi e scalabile, cioè adattabile ad acquisizioni di piccola e grande rilevanza.
 f. Sono d’interesse metriche da utilizzare:
 
--  ex-ante (in fase di definizione dei requisiti del software che deve
-   essere realizzato/mantenuto);
+-  ex-ante (in fase di definizione dei requisiti del software che deve essere realizzato/mantenuto);
 -  ex-post (per verifiche e collaudi del software rilasciato/mantenuto);
--  in fase di assessment di parchi applicativi già esistenti, sia per
-   valorizzarli a scopo contabile (affinché risultino in stato
-   patrimoniale come asset delle PA), sia per identificare aree di
-   miglioramento e di intervento sul software, per successivi interventi
-   di manutenzione evolutiva o migliorativa.
+-  in fase di assessment di parchi applicativi già esistenti, sia per valorizzarli a scopo contabile (affinché risultino in stato patrimoniale come asset delle PA), sia per identificare aree di miglioramento e di intervento sul software, per successivi interventi di manutenzione evolutiva o migliorativa.
 
-g. Benché possano essere citate, a titolo informativo e come esempi
-   utili a declinare concetti teorici, alcune soluzioni di mercato, non
-   rientra nel perimetro di questo studio valutare o comparare tra loro
-   prodotti proprietari.
-h. Il perimetro dello studio include modelli di valorizzazione economica
-   del software, almeno per quanto riguarda gli aspetti metodologici.
-   Tuttavia non rientra nel mandato di questo Tavolo fornire riferimenti
-   di prezzo, tariffe o altre informazioni di mercato.
+g. Benché possano essere citate, a titolo informativo e come esempi utili a declinare concetti teorici, alcune soluzioni di mercato, non rientra nel perimetro di questo studio valutare o comparare tra loro prodotti proprietari.
+h. Il perimetro dello studio include modelli di valorizzazione economica del software, almeno per quanto riguarda gli aspetti metodologici. Tuttavia non rientra nel mandato di questo Tavolo fornire riferimenti di prezzo, tariffe o altre informazioni di mercato.
 
 Analisi del modello strategico del Piano Triennale
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Come terza attività, il Tavolo di lavoro ha effettuato una lettura
-accurata e una disamina del testo del Piano Triennale, estrapolando:
+Come terza attività, il Tavolo di lavoro ha effettuato una lettura accurata e una disamina del testo del Piano Triennale, estrapolando:
 
--  i passaggi che hanno attinenza coi progetti di sviluppo e
-   manutenzione di applicazioni software;
--  le indicazioni che determinano o impongono l’uso di metriche del
-   software;
--  le metriche più adatte, tra quelle a disposizione, a fungere da
-   fattore abilitante per il raggiungimento degli obiettivi del Piano
-   Triennale.
+-  i passaggi che hanno attinenza coi progetti di sviluppo e manutenzione di applicazioni software;
+-  le indicazioni che determinano o impongono l’uso di metriche del software;
+-  le metriche più adatte, tra quelle a disposizione, a fungere da fattore abilitante per il raggiungimento degli obiettivi del Piano Triennale.
 
-Tra le varie indicazioni del Piano, si è approfondito in particolare
-l’uso di metodologie innovative (es. Agile) per lo sviluppo di software.
-Su questo argomento il Tavolo ha effettuato una ricerca nella
-letteratura tecnica e tra le fonti disponibili in rete, con l’obiettivo
-di analizzare le connessioni (fattori positivi, criticità e opportunità)
-tra le metodologie innovative propugnate dal Piano Triennale e le
-metriche per il software.
+Tra le varie indicazioni del Piano, si è approfondito in particolare l’uso di metodologie innovative (es. Agile) per lo sviluppo di software. Su questo argomento il Tavolo ha effettuato una ricerca nella letteratura tecnica e tra le fonti disponibili in rete, con l’obiettivo di analizzare le connessioni (fattori positivi, criticità e opportunità) tra le metodologie innovative propugnate dal Piano Triennale e le metriche per il software.
 
 I risultati dell’analisi svolta sono riportati al capitolo 5.
 
 Analisi di capitolati e schemi contrattuali
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Nell’ambito della documentazione raccolta dal Tavolo di lavoro, sono
-stati oggetto di specifica analisi schemi di contratto, capitolati e
-altra documentazione di gara riguardante attività di sviluppo e
-manutenzione di software applicativo.
+Nell’ambito della documentazione raccolta dal Tavolo di lavoro, sono stati oggetto di specifica analisi schemi di contratto, capitolati e altra documentazione di gara riguardante attività di sviluppo e manutenzione di software applicativo.
 
-Come primo obiettivo, si è cercato di capire in che modo viene
-attualmente regolato, nella documentazione contrattuale della P.A.,
-l’uso di metriche del software. Successivamente, sulla scorta delle
-criticità riscontrate, sono stati formulati alcuni suggerimenti, di
-ordine generale, sulla scrittura di capitolati e articolati
-contrattuali.
+Come primo obiettivo, si è cercato di capire in che modo viene attualmente regolato, nella documentazione contrattuale della P.A., l’uso di metriche del software. Successivamente, sulla scorta delle criticità riscontrate, sono stati formulati alcuni suggerimenti, di ordine generale, sulla scrittura di capitolati e articolati contrattuali.
 
 Situazione attuale
 ^^^^^^^^^^^^^^^^^^
 
-Come anticipato al §1.3, l’uso di metriche del software nei contratti e
-nei capitolati delle P.A. è, nella stragrande maggioranza dei casi,
-limitato ai Punti Funzione. Le amministrazioni, in molti casi, sono
-consapevoli dei limiti di questa metrica, tuttavia è prevalente un
-approccio “conservativo”: le P.A. preferiscono attestarsi su clausole e
-articolati contrattuali consolidati, ben diffusi o in qualche modo
-“ufficializzati” anziché sperimentare contenuti innovativi, a volte
-percepiti come possibile fonte di contenziosi.
+Come anticipato al §1.3, l’uso di metriche del software nei contratti e nei capitolati delle P.A. è, nella stragrande maggioranza dei casi, limitato ai Punti Funzione. Le amministrazioni, in molti casi, sono consapevoli dei limiti di questa metrica, tuttavia è prevalente un approccio “conservativo”: le P.A. preferiscono attestarsi su clausole e articolati contrattuali consolidati, ben diffusi o in qualche modo “ufficializzati” anziché sperimentare contenuti innovativi, a volte percepiti come possibile fonte di contenziosi.
 
-Esistono peraltro alcuni esempi d’innovazione in questo ambito. Essi
-verranno citati nei paragrafi che seguono.
+Esistono peraltro alcuni esempi d’innovazione in questo ambito. Essi verranno citati nei paragrafi che seguono.
 
 Esempio 1: linee guida Lombardia Informatica
 ''''''''''''''''''''''''''''''''''''''''''''
 
-Tra il materiale pervenuto al Tavolo di lavoro, appare utile estrarre
-alcuni contenuti del documento “METODOLOGIE E LINEE GUIDA DI MISURA DEI
-FUNCTION POINT”, redatto da Lombardia Informatica, allegato alla gara
-3/2014/LI per l’affidamento dei servizi di supporto al demand
-management, sviluppo, manutenzione, assistenza per la realizzazione dei
-modelli di e-government della Regione Lombardia.
+Tra il materiale pervenuto al Tavolo di lavoro, appare utile estrarre alcuni contenuti del documento “METODOLOGIE E LINEE GUIDA DI MISURA DEI FUNCTION POINT”, redatto da Lombardia Informatica, allegato alla gara 3/2014/LI per l’affidamento dei servizi di supporto al demand management, sviluppo, manutenzione, assistenza per la realizzazione dei modelli di e-government della Regione Lombardia.
 
-Nel suddetto documento (citato a titolo di esempio, senza entrare nel
-merito delle scelte effettuate dai suoi redattori) vengono anzitutto
-definiti 4 “livelli di misurazione” delle funzionalità del software,
-vale a dire:
+Nel suddetto documento (citato a titolo di esempio, senza entrare nel merito delle scelte effettuate dai suoi redattori) vengono anzitutto definiti 4 “livelli di misurazione” delle funzionalità del software, vale a dire:
 
 -  misura approssimata (stima);
 -  misura grezza (stima);
 -  misura dettagliata;
 -  misura approfondita.
 
-Ogni livello di misurazione tiene conto delle informazioni disponibili
-nelle varie fasi del progetto: al crescere delle informazioni
-disponibili aumenta di precisione e di complessità nel conteggio.
+Ogni livello di misurazione tiene conto delle informazioni disponibili nelle varie fasi del progetto: al crescere delle informazioni disponibili aumenta di precisione e di complessità nel conteggio.
 
-Il documento prescrive che le misure richieste all’accettazione di nuovi
-sviluppi e manutenzioni evolutive siano di livello “dettagliate”. Per
-obiettivi di controllo si usano invece misure di livello “approfondito”.
-Per entrambi i livelli si prevede il metodo di misurazione IFPUG 4.3.1.
+Il documento prescrive che le misure richieste all’accettazione di nuovi sviluppi e manutenzioni evolutive siano di livello “dettagliate”. Per obiettivi di controllo si usano invece misure di livello “approfondito”. Per entrambi i livelli si prevede il metodo di misurazione IFPUG 4.3.1.
 
-In fasi iniziali possono essere richieste al fornitore misure (o meglio
-“stime”) di livello “approssimato” o “grezzo”. Il livello “grezzo” è
-considerato accettabile per la prima valorizzazione richiesta al
-fornitore. Per le stime si prevede l’impiego del metodo Early & Quick
-Function Point
-(`E&QFP <https://www.researchgate.net/profile/Roberto_Meli/publication/258210227_EQFP_R_Early_Quick_Function_Points_for_IFPUG_method/links/02e7e5273e601b76d9000000/E-QFP-R-Early-Quick-Function-Points-for-IFPUG-method.pdf>`__) [6]_.
-Per il livello “grezzo” è anche possibile l’uso del metodo Simple
-Function Point, brevemente descritto al successivo §4.2.
+In fasi iniziali possono essere richieste al fornitore misure (o meglio “stime”) di livello “approssimato” o “grezzo”. Il livello “grezzo” è considerato accettabile per la prima valorizzazione richiesta al fornitore. Per le stime si prevede l’impiego del metodo Early & Quick Function Point (`E&QFP <https://www.researchgate.net/profile/Roberto_Meli/publication/258210227_EQFP_R_Early_Quick_Function_Points_for_IFPUG_method/links/02e7e5273e601b76d9000000/E-QFP-R-Early-Quick-Function-Points-for-IFPUG-method.pdf>`__):sup:9\ `#fn9 <#fn9>`__. Per il livello “grezzo” è anche possibile l’uso del metodo Simple Function Point, brevemente descritto al successivo §4.2.
 
-Un concetto interessante presente in questo documento è la distinzione
-tra “misura funzionale” (in UFP) del software e “misura funzionale
-contrattuale” (MFC) dello stesso. Mentre la prima misura deriva
-dall’applicazione del metodo dei Punti Funzione IFPUG, la seconda misura
-tiene conto dei tre fattori seguenti:
+Un concetto interessante presente in questo documento è la distinzione tra “misura funzionale” (in UFP) del software e “misura funzionale contrattuale” (MFC) dello stesso. Mentre la prima misura deriva dall’applicazione del metodo dei Punti Funzione IFPUG, la seconda misura tiene conto dei tre fattori seguenti:
 
--  riuso (sia generico che per incorporamento di servizi offerti da
-   altre applicazioni), che diminuisce la MFC rispetto alla misura
-   funzionale; il documento fissa le percentuali di abbattimento degli
-   UFP da applicare nei vari scenari che possono verificarsi;
--  replica (ad esempio la necessità di duplicare la medesima
-   funzionalità su più piattaforme), che aumenta la MFC rispetto alla
-   misura funzionale; anche in questo caso il documento fissa la
-   percentuale di innalzamento degli UFP da applicare nei vari scenari
-   possibili;
--  change request (CR), vale a dire varianti di requisiti in corso
-   d’opera, che aumentano la MFC.
+-  riuso (sia generico che per incorporamento di servizi offerti da altre applicazioni), che diminuisce la MFC rispetto alla misura funzionale; il documento fissa le percentuali di abbattimento degli UFP da applicare nei vari scenari che possono verificarsi;
+-  replica (ad esempio la necessità di duplicare la medesima funzionalità su più piattaforme), che aumenta la MFC rispetto alla misura funzionale; anche in questo caso il documento fissa la percentuale di innalzamento degli UFP da applicare nei vari scenari possibili;
+-  change request (CR), vale a dire varianti di requisiti in corso d’opera, che aumentano la MFC.
 
-Riguardo all’ultimo fattore (CR), il documento stabilisce le seguenti
-regole di conteggio, da applicarsi in caso di variazioni di requisiti in
-corso d’opera:
+Riguardo all’ultimo fattore (CR), il documento stabilisce le seguenti regole di conteggio, da applicarsi in caso di variazioni di requisiti in corso d’opera:
 
--  le funzionalità aggiunte (ADD) dovranno essere sia quelle individuate
-   originariamente che quelle introdotte dalle CR;
--  le funzionalità modificate (CHG) dovranno essere sia quelle
-   individuate originariamente che quelle introdotte successivamente
-   dalle CR;
--  le funzionalità cancellate (DEL) dovranno essere sia quelle
-   individuate originariamente che quelle introdotte successivamente
-   dalle CR;
--  una funzionalità classificata come ADD o CHG che sia stata modificata
-   due o più volte attraverso CR verrà moltiplicata per 1,4;
--  una funzionalità aggiunta con un cambiamento dei requisiti (ADD) che
-   sia poi cancellata successivamente con un nuovo cambiamento dei
-   requisiti sarà abbattuta del 50% e sarà identificata per escluderla
-   dall'aggiornamento del patrimonio;
--  una funzionalità cancellata (DEL) che venga ripristinata con un
-   cambiamento dei requisiti successivo non sarà conteggiata.
+-  le funzionalità aggiunte (ADD) dovranno essere sia quelle individuate originariamente che quelle introdotte dalle CR;
+-  le funzionalità modificate (CHG) dovranno essere sia quelle individuate originariamente che quelle introdotte successivamente dalle CR;
+-  le funzionalità cancellate (DEL) dovranno essere sia quelle individuate originariamente che quelle introdotte successivamente dalle CR;
+-  una funzionalità classificata come ADD o CHG che sia stata modificata due o più volte attraverso CR verrà moltiplicata per 1,4;
+-  una funzionalità aggiunta con un cambiamento dei requisiti (ADD) che sia poi cancellata successivamente con un nuovo cambiamento dei requisiti sarà abbattuta del 50% e sarà identificata per escluderla dall'aggiornamento del patrimonio;
+-  una funzionalità cancellata (DEL) che venga ripristinata con un cambiamento dei requisiti successivo non sarà conteggiata.
 
-Per passare dalla misura funzionale in UFP alla MFC, il documento di
-Lombardia Informatica propone la formula:
+Per passare dalla misura funzionale in UFP alla MFC, il documento di Lombardia Informatica propone la formula:
 
-**MFC = Σ\ :sub:`i` (UFP x SAC\ :sub:`riuso` x SAC\ :sub:`replica` x
-SAC\ :sub:`CR`)\ :sub:`i`**
+**MFC = Σ:sub:`i\` (UFP x SAC:sub:`riuso\` x SAC:sub:`replica\` x SAC:sub:`CR`):sub:`i\`**
 
 Dove:
 
 -  SAC: Size Adjustment Coefficient;
--  UFP: Unadjusted Function Point, rilasciati o da rilasciarsi,
-   calcolati per ogni funzione secondo i dettami del metodo standard
-   IFPUG;
--  SAC\ :sub:`riuso` è il fattore di abbattimento che si intende
-   riconoscere alla funzionalità che gode di riuso;
--  SAC\ :sub:`replica` è il fattore di incremento che si intende
-   riconoscere alla funzionalità che deve essere resa disponibile su due
-   o più canali di fruizione;
--  SAC\ :sub:`CR` è il fattore di abbattimento o di incremento relativo
-   alla funzionalità oggetto di CR.
+-  UFP: Unadjusted Function Point, rilasciati o da rilasciarsi, calcolati per ogni funzione secondo i dettami del metodo standard IFPUG;
+-  SAC\ :sub:`riuso` è il fattore di abbattimento che si intende riconoscere alla funzionalità che gode di riuso;
+-  SAC\ :sub:`replica` è il fattore di incremento che si intende riconoscere alla funzionalità che deve essere resa disponibile su due o più canali di fruizione;
+-  SAC\ :sub:`CR` è il fattore di abbattimento o di incremento relativo alla funzionalità oggetto di CR.
 
-Infine, nel documento vengono introdotti fattori correttivi al
-corrispettivo unitario contrattuale del Punto Funzione. Nell’ambito del
-medesimo contratto, è previsto che interventi progettuali distinti
-possano avere caratteristiche differenti, con impatto sulla produttività
-e dunque sul corrispettivo dell’intervento stesso. All’attivazione di
-ciascun intervento, cliente e fornitore verificano che le
-caratteristiche dell’intervento si discostino da quelle “nominali”. In
-tal caso, al corrispettivo unitario contrattuale vengono applicati i
-coefficienti correttivi riportati nella tabella che segue. L’approccio
-deriva palesemente dal metodo Cocomo 2.1, le celle in bianco contengono
-i valori che sono stati ritenuti applicabili al caso di Lombardia
-Informatica.
+Infine, nel documento vengono introdotti fattori correttivi al corrispettivo unitario contrattuale del Punto Funzione. Nell’ambito del medesimo contratto, è previsto che interventi progettuali distinti possano avere caratteristiche differenti, con impatto sulla produttività e dunque sul corrispettivo dell’intervento stesso. All’attivazione di ciascun intervento, cliente e fornitore verificano che le caratteristiche dell’intervento si discostino da quelle “nominali”. In tal caso, al corrispettivo unitario contrattuale vengono applicati i coefficienti correttivi riportati nella tabella che segue. L’approccio deriva palesemente dal metodo Cocomo 2.1, le celle in bianco contengono i valori che sono stati ritenuti applicabili al caso di Lombardia Informatica.
 
 Tabella 5: coefficienti correttivi da Cocomo
 
 |image0|
 
-Il corrispettivo unitario da applicare nel singolo intervento si calcola
-moltiplicando il corrispettivo “nominale” per i coefficienti riportati
-in tabella.
+Il corrispettivo unitario da applicare nel singolo intervento si calcola moltiplicando il corrispettivo “nominale” per i coefficienti riportati in tabella.
 
-Riassumendo, Lombardia Informatica usa misure e stime delle
-caratteristiche funzionali, passa alla misura “contrattuale” MFC per
-tener conto di riuso, repliche e change request. Infine applica fattori
-correttivi al corrispettivo unitario considerando l’impatto delle
-caratteristiche di qualità del software, tecniche e di progetto. Per
-quest’ultimo passo utilizza metriche “discrete” tratte dal metodo
-Cocomo.
+Riassumendo, Lombardia Informatica usa misure e stime delle caratteristiche funzionali, passa alla misura “contrattuale” MFC per tener conto di riuso, repliche e change request. Infine applica fattori correttivi al corrispettivo unitario considerando l’impatto delle caratteristiche di qualità del software, tecniche e di progetto. Per quest’ultimo passo utilizza metriche “discrete” tratte dal metodo Cocomo.
 
 Esempio 2: l’approccio Sogei per l’usabilità
 ''''''''''''''''''''''''''''''''''''''''''''
 
-Tra il materiale preso in esame, il Tavolo di lavoro ha analizzato il
-documento Sogei “Linee guida per l’accessibilità e l’usabilità di siti
-ed applicazioni web” (DA-00-WE-01 26 novembre 2013) [7]_, che ha
-l’obiettivo di fissare indicazioni e soglie minime accettabili che
-fornitori e sviluppatori sono tenuti a rispettare per rendere
-accessibili, ai sensi della normativa vigente, informazioni e servizi
-resi disponibili mediante siti, applicazioni web nonché prodotti a
-scaffale.
+Tra il materiale preso in esame, il Tavolo di lavoro ha analizzato il documento Sogei “Linee guida per l’accessibilità e l’usabilità di siti ed applicazioni web” (DA-00-WE-01 26 novembre 2013):sup:10\ `#fn10 <#fn10>`__, che ha l’obiettivo di fissare indicazioni e soglie minime accettabili che fornitori e sviluppatori sono tenuti a rispettare per rendere accessibili, ai sensi della normativa vigente, informazioni e servizi resi disponibili mediante siti, applicazioni web nonché prodotti a scaffale.
 
-Nel documento sono richiamati i 12 requisiti di accessibilità stabiliti
-dalla normativa; per ciascuno di essi sono fornite indicazioni tecniche
-per la corretta applicazione e verifica/test degli stessi.
+Nel documento sono richiamati i 12 requisiti di accessibilità stabiliti dalla normativa; per ciascuno di essi sono fornite indicazioni tecniche per la corretta applicazione e verifica/test degli stessi.
 
-In appendice, il documento contiene i modelli che il fornitore deve
-consegnare compilati a Sogei, in sede di collaudo, per dichiarare la
-conformità alla normativa del sito/applicazione rilasciato.
+In appendice, il documento contiene i modelli che il fornitore deve consegnare compilati a Sogei, in sede di collaudo, per dichiarare la conformità alla normativa del sito/applicazione rilasciato.
 
-Nel merito, si ritiene che l’approccio di Sogei sia utile come base di
-partenza. Un’evoluzione interessante potrebbe consistere nel derivare,
-dai modelli in appendice al documento, indicatori per quantificare il
-grado di conformità di un prodotto software ai requisiti di
-accessibilità (in prospettiva, metriche di accessibilità).
+Nel merito, si ritiene che l’approccio di Sogei sia utile come base di partenza. Un’evoluzione interessante potrebbe consistere nel derivare, dai modelli in appendice al documento, indicatori per quantificare il grado di conformità di un prodotto software ai requisiti di accessibilità (in prospettiva, metriche di accessibilità).
 
 La disponibilità di tali metriche sarebbe utilissima:
 
--  per misurare il livello di accessibilità di parchi applicativi
-   esistenti;
--  per fissare quantitativamente il livello di accessibilità desiderato
-   (una volta superato il minimo da rispettare) per un software da
-   sviluppare;
--  per definire in maniera oggettiva, in progetti per migliorare
-   l’accessibilità di un software, il lavoro da effettuare (come
-   differenza tra la misura iniziale e quella desiderata), e per stimare
-   l’impegno e dunque i costi relativi.
+-  per misurare il livello di accessibilità di parchi applicativi esistenti;
+-  per fissare quantitativamente il livello di accessibilità desiderato (una volta superato il minimo da rispettare) per un software da sviluppare;
+-  per definire in maniera oggettiva, in progetti per migliorare l’accessibilità di un software, il lavoro da effettuare (come differenza tra la misura iniziale e quella desiderata), e per stimare l’impegno e dunque i costi relativi.
 
 Esempio 3: SIN-AGEA
 '''''''''''''''''''
 
-Il terzo contributo preso in esame è il documento “Istruzioni operative:
-metodologia e linee guida per la misurazione del software” del 5
-febbraio 2014, redatto dalla società SIN e utilizzato nell’ambito del
-contratto quadro con L’Agenzia per le Erogazioni in Agricoltura (AGEA),
-sia per i conteggi effettuati da SIN per AGEA, sia per i contratti con
-fornitori esterni per i quali SIN effettua funzioni amministrative e di
-governo, come da atto esecutivo A08-01 del contratto di servizio quadro
-AGEA-SIN del 17 novembre 2008.
+Il terzo contributo preso in esame è il documento “Istruzioni operative: metodologia e linee guida per la misurazione del software” del 5 febbraio 2014, redatto dalla società SIN e utilizzato nell’ambito del contratto quadro con L’Agenzia per le Erogazioni in Agricoltura (AGEA), sia per i conteggi effettuati da SIN per AGEA, sia per i contratti con fornitori esterni per i quali SIN effettua funzioni amministrative e di governo, come da atto esecutivo A08-01 del contratto di servizio quadro AGEA-SIN del 17 novembre 2008.
 
-In generale il documento appare rifarsi alle regole di conteggio IFPUG
-versione 4.3.1. Prevede anche, per le stime, l’uso del metodo Early &
-Quick Function Point 3.1. Fornisce poi suggerimenti operativi su come
-effettuare il conteggio nelle casistiche:
+In generale il documento appare rifarsi alle regole di conteggio IFPUG versione 4.3.1. Prevede anche, per le stime, l’uso del metodo Early & Quick Function Point 3.1. Fornisce poi suggerimenti operativi su come effettuare il conteggio nelle casistiche:
 
 -  presenza di middleware;
 -  applicazioni datawarehouse;
@@ -2688,19 +2434,11 @@ effettuare il conteggio nelle casistiche:
 -  applicazioni GIS;
 -  architetture a componenti.
 
-In tutti questi casi non si discosta significativamente dai contenuti
-del documento di Lombardia Informatica di cui al §2.4.1.1)
+In tutti questi casi non si discosta significativamente dai contenuti del documento di Lombardia Informatica di cui al §2.4.1.1)
 
-Appare invece seguire un diverso approccio nell’introduzione della c.d.
-“Misura Funzionale Adeguata” (MFA).
+Appare invece seguire un diverso approccio nell’introduzione della c.d. “Misura Funzionale Adeguata” (MFA).
 
-A differenza del caso di Lombardia Informatica (che definiva una misura
-funzionale contrattuale e un insieme di corrispettivi unitari per la
-remunerazione del fornitore), in questo caso il corrispettivo unitario
-del PF è fissato contrattualmente al medesimo valore per tutte le
-tipologie di applicazione (cioè è indipendente dalle caratteristiche non
-funzionali). Pertanto, per tenere conto di queste ultime, la modifica
-avviene sulla misura, passando da UFP a MFA con la formula:
+A differenza del caso di Lombardia Informatica (che definiva una misura funzionale contrattuale e un insieme di corrispettivi unitari per la remunerazione del fornitore), in questo caso il corrispettivo unitario del PF è fissato contrattualmente al medesimo valore per tutte le tipologie di applicazione (cioè è indipendente dalle caratteristiche non funzionali). Pertanto, per tenere conto di queste ultime, la modifica avviene sulla misura, passando da UFP a MFA con la formula:
 
 **MFA = UFP \* FattAd**
 
@@ -2710,8 +2448,7 @@ Il fattore di adeguamento (FattAd) tiene conto:
 -  delle modifiche in corso d’opera (CR);
 -  di requisiti tecnici e di qualità del software.
 
-L’ultimo gruppo include, secondo il documento, i seguenti elementi
-(tratti dal metodo Cocomo):
+L’ultimo gruppo include, secondo il documento, i seguenti elementi (tratti dal metodo Cocomo):
 
 -  Affidabilità (RELY);
 -  Complessità (CPLX);
@@ -2719,123 +2456,30 @@ L’ultimo gruppo include, secondo il documento, i seguenti elementi
 -  Prestazioni (TIME);
 -  Utilizzo di Tool.
 
-Il documento specifica che l’uso o meno del fattore di adeguamento deve
-essere stabilito in fase di attivazione del singolo intervento, insieme
-alla categoria di funzioni su cui va usato e ai relativi valori.
+Il documento specifica che l’uso o meno del fattore di adeguamento deve essere stabilito in fase di attivazione del singolo intervento, insieme alla categoria di funzioni su cui va usato e ai relativi valori.
 
-Il riuso, la replicazione di funzionalità e le CR sono trattate in modo
-sostanzialmente analogo al caso di Lombardia Informatica, cui si
-rimanda. Anche per i requisiti tecnici e di qualità, nel documento si fa
-uso dei coefficienti del metodo Cocomo: è presente una lista di valori
-analoga a quella di Tabella 3, con in più una riga relativa al requisito
-TIME (vincoli sui tempi di esecuzione). Si segnala che per il requisito
-TOOL (Utilizzo di tool, applicato soprattutto nelle applicazioni di
-datawarehouse) il documento non prevede l’utilizzo dei coefficienti
-Cocomo, bensì fissa i seguenti valori:
+Il riuso, la replicazione di funzionalità e le CR sono trattate in modo sostanzialmente analogo al caso di Lombardia Informatica, cui si rimanda. Anche per i requisiti tecnici e di qualità, nel documento si fa uso dei coefficienti del metodo Cocomo: è presente una lista di valori analoga a quella di Tabella 3, con in più una riga relativa al requisito TIME (vincoli sui tempi di esecuzione). Si segnala che per il requisito TOOL (Utilizzo di tool, applicato soprattutto nelle applicazioni di datawarehouse) il documento non prevede l’utilizzo dei coefficienti Cocomo, bensì fissa i seguenti valori:
 
--  0,6 per tutte le funzioni e i file logici già conteggiati (tipo
-   operazione = CHG);
+-  0,6 per tutte le funzioni e i file logici già conteggiati (tipo operazione = CHG);
 -  0,8 per EO ed EQ di nuova realizzazione (tipo operazione = ADD).
 
-La MFA del singolo elemento di conteggio è calcolata moltiplicando il
-numero di UFP del singolo elemento per il fattore di adeguamento. La MFA
-totale è calcolata sommando le MFA dei singoli elementi (il documento
-fornisce anche alcuni esempi pratici di conteggio e adeguamento).
-Infine, la MFA così ottenuta viene moltiplicata per il corrispettivo
-unitario previsto contrattualmente, per calcolare l’importo da
-corrispondere al fornitore.
+La MFA del singolo elemento di conteggio è calcolata moltiplicando il numero di UFP del singolo elemento per il fattore di adeguamento. La MFA totale è calcolata sommando le MFA dei singoli elementi (il documento fornisce anche alcuni esempi pratici di conteggio e adeguamento). Infine, la MFA così ottenuta viene moltiplicata per il corrispettivo unitario previsto contrattualmente, per calcolare l’importo da corrispondere al fornitore.
 
-In conclusione, il percorso metodologico previsto in questo esempio è
-simile a quello di Lombardia Informatica, ma include una “forzatura
-concettuale” perché deve comunque adeguarsi a un articolato contrattuale
-rigido che prevede un unico valore per il corrispettivo unitario del PF.
+In conclusione, il percorso metodologico previsto in questo esempio è simile a quello di Lombardia Informatica, ma include una “forzatura concettuale” perché deve comunque adeguarsi a un articolato contrattuale rigido che prevede un unico valore per il corrispettivo unitario del PF.
 
 Suggerimenti e proposte
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-Sulla scorta di quanto sopra, si può anticipare qualche indicazione di
-ordine generale per la redazione di capitolati e schemi contrattuali.
-Per indicazioni di dettaglio relativi alle singole tipologie progettuali
-in cui si declinano le attività di sviluppo e manutenzione applicativa,
-si rimanda al capitolo 6.
+Sulla scorta di quanto sopra, si può anticipare qualche indicazione di ordine generale per la redazione di capitolati e schemi contrattuali. Per indicazioni di dettaglio relativi alle singole tipologie progettuali in cui si declinano le attività di sviluppo e manutenzione applicativa, si rimanda al capitolo 6.
 
-Nella scrittura dei requisiti del software da realizzare (o del servizio
-di manutenzione da erogare) le amministrazioni devono impiegare, ove
-possibile, definizioni di tipo quantitativo, identificando gli elementi
-misurabili, fissando soglie oggettive e valori univoci. Per chiarire con
-un esempio, un requisito dalla definizione vaga e qualitativa del tipo
-“\ *L’applicazione dovrà essere scalabile*\ ” (dizione effettivamente
-rilevata in più di un capitolato pubblico) non è accettabile: una
-formulazione quantitativa della stessa esigenza potrebbe essere, ad
-esempio, “\ *L’applicazione dovrà tollerare un aumento del 100% del
-numero di utenti connessi con un degrado prestazionale inferiore al 10%
-misurato sui tempi di risposta*\ ”.
+Nella scrittura dei requisiti del software da realizzare (o del servizio di manutenzione da erogare) le amministrazioni devono impiegare, ove possibile, definizioni di tipo quantitativo, identificando gli elementi misurabili, fissando soglie oggettive e valori univoci. Per chiarire con un esempio, un requisito dalla definizione vaga e qualitativa del tipo “\ *L’applicazione dovrà essere scalabile*\ ” (dizione effettivamente rilevata in più di un capitolato pubblico) non è accettabile: una formulazione quantitativa della stessa esigenza potrebbe essere, ad esempio, “\ *L’applicazione dovrà tollerare un aumento del 100% del numero di utenti connessi con un degrado prestazionale inferiore al 10% misurato sui tempi di risposta*\ ”.
 
-La medesima cura va applicata alla scrittura degli SLA, indicando ove
-possibile le metriche per la loro misurazione e controllo. In alcuni
-contesti, l’amministrazione potrà chiedere allo stesso partecipante alla
-gara di proporre metriche e metodologie per la misurazione degli SLA:
-tali elementi potranno concorrere ad attribuire il punteggio tecnico
-dell’offerta in esame.
+La medesima cura va applicata alla scrittura degli SLA, indicando ove possibile le metriche per la loro misurazione e controllo. In alcuni contesti, l’amministrazione potrà chiedere allo stesso partecipante alla gara di proporre metriche e metodologie per la misurazione degli SLA: tali elementi potranno concorrere ad attribuire il punteggio tecnico dell’offerta in esame.
 
-I contratti di sviluppo e manutenzione applicativa dovrebbero passare
-dal modello di retribuzione basato sulla dimensione funzionale del
-software prodotto (o in manutenzione), a modelli più articolati che
-introducano meccanismi di premialità legati alla qualità del prodotto
-rilasciato, ad esempio quote sospese degli importi, da pagare solo al
-raggiungimento di soglie definite di indicatori di qualità. Si rimanda
-al capitolo 6 per applicazioni pratiche di questa raccomandazione.
+I contratti di sviluppo e manutenzione applicativa dovrebbero passare dal modello di retribuzione basato sulla dimensione funzionale del software prodotto (o in manutenzione), a modelli più articolati che introducano meccanismi di premialità legati alla qualità del prodotto rilasciato, ad esempio quote sospese degli importi, da pagare solo al raggiungimento di soglie definite di indicatori di qualità. Si rimanda al capitolo 6 per applicazioni pratiche di questa raccomandazione.
 
-In generale, gli attuali schemi contrattuali sembrano troppo rigidi. Si
-sono rilevati casi di contratti di sviluppo applicativo in cui l’unica
-metrica prevista (i Punti Funzione) era palesemente inadatta a
-quantificare attività facenti parte della fornitura (es. realizzazione
-di documentazione utente e tutorial, installazione su sedi periferiche,
-parametrizzazione di prodotti di mercato) con la conseguenza che – nel
-corso delle attività – l’amministrazione si è trovata nella necessità di
-trattare i PF come unità monetaria e di effettuare “conversioni”
-quantomeno arbitrarie per riuscire ad applicare comunque le clausole
-contrattuali.
+In generale, gli attuali schemi contrattuali sembrano troppo rigidi. Si sono rilevati casi di contratti di sviluppo applicativo in cui l’unica metrica prevista (i Punti Funzione) era palesemente inadatta a quantificare attività facenti parte della fornitura (es. realizzazione di documentazione utente e tutorial, installazione su sedi periferiche, parametrizzazione di prodotti di mercato) con la conseguenza che – nel corso delle attività – l’amministrazione si è trovata nella necessità di trattare i PF come unità monetaria e di effettuare “conversioni” quantomeno arbitrarie per riuscire ad applicare comunque le clausole contrattuali.
 
-Una maggiore flessibilità dei contratti eviterebbe applicazioni
-incorrette o negoziazioni successive tra amministrazione e fornitore per
-consentire la gestione del progetto nell’ambito di una “gabbia”
-contrattuale troppo stretta.
-
-.. [1]
-   Sostituito dalla dott.ssa Laura Tomassini come da comunicazione del
-   Ministero della Giustizia del 1 febbraio 2018.
-
-.. [2]
-   Sostituito a partire dal 12 giugno 2017 dal dott. Giampiero Mutinati,
-   dietro richiesta della medesima società SQS.
-
-.. [3]
-   Roberto Meli rappresenta anche il punto di vista dell’associazione
-   Assintel e dell'associazione SiFPA.
-
-.. [4]
-   Nella presente guida tecnica, con “valore” di un software deve
-   intendersi il valore di mercato del software stesso, non il suo
-   valore in assoluto (che è un concetto diverso, legato ad altri
-   parametri, ad esempio l’importanza che il software riveste per i
-   propri utenti).
-
-.. [5]
-   Tra i vari standard disponibili, si è scelto di porre particolare
-   attenzione agli standard ISO, sia per la loro oggettiva rilevanza e
-   diffusione non solo in ambito ICT, sia in omogeneità con le
-   precedenti linee guida AgID (si ricorda che il presente lavoro si
-   declina come aggiornamento delle linee guida pregresse).
-
-.. [6]
-   http://www.dpo.it/eqfp/
-
-.. [7]
-   Il documento è stato acquisito da AgID nell’ambito dell’istruttoria
-   di un parere, reso ai sensi dell’art. 14bis del CAD, su una gara
-   bandita da Consip per conto della RGS.
+Una maggiore flessibilità dei contratti eviterebbe applicazioni incorrette o negoziazioni successive tra amministrazione e fornitore per consentire la gestione del progetto nell’ambito di una “gabbia” contrattuale troppo stretta.
 
 .. |image0| image:: media/media/image1.png
-   :width: 7.07986in
-   :height: 3.30417in

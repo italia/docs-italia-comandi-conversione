@@ -12,18 +12,15 @@ Per ottenere il pagamento dei buoni validati, l’esercente deve provvedere a em
 
 **Nota Bene**
 
--  .. rubric:: **Le fatture così emesse non hanno rilevanza ai fini fiscali** – essendo l’evento fiscale già regolato mediante il biglietto o la ricevuta fiscale emessa dall’esercente all’atto dell’accettazione del buono – ma servono unicamente a consentire il riscontro dei buoni validati prima di procedere al loro pagamento.
-      :name: le-fatture-così-emesse-non-hanno-rilevanza-ai-fini-fiscali-essendo-levento-fiscale-già-regolato-mediante-il-biglietto-o-la-ricevuta-fiscale-emessa-dallesercente-allatto-dellaccettazione-del-buono-ma-servono-unicamente-a-consentire-il-riscontro-dei-buoni-validati-prima-di-procedere-al-loro-pagamento.
+-  ****Le fatture così emesse non hanno rilevanza ai fini fiscali** – essendo l’evento fiscale già regolato mediante il biglietto o la ricevuta fiscale emessa dall’esercente all’atto dell’accettazione del buono – ma servono unicamente a consentire il riscontro dei buoni validati prima di procedere al loro pagamento.**
 
 -  A tal proposito si comunica che **non è necessario l’assolvimento dell’imposta di bollo.**
 
--  .. rubric:: Al fine di limitare la possibilità di incorrere in errore in fase di caricamento ed invio della fattura si consiglia di utilizzare il portale web per la fatturazione elettronica disponibile gratuitamente all’indirizzo: `http://ivaservizi.agenziaentrate.gov.it/ <http://ivaservizi.agenziaentrate.gov.it/>`__
-      :name: al-fine-di-limitare-la-possibilità-di-incorrere-in-errore-in-fase-di-caricamento-ed-invio-della-fattura-si-consiglia-di-utilizzare-il-portale-web-per-la-fatturazione-elettronica-disponibile-gratuitamente-allindirizzo-httpivaservizi.agenziaentrate.gov.it
+-  **Al fine di limitare la possibilità di incorrere in errore in fase di caricamento ed invio della fattura si consiglia di utilizzare il portale web per la fatturazione elettronica disponibile gratuitamente all’indirizzo: http://ivaservizi.agenziaentrate.gov.it/**
 
 Per accedere a questa funzionalità è necessario autenticarsi utilizzando **credenziali Entratel/Fisconline** oppure una **Carta Nazionale Servizi (CNS)** precedentemente abilitata ai servizi telematici dell’Agenzia delle Entrate o **SPID**.
 
--  .. rubric:: Le presenti linee guida sono state redatte utilizzando la citata piattaforma web. Altri software disponibili per la compilazione delle fatture elettroniche potrebbero riportare campi e funzioni diverse; in ogni caso i campi essenziali
-      :name: le-presenti-linee-guida-sono-state-redatte-utilizzando-la-citata-piattaforma-web.-altri-software-disponibili-per-la-compilazione-delle-fatture-elettroniche-potrebbero-riportare-campi-e-funzioni-diverse-in-ogni-caso-i-campi-essenziali
+-  **Le presenti linee guida sono state redatte utilizzando la citata piattaforma web. Altri software disponibili per la compilazione delle fatture elettroniche potrebbero riportare campi e funzioni diverse; in ogni caso i campi essenziali**
 
 per la compilazione della fattura intestata all’iniziativa sono quelli descritti in questo documento.
 
@@ -35,7 +32,7 @@ Dopo aver compilato la fattura è necessario firmare il file digitalmente prima 
 
 **Istruzioni per la compilazione di una fattura**
 
-Si illustrano di seguito i passi necessari per compilare la fattura utilizzando il portale web `http://ivaservizi.agenziaentrate.gov.it/ <http://ivaservizi.agenziaentrate.gov.it/>`__
+Si illustrano di seguito i passi necessari per compilare la fattura utilizzando il portale web http://ivaservizi.agenziaentrate.gov.it/
 
 **Passo 1**
 
@@ -88,8 +85,7 @@ Passo 2
 
 **CLIENTE** (Inserire i dati della pubblica amministrazione nei confronti della quale si emette la fattura)
 
-I. .. rubric:: Valorizzare i campi come descritto di seguito (dati reali)
-      :name: valorizzare-i-campi-come-descritto-di-seguito-dati-reali
+I. **Valorizzare i campi come descritto di seguito (dati reali)**
 
    -  Codice Fiscale: 97904380587
 
@@ -121,8 +117,7 @@ Quindi cliccare su >Vai a Dati Fattura
 
 **DATI DELLA FATTURA** (Inserisci i dati della fattura)
 
-I. .. rubric:: Valorizzare i campi come descritto di seguito
-      :name: valorizzare-i-campi-come-descritto-di-seguito
+I. **Valorizzare i campi come descritto di seguito**
 
    -  Tipo documento: Dal menù a tendina selezionare <Fattura>
 
@@ -132,8 +127,7 @@ I. .. rubric:: Valorizzare i campi come descritto di seguito
 
 |image5|
 
-II.  .. rubric:: Nel campo Beni e Servizi cliccare su Aggiungi
-        :name: nel-campo-beni-e-servizi-cliccare-su-aggiungi
+II.  **Nel campo Beni e Servizi cliccare su Aggiungi**
 
 III. **Valorizzare i campi come descritto di seguito**
 
@@ -147,8 +141,7 @@ III. **Valorizzare i campi come descritto di seguito**
 
      -  |image6|\ Natura: Non soggette Quindi cliccare su >\ **Altri Dati**
 
-IV.  .. rubric:: Valorizzare i campi come descritto di seguito
-        :name: valorizzare-i-campi-come-descritto-di-seguito-1
+IV.  **Valorizzare i campi come descritto di seguito**
 
      -  Codice Tipo: 18APP
 
@@ -196,6 +189,8 @@ Quindi cliccare su >Verifica Dati
 Passo 4
 =======
 
+.. _header-added-by-pandoc-1:
+
 header added by pandoc
 ----------------------
 
@@ -204,7 +199,7 @@ VERIFICA DATI
 
 **I. Nel campo Riepilogo Importi Aliquota inserire:**
 
-o Rif. Normativo: Art. 2 DPR 633/72
+o Rif. Normativo: `Art. 2 DPR 633/72 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1972;633~art2>`__
 
 |image11|
 
@@ -212,6 +207,8 @@ Quindi cliccare su >\ **Vai a Riepilogo**
 
 Passo 5
 =======
+
+.. _header-added-by-pandoc-2:
 
 header added by pandoc
 ----------------------
@@ -253,52 +250,52 @@ Per le problematiche amministrative connesse alla fatturazione, è disponibile u
 
 tel. 06/85.796.338
 
-email: `18app@consap.it <mailto:18app@consap.it>`__ (Utilizzabile esclusivamente da mail ordinaria. Per motivi tecnici non saranno riscontrati messaggi inviati da PEC.)
+email: 18app@consap.it (Utilizzabile esclusivamente da mail ordinaria. Per motivi tecnici non saranno riscontrati messaggi inviati da PEC.)
 
 Appendice 1 - Codici dei Regimi fiscali
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-+------------+---------------------------------------------------------------------------------------------------------------+
-| **Codice** | **Descrizione**                                                                                               |
-+============+===============================================================================================================+
-| **RF01**   | Ordinario                                                                                                     |
-+------------+---------------------------------------------------------------------------------------------------------------+
-| **RF02**   | Contribuenti minimi (art.1, c.96-117, L. 244/07)                                                              |
-+------------+---------------------------------------------------------------------------------------------------------------+
-| **RF03**   | Nuove iniziative produttive (art.13, L. 388/00)                                                               |
-+------------+---------------------------------------------------------------------------------------------------------------+
-| **RF04**   | Agricoltura e attività connesse e pesca (artt.34 e 34-bis, DPR 633/72)                                        |
-+------------+---------------------------------------------------------------------------------------------------------------+
-| **RF05**   | Vendita sali e tabacchi (art.74, c.1, DPR. 633/72)                                                            |
-+------------+---------------------------------------------------------------------------------------------------------------+
-| **RF06**   | Commercio fiammiferi (art.74, c.1, DPR 633/72)                                                                |
-+------------+---------------------------------------------------------------------------------------------------------------+
-| **RF07**   | Editoria (art.74, c.1, DPR 633/72)                                                                            |
-+------------+---------------------------------------------------------------------------------------------------------------+
-| **RF08**   | Gestione servizi telefonia pubblica (art.74, c.1, DPR 633/72)                                                 |
-+------------+---------------------------------------------------------------------------------------------------------------+
-| **RF09**   | Rivendita documenti di trasporto pubblico e di sosta (art.74, c.1, DPR 633/72)                                |
-+------------+---------------------------------------------------------------------------------------------------------------+
-| **RF10**   | Intrattenimenti, giochi e altre attività di cui alla tariffa allegata al DPR 640/72 (art.74, c.6, DPR 633/72) |
-+------------+---------------------------------------------------------------------------------------------------------------+
-| **RF11**   | Agenzie viaggi e turismo (art.74-ter, DPR 633/72)                                                             |
-+------------+---------------------------------------------------------------------------------------------------------------+
-| **RF12**   | Agriturismo (art.5, c.2, L. 413/91)                                                                           |
-+------------+---------------------------------------------------------------------------------------------------------------+
-| **RF13**   | Vendite a domicilio (art.25-bis, c.6, DPR 600/73)                                                             |
-+------------+---------------------------------------------------------------------------------------------------------------+
-| **RF14**   | Rivendita beni usati, oggetti d’arte, d’antiquariato o da collezione (art.36, DL 41/95)                       |
-+------------+---------------------------------------------------------------------------------------------------------------+
-| **RF15**   | Agenzie di vendite all’asta di oggetti d’arte, antiquariato o da collezione (art.40-bis, DL 41/95)            |
-+------------+---------------------------------------------------------------------------------------------------------------+
-| **RF16**   | IVA per cassa P.A. (art.6, c.5, DPR 633/72)                                                                   |
-+------------+---------------------------------------------------------------------------------------------------------------+
-| **RF17**   | IVA per cassa (art. 32-bis, DL 83/2012)                                                                       |
-+------------+---------------------------------------------------------------------------------------------------------------+
-| **RF18**   | Altro                                                                                                         |
-+------------+---------------------------------------------------------------------------------------------------------------+
-| **RF19**   | Regime forfettario (art.1, c.54-89, L. 190/2014)                                                              |
-+------------+---------------------------------------------------------------------------------------------------------------+
++------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Codice** | **Descrizione**                                                                                                                                                                                                                                                                                                |
++============+================================================================================================================================================================================================================================================================================================================+
+| **RF01**   | Ordinario                                                                                                                                                                                                                                                                                                      |
++------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **RF02**   | Contribuenti minimi (art.1, c.96-117, `L. 244/07 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2007;244>`__)                                                                                                                                                                                      |
++------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **RF03**   | Nuove iniziative produttive (`art.13, L. 388/00 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2000;388~art13>`__)                                                                                                                                                                                 |
++------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **RF04**   | Agricoltura e attività connesse e pesca (artt.34 e 34-bis, `DPR 633/72 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1972;633>`__)                                                                                                                                              |
++------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **RF05**   | Vendita sali e tabacchi (`art.74, c.1, DPR. 633/72 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1972;633~art74-com1>`__)                                                                                                                                                       |
++------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **RF06**   | Commercio fiammiferi (`art.74, c.1, DPR 633/72 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1972;633~art74-com1>`__)                                                                                                                                                           |
++------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **RF07**   | Editoria (`art.74, c.1, DPR 633/72 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1972;633~art74-com1>`__)                                                                                                                                                                       |
++------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **RF08**   | Gestione servizi telefonia pubblica (`art.74, c.1, DPR 633/72 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1972;633~art74-com1>`__)                                                                                                                                            |
++------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **RF09**   | Rivendita documenti di trasporto pubblico e di sosta (`art.74, c.1, DPR 633/72 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1972;633~art74-com1>`__)                                                                                                                           |
++------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **RF10**   | Intrattenimenti, giochi e altre attività di cui alla tariffa allegata al `DPR 640/72 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1972;640>`__ (`art.74, c.6, DPR 633/72 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1972;633~art74-com6>`__) |
++------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **RF11**   | Agenzie viaggi e turismo (`art.74-ter, DPR 633/72 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1972;633~art74ter>`__)                                                                                                                                                          |
++------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **RF12**   | Agriturismo (`art.5, c.2, L. 413/91 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1991;413~art5-com2>`__)                                                                                                                                                                                         |
++------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **RF13**   | Vendite a domicilio (`art.25-bis, c.6, DPR 600/73 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1973;600~art25bis-com6>`__)                                                                                                                                                     |
++------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **RF14**   | Rivendita beni usati, oggetti d’arte, d’antiquariato o da collezione (art.36, DL 41/95)                                                                                                                                                                                                                        |
++------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **RF15**   | Agenzie di vendite all’asta di oggetti d’arte, antiquariato o da collezione (art.40-bis, DL 41/95)                                                                                                                                                                                                             |
++------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **RF16**   | IVA per cassa P.A. (`art.6, c.5, DPR 633/72 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1972;633~art6-com5>`__)                                                                                                                                                               |
++------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **RF17**   | IVA per cassa (art. 32-bis, DL 83/2012)                                                                                                                                                                                                                                                                        |
++------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **RF18**   | Altro                                                                                                                                                                                                                                                                                                          |
++------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **RF19**   | Regime forfettario (art.1, c.54-89, `L. 190/2014 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2014;190>`__)                                                                                                                                                                                      |
++------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 **Appendice 2 - Esempio di fattura elettronica (formato .xml) compilata per l’iniziativa 18APP**
 
@@ -370,7 +367,7 @@ Si riporta nel seguito un esempio di fattura elettronica in formato XML conforme
 
 <Telefono>123456789</Telefono>
 
-`<Email>esempio@esempio.it</Email> <mailto:esempio@esempio.it>`__
+<Email>esempio@esempio.it</Email> <mailto:esempio@esempio.it>_\_
 
 </Contatti>
 
@@ -450,7 +447,7 @@ Si riporta nel seguito un esempio di fattura elettronica in formato XML conforme
 
 <Imposta>0.00</Imposta>
 
-<RiferimentoNormativo>Art. 2 DPR 633/72</RiferimentoNormativo>
+<RiferimentoNormativo>`Art. 2 DPR 633/72 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1972;633~art2>`__\ </RiferimentoNormativo>
 
 </DatiRiepilogo>
 
@@ -556,7 +553,7 @@ La valorizzazione degli elementi del tracciato xml deve rispettare i requisiti f
 +----------------------------------+--------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------+----------+
 |                                  | **1.2.1.3.5 <CodEORI>**        | numero del Codice EORI (Economic Operator Registration and                                                                                                                                                                                                                                                                                                                            | formato alfanumerico                 |          |
 |                                  |                                |                                                                                                                                                                                                                                                                                                                                                                                       |                                      |          |
-|                                  |                                | Identification) in base al Regolamento (CE) n. 312 del 16 aprile 2009. In vigore dal 1 luglio 2009                                                                                                                                                                                                                                                                                    |                                      |          |
+|                                  |                                | Identification) in base al `Regolamento (CE) n. 312 del 16 aprile 2009 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:comunita.europee:regolamento:2009-04-16;312>`__. In vigore dal 1 luglio 2009                                                                                                                                                                                    |                                      |          |
 +----------------------------------+--------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------+----------+
 
 +--+-----------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+----------+
@@ -718,7 +715,7 @@ La valorizzazione degli elementi del tracciato xml deve rispettare i requisiti f
 +--+-----------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+----------+
 |  | **2.2.2.6 <Imposta>**       | imposta risultante dall'applicazione dell'aliquota IVA all'imponibile                                                                          | formato numerico; i decimali vanno separati dall'intero con il carattere '.' (punto) – valore da indicare 0.00                           |          |
 +--+-----------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+----------+
-|  | **2.2.2.8**                 | norma di riferimento (obbligatoria nei casi in cui il campo **2.2.2.2** è valorizzato)                                                         | valore ammesso: ART. 2 DPR 633/72                                                                                                        |          |
+|  | **2.2.2.8**                 | norma di riferimento (obbligatoria nei casi in cui il campo **2.2.2.2** è valorizzato)                                                         | valore ammesso: `ART. 2 DPR 633/72 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1972;633~art2>`__        |          |
 |  |                             |                                                                                                                                                |                                                                                                                                          |          |
 |  | **<RiferimentoNormativo>**  |                                                                                                                                                |                                                                                                                                          |          |
 +--+-----------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+----------+
@@ -748,41 +745,16 @@ La valorizzazione degli elementi del tracciato xml deve rispettare i requisiti f
 +--+-----------------------------+------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------+----------+
 
 .. |image0| image:: media/media/image1.png
-   :width: 6.37509in
-   :height: 3.04792in
 .. |image1| image:: media/media/image2.png
-   :width: 6.26532in
-   :height: 0.24969in
 .. |image2| image:: media/media/image3.png
-   :width: 6.15254in
-   :height: 2.83771in
 .. |image3| image:: media/media/image4.png
-   :width: 6.72788in
-   :height: 2.66062in
 .. |image4| image:: media/media/image5.png
-   :width: 6.34206in
-   :height: 2.87083in
 .. |image5| image:: media/media/image6.png
-   :width: 6.31661in
-   :height: 2.03646in
 .. |image6| image:: media/media/image7.png
-   :width: 5.54583in
-   :height: 3.26653in
 .. |image7| image:: media/media/image8.png
-   :width: 6.4197in
-   :height: 4.80937in
 .. |image8| image:: media/media/image9.png
-   :width: 6.43932in
-   :height: 2.72708in
 .. |image9| image:: media/media/image10.png
-   :width: 6.36253in
-   :height: 4.29167in
 .. |image10| image:: media/media/image11.jpeg
-   :width: 6.40927in
-   :height: 3.08729in
 .. |image11| image:: media/media/image12.png
-   :width: 6.39227in
-   :height: 2.27604in
 .. |image12| image:: media/media/image13.png
-   :width: 5.15247in
-   :height: 1.42708in
+

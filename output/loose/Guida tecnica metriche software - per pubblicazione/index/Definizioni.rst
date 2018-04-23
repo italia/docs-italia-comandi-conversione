@@ -1,57 +1,33 @@
 Definizioni
 -----------
 
-Nel corso della ricognizione svolta dal Tavolo di lavoro si è
-riscontrata una molteplicità di definizioni, concetti e gerarchie, a
-volte disomogenee tra loro. Il Tavolo di lavoro ha condiviso l’esigenza
-di fissare, anzitutto, una tassonomia. Si è provveduto dunque a
-selezionare un insieme di definizioni, dipendenze e relazioni, tra
-quelle proposte nella letteratura tecnica, che (senza pretesa di
-completezza o validità superiore alle altre) possano risolvere le
-ambiguità di terminologia, consentire la comprensione del presente
-documento ai lettori cui è destinato, fornire un linguaggio comune alle
-amministrazioni e alle aziende fornitrici di servizi ICT.
+Nel corso della ricognizione svolta dal Tavolo di lavoro si è riscontrata una molteplicità di definizioni, concetti e gerarchie, a volte disomogenee tra loro. Il Tavolo di lavoro ha condiviso l’esigenza di fissare, anzitutto, una tassonomia. Si è provveduto dunque a selezionare un insieme di definizioni, dipendenze e relazioni, tra quelle proposte nella letteratura tecnica, che (senza pretesa di completezza o validità superiore alle altre) possano risolvere le ambiguità di terminologia, consentire la comprensione del presente documento ai lettori cui è destinato, fornire un linguaggio comune alle amministrazioni e alle aziende fornitrici di servizi ICT.
 
 Anzitutto appare utile rimarcare la differenza tra:
 
--  progetto di sviluppo o di manutenzione di software, che consiste in
-   una serie di attività, con un inizio temporale e una fine, un
-   obiettivo, risorse e un responsabile;
--  processo di sviluppo o manutenzione, che consiste in una sequenza
-   strutturata di fasi, che può essere definito in accordo a una
-   metodologia o a uno standard, in cui sono stabiliti ruoli, modalità
-   di esecuzione e comunicazione, controlli e rilasci;
--  prodotto software, composto da un codice sorgente, da un eseguibile,
-   da tabelle di configurazione e da documentazione connessa.
+-  progetto di sviluppo o di manutenzione di software, che consiste in una serie di attività, con un inizio temporale e una fine, un obiettivo, risorse e un responsabile;
+-  processo di sviluppo o manutenzione, che consiste in una sequenza strutturata di fasi, che può essere definito in accordo a una metodologia o a uno standard, in cui sono stabiliti ruoli, modalità di esecuzione e comunicazione, controlli e rilasci;
+-  prodotto software, composto da un codice sorgente, da un eseguibile, da tabelle di configurazione e da documentazione connessa.
 
-Un progetto può essere condotto tramite un processo standardizzato o
-definito in un apposito documento (Piano) e avere come obiettivo la
-realizzazione di un prodotto software.
+Un progetto può essere condotto tramite un processo standardizzato o definito in un apposito documento (Piano) e avere come obiettivo la realizzazione di un prodotto software.
 
 Classificazione dei requisiti
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Nell’ambito dei progetti di sviluppo o di manutenzione applicativa, è
-utile poter classificare i requisiti espressi dall’utente nelle
-categorie riportate nella figura che segue. Tale classificazione, con
-minime varianti, è condivisa da gran parte delle fonti esaminate nella
-ricognizione.
+Nell’ambito dei progetti di sviluppo o di manutenzione applicativa, è utile poter classificare i requisiti espressi dall’utente nelle categorie riportate nella figura che segue. Tale classificazione, con minime varianti, è condivisa da gran parte delle fonti esaminate nella ricognizione.
 
 |image1|
 
-Figura 1 - classificazione dei requisiti in un progetto di sviluppo o
-manutenzione
+Figura 1 - classificazione dei requisiti in un progetto di sviluppo o manutenzione
 
 Requisiti funzionali
 ^^^^^^^^^^^^^^^^^^^^
 
-I FUR (Functional User Requirement) descrivono le funzionalità del
-software in termini di:
+I FUR (Functional User Requirement) descrivono le funzionalità del software in termini di:
 
 -  servizi che il software stesso deve fornire;
 -  risposte che l’utente aspetta dal software in determinate condizioni;
--  risultati che il software deve produrre in risposta a specifici
-   input.
+-  risultati che il software deve produrre in risposta a specifici input.
 
 Tabella 6: esempio di FUR
 
@@ -67,17 +43,11 @@ Tabella 6: esempio di FUR
 Requisiti e vincoli di progetto
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-I PRC (Project Requirement and Constraint) sono requisiti e vincoli che
-non afferiscono direttamente al prodotto software, bensì definiscono
-caratteristiche del progetto di sviluppo o manutenzione. Rientrano in
-questa categoria:
+I PRC (Project Requirement and Constraint) sono requisiti e vincoli che non afferiscono direttamente al prodotto software, bensì definiscono caratteristiche del progetto di sviluppo o manutenzione. Rientrano in questa categoria:
 
 -  obiettivi temporali del progetto (schedulazione, date di consegna);
--  risorse a disposizione (budget, competenze degli sviluppatori,
-   esperienza del capo progetto);
--  strumenti e metodologie di conduzione del progetto (processo di
-   produzione, uso di CASE, rischi e dipendenze da altre iniziative al
-   di fuori del controllo del responsabile di progetto).
+-  risorse a disposizione (budget, competenze degli sviluppatori, esperienza del capo progetto);
+-  strumenti e metodologie di conduzione del progetto (processo di produzione, uso di CASE, rischi e dipendenze da altre iniziative al di fuori del controllo del responsabile di progetto).
 
 Tabella 7: esempi di PRC
 
@@ -100,16 +70,11 @@ Tabella 7: esempi di PRC
 Requisiti di qualità
 ^^^^^^^^^^^^^^^^^^^^
 
-I requisiti di qualità sono il sottoinsieme dei NFR (Non Functional
-Requirement) che descrivono le caratteristiche di qualità del prodotto
-software da sviluppare o mantenere.
+I requisiti di qualità sono il sottoinsieme dei NFR (Non Functional Requirement) che descrivono le caratteristiche di qualità del prodotto software da sviluppare o mantenere.
 
-Per la definizione di “caratteristiche di qualità del prodotto software”
-si rimanda alla norma ISO/IEC 25010, che identifica gli elementi
-riportati nella tabella che segue [1]_.
+Per la definizione di “caratteristiche di qualità del prodotto software” si rimanda alla norma ISO/IEC 25010, che identifica gli elementi riportati nella tabella che segue:sup:11\ `#fn11 <#fn11>`__.
 
-Tabella 8 - Caratteristiche e sottocaratteristiche di qualità ISO/IEC
-25010
+Tabella 8 - Caratteristiche e sottocaratteristiche di qualità ISO/IEC 25010
 
 +---+----+-------------------------------------------------------------+
 | * | ** | **Descrizione**                                             |
@@ -500,10 +465,8 @@ Requisiti di sistema/ambiente
 
 Questa classe di requisiti descrive:
 
--  il dominio dell’applicazione (es. software di contabilità, business
-   intelligence, ecc.);
--  il contesto di utilizzo (numero e tipologia di utenti, modalità di
-   accesso);
+-  il dominio dell’applicazione (es. software di contabilità, business intelligence, ecc.);
+-  il contesto di utilizzo (numero e tipologia di utenti, modalità di accesso);
 -  elementi legati all’ambiente fisico in cui il software deve operare.
 
 Tabella 10: esempio di requisiti di sistema/ambiente
@@ -523,8 +486,7 @@ Tabella 10: esempio di requisiti di sistema/ambiente
 Requisiti tecnici
 ^^^^^^^^^^^^^^^^^
 
-Questa classe di requisiti descrive le tecnologie e gli standard (DBMS,
-middleware, networking) di cui il software deve tenere conto.
+Questa classe di requisiti descrive le tecnologie e gli standard (DBMS, middleware, networking) di cui il software deve tenere conto.
 
 Tabella 11: esempio di requisiti tecnici
 
@@ -542,192 +504,64 @@ Tabella 11: esempio di requisiti tecnici
 Aspetti della qualità
 ~~~~~~~~~~~~~~~~~~~~~
 
-La norma ISO 25010 distingue i seguenti aspetti della qualità di un
-prodotto software:
+La norma ISO 25010 distingue i seguenti aspetti della qualità di un prodotto software:
 
--  qualità esterna: riguarda il comportamento dinamico del prodotto
-   nell’ambiente d’uso reale o simulato; descrive o qualifica le
-   prestazioni e l’operatività del prodotto in esecuzione, che viene
-   visto come *black-box*;
--  qualità interna (o intrinseca): esprime le proprietà intrinseche,
-   statiche, ossia indipendenti dal contesto di esecuzione e uso,
-   direttamente misurabili ad esempio sul codice sorgente, pertanto
-   senza la necessità di eseguire il software;
--  qualità in uso (o percepita): esprime il livello con cui il prodotto
-   si dimostra utile all’utente nel suo contesto d’uso, ovvero
-   “\ *l’efficacia e l’efficienza con cui serve le sue esigenze, a
-   fronte di una sicurezza e di una soddisfazione nell’utilizzo*\ ”.
-   Rappresenta quindi il punto di vista dell’utente finale, e include
-   per definizione elementi soggettivi. È verificabile solo negli
-   ambienti d’uso, reali e non simulati, analizzando l’interazione
-   utente-macchina.
+-  qualità esterna: riguarda il comportamento dinamico del prodotto nell’ambiente d’uso reale o simulato; descrive o qualifica le prestazioni e l’operatività del prodotto in esecuzione, che viene visto come *black-box*;
+-  qualità interna (o intrinseca): esprime le proprietà intrinseche, statiche, ossia indipendenti dal contesto di esecuzione e uso, direttamente misurabili ad esempio sul codice sorgente, pertanto senza la necessità di eseguire il software;
+-  qualità in uso (o percepita): esprime il livello con cui il prodotto si dimostra utile all’utente nel suo contesto d’uso, ovvero “\ *l’efficacia e l’efficienza con cui serve le sue esigenze, a fronte di una sicurezza e di una soddisfazione nell’utilizzo*\ ”. Rappresenta quindi il punto di vista dell’utente finale, e include per definizione elementi soggettivi. È verificabile solo negli ambienti d’uso, reali e non simulati, analizzando l’interazione utente-macchina.
 
 Esempi:
 
--  la percentuale di righe di commento in un codice sorgente è una
-   caratteristica di qualità interna;
--  la complessità del codice sorgente è una caratteristica di qualità
-   interna;
--  il numero di errori riscontrati nel codice sorgente è una
-   caratteristica di qualità interna;
--  la non corretta strutturazione del codice sorgente può avere impatto
-   negativo sulla qualità interna;
--  il grado di portabilità di un software può essere misurato
-   analizzando il codice sorgente alla ricerca di legami con specificità
-   della piattaforma su cui esso opera (si tratta in questo caso di
-   qualità interna); in alternativa si può contare su quante piattaforme
-   il software può operare senza interventi (si tratta in questo caso di
-   qualità esterna); o ancora, si può verificare la portabilità dal
-   punto di vista dell’utente che deve eseguire il porting, misurando il
-   tempo e/o l’impegno speso per effettuare il porting stesso (si tratta
-   in questo caso di qualità in uso);
--  il numero di errori del software riscontrati durante le fasi di test
-   è una caratteristica di qualità esterna;
--  il tempo medio di esecuzione di uno script di installazione di un
-   software è una caratteristica di qualità esterna;
--  il tempo medio intercorrente tra un blocco dell’esecuzione e il
-   successivo è una caratteristica di qualità esterna;
--  il tempo medio di apprendimento di un software è una caratteristica
-   di qualità in uso.
--  il tempo di risposta massimo di una funzionalità al variare del
-   numero di utenti che contemporaneamente utilizzano un software è una
-   caratteristica di qualità in uso;
--  la soddisfazione dell’utente finale nell’utilizzo del software è una
-   caratteristica della qualità in uso.
+-  la percentuale di righe di commento in un codice sorgente è una caratteristica di qualità interna;
+-  la complessità del codice sorgente è una caratteristica di qualità interna;
+-  il numero di errori riscontrati nel codice sorgente è una caratteristica di qualità interna;
+-  la non corretta strutturazione del codice sorgente può avere impatto negativo sulla qualità interna;
+-  il grado di portabilità di un software può essere misurato analizzando il codice sorgente alla ricerca di legami con specificità della piattaforma su cui esso opera (si tratta in questo caso di qualità interna); in alternativa si può contare su quante piattaforme il software può operare senza interventi (si tratta in questo caso di qualità esterna); o ancora, si può verificare la portabilità dal punto di vista dell’utente che deve eseguire il porting, misurando il tempo e/o l’impegno speso per effettuare il porting stesso (si tratta in questo caso di qualità in uso);
+-  il numero di errori del software riscontrati durante le fasi di test è una caratteristica di qualità esterna;
+-  il tempo medio di esecuzione di uno script di installazione di un software è una caratteristica di qualità esterna;
+-  il tempo medio intercorrente tra un blocco dell’esecuzione e il successivo è una caratteristica di qualità esterna;
+-  il tempo medio di apprendimento di un software è una caratteristica di qualità in uso.
+-  il tempo di risposta massimo di una funzionalità al variare del numero di utenti che contemporaneamente utilizzano un software è una caratteristica di qualità in uso;
+-  la soddisfazione dell’utente finale nell’utilizzo del software è una caratteristica della qualità in uso.
 
-La norma ISO definisce anche la “qualità del dato” (descritta dalla ISO
-25012, complementare alla ISO 25010), che non viene qui illustrata in
-quanto esterna al perimetro di questo studio.
+La norma ISO definisce anche la “qualità del dato” (descritta dalla ISO 25012, complementare alla ISO 25010), che non viene qui illustrata in quanto esterna al perimetro di questo studio.
 
 Classificazione delle metriche
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Nella definizione ISO/IEC/IEEE 24765:2017 Systems and software
-engineering-Vocabulary, una metrica è “\ *una misura quantitativa del
-grado di possesso di uno specifico attributo da parte di un sistema, un
-componente, un processo*\ ”. Essa si applica, quindi, assegnando un
-valore univoco (scelto entro un intervallo di valori fissato a priori) a
-un attributo del software, concreto e oggettivamente valutabile.
+Nella definizione ISO/IEC/IEEE 24765:2017 Systems and software engineering-Vocabulary, una metrica è “\ *una misura quantitativa del grado di possesso di uno specifico attributo da parte di un sistema, un componente, un processo*\ ”. Essa si applica, quindi, assegnando un valore univoco (scelto entro un intervallo di valori fissato a priori) a un attributo del software, concreto e oggettivamente valutabile.
 
-Con riferimento alla classificazione del paragrafo precedente, si
-possono distinguere:
+Con riferimento alla classificazione del paragrafo precedente, si possono distinguere:
 
--  metriche interne (statiche, o strutturali): utili per misurare le
-   proprietà statiche e intrinseche del software (qualità interna); si
-   applicano alle specifiche o al codice sorgente (tecniche di analisi
-   statica, ispezione diretta), alla documentazione e ai grafi di flusso
-   di controllo; queste metriche sono usate durante le fasi [2]_ di
-   Analisi, Design e Codifica, sempre dal punto di vista degli
-   sviluppatori, non considerano il comportamento in fase di esecuzione,
-   ma solo gli attributi statici e strutturali;
--  metriche esterne (dinamiche, o operative): misurano il comportamento
-   dinamico del software, osservandolo in fase di esecuzione,
-   nell’ambiente, reale o simulato, di utilizzo (qualità esterna);
-   vengono impiegate a partire dalla fase di progettazione di dettaglio
-   in poi, da parte di sviluppatori e/o utenti; i risultati di tali
-   misurazioni sono influenzate dal livello di qualità interna
-   raggiunto;
--  metriche in uso: misurano il grado di qualità percepita dall’utente
-   finale, nello specifico contesto d’uso previsto per il prodotto; si
-   fissa uno specifico scenario d’uso e si osserva l’effetto
-   dell’esecuzione del prodotto sull’utente. Si ribadisce che la qualità
-   in uso rappresenta l’effetto combinato di più caratteristiche di
-   qualità interna ed esterna. Le metriche in uso sono impiegabili solo
-   al momento del rilascio del prodotto, nell’ambiente reale di messa in
-   esercizio.
+-  metriche interne (statiche, o strutturali): utili per misurare le proprietà statiche e intrinseche del software (qualità interna); si applicano alle specifiche o al codice sorgente (tecniche di analisi statica, ispezione diretta), alla documentazione e ai grafi di flusso di controllo; queste metriche sono usate durante le fasi:sup:12\ `#fn12 <#fn12>`__ di Analisi, Design e Codifica, sempre dal punto di vista degli sviluppatori, non considerano il comportamento in fase di esecuzione, ma solo gli attributi statici e strutturali;
+-  metriche esterne (dinamiche, o operative): misurano il comportamento dinamico del software, osservandolo in fase di esecuzione, nell’ambiente, reale o simulato, di utilizzo (qualità esterna); vengono impiegate a partire dalla fase di progettazione di dettaglio in poi, da parte di sviluppatori e/o utenti; i risultati di tali misurazioni sono influenzate dal livello di qualità interna raggiunto;
+-  metriche in uso: misurano il grado di qualità percepita dall’utente finale, nello specifico contesto d’uso previsto per il prodotto; si fissa uno specifico scenario d’uso e si osserva l’effetto dell’esecuzione del prodotto sull’utente. Si ribadisce che la qualità in uso rappresenta l’effetto combinato di più caratteristiche di qualità interna ed esterna. Le metriche in uso sono impiegabili solo al momento del rilascio del prodotto, nell’ambiente reale di messa in esercizio.
 
-Per fornire un esempio pratico di tale classificazione, si consideri la
-caratteristica di qualità “Affidabilità”. Essa è misurabile sia da
-metriche interne che esterne. Esternamente si potrebbe procedere
-rilevando, in un determinato intervallo di tempo, durante l’esecuzione
-del software, il numero medio di fallimenti, l’intensità media del
-fallimento (ossia il numero di fallimenti nell’unità di tempo),
-l’intervallo medio tra due successivi fallimenti. Internamente, invece,
-si potrebbe procedere con ispezioni del codice sorgente e revisioni
-della documentazione, per valutare, staticamente, il livello di
-tolleranza ai guasti.
+Per fornire un esempio pratico di tale classificazione, si consideri la caratteristica di qualità “Affidabilità”. Essa è misurabile sia da metriche interne che esterne. Esternamente si potrebbe procedere rilevando, in un determinato intervallo di tempo, durante l’esecuzione del software, il numero medio di fallimenti, l’intensità media del fallimento (ossia il numero di fallimenti nell’unità di tempo), l’intervallo medio tra due successivi fallimenti. Internamente, invece, si potrebbe procedere con ispezioni del codice sorgente e revisioni della documentazione, per valutare, staticamente, il livello di tolleranza ai guasti.
 
 Dimensioni del prodotto software
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-La figura che segue illustra nella forma di un diagramma E-R le
-relazioni che, nel presente studio, si identificano tra le entità
-“prodotto software”, “progetto” (generalizzazione di “progetto di
-sviluppo” e “progetto di manutenzione” [3]_) e i loro attributi.
+La figura che segue illustra nella forma di un diagramma E-R le relazioni che, nel presente studio, si identificano tra le entità “prodotto software”, “progetto” (generalizzazione di “progetto di sviluppo” e “progetto di manutenzione”:sup:13\ `#fn13 <#fn13>`__) e i loro attributi.
 
-Sulla dimensione di un prodotto software influiscono i requisiti
-funzionali e non funzionali del prodotto stesso. A sua volta, la
-dimensione ha impatto sul valore di mercato del prodotto software. I
-requisiti e vincoli di progetto influiscono sull’impegno di progetto. A
-sua volta, quest’ultimo determina (in massima parte) il costo del
-progetto stesso.
+Sulla dimensione di un prodotto software influiscono i requisiti funzionali e non funzionali del prodotto stesso. A sua volta, la dimensione ha impatto sul valore di mercato del prodotto software. I requisiti e vincoli di progetto influiscono sull’impegno di progetto. A sua volta, quest’ultimo determina (in massima parte) il costo del progetto stesso.
 
-Nel diagramma di figura 2 (ideato per modellare lo scenario tipico dei
-contratti con pagamento “a misura” delle pubbliche amministrazioni), il
-costo di un progetto di sviluppo di un prodotto software non ha
-relazione diretta con il valore di quest’ultimo. Con tale assunto si
-vuole svincolare, a livello concettuale:
+Nel diagramma di figura 2 (ideato per modellare lo scenario tipico dei contratti con pagamento “a misura” delle pubbliche amministrazioni), il costo di un progetto di sviluppo di un prodotto software non ha relazione diretta con il valore di quest’ultimo. Con tale assunto si vuole svincolare, a livello concettuale:
 
--  il costo del progetto, attributo di competenza e visibilità del
-   fornitore;
--  il valore del prodotto software, attributo di interesse
-   dell’amministrazione cliente, che quantifica monetariamente le
-   necessità che l’amministrazione aveva espresso in termini di
-   funzionalità e requisiti di qualità/tecnici, e che il prodotto
-   software rilasciato fornisce.
+-  il costo del progetto, attributo di competenza e visibilità del fornitore;
+-  il valore del prodotto software, attributo di interesse dell’amministrazione cliente, che quantifica monetariamente le necessità che l’amministrazione aveva espresso in termini di funzionalità e requisiti di qualità/tecnici, e che il prodotto software rilasciato fornisce.
 
 |image2|
 
 Figura 2: relazione tra progetti e prodotti software
 
-Si ritiene che questa separazione concettuale possa aiutare a risolvere
-alcune delle criticità rappresentate al §1.4. In particolare, si ritiene
-che svincolare il costo del progetto dal valore del prodotto possa
-motivare il fornitore a migliorare i propri processi produttivi così da
-abbattere i costi a parità di ricavi. A oggi, infatti, molti dei
-contratti pubblici che prevedono pagamenti “a misura” vengono poi
-gestiti, retroattivamente, in modo da coprire comunque i costi come ci
-si trovasse in forniture a tempo e spesa: in questi casi il fornitore
-non ha alcuna motivazione a rendersi più efficiente, ma anzi tende ad
-aumentare l’impegno erogato per essere pagato di più.
+Si ritiene che questa separazione concettuale possa aiutare a risolvere alcune delle criticità rappresentate al §1.4. In particolare, si ritiene che svincolare il costo del progetto dal valore del prodotto possa motivare il fornitore a migliorare i propri processi produttivi così da abbattere i costi a parità di ricavi. A oggi, infatti, molti dei contratti pubblici che prevedono pagamenti “a misura” vengono poi gestiti, retroattivamente, in modo da coprire comunque i costi come ci si trovasse in forniture a tempo e spesa: in questi casi il fornitore non ha alcuna motivazione a rendersi più efficiente, ma anzi tende ad aumentare l’impegno erogato per essere pagato di più.
 
-È anche vero che, in una situazione “sana”, il valore di un software
-commissionato ad hoc (vale a dire l’importo che viene pagato dal
-cliente) deve sostenere il costo di produzione e il margine del
-fornitore. In altri termini, deve essere verificata la diseguaglianza:
+È anche vero che, in una situazione “sana”, il valore di un software commissionato ad hoc (vale a dire l’importo che viene pagato dal cliente) deve sostenere il costo di produzione e il margine del fornitore. In altri termini, deve essere verificata la diseguaglianza:
 
 **Valore del prodotto sw > Costo di produzione**
 
-Se così non è, oppure se la differenza tra valore e costo di produzione
-è insufficiente come margine per il fornitore, siamo in presenza di
-un’anomalia. Si noti che situazioni di questo tipo si verificano
-talvolta nei progetti delle pubbliche amministrazioni, ad esempio
-nell’ambito di grandi contratti poliennali che includono numerosi
-progetti: in questi casi, costi superiori ai ricavi in un singolo
-progetto devono trovare compensazione negli altri progetti del contratto
-o in voci separate dello stesso, ma – come detto - possono anche
-motivare il fornitore a ottimizzare i suoi processi interni per
-comprimere i costi e riportarsi in una situazione di redditività.
-
-.. [1]
-   Con l’obiettivo, già citato, di migliorare la fruibilità del
-   documento, tutti i termini sono stati tradotti in italiano. Tuttavia,
-   per qualsiasi contenzioso fa fede la norma internazionale, che
-   ufficialmente è in lingua inglese.
-
-.. [2]
-   Si fa qui riferimento al ciclo di vita tradizionale “waterfall” di un
-   software. Le definizioni sono comunque applicabili, con opportune
-   modifiche, ad altri cicli di vita (es. iterativo/incrementale).
-
-.. [3]
-   In questa modellizzazione non si considerano le attività di esercizio
-   di un’applicazione software (OPS) in quanto si ritengono di natura
-   non progettuale ma di servizio.
+Se così non è, oppure se la differenza tra valore e costo di produzione è insufficiente come margine per il fornitore, siamo in presenza di un’anomalia. Si noti che situazioni di questo tipo si verificano talvolta nei progetti delle pubbliche amministrazioni, ad esempio nell’ambito di grandi contratti poliennali che includono numerosi progetti: in questi casi, costi superiori ai ricavi in un singolo progetto devono trovare compensazione negli altri progetti del contratto o in voci separate dello stesso, ma – come detto - possono anche motivare il fornitore a ottimizzare i suoi processi interni per comprimere i costi e riportarsi in una situazione di redditività.
 
 .. |image1| image:: media/media/image2.png
-   :width: 4.44491in
-   :height: 3.14384in
 .. |image2| image:: media/media/image3.png
-   :width: 4.40651in
-   :height: 5.08835in

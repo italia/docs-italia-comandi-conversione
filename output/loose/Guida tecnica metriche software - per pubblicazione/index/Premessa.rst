@@ -4,64 +4,27 @@ Premessa
 Finalità e struttura del documento
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Il presente documento costituisce un aggiornamento delle linee guida sul
-tema dello sviluppo di software applicativo, pubblicate dall’allora
-CNIPA nell’ambito della collana sulla qualità dei beni e servizi ICT per
-le acquisizioni della pubblica amministrazione. Il documento si
-classifica come “Guida tecnica” per differenziarlo dalle linee guida
-contenenti le regole tecniche e di indirizzo per l’attuazione del Codice
-dell’Amministrazione Digitale ai sensi dell’art. 71 del Codice stesso.
+Il presente documento costituisce un aggiornamento delle linee guida sul tema dello sviluppo di software applicativo, pubblicate dall’allora CNIPA nell’ambito della collana sulla qualità dei beni e servizi ICT per le acquisizioni della pubblica amministrazione. Il documento si classifica come “Guida tecnica” per differenziarlo dalle linee guida contenenti le regole tecniche e di indirizzo per l’attuazione del Codice dell’Amministrazione Digitale ai sensi dell’art. 71 del Codice stesso.
 
 L’esigenza di aggiornare le precedenti linee guida nasce:
 
--  dal tempo trascorso dall’ultima revisione del documento, notevole
-   soprattutto se rapportato alla rapidità con cui notoriamente evolve
-   il settore dell’ICT e gli standard disponibili;
--  dalle criticità riscontrate in molti contratti per sviluppo
-   applicativo, a volte derivanti anche da interpretazioni non corrette
-   di indicazioni e passaggi delle precedenti linee guida;
--  dall’attenzione, connessa anche alle contingenze economiche, al
-   contenimento della spesa delle P.A. e al rapporto costi/benefici
-   nelle acquisizioni e nei progetti delle amministrazioni;
--  dalle novità introdotte, anche sotto l’aspetto strategico, dal Piano
-   Triennale per l’Informatica nella Pubblica Amministrazione,
-   pubblicato nel corso del 2017
-   (`https://pianotriennale-ict.italia.it/ <https://pianotriennale-ict.italia.it/>`__).
+-  dal tempo trascorso dall’ultima revisione del documento, notevole soprattutto se rapportato alla rapidità con cui notoriamente evolve il settore dell’ICT e gli standard disponibili;
+-  dalle criticità riscontrate in molti contratti per sviluppo applicativo, a volte derivanti anche da interpretazioni non corrette di indicazioni e passaggi delle precedenti linee guida;
+-  dall’attenzione, connessa anche alle contingenze economiche, al contenimento della spesa delle P.A. e al rapporto costi/benefici nelle acquisizioni e nei progetti delle amministrazioni;
+-  dalle novità introdotte, anche sotto l’aspetto strategico, dal Piano Triennale per l’Informatica nella Pubblica Amministrazione, pubblicato nel corso del 2017 (https://pianotriennale-ict.italia.it/).
 
-I lettori cui questo documento è indirizzato sono in primo luogo le
-pubbliche amministrazioni che si trovano a sviluppare o mantenere un
-parco applicativo da utilizzare nell’ambito dei propri compiti
-istituzionali. I contenuti del documento sono però d’interesse anche per
-gli operatori del mercato ICT (aziende, sviluppatori, integratori,
-consulenti, …).
+I lettori cui questo documento è indirizzato sono in primo luogo le pubbliche amministrazioni che si trovano a sviluppare o mantenere un parco applicativo da utilizzare nell’ambito dei propri compiti istituzionali. I contenuti del documento sono però d’interesse anche per gli operatori del mercato ICT (aziende, sviluppatori, integratori, consulenti, …).
 
-I contenuti del presente documento rappresentano indicazioni e
-suggerimenti d’ausilio a un percorso decisionale che resta sotto la
-piena responsabilità delle amministrazioni. Peraltro, la singola P.A. è
-il soggetto che meglio conosce le proprie esigenze ed è, quindi, in
-grado di declinare le indicazioni proposte nella presente guida tecnica
-in coerenza con il proprio contesto e con le caratteristiche delle
-iniziativi progettuali che sta conducendo.
+I contenuti del presente documento rappresentano indicazioni e suggerimenti d’ausilio a un percorso decisionale che resta sotto la piena responsabilità delle amministrazioni. Peraltro, la singola P.A. è il soggetto che meglio conosce le proprie esigenze ed è, quindi, in grado di declinare le indicazioni proposte nella presente guida tecnica in coerenza con il proprio contesto e con le caratteristiche delle iniziativi progettuali che sta conducendo.
 
 Il presente documento è articolato nei seguenti capitoli:
 
--  Premessa, che descrive il contesto di riferimento, la problematica
-   affrontata e le finalità del documento;
--  Il tavolo di lavoro, comprendente un resoconto delle attività svolte
-   nei mesi che intercorrono dalla costituzione del tavolo fino alla
-   pubblicazione della guida tecnica;
--  Definizioni, ove si illustrano i concetti della tematica e si
-   fornisce una terminologia unica di riferimento;
--  Metriche e strumenti, che descrive le soluzioni e le metodologie
-   disponibili per misurare le caratteristiche funzionali e non
-   funzionali del software;
--  Coerenza con il Piano Triennale, in cui si approfondiscono i punti di
-   contatto tra le metriche del software e le indicazioni strategiche
-   del Piano Triennale;
--  Applicazioni operative ed esempi, in cui si analizzano scenari
-   tipici, tratti dalla usuale operatività delle pubbliche
-   amministrazioni, e si ipotizzano impieghi pratici delle metriche,
-   metodologie e strumenti illustrati nella guida tecnica.
+-  Premessa, che descrive il contesto di riferimento, la problematica affrontata e le finalità del documento;
+-  Il tavolo di lavoro, comprendente un resoconto delle attività svolte nei mesi che intercorrono dalla costituzione del tavolo fino alla pubblicazione della guida tecnica;
+-  Definizioni, ove si illustrano i concetti della tematica e si fornisce una terminologia unica di riferimento;
+-  Metriche e strumenti, che descrive le soluzioni e le metodologie disponibili per misurare le caratteristiche funzionali e non funzionali del software;
+-  Coerenza con il Piano Triennale, in cui si approfondiscono i punti di contatto tra le metriche del software e le indicazioni strategiche del Piano Triennale;
+-  Applicazioni operative ed esempi, in cui si analizzano scenari tipici, tratti dalla usuale operatività delle pubbliche amministrazioni, e si ipotizzano impieghi pratici delle metriche, metodologie e strumenti illustrati nella guida tecnica.
 
 Glossario
 ~~~~~~~~~
@@ -436,274 +399,72 @@ Glossario
 Il contesto di riferimento
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Nella generalità dei casi, le pubbliche amministrazioni italiane
-acquisiscono da fornitori esterni, stipulando appositi contratti, i
-servizi di:
+Nella generalità dei casi, le pubbliche amministrazioni italiane acquisiscono da fornitori esterni, stipulando appositi contratti, i servizi di:
 
 -  sviluppo applicativo;
--  manutenzione (correttiva, migliorativa, adeguativa, evolutiva) di
-   applicazioni informatiche.
+-  manutenzione (correttiva, migliorativa, adeguativa, evolutiva) di applicazioni informatiche.
 
-Di norma il personale interno dell’amministrazione è coinvolto in alcune
-delle attività connesse ai servizi di cui sopra, ad esempio nella
-raccolta dei requisiti nei progetti di sviluppo applicativo; più
-raramente, personale interno collabora alla fase di analisi e
-progettazione delle applicazioni. Si riscontrano anche situazioni in cui
-al fornitore esterno sono affidate tutte le attività progettuali,
-compresa la raccolta dei requisiti.
+Di norma il personale interno dell’amministrazione è coinvolto in alcune delle attività connesse ai servizi di cui sopra, ad esempio nella raccolta dei requisiti nei progetti di sviluppo applicativo; più raramente, personale interno collabora alla fase di analisi e progettazione delle applicazioni. Si riscontrano anche situazioni in cui al fornitore esterno sono affidate tutte le attività progettuali, compresa la raccolta dei requisiti.
 
-Per il suo ruolo, AgID ha visibilità dei contratti della pubblica
-amministrazione centrale e, in casi rilevanti o legati a progettualità
-specifiche, anche di enti locali. Esaminando l’insieme di questi
-contratti si possono rilevare le seguenti caratteristiche:
+Per il suo ruolo, AgID ha visibilità dei contratti della pubblica amministrazione centrale e, in casi rilevanti o legati a progettualità specifiche, anche di enti locali. Esaminando l’insieme di questi contratti si possono rilevare le seguenti caratteristiche:
 
--  la maggioranza dei servizi di sviluppo e manutenzione viene acquisita
-   dalle amministrazioni nell’ambito di contratti pluriennali di grandi
-   dimensioni (anche in termini economici) in cui vengono fissati
-   corrispettivi unitari, modalità di remunerazione, SLA e penali; tali
-   atti costituiscono una “cornice” entro la quale si svolgono più
-   progetti di realizzazione o evoluzione di applicativi software;
--  la remunerazione dello sviluppo copre in genere anche un anno di
-   manutenzione correttiva (garanzia) delle applicazioni rilasciate;
--  nella maggioranza dei contratti il fornitore viene remunerato a
-   misura, sulla base della dimensione del software rilasciato;
-   quest’ultima grandezza viene misurata in Punti Funzione (nel seguito
-   “PF”);
--  si riscontrano anche numerosi contratti in cui il fornitore viene
-   remunerato a tempo e spesa, sulla base delle giornate persona erogate
-   e rendicontate;
--  sono rari i contratti in cui è previsto un pagamento a corpo (si
-   riscontrano solo in caso di iniziative circoscritte e ben definite
-   già in fase di negoziazione con il fornitore);
--  gran parte dei contratti vengono stipulati a seguito di procedure
-   competitive, secondo quanto previsto dalla normativa in vigore;
--  si riscontra un ricorso crescente agli strumenti messi a disposizione
-   da Consip (Accordi Quadro, MePA, ecc.) anche a causa delle forti
-   indicazioni date in questo senso dalla L. 28 dicembre 2015, n. 208.
+-  la maggioranza dei servizi di sviluppo e manutenzione viene acquisita dalle amministrazioni nell’ambito di contratti pluriennali di grandi dimensioni (anche in termini economici) in cui vengono fissati corrispettivi unitari, modalità di remunerazione, SLA e penali; tali atti costituiscono una “cornice” entro la quale si svolgono più progetti di realizzazione o evoluzione di applicativi software;
+-  la remunerazione dello sviluppo copre in genere anche un anno di manutenzione correttiva (garanzia) delle applicazioni rilasciate;
+-  nella maggioranza dei contratti il fornitore viene remunerato a misura, sulla base della dimensione del software rilasciato; quest’ultima grandezza viene misurata in Punti Funzione (nel seguito “PF”);
+-  si riscontrano anche numerosi contratti in cui il fornitore viene remunerato a tempo e spesa, sulla base delle giornate persona erogate e rendicontate;
+-  sono rari i contratti in cui è previsto un pagamento a corpo (si riscontrano solo in caso di iniziative circoscritte e ben definite già in fase di negoziazione con il fornitore);
+-  gran parte dei contratti vengono stipulati a seguito di procedure competitive, secondo quanto previsto dalla normativa in vigore;
+-  si riscontra un ricorso crescente agli strumenti messi a disposizione da Consip (Accordi Quadro, MePA, ecc.) anche a causa delle forti indicazioni date in questo senso dalla `L. 28 dicembre 2015, n. 208 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2015-12-28;208>`__.
 
 Strumenti Consip a disposizione
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Per acquisire servizi di sviluppo e manutenzione applicativa le
-amministrazioni possono ricorrere ai seguenti strumenti Consip [1]_;
+Per acquisire servizi di sviluppo e manutenzione applicativa le amministrazioni possono ricorrere ai seguenti strumenti Consip:sup:1\ `#fn1 <#fn1>`__;
 
--  contratti SPC Cloud lotto 3 e lotto 4 (attivati tra l’aprile e
-   l’agosto 2017);
--  contratti-quadro per l’affidamento di servizi in ambito Sistemi
-   Gestionali Integrati (5 lotti, aggiudicati nell’agosto 2017);
--  accordo quadro per l’affidamento di servizi applicativi. Dei tre
-   lotti geografici previsti, il lotto 1 “Centro” risulta esaurito; il
-   lotto 2 “Nord” è stato prorogato fino al 6 dicembre 2018 (al novembre
-   2017 il quantitativo consumato era pari al 25%); il lotto 3 “Sud e
-   Isole” è sub iudice (una prima sentenza della Corte di Giustizia
-   Europea è stata emessa il 22 dicembre 2017; la nuova udienza di
-   merito è stata fissata per il 7 marzo 2018; la sentenza definitiva è
-   prevista per aprile 2018).
+-  contratti SPC Cloud lotto 3 e lotto 4 (attivati tra l’aprile e l’agosto 2017);
+-  contratti-quadro per l’affidamento di servizi in ambito Sistemi Gestionali Integrati (5 lotti, aggiudicati nell’agosto 2017);
+-  accordo quadro per l’affidamento di servizi applicativi. Dei tre lotti geografici previsti, il lotto 1 “Centro” risulta esaurito; il lotto 2 “Nord” è stato prorogato fino al 6 dicembre 2018 (al novembre 2017 il quantitativo consumato era pari al 25%); il lotto 3 “Sud e Isole” è sub iudice (una prima sentenza della Corte di Giustizia Europea è stata emessa il 22 dicembre 2017; la nuova udienza di merito è stata fissata per il 7 marzo 2018; la sentenza definitiva è prevista per aprile 2018).
 
-Risulta, al momento, in fase di esame delle offerte la gara per il nuovo
-accordo quadro per servizi applicativi (AQ Servizi Applicativi 2), che
-prevede 7 lotti. In questa nuova gara si prevede, come regola di base,
-la remunerazione sulla base dei Punti Funzione (nel cui prezzo offerto i
-concorrenti debbono considerare le caratteristiche di qualità sulla base
-del modello ISO 25010) oppure dei Giorni Persona.
+Risulta, al momento, in fase di esame delle offerte la gara per il nuovo accordo quadro per servizi applicativi (AQ Servizi Applicativi 2), che prevede 7 lotti. In questa nuova gara si prevede, come regola di base, la remunerazione sulla base dei Punti Funzione (nel cui prezzo offerto i concorrenti debbono considerare le caratteristiche di qualità sulla base del modello ISO 25010) oppure dei Giorni Persona.
 
-Sono peraltro previsti, in questa nuova iniziativa, alcuni elementi di
-flessibilità. Si riporta ad esempio un passaggio dal capitolo 6
-dell’allegato 5 al capitolato tecnico:
+Sono peraltro previsti, in questa nuova iniziativa, alcuni elementi di flessibilità. Si riporta ad esempio un passaggio dal capitolo 6 dell’allegato 5 al capitolato tecnico:
 
-“\ *Le Amministrazioni che dispongono di metodologie standardizzate e
-linee guida consolidate per una più precisa e controllata determinazione
-dell’effort possono modificare le regole cautelative sopra esposte. (…)
-A livello di Accordo Quadro vengono, pertanto, identificate le sole
-metriche di base e i fattori che ne determinano la misura, lasciando
-all'Amministrazione la facoltà di declinare in AS*\  [2]_ *tali
-fattori*\ ”.
+“\ *Le Amministrazioni che dispongono di metodologie standardizzate e linee guida consolidate per una più precisa e controllata determinazione dell’effort possono modificare le regole cautelative sopra esposte. (…) A livello di Accordo Quadro vengono, pertanto, identificate le sole metriche di base e i fattori che ne determinano la misura, lasciando all'Amministrazione la facoltà di declinare in AS*:sup:2`#fn2 <#fn2>`__ *tali fattori*\ ”.
 
-Infine, si segnala che le amministrazioni pubbliche possono reperire sul
-MEPA, con il bando “Servizi Professionali”, competenze per supportarle
-nei progetti di sviluppo e manutenzione di software applicativo.
+Infine, si segnala che le amministrazioni pubbliche possono reperire sul MEPA, con il bando “Servizi Professionali”, competenze per supportarle nei progetti di sviluppo e manutenzione di software applicativo.
 
 Le problematiche
 ~~~~~~~~~~~~~~~~
 
-Le criticità che più frequentemente si riscontrano, o che comunque
-l’Agenzia ha rilevato negli ultimi anni, nella gestione dei contratti
-pubblici per sviluppo e manutenzione di applicazioni informatiche sono:
+Le criticità che più frequentemente si riscontrano, o che comunque l’Agenzia ha rilevato negli ultimi anni, nella gestione dei contratti pubblici per sviluppo e manutenzione di applicazioni informatiche sono:
 
-a) Carenza di competenze tecniche interne alle amministrazioni. Le P.A.
-   soffrono di una cronica mancanza di personale informatico interno.
-   Questa carenza, legata anche al mancato *turn-over* del personale e
-   alla difficoltà di acquisire nuove risorse umane, mette a volte
-   l’amministrazione in condizione di debolezza nei confronti delle
-   controparti contrattuali, favorisce condizioni di *lock-in* e di
-   perdita di controllo non solo delle attività progettuali ma anche del
-   patrimonio di dati e applicazioni dell’amministrazione stessa.
-b) Carenza di competenze nella gestione di gare e contratti. Per gli
-   stessi motivi di cui al punto precedente, alcune amministrazioni
-   difettano di figure professionali in grado di scrivere capitolati e
-   documentazione di gara adeguati, di verificare il rispetto dei
-   livelli di servizio e di applicare efficacemente le clausole
-   contrattuali. Con riferimento ai già citati Punti Funzione, alcune
-   amministrazioni hanno difficoltà ad applicare correttamente questa
-   metrica (che in effetti richiede competenze specifiche e un adeguato
-   percorso formativo): si riscontrano contratti nel cui articolato si
-   fa un uso erroneo della metrica dei Punti Funzione, tale da
-   annullarne i vantaggi. In occasione di recenti convegni sullo stato
-   dell’informatica pubblica, alcuni relatori hanno proposto, per
-   superare queste criticità, il drastico abbandono della metrica dei
-   Punti Funzione. Benché questa provocazione possa stimolare il
-   dibattito, è chiaro che si tratta di una falsa soluzione, giacché il
-   problema è di competenze e non di unità di misura. Per chiarire il
-   punto con una metafora di senso comune, sarebbe come se per risolvere
-   una situazione di sovrappeso si abolissero le bilance.
-c) Mancanza di strumenti e meccanismi contrattuali per garantire la
-   qualità di quanto ricevuto dal fornitore. Benché, in via teorica,
-   tutte le amministrazioni desiderino ottenere alti livelli di qualità
-   nelle forniture, in pratica le amministrazioni non richiedono
-   formalmente, con rare eccezioni, strumenti efficaci per raggiungere
-   tale obiettivo, o non li utilizzano. Anche la semplice misurazione
-   della qualità dei prodotti/servizi acquisiti non è sempre attuata, in
-   quanto l’amministrazione non dispone di strumenti propri di verifica
-   e di sufficiente know-how (a volte la misurazione è demandata al solo
-   fornitore).
+a. Carenza di competenze tecniche interne alle amministrazioni. Le P.A. soffrono di una cronica mancanza di personale informatico interno. Questa carenza, legata anche al mancato *turn-over* del personale e alla difficoltà di acquisire nuove risorse umane, mette a volte l’amministrazione in condizione di debolezza nei confronti delle controparti contrattuali, favorisce condizioni di *lock-in* e di perdita di controllo non solo delle attività progettuali ma anche del patrimonio di dati e applicazioni dell’amministrazione stessa.
+b. Carenza di competenze nella gestione di gare e contratti. Per gli stessi motivi di cui al punto precedente, alcune amministrazioni difettano di figure professionali in grado di scrivere capitolati e documentazione di gara adeguati, di verificare il rispetto dei livelli di servizio e di applicare efficacemente le clausole contrattuali. Con riferimento ai già citati Punti Funzione, alcune amministrazioni hanno difficoltà ad applicare correttamente questa metrica (che in effetti richiede competenze specifiche e un adeguato percorso formativo): si riscontrano contratti nel cui articolato si fa un uso erroneo della metrica dei Punti Funzione, tale da annullarne i vantaggi. In occasione di recenti convegni sullo stato dell’informatica pubblica, alcuni relatori hanno proposto, per superare queste criticità, il drastico abbandono della metrica dei Punti Funzione. Benché questa provocazione possa stimolare il dibattito, è chiaro che si tratta di una falsa soluzione, giacché il problema è di competenze e non di unità di misura. Per chiarire il punto con una metafora di senso comune, sarebbe come se per risolvere una situazione di sovrappeso si abolissero le bilance.
+c. Mancanza di strumenti e meccanismi contrattuali per garantire la qualità di quanto ricevuto dal fornitore. Benché, in via teorica, tutte le amministrazioni desiderino ottenere alti livelli di qualità nelle forniture, in pratica le amministrazioni non richiedono formalmente, con rare eccezioni, strumenti efficaci per raggiungere tale obiettivo, o non li utilizzano. Anche la semplice misurazione della qualità dei prodotti/servizi acquisiti non è sempre attuata, in quanto l’amministrazione non dispone di strumenti propri di verifica e di sufficiente know-how (a volte la misurazione è demandata al solo fornitore).
 
-Con riferimento alle forniture di sviluppo software, l’unica metrica di
-prodotto al momento sufficientemente diffusa (i Punti Funzione) misura
-solo le funzionalità di un’applicazione; le dimensioni non funzionali
-(usabilità, prestazioni, manutenibilità, sicurezza, ecc.) sono fuori dal
-perimetro di applicazione dei PF. Ciò comporta che interventi su
-applicazioni finalizzati, ad esempio, ad aumentare l’usabilità, non
-vengono a oggi remunerati sulla base del risultato, perché non ci sono
-metriche di prodotto condivise adatte a misurare l’intervento. Tali
-attività vengono invece remunerate a corpo o a giorni persona.
+Con riferimento alle forniture di sviluppo software, l’unica metrica di prodotto al momento sufficientemente diffusa (i Punti Funzione) misura solo le funzionalità di un’applicazione; le dimensioni non funzionali (usabilità, prestazioni, manutenibilità, sicurezza, ecc.) sono fuori dal perimetro di applicazione dei PF. Ciò comporta che interventi su applicazioni finalizzati, ad esempio, ad aumentare l’usabilità, non vengono a oggi remunerati sulla base del risultato, perché non ci sono metriche di prodotto condivise adatte a misurare l’intervento. Tali attività vengono invece remunerate a corpo o a giorni persona.
 
-d) Eccessiva enfasi al prezzo. Negli ultimi anni si sono riscontrati, in
-   gare per sviluppo applicativo, ribassi rilevanti rispetto alla base
-   d’asta, a dispetto delle modalità di aggiudicazione (criterio
-   dell’offerta economicamente più vantaggiosa) e del maggior peso
-   assegnato alla qualità dell’offerta [3]_.
+d. Eccessiva enfasi al prezzo. Negli ultimi anni si sono riscontrati, in gare per sviluppo applicativo, ribassi rilevanti rispetto alla base d’asta, a dispetto delle modalità di aggiudicazione (criterio dell’offerta economicamente più vantaggiosa) e del maggior peso assegnato alla qualità dell’offerta:sup:3\ `#fn3 <#fn3>`__.
 
-Ciò è senz’altro dipeso dalle condizioni competitive del mercato ICT.
-Tuttavia si possono avanzare altre spiegazioni. Ad esempio si
-riscontrano gare in cui il punteggio tecnico non viene assegnato in base
-a criteri oggettivi ma prendendo atto di dichiarazioni del fornitore. In
-questi casi tutte le offerte tecniche tendono a ottenere il massimo del
-punteggio (in quanto i concorrenti dichiarano massima qualità), con la
-conseguenza che torna a essere determinante, per vincere la gara, il
-ribasso rispetto alla base d’asta.
+Ciò è senz’altro dipeso dalle condizioni competitive del mercato ICT. Tuttavia si possono avanzare altre spiegazioni. Ad esempio si riscontrano gare in cui il punteggio tecnico non viene assegnato in base a criteri oggettivi ma prendendo atto di dichiarazioni del fornitore. In questi casi tutte le offerte tecniche tendono a ottenere il massimo del punteggio (in quanto i concorrenti dichiarano massima qualità), con la conseguenza che torna a essere determinante, per vincere la gara, il ribasso rispetto alla base d’asta.
 
-I contratti che vengono stipulati a seguito di queste gare presentano
-corrispettivi unitari nettamente inferiori alle medie di mercato.
-Durante l’erogazione della fornitura, però, spesso emergono discrepanze
-tra offerta e servizio reso. Tale situazione diviene critica se
-l’amministrazione cliente non ha competenze e strumenti per la gestione
-dei contratti tali da interloquire con efficacia coi fornitori, di
-precisare i requisiti e di verificarne il rispetto, di monitorare gli
-SLA minimi definiti a livello contrattuale o migliorativi proposti in
-sede di offerta.
+I contratti che vengono stipulati a seguito di queste gare presentano corrispettivi unitari nettamente inferiori alle medie di mercato. Durante l’erogazione della fornitura, però, spesso emergono discrepanze tra offerta e servizio reso. Tale situazione diviene critica se l’amministrazione cliente non ha competenze e strumenti per la gestione dei contratti tali da interloquire con efficacia coi fornitori, di precisare i requisiti e di verificarne il rispetto, di monitorare gli SLA minimi definiti a livello contrattuale o migliorativi proposti in sede di offerta.
 
-Ultimamente le amministrazioni hanno cominciato a percepire questa
-criticità e sono alla ricerca di contromisure. Alcune P.A. puntano ad
-alzare le basi d’asta, ritenendo che corrispettivi unitari più alti
-motivino il fornitore “a rispettare il contratto sottoscritto”. Si
-tratta, com’è evidente, di una falsa soluzione, del tutto insufficiente
-se ad essa non vengono affiancati gli strumenti per misurare/verificare
-la qualità di cui al punto c).
+Ultimamente le amministrazioni hanno cominciato a percepire questa criticità e sono alla ricerca di contromisure. Alcune P.A. puntano ad alzare le basi d’asta, ritenendo che corrispettivi unitari più alti motivino il fornitore “a rispettare il contratto sottoscritto”. Si tratta, com’è evidente, di una falsa soluzione, del tutto insufficiente se ad essa non vengono affiancati gli strumenti per misurare/verificare la qualità di cui al punto c).
 
-e) Mancata capitalizzazione del patrimonio applicativo delle
-   amministrazioni. Molte P.A. detengono un parco applicativo di
-   dimensioni rilevanti, magari frutto di una serie di progetti
-   susseguitisi nel tempo e di ripetuti investimenti anche ingenti, ma
-   non sanno come quantificare e valorizzare dal punto di vista
-   finanziario questo loro *asset*. Ciò deriva in parte dalla perdita di
-   controllo già citata al punto a), ma anche dal mancato utilizzo di
-   metriche riconosciute in grado ad esempio di misurare la sicurezza (o
-   la portabilità, o la riusabilità) di un parco applicativo.
-f) Difficoltà a distinguere tra investimenti e spese ricorrenti. Nella
-   quasi totalità delle pubbliche amministrazioni, i costi per la
-   manutenzione (correttiva, adeguativa, migliorativa) di un parco
-   applicativo vengono considerati spese ricorrenti (OPEX). A volte, per
-   il pagamento di queste attività è previsto un canone fisso. Com’è
-   noto, già da anni alle amministrazioni viene chiesto, nelle manovre
-   di bilancio, di tagliare le spese ricorrenti. Se le P.A. avessero a
-   disposizione strumenti per quantificare i benefici degli interventi
-   di manutenzione, questi ultimi potrebbero essere considerati
-   investimenti, e il loro costo imputato di conseguenza come CAPEX.
-g) Difficoltà ad adeguarsi al modello strategico del Piano Triennale. Il
-   modello strategico di evoluzione del sistema informativo delle P.A.,
-   presente nel Piano Triennale 2017-2019, introduce numerosi elementi
-   di novità nell’ambito dei servizi di sviluppo e manutenzione di
-   software applicativo. Ad esempio si prevede che le amministrazioni
-   sviluppino le proprie applicazioni con approccio modulare, esponendo
-   interfacce alle stesse sotto forma di API, in modo che soggetti
-   terzi, pubblici o privati, possano integrarle per realizzare servizi
-   a cittadini e imprese. In quest’ottica, oltre alle tradizionali
-   caratteristiche funzionali del software (le sole misurabili, come
-   detto, in Punti Funzione), assumono grande importanza aspetti quali
-   la fruibilità delle API, la qualità della documentazione delle
-   stesse, le prestazioni, la scalabilità, la sicurezza, l’accessibilità
-   nel caso di servizi web, tutte caratteristiche per cui oggi non si fa
-   uso di una metrica condivisa. Si ritiene che questo aspetto, ove non
-   venga fronteggiato, determinerà criticità e ritardi nell’adeguamento
-   delle P.A. alle indicazioni del Piano Triennale.
+e. Mancata capitalizzazione del patrimonio applicativo delle amministrazioni. Molte P.A. detengono un parco applicativo di dimensioni rilevanti, magari frutto di una serie di progetti susseguitisi nel tempo e di ripetuti investimenti anche ingenti, ma non sanno come quantificare e valorizzare dal punto di vista finanziario questo loro *asset*. Ciò deriva in parte dalla perdita di controllo già citata al punto a), ma anche dal mancato utilizzo di metriche riconosciute in grado ad esempio di misurare la sicurezza (o la portabilità, o la riusabilità) di un parco applicativo.
+f. Difficoltà a distinguere tra investimenti e spese ricorrenti. Nella quasi totalità delle pubbliche amministrazioni, i costi per la manutenzione (correttiva, adeguativa, migliorativa) di un parco applicativo vengono considerati spese ricorrenti (OPEX). A volte, per il pagamento di queste attività è previsto un canone fisso. Com’è noto, già da anni alle amministrazioni viene chiesto, nelle manovre di bilancio, di tagliare le spese ricorrenti. Se le P.A. avessero a disposizione strumenti per quantificare i benefici degli interventi di manutenzione, questi ultimi potrebbero essere considerati investimenti, e il loro costo imputato di conseguenza come CAPEX.
+g. Difficoltà ad adeguarsi al modello strategico del Piano Triennale. Il modello strategico di evoluzione del sistema informativo delle P.A., presente nel Piano Triennale 2017-2019, introduce numerosi elementi di novità nell’ambito dei servizi di sviluppo e manutenzione di software applicativo. Ad esempio si prevede che le amministrazioni sviluppino le proprie applicazioni con approccio modulare, esponendo interfacce alle stesse sotto forma di API, in modo che soggetti terzi, pubblici o privati, possano integrarle per realizzare servizi a cittadini e imprese. In quest’ottica, oltre alle tradizionali caratteristiche funzionali del software (le sole misurabili, come detto, in Punti Funzione), assumono grande importanza aspetti quali la fruibilità delle API, la qualità della documentazione delle stesse, le prestazioni, la scalabilità, la sicurezza, l’accessibilità nel caso di servizi web, tutte caratteristiche per cui oggi non si fa uso di una metrica condivisa. Si ritiene che questo aspetto, ove non venga fronteggiato, determinerà criticità e ritardi nell’adeguamento delle P.A. alle indicazioni del Piano Triennale.
 
 Finalità del documento
 ~~~~~~~~~~~~~~~~~~~~~~
 
-Tenendo presente le criticità elencate al paragrafo precedente, la
-presente guida tecnica si propone di:
+Tenendo presente le criticità elencate al paragrafo precedente, la presente guida tecnica si propone di:
 
--  esaminare possibili integrazioni alle attuali metriche per il
-   software applicativo (basate essenzialmente sulla misura delle
-   funzionalità erogate), affiancando a queste ultime misure delle
-   caratteristiche non funzionali del software, anche allo scopo di
-   consentire l’attribuzione contabile dei costi di manutenzione del
-   software, attualmente considerati spese ricorrenti, a investimenti;
--  analizzare in che modo è possibile aggiornare le modalità di
-   misurazione dei prodotti software per adattarsi al nuovo modello
-   strategico di evoluzione dei sistemi informativi delle P.A., basato
-   su uno sviluppo modulare e su interfacce API;
--  studiare come le eventuali metriche alternative possono essere
-   condivise dagli operatori di mercato e applicate alle acquisizioni
-   della pubblica amministrazione, ad esempio legando una percentuale
-   significativa della remunerazione del fornitore alla qualità dei
-   prodotti realizzati e ai risultati effettivamente conseguiti.
+-  esaminare possibili integrazioni alle attuali metriche per il software applicativo (basate essenzialmente sulla misura delle funzionalità erogate), affiancando a queste ultime misure delle caratteristiche non funzionali del software, anche allo scopo di consentire l’attribuzione contabile dei costi di manutenzione del software, attualmente considerati spese ricorrenti, a investimenti;
+-  analizzare in che modo è possibile aggiornare le modalità di misurazione dei prodotti software per adattarsi al nuovo modello strategico di evoluzione dei sistemi informativi delle P.A., basato su uno sviluppo modulare e su interfacce API;
+-  studiare come le eventuali metriche alternative possono essere condivise dagli operatori di mercato e applicate alle acquisizioni della pubblica amministrazione, ad esempio legando una percentuale significativa della remunerazione del fornitore alla qualità dei prodotti realizzati e ai risultati effettivamente conseguiti.
 
-Vale la pena segnalare che le amministrazioni, oggi come in passato,
-appaiono disponibili a seguire le linee guida dell’AgID, alla cui
-realizzazione – peraltro – collaborano insieme a soggetti appartenenti
-alla ricerca, all’industria e all’accademia. Nel corso degli anni le
-linee guida dell’Agenzia hanno contribuito, tra l’altro, a
-standardizzare l’approccio delle pubbliche amministrazioni alla
-definizione e gestione dei contratti.
+Vale la pena segnalare che le amministrazioni, oggi come in passato, appaiono disponibili a seguire le linee guida dell’AgID, alla cui realizzazione – peraltro – collaborano insieme a soggetti appartenenti alla ricerca, all’industria e all’accademia. Nel corso degli anni le linee guida dell’Agenzia hanno contribuito, tra l’altro, a standardizzare l’approccio delle pubbliche amministrazioni alla definizione e gestione dei contratti.
 
-La presente guida tecnica, in omogeneità con le precedenti pubblicazioni
-dell’AgID di questo tipo, non hanno pretesa di completezza documentale,
-esaustività e massimo rigore sulla tematica in esame. Al contrario, esse
-rappresentano una sintesi di prima fruibilità delle asserzioni della
-letteratura tecnica in materia. Esse sono indirizzate a una categoria
-ben definita di lettori (dirigenti e funzionari della pubblica
-amministrazione), pertanto sono focalizzate sulle esigenze e sul
-contesto pubblico; perseguendo anche finalità didattiche, il livello
-della trattazione è stato reso, ove possibile, comprensibile al più
-ampio pubblico, soprattutto tramite una serie di esempi, indicazioni
-operative e suggerimenti pratici. Ove il lettore voglia andare più in
-dettaglio e/o cerchi una narrazione tecnica più rigorosa, verranno
-forniti riferimenti a testi o siti web su cui approfondire.
-
-.. [1]
-   È rappresentata la situazione al febbraio 2018.
-
-.. [2]
-   Appalto Specifico.
-
-.. [3]
-   L’art. 95 comma 10-bis del Codice degli appalti recita: “\ *La
-   stazione appaltante, al fine di assicurare l’effettiva individuazione
-   del miglior rapporto qualità/prezzo, valorizza gli elementi
-   qualitativi dell’offerta e individua criteri tali da garantire un
-   confronto concorrenziale effettivo sui profili tecnici. A tal fine la
-   stazione appaltante stabilisce un tetto massimo per il punteggio
-   economico entro il limite del 30 per cento*\ ” (disposizione
-   introdotta dal D.Lgs. 56/2017 in vigore dal 20/5/2017); dunque al
-   massimo il prezzo conta per il 30%.
+La presente guida tecnica, in omogeneità con le precedenti pubblicazioni dell’AgID di questo tipo, non hanno pretesa di completezza documentale, esaustività e massimo rigore sulla tematica in esame. Al contrario, esse rappresentano una sintesi di prima fruibilità delle asserzioni della letteratura tecnica in materia. Esse sono indirizzate a una categoria ben definita di lettori (dirigenti e funzionari della pubblica amministrazione), pertanto sono focalizzate sulle esigenze e sul contesto pubblico; perseguendo anche finalità didattiche, il livello della trattazione è stato reso, ove possibile, comprensibile al più ampio pubblico, soprattutto tramite una serie di esempi, indicazioni operative e suggerimenti pratici. Ove il lettore voglia andare più in dettaglio e/o cerchi una narrazione tecnica più rigorosa, verranno forniti riferimenti a testi o siti web su cui approfondire.

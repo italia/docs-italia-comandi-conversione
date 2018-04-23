@@ -4,11 +4,14 @@
 
 13 settembre 2017
 
+Introduzione
+============
+
 .. toctree::
   :maxdepth: 2
   :caption: Indice dei contenuti
 
-  index/Introduzione.rst
-  index/Passo-2.rst
-  index/Passo-4.rst
-  index/Passo-5.rst
+  index/Per-ottenere-il-pagamento-dei-buoni-validati,-l’es.rst
+  index/header-added-by-pandoc.rst
+  index/header-added-by-pandoc-2.rst
+  index/header-added-by-pandoc-3.rst

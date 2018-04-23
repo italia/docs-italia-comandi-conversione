@@ -2,11 +2,11 @@
 
 **sviluppato per conto delle pubbliche amministrazioni**
 
-**
-**
+\*\*
+====
 
 Sommario
-========
+--------
 
 `1 Premessa 4 <#premessa>`__
 
@@ -127,10 +127,10 @@ Sommario
 `6.5.4 Manutenzione perfettiva 81 <#manutenzione-perfettiva>`__
 
 Premessa
-========
+--------
 
 Finalità e struttura del documento
-----------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Il presente documento costituisce un aggiornamento delle linee guida sul tema dello sviluppo di software applicativo, pubblicate dall’allora CNIPA nell’ambito della collana sulla qualità dei beni e servizi ICT per le acquisizioni della pubblica amministrazione. Il documento si classifica come “Guida tecnica” per differenziarlo dalle linee guida contenenti le regole tecniche e di indirizzo per l’attuazione del Codice dell’Amministrazione Digitale ai sensi dell’art. 71 del Codice stesso.
 
@@ -142,7 +142,7 @@ L’esigenza di aggiornare le precedenti linee guida nasce:
 
 -  dall’attenzione, connessa anche alle contingenze economiche, al contenimento della spesa delle P.A. e al rapporto costi/benefici nelle acquisizioni e nei progetti delle amministrazioni;
 
--  dalle novità introdotte, anche sotto l’aspetto strategico, dal Piano Triennale per l’Informatica nella Pubblica Amministrazione, pubblicato nel corso del 2017 (`https://pianotriennale-ict.italia.it/ <https://pianotriennale-ict.italia.it/>`__).
+-  dalle novità introdotte, anche sotto l’aspetto strategico, dal Piano Triennale per l’Informatica nella Pubblica Amministrazione, pubblicato nel corso del 2017 (https://pianotriennale-ict.italia.it/).
 
 I lettori cui questo documento è indirizzato sono in primo luogo le pubbliche amministrazioni che si trovano a sviluppare o mantenere un parco applicativo da utilizzare nell’ambito dei propri compiti istituzionali. I contenuti del documento sono però d’interesse anche per gli operatori del mercato ICT (aziende, sviluppatori, integratori, consulenti, …).
 
@@ -163,7 +163,7 @@ Il presente documento è articolato nei seguenti capitoli:
 -  Applicazioni operative ed esempi, in cui si analizzano scenari tipici, tratti dalla usuale operatività delle pubbliche amministrazioni, e si ipotizzano impieghi pratici delle metriche, metodologie e strumenti illustrati nella guida tecnica.
 
 Glossario
----------
+~~~~~~~~~
 
 +--------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | **Termine**                                                                                      | **Definizione**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
@@ -306,7 +306,7 @@ Glossario
 +--------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Il contesto di riferimento
---------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Nella generalità dei casi, le pubbliche amministrazioni italiane acquisiscono da fornitori esterni, stipulando appositi contratti, i servizi di:
 
@@ -330,12 +330,12 @@ Per il suo ruolo, AgID ha visibilità dei contratti della pubblica amministrazio
 
 -  gran parte dei contratti vengono stipulati a seguito di procedure competitive, secondo quanto previsto dalla normativa in vigore;
 
--  si riscontra un ricorso crescente agli strumenti messi a disposizione da Consip (Accordi Quadro, MePA, ecc.) anche a causa delle forti indicazioni date in questo senso dalla L. 28 dicembre 2015, n. 208.
+-  si riscontra un ricorso crescente agli strumenti messi a disposizione da Consip (Accordi Quadro, MePA, ecc.) anche a causa delle forti indicazioni date in questo senso dalla `L. 28 dicembre 2015, n. 208 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2015-12-28;208>`__.
 
 Strumenti Consip a disposizione
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Per acquisire servizi di sviluppo e manutenzione applicativa le amministrazioni possono ricorrere ai seguenti strumenti Consip [1]_;
+Per acquisire servizi di sviluppo e manutenzione applicativa le amministrazioni possono ricorrere ai seguenti strumenti Consip\ `:sup:`1` <#fn1>`__;
 
 -  contratti SPC Cloud lotto 3 e lotto 4 (attivati tra l’aprile e l’agosto 2017);
 
@@ -347,24 +347,24 @@ Risulta, al momento, in fase di esame delle offerte la gara per il nuovo accordo
 
 Sono peraltro previsti, in questa nuova iniziativa, alcuni elementi di flessibilità. Si riporta ad esempio un passaggio dal capitolo 6 dell’allegato 5 al capitolato tecnico:
 
-“\ *Le Amministrazioni che dispongono di metodologie standardizzate e linee guida consolidate per una più precisa e controllata determinazione dell’effort possono modificare le regole cautelative sopra esposte. (…) A livello di Accordo Quadro vengono, pertanto, identificate le sole metriche di base e i fattori che ne determinano la misura, lasciando all'Amministrazione la facoltà di declinare in AS*\  [2]_ *tali fattori*\ ”.
+“\ *Le Amministrazioni che dispongono di metodologie standardizzate e linee guida consolidate per una più precisa e controllata determinazione dell’effort possono modificare le regole cautelative sopra esposte. (…) A livello di Accordo Quadro vengono, pertanto, identificate le sole metriche di base e i fattori che ne determinano la misura, lasciando all'Amministrazione la facoltà di declinare in AS*\ `:sup:`2` <#fn2>`__ *tali fattori*\ ”.
 
 Infine, si segnala che le amministrazioni pubbliche possono reperire sul MEPA, con il bando “Servizi Professionali”, competenze per supportarle nei progetti di sviluppo e manutenzione di software applicativo.
 
 Le problematiche
-----------------
+~~~~~~~~~~~~~~~~
 
 Le criticità che più frequentemente si riscontrano, o che comunque l’Agenzia ha rilevato negli ultimi anni, nella gestione dei contratti pubblici per sviluppo e manutenzione di applicazioni informatiche sono:
 
-a) Carenza di competenze tecniche interne alle amministrazioni. Le P.A. soffrono di una cronica mancanza di personale informatico interno. Questa carenza, legata anche al mancato *turn-over* del personale e alla difficoltà di acquisire nuove risorse umane, mette a volte l’amministrazione in condizione di debolezza nei confronti delle controparti contrattuali, favorisce condizioni di *lock-in* e di perdita di controllo non solo delle attività progettuali ma anche del patrimonio di dati e applicazioni dell’amministrazione stessa.
+a. Carenza di competenze tecniche interne alle amministrazioni. Le P.A. soffrono di una cronica mancanza di personale informatico interno. Questa carenza, legata anche al mancato *turn-over* del personale e alla difficoltà di acquisire nuove risorse umane, mette a volte l’amministrazione in condizione di debolezza nei confronti delle controparti contrattuali, favorisce condizioni di *lock-in* e di perdita di controllo non solo delle attività progettuali ma anche del patrimonio di dati e applicazioni dell’amministrazione stessa.
 
-b) Carenza di competenze nella gestione di gare e contratti. Per gli stessi motivi di cui al punto precedente, alcune amministrazioni difettano di figure professionali in grado di scrivere capitolati e documentazione di gara adeguati, di verificare il rispetto dei livelli di servizio e di applicare efficacemente le clausole contrattuali. Con riferimento ai già citati Punti Funzione, alcune amministrazioni hanno difficoltà ad applicare correttamente questa metrica (che in effetti richiede competenze specifiche e un adeguato percorso formativo): si riscontrano contratti nel cui articolato si fa un uso erroneo della metrica dei Punti Funzione, tale da annullarne i vantaggi. In occasione di recenti convegni sullo stato dell’informatica pubblica, alcuni relatori hanno proposto, per superare queste criticità, il drastico abbandono della metrica dei Punti Funzione. Benché questa provocazione possa stimolare il dibattito, è chiaro che si tratta di una falsa soluzione, giacché il problema è di competenze e non di unità di misura. Per chiarire il punto con una metafora di senso comune, sarebbe come se per risolvere una situazione di sovrappeso si abolissero le bilance.
+b. Carenza di competenze nella gestione di gare e contratti. Per gli stessi motivi di cui al punto precedente, alcune amministrazioni difettano di figure professionali in grado di scrivere capitolati e documentazione di gara adeguati, di verificare il rispetto dei livelli di servizio e di applicare efficacemente le clausole contrattuali. Con riferimento ai già citati Punti Funzione, alcune amministrazioni hanno difficoltà ad applicare correttamente questa metrica (che in effetti richiede competenze specifiche e un adeguato percorso formativo): si riscontrano contratti nel cui articolato si fa un uso erroneo della metrica dei Punti Funzione, tale da annullarne i vantaggi. In occasione di recenti convegni sullo stato dell’informatica pubblica, alcuni relatori hanno proposto, per superare queste criticità, il drastico abbandono della metrica dei Punti Funzione. Benché questa provocazione possa stimolare il dibattito, è chiaro che si tratta di una falsa soluzione, giacché il problema è di competenze e non di unità di misura. Per chiarire il punto con una metafora di senso comune, sarebbe come se per risolvere una situazione di sovrappeso si abolissero le bilance.
 
-c) Mancanza di strumenti e meccanismi contrattuali per garantire la qualità di quanto ricevuto dal fornitore. Benché, in via teorica, tutte le amministrazioni desiderino ottenere alti livelli di qualità nelle forniture, in pratica le amministrazioni non richiedono formalmente, con rare eccezioni, strumenti efficaci per raggiungere tale obiettivo, o non li utilizzano. Anche la semplice misurazione della qualità dei prodotti/servizi acquisiti non è sempre attuata, in quanto l’amministrazione non dispone di strumenti propri di verifica e di sufficiente know-how (a volte la misurazione è demandata al solo fornitore).
+c. Mancanza di strumenti e meccanismi contrattuali per garantire la qualità di quanto ricevuto dal fornitore. Benché, in via teorica, tutte le amministrazioni desiderino ottenere alti livelli di qualità nelle forniture, in pratica le amministrazioni non richiedono formalmente, con rare eccezioni, strumenti efficaci per raggiungere tale obiettivo, o non li utilizzano. Anche la semplice misurazione della qualità dei prodotti/servizi acquisiti non è sempre attuata, in quanto l’amministrazione non dispone di strumenti propri di verifica e di sufficiente know-how (a volte la misurazione è demandata al solo fornitore).
 
 Con riferimento alle forniture di sviluppo software, l’unica metrica di prodotto al momento sufficientemente diffusa (i Punti Funzione) misura solo le funzionalità di un’applicazione; le dimensioni non funzionali (usabilità, prestazioni, manutenibilità, sicurezza, ecc.) sono fuori dal perimetro di applicazione dei PF. Ciò comporta che interventi su applicazioni finalizzati, ad esempio, ad aumentare l’usabilità, non vengono a oggi remunerati sulla base del risultato, perché non ci sono metriche di prodotto condivise adatte a misurare l’intervento. Tali attività vengono invece remunerate a corpo o a giorni persona.
 
-d) Eccessiva enfasi al prezzo. Negli ultimi anni si sono riscontrati, in gare per sviluppo applicativo, ribassi rilevanti rispetto alla base d’asta, a dispetto delle modalità di aggiudicazione (criterio dell’offerta economicamente più vantaggiosa) e del maggior peso assegnato alla qualità dell’offerta [3]_.
+d. Eccessiva enfasi al prezzo. Negli ultimi anni si sono riscontrati, in gare per sviluppo applicativo, ribassi rilevanti rispetto alla base d’asta, a dispetto delle modalità di aggiudicazione (criterio dell’offerta economicamente più vantaggiosa) e del maggior peso assegnato alla qualità dell’offerta\ `:sup:`3` <#fn3>`__.
 
 Ciò è senz’altro dipeso dalle condizioni competitive del mercato ICT. Tuttavia si possono avanzare altre spiegazioni. Ad esempio si riscontrano gare in cui il punteggio tecnico non viene assegnato in base a criteri oggettivi ma prendendo atto di dichiarazioni del fornitore. In questi casi tutte le offerte tecniche tendono a ottenere il massimo del punteggio (in quanto i concorrenti dichiarano massima qualità), con la conseguenza che torna a essere determinante, per vincere la gara, il ribasso rispetto alla base d’asta.
 
@@ -372,14 +372,14 @@ I contratti che vengono stipulati a seguito di queste gare presentano corrispett
 
 Ultimamente le amministrazioni hanno cominciato a percepire questa criticità e sono alla ricerca di contromisure. Alcune P.A. puntano ad alzare le basi d’asta, ritenendo che corrispettivi unitari più alti motivino il fornitore “a rispettare il contratto sottoscritto”. Si tratta, com’è evidente, di una falsa soluzione, del tutto insufficiente se ad essa non vengono affiancati gli strumenti per misurare/verificare la qualità di cui al punto c).
 
-e) Mancata capitalizzazione del patrimonio applicativo delle amministrazioni. Molte P.A. detengono un parco applicativo di dimensioni rilevanti, magari frutto di una serie di progetti susseguitisi nel tempo e di ripetuti investimenti anche ingenti, ma non sanno come quantificare e valorizzare dal punto di vista finanziario questo loro *asset*. Ciò deriva in parte dalla perdita di controllo già citata al punto a), ma anche dal mancato utilizzo di metriche riconosciute in grado ad esempio di misurare la sicurezza (o la portabilità, o la riusabilità) di un parco applicativo.
+e. Mancata capitalizzazione del patrimonio applicativo delle amministrazioni. Molte P.A. detengono un parco applicativo di dimensioni rilevanti, magari frutto di una serie di progetti susseguitisi nel tempo e di ripetuti investimenti anche ingenti, ma non sanno come quantificare e valorizzare dal punto di vista finanziario questo loro *asset*. Ciò deriva in parte dalla perdita di controllo già citata al punto a), ma anche dal mancato utilizzo di metriche riconosciute in grado ad esempio di misurare la sicurezza (o la portabilità, o la riusabilità) di un parco applicativo.
 
-f) Difficoltà a distinguere tra investimenti e spese ricorrenti. Nella quasi totalità delle pubbliche amministrazioni, i costi per la manutenzione (correttiva, adeguativa, migliorativa) di un parco applicativo vengono considerati spese ricorrenti (OPEX). A volte, per il pagamento di queste attività è previsto un canone fisso. Com’è noto, già da anni alle amministrazioni viene chiesto, nelle manovre di bilancio, di tagliare le spese ricorrenti. Se le P.A. avessero a disposizione strumenti per quantificare i benefici degli interventi di manutenzione, questi ultimi potrebbero essere considerati investimenti, e il loro costo imputato di conseguenza come CAPEX.
+f. Difficoltà a distinguere tra investimenti e spese ricorrenti. Nella quasi totalità delle pubbliche amministrazioni, i costi per la manutenzione (correttiva, adeguativa, migliorativa) di un parco applicativo vengono considerati spese ricorrenti (OPEX). A volte, per il pagamento di queste attività è previsto un canone fisso. Com’è noto, già da anni alle amministrazioni viene chiesto, nelle manovre di bilancio, di tagliare le spese ricorrenti. Se le P.A. avessero a disposizione strumenti per quantificare i benefici degli interventi di manutenzione, questi ultimi potrebbero essere considerati investimenti, e il loro costo imputato di conseguenza come CAPEX.
 
-g) Difficoltà ad adeguarsi al modello strategico del Piano Triennale. Il modello strategico di evoluzione del sistema informativo delle P.A., presente nel Piano Triennale 2017-2019, introduce numerosi elementi di novità nell’ambito dei servizi di sviluppo e manutenzione di software applicativo. Ad esempio si prevede che le amministrazioni sviluppino le proprie applicazioni con approccio modulare, esponendo interfacce alle stesse sotto forma di API, in modo che soggetti terzi, pubblici o privati, possano integrarle per realizzare servizi a cittadini e imprese. In quest’ottica, oltre alle tradizionali caratteristiche funzionali del software (le sole misurabili, come detto, in Punti Funzione), assumono grande importanza aspetti quali la fruibilità delle API, la qualità della documentazione delle stesse, le prestazioni, la scalabilità, la sicurezza, l’accessibilità nel caso di servizi web, tutte caratteristiche per cui oggi non si fa uso di una metrica condivisa. Si ritiene che questo aspetto, ove non venga fronteggiato, determinerà criticità e ritardi nell’adeguamento delle P.A. alle indicazioni del Piano Triennale.
+g. Difficoltà ad adeguarsi al modello strategico del Piano Triennale. Il modello strategico di evoluzione del sistema informativo delle P.A., presente nel Piano Triennale 2017-2019, introduce numerosi elementi di novità nell’ambito dei servizi di sviluppo e manutenzione di software applicativo. Ad esempio si prevede che le amministrazioni sviluppino le proprie applicazioni con approccio modulare, esponendo interfacce alle stesse sotto forma di API, in modo che soggetti terzi, pubblici o privati, possano integrarle per realizzare servizi a cittadini e imprese. In quest’ottica, oltre alle tradizionali caratteristiche funzionali del software (le sole misurabili, come detto, in Punti Funzione), assumono grande importanza aspetti quali la fruibilità delle API, la qualità della documentazione delle stesse, le prestazioni, la scalabilità, la sicurezza, l’accessibilità nel caso di servizi web, tutte caratteristiche per cui oggi non si fa uso di una metrica condivisa. Si ritiene che questo aspetto, ove non venga fronteggiato, determinerà criticità e ritardi nell’adeguamento delle P.A. alle indicazioni del Piano Triennale.
 
 Finalità del documento
-----------------------
+~~~~~~~~~~~~~~~~~~~~~~
 
 Tenendo presente le criticità elencate al paragrafo precedente, la presente guida tecnica si propone di:
 
@@ -394,7 +394,7 @@ Vale la pena segnalare che le amministrazioni, oggi come in passato, appaiono di
 La presente guida tecnica, in omogeneità con le precedenti pubblicazioni dell’AgID di questo tipo, non hanno pretesa di completezza documentale, esaustività e massimo rigore sulla tematica in esame. Al contrario, esse rappresentano una sintesi di prima fruibilità delle asserzioni della letteratura tecnica in materia. Esse sono indirizzate a una categoria ben definita di lettori (dirigenti e funzionari della pubblica amministrazione), pertanto sono focalizzate sulle esigenze e sul contesto pubblico; perseguendo anche finalità didattiche, il livello della trattazione è stato reso, ove possibile, comprensibile al più ampio pubblico, soprattutto tramite una serie di esempi, indicazioni operative e suggerimenti pratici. Ove il lettore voglia andare più in dettaglio e/o cerchi una narrazione tecnica più rigorosa, verranno forniti riferimenti a testi o siti web su cui approfondire.
 
 Il tavolo di lavoro
-===================
+-------------------
 
 Il presente documento è stato redatto dal Tavolo di lavoro dell’Agenzia per l’Italia Digitale, istituito con determinazione del Direttore generale n. 165 del 9 giugno 2017. Al Tavolo di lavoro, coordinato da Francesco Grasso, hanno partecipato per l’AgID Francesca Villani, Gaetano Bruno, Salvatore Del Pizzo, Giovanni Di Iasio.
 
@@ -402,7 +402,7 @@ Hanno fatto parte del Tavolo di lavoro anche i seguenti esperti esterni, nominat
 
 -  Ivana Beni, Almaviva;
 
--  Giulio Borsari, Ministero della Giustizia [4]_;
+-  Giulio Borsari, Ministero della Giustizia\ `:sup:`4` <#fn4>`__;
 
 -  Luigi Buglione, GUFPI-ISMA;
 
@@ -416,7 +416,7 @@ Hanno fatto parte del Tavolo di lavoro anche i seguenti esperti esterni, nominat
 
 -  Sergio Di Martino, Università degli Studi di Napoli;
 
--  Gianluca Ferri [5]_, SQS;
+-  Gianluca Ferri\ `:sup:`5` <#fn5>`__, SQS;
 
 -  Marco Geraci, CAST;
 
@@ -426,7 +426,7 @@ Hanno fatto parte del Tavolo di lavoro anche i seguenti esperti esterni, nominat
 
 -  Gabriele Massarelli, Consip;
 
--  Roberto Meli, DPO [6]_;
+-  Roberto Meli, DPO\ `:sup:`6` <#fn6>`__;
 
 -  Antonio Messina, Agenzia delle Entrate;
 
@@ -442,22 +442,22 @@ Nel corso delle attività, svoltesi tra il giugno 2017 e il febbraio 2018, il Ta
 
 Le attività del Tavolo di lavoro si sono articolate nelle seguenti fasi:
 
-1) ricognizione a livello internazionale di esperienze e casi di studio sulle metriche del software;
+1. ricognizione a livello internazionale di esperienze e casi di studio sulle metriche del software;
 
-2) ricognizione di metriche non funzionali, confronto di strumenti, metodologie, proposte a disposizione;
+2. ricognizione di metriche non funzionali, confronto di strumenti, metodologie, proposte a disposizione;
 
-3) analisi del modello strategico del Piano Triennale, con lo studio delle possibili applicazioni a tale modello delle metriche non funzionali;
+3. analisi del modello strategico del Piano Triennale, con lo studio delle possibili applicazioni a tale modello delle metriche non funzionali;
 
-4) studio dell’impatto delle metriche non funzionali su capitolati e schemi contrattuali delle pubbliche amministrazioni;
+4. studio dell’impatto delle metriche non funzionali su capitolati e schemi contrattuali delle pubbliche amministrazioni;
 
-5) redazione del testo finale del documento.
+5. redazione del testo finale del documento.
 
 La guida tecnica è stata approvata dall’Agenzia per l’Italia Digitale con determinazione n. xx del xxx.
 
 Analogamente ad altri documenti di natura tecnica pubblicati in passato dall’Agenzia, la presente guida tecnica sarà aggiornata in rapporto all’evoluzione delle tecnologie ICT e del contesto normativo/organizzativo delle pubbliche amministrazioni italiane.
 
 Ricognizione a livello internazionale
--------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Come prima attività, il Tavolo di lavoro ha effettuato una ricognizione presso alcune pubbliche amministrazioni estere che svolgono funzioni analoghe ad AgID e organismi di altri Paesi che si occupano di standard per la misurazione del software.
 
@@ -473,47 +473,47 @@ Nella tabella che segue sono riepilogati i destinatari della ricognizione.
 
 Tabella 1: destinatari della ricognizione internazionale
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
-| **Organizzazione**                                                                                                                                                                       | **Riferimento**                                                                                                       |
-+==========================================================================================================================================================================================+=======================================================================================================================+
-| Directeur de l’Agence du numérique – Francia                                                                                                                                             | `agence.numerique@finances.gouv.fr <mailto:agence.numerique@finances.gouv.fr>`__                                      |
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
-| Secretary at the Federal Ministry of the Interior and Federal Government Commissioner for Information Technology - Germania                                                              | `Besucherdienst@bmi.bund.de <mailto:Besucherdienst@bmi.bund.de>`__                                                    |
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
-| Government Digital Service – UK                                                                                                                                                          | `kevin.cunnington@digital.cabinet-office.gov.uk <mailto:kevin.cunnington@digital.cabinet-office.gov.uk>`__            |
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
-| Office of the Government Chief Information Officer (OGCIO) - Irlanda                                                                                                                     | `barry.lowry@per.gov.ie <mailto:barry.lowry@per.gov.ie>`__                                                            |
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
-| Director of the Digital Services Unit; National Architecture for Digital Services – Finlandia                                                                                            | `Kristiina.Luukkonen@vm.fi <mailto:Kristiina.Luukkonen@vm.fi>`__                                                      |
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
-| KERC - Korea-EU Research Centre                                                                                                                                                          | `ockwon@etri.re.kr <mailto:ockwon@etri.re.kr>`__                                                                      |
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
-| EU-Japan Centre for Industrial Cooperation                                                                                                                                               | fabrizio.mura@eu-japan.gr.jp                                                                                          |
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
-| Ministerio de Modernización Gobierno Digital - Argentina                                                                                                                                 | digital@modernizacion.gob.ar                                                                                          |
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
-| Ministerio de Hacienda y Función Pública - Secretaría General de Administración Digital - Subdirección General de Impulso de la Administración Digital y Servicios al Ciudadano – Spagna | secretaria.sgiadsc@seap.minhap.es                                                                                     |
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
-| Minister of Digital Affairs – Polonia                                                                                                                                                    | `apiasecki@ibemag.pl <mailto:apiasecki@ibemag.pl>`__                                                                  |
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
-| Minister of Entrepreneurship and Information Technology of the Republic of Estonia                                                                                                       | `info@mkm.ee <mailto:info@mkm.ee>`__                                                                                  |
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
-| AEMES (associazione spagnola per la governance, la misurazione delle tecnologie dell'informazione e la gestione)                                                                         | `admon@aemes.org <mailto:admon@aemes.org>`__                                                                          |
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
-| ASSEMI (ASSociation pour l'Etude des Métriques Informatiques) - Francia                                                                                                                  | `Secretariat@assemi.org <mailto:Secretariat@assemi.org>`__                                                            |
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
-| DASMA (Deutschsprachige Anwendergruppe für Software-Metrik und Aufwandschätzung e.V.) – Germania                                                                                         | `info@dasma.org <mailto:info@dasma.org>`__                                                                            |
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
-| ITSA (Korea Information Technology Service Industry Association)                                                                                                                         | `hijeong@itsa.or.kr <mailto:hijeong@itsa.or.kr>`__                                                                    |
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
-| NESMA (Netherlands Software Metrics users Association) - Olanda                                                                                                                          | office@nesma.org\ ;\ https://nesma.org/2018/01/non-functional-requirements/                                           |
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
-| PSMO (Associazione polacca per le misure del software)                                                                                                                                   | `kontakt@psmo.pl <mailto:kontakt@psmo.pl>`__                                                                          |
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
-| JFPUG (Japan Function Point User Group)                                                                                                                                                  | `office@jfpug.gr.jp <mailto:office@jfpug.gr.jp>`__                                                                    |
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
-| Programme Office eGovernment Switzerland                                                                                                                                                 | `info@egovernment.ch <mailto:info@egovernment.ch>`__ `anna.faoro@egovernment.ch <mailto:anna.faoro@egovernment.ch>`__ |
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------+
+| **Organizzazione**                                                                                                                                                                       | **Riferimento**                                                           |
++==========================================================================================================================================================================================+===========================================================================+
+| Directeur de l’Agence du numérique – Francia                                                                                                                                             | agence.numerique@finances.gouv.fr                                         |
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------+
+| Secretary at the Federal Ministry of the Interior and Federal Government Commissioner for Information Technology - Germania                                                              | Besucherdienst@bmi.bund.de                                                |
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------+
+| Government Digital Service – UK                                                                                                                                                          | kevin.cunnington@digital.cabinet-office.gov.uk                            |
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------+
+| Office of the Government Chief Information Officer (OGCIO) - Irlanda                                                                                                                     | barry.lowry@per.gov.ie                                                    |
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------+
+| Director of the Digital Services Unit; National Architecture for Digital Services – Finlandia                                                                                            | Kristiina.Luukkonen@vm.fi                                                 |
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------+
+| KERC - Korea-EU Research Centre                                                                                                                                                          | ockwon@etri.re.kr                                                         |
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------+
+| EU-Japan Centre for Industrial Cooperation                                                                                                                                               | fabrizio.mura@eu-japan.gr.jp                                              |
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------+
+| Ministerio de Modernización Gobierno Digital - Argentina                                                                                                                                 | digital@modernizacion.gob.ar                                              |
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------+
+| Ministerio de Hacienda y Función Pública - Secretaría General de Administración Digital - Subdirección General de Impulso de la Administración Digital y Servicios al Ciudadano – Spagna | secretaria.sgiadsc@seap.minhap.es                                         |
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------+
+| Minister of Digital Affairs – Polonia                                                                                                                                                    | apiasecki@ibemag.pl                                                       |
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------+
+| Minister of Entrepreneurship and Information Technology of the Republic of Estonia                                                                                                       | info@mkm.ee                                                               |
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------+
+| AEMES (associazione spagnola per la governance, la misurazione delle tecnologie dell'informazione e la gestione)                                                                         | admon@aemes.org                                                           |
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------+
+| ASSEMI (ASSociation pour l'Etude des Métriques Informatiques) - Francia                                                                                                                  | Secretariat@assemi.org                                                    |
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------+
+| DASMA (Deutschsprachige Anwendergruppe für Software-Metrik und Aufwandschätzung e.V.) – Germania                                                                                         | info@dasma.org                                                            |
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------+
+| ITSA (Korea Information Technology Service Industry Association)                                                                                                                         | hijeong@itsa.or.kr                                                        |
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------+
+| NESMA (Netherlands Software Metrics users Association) - Olanda                                                                                                                          | office@nesma.org;\ https://nesma.org/2018/01/non-functional-requirements/ |
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------+
+| PSMO (Associazione polacca per le misure del software)                                                                                                                                   | kontakt@psmo.pl                                                           |
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------+
+| JFPUG (Japan Function Point User Group)                                                                                                                                                  | office@jfpug.gr.jp                                                        |
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------+
+| Programme Office eGovernment Switzerland                                                                                                                                                 | info@egovernment.ch anna.faoro@egovernment.ch                             |
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------+
 
 Non tutti gli interpellati hanno risposto. In alcuni casi, forse a causa della insufficiente conoscenza della tematica, le risposte ricevute non sono sembrate pertinenti. Nella tabella che segue sono sintetizzati i contributi più significativi tra quelli acquisiti.
 
@@ -528,11 +528,11 @@ Tabella 2: esiti della ricognizione internazionale
 +-------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Giappone (EU-Japan Centre for Industrial Cooperation) | Il rispondente ha precisato che la sua organizzazione è piccola e non svolge misurazioni del software. Le motivazioni sono:                                                                                                                                                                                                                                                                                                                                                                                                                     |
 |                                                       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-|                                                       | - lo scarso budget a disposizione;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+|                                                       | -  lo scarso budget a disposizione;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |                                                       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-|                                                       | - l’acquisto di prodotti software e/o servizi di sviluppo software avviene unicamente con il criterio del prezzo più basso.                                                                                                                                                                                                                                                                                                                                                                                                                     |
+|                                                       | -  l’acquisto di prodotti software e/o servizi di sviluppo software avviene unicamente con il criterio del prezzo più basso.                                                                                                                                                                                                                                                                                                                                                                                                                    |
 |                                                       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-|                                                       | - scarso interesse da parte del top management nei confronti di programmi di lungo termine relativi al software.                                                                                                                                                                                                                                                                                                                                                                                                                                |
+|                                                       | -  scarso interesse da parte del top management nei confronti di programmi di lungo termine relativi al software.                                                                                                                                                                                                                                                                                                                                                                                                                               |
 +-------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Giappone (IFPUG)                                      | Il Japanese Function Point User Group conferma quanto alla riga precedente. Da parte dell’industria ICT si segnala interesse per la tematica, ma in sostanza non sono state avviate azioni concrete. JFPUG conferma inoltre che i requisiti non funzionali sono molto spesso trascurati nelle fasi iniziali dei progetti, per poi emergere nelle fasi successive.                                                                                                                                                                               |
 |                                                       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
@@ -572,7 +572,7 @@ A seguito della ricognizione effettuata e dalla lettura dei contributi pervenuti
 -  l’Italia, con la costituzione del presente Tavolo di lavoro, può ritenersi in posizione più avanzata sull’argomento rispetto alle nazioni interpellate.
 
 Ricognizione delle metriche non funzionali disponibili
-------------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 La seconda attività svolta dal Tavolo di lavoro è stata la raccolta di documentazione tecnica inerente l’oggetto dello studio, in particolare inerente le metriche per quantificare le caratteristiche non funzionali del software.
 
@@ -659,7 +659,7 @@ Tabella 3: elenco documenti acquisiti
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+------------------+
 | Capitolato Tecnico – Procedura aperta per l’affidamento dei servizi per la gestione degli strumenti – lotto 3                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | RAI                                                                                                            | 2014             |
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+------------------+
-| CAPITOLATO TECNICO e ALLEGATO 1–LIVELLI DI SERVIZIO al Capitolato Tecnico - Procedura aperta, di carattere comunitario, ai sensi dell’art. 55, comma 5, del D.L.vo 163/2006 per l’affidamento di servizi di Application Development and Maintenance del software applicativo - Indicatori di qualità della fornitura                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | INPS                                                                                                           | 2016             |
+| CAPITOLATO TECNICO e ALLEGATO 1–LIVELLI DI SERVIZIO al Capitolato Tecnico - Procedura aperta, di carattere comunitario, ai sensi dell’\ `art. 55, comma 5, del D.L.vo 163/2006 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2006;163~art55-com5>`__ per l’affidamento di servizi di Application Development and Maintenance del software applicativo - Indicatori di qualità della fornitura                                                                                                                                                                                                                                                                                                                                                                                               | INPS                                                                                                           | 2016             |
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+------------------+
 | Capitolato TecnicoLotto1“Servizi a progetto per lo sviluppodei Sistemi Informativi RAI–Ambito Istituzionale”                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | RAI                                                                                                            | 2015             |
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+------------------+
@@ -757,7 +757,7 @@ Tabella 3: elenco documenti acquisiti
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+------------------+
 | From Software Sizing to Productivity Measurement                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | CAST                                                                                                           |                  |
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+------------------+
-| Gara 3/2014/LI -Procedura aperta ai sensi del D.Lgs. n. 163/2006 per l’affidamento dei servizi di supporto al demand management, sviluppo, manutenzione, assistenzaper la realizzazione dei modelli di e-government (allegati 1.2, 1.3, 1.4, 1.6, 1A, 1B, 1C, 1D)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | Lombardia Informatica                                                                                          | 2015             |
+| Gara 3/2014/LI -Procedura aperta ai sensi del `D.Lgs. n. 163/2006 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2006;163>`__ per l’affidamento dei servizi di supporto al demand management, sviluppo, manutenzione, assistenzaper la realizzazione dei modelli di e-government (allegati 1.2, 1.3, 1.4, 1.6, 1A, 1B, 1C, 1D)                                                                                                                                                                                                                                                                                                                                                                                                                                                               | Lombardia Informatica                                                                                          | 2015             |
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+------------------+
 | Gara n. 9103 Servizi informatici per la manutenzione ordinaria ed evolutiva delle Applicazioni informatiche del GSE SPECIFICA TECNICA                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  | Gestore dei Servizi Energetici – GSE S.p.A.                                                                    | 2016             |
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------+------------------+
@@ -1032,13 +1032,13 @@ Tabella 4: sintesi dei documenti più rilevanti
 
 Le risultanze più significative emerse da questa fase di ricognizione sono:
 
-1) Nel corso degli ultimi anni la tematica della misurazione del software è stata esaminata e approfondita da una pluralità di soggetti (aziende private, enti pubblici/governativi, ricercatori, consulenti, strutture del mondo accademico). Tali soggetti hanno operato in modo disomogeneo, anche partendo da concetti e definizioni distanti tra loro. Come conseguenza, oggi esistono numerose “scuole di pensiero” parzialmente in contrapposizione, che seguono ciascuna una propria evoluzione e che è difficile integrare. Si riscontra sovrabbondanza anche di proposte di soluzioni e metodologie, poche delle quali hanno raggiunto un grado di diffusione tale da poterne valutare oggettivamente l’efficacia. Anche solo un confronto tra le varie soluzioni disponibili è arduo, mancando persino un’unica tassonomia di riferimento.
+1. Nel corso degli ultimi anni la tematica della misurazione del software è stata esaminata e approfondita da una pluralità di soggetti (aziende private, enti pubblici/governativi, ricercatori, consulenti, strutture del mondo accademico). Tali soggetti hanno operato in modo disomogeneo, anche partendo da concetti e definizioni distanti tra loro. Come conseguenza, oggi esistono numerose “scuole di pensiero” parzialmente in contrapposizione, che seguono ciascuna una propria evoluzione e che è difficile integrare. Si riscontra sovrabbondanza anche di proposte di soluzioni e metodologie, poche delle quali hanno raggiunto un grado di diffusione tale da poterne valutare oggettivamente l’efficacia. Anche solo un confronto tra le varie soluzioni disponibili è arduo, mancando persino un’unica tassonomia di riferimento.
 
-2) Anche con riferimento alle sole metriche, esiste una pluralità di definizioni e classificazioni spesso incoerenti tra loro, che va risolta prima di intraprendere qualunque analisi.
+2. Anche con riferimento alle sole metriche, esiste una pluralità di definizioni e classificazioni spesso incoerenti tra loro, che va risolta prima di intraprendere qualunque analisi.
 
-3) La tematica è oggettivamente ampia e soggetta a evoluzione molto rapida. Essa comprende non solo questioni tecniche, ma anche economiche, giuridiche e di mercato.
+3. La tematica è oggettivamente ampia e soggetta a evoluzione molto rapida. Essa comprende non solo questioni tecniche, ma anche economiche, giuridiche e di mercato.
 
-4) I soggetti che si occupano della tematica hanno ruoli distinti (sviluppatori di software, venditori, integratori, clienti, normatori, utenti finali). Essi sono, legittimamente, portatori di interessi diversi, a volte in contrasto tra loro, e ciò si riflette anche su come la tematica viene percepita e sulla posizione espressa dalle varie tipologie di soggetti.
+4. I soggetti che si occupano della tematica hanno ruoli distinti (sviluppatori di software, venditori, integratori, clienti, normatori, utenti finali). Essi sono, legittimamente, portatori di interessi diversi, a volte in contrasto tra loro, e ciò si riflette anche su come la tematica viene percepita e sulla posizione espressa dalle varie tipologie di soggetti.
 
 Sulla base delle risultanze di cui sopra e delle esperienze maturate nel settore dai partecipanti, il Tavolo di lavoro ha individuato e condiviso le seguenti asserzioni:
 
@@ -1046,9 +1046,9 @@ a. Occorre delimitare con attenzione il perimetro dello studio. Nello specifico,
 
 b. Allo stesso modo, si limita il perimetro dello studio al software applicativo realizzato ad hoc, benché alcune delle considerazioni espresse possano riguardare anche prodotti di mercato venduti a licenza d’uso.
 
-c. Tenuto conto dei precedenti due punti, le metriche su cui il Tavolo di lavoro concentra il suo esame devono consentire di quantificare le caratteristiche di un software e dunque il suo “valore” [7]_ come bene dell’amministrazione che lo ha commissionato e/o lo detiene.
+c. Tenuto conto dei precedenti due punti, le metriche su cui il Tavolo di lavoro concentra il suo esame devono consentire di quantificare le caratteristiche di un software e dunque il suo “valore”\ `:sup:`7` <#fn7>`__ come bene dell’amministrazione che lo ha commissionato e/o lo detiene.
 
-d. Sono d’interesse per il Tavolo metriche diffuse, se possibile conformi a standard [8]_ riconosciuti, comprensibili all’utente e non solo alle figure tecniche, adeguate al modo di operare della pubblica amministrazione e alla normativa in vigore, che non richiedano investimenti eccessivi per la loro applicazione.
+d. Sono d’interesse per il Tavolo metriche diffuse, se possibile conformi a standard\ `:sup:`8` <#fn8>`__ riconosciuti, comprensibili all’utente e non solo alle figure tecniche, adeguate al modo di operare della pubblica amministrazione e alla normativa in vigore, che non richiedano investimenti eccessivi per la loro applicazione.
 
 e. Sono d’interesse per il Tavolo metriche facilmente fruibili e semplici da utilizzare, come già rappresentato al §1.5. In altre parole, sono d’interesse metriche che si prestino a un uso flessibile, applicabile a contesti d’uso tra loro assai diversi e scalabile, cioè adattabile ad acquisizioni di piccola e grande rilevanza.
 
@@ -1065,7 +1065,7 @@ g. Benché possano essere citate, a titolo informativo e come esempi utili a dec
 h. Il perimetro dello studio include modelli di valorizzazione economica del software, almeno per quanto riguarda gli aspetti metodologici. Tuttavia non rientra nel mandato di questo Tavolo fornire riferimenti di prezzo, tariffe o altre informazioni di mercato.
 
 Analisi del modello strategico del Piano Triennale
---------------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Come terza attività, il Tavolo di lavoro ha effettuato una lettura accurata e una disamina del testo del Piano Triennale, estrapolando:
 
@@ -1080,21 +1080,21 @@ Tra le varie indicazioni del Piano, si è approfondito in particolare l’uso di
 I risultati dell’analisi svolta sono riportati al capitolo 5.
 
 Analisi di capitolati e schemi contrattuali
--------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Nell’ambito della documentazione raccolta dal Tavolo di lavoro, sono stati oggetto di specifica analisi schemi di contratto, capitolati e altra documentazione di gara riguardante attività di sviluppo e manutenzione di software applicativo.
 
 Come primo obiettivo, si è cercato di capire in che modo viene attualmente regolato, nella documentazione contrattuale della P.A., l’uso di metriche del software. Successivamente, sulla scorta delle criticità riscontrate, sono stati formulati alcuni suggerimenti, di ordine generale, sulla scrittura di capitolati e articolati contrattuali.
 
 Situazione attuale
-~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^
 
 Come anticipato al §1.3, l’uso di metriche del software nei contratti e nei capitolati delle P.A. è, nella stragrande maggioranza dei casi, limitato ai Punti Funzione. Le amministrazioni, in molti casi, sono consapevoli dei limiti di questa metrica, tuttavia è prevalente un approccio “conservativo”: le P.A. preferiscono attestarsi su clausole e articolati contrattuali consolidati, ben diffusi o in qualche modo “ufficializzati” anziché sperimentare contenuti innovativi, a volte percepiti come possibile fonte di contenziosi.
 
 Esistono peraltro alcuni esempi d’innovazione in questo ambito. Essi verranno citati nei paragrafi che seguono.
 
 Esempio 1: linee guida Lombardia Informatica
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+''''''''''''''''''''''''''''''''''''''''''''
 
 Tra il materiale pervenuto al Tavolo di lavoro, appare utile estrarre alcuni contenuti del documento “METODOLOGIE E LINEE GUIDA DI MISURA DEI FUNCTION POINT”, redatto da Lombardia Informatica, allegato alla gara 3/2014/LI per l’affidamento dei servizi di supporto al demand management, sviluppo, manutenzione, assistenza per la realizzazione dei modelli di e-government della Regione Lombardia.
 
@@ -1112,7 +1112,7 @@ Ogni livello di misurazione tiene conto delle informazioni disponibili nelle var
 
 Il documento prescrive che le misure richieste all’accettazione di nuovi sviluppi e manutenzioni evolutive siano di livello “dettagliate”. Per obiettivi di controllo si usano invece misure di livello “approfondito”. Per entrambi i livelli si prevede il metodo di misurazione IFPUG 4.3.1.
 
-In fasi iniziali possono essere richieste al fornitore misure (o meglio “stime”) di livello “approssimato” o “grezzo”. Il livello “grezzo” è considerato accettabile per la prima valorizzazione richiesta al fornitore. Per le stime si prevede l’impiego del metodo Early & Quick Function Point (`E&QFP <https://www.researchgate.net/profile/Roberto_Meli/publication/258210227_EQFP_R_Early_Quick_Function_Points_for_IFPUG_method/links/02e7e5273e601b76d9000000/E-QFP-R-Early-Quick-Function-Points-for-IFPUG-method.pdf>`__) [9]_. Per il livello “grezzo” è anche possibile l’uso del metodo Simple Function Point, brevemente descritto al successivo §4.2.
+In fasi iniziali possono essere richieste al fornitore misure (o meglio “stime”) di livello “approssimato” o “grezzo”. Il livello “grezzo” è considerato accettabile per la prima valorizzazione richiesta al fornitore. Per le stime si prevede l’impiego del metodo Early & Quick Function Point (`E&QFP <https://www.researchgate.net/profile/Roberto_Meli/publication/258210227_EQFP_R_Early_Quick_Function_Points_for_IFPUG_method/links/02e7e5273e601b76d9000000/E-QFP-R-Early-Quick-Function-Points-for-IFPUG-method.pdf>`__)\ `:sup:`9` <#fn9>`__. Per il livello “grezzo” è anche possibile l’uso del metodo Simple Function Point, brevemente descritto al successivo §4.2.
 
 Un concetto interessante presente in questo documento è la distinzione tra “misura funzionale” (in UFP) del software e “misura funzionale contrattuale” (MFC) dello stesso. Mentre la prima misura deriva dall’applicazione del metodo dei Punti Funzione IFPUG, la seconda misura tiene conto dei tre fattori seguenti:
 
@@ -1138,7 +1138,7 @@ Riguardo all’ultimo fattore (CR), il documento stabilisce le seguenti regole d
 
 Per passare dalla misura funzionale in UFP alla MFC, il documento di Lombardia Informatica propone la formula:
 
-**MFC = Σ\ :sub:`i` (UFP x SAC\ :sub:`riuso` x SAC\ :sub:`replica` x SAC\ :sub:`CR`)\ :sub:`i`**
+**MFC = Σ:sub:`i\` (UFP x SAC:sub:`riuso\` x SAC:sub:`replica\` x SAC:sub:`CR`):sub:`i\`**
 
 Dove:
 
@@ -1163,9 +1163,9 @@ Il corrispettivo unitario da applicare nel singolo intervento si calcola moltipl
 Riassumendo, Lombardia Informatica usa misure e stime delle caratteristiche funzionali, passa alla misura “contrattuale” MFC per tener conto di riuso, repliche e change request. Infine applica fattori correttivi al corrispettivo unitario considerando l’impatto delle caratteristiche di qualità del software, tecniche e di progetto. Per quest’ultimo passo utilizza metriche “discrete” tratte dal metodo Cocomo.
 
 Esempio 2: l’approccio Sogei per l’usabilità
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+''''''''''''''''''''''''''''''''''''''''''''
 
-Tra il materiale preso in esame, il Tavolo di lavoro ha analizzato il documento Sogei “Linee guida per l’accessibilità e l’usabilità di siti ed applicazioni web” (DA-00-WE-01 26 novembre 2013) [10]_, che ha l’obiettivo di fissare indicazioni e soglie minime accettabili che fornitori e sviluppatori sono tenuti a rispettare per rendere accessibili, ai sensi della normativa vigente, informazioni e servizi resi disponibili mediante siti, applicazioni web nonché prodotti a scaffale.
+Tra il materiale preso in esame, il Tavolo di lavoro ha analizzato il documento Sogei “Linee guida per l’accessibilità e l’usabilità di siti ed applicazioni web” (DA-00-WE-01 26 novembre 2013)\ `:sup:`10` <#fn10>`__, che ha l’obiettivo di fissare indicazioni e soglie minime accettabili che fornitori e sviluppatori sono tenuti a rispettare per rendere accessibili, ai sensi della normativa vigente, informazioni e servizi resi disponibili mediante siti, applicazioni web nonché prodotti a scaffale.
 
 Nel documento sono richiamati i 12 requisiti di accessibilità stabiliti dalla normativa; per ciascuno di essi sono fornite indicazioni tecniche per la corretta applicazione e verifica/test degli stessi.
 
@@ -1182,7 +1182,7 @@ La disponibilità di tali metriche sarebbe utilissima:
 -  per definire in maniera oggettiva, in progetti per migliorare l’accessibilità di un software, il lavoro da effettuare (come differenza tra la misura iniziale e quella desiderata), e per stimare l’impegno e dunque i costi relativi.
 
 Esempio 3: SIN-AGEA
-^^^^^^^^^^^^^^^^^^^
+'''''''''''''''''''
 
 Il terzo contributo preso in esame è il documento “Istruzioni operative: metodologia e linee guida per la misurazione del software” del 5 febbraio 2014, redatto dalla società SIN e utilizzato nell’ambito del contratto quadro con L’Agenzia per le Erogazioni in Agricoltura (AGEA), sia per i conteggi effettuati da SIN per AGEA, sia per i contratti con fornitori esterni per i quali SIN effettua funzioni amministrative e di governo, come da atto esecutivo A08-01 del contratto di servizio quadro AGEA-SIN del 17 novembre 2008.
 
@@ -1239,7 +1239,7 @@ La MFA del singolo elemento di conteggio è calcolata moltiplicando il numero di
 In conclusione, il percorso metodologico previsto in questo esempio è simile a quello di Lombardia Informatica, ma include una “forzatura concettuale” perché deve comunque adeguarsi a un articolato contrattuale rigido che prevede un unico valore per il corrispettivo unitario del PF.
 
 Suggerimenti e proposte
-~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^
 
 Sulla scorta di quanto sopra, si può anticipare qualche indicazione di ordine generale per la redazione di capitolati e schemi contrattuali. Per indicazioni di dettaglio relativi alle singole tipologie progettuali in cui si declinano le attività di sviluppo e manutenzione applicativa, si rimanda al capitolo 6.
 
@@ -1254,7 +1254,7 @@ In generale, gli attuali schemi contrattuali sembrano troppo rigidi. Si sono ril
 Una maggiore flessibilità dei contratti eviterebbe applicazioni incorrette o negoziazioni successive tra amministrazione e fornitore per consentire la gestione del progetto nell’ambito di una “gabbia” contrattuale troppo stretta.
 
 Definizioni
-===========
+-----------
 
 Nel corso della ricognizione svolta dal Tavolo di lavoro si è riscontrata una molteplicità di definizioni, concetti e gerarchie, a volte disomogenee tra loro. Il Tavolo di lavoro ha condiviso l’esigenza di fissare, anzitutto, una tassonomia. Si è provveduto dunque a selezionare un insieme di definizioni, dipendenze e relazioni, tra quelle proposte nella letteratura tecnica, che (senza pretesa di completezza o validità superiore alle altre) possano risolvere le ambiguità di terminologia, consentire la comprensione del presente documento ai lettori cui è destinato, fornire un linguaggio comune alle amministrazioni e alle aziende fornitrici di servizi ICT.
 
@@ -1269,7 +1269,7 @@ Anzitutto appare utile rimarcare la differenza tra:
 Un progetto può essere condotto tramite un processo standardizzato o definito in un apposito documento (Piano) e avere come obiettivo la realizzazione di un prodotto software.
 
 Classificazione dei requisiti
------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Nell’ambito dei progetti di sviluppo o di manutenzione applicativa, è utile poter classificare i requisiti espressi dall’utente nelle categorie riportate nella figura che segue. Tale classificazione, con minime varianti, è condivisa da gran parte delle fonti esaminate nella ricognizione.
 
@@ -1278,7 +1278,7 @@ Nell’ambito dei progetti di sviluppo o di manutenzione applicativa, è utile p
 Figura 1 - classificazione dei requisiti in un progetto di sviluppo o manutenzione
 
 Requisiti funzionali
-~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^
 
 I FUR (Functional User Requirement) descrivono le funzionalità del software in termini di:
 
@@ -1297,7 +1297,7 @@ Tabella 6: esempio di FUR
 +------------------+--------------------------------------------------------------------------------+
 
 Requisiti e vincoli di progetto
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 I PRC (Project Requirement and Constraint) sono requisiti e vincoli che non afferiscono direttamente al prodotto software, bensì definiscono caratteristiche del progetto di sviluppo o manutenzione. Rientrano in questa categoria:
 
@@ -1320,11 +1320,11 @@ Tabella 7: esempi di PRC
 +--------------------------+-----------------------------------------------------------------------------------------------------------------+
 
 Requisiti di qualità
-~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^
 
 I requisiti di qualità sono il sottoinsieme dei NFR (Non Functional Requirement) che descrivono le caratteristiche di qualità del prodotto software da sviluppare o mantenere.
 
-Per la definizione di “caratteristiche di qualità del prodotto software” si rimanda alla norma ISO/IEC 25010, che identifica gli elementi riportati nella tabella che segue [11]_.
+Per la definizione di “caratteristiche di qualità del prodotto software” si rimanda alla norma ISO/IEC 25010, che identifica gli elementi riportati nella tabella che segue\ `:sup:`11` <#fn11>`__.
 
 Tabella 8 - Caratteristiche e sottocaratteristiche di qualità ISO/IEC 25010
 
@@ -1447,7 +1447,7 @@ Tabella 9: esempio di requisito di qualità
 +------------------+-------------------------------------------------------------------------------------------------------+
 
 Requisiti di sistema/ambiente
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Questa classe di requisiti descrive:
 
@@ -1468,7 +1468,7 @@ Tabella 10: esempio di requisiti di sistema/ambiente
 +------------------+-----------------------------------------------------------------------------------------+
 
 Requisiti tecnici
-~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^
 
 Questa classe di requisiti descrive le tecnologie e gli standard (DBMS, middleware, networking) di cui il software deve tenere conto.
 
@@ -1483,7 +1483,7 @@ Tabella 11: esempio di requisiti tecnici
 +------------------+------------------------------------------------------------------+
 
 Aspetti della qualità
----------------------
+~~~~~~~~~~~~~~~~~~~~~
 
 La norma ISO 25010 distingue i seguenti aspetti della qualità di un prodotto software:
 
@@ -1520,13 +1520,13 @@ Esempi:
 La norma ISO definisce anche la “qualità del dato” (descritta dalla ISO 25012, complementare alla ISO 25010), che non viene qui illustrata in quanto esterna al perimetro di questo studio.
 
 Classificazione delle metriche
-------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Nella definizione ISO/IEC/IEEE 24765:2017 Systems and software engineering-Vocabulary, una metrica è “\ *una misura quantitativa del grado di possesso di uno specifico attributo da parte di un sistema, un componente, un processo*\ ”. Essa si applica, quindi, assegnando un valore univoco (scelto entro un intervallo di valori fissato a priori) a un attributo del software, concreto e oggettivamente valutabile.
 
 Con riferimento alla classificazione del paragrafo precedente, si possono distinguere:
 
--  metriche interne (statiche, o strutturali): utili per misurare le proprietà statiche e intrinseche del software (qualità interna); si applicano alle specifiche o al codice sorgente (tecniche di analisi statica, ispezione diretta), alla documentazione e ai grafi di flusso di controllo; queste metriche sono usate durante le fasi [12]_ di Analisi, Design e Codifica, sempre dal punto di vista degli sviluppatori, non considerano il comportamento in fase di esecuzione, ma solo gli attributi statici e strutturali;
+-  metriche interne (statiche, o strutturali): utili per misurare le proprietà statiche e intrinseche del software (qualità interna); si applicano alle specifiche o al codice sorgente (tecniche di analisi statica, ispezione diretta), alla documentazione e ai grafi di flusso di controllo; queste metriche sono usate durante le fasi\ `:sup:`12` <#fn12>`__ di Analisi, Design e Codifica, sempre dal punto di vista degli sviluppatori, non considerano il comportamento in fase di esecuzione, ma solo gli attributi statici e strutturali;
 
 -  metriche esterne (dinamiche, o operative): misurano il comportamento dinamico del software, osservandolo in fase di esecuzione, nell’ambiente, reale o simulato, di utilizzo (qualità esterna); vengono impiegate a partire dalla fase di progettazione di dettaglio in poi, da parte di sviluppatori e/o utenti; i risultati di tali misurazioni sono influenzate dal livello di qualità interna raggiunto;
 
@@ -1535,9 +1535,9 @@ Con riferimento alla classificazione del paragrafo precedente, si possono distin
 Per fornire un esempio pratico di tale classificazione, si consideri la caratteristica di qualità “Affidabilità”. Essa è misurabile sia da metriche interne che esterne. Esternamente si potrebbe procedere rilevando, in un determinato intervallo di tempo, durante l’esecuzione del software, il numero medio di fallimenti, l’intensità media del fallimento (ossia il numero di fallimenti nell’unità di tempo), l’intervallo medio tra due successivi fallimenti. Internamente, invece, si potrebbe procedere con ispezioni del codice sorgente e revisioni della documentazione, per valutare, staticamente, il livello di tolleranza ai guasti.
 
 Dimensioni del prodotto software
---------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-La figura che segue illustra nella forma di un diagramma E-R le relazioni che, nel presente studio, si identificano tra le entità “prodotto software”, “progetto” (generalizzazione di “progetto di sviluppo” e “progetto di manutenzione” [13]_) e i loro attributi.
+La figura che segue illustra nella forma di un diagramma E-R le relazioni che, nel presente studio, si identificano tra le entità “prodotto software”, “progetto” (generalizzazione di “progetto di sviluppo” e “progetto di manutenzione”\ `:sup:`13` <#fn13>`__) e i loro attributi.
 
 Sulla dimensione di un prodotto software influiscono i requisiti funzionali e non funzionali del prodotto stesso. A sua volta, la dimensione ha impatto sul valore di mercato del prodotto software. I requisiti e vincoli di progetto influiscono sull’impegno di progetto. A sua volta, quest’ultimo determina (in massima parte) il costo del progetto stesso.
 
@@ -1560,14 +1560,14 @@ Si ritiene che questa separazione concettuale possa aiutare a risolvere alcune d
 Se così non è, oppure se la differenza tra valore e costo di produzione è insufficiente come margine per il fornitore, siamo in presenza di un’anomalia. Si noti che situazioni di questo tipo si verificano talvolta nei progetti delle pubbliche amministrazioni, ad esempio nell’ambito di grandi contratti poliennali che includono numerosi progetti: in questi casi, costi superiori ai ricavi in un singolo progetto devono trovare compensazione negli altri progetti del contratto o in voci separate dello stesso, ma – come detto - possono anche motivare il fornitore a ottimizzare i suoi processi interni per comprimere i costi e riportarsi in una situazione di redditività.
 
 Metriche e strumenti
-====================
+--------------------
 
 Nel presente capitolo si illustrano in sintesi le metriche che sono state analizzate dal Tavolo di lavoro. Per ciascuna metrica si riportano proprietà, possibili contesti d’uso, vantaggi e criticità. Non si ha pretesa di esprimere valutazioni definitive, né di ordinare le metriche analizzate in una scala di merito. L’obiettivo del capitolo è invece presentare un ventaglio di possibili soluzioni alle esigenze delle P.A., tra cui le amministrazioni stesse possano scegliere, di volta in volta, sulla base delle proprie caratteristiche, delle iniziative in corso, delle risorse e competenze a disposizione.
 
 Si precisa che le metriche che verranno di seguito presentate non sono necessariamente alternative tra loro ed esaustive. Benché presentino aree di sovrapposizione, è senz’altro possibile utilizzarne più di una in maniera complementare, sfruttando opportunamente le loro caratteristiche, per ottenere il risultato voluto, che non sarà solo legato alla quantificazione dei corrispettivi per il fornitore, ma anche alla definizione efficace di livelli di servizio. Nel capitolo 6 si forniranno esempi in tal senso.
 
 Importanza delle metriche di prodotto
--------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Come detto, il Tavolo di lavoro ha focalizzato l’analisi sulle metriche del software inteso come prodotto. Si ritiene opportuno ribadire e approfondire qui di seguito la motivazione di questa scelta.
 
@@ -1592,9 +1592,9 @@ Al momento, va detto, non è possibile fornire formule o euristiche di corrispon
 Si può però suggerire, nell’ambito della pubblica amministrazione e non solo, una raccolta di dati storici di progetti informatici e di elaborazione statistica dei dati raccolti. Ad esempio si potrebbe analizzare progetti di manutenzione migliorativa, mettendo in relazione quanto si è speso in tali progetti e la misura dei risultati ottenuti. Ciò consentirebbe, in prospettiva, di poter effettuare stime sui nuovi progetti e definire basi d’asta nel caso di messa a gara degli stessi. Questa proposta verrà approfondita nel capitolo 6.
 
 Misure funzionali
------------------
+~~~~~~~~~~~~~~~~~
 
-Per quanto riguarda le misure dei FUR (requisiti funzionali dei prodotti software), il Tavolo di lavoro ha convenuto che i Punti Funzione rappresentano tuttora una metrica valida. Nonostante le criticità nell’uso che sono state citate al §1.4, non appare ragionevole proporne l’abbandono o la sostituzione, anche sulla scorta dell’attuale ampio utilizzo in gare e contratti, e dei grandi investimenti effettuati dalle pubbliche amministrazioni in formazione sul tema. Si ritiene semmai che vada raccomandato e verificato un uso corretto della metrica nei vari contesti possibili [14]_.
+Per quanto riguarda le misure dei FUR (requisiti funzionali dei prodotti software), il Tavolo di lavoro ha convenuto che i Punti Funzione rappresentano tuttora una metrica valida. Nonostante le criticità nell’uso che sono state citate al §1.4, non appare ragionevole proporne l’abbandono o la sostituzione, anche sulla scorta dell’attuale ampio utilizzo in gare e contratti, e dei grandi investimenti effettuati dalle pubbliche amministrazioni in formazione sul tema. Si ritiene semmai che vada raccomandato e verificato un uso corretto della metrica nei vari contesti possibili\ `:sup:`14` <#fn14>`__.
 
 In estrema sintesi, i PF misurano le dimensioni del software quantificando le funzionalità in esso contenute e visibili dall’utente.
 
@@ -1617,7 +1617,7 @@ Riguardo all’ultimo punto occorre precisare il significato di “equivalenza s
 È immediato vedere un impiego di SiFP nella misura funzionale di un parco applicativo ingente ove un conteggio “classico” risulterebbe troppo oneroso (es. assessment di portafogli applicativi su sistemi legacy). Viceversa, nell’ambito di un singolo progetto, bisogna tenere presente le possibili divergenze puntuali rispetto a conteggi IFPUG. Eventualmente si può pensare a un impiego di SiFP come metodo di stima (ancorché SiFP sia nato come metodo di misura e non di stima), ma non per il conteggio finale che dovrebbe necessitare di maggiore accuratezza. Per altri esempi di applicazione si rimanda al capitolo 6.
 
 Misure funzionali automatiche
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 L’Object Management Group (OMG) ha approvato nel 2014 la tecnica AFP (Automated Function Point) definita da CISQ per la misurazione automatica della dimensione funzionale del software. Tale tecnica, sviluppata sulla base del manuale di conteggio IFPUG versione 4.3.1, prevede che la misura sia effettuata sul codice sorgente e sulle strutture dati, tramite algoritmi di riconoscimento delle transazioni applicative, alle quali vengono applicati gli stessi criteri di IFPUG per ciò che riguarda la classificazione dei componenti funzionali (BFC) e l’attribuzione della complessità agli stessi.
 
@@ -1627,19 +1627,19 @@ OMG dichiara che:
 
 -  è possibile l’utilizzo di questa tecnica a valle della realizzazione di software applicativi, per un controllo di congruenza del numero delle funzionalità rilasciate rispetto a quanto stimato manualmente ex ante sulla base delle specifiche (per esempi pratici si rimanda al capitolo 6);
 
--  la tecnica è già stata utilizzata in numerosi progetti; i risultati si sono dimostrati coerenti con i conteggi manuali IFPUG, con valori all’interno della tolleranza prevista da IFPUG stesso (±10%) [15]_.
+-  la tecnica è già stata utilizzata in numerosi progetti; i risultati si sono dimostrati coerenti con i conteggi manuali IFPUG, con valori all’interno della tolleranza prevista da IFPUG stesso (±10%)`:sup:`15` <#fn15>`__.
 
 Misure non funzionali
----------------------
+~~~~~~~~~~~~~~~~~~~~~
 
 Con riferimento alla classificazione dei requisiti del §3.1 (figura 1), le metriche non funzionali sono indirizzate a misurare i requisiti non funzionali del software. Nel seguito si presentano le principali metriche non funzionali analizzate dal tavolo di lavoro.
 
 La norma ISO 25023
-------------------
+~~~~~~~~~~~~~~~~~~
 
 La norma ISO 25023 (ISO/IEC 25023:2016 Systems and software engineering - Measurement of system and software product quality) propone circa 80 metriche, che coprono tutte le sottocaratteristiche definite dalla ISO 25010 (ISO/IEC 25010:2011 Systems and software engineering - System and software quality models).
 
-Si osserva, peraltro, che l’uso di concetti derivanti dalle norme ISO non è una novità. Già nelle precedenti linee guida emesse da questa agenzia (allora CNIPA) si suggeriva l’impiego di metriche e indicatori derivati dalla norma in vigore all’epoca (ISO 9126:2001 Software engineering — Product quality [16]_). La differenza sostanziale è che le precedenti linee guida suggerivano tali metriche e indicatori come base per definire SLA contrattuali. Oggi invece si vuole affermare che queste metriche concorrono a misurare il “valore”:
+Si osserva, peraltro, che l’uso di concetti derivanti dalle norme ISO non è una novità. Già nelle precedenti linee guida emesse da questa agenzia (allora CNIPA) si suggeriva l’impiego di metriche e indicatori derivati dalla norma in vigore all’epoca (ISO 9126:2001 Software engineering — Product quality\ `:sup:`16` <#fn16>`__). La differenza sostanziale è che le precedenti linee guida suggerivano tali metriche e indicatori come base per definire SLA contrattuali. Oggi invece si vuole affermare che queste metriche concorrono a misurare il “valore”:
 
 -  di un nuovo software commissionato da una P.A. a un fornitore;
 
@@ -1652,7 +1652,7 @@ Nel seguito, per ogni sottocaratteristica, si riporta un estratto della ISO 2502
 Vale il caso di ricordare, con riferimento a tutte le caratteristiche, che la ISO 25023 consente cancellazioni, modifiche o aggiunte di ulteriori metriche mantenendo comunque la conformità allo standard, purché le diverse scelte vengano accompagnate esplicitamente da motivazioni razionali. Molte di tali motivazioni sono già riportate a scopo esemplificativo nel presente documento.
 
 Misurazioni di prestazione/efficienza
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 La ISO 25010 individua, nell’ambito della caratteristica di qualità “prestazioni/efficienza”, le seguenti sottocaratteristiche:
 
@@ -1662,12 +1662,12 @@ La ISO 25010 individua, nell’ambito della caratteristica di qualità “presta
 
 -  Capacità.
 
-Per ciascuna di queste sottocaratteristiche, la ISO 25023 propone alcune metriche [17]_, che vengono illustrate nei paragrafi che seguono, fornendo per ciascuna di esse indicazioni e suggerimenti d’uso nel contesto del Tavolo di lavoro (vale a dire, analisi e valutazione quantitativa di applicazioni software considerate in termini di prodotto).
+Per ciascuna di queste sottocaratteristiche, la ISO 25023 propone alcune metriche\ `:sup:`17` <#fn17>`__, che vengono illustrate nei paragrafi che seguono, fornendo per ciascuna di esse indicazioni e suggerimenti d’uso nel contesto del Tavolo di lavoro (vale a dire, analisi e valutazione quantitativa di applicazioni software considerate in termini di prodotto).
 
 Metriche per “tempi di risposta”
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+''''''''''''''''''''''''''''''''
 
-Per la prima delle tre sottocaratteristiche, la ISO 25023 propone 5 metriche, pensate per misurare i tempi di elaborazione di un software [18]_ nell’erogazione delle sue funzioni.
+Per la prima delle tre sottocaratteristiche, la ISO 25023 propone 5 metriche, pensate per misurare i tempi di elaborazione di un software\ `:sup:`18` <#fn18>`__ nell’erogazione delle sue funzioni.
 
 Tabella 12: metriche per tempi di risposta
 
@@ -1710,7 +1710,7 @@ Sembra utile segnalare, su questo argomento, che esistono strumenti automatici p
 Infine, è evidente che questi indicatori sono adatti, in termini ISO, a misure di qualità esterna. Ove si voglia invece compiere misure di qualità interna, si deve ricorrere a metodi di analisi statica del codice sorgente del software da valutare. Sono disponibili sul mercato numerose tecniche e strumenti automatici che compiono questo lavoro, in generale verificando il rispetto, da parte del codice sorgente, di vincoli e buone pratiche di programmazione legate all’efficienza.
 
 Metriche per “consumo di risorse”
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+'''''''''''''''''''''''''''''''''
 
 Per la seconda delle tre sottocaratteristiche, la ISO 25023 propone 4 metriche, pensate per misurare la quantità di risorse (processore, memoria, I/O, banda) utilizzate da un software nell’erogazione delle sue funzionalità.
 
@@ -1749,7 +1749,7 @@ In generale, si ritiene che misurare l’efficienza di una singola applicazione 
 Ciò non vuol dire che, in assoluto, questa sottocaratteristica non sia rilevante. Può ad esempio servire per identificare buone pratiche di programmazione (legate probabilmente anche al linguaggio, middleware e piattaforma utilizzati) e definire uno standard qualitativo di sviluppo in aziende produttrici di software. Ma in questi contesti, che sono fuori dal perimetro del presente studio, ha probabilmente più senso effettuare misure di qualità interna, usando non i 4 indicatori di tabella 13 ma verificando, tramite analisi statica del codice sorgente, il rispetto delle buone pratiche di efficienza definite.
 
 Metriche per “capacità”
-^^^^^^^^^^^^^^^^^^^^^^^
+'''''''''''''''''''''''
 
 Per l’ultima sottocaratteristica, la ISO 25023 propone 3 metriche, pensate per misurare i limiti di un software, con particolare riferimento al massimo numero di utenti e transazioni concorrenti.
 
@@ -1784,7 +1784,7 @@ Si ritiene tuttavia che scenari di questo tipo, diffusi in passato, siano supera
 Attenzione, non si vuole affermare che la capacità di un software sia una caratteristica irrilevante, ma semplicemente che sia un aspetto di prevalente interesse tecnico e forse trasparente per l’utente applicativo. In analogia a quanto detto nel precedente paragrafo, dal punto di vista strettamente tecnico ha forse più senso misurare la capacità come qualità interna, effettuando analisi statica del codice sorgente e verificando il rispetto di buone pratiche di programmazione.
 
 Conclusioni su prestazione/efficienza
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+'''''''''''''''''''''''''''''''''''''
 
 Per riassumere quanto detto, tra gli indicatori presentati per la caratteristica “prestazioni/efficienza”, nell’ambito e per le finalità di questo studio appaiono utili soprattutto gli indicatori di tabella 12. Tra essi si suggerisce di scegliere, in base alla tipologia di applicazione in esame:
 
@@ -1803,7 +1803,7 @@ Gli altri indicatori, come detto, sembrano meno adatti alle finalità di questo 
 -  del modello architetturale verso cui devono tendere i sistemi informatici delle P.A., ove il livello applicativo è separato dagli aspetti infrastrutturali e di gestione delle risorse.
 
 Misurazioni di usabilità
-~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 La ISO 25010 individua, nell’ambito della caratteristica “usabilità”, le seguenti sottocaratteristiche:
 
@@ -1822,9 +1822,9 @@ La ISO 25010 individua, nell’ambito della caratteristica “usabilità”, le 
 Per ciascuna di queste sottocaratteristiche, la ISO 25023 propone alcune metriche. Nei paragrafi che seguono tali metriche vengono analizzate, fornendo per ciascuna di esse indicazioni e suggerimenti d’uso.
 
 Metriche per “appropriatezza - riconoscibilità”
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+'''''''''''''''''''''''''''''''''''''''''''''''
 
-Per la prima delle cinque sottocaratteristiche, la ISO 25023 propone 3 metriche, pensate per misurare quanto un software [19]_ appare intuitivo all’utente, nel senso che mostra all’utente come deve essere usato per raggiungere l’obiettivo.
+Per la prima delle cinque sottocaratteristiche, la ISO 25023 propone 3 metriche, pensate per misurare quanto un software\ `:sup:`19` <#fn19>`__ appare intuitivo all’utente, nel senso che mostra all’utente come deve essere usato per raggiungere l’obiettivo.
 
 Tabella 15: metriche per appropriatezza - riconoscibilità
 
@@ -1855,7 +1855,7 @@ La seconda metrica potrebbe riferirsi alla completezza di un eventuale “tutori
 La terza metrica, come detto, sembra derivare da concetti di marketing. Non sembra di immediata applicazione nel contesto della pubblica amministrazione.
 
 Metriche per “apprendibilità”
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+'''''''''''''''''''''''''''''
 
 Per la seconda delle cinque sottocaratteristiche, la ISO 25023 propone 4 metriche, pensate per valutare la facilità di apprendimento dell’utilizzo di un software, vale a dire la capacità dello stesso di aiutare l’utente nel percorso di apprendimento.
 
@@ -1884,7 +1884,7 @@ L’ultima metrica presenta aspetti indefiniti (andrà definito se le attività 
 La metrica ULe-1-G può essere usata in alternativa alla UAp-1-G. Le metriche 2 e 3 appaiono semplici e di applicazione immediata. Viceversa, la metrica ULe-4-S appare di uso molto problematico, soprattutto nelle verifiche (probabilmente richiede test multipli su campioni significativi dell’utenza).
 
 Metriche per “operabilità”
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+''''''''''''''''''''''''''
 
 Per la terza sottocaratteristica, la ISO 25023 propone 8 metriche, pensate per valutare la facilità con cui un software può essere eseguito e controllato. L’operabilità si può ulteriormente declinare, secondo ISO, in:
 
@@ -1939,7 +1939,7 @@ La metrica per cui la problematica evidenziata risulta più critica è la UOp-7-
 Per quanto riguarda le metriche UOp-3-S e UOp-4-S, sembra opportuno ricordare che si sta parlando di personalizzazioni da parte dell’utente finale (ad esempio la possibilità di modificare le voci di menù, offerta normalmente dai programmi di *office automation*), non della personalizzazione di un applicativo generico prima di metterlo in produzione (in quest’ultimo caso si tratta di misurare l’idoneità funzionale e la manutenibilità, non l’usabilità).
 
 Metriche per “protezione da errore utente”
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+''''''''''''''''''''''''''''''''''''''''''
 
 Per questa sottocaratteristica, la ISO 25023 propone 3 metriche, pensate per verificare il grado con cui un’applicazione protegge se stessa dagli errori commessi dagli utenti finali durante l’esecuzione.
 
@@ -1970,7 +1970,7 @@ La metrica 2, viceversa, sembra senz’altro utile e applicabile nel contesto di
 La metrica 3 sembra ancora più complessa, giacché presuppone di avere identificato tutte le possibili sequenze di azioni richiamabili dall’utente. Peraltro, il tema della protezione da errori viene affrontato anche per la caratteristica “sicurezza”, forse con maggiore efficacia. Si rimanda pertanto al paragrafo corrispondente.
 
 Metriche per “Estetica dell’interfaccia utente”
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+'''''''''''''''''''''''''''''''''''''''''''''''
 
 Per questa sottocaratteristica la ISO 25023 propone una sola metrica, ideata per misurare quanto l’interfaccia utente di una applicazione consenta un’interazione piacevole e soddisfacente.
 
@@ -1989,7 +1989,7 @@ La definizione di questa metrica è estremamente generica, quasi tautologica. In
 Si sconsiglia pertanto l’uso di questa metrica, e si rimanda invece ai numerosi studi sull’argomento disponibili in rete; in particolare sono applicabili i contenuti del portale designers.italia.it.
 
 Metriche per “accessibilità”
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+''''''''''''''''''''''''''''
 
 Per l’ultima sottocaratteristica, la ISO 25023 propone 5 metriche, pensate per valutare il grado con cui l’applicazione in esame è adatta per l’uso di persone con disabilità o in generale con difficoltà d’interazione coi sistemi informatici.
 
@@ -2019,9 +2019,11 @@ L’ultima metrica è palesemente diversa dalle altre, in quanto si riferisce al
 
 Come noto, in Italia la tematica dell’accessibilità ai sistemi informatici e ai servizi per il cittadino è regolata fin dal 2004 tramite linee guida tecniche, leggi e circolari. Di seguito si riportano i riferimenti più rilevanti:
 
--  L. 9 gennaio 2004, n. 4;
+-  
 
--  DPR 1 marzo 2005, n. 75;
+   L. 9 gennaio 2004, n. 4;
+
+-  `DPR 1 marzo 2005, n. 75 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:2005-03-01;75>`__;
 
 -  DM 8 luglio 2005;
 
@@ -2048,7 +2050,7 @@ Come noto, in Italia la tematica dell’accessibilità ai sistemi informatici e 
 A fronte di questo scenario, le metriche proposte da ISO risultano più generiche e di minore approfondimento. Si ritiene pertanto che le amministrazioni debbano piuttosto seguire le indicazioni della letteratura citata e della normativa italiana (vedi anche il caso d’esempio Sogei citato al §2.4.1.2).
 
 Conclusioni su usabilità
-^^^^^^^^^^^^^^^^^^^^^^^^
+''''''''''''''''''''''''
 
 Le metriche proposte da ISO per l’usabilità sono soprattutto pensate per misure di qualità interne (ad esempio mediante analisi statica del codice sorgente, dei documenti di progetto o dei manuali dell’applicazione in esame). Ciò sembra ragionevole, giacché misure di usabilità nel senso di qualità in uso, condotte ad esempio tramite test su campioni del parco utenti, includono inevitabilmente aspetti soggettivi, legate alla percezione dei singoli utenti, che non è agevole riportare su una scala numerica.
 
@@ -2069,7 +2071,7 @@ Per quanto riguarda le metriche di tabella 17, esse presentano elementi di sogge
 Infine, vale la pena di puntualizzare che, nei progetti delle PA, il punto di vista dell’utente finale, benché importante, deve essere mediato da considerazioni strategiche e di opportunità, perché in molti contesti seguire pedissequamente i desiderata dell’utenza può comportare rischi economici.
 
 Misurazioni di affidabilità
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Si premette che la definizione ISO 25010 della caratteristica “affidabilità” è di tipo generale, e riguarda la capacità di un sistema, inteso in senso lato, di mantenersi funzionante in un determinato intervallo di tempo. Nell’ambito della pubblica amministrazione, e con riferimento ai contenuti del CAD e del Piano Triennale, il concetto di affidabilità viene declinato frequentemente nel senso di affidabilità di un servizio istituzionale, di un sito web, di un archivio o di un data center.
 
@@ -2088,7 +2090,7 @@ La ISO 25010 individua, nell’ambito della caratteristica di qualità “affida
 Per ciascuna di queste sottocaratteristiche, la ISO 25023 propone alcune metriche, che vengono illustrate nei paragrafi che seguono, fornendo per ciascuna di esse indicazioni e suggerimenti d’uso.
 
 Metriche per “maturità”
-^^^^^^^^^^^^^^^^^^^^^^^
+'''''''''''''''''''''''
 
 Le metriche proposte dalla ISO 25023 per questa sottocaratteristica sono riportate nella tabella che segue.
 
@@ -2127,7 +2129,7 @@ Le metriche RMa-1-G e RMa-4-S, pur essendo interpretabili come metriche di proce
 -  in fase di assessment, ovviamente disponendo della documentazione relativa (es. piani di test).
 
 Metriche per “disponibilità”
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+''''''''''''''''''''''''''''
 
 Le metriche proposte dalla ISO 25023 per questa sottocaratteristica sono riportate nella tabella che segue.
 
@@ -2150,7 +2152,7 @@ Le metriche RAv-1-G e RAv-2-G sembrano adatte a misurare la disponibilità di un
 Per quanto concerne la metrica RAv-3-S, essa prevede un diverso comportamento nei giorni ordinari e nei giorni speciali, il che la rende adeguata a misurare la disponibilità di servizi in cui sia prevalente la componente umana (es. help desk, contact center). Nel contesto di questo studio appare, perciò, poco utile.
 
 Metriche per “tolleranza agli errori”
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+'''''''''''''''''''''''''''''''''''''
 
 Le metriche di tolleranza agli errori sono utilizzate per definire il grado in cui il sistema, prodotto o componente opera nel modo voluto nonostante l’occorrenza di eventuali eventi anomali. Nel contesto di questo studio, si vuole misurare fino a che punto un software applicativo sia in grado di proseguire nell’esecuzione gestendo opportunamente le anomalie.
 
@@ -2179,7 +2181,7 @@ La metrica RFt-2-S, per la definizione ordinaria di “ridondanza”, sembra ada
 La metrica RFt-3-S sembra riguardare misure di affidabilità di un apparato industriale (un motore, un impianto di produzione, ecc.) in cui i malfunzionamenti vengono ad esempio rilevati da “sonde” che generano segnalazioni dirette a una consolle centralizzata. Si ritiene pertanto che, nel contesto di questo studio, un suo utilizzo sia poco opportuno.
 
 Metriche per “recuperabilità”
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+'''''''''''''''''''''''''''''
 
 Le metriche di recuperabilità sono utilizzate per definire il grado con cui, in caso di malfunzionamenti, un software può recuperare i dati e ristabilire lo stato desiderato.
 
@@ -2200,7 +2202,7 @@ Più che alla misura di qualità di un software, entrambe le metriche sembrano r
 Si ritiene pertanto che queste metriche non siano utili nel contesto di questo studio, e si rimanda invece, per approfondimenti sull’argomento, alle linee guida emesse da questa Agenzia sul Disaster Recovery e la Business Continuity.
 
 Conclusioni su affidabilità
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+'''''''''''''''''''''''''''
 
 Sulla scorta delle considerazioni espresse, appaiono utili a misurare l’affidabilità di un software, nel contesto della pubblica amministrazione e nelle casistiche indicate, le metriche:
 
@@ -2225,7 +2227,7 @@ Le metriche di affidabilità, peraltro, potrebbero essere utilizzate per legare 
 Questo approccio consentirebbe anche di contabilizzare la manutenzione correttiva non più in termini di spesa ricorrente (OPEX), ma al contrario come investimento (CAPEX) finalizzato ad aumentare l’affidabilità del parco applicativo di proprietà dell’amministrazione, e di conseguenza la qualità/valore di tale asset.
 
 Misurazioni di sicurezza
-~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 La ISO 25010 individua, nell’ambito della caratteristica di qualità “sicurezza”, le seguenti sottocaratteristiche:
 
@@ -2242,7 +2244,7 @@ La ISO 25010 individua, nell’ambito della caratteristica di qualità “sicure
 Per ciascuna di queste sottocaratteristiche, la ISO 25023 propone alcune metriche. Nei paragrafi che seguono vengono illustrate tali metriche, fornendo per ciascuna di esse indicazioni e suggerimenti d’uso.
 
 Metriche per “riservatezza”
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+'''''''''''''''''''''''''''
 
 Per la prima delle cinque sottocaratteristiche, la ISO 25023 propone 3 metriche, pensate per misurare quanto un software garantisce che le informazioni siano accessibili solo agli utenti autorizzati.
 
@@ -2260,7 +2262,7 @@ Tabella 25: metriche per riservatezza
 
 *Note*
 
-*Riservatezza* in informatica significa gestire la sicurezza in modo tale da mitigare i rischi connessi all’accesso o all’uso delle informazioni in forma non autorizzata. Le metriche per garantire la riservatezza proposte dalla ISO 25023 puntano sulla necessità di utilizzare sistemi di cifratura e algoritmi crittografi efficaci (la ISO cita ad esempio quelli previsti dallo standard americano `FIPS 140-2 <http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.140-2.pdf>`__\  [20]_).
+*Riservatezza* in informatica significa gestire la sicurezza in modo tale da mitigare i rischi connessi all’accesso o all’uso delle informazioni in forma non autorizzata. Le metriche per garantire la riservatezza proposte dalla ISO 25023 puntano sulla necessità di utilizzare sistemi di cifratura e algoritmi crittografi efficaci (la ISO cita ad esempio quelli previsti dallo standard americano `FIPS 140-2 <http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.140-2.pdf>`__\ `:sup:`20` <#fn20>`__).
 
 In Italia, i riferimenti per la sicurezza sono gli standard ISO/IEC IS-15408 (Common Criteria) e i criteri europei ITSEC (Information Technology Security Evaluation Criteria) e ITSEM (Information Technology Security Evaluation. Manual). Ne consegue che ha senso ricorrere a tale metrica per misurare in che percentuale gli algoritmi crittografici implementati sono conformi ai livelli di garanzia della valutazione di sicurezza basata sui Common Criteria variabili da un minimo di EAL1 (Evaluation Assurance Level 1) a un massimo di EAL7.
 
@@ -2269,7 +2271,7 @@ In Italia, i riferimenti per la sicurezza sono gli standard ISO/IEC IS-15408 (Co
 La P.A. può ricorrere all’uso di queste metriche qualora la caratteristica della riservatezza vada gestita a livello applicativo. In realtà, nella maggioranza dei sistemi informatici, le tematiche del controllo accessi e della cifratura dei dati sono affrontate a livello di sistema operativo o di middleware (ad esempio sono garantite dal DBMS). Pertanto si ritiene che l’uso di queste metriche sia limitato a casi residuali ove questo specifico aspetto della sicurezza è delegato all’applicazione da realizzare.
 
 Metriche per “integrità”
-^^^^^^^^^^^^^^^^^^^^^^^^
+''''''''''''''''''''''''
 
 Per la seconda delle cinque sottocaratteristiche, la ISO 25023 propone 3 metriche, pensate per valutare il grado a cui un sistema, un prodotto o un componente impedisce la modifica impropria dei dati.
 
@@ -2296,7 +2298,7 @@ L’integrità dei dati, intesa come garanzia che l’informazione non subisca m
 Si ritiene pertanto che le P.A. debbano garantire l’integrità dei loro dati non a livello del software applicativo, bensì ad esempio adottando sistemi di gestione conformi alla ISO 27001 (ISO/IEC 27001:2013 Information technology - Security techniques - Information security management systems – Requirements) sulla sicurezza dei dati (come del resto alcune amministrazioni hanno già provveduto a fare). In questo senso, si ritiene che le metriche di tabella 26 abbiano scarsa rilevanza nel contesto dello studio.
 
 Metriche per “non ripudio”
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+''''''''''''''''''''''''''
 
 Per la terza sottocaratteristica, la ISO 25023 propone una metrica, pensata per valutare il grado con cui si può provare, a posteriori, che un evento/azione sia effettivamente accaduto.
 
@@ -2317,7 +2319,7 @@ La firma digitale è intesa più genericamente dalla ISO 25023 come firma elettr
 La metrica in esame appare allineata all’ordinamento italiano, che prevede appunto il ricorso alla firma digitale per garantire il principio di non ripudio. Tuttavia, data l’obbligatorietà di questa previsione, più che una metrica si tratta di un requisito mandatorio implicito nello sviluppo di sistemi informatici: tutti i casi di non ripudio devono essere affrontati con lo strumento della firma digitale, ergo questo indicatore deve essere sempre pari a 100.
 
 Metriche per “responsabilità”
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+'''''''''''''''''''''''''''''
 
 Per la quarta sottocaratteristica, la ISO 25023 propone 2 metriche, pensate per valutare il grado con cui determinate azioni di un soggetto possano essere – in modo inequivocabile – riferite al soggetto medesimo.
 
@@ -2342,7 +2344,7 @@ La tematica della responsabilità è un aspetto tradizionale della sicurezza dei
 Si ritiene pertanto che le metriche di tabella 28 siano applicabili al contesto dello studio, e che possano essere utilizzate per misurare il livello di sicurezza di un software commissionato a un fornitore.
 
 Metriche per “autenticità”
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+''''''''''''''''''''''''''
 
 Per la quinta sottocaratteristica, la ISO 25023 propone 2 metriche, pensate per valutare il grado con cui l’identità di un soggetto o di una risorsa possa essere verificata.
 
@@ -2363,7 +2365,7 @@ La tematica in questione (autenticità) è senz’altro importante nel contesto 
 Viceversa, questa metrica potrebbe avere senso per misurare, in attività di assessment di parchi applicativi pre-esistenti che non utilizzano SPID, il grado di sicurezza delle applicazioni oggetto di assessment.
 
 Conclusioni su sicurezza
-^^^^^^^^^^^^^^^^^^^^^^^^
+''''''''''''''''''''''''
 
 Com’è noto, la sicurezza di un sistema informatico è una tematica ampia che include aspetti molteplici, non solo tecnologici ma anche logistici e organizzativi (come suggerisce ad esempio lo standard ISO 27001). L’AgID, peraltro, presidia istituzionalmente l’argomento “sicurezza”, ha emesso linee guida e raccomandazioni in materia (per ultime, le Linee guida per lo sviluppo del software sicuro nella P.A., pubblicate il 21 novembre 2017), e mantiene un centro di competenza con il compito, tra l’altro, di studiare l’evoluzione della tematica e di aggiornare le indicazioni già emesse.
 
@@ -2378,7 +2380,7 @@ Ciò detto, le metriche proposte dalla ISO 25023 per la sicurezza appaiono di ti
 In generale, è opportuno ricordare, che si può ricorrere ai Common Criteria per eseguire la valutazione e la certificazione di applicazioni software anche sul fronte della sicurezza delle stesse.
 
 Misurazioni di manutenibilità
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 La ISO 25010 individua, per la caratteristica di qualità “manutenibilità”, le seguenti sottocaratteristiche:
 
@@ -2395,7 +2397,7 @@ La ISO 25010 individua, per la caratteristica di qualità “manutenibilità”,
 Per ciascuna di queste sottocaratteristiche, la ISO 25023 propone alcune metriche, illustrate nei paragrafi che seguono. Per ogni metrica vengono fornite indicazioni e suggerimenti d’uso.
 
 Metriche per “modularità”
-^^^^^^^^^^^^^^^^^^^^^^^^^
+'''''''''''''''''''''''''
 
 Si tratta di metriche pensate per misurare il grado con cui un prodotto/sistema software è suddiviso in componenti tali che il cambiamento di uno di essi ha impatti minimali sugli altri.
 
@@ -2444,7 +2446,7 @@ Un metodo empirico, applicabile anche in realtà meno strutturate, potrebbe esse
 La metrica MMo-1-G (accoppiamento di componenti) potrebbe essere utile a condizionare parte della remunerazione del fornitore: potrebbe ad esempio essere misurata nel corso del periodo di garanzia per stabilire la qualità del prodotto acquisito. Si potrebbe fissare una soglia ragionevolmente prossima a 1 e legare contrattualmente parte della remunerazione del fornitore alla misura ottenuta (es. valore finale dell’indicatore al termine del periodo di garanzia come indice predittivo della facilità di manutenzione, e quindi minori costi fino al termine del ciclo di vita del prodotto). Tale metrica potrebbe integrare l’attuale prassi di stima del canone di manutenzione sulla base del conteggio in Punti Funzione del prodotto da manutenere. Per approfondimenti si rimanda agli esempi del capitolo 6.
 
 Metriche per “riusabilità”
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+''''''''''''''''''''''''''
 
 Si tratta di metriche pensate per misurare il grado con cui un software può essere usato in più di un prodotto/sistema o per costruire altri software.
 
@@ -2469,7 +2471,7 @@ La valutazione della riusabilità di prodotti software è stata già trattata da
 Le metriche consigliate da ISO appaiono semplici e di buon senso, ma sostanzialmente sono metriche derivate, che misurano più la qualità del processo produttivo che non del prodotto in se stesso.
 
 Metriche per “analizzabilità”
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+'''''''''''''''''''''''''''''
 
 Si tratta di metriche pensate per misurare il grado di efficacia ed efficienza con cui è possibile:
 
@@ -2506,7 +2508,7 @@ MAn-1-G (completezza dei log di sistema) è facilmente applicabile anche da non 
 MAn-2-S (efficacia delle funzioni di diagnosi) e la terza MAn-3-S (sufficienza delle funzioni di diagnosi) appaiono, come detto sopra, di più difficile applicazione, con un significato meno percepibile dai non addetti ai lavori e probabilmente poco adatte al contesto della P.A.
 
 Metriche per “modificabilità”
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+'''''''''''''''''''''''''''''
 
 Si tratta di metriche pensate per misurare il grado con cui un software può essere efficacemente ed efficientemente modificato senza introdurre difetti o degrado della qualità in esercizio.
 
@@ -2539,7 +2541,7 @@ MMd-1-G (efficienza delle modifiche) e MMd-3-S (capacità di modifica) potrebber
 Tali metriche, come già osservato per MMo-1-G (accoppiamento di componenti) potrebbero integrare l’attuale prassi di stima del canone di manutenzione sulla base del conteggio in Punti Funzione del software da manutenere. Si rimanda agli esempi del capitolo 6 per approfondimenti.
 
 Metriche per “testabilità”
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+''''''''''''''''''''''''''
 
 Si tratta di metriche pensate per misurare il grado di efficacia e di efficienza con cui i criteri di test possono essere stabiliti per un componente software e i test possono essere effettuati per determinare se tali criteri sono soddisfatti.
 
@@ -2566,7 +2568,7 @@ Le misure di testabilità esterna sono usate per verificare attributi quali l’
 Tutte le metriche proposte appaiono semplici da comprendere e da misurare, ma sono molto più legate ai processi organizzativi di manutenzione attuati dal fornitore che alla qualità del prodotto software.
 
 Conclusioni su manutenibilità
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+'''''''''''''''''''''''''''''
 
 Riassumendo i contenuti dei paragrafi precedenti, tra le metriche proposte da ISO 25023 per la caratteristica “manutenibilità”, nel contesto della P.A. appaiono utili:
 
@@ -2581,7 +2583,7 @@ Riassumendo i contenuti dei paragrafi precedenti, tra le metriche proposte da IS
 -  MMd-3-S (capacità di modifica), anche per integrare la stima del canone di manutenzione.
 
 Misurazioni di idoneità funzionale
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Preliminarmente occorre sottolineare che la caratteristica “idoneità funzionale” definita dalla ISO 25010 non coincide con il contenuto funzionale di un software. Si tratta invece di una caratteristica di qualità, per la quale la ISO 25010 individua le seguenti sottocaratteristiche:
 
@@ -2594,7 +2596,7 @@ Preliminarmente occorre sottolineare che la caratteristica “idoneità funziona
 Per ciascuna di queste sottocaratteristiche, la ISO 25023 propone alcune metriche. Nei paragrafi che seguono esse vengono illustrate, fornendo indicazioni e suggerimenti d’uso.
 
 Metriche per “completezza”
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+''''''''''''''''''''''''''
 
 Per la prima delle tre sottocaratteristiche, la ISO 25023 propone una metrica pensata per valutare il grado di copertura dell’insieme delle funzioni realizzate rispetto alle specifiche.
 
@@ -2617,7 +2619,7 @@ Figura 3: fasi del ciclo di sviluppo
 La metrica SCp-1-G Inoltre può essere utile per misurare il grado d’avanzamento di un processo di sviluppo, o la percentuale di completamento di un software che viene rilasciato per iterazioni successive (es. metodologie Agili). A ogni iterazione potrebbe avere senso riportare la completezza di ciò che viene rilasciato.
 
 Metriche per “correttezza”
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+''''''''''''''''''''''''''
 
 Per la seconda delle tre sottocaratteristiche, la ISO 25023 propone una metrica pensata per valutare il grado con cui un software fornisce risultati corretti al grado di precisione necessario.
 
@@ -2640,7 +2642,7 @@ Si ritiene di dover interpretare questa definizione, piuttosto vaga, nel senso d
 Si ritiene che questa metrica sia poco applicabile nel contesto dello studio. Ove infatti la funzione in esame fornisca sistematicamente valori errati, si tratta più propriamente di difettosità, che viene rilevata normalmente in fase di test e deve essere corretta. Se invece si teme che una funzione possa generare valori incorretti solo in alcune condizioni particolari (ad esempio, in software contabili, per il sovrapporsi di arrotondamenti successivi non previsti dall’algoritmo di calcolo), allora occorre effettuare un numero statisticamente significativo di prove in vari scenari d’uso. In quest’ultimo caso avrebbe magari senso una misura che indicasse, in senso statistico, la possibilità del verificarsi di calcoli non corretti (ma ciò non sembra l’obiettivo della metrica FCr-1-G).
 
 Metriche per “adeguatezza”
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+''''''''''''''''''''''''''
 
 Per la terza sottocaratteristica, la ISO 25023 propone 2 metriche pensate per valutare il grado secondo cui le funzioni agevolano la realizzazione di compiti e obiettivi specifici.
 
@@ -2667,12 +2669,12 @@ Le metriche di tabella 37 appaiono complicate e soggettive. Si ritiene possibile
 In questo senso, tuttavia, la metrica in questione si riferirebbe alla qualità del processo di sviluppo, in particolare alla qualità della fase di raccolta e definizione dei requisiti. Ma ciò è fuori dall’ambito di questo studio, che – come detto – si occupa di misure del software applicativo considerato come prodotto.
 
 Conclusioni su idoneità funzionale
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+''''''''''''''''''''''''''''''''''
 
 Di tutte le metriche proposte per l’idoneità funzionale, l’unica che sembra di agevole utilizzo è la SCp-1-G (copertura funzionale). Essa, molto intuitiva e d’immediata applicazione, potrebbe essere utile anche in caso di cicli di sviluppo iterativi (es. metodologie Agili), misurando lo stato di avanzamento del progetto tramite la copertura funzionale raggiunta dal software rilasciato al termine di ogni iterazione.
 
 Misurazioni di portabilità
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Le misure di portabilità sono utilizzate per valutare il grado di efficacia ed efficienza con cui un sistema, un prodotto/componente può essere trasferito da una piattaforma hardware, software o altro ambiente operativo o d’uso a un altro.
 
@@ -2687,7 +2689,7 @@ La ISO 25010 individua, per la caratteristica di qualità “portabilità”, le
 Per ciascuna di queste sottocaratteristiche, la ISO 25023 propone alcune metriche, illustrate nei paragrafi che seguono. Per ogni metrica vengono fornite indicazioni e suggerimenti d’uso.
 
 Metriche di adattabilità
-^^^^^^^^^^^^^^^^^^^^^^^^
+''''''''''''''''''''''''
 
 Le metriche di adattabilità sono pensate per valutare il livello di facilità con cui un sistema o un prodotto può essere efficacemente ed efficientemente adattato per funzionare su una piattaforma hardware, software o un ambiente operativo o ambiente d’uso differente.
 
@@ -2714,7 +2716,7 @@ La definizione della terza metrica di tabella non appare chiara, in quanto non �
 In progetti di porting di software applicativo, le metriche di cui sopra, in particolare le prime 2, sembrano utili per quantificare l’adattabilità del software all’ambiente di destinazione, e dunque anche per stimare l’impegno di progetto necessario. L’utilizzo di tali metriche impone peraltro la disponibilità di un piano di test completo. Per esempi di applicazioni si rimanda al §6.5.3.
 
 Metriche di installabilità
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+''''''''''''''''''''''''''
 
 Le metriche di installabilità sono pensate per valutare il livello di efficacia ed efficienza con cui un prodotto o un sistema può essere installato con successo e/o disinstallato con successo in un dato ambiente.
 
@@ -2747,7 +2749,7 @@ Riguardo alla metrica PIn-2-G, il caso d’uso tipico è l’installazione di un
 Entrambe le metriche risultano pertanto non adeguate e lontane dall’obiettivo di questo studio.
 
 Metriche di sostituibilità
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+''''''''''''''''''''''''''
 
 Le metriche di adattabilità sono pensate per valutare il grado di facilità con cui un software può essere sostituito, nello stesso ambiente, da un altro software con le stesse funzionalità.
 
@@ -2772,19 +2774,19 @@ Tabella 40: metriche per sostituibilità
 Anche in queste metriche si riscontrano elementi di soggettività. Tuttavia, l’osservazione più significativa è che queste metriche sembrano pensate per confrontare tra loro due prodotti software, ad esempio per identificare possibili alternative di mercato a un prodotto attualmente in uso. Pertanto si ritiene che non rientrino nel perimetro di questo studio.
 
 Conclusioni su portabilità
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+''''''''''''''''''''''''''
 
 Di tutte le metriche proposte per la portabilità, le uniche che sembrano utili e di agevole utilizzo sono PAd-1-G e PAd-2-G. Per esempi pratici di utilizzo in contesti operativi della P.A. si rimanda al capitolo 6.
 
 Misurazioni di compatibilità
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Si ritiene infatti che, nell’ambito di questo studio e nel contesto della P.A. italiana, requisiti che riguardano questa caratteristica non necessitino di una metrica, ma possano essere espressi in “logica binaria” (si/no).
 
 Ad esempio il cliente può richiedere compatibilità con determinati prodotti e piattaforme di base, ma non sembra utile misurare “quanto” un software è compatibile (se deve esserlo, la compatibilità va comunque garantita al 100%, situazioni intermedie non sembrano possibili).
 
 SNAP
-----
+~~~~
 
 SNAP (Software Non-functional Assessment Process) è un metodo pubblicato da IFPUG nel 2011 dopo uno studio di quattro anni. La versione attuale del manuale, alla data di scrittura di questo documento, è la v2.4.
 
@@ -2794,32 +2796,32 @@ Ciascuna delle 14 sotto-categorie, elencate nella tabella che segue, è un modo 
 
 Tabella 41: categorie SNAP
 
-+----------------------------------------------------------+---------------------------------------+
-| **DATA OPERATIONS**                                      | **INTERFACE DESIGN**                  |
-|                                                          |                                       |
-| -  Data Entry Validations                                | -  User Interfaces                    |
-|                                                          |                                       |
-| -  Logical and Mathematical Operations                   | -  Help Methods                       |
-|                                                          |                                       |
-| -  Data formatting                                       | -  Multiple Input Methods             |
-|                                                          |                                       |
-| -  Internal Data Movements                               | -  Multiple Output Methods            |
-|                                                          |                                       |
-| -  Delivering added value to users by data configuration |                                       |
-+==========================================================+=======================================+
-| **TECHNICAL ENVIRONMENT**                                | **ARCHITECTURE**                      |
-|                                                          |                                       |
-| -  Multiple Platforms                                    | -  Component based software           |
-|                                                          |                                       |
-| -  Database Technology                                   | -  Multiple Input / Output interfaces |
-|                                                          |                                       |
-| -  Batch Processes                                       |                                       |
-+----------------------------------------------------------+---------------------------------------+
++---------------------------------------------------------+---------------------------------------+
+| **DATA OPERATIONS**                                     | **INTERFACE DESIGN**                  |
+|                                                         |                                       |
+| -  Data Entry Validations                               | -  User Interfaces                    |
+|                                                         |                                       |
+| -  Logical and Mathematical Operations                  | -  Help Methods                       |
+|                                                         |                                       |
+| -  Data formatting                                      | -  Multiple Input Methods             |
+|                                                         |                                       |
+| -  Internal Data Movements                              | - Multiple Output Methods             |
+|                                                         |                                       |
+| - Delivering added value to users by data configuration |                                       |
++=========================================================+=======================================+
+| **TECHNICAL ENVIRONMENT**                               | **ARCHITECTURE**                      |
+|                                                         |                                       |
+| -  Multiple Platforms                                   | -  Component based software           |
+|                                                         |                                       |
+| -  Database Technology                                  | -  Multiple Input / Output interfaces |
+|                                                         |                                       |
+| -  Batch Processes                                      |                                       |
++---------------------------------------------------------+---------------------------------------+
 
 Nel seguito, per chiarezza di esposizione, si riporta una traduzione in italiano delle descrizioni presenti nella “Quick Guide” di SNAP. Per una definizione più rigorosa fa testo la versione originale in inglese, cui si rimanda.
 
 Data Operations
-~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^
 
 Questa categoria descrive il modo in cui i dati vengono elaborati per soddisfare i requisiti non funzionali nell'applicazione. Comprende le seguenti cinque sotto-categorie:
 
@@ -2834,7 +2836,7 @@ Questa categoria descrive il modo in cui i dati vengono elaborati per soddisfare
 -  Delivering added value to users by data configuration, tiene conto del valore per l’utente che si ottiene aggiungendo, modificando o eliminando dati di riferimento / informazioni dal database senza modificare il codice sorgente o la struttura del database stesso.
 
 Interface Design
-~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^
 
 Questa categoria si riferisce all'esperienza dell'utente finale. Questa categoria misura la progettazione dei processi e dei metodi che consentono all’utente di interfacciarsi con l'applicazione. Essa comprende le seguenti cinque sotto-categorie:
 
@@ -2847,7 +2849,7 @@ Questa categoria si riferisce all'esperienza dell'utente finale. Questa categori
 -  Multiple Output Methods, misura la capacità del software di fornire le sue funzionalità con più metodi di output (esempio: multicanalità).
 
 Technical Environment
-~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^
 
 Questa categoria si riferisce alla piattaforma su cui risiede l'applicazione. Tiene conto della tecnologia e delle modifiche ai dati interni e alla configurazione che non comportano aggiunta o modifiche di funzionalità. Comprende le seguenti tre sotto-categorie:
 
@@ -2858,7 +2860,7 @@ Questa categoria si riferisce alla piattaforma su cui risiede l'applicazione. Ti
 -  Batch Processes, conta i processi batch che non sono considerati requisiti funzionali (cioè che non si qualificano come funzioni transazionali). Ad esempio, questa sottocategoria tiene conto dei processi batch che vengono attivati ​​senza che ci sia attraversamento di dati dai confini dell’applicazione.
 
 Architecture
-~~~~~~~~~~~~
+^^^^^^^^^^^^
 
 Questa categoria si riferisce alle tecniche di progettazione e di codifica utilizzate per costruire e migliorare l'applicazione. Valuta le complessità dello sviluppo modulare e/o a componenti. Comprende le seguenti due sotto-categorie:
 
@@ -2867,7 +2869,7 @@ Questa categoria si riferisce alle tecniche di progettazione e di codifica utili
 -  Multiple Input/Output Interfaces, misura la capacità di supportare più interfacce di input/output, senza modificare le funzionalità fornite dall’applicazione.
 
 Metodo di conteggio (breve descrizione)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Il metodo di conteggio SNAP prevede i seguenti passi:
 
@@ -2877,10 +2879,10 @@ Il metodo di conteggio SNAP prevede i seguenti passi:
 
 3. per ogni SCU si contano gli SNAP Point, in base a regole tabellari presenti nel manuale e secondo una formula finale che dipende anche dal tipo di progetto. In particolare, e in analogia al conteggio dei PF, nei progetti di sviluppo si possono conteggiare solo SNAP Point di tipo ADD, mentre nei progetti di manutenzione evolutiva si possono conteggiare SNAP Point di tipo ADD, CHG e DEL.
 
-Sul sito dell’IFPUG [21]_ è disponibile gratuitamente uno strumento basato su excel che può aiutare nell’applicare il metodo di conteggio su descritto.
+Sul sito dell’IFPUG\ `:sup:`21` <#fn21>`__ è disponibile gratuitamente uno strumento basato su excel che può aiutare nell’applicare il metodo di conteggio su descritto.
 
 SNAP: pro e contro
-~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^
 
 Sembra utile riportare, qui nel seguito, alcuni elementi di valore e possibili criticità connesse all’uso del metodo SNAP:
 
@@ -2899,11 +2901,11 @@ Sembra utile riportare, qui nel seguito, alcuni elementi di valore e possibili c
 -  Oltre a utilizzare integralmente il metodo SNAP, è possibile anche un uso parziale, prendendo in considerazione solo alcune categorie o sotto-categorie (vale a dire, non l’intero insieme di 14 sotto-categorie, ma solo quelle d’interesse).
 
 CISQ-OMG
---------
+~~~~~~~~
 
 Il CISQ è un organismo fondato dall’OMG. Il suo scopo è sviluppare, in collaborazione con le maggiori organizzazioni ICT mondiali, standard internazionali per la misurazione automatica, a partire dai sorgenti, della dimensione funzionale e non-funzionale del software, nonché dei fattori di rischio derivanti dalla struttura degli applicativi.
 
-Le caratteristiche non funzionali di un software che CISQ propone di misurare sono [22]_:
+Le caratteristiche non funzionali di un software che CISQ propone di misurare sono\ `:sup:`22` <#fn22>`__:
 
 -  reliability;
 
@@ -2911,7 +2913,7 @@ Le caratteristiche non funzionali di un software che CISQ propone di misurare so
 
 -  security;
 
--  maintainability [23]_.
+-  maintainability\ `:sup:`23` <#fn23>`__.
 
 In estrema sintesi, CISQ-OMG propone metriche e metodologie di misura basate sulla verifica del rispetto di alcune regole (buone pratiche architetturali, di codifica e disegno), adatte a essere rilevate tramite analisi statica, definita anche analisi strutturale, del software applicativo in tutte le sue componenti (codice sorgente, database, ecc.). In termini ISO 25010, si riferiscono alla qualità interna del software in esame.
 
@@ -2962,7 +2964,7 @@ Per esempi operativi di applicazioni delle metriche CISQ-OMG, si rimanda al capi
 Riguardo a queste metriche e al loro impiego si segnala la presenza di linee guida e documenti metodologici liberamente disponibili sul sito del CISQ (`www.it-cisq.org <http://www.it-cisq.org>`__).
 
 Coerenza con il Piano Triennale
-===============================
+-------------------------------
 
 Nel seguito, per ogni capitolo del Piano Triennale, si evidenziano le indicazioni/raccomandazioni che:
 
@@ -3135,10 +3137,10 @@ Tabella 42: indicazioni del Piano Triennale e metriche
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Applicazioni operative ed esempi
-================================
+--------------------------------
 
 Considerazioni generali
------------------------
+~~~~~~~~~~~~~~~~~~~~~~~
 
 Nei capitoli precedenti sono stati illustrati strumenti e tecniche che potrebbero rispondere alle esigenze riportate nel capitolo 1, in particolare:
 
@@ -3155,7 +3157,7 @@ Si noti che, a fronte della pluralità di soluzioni disponibili, non sempre si r
 Pertanto, più che stilare una “classifica” delle soluzioni illustrate, sembra utile analizzare, nei paragrafi che seguono, alcuni casi d’uso in contesti rappresentativi, vale a dire in tipiche situazioni in cui possono trovarsi le amministrazioni. Per ciascuno di questi casi d’uso si declinano, sotto forma di suggerimenti pratici, le argomentazioni già espresse nei capitoli precedenti. Si ribadisce che si tratta di esempi non esaustivi, e che le indicazioni fornite non devono intendersi come raccomandazioni mandatorie.
 
 Assessment di parchi applicativi già esistenti
-----------------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 *Descrizione*
 
@@ -3193,21 +3195,21 @@ Per riportare queste misure a livello di portafoglio complessivo, si procederà:
 
 Tabella 43: assessment del parco applicativo dell’amministrazione AMM1
 
-+--------------------------+--------------------------------+----------------------------+------------------------------+
-| **Applicazione**         | **Dimensione funzionale (PF)** | **Misura di affidabilità** | **Misura di manutenibilità** |
-+==========================+================================+============================+==============================+
-| Appl 1                   | 1.200                          | 1,4                        | 3,3                          |
-+--------------------------+--------------------------------+----------------------------+------------------------------+
-| Appl 2                   | 650                            | 2,2                        | 2,6                          |
-+--------------------------+--------------------------------+----------------------------+------------------------------+
-| Appl 3                   | 1.720                          | 1,7                        | 3                            |
-+--------------------------+--------------------------------+----------------------------+------------------------------+
-| Appl 4                   | 2.400                          | 3,6                        | 3,9                          |
-+--------------------------+--------------------------------+----------------------------+------------------------------+
-| Appl 5                   | 880                            | 0,9                        | 2                            |
-+--------------------------+--------------------------------+----------------------------+------------------------------+
-| Totale Parco Applicativo | 6.850                          | 2,26 [24]_                 | 3,20 [25]_                   |
-+--------------------------+--------------------------------+----------------------------+------------------------------+
++--------------------------+--------------------------------+-----------------------------+------------------------------+
+| **Applicazione**         | **Dimensione funzionale (PF)** | **Misura di affidabilità**  | **Misura di manutenibilità** |
++==========================+================================+=============================+==============================+
+| Appl 1                   | 1.200                          | 1,4                         | 3,3                          |
++--------------------------+--------------------------------+-----------------------------+------------------------------+
+| Appl 2                   | 650                            | 2,2                         | 2,6                          |
++--------------------------+--------------------------------+-----------------------------+------------------------------+
+| Appl 3                   | 1.720                          | 1,7                         | 3                            |
++--------------------------+--------------------------------+-----------------------------+------------------------------+
+| Appl 4                   | 2.400                          | 3,6                         | 3,9                          |
++--------------------------+--------------------------------+-----------------------------+------------------------------+
+| Appl 5                   | 880                            | 0,9                         | 2                            |
++--------------------------+--------------------------------+-----------------------------+------------------------------+
+| Totale Parco Applicativo | 6.850                          | 2,26\ `:sup:`24` <#fn24>`__ | 3,20\ `:sup:`25` <#fn25>`__  |
++--------------------------+--------------------------------+-----------------------------+------------------------------+
 
 Si noti che i risultati del processo descritto potrebbero essere utilizzati anche per classificare, in base alla loro qualità, le applicazioni di un parco applicativo, oppure – in un’analisi di maggior dettaglio e granularità – per classificare i moduli software nell’ambito di una sezione specifica (es. contabilità, servizi del portale web) del portafoglio dell’amministrazione.
 
@@ -3256,7 +3258,7 @@ Questo laboratorio potrebbe dotarsi delle competenze e degli strumenti necessari
 Nello specifico, il laboratorio centralizzato potrebbe occuparsi della realizzazione e del mantenimento del repository di progetti pubblici (RPP) su citato. Inoltre, con riferimento agli strumenti automatici di cui al §4.6, il laboratorio centralizzato potrebbe acquisire una licenza di tipo enterprise (tale cioè da coprire le esigenze dell’intera P.A.) di eventuali prodotti proprietari, o meglio ancora potrebbe adattare e far evolvere, creando un’apposita community, un prodotto open source che implementi le specifiche CISQ-OMG, rendendolo così di uso gratuito per le amministrazioni.
 
 Sviluppo di nuove applicazioni
-------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Il servizio di sviluppo di software applicativo viene in genere acquisito dalle amministrazioni tramite contratti pluriennali che coprono uno o (caso prevalente) più progetti. Tali contratti definiscono una cornice di regole (es. SLA, modalità di collaudo e di pagamento, penali), nell’ambito della quale vengono condotti i singoli progetti.
 
@@ -3267,7 +3269,7 @@ Nel caso di gare, in genere l’amministrazione effettua stime di massima della 
 Come detto al §4.2, l’uso del PF continua a essere accettabile (e raccomandabile) per la misura delle funzionalità delle applicazioni da realizzare, purché questa metrica venga adoperata in modo corretto. È necessario tuttavia che le amministrazioni integrino le misure funzionali in PF con misure delle caratteristiche non funzionali, utilizzando le metriche descritte nei capitoli precedenti. Nel seguito vengono riportati alcuni esempi pratici.
 
 Formalizzazione dei requisiti non funzionali
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Un primo suggerimento riguarda la definizione dei requisiti utente. L’utilizzo di metriche non funzionali può consentire una migliore formalizzazione dei NFR, evitando le dizioni vaghe, tautologiche e non verificabili. Nella tabella che segue si riportano, a titolo di esempio, alcuni requisiti non funzionali: per ciascuno di essi viene fornita una definizione da evitare e una accettabile.
 
@@ -3298,7 +3300,7 @@ Data la disponibilità di strumenti automatici di misurazione, le verifiche di r
 Per formalizzare gli NFR sembra ancora meno efficace, o almeno non intuitivo, l’uso del metodo SNAP, a meno di casi specifici in cui i requisiti utente siano tali da potersi mappare con le categorie e sotto-categorie SNAP già prima dell’implementazione. SNAP sembra invece più utile in una fase successiva, per misurare il contenuto non funzionale complessivo dell’applicazione (giacché questo metodo consente di fondere le misure delle varie caratteristiche non funzionali) integrando così la misura in PF delle funzionalità erogate dall’applicazione stessa, come illustrato nel paragrafo che segue.
 
 Misura della dimensione complessiva e stima del valore dell’applicazione
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Come già illustrato al §4.5, SNAP nasce come “completamento” del metodo dei PF. L’uso integrato dei due metodi consente pertanto di avere una misura completa dell’applicazione, tenendo conto sia delle caratteristiche funzionali che di quelle non funzionali. Il passaggio successivo, vale a dire la valorizzazione dell’applicazione sulla base delle sue dimensioni, non è immediato. Come già osservato al §6.2, oggi esistono riferimenti ben consolidati sul valore di mercato dei PF, ma non sono disponibili dati pubblici e condivisi che consentano di attribuire un importo in euro agli SNAP Point. In prospettiva, per superare questa criticità, si potrebbe analizzare, ex post, un numero significativo di progetti di sviluppo delle P.A., verificando la correlazione tra il numero di SP e il relativo impegno di realizzazione. In assenza di tali statistiche, a oggi non è possibile suggerire un ipotetico “valore di mercato” dello SP.
 
@@ -3327,7 +3329,7 @@ Sembra utile, in conclusione, ribadire la regola già espressa: non esistono str
 Nel caso in cui una PA bandisca una gara per uno o più progetti di sviluppo applicativo, in cui la raccolta dei requisiti utente venga affidata allo stesso fornitore, l’amministrazione potrà chiedere ai partecipanti alla gara di proporre metriche e metodologie per la misurazione delle caratteristiche non funzionali. L’efficacia di tali proposte, comprovata da esperienze d’uso i cui risultati vengano riferiti dal concorrente, potranno concorrere al punteggio tecnico dell’offerta in esame.
 
 Evoluzione di applicazioni esistenti
-------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Per la manutenzione evolutiva (MEV) valgono, in generale, le medesime considerazioni e suggerimenti espressi per lo sviluppo applicativo. Peraltro, usualmente i due servizi vengono acquisiti dalle amministrazioni pubbliche nell’ambito dei medesimi contratti, o comunque con SLA, penali e modalità contrattuali del tutto simili.
 
@@ -3350,11 +3352,11 @@ Nella manutenzione evolutiva, difatti, le soglie che devono essere rispettate pe
 Allo scopo di valorizzare le esperienze precedenti e consentire confronti omogenei, si suggerisce, negli interventi di MEV su una data applicazione, di continuare a utilizzare le metriche usate nei precedenti interventi di sviluppo dell’applicazione stessa.
 
 Manutenzione
-------------
+~~~~~~~~~~~~
 
 Preliminarmente sembra utile classificare le varie tipologie di manutenzione – non evolutiva - che possono svolgersi sul software applicativo. Con riferimento alla norma ISO/IEC 14764:2006, si distinguono le seguenti tipologie:
 
--  manutenzione correttiva, che consiste nella modifica del software, eseguita dopo il rilascio [26]_, per correggere problemi rilevati;
+-  manutenzione correttiva, che consiste nella modifica del software, eseguita dopo il rilascio\ `:sup:`26` <#fn26>`__, per correggere problemi rilevati;
 
 -  manutenzione preventiva, vale a dire la modifica del software per correggere difetti prima che divengano problemi effettivi;
 
@@ -3371,7 +3373,7 @@ Il diagramma E-R che segue illustra la gerarchia tra le tipologie di manutenzion
 Figura 4: tipologie di manutenzione
 
 Manutenzione correttiva
-~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^
 
 Il servizio di manutenzione correttiva viene in genere acquisito dalle amministrazioni tramite contratti pluriennali che prevedono un pagamento a canone. L’importo del canone è legato alla dimensione funzionale del parco applicativo oggetto del servizio, con formule del tipo:
 
@@ -3394,7 +3396,7 @@ in cui PF1 è la dimensione funzionale del primo gruppo di applicazione, mentre 
 Come ultima indicazione, occorre considerare che la maturità del software dipende non solo da quando lo stesso è entrato in esercizio, ma anche dagli interventi di manutenzione che esso ha subito dal momento del rilascio. Ciò si riscontra ad esempio nella definizione delle metriche di maturità del §4.4.3.1. L’amministrazione deve tenerne conto, ripetendo la misura di questa sottocaratteristica al termine di un contratto di manutenzione, anche allo scopo di definire il canone di un eventuale contratto successivo.
 
 Manutenzione preventiva
-~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^
 
 Il servizio di manutenzione preventiva, ove previsto, è in generale acquisito dalle amministrazioni nell’ambito dei medesimi contratti per la manutenzione correttiva. Valgono quindi le indicazioni del paragrafo precedente. Si riscontrano anche casi in cui il servizio non è incluso nel contratto, oppure è descritto in maniera tale da renderlo inefficace: ad esempio vengono previsti SLA e penali che si riferiscono alla sola manutenzione correttiva (tempi di intervento a seguito di segnalazione, tempi di ripristino).
 
@@ -3406,11 +3408,11 @@ Gli strumenti di misura automatici potrebbero essere impiegati anche per verific
 
 Operativamente, ciò si ottiene effettuando i seguenti passi:
 
-1) si misura, alla stipula del contratto o all’attivazione del servizio di manutenzione, le caratteristiche di qualità del software oggetto del servizio;
+1. si misura, alla stipula del contratto o all’attivazione del servizio di manutenzione, le caratteristiche di qualità del software oggetto del servizio;
 
-2) si ripete con cadenza periodica, ad esempio trimestralmente, le suddette misure;
+2. si ripete con cadenza periodica, ad esempio trimestralmente, le suddette misure;
 
-3) si verifica che le caratteristiche di qualità misurate non si siano abbassate nel tempo. Ogni variazione peggiorativa porterà all’applicazione di una penale al fornitore, ad esempio pari alla variazione in aumento dell’Automated Technical Debt.
+3. si verifica che le caratteristiche di qualità misurate non si siano abbassate nel tempo. Ogni variazione peggiorativa porterà all’applicazione di una penale al fornitore, ad esempio pari alla variazione in aumento dell’Automated Technical Debt.
 
 Occorre ovviamente esplicitare nel contratto gli elenchi o i riferimenti alle regole di corretta programmazione su cui si basano le misurazioni automatiche, in modo da evitare contestazioni da parte del fornitore (in caso contrario, il fornitore si troverebbe costretto a utilizzare lo stesso strumento automatico di misura).
 
@@ -3419,7 +3421,7 @@ Anche per il servizio di manutenzione, ove l’amministrazione non abbia compete
 Qualunque sia il percorso che porta alla scelta dello strumento/soluzione, quest’ultimo dovrà essere chiaramente indicato nel contratto, esplicitandone metodologia d’uso, ruoli e responsabilità per evitare contenziosi durante l’erogazione del servizio.
 
 Manutenzione adattativa
-~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^
 
 Nei tipici contratti pubblici gli interventi di manutenzione adattativa sono considerati attività progettuali e remunerati a tempo e spesa (sulla base dei giorni persona erogati e rendicontati) oppure a corpo, sulla base di una stima iniziale proposta dal fornitore e accettata dall’amministrazione cliente.
 
@@ -3440,7 +3442,7 @@ Resta il suggerimento, per le amministrazioni prive di competenze ed esperienze 
 Anche per la manutenzione adattativa, è possibile l’uso di strumenti automatici per verificare il rispetto delle regole di corretta programmazione e il conseguente mantenimento del livello di qualità del software oggetto dell’intervento (vedi paragrafo precedente).
 
 Manutenzione perfettiva
-~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^
 
 Nei contratti delle P.A. gli interventi di manutenzione perfettiva sono in genere considerati attività progettuali, remunerati a tempo e spesa (sulla base dei giorni persona erogati e rendicontati) oppure a corpo, sulla base di una stima iniziale proposta dal fornitore e accettata dall’amministrazione cliente.
 
@@ -3449,7 +3451,7 @@ Ribadendo le considerazioni espresse al §4.1, si ritiene che anche per questa t
 Dal punto di vista teorico e in termini ISO (vedi §3.1.3), la manutenzione perfettiva può impattare su una o più caratteristiche non funzionali dell’applicazione oggetto dell’intervento. Si può ad esempio voler migliorare le prestazioni, l’usabilità o la manutenibilità dell’applicazione in oggetto. Pertanto si potrebbe valutare quantitativamente l’intervento misurando il valore di tali caratteristiche prima e dopo l’intervento stesso. Si tratta, a ben vedere, di una generalizzazione rispetto al caso del paragrafo precedente, in cui l’unica caratteristica impattata era la portabilità. Per chiarire quanto detto, si riportano di seguito alcune situazioni tipiche, volutamente semplificate per fungere da esempio.
 
 Caso 1: incremento di prestazioni
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+'''''''''''''''''''''''''''''''''
 
 Una P.A. richiede un intervento di manutenzione per migliorare i tempi di risposta di un’applicazione. L’intervento non prevede sviluppo, modifica o cancellazione di funzionalità.
 
@@ -3464,7 +3466,7 @@ Giacché l’intervento aumenta una caratteristica di qualità dell’applicazio
 Anche in questo caso può essere d’interesse per l’amministrazione assicurarsi che l’intervento non abbia peggiorato altre caratteristiche dell’applicazione. Ciò potrebbe essere verificato con strumenti automatici (vedi paragrafi precedenti).
 
 Caso 2: intervento sull’accessibilità
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+'''''''''''''''''''''''''''''''''''''
 
 Una P.A. richiede un intervento di manutenzione che, senza modificare, sviluppare o cancellare funzionalità, renda un’applicazione conforme alla normativa sull’accessibilità (che è una sottocaratteristica dell’usabilità, vedi §4.4.2).
 
@@ -3472,128 +3474,127 @@ Una prima soluzione per valutare quantitativamente l’intervento, in termini di
 
 Tabella 45: checklist per accessibilità
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-| **Descrizione del requisito**                                                                                                                                                                                                                                                                                                                                                                             | **Punto di controllo**                                                                           | **Descrizione degli elementi del punto di controllo**                                                                                                                                                                                                                                                                  | **Conformità |
-|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  |                                                                                                                                                                                                                                                                                                                        | (S/N/NA)**   |
-+===========================================================================================================================================================================================================================================================================================================================================================================================================+==================================================================================================+========================================================================================================================================================================================================================================================================================================================+==============+
-| Req1 - Alternative testuali: fornire alternative testuali per qualsiasi contenuto di natura non testuale in modo che il testo predisposto come alternativa possa essere fruito e trasformato secondo le necessità degli utenti, come per esempio convertito in stampa a caratteri ingranditi, in stampa Braille, letto da una sintesi vocale, simboli o altra modalità di rappresentazione del contenuto. | 1.1 – Contenuti non testuali                                                                     | Tutti i contenuti non testuali presentano un’alternativa testuale equivalente.                                                                                                                                                                                                                                         |              |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  | I controlli e gli elementi che raccolgono l’input dell’utente possiedono un nome esplicativo che ne descrive la finalità.                                                                                                                                                                                              |              |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  | In presenza di audio, video, animazioni, è stata fornita un’alternativa testuale che ne contiene la descrizione sintetica.                                                                                                                                                                                             |              |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  | Test ed esercizi che non possono essere compresi se presentati in versione testuale sono comunque corredati di una breve descrizione che ne specifichi il contenuto.                                                                                                                                                   |              |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  | I contenuti non testuali che rappresentino specifiche esperienze sensoriali sono corredati di didascalie sintetiche che ne identifichino chiaramente lo scopo.                                                                                                                                                         |              |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  | I CAPTCHA sono muniti di alternative testuali commisurate alle diverse tipologie di disabilità (captcha audio, captcha visivo, captcha semantico).                                                                                                                                                                     |              |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  | I contenuti non testuali che rappresentino decorazioni, formattazioni, elementi invisibili, sono costruiti in modo tale da poter essere ignorati dalle tecnologie assistive.                                                                                                                                           |              |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-| Req2 - Contenuti audio, contenuti video, animazioni: fornire alternative testuali equivalenti per le informazioni veicolate da formati audio, formati video, formati contenenti immagini animate (animazioni), formati multisensoriali in genere.                                                                                                                                                         | 2.1 – Contenuti registrati presentati in formato solo audio, solo video o animazione senza audio | I contenuti multimediali (solo audio, solo video o animazione senza audio) che non rappresentino un’alternativa ad un contenuto testuale già esistente nel sito ed etichettato come tale, sono corredati della relativa alternativa testuale equivalente.                                                              |              |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-|                                                                                                                                                                                                                                                                                                                                                                                                           | 2.2 - Sottotitoli (per contenuti registrati)                                                     | I contenuti multisensoriali (video con audio, animazione con audio) che non rappresentino un’alternativa ad un contenuto testuale già esistente nel sito ed etichettato come tale, sono corredati di sottotitoli sincronizzati.                                                                                        |              |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-|                                                                                                                                                                                                                                                                                                                                                                                                           | 2.3 – Audio – descrizioni o trascrizioni descrittive (per contenuti registrati)                  | I contenuti registrati in formato video o animazioni che contengano informazioni o azioni necessarie all’erogazione di un servizio e non rappresentino un’alternativa ad un contenuto testuale già esistente nel sito ed etichettato come tale, sono corredati di descrizione alternativa in formato audio o testuale. |              |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-|                                                                                                                                                                                                                                                                                                                                                                                                           | 2.4 – Sottotitoli (per contenuti in diretta)                                                     | I contenuti multimediali presentati in diretta, ritenuti essenziali per l’erogazione di un servizio sono corredati di sottotitoli sincronizzati.                                                                                                                                                                       |              |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-| Req3 - Adattabile: creare contenuti che possano essere presentati in modalità differenti (ad esempio, con layout più semplici), senza perdita di informazioni o struttura.                                                                                                                                                                                                                                | 3.1 – Informazioni e correlazioni                                                                | Informazioni, struttura e correlazione tra distinti blocchi di contenuto presentati nelle pagine sono fruibili in qualsiasi situazione in quanto definite tramite tecnologie compatibili con l’accessibilità o resi disponibili in formato testuale.                                                                   |              |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-|                                                                                                                                                                                                                                                                                                                                                                                                           | 3.2 – Sequenze significative                                                                     | La sequenza di lettura dei contenuti, laddove necessaria per la comprensione degli stessi, è stata correttamente definita tramite tecnologie compatibili con l’accessibilità.                                                                                                                                          |              |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-|                                                                                                                                                                                                                                                                                                                                                                                                           | 3.3 – Informazioni e correlazioni                                                                | Le istruzioni fornite per comprendere ed operare sui contenuti non si basano esclusivamente sulle caratteristiche sensoriali dei loro componenti (forma, dimensione, posizione, orientamento o suono).                                                                                                                 |              |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-| Req4 - Distinguibile: rendere più semplice agli utenti la visione e l'ascolto dei contenuti, separando i contenuti in primo piano dallo sfondo.                                                                                                                                                                                                                                                           | 4.1 – Uso del colore                                                                             | Il colore non è l’unica modalità utilizzata per rappresentare informazioni, indicare azioni, richiedere risposte o come elemento di distinzione visiva.                                                                                                                                                                |              |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-|                                                                                                                                                                                                                                                                                                                                                                                                           | 4.2 – Controllo del sonoro                                                                       | Sonoro: sono previste funzionalità di avvio, messa in pausa o interruzione. In alternativa è prevista una modalità del controllo del volume indipendente da quella predefinita dal sistema.                                                                                                                            |              |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  | L’audio avviato in automatico non dura più di tre secondi.                                                                                                                                                                                                                                                             |              |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-|                                                                                                                                                                                                                                                                                                                                                                                                           | 4.3 – Contrasto (minimo)                                                                         | I testi, compresi quelli rappresentati come immagine hanno un contrasto minimo tra primo piano e sfondo di almeno 4.5:1                                                                                                                                                                                                |              |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  | Testi di almeno 18 punti normale o 14 punti grassetto, ritenuti di grandi dimensioni, anche quando rappresentati come immagine, hanno un contrasto minimo di 3:1                                                                                                                                                       |              |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-|                                                                                                                                                                                                                                                                                                                                                                                                           | 4.4 – ridimensionamento del testo                                                                | I testi sono ridimensionabili fino al 200% senza l’ausilio di tecnologie assistive e senza che vi sia perdita di contenuti e funzionalità.                                                                                                                                                                             |              |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-|                                                                                                                                                                                                                                                                                                                                                                                                           | 4.5 – Testo rappresentato come immagine                                                          | Sono evitati testi sotto forma di immagine ad eccezione di immagini personalizzabili, logotipi e casi in cui una particolare rappresentazione di un testo sia ritenuta essenziale per il tipo di informazione veicolata.                                                                                               |              |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-| Req5 - Accessibile da tastiera: rendere disponibili tutte le funzionalità anche tramite tastiera.                                                                                                                                                                                                                                                                                                         | 5.1 – Tastiera                                                                                   | Tutte le funzionalità sono utilizzabili tramite tastiera senza che vi sia obbligo di tempi specifici per le singole battute.                                                                                                                                                                                           |              |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  | Le funzioni che richiedono un input dipendente dai movimenti dell’utente e che non possano essere ottenute in modo equivalente tramite input da tastiera sono utilizzabili tramite altre periferiche di input.                                                                                                         |              |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-|                                                                                                                                                                                                                                                                                                                                                                                                           | 5.2 – Nessun impedimento all'uso della tastiera                                                  | Tutti i componenti della pagina sono navigabili tramite tastiera.                                                                                                                                                                                                                                                      |              |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  | L’utente è in grado di gestire il focus dei componenti della pagina tramite tastiera                                                                                                                                                                                                                                   |              |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  | L’utente è informato esplicitamente sulle modalità di rilascio del focus quando non è sufficiente l’uso di normali tasti (freccia o tab).                                                                                                                                                                              |              |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-| Req6 - Adeguata disponibilità di tempo: fornire all'utente tempo sufficiente per leggere ed utilizzare i contenuti.                                                                                                                                                                                                                                                                                       | 6.1 – Regolazione tempi di esecuzione                                                            | Per i limiti di tempo inferiori a 20 ore, non essenziali per l’attività e che non riguardino eventi in tempo reale è soddisfatto almeno uno dei seguenti casi: (selezionare una delle seguenti opzioni)                                                                                                                |              |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  | L’utente può rimuovere il limite di tempo prima che esso sia raggiunto.                                                                                                                                                                                                                                                |              |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  | L’utente può regolare il limite di tempo prima che esso sia raggiunto estendendone la durata di almeno 10 volte.                                                                                                                                                                                                       |              |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  | L’utente può prolungare il limite di tempo compiendo un’operazione fino ad un massimo di 10 volte .                                                                                                                                                                                                                    |              |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-|                                                                                                                                                                                                                                                                                                                                                                                                           | 6.2 – Pausa, stop, nascondi                                                                      | Per animazioni, immagini lampeggianti, in scorrimento o contenuti che si auto-aggiornano che non siano parte essenziale dell’attività, sono previsti meccanismi per la messa in pausa, interruzione e nascondimento.                                                                                                   |              |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  | Gli aggiornamenti automatici, presentati in parallelo con altri contenuti, che non siano parte essenziale dell’attività, sono muniti di meccanismi per la messa in pausa, interruzione e nascondimento degli stessi.                                                                                                   |              |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-| Req7 - Crisi epilettiche: non sviluppare contenuti che possano causare crisi epilettiche.                                                                                                                                                                                                                                                                                                                 | 7.1 – Lampeggiamenti                                                                             | Le pagine non contengono elementi che lampeggino più di tre volte al secondo.                                                                                                                                                                                                                                          |              |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  | L’eventuale lampeggiamento rispetta le soglie indicate nelle WCAG 2.0                                                                                                                                                                                                                                                  |              |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-| Req8 - Navigabile: fornire all'utente funzionalità di supporto per navigare, trovare contenuti e determinare la posizione nel sito e nelle pagine.                                                                                                                                                                                                                                                        | 8.1 – Salto di blocchi                                                                           | Sono fornite modalità per saltare blocchi di contenuto comuni a più pagine.                                                                                                                                                                                                                                            |              |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-|                                                                                                                                                                                                                                                                                                                                                                                                           | 8.2 – Titolo della pagina                                                                        | Le pagine possiedono titoli (<title>) esplicativi che ne descrivano argomento e finalità.                                                                                                                                                                                                                              |              |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-|                                                                                                                                                                                                                                                                                                                                                                                                           | 8.3 – Ordine del focus.3 –                                                                       | Gli oggetti ricevono il focus secondo un ordine che ne preservi il senso e l’operatività                                                                                                                                                                                                                               |              |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-|                                                                                                                                                                                                                                                                                                                                                                                                           | 8.4 – Scopo del collegamento (nel contesto)                                                      | Scopi e testi dei collegamenti sono chiaramente comprensibili sia se estrapolati dal contesto sia se letti in sinergia con i contenuti circostanti.                                                                                                                                                                    |              |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-|                                                                                                                                                                                                                                                                                                                                                                                                           | 8.5 – Differenti modalità                                                                        | Le pagine che non sono il risultato o la fase di un’azione sono identificate tramite diverse modalità                                                                                                                                                                                                                  |              |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-|                                                                                                                                                                                                                                                                                                                                                                                                           | 8.6 – Titoli ed etichette                                                                        | I contenuti sono organizzati logicamente rispettandone il corretto ordine sequenziale gerarchico tramite l’uso appropriato di titoli (<H[x]>).                                                                                                                                                                         |              |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-|                                                                                                                                                                                                                                                                                                                                                                                                           | 8.7 – Focus visibile                                                                             | Tutte le interfacce utente utilizzabili tramite tastiera possiedono funzioni che evidenzino chiaramente gli indicatori del focus (Active, Focus, Hover)                                                                                                                                                                |              |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-| Req9 - Leggibile: rendere leggibile e comprensibile il contenuto testuale.                                                                                                                                                                                                                                                                                                                                | 9.1 – Lingua della pagina                                                                        | La lingua della pagina è definita tramite tecnologie compatibili con l’accessibilità                                                                                                                                                                                                                                   |              |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-|                                                                                                                                                                                                                                                                                                                                                                                                           | 9.2 – Parti in lingua diversa da quella definita per la pagina                                   | Testi presentati in lingue diverse da quella indicata come principale sono correttamente definiti tramite gli attributi previsti dalle tecnologie compatibili con l’accessibilità.                                                                                                                                     |              |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-| Req10 - Prevedibile: creare pagine web che appaiano e che si comportino in maniera prevedibile.                                                                                                                                                                                                                                                                                                           | 10.1 – Al focus                                                                                  | Non vengono avviati automaticamente cambiamenti di contesto quando un qualsiasi componente riceve il focus.                                                                                                                                                                                                            |              |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-|                                                                                                                                                                                                                                                                                                                                                                                                           | 10.2 – All’input                                                                                 | I cambiamenti di contesto non sono automatici. In casi particolari in cui ciò non sia possibile l’utente è preventivamente avvisato.                                                                                                                                                                                   |              |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-|                                                                                                                                                                                                                                                                                                                                                                                                           | 10.3 – Navigazione costante                                                                      | I meccanismi di navigazione ripetuti su più pagine sono sempre presentati allo stesso modo a meno che l’utente non avvii un cambiamento.                                                                                                                                                                               |              |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-|                                                                                                                                                                                                                                                                                                                                                                                                           | 10.4 – Identificazione coerente                                                                  | I componenti che hanno stesse funzionalità sono identificati in modo uniforme.                                                                                                                                                                                                                                         |              |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-| Req11 - Assistenza nell'inserimento di dati e informazioni: aiutare l'utente ad evitare gli errori ed agevolarlo nella loro correzione.                                                                                                                                                                                                                                                                   | 11.1 – Identificazione di errori                                                                 | Gli errori rilevati automaticamente in fase di inserimento sono identificati chiaramente e descritti in modo esaustivo tramite testo.                                                                                                                                                                                  |              |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-|                                                                                                                                                                                                                                                                                                                                                                                                           | 11.2 – Etichette o istruzioni                                                                    | Sono fornite etichette o istruzioni per la corretta esecuzione di azioni/operazioni di input.                                                                                                                                                                                                                          |              |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-|                                                                                                                                                                                                                                                                                                                                                                                                           | 11.3 – Suggerimenti per gli errori                                                               | Per errori che è possibile correggere senza che siano pregiudicati sicurezza e finalità del contenuto, sono forniti suggerimenti all’utente.                                                                                                                                                                           |              |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-|                                                                                                                                                                                                                                                                                                                                                                                                           | 11.4 – Prevenzione degli errori (legali, finanziari, dati)                                       | Le pagine web che presentano funzionalità di gestione dati controllabili dall’utente, soddisfano almeno una delle seguenti condizioni (selezionare una delle seguenti opzioni):                                                                                                                                        |              |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  | Reversibilità: le azioni/operazioni sono reversibili.                                                                                                                                                                                                                                                                  |              |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  | Controllo: i dati inseriti dall'utente sono verificati ed è fornita la possibilità di correggere eventuali errori di inserimento.                                                                                                                                                                                      |              |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  | Conferma: è disponibile una funzionalità per la revisione, conferma e correzione delle informazioni prima dell’invio definitivo.                                                                                                                                                                                       |              |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-| Req12 - Compatibile: garantire la massima compatibilità con i programmi utente e con le tecnologie assistive.                                                                                                                                                                                                                                                                                             | 12.1 – Analisi sintattica: parsing                                                               | I linguaggi di marcatura sono utilizzati in modo conforme alle specifiche previste dalla grammatica formale di riferimento.                                                                                                                                                                                            |              |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  | Le pagine analizzate tramite il Markup Validation Service (W3C) risultano valide.                                                                                                                                                                                                                                      |              |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  | I fogli di stile analizzati tramite il CSS Validation Service (W3C) risultano validi.                                                                                                                                                                                                                                  |              |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-|                                                                                                                                                                                                                                                                                                                                                                                                           | 12.2 – Name, Role, Value                                                                         | In tutti i componenti dell’interfaccia utente, name (descrizione) e role (scopo o funzionalità) sono definiti tramite tecnologie compatibili con l’accessibilità.                                                                                                                                                      |              |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  | Stati proprietà e valori dei componenti dell’interfaccia possono essere impostati dall’utente; le notifiche sui cambi di stato di questi elementi sono rese disponibili ai programmi utente, tecnologie assistive incluse.                                                                                             |              |
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+
+| **Descrizione del requisito**                                                                                                                                                                                                                                                                                                                                                                             | **Punto di controllo**                                                                           | **Descrizione degli elementi del punto di controllo**                                                                                                                                                                                                                                                                  | \**Conformità (S/N/NA)*\* |
++===========================================================================================================================================================================================================================================================================================================================================================================================================+==================================================================================================+========================================================================================================================================================================================================================================================================================================================+===========================+
+| Req1 - Alternative testuali: fornire alternative testuali per qualsiasi contenuto di natura non testuale in modo che il testo predisposto come alternativa possa essere fruito e trasformato secondo le necessità degli utenti, come per esempio convertito in stampa a caratteri ingranditi, in stampa Braille, letto da una sintesi vocale, simboli o altra modalità di rappresentazione del contenuto. | 1.1 – Contenuti non testuali                                                                     | Tutti i contenuti non testuali presentano un’alternativa testuale equivalente.                                                                                                                                                                                                                                         |                           |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  | I controlli e gli elementi che raccolgono l’input dell’utente possiedono un nome esplicativo che ne descrive la finalità.                                                                                                                                                                                              |                           |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  | In presenza di audio, video, animazioni, è stata fornita un’alternativa testuale che ne contiene la descrizione sintetica.                                                                                                                                                                                             |                           |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  | Test ed esercizi che non possono essere compresi se presentati in versione testuale sono comunque corredati di una breve descrizione che ne specifichi il contenuto.                                                                                                                                                   |                           |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  | I contenuti non testuali che rappresentino specifiche esperienze sensoriali sono corredati di didascalie sintetiche che ne identifichino chiaramente lo scopo.                                                                                                                                                         |                           |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  | I CAPTCHA sono muniti di alternative testuali commisurate alle diverse tipologie di disabilità (captcha audio, captcha visivo, captcha semantico).                                                                                                                                                                     |                           |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  | I contenuti non testuali che rappresentino decorazioni, formattazioni, elementi invisibili, sono costruiti in modo tale da poter essere ignorati dalle tecnologie assistive.                                                                                                                                           |                           |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+
+| Req2 - Contenuti audio, contenuti video, animazioni: fornire alternative testuali equivalenti per le informazioni veicolate da formati audio, formati video, formati contenenti immagini animate (animazioni), formati multisensoriali in genere.                                                                                                                                                         | 2.1 – Contenuti registrati presentati in formato solo audio, solo video o animazione senza audio | I contenuti multimediali (solo audio, solo video o animazione senza audio) che non rappresentino un’alternativa ad un contenuto testuale già esistente nel sito ed etichettato come tale, sono corredati della relativa alternativa testuale equivalente.                                                              |                           |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           | 2.2 - Sottotitoli (per contenuti registrati)                                                     | I contenuti multisensoriali (video con audio, animazione con audio) che non rappresentino un’alternativa ad un contenuto testuale già esistente nel sito ed etichettato come tale, sono corredati di sottotitoli sincronizzati.                                                                                        |                           |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           | 2.3 – Audio – descrizioni o trascrizioni descrittive (per contenuti registrati)                  | I contenuti registrati in formato video o animazioni che contengano informazioni o azioni necessarie all’erogazione di un servizio e non rappresentino un’alternativa ad un contenuto testuale già esistente nel sito ed etichettato come tale, sono corredati di descrizione alternativa in formato audio o testuale. |                           |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           | 2.4 – Sottotitoli (per contenuti in diretta)                                                     | I contenuti multimediali presentati in diretta, ritenuti essenziali per l’erogazione di un servizio sono corredati di sottotitoli sincronizzati.                                                                                                                                                                       |                           |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+
+| Req3 - Adattabile: creare contenuti che possano essere presentati in modalità differenti (ad esempio, con layout più semplici), senza perdita di informazioni o struttura.                                                                                                                                                                                                                                | 3.1 – Informazioni e correlazioni                                                                | Informazioni, struttura e correlazione tra distinti blocchi di contenuto presentati nelle pagine sono fruibili in qualsiasi situazione in quanto definite tramite tecnologie compatibili con l’accessibilità o resi disponibili in formato testuale.                                                                   |                           |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           | 3.2 – Sequenze significative                                                                     | La sequenza di lettura dei contenuti, laddove necessaria per la comprensione degli stessi, è stata correttamente definita tramite tecnologie compatibili con l’accessibilità.                                                                                                                                          |                           |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           | 3.3 – Informazioni e correlazioni                                                                | Le istruzioni fornite per comprendere ed operare sui contenuti non si basano esclusivamente sulle caratteristiche sensoriali dei loro componenti (forma, dimensione, posizione, orientamento o suono).                                                                                                                 |                           |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+
+| Req4 - Distinguibile: rendere più semplice agli utenti la visione e l'ascolto dei contenuti, separando i contenuti in primo piano dallo sfondo.                                                                                                                                                                                                                                                           | 4.1 – Uso del colore                                                                             | Il colore non è l’unica modalità utilizzata per rappresentare informazioni, indicare azioni, richiedere risposte o come elemento di distinzione visiva.                                                                                                                                                                |                           |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           | 4.2 – Controllo del sonoro                                                                       | Sonoro: sono previste funzionalità di avvio, messa in pausa o interruzione. In alternativa è prevista una modalità del controllo del volume indipendente da quella predefinita dal sistema.                                                                                                                            |                           |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  | L’audio avviato in automatico non dura più di tre secondi.                                                                                                                                                                                                                                                             |                           |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           | 4.3 – Contrasto (minimo)                                                                         | I testi, compresi quelli rappresentati come immagine hanno un contrasto minimo tra primo piano e sfondo di almeno 4.5:1                                                                                                                                                                                                |                           |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  | Testi di almeno 18 punti normale o 14 punti grassetto, ritenuti di grandi dimensioni, anche quando rappresentati come immagine, hanno un contrasto minimo di 3:1                                                                                                                                                       |                           |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           | 4.4 – ridimensionamento del testo                                                                | I testi sono ridimensionabili fino al 200% senza l’ausilio di tecnologie assistive e senza che vi sia perdita di contenuti e funzionalità.                                                                                                                                                                             |                           |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           | 4.5 – Testo rappresentato come immagine                                                          | Sono evitati testi sotto forma di immagine ad eccezione di immagini personalizzabili, logotipi e casi in cui una particolare rappresentazione di un testo sia ritenuta essenziale per il tipo di informazione veicolata.                                                                                               |                           |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+
+| Req5 - Accessibile da tastiera: rendere disponibili tutte le funzionalità anche tramite tastiera.                                                                                                                                                                                                                                                                                                         | 5.1 – Tastiera                                                                                   | Tutte le funzionalità sono utilizzabili tramite tastiera senza che vi sia obbligo di tempi specifici per le singole battute.                                                                                                                                                                                           |                           |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  | Le funzioni che richiedono un input dipendente dai movimenti dell’utente e che non possano essere ottenute in modo equivalente tramite input da tastiera sono utilizzabili tramite altre periferiche di input.                                                                                                         |                           |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           | 5.2 – Nessun impedimento all'uso della tastiera                                                  | Tutti i componenti della pagina sono navigabili tramite tastiera.                                                                                                                                                                                                                                                      |                           |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  | L’utente è in grado di gestire il focus dei componenti della pagina tramite tastiera                                                                                                                                                                                                                                   |                           |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  | L’utente è informato esplicitamente sulle modalità di rilascio del focus quando non è sufficiente l’uso di normali tasti (freccia o tab).                                                                                                                                                                              |                           |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+
+| Req6 - Adeguata disponibilità di tempo: fornire all'utente tempo sufficiente per leggere ed utilizzare i contenuti.                                                                                                                                                                                                                                                                                       | 6.1 – Regolazione tempi di esecuzione                                                            | Per i limiti di tempo inferiori a 20 ore, non essenziali per l’attività e che non riguardino eventi in tempo reale è soddisfatto almeno uno dei seguenti casi: (selezionare una delle seguenti opzioni)                                                                                                                |                           |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  | L’utente può rimuovere il limite di tempo prima che esso sia raggiunto.                                                                                                                                                                                                                                                |                           |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  | L’utente può regolare il limite di tempo prima che esso sia raggiunto estendendone la durata di almeno 10 volte.                                                                                                                                                                                                       |                           |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  | L’utente può prolungare il limite di tempo compiendo un’operazione fino ad un massimo di 10 volte .                                                                                                                                                                                                                    |                           |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           | 6.2 – Pausa, stop, nascondi                                                                      | Per animazioni, immagini lampeggianti, in scorrimento o contenuti che si auto-aggiornano che non siano parte essenziale dell’attività, sono previsti meccanismi per la messa in pausa, interruzione e nascondimento.                                                                                                   |                           |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  | Gli aggiornamenti automatici, presentati in parallelo con altri contenuti, che non siano parte essenziale dell’attività, sono muniti di meccanismi per la messa in pausa, interruzione e nascondimento degli stessi.                                                                                                   |                           |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+
+| Req7 - Crisi epilettiche: non sviluppare contenuti che possano causare crisi epilettiche.                                                                                                                                                                                                                                                                                                                 | 7.1 – Lampeggiamenti                                                                             | Le pagine non contengono elementi che lampeggino più di tre volte al secondo.                                                                                                                                                                                                                                          |                           |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  | L’eventuale lampeggiamento rispetta le soglie indicate nelle WCAG 2.0                                                                                                                                                                                                                                                  |                           |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+
+| Req8 - Navigabile: fornire all'utente funzionalità di supporto per navigare, trovare contenuti e determinare la posizione nel sito e nelle pagine.                                                                                                                                                                                                                                                        | 8.1 – Salto di blocchi                                                                           | Sono fornite modalità per saltare blocchi di contenuto comuni a più pagine.                                                                                                                                                                                                                                            |                           |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           | 8.2 – Titolo della pagina                                                                        | Le pagine possiedono titoli (<title>) esplicativi che ne descrivano argomento e finalità.                                                                                                                                                                                                                              |                           |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           | 8.3 – Ordine del focus.3 –                                                                       | Gli oggetti ricevono il focus secondo un ordine che ne preservi il senso e l’operatività                                                                                                                                                                                                                               |                           |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           | 8.4 – Scopo del collegamento (nel contesto)                                                      | Scopi e testi dei collegamenti sono chiaramente comprensibili sia se estrapolati dal contesto sia se letti in sinergia con i contenuti circostanti.                                                                                                                                                                    |                           |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           | 8.5 – Differenti modalità                                                                        | Le pagine che non sono il risultato o la fase di un’azione sono identificate tramite diverse modalità                                                                                                                                                                                                                  |                           |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           | 8.6 – Titoli ed etichette                                                                        | I contenuti sono organizzati logicamente rispettandone il corretto ordine sequenziale gerarchico tramite l’uso appropriato di titoli (<H[x]>).                                                                                                                                                                         |                           |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           | 8.7 – Focus visibile                                                                             | Tutte le interfacce utente utilizzabili tramite tastiera possiedono funzioni che evidenzino chiaramente gli indicatori del focus (Active, Focus, Hover)                                                                                                                                                                |                           |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+
+| Req9 - Leggibile: rendere leggibile e comprensibile il contenuto testuale.                                                                                                                                                                                                                                                                                                                                | 9.1 – Lingua della pagina                                                                        | La lingua della pagina è definita tramite tecnologie compatibili con l’accessibilità                                                                                                                                                                                                                                   |                           |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           | 9.2 – Parti in lingua diversa da quella definita per la pagina                                   | Testi presentati in lingue diverse da quella indicata come principale sono correttamente definiti tramite gli attributi previsti dalle tecnologie compatibili con l’accessibilità.                                                                                                                                     |                           |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+
+| Req10 - Prevedibile: creare pagine web che appaiano e che si comportino in maniera prevedibile.                                                                                                                                                                                                                                                                                                           | 10.1 – Al focus                                                                                  | Non vengono avviati automaticamente cambiamenti di contesto quando un qualsiasi componente riceve il focus.                                                                                                                                                                                                            |                           |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           | 10.2 – All’input                                                                                 | I cambiamenti di contesto non sono automatici. In casi particolari in cui ciò non sia possibile l’utente è preventivamente avvisato.                                                                                                                                                                                   |                           |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           | 10.3 – Navigazione costante                                                                      | I meccanismi di navigazione ripetuti su più pagine sono sempre presentati allo stesso modo a meno che l’utente non avvii un cambiamento.                                                                                                                                                                               |                           |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           | 10.4 – Identificazione coerente                                                                  | I componenti che hanno stesse funzionalità sono identificati in modo uniforme.                                                                                                                                                                                                                                         |                           |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+
+| Req11 - Assistenza nell'inserimento di dati e informazioni: aiutare l'utente ad evitare gli errori ed agevolarlo nella loro correzione.                                                                                                                                                                                                                                                                   | 11.1 – Identificazione di errori                                                                 | Gli errori rilevati automaticamente in fase di inserimento sono identificati chiaramente e descritti in modo esaustivo tramite testo.                                                                                                                                                                                  |                           |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           | 11.2 – Etichette o istruzioni                                                                    | Sono fornite etichette o istruzioni per la corretta esecuzione di azioni/operazioni di input.                                                                                                                                                                                                                          |                           |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           | 11.3 – Suggerimenti per gli errori                                                               | Per errori che è possibile correggere senza che siano pregiudicati sicurezza e finalità del contenuto, sono forniti suggerimenti all’utente.                                                                                                                                                                           |                           |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           | 11.4 – Prevenzione degli errori (legali, finanziari, dati)                                       | Le pagine web che presentano funzionalità di gestione dati controllabili dall’utente, soddisfano almeno una delle seguenti condizioni (selezionare una delle seguenti opzioni):                                                                                                                                        |                           |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  | Reversibilità: le azioni/operazioni sono reversibili.                                                                                                                                                                                                                                                                  |                           |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  | Controllo: i dati inseriti dall'utente sono verificati ed è fornita la possibilità di correggere eventuali errori di inserimento.                                                                                                                                                                                      |                           |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  | Conferma: è disponibile una funzionalità per la revisione, conferma e correzione delle informazioni prima dell’invio definitivo.                                                                                                                                                                                       |                           |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+
+| Req12 - Compatibile: garantire la massima compatibilità con i programmi utente e con le tecnologie assistive.                                                                                                                                                                                                                                                                                             | 12.1 – Analisi sintattica: parsing                                                               | I linguaggi di marcatura sono utilizzati in modo conforme alle specifiche previste dalla grammatica formale di riferimento.                                                                                                                                                                                            |                           |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  | Le pagine analizzate tramite il Markup Validation Service (W3C) risultano valide.                                                                                                                                                                                                                                      |                           |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  | I fogli di stile analizzati tramite il CSS Validation Service (W3C) risultano validi.                                                                                                                                                                                                                                  |                           |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           | 12.2 – Name, Role, Value                                                                         | In tutti i componenti dell’interfaccia utente, name (descrizione) e role (scopo o funzionalità) sono definiti tramite tecnologie compatibili con l’accessibilità.                                                                                                                                                      |                           |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  | Stati proprietà e valori dei componenti dell’interfaccia possono essere impostati dall’utente; le notifiche sui cambi di stato di questi elementi sono rese disponibili ai programmi utente, tecnologie assistive incluse.                                                                                             |                           |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------+
 
 Ove l’amministrazione non consideri ugualmente importanti tutti i punti della checklist, potrà classificarli per priorità definendo opportuni pesi. Ad esempio, potrà stabilire che all’applicazione in esame non si applicano i requisiti 4 e 5, che il requisito 2 è il più importante e gli va assegnato un peso pari a 50, che al requisito 8 va assegnato un peso 10, che i restanti requisiti sono di pari rilevanza e a ciascuno di questi va assegnato un requisito pari a 5, come nella tabella seguente.
 
@@ -3638,7 +3639,7 @@ Ove, al termine dell’intervento, non venga raggiunta la soglia minima di 85, p
 In interventi per assicurare l’accessibilità di un insieme di applicazioni, iterando questo metodo si potrebbe quantificare, in termini di risultato e dunque di valore, l’intervento per ogni applicazione; in prospettiva, ciò consentirebbe di rapportare i risultati agli impegni erogati e definire dunque un modello di stima dei costi per successivi interventi dello stesso genere. Si rimanda al successivo paragrafo “conclusioni sulla manutenzione” per approfondimenti su questo punto.
 
 Caso 3: intervento sulla manutenibilità
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+'''''''''''''''''''''''''''''''''''''''
 
 Una P.A. richiede un intervento di manutenzione che, senza modificare, sviluppare o cancellare funzionalità, modifichi il codice sorgente di un’applicazione per aumentare la sua manutenibilità, ad esempio rendendolo più modulare.
 
@@ -3651,7 +3652,7 @@ Una volta scelta la metrica più opportuna, l’amministrazione potrà misurare 
 Giacché l’intervento aumenta una caratteristica di qualità dell’applicazione, e dunque il suo valore, esso potrà essere considerato come investimento, e contabilizzato di conseguenza come CAPEX.
 
 Manutenzione perfettiva: conclusioni
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+''''''''''''''''''''''''''''''''''''
 
 Si noti che nei tre casi presentati non sono stati forniti riferimenti di prezzo. Ciò perché al momento non esistono dati storici o studi condivisi che consentano di affermare, ad esempio, che per aumentare del 10% l’usabilità di un’applicazione si debba investire xxx euro.
 
@@ -3659,46 +3660,174 @@ In prospettiva, tuttavia, la proposta di costituire il repository di progetti pu
 
 AgID, per via del suo ruolo istituzionale e dei compiti che le vengono assegnati dal Piano Triennale, sembra il soggetto più indicato per gestire questo repository, di cui alcuni contenuti potrebbero essere fruibili in modalità open data anche alle aziende per meglio formulare le loro offerte alle procedure concorsuali pubbliche.
 
-.. [1]
-   È rappresentata la situazione al febbraio 2018.
+.. raw:: html
 
-.. [2]
-   Appalto Specifico.
+   <div class="section footnotes">
 
-.. [3]
-   L’art. 95 comma 10-bis del Codice degli appalti recita: “\ \ *La stazione appaltante, al fine di assicurare l’effettiva individuazione del miglior rapporto qualità/prezzo, valorizza gli elementi qualitativi dell’offerta e individua criteri tali da garantire un confronto concorrenziale effettivo sui profili tecnici. A tal fine la stazione appaltante stabilisce un tetto massimo per il punteggio economico entro il limite del 30 per cento*\ \ ” (disposizione introdotta dal D.Lgs. 56/2017 in vigore dal 20/5/2017); dunque al massimo il prezzo conta per il 30%.
+--------------
 
-.. [4]
-   Sostituito dalla dott.ssa Laura Tomassini come da comunicazione del Ministero della Giustizia del 1 febbraio 2018.
+#. 
 
-.. [5]
-   Sostituito a partire dal 12 giugno 2017 dal dott. Giampiero Mutinati, dietro richiesta della medesima società SQS.
+   .. raw:: html
 
-.. [6]
-   Roberto Meli rappresenta anche il punto di vista dell’associazione Assintel e dell'associazione SiFPA.
+      <div id="fn1">
 
-.. [7]
-   Nella presente guida tecnica, con “valore” di un software deve intendersi il valore di mercato del software stesso, non il suo valore in assoluto (che è un concetto diverso, legato ad altri parametri, ad esempio l’importanza che il software riveste per i propri utenti).
+   È rappresentata la situazione al febbraio 2018.\ `↩ <#fnref1>`__
 
-.. [8]
-   Tra i vari standard disponibili, si è scelto di porre particolare attenzione agli standard ISO, sia per la loro oggettiva rilevanza e diffusione non solo in ambito ICT, sia in omogeneità con le precedenti linee guida AgID (si ricorda che il presente lavoro si declina come aggiornamento delle linee guida pregresse).
+   .. raw:: html
 
-.. [9]
-   http://www.dpo.it/eqfp/
+      </div>
 
-.. [10]
-   Il documento è stato acquisito da AgID nell’ambito dell’istruttoria di un parere, reso ai sensi dell’art. 14bis del CAD, su una gara bandita da Consip per conto della RGS.
+#. 
 
-.. [11]
-   Con l’obiettivo, già citato, di migliorare la fruibilità del documento, tutti i termini sono stati tradotti in italiano. Tuttavia, per qualsiasi contenzioso fa fede la norma internazionale, che ufficialmente è in lingua inglese.
+   .. raw:: html
 
-.. [12]
-   Si fa qui riferimento al ciclo di vita tradizionale “waterfall” di un software. Le definizioni sono comunque applicabili, con opportune modifiche, ad altri cicli di vita (es. iterativo/incrementale).
+      <div id="fn2">
 
-.. [13]
-   In questa modellizzazione non si considerano le attività di esercizio di un’applicazione software (OPS) in quanto si ritengono di natura non progettuale ma di servizio.
+   Appalto Specifico.\ `↩ <#fnref2>`__
 
-.. [14]
+   .. raw:: html
+
+      </div>
+
+#. 
+
+   .. raw:: html
+
+      <div id="fn3">
+
+   L’art. 95 comma 10-bis del Codice degli appalti recita: “\ *La stazione appaltante, al fine di assicurare l’effettiva individuazione del miglior rapporto qualità/prezzo, valorizza gli elementi qualitativi dell’offerta e individua criteri tali da garantire un confronto concorrenziale effettivo sui profili tecnici. A tal fine la stazione appaltante stabilisce un tetto massimo per il punteggio economico entro il limite del 30 per cento*\ ” (disposizione introdotta dal `D.Lgs. 56/2017 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2017;56>`__ in vigore dal 20/5/2017); dunque al massimo il prezzo conta per il 30%.\ `↩ <#fnref3>`__
+
+   .. raw:: html
+
+      </div>
+
+#. 
+
+   .. raw:: html
+
+      <div id="fn4">
+
+   Sostituito dalla dott.ssa Laura Tomassini come da comunicazione del Ministero della Giustizia del 1 febbraio 2018.\ `↩ <#fnref4>`__
+
+   .. raw:: html
+
+      </div>
+
+#. 
+
+   .. raw:: html
+
+      <div id="fn5">
+
+   Sostituito a partire dal 12 giugno 2017 dal dott. Giampiero Mutinati, dietro richiesta della medesima società SQS.\ `↩ <#fnref5>`__
+
+   .. raw:: html
+
+      </div>
+
+#. 
+
+   .. raw:: html
+
+      <div id="fn6">
+
+   Roberto Meli rappresenta anche il punto di vista dell’associazione Assintel e dell'associazione SiFPA.\ `↩ <#fnref6>`__
+
+   .. raw:: html
+
+      </div>
+
+#. 
+
+   .. raw:: html
+
+      <div id="fn7">
+
+   Nella presente guida tecnica, con “valore” di un software deve intendersi il valore di mercato del software stesso, non il suo valore in assoluto (che è un concetto diverso, legato ad altri parametri, ad esempio l’importanza che il software riveste per i propri utenti).\ `↩ <#fnref7>`__
+
+   .. raw:: html
+
+      </div>
+
+#. 
+
+   .. raw:: html
+
+      <div id="fn8">
+
+   Tra i vari standard disponibili, si è scelto di porre particolare attenzione agli standard ISO, sia per la loro oggettiva rilevanza e diffusione non solo in ambito ICT, sia in omogeneità con le precedenti linee guida AgID (si ricorda che il presente lavoro si declina come aggiornamento delle linee guida pregresse).\ `↩ <#fnref8>`__
+
+   .. raw:: html
+
+      </div>
+
+#. 
+
+   .. raw:: html
+
+      <div id="fn9">
+
+   http://www.dpo.it/eqfp/\ `↩ <#fnref9>`__
+
+   .. raw:: html
+
+      </div>
+
+#. 
+
+   .. raw:: html
+
+      <div id="fn10">
+
+   Il documento è stato acquisito da AgID nell’ambito dell’istruttoria di un parere, reso ai sensi dell’art. 14bis del CAD, su una gara bandita da Consip per conto della RGS.\ `↩ <#fnref10>`__
+
+   .. raw:: html
+
+      </div>
+
+#. 
+
+   .. raw:: html
+
+      <div id="fn11">
+
+   Con l’obiettivo, già citato, di migliorare la fruibilità del documento, tutti i termini sono stati tradotti in italiano. Tuttavia, per qualsiasi contenzioso fa fede la norma internazionale, che ufficialmente è in lingua inglese.\ `↩ <#fnref11>`__
+
+   .. raw:: html
+
+      </div>
+
+#. 
+
+   .. raw:: html
+
+      <div id="fn12">
+
+   Si fa qui riferimento al ciclo di vita tradizionale “waterfall” di un software. Le definizioni sono comunque applicabili, con opportune modifiche, ad altri cicli di vita (es. iterativo/incrementale).\ `↩ <#fnref12>`__
+
+   .. raw:: html
+
+      </div>
+
+#. 
+
+   .. raw:: html
+
+      <div id="fn13">
+
+   In questa modellizzazione non si considerano le attività di esercizio di un’applicazione software (OPS) in quanto si ritengono di natura non progettuale ma di servizio.\ `↩ <#fnref13>`__
+
+   .. raw:: html
+
+      </div>
+
+#. 
+
+   .. raw:: html
+
+      <div id="fn14">
+
    Si ricordano gli standard ISO che descrivono come applicare le misure di dimensionamento funzionale, alla data attuale:
 
    ISO 20968: 2002 (MARK II, UK);
@@ -3711,62 +3840,165 @@ AgID, per via del suo ruolo istituzionale e dei compiti che le vengono assegnati
 
    ISO 19761: 2011 (COSMIC, Canada).
 
-   Gli standard ISO 14143-1, 2, 3, 4, 5, 6 forniscono dettagli sui concetti funzionali e regole di applicazione.
+   Gli standard ISO 14143-1, 2, 3, 4, 5, 6 forniscono dettagli sui concetti funzionali e regole di applicazione.\ `↩ <#fnref14>`__
 
-.. [15]
-   Per completezza d’informazione, si segnala che IFPUG non ha validato la correttezza e validità degli algoritmi proposti da OMG. Al fine di porre a verifica la replicabilità delle esperienze di OMG, AgID ritiene utile condurre, nel prossimo futuro, sperimentazioni su parchi applicativi della pubblica amministrazione italiana, rendendo poi pubblici i risultati.
+   .. raw:: html
 
-.. [16]
-   Come detto, tale norma è stata sostituita dalla ISO/IEC 25010:2011.
+      </div>
 
-.. [17]
-   In questo studio viene usato il termine “metrica”, ma le entità esaminate possono essere declinate anche come indicatori.
+#. 
 
-.. [18]
-   In realtà la norma ISO parla più genericamente di “sistema”. Nel contesto di questo studio, come già detto, si ritiene opportuno focalizzare sulla valutazione/misurazione di software applicativo.
+   .. raw:: html
 
-.. [19]
-   In realtà la norma ISO parla più genericamente di “sistema”. Nel contesto di questo studio, come già detto, ci si focalizza sulla valutazione/misurazione di software applicativo.
+      <div id="fn15">
 
-.. [20]
-   http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.140-2.pdf
+   Per completezza d’informazione, si segnala che IFPUG non ha validato la correttezza e validità degli algoritmi proposti da OMG. Al fine di porre a verifica la replicabilità delle esperienze di OMG, AgID ritiene utile condurre, nel prossimo futuro, sperimentazioni su parchi applicativi della pubblica amministrazione italiana, rendendo poi pubblici i risultati.\ `↩ <#fnref15>`__
 
-.. [21]
-   https://netforum.avectra.com/eweb/Shopping/Shopping.aspx?Site=ifpug&WebCode=Shopping&cart=0
+   .. raw:: html
 
-.. [22]
-   Si è qui deciso di mantenere la terminologia originaria CISQ, benché le definizioni CISQ siano mutuate dalle corrispondenti definizioni ISO 25010.
+      </div>
 
-.. [23]
-   Per maggiori dettagli su queste caratteristiche, si rinvia al sito `http://it-cisq.org/standards/ <http://it-cisq.org/standards/>`__
+#. 
 
-.. [24]
-   (1.200 \* 1,4 + 650 \* 2,2 + 1.720 \* 1,7 + 2.400 \* 3,6 + 880 \* 0,9) / 6850 = 2,26
+   .. raw:: html
 
-.. [25]
-   (1.200 \* 3,3 + 650 \* 2,6 + 1.720 \* 3 + 2.400 \* 3,9 + 880 \* 2) / 6850 = 3,20
+      <div id="fn16">
 
-.. [26]
-   Si è qui tradotto con “rilascio” il termine originario “delivery”. Tuttavia, nel contesto della P.A. italiana, il servizio di manutenzione parte dopo la messa in esercizio del software, che in genere prevede il superamento positivo di un collaudo e l’accettazione da parte del cliente. Tale precisazione vale per tutte le tipologie di manutenzione illustrate in questo paragrafo.
+   Come detto, tale norma è stata sostituita dalla ISO/IEC 25010:2011.\ `↩ <#fnref16>`__
+
+   .. raw:: html
+
+      </div>
+
+#. 
+
+   .. raw:: html
+
+      <div id="fn17">
+
+   In questo studio viene usato il termine “metrica”, ma le entità esaminate possono essere declinate anche come indicatori.\ `↩ <#fnref17>`__
+
+   .. raw:: html
+
+      </div>
+
+#. 
+
+   .. raw:: html
+
+      <div id="fn18">
+
+   In realtà la norma ISO parla più genericamente di “sistema”. Nel contesto di questo studio, come già detto, si ritiene opportuno focalizzare sulla valutazione/misurazione di software applicativo.\ `↩ <#fnref18>`__
+
+   .. raw:: html
+
+      </div>
+
+#. 
+
+   .. raw:: html
+
+      <div id="fn19">
+
+   In realtà la norma ISO parla più genericamente di “sistema”. Nel contesto di questo studio, come già detto, ci si focalizza sulla valutazione/misurazione di software applicativo.\ `↩ <#fnref19>`__
+
+   .. raw:: html
+
+      </div>
+
+#. 
+
+   .. raw:: html
+
+      <div id="fn20">
+
+   http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.140-2.pdf\ `↩ <#fnref20>`__
+
+   .. raw:: html
+
+      </div>
+
+#. 
+
+   .. raw:: html
+
+      <div id="fn21">
+
+   https://netforum.avectra.com/eweb/Shopping/Shopping.aspx?Site=ifpug&WebCode=Shopping&cart=0\ `↩ <#fnref21>`__
+
+   .. raw:: html
+
+      </div>
+
+#. 
+
+   .. raw:: html
+
+      <div id="fn22">
+
+   Si è qui deciso di mantenere la terminologia originaria CISQ, benché le definizioni CISQ siano mutuate dalle corrispondenti definizioni ISO 25010.\ `↩ <#fnref22>`__
+
+   .. raw:: html
+
+      </div>
+
+#. 
+
+   .. raw:: html
+
+      <div id="fn23">
+
+   Per maggiori dettagli su queste caratteristiche, si rinvia al sito http://it-cisq.org/standards/\ `↩ <#fnref23>`__
+
+   .. raw:: html
+
+      </div>
+
+#. 
+
+   .. raw:: html
+
+      <div id="fn24">
+
+   (1.200 \* 1,4 + 650 \* 2,2 + 1.720 \* 1,7 + 2.400 \* 3,6 + 880 \* 0,9) / 6850 = 2,26\ `↩ <#fnref24>`__
+
+   .. raw:: html
+
+      </div>
+
+#. 
+
+   .. raw:: html
+
+      <div id="fn25">
+
+   (1.200 \* 3,3 + 650 \* 2,6 + 1.720 \* 3 + 2.400 \* 3,9 + 880 \* 2) / 6850 = 3,20\ `↩ <#fnref25>`__
+
+   .. raw:: html
+
+      </div>
+
+#. 
+
+   .. raw:: html
+
+      <div id="fn26">
+
+   Si è qui tradotto con “rilascio” il termine originario “delivery”. Tuttavia, nel contesto della P.A. italiana, il servizio di manutenzione parte dopo la messa in esercizio del software, che in genere prevede il superamento positivo di un collaudo e l’accettazione da parte del cliente. Tale precisazione vale per tutte le tipologie di manutenzione illustrate in questo paragrafo.\ `↩ <#fnref26>`__
+
+   .. raw:: html
+
+      </div>
+
+.. raw:: html
+
+   </div>
 
 .. |image0| image:: media/media/image1.png
-   :width: 7.07986in
-   :height: 3.30417in
 .. |image1| image:: media/media/image2.png
-   :width: 4.44491in
-   :height: 3.14384in
 .. |image2| image:: media/media/image3.png
-   :width: 4.40651in
-   :height: 5.08835in
 .. |image3| image:: media/media/image4.png
-   :width: 6.24306in
-   :height: 1.65972in
 .. |image4| image:: media/media/image5.png
-   :width: 4.17532in
-   :height: 2.92379in
 .. |image5| image:: media/media/image6.png
-   :width: 4.53896in
-   :height: 2.48592in
 .. |image6| image:: media/media/image7.png
-   :width: 5.05195in
-   :height: 2.70194in
+

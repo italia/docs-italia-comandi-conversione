@@ -1,3 +1,225 @@
+cartadeldocente.istruzione.it
+-----------------------------
+
+**Servizio Web per verifica buono di spesa degli esercenti/ enti di formazione**
+
+Gli esercenti o gli enti di formazione registrati al servizio cartadeldocente.istruzione.it per la vendita online potranno validare nei propri sistemi i buoni di spesa di beni o servizi da parte dei docenti utilizzando un servizio web di cui si forniscono di seguito le specifiche di utilizzo.
+
+Il servizio web di **verifica del buono** da parte degli esercenti o degli enti di formazione rende disponibili 2 principali operazioni (“**Check**\ ” e “\ **Confirm**\ ”). La seguente descrizione delle operazioni è necessaria per valorizzare adeguatamente i campi di input. Pertanto le operazioni esposte dall’interfaccia wsdl possono essere descritte come segue:
+
+1. **Check**
+
++---------+------------------------------+------------------------------+
+| INPUT:  | tipo operazione              | *“1”, “2”*                   |
++=========+==============================+==============================+
+|         | codice buono                 |                              |
++---------+------------------------------+------------------------------+
+| OUTPUT: | nominativo beneficiario      | *CF o Nome e Cognome*        |
++---------+------------------------------+------------------------------+
+|         | partita IVA esercente ambito | *cinema, teatro, libreria…*  |
++---------+------------------------------+------------------------------+
+|         | bene                         | *libri, spettacoli…*         |
++---------+------------------------------+------------------------------+
+|         | importo                      | *importo totale del buono*   |
++---------+------------------------------+------------------------------+
+
+Se **tipo operazione** verrà valorizzato con **“1”**, il check del buono restituerà all’esercente i campi previsti in output senza consumare il buono e quindi senza scalare l’importo dal Portafoglio del beneficiario. Questa modalità di utilizzo dell’operazione non è obbligatoria, ma lascia all’esercente la possibilità di eseguire un controllo tra il nominativo del beneficiario e quello del suo cliente in sessione.
+
+Se **tipo operazione** verrà valorizzato con **“2”**, il check del buono consumerà direttamente l’importo, scalandolo dal Portafoglio del beneficiario, e restituerà comunque le informazioni previste in output. L’esercente potrà scegliere di usare direttamente questa modalità oppure effettuare due chiamate successive: la prima per il controllo del beneficiario e la seconda per l’effettivo utilizzo del buono.
+
+Il sequence diagram seguente descrive ad alto livello l’interazione tra i vari sistemi coinvolti, nei casi fin qui descritti:
+
+|image0|
+
+Per poter sbloccare il buono ed utilizzarne tutto l’importo o solo parte di esso, l’esercente dovrà invocare l’operazione di **Confirm** di seguito descritta.
+
+2. **Confirm**
+
+INPUT: tipo operazione *“1”*
+
+codice buono
+
+importo *importo confermato dall’esercente*
+
+OUTPUT: esito
+
+In questa versione del servizio il **tipo operazione** verrà valorizzato sempre con **“1”** e l’esercente o l’ ente di formazione potrà comunicare la quota utilizzata rispetto all’importo totale del buono, momentaneamente impegnato. Il sistema scalerà l’importo dal Portafoglio del beneficiario, riaccreditando la parte non utilizzata, calcolata come differenza tra il valore totale del buono e l’importo comunicato dall’esercente.
+
+L’\ **esito** dell’operazione (**“OK”** / **“KO”**) sarà restituito all’esercente o all’ ente di formazione che potrà eventualmente fornire un feedback al beneficiario.
+
+Modalità di autenticazione
+==========================
+
+Per consumare il web service di verifica del buono di spesa, ogni esercente o ente di formazione dovrà essere dotato di un **certificato di autenticazione** da installare nel proprio client del servizio e da utilizzare nella chiamata SOAP per effettuare l’autenticazione in modalità SSL con certificato client.
+
+Tale certificato X509 sarà generabile e scaricabile in formato .cer direttamente tramite l’applicazione web dedicata agli esercenti, in area autenticata. In particolare il processo di generazione del certificato prevede due step:
+
+1. Il primo step di richiesta del certificato; a seguito di questa operazione il sistema prende in carico la richiesta.
+2. Il secondo step di verifica esito della richiesta; questa operazione controlla se è pronto il certificato emesso da CA dedicata ed eventualmente lo rende disponibile per il download.
+
+Durante il primo step sarà necessario caricare un file .der rappresentante la richiesta di certificato alla CA dedicata al progetto. Tale csr deve presentare le seguenti caratteristiche:
+
+-  Algoritmo generazione chiavi: RSA
+-  Lunghezza chiavi: 2048 bit
+
+Una volta scaricato il certificato X509 va installato, insieme alla corrispondente chiave privata, nel client utilizzato per il servizio di verifica buono. Pertanto l’evento di download del certificato non può rappresentare la definitiva attivazione dell’esercente. E’ stato previsto uno step di attivazione, di tipo “Check” con i seguenti valori di input:
+
+-  tipo operazione = 1
+-  codice buono = 11aa22bb
+
+Questa operazione equivale ad una transazione di attivazione, il cui unico effetto è quello di portare l’esercente nello stato attivo. Da questo momento in poi i beneficiari potranno generare buoni reali per tale esercente.
+
+Endpoint del servizio
+
+Il servizio risponde ai seguenti endpoint `https://wstest.”cartadeldocente”.italia.it/VerificaVoucherWEB/Verifica <https://wstest./>`__\ Voucher (ambiente di prova) `https://ws.”cartadeldocente”.italia.it/VerificaVoucherWEB/VerificaVoucher <https://ws./>`__ (ambiente reale)
+
+Codici di errore
+================
+
+La seguente tabella rappresenta i possibili errori gestiti dal sistema:
+
++--------+-------------------------------------------------------------+
+| **Codi | **Descrizione/Description**                                 |
+| ce/Cod |                                                             |
+| e**    |                                                             |
++========+=============================================================+
+| 01     | Errore nel formato dei parametri in input, verificarli e    |
+|        | riprovare                                                   |
++--------+-------------------------------------------------------------+
+|        | Error in the input parameters, check and try again          |
++--------+-------------------------------------------------------------+
+| 02     | Il buono richiesto non è disponibile sul sistema o è già    |
+|        | stato riscosso o annullato                                  |
++--------+-------------------------------------------------------------+
+|        | The requested buono is not available on the system. It      |
+|        | could be already collected or canceled                      |
++--------+-------------------------------------------------------------+
+| 03     | Impossibile attivare l'esercente. Verificare che i dati     |
+|        | siano corretti e che l'esercente non sia già stato attivato |
++--------+-------------------------------------------------------------+
+|        | Impossible to activate the user. Please verify input        |
+|        | parameters and that the user has not been already           |
+|        | activated.                                                  |
++--------+-------------------------------------------------------------+
+| 04     | L'importo richiesto è superiore all'importo del buono       |
+|        | selezionato                                                 |
++--------+-------------------------------------------------------------+
+|        | The amount claimed is greater than the amount of the        |
+|        | selected buono                                              |
++--------+-------------------------------------------------------------+
+| 05     | Non si può verificare o consumare il buono poichè           |
+|        | l'esercente risulta non attivo                              |
++--------+-------------------------------------------------------------+
+|        | User inactive, buono impossible to verify.                  |
++--------+-------------------------------------------------------------+
+| 06     | Ambito e bene del buono non coincidono con ambiti e beni    |
+|        | trattati dall’esercente                                     |
++--------+-------------------------------------------------------------+
+|        | Category and type of this buono are not aligned with        |
+|        | category and type managed by the user.                      |
++--------+-------------------------------------------------------------+
+
+Esempi di request/response
+==========================
+
+Di seguito si riportano due esempi di request e relativa response, sia per l’operation “Check” che per l’operation “Confirm”.
+
+|image1|\ “Check”
+
+Check request:
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ver="http://bonus.miur.it/VerificaVoucher/">
+
+<soapenv:Header/>
+
+<soapenv:Body>
+
+<ver:CheckRequestObj>
+
+<checkReq>
+
+<tipoOperazione>1</tipoOperazione>
+
+<codiceVoucher>FRyVVKwx</codiceVoucher>
+
+</checkReq>
+
+</ver:CheckRequestObj>
+
+</soapenv:Body>
+
+</soapenv:Envelope> Check response:
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+
+<soapenv:Body>
+
+<a:CheckResponseObj xmlns:a="http://bonus.miur.it/VerificaVoucher/">
+
+<checkResp>
+
+<nominativoBeneficiario>AAABBB10X10X111D</nominativoBeneficiario>
+
+<partitaIvaEsercente>01043931003</partitaIvaEsercente>
+
+<ambito>Teatro</ambito>
+
+<bene>Biglietti</bene>
+
+<importo>40.5</importo>
+
+</checkResp>
+
+</a:CheckResponseObj>
+
+</soapenv:Body>
+
+|image2|\ </soapenv:Envelope> “Confirm”
+
+Confirm request:
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ver="http://bonus.miur.it/VerificaVoucher/">
+
+<soapenv:Header/>
+
+<soapenv:Body>
+
+<ver:ConfirmRequestObj>
+
+<checkReq>
+
+<tipoOperazione>1</tipoOperazione>
+
+<codiceVoucher>2a75f266</codiceVoucher>
+
+<importo>30.20</importo>
+
+</checkReq>
+
+</ver:ConfirmRequestObj>
+
+</soapenv:Body>
+
+</soapenv:Envelope> Confirm response:
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+
+<soapenv:Body>
+
+<a:ConfirmResponseObj xmlns:a="http://bonus.miur.it/VerificaVoucher/">
+
+<checkResp>
+
+<esito>OK</esito>
+
+</checkResp>
+
+</a:ConfirmResponseObj>
+
+</soapenv:Body>
+
+</soapenv:Envelope>
+
 WSDL VerificaVoucher.wsdl
 =========================
 
@@ -29,28 +251,28 @@ targetNamespace: http://bonus.miur.it/VerificaVoucher/
 
 Elements Complex types
 
-**CheckRequestObj Check CheckResponseObj CheckResponse ConfirmRequestObj
-Confirm ConfirmResponseObj ConfirmResponse**
+**CheckRequestObj Check CheckResponseObj CheckResponse ConfirmRequestObj Confirm ConfirmResponseObj ConfirmResponse**
 
 service **VerificaVoucher**
 
-+-----+-----------------------------------------------------------------+
-| dia | |image3|                                                        |
-| gra |                                                                 |
-|     |                                                                 |
-| m   |                                                                 |
-+=====+=================================================================+
-| por | **VerificaVoucherSOAP**                                         |
-| ts  |                                                                 |
-|     | binding **tns:VerificaVoucherSOAP**                             |
-|     |                                                                 |
-|     | extensibil <soap:address                                        |
-|     |                                                                 |
-|     | ity                                                             |
-|     | location="\ https://ws.cartadeldocente.istruzione.it/VerificaVo |
-|     | ucherDocWEB/V                                                   |
-|     | erificaVoucher"/>                                               |
-+-----+-----------------------------------------------------------------+
++----+-----------------------------------------------------------------+
+| di | |image3|                                                        |
+| ag |                                                                 |
+| ra |                                                                 |
+|    |                                                                 |
+| m  |                                                                 |
++====+=================================================================+
+| po | **VerificaVoucherSOAP**                                         |
+| rt |                                                                 |
+| s  | binding **tns:VerificaVoucherSOAP**                             |
+|    |                                                                 |
+|    | extensibil <soap:address                                        |
+|    |                                                                 |
+|    | ity                                                             |
+|    | location="\ https://ws.cartadeldocente.istruzione.it/VerificaVo |
+|    | ucherDocWEB/V                                                   |
+|    | erificaVoucher"/>                                               |
++----+-----------------------------------------------------------------+
 
 binding **VerificaVoucherSOAP**
 
@@ -735,84 +957,33 @@ element **ConfirmResponse/esito**
 |         | maxOccurs="1"/>                                            |
 +---------+------------------------------------------------------------+
 
+.. |image0| image:: media/media/image1.png
+.. |image1| image:: media/media/image2.png
+.. |image2| image:: media/media/image3.png
 .. |image3| image:: media/media/image4.png
-   :width: 4.88542in
-   :height: 0.59375in
 .. |image4| image:: media/media/image5.png
-   :width: 3.23958in
-   :height: 2.69792in
 .. |image5| image:: media/media/image6.png
-   :width: 3in
-   :height: 2.25in
 .. |image6| image:: media/media/image7.png
-   :width: 2.82292in
-   :height: 0.26042in
 .. |image7| image:: media/media/image8.png
-   :width: 3.1875in
-   :height: 1.41667in
 .. |image8| image:: media/media/image9.png
-   :width: 3in
-   :height: 0.26042in
 .. |image9| image:: media/media/image10.png
-   :width: 3.46875in
-   :height: 2.10417in
 .. |image10| image:: media/media/image11.png
-   :width: 2.92708in
-   :height: 0.26042in
 .. |image11| image:: media/media/image12.png
-   :width: 2.95833in
-   :height: 1.41667in
 .. |image12| image:: media/media/image13.png
-   :width: 3.10417in
-   :height: 0.26042in
 .. |image13| image:: media/media/image14.png
-   :width: 2.45833in
-   :height: 0.72917in
 .. |image14| image:: media/media/image15.png
-   :width: 2.72917in
-   :height: 0.94792in
 .. |image15| image:: media/media/image16.png
-   :width: 1.08333in
-   :height: 0.26042in
 .. |image16| image:: media/media/image17.png
-   :width: 1.07292in
-   :height: 0.26042in
 .. |image17| image:: media/media/image18.png
-   :width: 1.3125in
-   :height: 0.26042in
 .. |image18| image:: media/media/image19.png
-   :width: 3.52083in
-   :height: 1.63542in
 .. |image19| image:: media/media/image20.png
-   :width: 1.52083in
-   :height: 0.26042in
 .. |image20| image:: media/media/image21.png
-   :width: 1.3125in
-   :height: 0.26042in
 .. |image21| image:: media/media/image22.png
-   :width: 0.60417in
-   :height: 0.26042in
 .. |image22| image:: media/media/image23.png
-   :width: 0.58333in
-   :height: 0.26042in
 .. |image23| image:: media/media/image24.png
-   :width: 0.66667in
-   :height: 0.26042in
 .. |image24| image:: media/media/image25.png
-   :width: 2.60417in
-   :height: 0.94792in
 .. |image25| image:: media/media/image26.png
-   :width: 1.08333in
-   :height: 0.26042in
 .. |image26| image:: media/media/image27.png
-   :width: 1.07292in
-   :height: 0.26042in
 .. |image27| image:: media/media/image28.png
-   :width: 0.66667in
-   :height: 0.26042in
 .. |image28| image:: media/media/image29.png
-   :width: 2.54167in
-   :height: 0.27083in
 .. |image29| image:: media/media/image30.png
-   :width: 0.58333in
-   :height: 0.26042in

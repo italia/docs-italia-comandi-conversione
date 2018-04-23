@@ -18,7 +18,7 @@ Domande Frequenti esercenti o enti di formazione  BENI VENDIBILI E OPERAZIONI
 
 1. **Quali prodotti/servizi posso vendere con cartadeldocente.istruzione.it?**
 
-Se aderisci all’iniziativa Carta del Docente, puoi vendere esclusivamente i beni e i servizi, previsti dall’art.1, comma 121, della Legge 107/2015 (Buona Scuola) riconducibili ai seguenti ambiti:
+Se aderisci all’iniziativa Carta del Docente, puoi vendere esclusivamente i beni e i servizi, previsti dall’\ `art.1, comma 121, della Legge 107/2015 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2015;107~art1-com121>`__ (Buona Scuola) riconducibili ai seguenti ambiti:
 
 1. LIBRI E TESTI: libri e testi, anche in formato digitale, pubblicazioni e riviste comunque utili all'aggiornamento professionale;
 
@@ -30,7 +30,7 @@ Se aderisci all’iniziativa Carta del Docente, puoi vendere esclusivamente i be
 
    b. iscrizione a corsi di laurea, di laurea magistrale, specialistica o a ciclo unico, inerenti al profilo professionale, ovvero a corsi post lauream o a master universitari inerenti al profilo professionale;
 
-   c. iniziative coerenti con le attività individuate nell'ambito del piano triennale dell'offerta formativa delle scuole e del Piano nazionale di formazione, di cui articolo 1, comma 124, della legge n. 107 del 2015.
+   c. iniziative coerenti con le attività individuate nell'ambito del piano triennale dell'offerta formativa delle scuole e del Piano nazionale di formazione, di cui `articolo 1, comma 124, della legge n. 107 del 2015 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2015;107~art1-com124>`__.
 
 4. TEATRO: titoli di accesso per rappresentazioni teatrali;
 
@@ -40,7 +40,7 @@ Se aderisci all’iniziativa Carta del Docente, puoi vendere esclusivamente i be
 
 7. SPETTACOLI DAL VIVO: titoli per l’ingresso a spettacoli dal vivo;
 
-7) MUSEI: titoli per l’ingresso a musei
+7. MUSEI: titoli per l’ingresso a musei
 
 I servizi rientranti nell’ambito FORMAZIONE E AGGIORNAMENTO possono essere forniti ai docenti da qualunque ente di formazione /esercente?
 =========================================================================================================================================
@@ -66,8 +66,7 @@ stesso a regolare i rapporti con il cliente considerando che non potrai restitui
 
 6. **Se nel momento dell’acquisto effettuo uno sconto ad un docente che presenta un buono per un bene o servizio di importo superiore, come mi regolo? Posso restituirgli il resto in denaro?** No, non è consentito restituire denaro. Il docente dovrà creare un nuovo buono di importo pari a quello scontato.
 
-7. .. rubric:: Un docente può generare un buono di spesa per più di un ingresso a uno stesso spettacolo (teatrale, cinematografico…) in modo da entrare con altri amici/parenti etc.?
-      :name: un-docente-può-generare-un-buono-di-spesa-per-più-di-un-ingresso-a-uno-stesso-spettacolo-teatrale-cinematografico-in-modo-da-entrare-con-altri-amiciparenti-etc.
+7. **Un docente può generare un buono di spesa per più di un ingresso a uno stesso spettacolo (teatrale, cinematografico…) in modo da entrare con altri amici/parenti etc.?**
 
 No, il buono di spesa è nominale.
 
@@ -79,7 +78,7 @@ Sarai tu stesso a regolare i rapporti con il cliente considerando che non potrai
 Un insegnante di musica può utilizzare il bonus l’importo della Carta del Docente o parte di esso per l’acquisto di uno strumento musicale?
 ===========================================================================================================================================
 
-Si, purchè lo strumento musicale sia strettamente correlato alle iniziative individuate nell’ambito del piano triennale dell’offerta formativa e del piano nazionale di formazione di cui all’art.1 comma 121 della Legge n.107/2015. In questo caso infatti l’acquisto dello strumento è finalizzato a migliorare le competenze specifiche del docente in relazione all’indirizzo della scuola e rientra pertanto nelle finalità formative previste dalla norma.
+Si, purchè lo strumento musicale sia strettamente correlato alle iniziative individuate nell’ambito del piano triennale dell’offerta formativa e del piano nazionale di formazione di cui all’\ `art.1 comma 121 della Legge n.107/2015 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2015;107~art1-com121>`__. In questo caso infatti l’acquisto dello strumento è finalizzato a migliorare le competenze specifiche del docente in relazione all’indirizzo della scuola e rientra pertanto nelle finalità formative previste dalla norma.
 
 Domande Frequenti Esercenti o enti di formazione  REGISTRAZIONE E VISIBILITA’
 ==============================================================================
@@ -114,8 +113,7 @@ In sede di registrazione al servizio cartadeldocente\ **.**\ istruzione.it puoi 
 
 4. **La mia azienda ha più punti negozio, devo fare la registrazione per ognuno di essi?** Per la geo-localizzazione di tutti i punti negozio da parte dei docenti occorre inserire nell’applicazione i dati dei singoli esercizi commerciali.
 
-5. .. rubric:: Quali enti di formazione possono registrarsi?
-      :name: quali-enti-di-formazione-possono-registrarsi
+5. **Quali enti di formazione possono registrarsi?**
 
 Gli enti di formazione qualificati/accreditati per la formazione docente ai sensi della Direttiva 170/2016 sono stati censiti dal Ministero dell’istruzione, dell’università e della ricerca e caricati a sistema, pertanto gli enti non censiti non potranno registrarsi all’applicazione.
 
@@ -142,7 +140,7 @@ Certamente! Più l’iniziativa sarà resa visibile migliore sarà il servizio e
 Esiste del materiale con cui posso utilizzare per pubblicizzare l’iniziativa sul mio sito web o nel mio punto negozio?
 ======================================================================================================================
 
-Scarica il kit all’indirizzo `https://cartadeldocente.istruzione.it/kitesercente/kitesercente.zip <https://cartadeldocente.istruzione.it/kitesercente/kitesercente.zip>`__.
+Scarica il kit all’indirizzo https://cartadeldocente.istruzione.it/kitesercente/kitesercente.zip.
 
 Lo zip contiene la locandina in formato PDF pronta da stampare per l'affissione e in formato EPS per l'utilizzo editoriale. Stampa a colori delle locandine su foglio bianco formato A4, posizionando la locandina rivolta verso l'esterno del negozio.
 
@@ -202,8 +200,7 @@ Per partecipare a questa iniziativa è necessario avere una connessione internet
 
 4. **Il sistema non risponde, si è bloccato: posso inserire in seguito i dati del buono di spesa?** No, non è consentito. Il buono deve essere validato contestualmente all’acquisto per evitare comportamenti scorretti nel suo utilizzo.
 
-5. .. rubric:: L’applicazione esercenti funziona con qualsiasi sistema operativo?
-      :name: lapplicazione-esercenti-funziona-con-qualsiasi-sistema-operativo
+5. **L’applicazione esercenti funziona con qualsiasi sistema operativo?**
 
 Si! È sufficiente una connessione a internet e tramite il tuo computer o tablet potrai accedere al sistema. Potresti entrare in cartadeldocente.istruzione.it anche attraverso il tuo smartphone, ma il sistema non è ancora ottimizzato per quel formato, per cui ti consigliamo di utilizzare i dispositivi comodi per la visualizzazione.
 
@@ -239,7 +236,7 @@ Per il pagamento dei buoni di spesa autorizzati devi emettere fattura elettronic
 
 I campi da valorizzare sono riportati nel documento “fatturaelettronica.pdf” in corso di definizione.
 
-La fattura dovrà essere inviata direttamente o tramite un intermediario secondo le modalità riportate nel seguente link: `http://www.fatturapa.gov.it/export/fatturazione/it/c-13.htm <http://www.fatturapa.gov.it/export/fatturazione/it/c-13.htm>`__
+La fattura dovrà essere inviata direttamente o tramite un intermediario secondo le modalità riportate nel seguente link: http://www.fatturapa.gov.it/export/fatturazione/it/c-13.htm
 
 L’applicazione cartadeldocente.istruzione.it fornirà una lista dei buoni autorizzati (con l’evidenza del codice di riferimento) che potranno essere oggetto di fatturazione.
 
@@ -264,7 +261,7 @@ Sì, puoi aderire all’iniziativa. Per l’emissione della fattura elettronica 
 Cosa devo fare per utilizzare la piattaforma fatturapa ai fini dell’invio della fattura elettronica?
 ====================================================================================================
 
-Devi svolgere le operazioni riportate nel link: `http://www.fatturapa.gov.it/export/fatturazione/it/c-1.htm <http://www.fatturapa.gov.it/export/fatturazione/it/c-1.htm>`__
+Devi svolgere le operazioni riportate nel link: http://www.fatturapa.gov.it/export/fatturazione/it/c-1.htm
 
 In caso di fattura non accettata dal Sistema di Interscambio cosa devo fare?
 ============================================================================
@@ -289,7 +286,7 @@ La fattura non produce reddito e non rientra nel volume d’affari pertanto non 
 La fattura emessa nei confronti della PA è imponibile ai fini IVA?
 ==================================================================
 
-No; la fattura è emessa per regolare la movimentazione finanziaria e quindi per un’operazione al di fuori del campo di applicazione dell’Iva ai sensi dell’art. 2, terzo comma, del DPR 633/72
+No; la fattura è emessa per regolare la movimentazione finanziaria e quindi per un’operazione al di fuori del campo di applicazione dell’Iva ai sensi dell’\ `art. 2, terzo comma, del DPR 633/72 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1972;633~art2-com3>`__
 
 La fattura emessa dovrà essere registrata contabilmente?
 ========================================================
@@ -322,8 +319,7 @@ Le fatture emesse devono riportare il valore dei singoli buoni di spesa accettat
 
 16. **Cosa devo fare se non ricevo il rimborso dopo aver generato e inviato le fatture elettroniche?** Devi contattare CONSAP ai seguenti recapiti dedicati all’iniziativa: telefono: 06-85796874 / `email: cartadeldocente@consap.it <mailto:cartadeldocente@consap.it>`__
 
-17. .. rubric:: Ho un tetto massimo di fatturazione sui singoli beni/servizi venduti? C’è una tetto massimo totale di fatturazione che non posso superare?
-       :name: ho-un-tetto-massimo-di-fatturazione-sui-singoli-beniservizi-venduti-cè-una-tetto-massimo-totale-di-fatturazione-che-non-posso-superare
+17. **Ho un tetto massimo di fatturazione sui singoli beni/servizi venduti? C’è una tetto massimo totale di fatturazione che non posso superare?**
 
 Non è previsto un tetto massimo per la fatturazione.
 
