@@ -5,7 +5,11 @@ Questi script eseguono pandoc usando alcune opzioni da riga di comando ed alcuni
 
 ### Opzioni
 
-Pandoc viene eseguito con le opzioni `--wrap none` in modo da evitare errori di sintassi dovuti a tabelle con contenuti complessi come per esempio codice con linee molto lunghe. Inoltre viene applicata l'opzione `--extract-media media` in modo che le immagini contenute nel documento vengano salvate nella cartella `media`.
+Pandoc viene eseguito con le seguenti opzioni:
+
+- `--wrap none` in modo da evitare errori di sintassi dovuti a tabelle con contenuti complessi come per esempio codice con linee molto lunghe
+- `--extract-media media` in modo che le immagini contenute nel documento vengano salvate nella cartella `media`.
+- `--standalone` serve per mostrare anche i metadati come autore, titolo, etcetera
 
 ### Filtri
 
