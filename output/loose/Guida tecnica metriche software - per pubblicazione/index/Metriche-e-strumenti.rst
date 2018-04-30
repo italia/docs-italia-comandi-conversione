@@ -31,7 +31,7 @@ Si può però suggerire, nell’ambito della pubblica amministrazione e non solo
 Misure funzionali
 ~~~~~~~~~~~~~~~~~
 
-Per quanto riguarda le misure dei FUR (requisiti funzionali dei prodotti software), il Tavolo di lavoro ha convenuto che i Punti Funzione rappresentano tuttora una metrica valida. Nonostante le criticità nell’uso che sono state citate al §1.4, non appare ragionevole proporne l’abbandono o la sostituzione, anche sulla scorta dell’attuale ampio utilizzo in gare e contratti, e dei grandi investimenti effettuati dalle pubbliche amministrazioni in formazione sul tema. Si ritiene semmai che vada raccomandato e verificato un uso corretto della metrica nei vari contesti possibili:sup:14\ `#fn14 <#fn14>`__.
+Per quanto riguarda le misure dei FUR (requisiti funzionali dei prodotti software), il Tavolo di lavoro ha convenuto che i Punti Funzione rappresentano tuttora una metrica valida. Nonostante le criticità nell’uso che sono state citate al §1.4, non appare ragionevole proporne l’abbandono o la sostituzione, anche sulla scorta dell’attuale ampio utilizzo in gare e contratti, e dei grandi investimenti effettuati dalle pubbliche amministrazioni in formazione sul tema. Si ritiene semmai che vada raccomandato e verificato un uso corretto della metrica nei vari contesti possibili\ `14 <#fn14>`__.
 
 In estrema sintesi, i PF misurano le dimensioni del software quantificando le funzionalità in esso contenute e visibili dall’utente.
 
@@ -60,7 +60,7 @@ OMG dichiara che:
 
 -  l’uso di strumenti che implementano la tecnica AFP permette, in specifici casi, di abbattere il costo d’adozione di metriche funzionali;
 -  è possibile l’utilizzo di questa tecnica a valle della realizzazione di software applicativi, per un controllo di congruenza del numero delle funzionalità rilasciate rispetto a quanto stimato manualmente ex ante sulla base delle specifiche (per esempi pratici si rimanda al capitolo 6);
--  la tecnica è già stata utilizzata in numerosi progetti; i risultati si sono dimostrati coerenti con i conteggi manuali IFPUG, con valori all’interno della tolleranza prevista da IFPUG stesso (±10%):sup:15`#fn15 <#fn15>`__.
+-  la tecnica è già stata utilizzata in numerosi progetti; i risultati si sono dimostrati coerenti con i conteggi manuali IFPUG, con valori all’interno della tolleranza prevista da IFPUG stesso (±10%)`15 <#fn15>`__.
 
 Misure non funzionali
 ~~~~~~~~~~~~~~~~~~~~~
@@ -72,7 +72,7 @@ La norma ISO 25023
 
 La norma ISO 25023 (ISO/IEC 25023:2016 Systems and software engineering - Measurement of system and software product quality) propone circa 80 metriche, che coprono tutte le sottocaratteristiche definite dalla ISO 25010 (ISO/IEC 25010:2011 Systems and software engineering - System and software quality models).
 
-Si osserva, peraltro, che l’uso di concetti derivanti dalle norme ISO non è una novità. Già nelle precedenti linee guida emesse da questa agenzia (allora CNIPA) si suggeriva l’impiego di metriche e indicatori derivati dalla norma in vigore all’epoca (ISO 9126:2001 Software engineering — Product quality:sup:16\ `#fn16 <#fn16>`__). La differenza sostanziale è che le precedenti linee guida suggerivano tali metriche e indicatori come base per definire SLA contrattuali. Oggi invece si vuole affermare che queste metriche concorrono a misurare il “valore”:
+Si osserva, peraltro, che l’uso di concetti derivanti dalle norme ISO non è una novità. Già nelle precedenti linee guida emesse da questa agenzia (allora CNIPA) si suggeriva l’impiego di metriche e indicatori derivati dalla norma in vigore all’epoca (ISO 9126:2001 Software engineering — Product quality\ `16 <#fn16>`__). La differenza sostanziale è che le precedenti linee guida suggerivano tali metriche e indicatori come base per definire SLA contrattuali. Oggi invece si vuole affermare che queste metriche concorrono a misurare il “valore”:
 
 -  di un nuovo software commissionato da una P.A. a un fornitore;
 -  di interventi di manutenzione migliorativa (ottimizzazione) su un software già esistente;
@@ -91,12 +91,12 @@ La ISO 25010 individua, nell’ambito della caratteristica di qualità “presta
 -  Consumo di risorse;
 -  Capacità.
 
-Per ciascuna di queste sottocaratteristiche, la ISO 25023 propone alcune metriche:sup:17\ `#fn17 <#fn17>`__, che vengono illustrate nei paragrafi che seguono, fornendo per ciascuna di esse indicazioni e suggerimenti d’uso nel contesto del Tavolo di lavoro (vale a dire, analisi e valutazione quantitativa di applicazioni software considerate in termini di prodotto).
+Per ciascuna di queste sottocaratteristiche, la ISO 25023 propone alcune metriche\ `17 <#fn17>`__, che vengono illustrate nei paragrafi che seguono, fornendo per ciascuna di esse indicazioni e suggerimenti d’uso nel contesto del Tavolo di lavoro (vale a dire, analisi e valutazione quantitativa di applicazioni software considerate in termini di prodotto).
 
 Metriche per “tempi di risposta”
 ''''''''''''''''''''''''''''''''
 
-Per la prima delle tre sottocaratteristiche, la ISO 25023 propone 5 metriche, pensate per misurare i tempi di elaborazione di un software:sup:18\ `#fn18 <#fn18>`__ nell’erogazione delle sue funzioni.
+Per la prima delle tre sottocaratteristiche, la ISO 25023 propone 5 metriche, pensate per misurare i tempi di elaborazione di un software\ `18 <#fn18>`__ nell’erogazione delle sue funzioni.
 
 Tabella 12: metriche per tempi di risposta
 
@@ -332,7 +332,7 @@ Per ciascuna di queste sottocaratteristiche, la ISO 25023 propone alcune metrich
 Metriche per “appropriatezza - riconoscibilità”
 '''''''''''''''''''''''''''''''''''''''''''''''
 
-Per la prima delle cinque sottocaratteristiche, la ISO 25023 propone 3 metriche, pensate per misurare quanto un software:sup:19\ `#fn19 <#fn19>`__ appare intuitivo all’utente, nel senso che mostra all’utente come deve essere usato per raggiungere l’obiettivo.
+Per la prima delle cinque sottocaratteristiche, la ISO 25023 propone 3 metriche, pensate per misurare quanto un software\ `19 <#fn19>`__ appare intuitivo all’utente, nel senso che mostra all’utente come deve essere usato per raggiungere l’obiettivo.
 
 Tabella 15: metriche per appropriatezza - riconoscibilità
 
@@ -1021,7 +1021,7 @@ Tabella 25: metriche per riservatezza
 
 *Note*
 
-*Riservatezza* in informatica significa gestire la sicurezza in modo tale da mitigare i rischi connessi all’accesso o all’uso delle informazioni in forma non autorizzata. Le metriche per garantire la riservatezza proposte dalla ISO 25023 puntano sulla necessità di utilizzare sistemi di cifratura e algoritmi crittografi efficaci (la ISO cita ad esempio quelli previsti dallo standard americano `FIPS 140-2 <http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.140-2.pdf>`__:sup:20`#fn20 <#fn20>`__).
+*Riservatezza* in informatica significa gestire la sicurezza in modo tale da mitigare i rischi connessi all’accesso o all’uso delle informazioni in forma non autorizzata. Le metriche per garantire la riservatezza proposte dalla ISO 25023 puntano sulla necessità di utilizzare sistemi di cifratura e algoritmi crittografi efficaci (la ISO cita ad esempio quelli previsti dallo standard americano `FIPS 140-2 <http://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.140-2.pdf>`__\ `20 <#fn20>`__).
 
 In Italia, i riferimenti per la sicurezza sono gli standard ISO/IEC IS-15408 (Common Criteria) e i criteri europei ITSEC (Information Technology Security Evaluation Criteria) e ITSEM (Information Technology Security Evaluation. Manual). Ne consegue che ha senso ricorrere a tale metrica per misurare in che percentuale gli algoritmi crittografici implementati sono conformi ai livelli di garanzia della valutazione di sicurezza basata sui Common Criteria variabili da un minimo di EAL1 (Evaluation Assurance Level 1) a un massimo di EAL7.
 
@@ -1867,7 +1867,7 @@ Il metodo di conteggio SNAP prevede i seguenti passi:
 2. per ciascuna sotto-categoria si identificano gli SCU;
 3. per ogni SCU si contano gli SNAP Point, in base a regole tabellari presenti nel manuale e secondo una formula finale che dipende anche dal tipo di progetto. In particolare, e in analogia al conteggio dei PF, nei progetti di sviluppo si possono conteggiare solo SNAP Point di tipo ADD, mentre nei progetti di manutenzione evolutiva si possono conteggiare SNAP Point di tipo ADD, CHG e DEL.
 
-Sul sito dell’IFPUG:sup:21\ `#fn21 <#fn21>`__ è disponibile gratuitamente uno strumento basato su excel che può aiutare nell’applicare il metodo di conteggio su descritto.
+Sul sito dell’IFPUG\ `21 <#fn21>`__ è disponibile gratuitamente uno strumento basato su excel che può aiutare nell’applicare il metodo di conteggio su descritto.
 
 SNAP: pro e contro
 ^^^^^^^^^^^^^^^^^^
@@ -1887,12 +1887,12 @@ CISQ-OMG
 
 Il CISQ è un organismo fondato dall’OMG. Il suo scopo è sviluppare, in collaborazione con le maggiori organizzazioni ICT mondiali, standard internazionali per la misurazione automatica, a partire dai sorgenti, della dimensione funzionale e non-funzionale del software, nonché dei fattori di rischio derivanti dalla struttura degli applicativi.
 
-Le caratteristiche non funzionali di un software che CISQ propone di misurare sono:sup:22\ `#fn22 <#fn22>`__:
+Le caratteristiche non funzionali di un software che CISQ propone di misurare sono\ `22 <#fn22>`__:
 
 -  reliability;
 -  performance efficiency;
 -  security;
--  maintainability:sup:23\ `#fn23 <#fn23>`__.
+-  maintainability\ `23 <#fn23>`__.
 
 In estrema sintesi, CISQ-OMG propone metriche e metodologie di misura basate sulla verifica del rispetto di alcune regole (buone pratiche architetturali, di codifica e disegno), adatte a essere rilevate tramite analisi statica, definita anche analisi strutturale, del software applicativo in tutte le sue componenti (codice sorgente, database, ecc.). In termini ISO 25010, si riferiscono alla qualità interna del software in esame.
 

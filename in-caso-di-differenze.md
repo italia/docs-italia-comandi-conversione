@@ -6,7 +6,7 @@ eseguire questo comando:
 
     stack exec --resolver lts-10.10 -- pandoc --version
 
-Questi documenti sono stati tradotti con la versione 2.1.4 di pandoc,
+Questi documenti sono stati tradotti con la versione 2.2 di pandoc,
 quindi una versione differente potrebbe provocare risultati
 differenti. Se la tua versione è precedente prova ad aggiornarla, se è
 successiva apri una issue su questo repo così che possiamo investigare

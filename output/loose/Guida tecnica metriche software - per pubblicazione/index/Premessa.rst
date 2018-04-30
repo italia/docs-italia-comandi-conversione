@@ -419,7 +419,7 @@ Per il suo ruolo, AgID ha visibilità dei contratti della pubblica amministrazio
 Strumenti Consip a disposizione
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Per acquisire servizi di sviluppo e manutenzione applicativa le amministrazioni possono ricorrere ai seguenti strumenti Consip:sup:1\ `#fn1 <#fn1>`__;
+Per acquisire servizi di sviluppo e manutenzione applicativa le amministrazioni possono ricorrere ai seguenti strumenti Consip\ `1 <#fn1>`__;
 
 -  contratti SPC Cloud lotto 3 e lotto 4 (attivati tra l’aprile e l’agosto 2017);
 -  contratti-quadro per l’affidamento di servizi in ambito Sistemi Gestionali Integrati (5 lotti, aggiudicati nell’agosto 2017);
@@ -429,7 +429,7 @@ Risulta, al momento, in fase di esame delle offerte la gara per il nuovo accordo
 
 Sono peraltro previsti, in questa nuova iniziativa, alcuni elementi di flessibilità. Si riporta ad esempio un passaggio dal capitolo 6 dell’allegato 5 al capitolato tecnico:
 
-“\ *Le Amministrazioni che dispongono di metodologie standardizzate e linee guida consolidate per una più precisa e controllata determinazione dell’effort possono modificare le regole cautelative sopra esposte. (…) A livello di Accordo Quadro vengono, pertanto, identificate le sole metriche di base e i fattori che ne determinano la misura, lasciando all'Amministrazione la facoltà di declinare in AS*:sup:2`#fn2 <#fn2>`__ *tali fattori*\ ”.
+“\ *Le Amministrazioni che dispongono di metodologie standardizzate e linee guida consolidate per una più precisa e controllata determinazione dell’effort possono modificare le regole cautelative sopra esposte. (…) A livello di Accordo Quadro vengono, pertanto, identificate le sole metriche di base e i fattori che ne determinano la misura, lasciando all'Amministrazione la facoltà di declinare in AS*\ `2 <#fn2>`__ *tali fattori*\ ”.
 
 Infine, si segnala che le amministrazioni pubbliche possono reperire sul MEPA, con il bando “Servizi Professionali”, competenze per supportarle nei progetti di sviluppo e manutenzione di software applicativo.
 
@@ -444,7 +444,7 @@ c. Mancanza di strumenti e meccanismi contrattuali per garantire la qualità di 
 
 Con riferimento alle forniture di sviluppo software, l’unica metrica di prodotto al momento sufficientemente diffusa (i Punti Funzione) misura solo le funzionalità di un’applicazione; le dimensioni non funzionali (usabilità, prestazioni, manutenibilità, sicurezza, ecc.) sono fuori dal perimetro di applicazione dei PF. Ciò comporta che interventi su applicazioni finalizzati, ad esempio, ad aumentare l’usabilità, non vengono a oggi remunerati sulla base del risultato, perché non ci sono metriche di prodotto condivise adatte a misurare l’intervento. Tali attività vengono invece remunerate a corpo o a giorni persona.
 
-d. Eccessiva enfasi al prezzo. Negli ultimi anni si sono riscontrati, in gare per sviluppo applicativo, ribassi rilevanti rispetto alla base d’asta, a dispetto delle modalità di aggiudicazione (criterio dell’offerta economicamente più vantaggiosa) e del maggior peso assegnato alla qualità dell’offerta:sup:3\ `#fn3 <#fn3>`__.
+d. Eccessiva enfasi al prezzo. Negli ultimi anni si sono riscontrati, in gare per sviluppo applicativo, ribassi rilevanti rispetto alla base d’asta, a dispetto delle modalità di aggiudicazione (criterio dell’offerta economicamente più vantaggiosa) e del maggior peso assegnato alla qualità dell’offerta\ `3 <#fn3>`__.
 
 Ciò è senz’altro dipeso dalle condizioni competitive del mercato ICT. Tuttavia si possono avanzare altre spiegazioni. Ad esempio si riscontrano gare in cui il punteggio tecnico non viene assegnato in base a criteri oggettivi ma prendendo atto di dichiarazioni del fornitore. In questi casi tutte le offerte tecniche tendono a ottenere il massimo del punteggio (in quanto i concorrenti dichiarano massima qualità), con la conseguenza che torna a essere determinante, per vincere la gara, il ribasso rispetto alla base d’asta.
 

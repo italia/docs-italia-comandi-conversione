@@ -25,7 +25,7 @@ valorizzare la sezione “Contatti” all’interno della fattura elettronica, i
 
 L’esercente ha inoltre la possibilità di verificare, sull’applicazione 18APP, i buoni liquidati.
 
-Attraverso l’applicazione web raggiungibile dal sito `http://18app.consap.it <http://18app.consap.it/>`__ sarà possibile consultare lo stato di avanzamento delle fatture inviate così distinto:
+Attraverso l’applicazione web raggiungibile dal sito http://18app.consap.it/\ http://18app.consap.it sarà possibile consultare lo stato di avanzamento delle fatture inviate così distinto:
 
 -  Accettate: fatture correttamente importate nel sistema, già liquidate o prossime alla liquidazione.
 -  In elaborazione: fatture in fase di controllo.
@@ -231,7 +231,7 @@ Appendice 1 - Codici dei Regimi fiscali
 
 Si riporta nel seguito un esempio di fattura elettronica in formato XML conforme allo standard di fatturazione elettronica e alle linee guida specifiche fornite per l’iniziativa 18APP.
 
-<ns2:FatturaElettronica versione='FPA12' `xmlns:ns2='http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2'> <http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2%27>`__
+<ns2:FatturaElettronica versione='FPA12' `xmlns:ns2=' <http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2%27>`__\ http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2'>
 
 <FatturaElettronicaHeader>
 

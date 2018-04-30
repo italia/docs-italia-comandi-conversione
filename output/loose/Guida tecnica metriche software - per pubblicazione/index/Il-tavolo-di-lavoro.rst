@@ -6,19 +6,19 @@ Il presente documento è stato redatto dal Tavolo di lavoro dell’Agenzia per l
 Hanno fatto parte del Tavolo di lavoro anche i seguenti esperti esterni, nominati nella medesima determinazione n. 165 e selezionati tra quanti avevano presentato la propria candidatura a seguito dell’avviso pubblicato dall’Agenzia sul proprio sito web il 4 maggio 2017:
 
 -  Ivana Beni, Almaviva;
--  Giulio Borsari, Ministero della Giustizia:sup:4\ `#fn4 <#fn4>`__;
+-  Giulio Borsari, Ministero della Giustizia\ `4 <#fn4>`__;
 -  Luigi Buglione, GUFPI-ISMA;
 -  Michele Canalini, Consip;
 -  Marco Caprio, Agenzia delle Entrate;
 -  Carlo Contavalli, Digital Team (PCM);
 -  Iginia De Fent, Insiel;
 -  Sergio Di Martino, Università degli Studi di Napoli;
--  Gianluca Ferri:sup:5\ `#fn5 <#fn5>`__, SQS;
+-  Gianluca Ferri\ `5 <#fn5>`__, SQS;
 -  Marco Geraci, CAST;
 -  Vittorio Goletti, FID;
 -  Gianfranco Lanza, CSI Piemonte;
 -  Gabriele Massarelli, Consip;
--  Roberto Meli, DPO:sup:6\ `#fn6 <#fn6>`__;
+-  Roberto Meli, DPO\ `6 <#fn6>`__;
 -  Antonio Messina, Agenzia delle Entrate;
 -  Domenico Natale, UNINFO;
 -  Simone Piunno, Digital Team (PCM);
@@ -2310,8 +2310,8 @@ Sulla base delle risultanze di cui sopra e delle esperienze maturate nel settore
 
 a. Occorre delimitare con attenzione il perimetro dello studio. Nello specifico, il Tavolo sceglie di occuparsi delle metriche di prodotto, escludendo quindi le metriche di processo e di servizio. Ciò non significa che queste ultime vengano reputate poco importanti: semplicemente, nell’economia dei lavori ci si concentrerà sulle metriche di prodotto, delegando l’approfondimento delle altre a successive iniziative.
 b. Allo stesso modo, si limita il perimetro dello studio al software applicativo realizzato ad hoc, benché alcune delle considerazioni espresse possano riguardare anche prodotti di mercato venduti a licenza d’uso.
-c. Tenuto conto dei precedenti due punti, le metriche su cui il Tavolo di lavoro concentra il suo esame devono consentire di quantificare le caratteristiche di un software e dunque il suo “valore”:sup:7\ `#fn7 <#fn7>`__ come bene dell’amministrazione che lo ha commissionato e/o lo detiene.
-d. Sono d’interesse per il Tavolo metriche diffuse, se possibile conformi a standard:sup:8\ `#fn8 <#fn8>`__ riconosciuti, comprensibili all’utente e non solo alle figure tecniche, adeguate al modo di operare della pubblica amministrazione e alla normativa in vigore, che non richiedano investimenti eccessivi per la loro applicazione.
+c. Tenuto conto dei precedenti due punti, le metriche su cui il Tavolo di lavoro concentra il suo esame devono consentire di quantificare le caratteristiche di un software e dunque il suo “valore”\ `7 <#fn7>`__ come bene dell’amministrazione che lo ha commissionato e/o lo detiene.
+d. Sono d’interesse per il Tavolo metriche diffuse, se possibile conformi a standard\ `8 <#fn8>`__ riconosciuti, comprensibili all’utente e non solo alle figure tecniche, adeguate al modo di operare della pubblica amministrazione e alla normativa in vigore, che non richiedano investimenti eccessivi per la loro applicazione.
 e. Sono d’interesse per il Tavolo metriche facilmente fruibili e semplici da utilizzare, come già rappresentato al §1.5. In altre parole, sono d’interesse metriche che si prestino a un uso flessibile, applicabile a contesti d’uso tra loro assai diversi e scalabile, cioè adattabile ad acquisizioni di piccola e grande rilevanza.
 f. Sono d’interesse metriche da utilizzare:
 
@@ -2365,7 +2365,7 @@ Ogni livello di misurazione tiene conto delle informazioni disponibili nelle var
 
 Il documento prescrive che le misure richieste all’accettazione di nuovi sviluppi e manutenzioni evolutive siano di livello “dettagliate”. Per obiettivi di controllo si usano invece misure di livello “approfondito”. Per entrambi i livelli si prevede il metodo di misurazione IFPUG 4.3.1.
 
-In fasi iniziali possono essere richieste al fornitore misure (o meglio “stime”) di livello “approssimato” o “grezzo”. Il livello “grezzo” è considerato accettabile per la prima valorizzazione richiesta al fornitore. Per le stime si prevede l’impiego del metodo Early & Quick Function Point (`E&QFP <https://www.researchgate.net/profile/Roberto_Meli/publication/258210227_EQFP_R_Early_Quick_Function_Points_for_IFPUG_method/links/02e7e5273e601b76d9000000/E-QFP-R-Early-Quick-Function-Points-for-IFPUG-method.pdf>`__):sup:9\ `#fn9 <#fn9>`__. Per il livello “grezzo” è anche possibile l’uso del metodo Simple Function Point, brevemente descritto al successivo §4.2.
+In fasi iniziali possono essere richieste al fornitore misure (o meglio “stime”) di livello “approssimato” o “grezzo”. Il livello “grezzo” è considerato accettabile per la prima valorizzazione richiesta al fornitore. Per le stime si prevede l’impiego del metodo Early & Quick Function Point (`E&QFP <https://www.researchgate.net/profile/Roberto_Meli/publication/258210227_EQFP_R_Early_Quick_Function_Points_for_IFPUG_method/links/02e7e5273e601b76d9000000/E-QFP-R-Early-Quick-Function-Points-for-IFPUG-method.pdf>`__)\ `9 <#fn9>`__. Per il livello “grezzo” è anche possibile l’uso del metodo Simple Function Point, brevemente descritto al successivo §4.2.
 
 Un concetto interessante presente in questo documento è la distinzione tra “misura funzionale” (in UFP) del software e “misura funzionale contrattuale” (MFC) dello stesso. Mentre la prima misura deriva dall’applicazione del metodo dei Punti Funzione IFPUG, la seconda misura tiene conto dei tre fattori seguenti:
 
@@ -2384,7 +2384,7 @@ Riguardo all’ultimo fattore (CR), il documento stabilisce le seguenti regole d
 
 Per passare dalla misura funzionale in UFP alla MFC, il documento di Lombardia Informatica propone la formula:
 
-**MFC = Σ:sub:`i\` (UFP x SAC:sub:`riuso\` x SAC:sub:`replica\` x SAC:sub:`CR`):sub:`i\`**
+**MFC = Σi (UFP x SACriuso x SACreplica x SACCR)i**
 
 Dove:
 
@@ -2407,7 +2407,7 @@ Riassumendo, Lombardia Informatica usa misure e stime delle caratteristiche funz
 Esempio 2: l’approccio Sogei per l’usabilità
 ''''''''''''''''''''''''''''''''''''''''''''
 
-Tra il materiale preso in esame, il Tavolo di lavoro ha analizzato il documento Sogei “Linee guida per l’accessibilità e l’usabilità di siti ed applicazioni web” (DA-00-WE-01 26 novembre 2013):sup:10\ `#fn10 <#fn10>`__, che ha l’obiettivo di fissare indicazioni e soglie minime accettabili che fornitori e sviluppatori sono tenuti a rispettare per rendere accessibili, ai sensi della normativa vigente, informazioni e servizi resi disponibili mediante siti, applicazioni web nonché prodotti a scaffale.
+Tra il materiale preso in esame, il Tavolo di lavoro ha analizzato il documento Sogei “Linee guida per l’accessibilità e l’usabilità di siti ed applicazioni web” (DA-00-WE-01 26 novembre 2013)\ `10 <#fn10>`__, che ha l’obiettivo di fissare indicazioni e soglie minime accettabili che fornitori e sviluppatori sono tenuti a rispettare per rendere accessibili, ai sensi della normativa vigente, informazioni e servizi resi disponibili mediante siti, applicazioni web nonché prodotti a scaffale.
 
 Nel documento sono richiamati i 12 requisiti di accessibilità stabiliti dalla normativa; per ciascuno di essi sono fornite indicazioni tecniche per la corretta applicazione e verifica/test degli stessi.
 

@@ -71,7 +71,7 @@ Questa operazione equivale ad una transazione di attivazione, il cui unico effet
 
 Endpoint del servizio
 
-Il servizio risponde ai seguenti endpoint `https://wstest.”cartadeldocente”.italia.it/VerificaVoucherWEB/Verifica <https://wstest./>`__\ Voucher (ambiente di prova) `https://ws.”cartadeldocente”.italia.it/VerificaVoucherWEB/VerificaVoucher <https://ws./>`__ (ambiente reale)
+Il servizio risponde ai seguenti endpoint https://wstest./\ https://wstest.”cartadeldocente”.italia.it/VerificaVoucherWEB/VerificaVoucher (ambiente di prova) https://ws./\ https://ws.”cartadeldocente”.italia.it/VerificaVoucherWEB/VerificaVoucher (ambiente reale)
 
 Codici di errore
 ================

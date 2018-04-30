@@ -75,6 +75,6 @@ Per gestire correttamente le domande di accesso generalizzato presentate, nonch�
 
 In vista di questo utilizzo, si possono ipotizzare tre possibili scenari o situazioni di partenza:
 
--  *scenario I*: amministrazione dotata di un sistema che gestisce, oltre alla registrazione di protocollo, anche la gestione di fascicoli procedimentali con un profilo di metadati estendibile e configurabile, con o senza un motore di *workflow* di ausilio alla esecuzione automatica delle attività previste dalle procedure\ *;*:sup:1`#fn1 <#fn1>`__
+-  *scenario I*: amministrazione dotata di un sistema che gestisce, oltre alla registrazione di protocollo, anche la gestione di fascicoli procedimentali con un profilo di metadati estendibile e configurabile, con o senza un motore di *workflow* di ausilio alla esecuzione automatica delle attività previste dalle procedure\ *;*\ `1 <#fn1>`__
 -  *scenario II*: amministrazione dotata di sistemi di protocollo che, pur non disponendo di funzionalità per configurare il profilo esteso di fascicoli procedimentali, offrano almeno la possibilità di definire un profilo di metadati esteso per le classi documentali;
 -  *scenario III*: amministrazione dotata di un sistema che realizzi la sola funzionalità minima di registrazione di protocollo.

@@ -12,11 +12,11 @@ Per ottenere il pagamento dei buoni validati, l’esercente deve provvedere a em
 
 **Nota Bene**
 
--  ****Le fatture così emesse non hanno rilevanza ai fini fiscali** – essendo l’evento fiscale già regolato mediante il biglietto o la ricevuta fiscale emessa dall’esercente all’atto dell’accettazione del buono – ma servono unicamente a consentire il riscontro dei buoni validati prima di procedere al loro pagamento.**
+-  **Le fatture così emesse non hanno rilevanza ai fini fiscali – essendo l’evento fiscale già regolato mediante il biglietto o la ricevuta fiscale emessa dall’esercente all’atto dell’accettazione del buono – ma servono unicamente a consentire il riscontro dei buoni validati prima di procedere al loro pagamento.**
 
 -  A tal proposito si comunica che **non è necessario l’assolvimento dell’imposta di bollo.**
 
--  **Al fine di limitare la possibilità di incorrere in errore in fase di caricamento ed invio della fattura si consiglia di utilizzare il portale web per la fatturazione elettronica disponibile gratuitamente all’indirizzo: http://ivaservizi.agenziaentrate.gov.it/**
+-  **Al fine di limitare la possibilità di incorrere in errore in fase di caricamento ed invio della fattura si consiglia di utilizzare il portale web per la fatturazione elettronica disponibile gratuitamente all’indirizzo:**\ http://ivaservizi.agenziaentrate.gov.it/
 
 Per accedere a questa funzionalità è necessario autenticarsi utilizzando **credenziali Entratel/Fisconline** oppure una **Carta Nazionale Servizi (CNS)** precedentemente abilitata ai servizi telematici dell’Agenzia delle Entrate o **SPID**.
 
@@ -235,7 +235,7 @@ valorizzare la sezione “Contatti” all’interno della fattura elettronica, i
 
 L’esercente ha inoltre la possibilità di verificare, sull’applicazione 18APP, i buoni liquidati.
 
-Attraverso l’applicazione web raggiungibile dal sito `http://18app.consap.it <http://18app.consap.it/>`__ sarà possibile consultare lo stato di avanzamento delle fatture inviate così distinto:
+Attraverso l’applicazione web raggiungibile dal sito ` <http://18app.consap.it/>`__\ http://18app.consap.it sarà possibile consultare lo stato di avanzamento delle fatture inviate così distinto:
 
 -  Accettate: fatture correttamente importate nel sistema, già liquidate o prossime alla liquidazione.
 
@@ -301,7 +301,7 @@ Appendice 1 - Codici dei Regimi fiscali
 
 Si riporta nel seguito un esempio di fattura elettronica in formato XML conforme allo standard di fatturazione elettronica e alle linee guida specifiche fornite per l’iniziativa 18APP.
 
-<ns2:FatturaElettronica versione='FPA12' `xmlns:ns2='http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2'> <http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2%27>`__
+<ns2:FatturaElettronica versione='FPA12' `xmlns:ns2=' <http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2%27>`__\ http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2'>
 
 <FatturaElettronicaHeader>
 

@@ -72,7 +72,7 @@ Requisiti di qualità
 
 I requisiti di qualità sono il sottoinsieme dei NFR (Non Functional Requirement) che descrivono le caratteristiche di qualità del prodotto software da sviluppare o mantenere.
 
-Per la definizione di “caratteristiche di qualità del prodotto software” si rimanda alla norma ISO/IEC 25010, che identifica gli elementi riportati nella tabella che segue:sup:11\ `#fn11 <#fn11>`__.
+Per la definizione di “caratteristiche di qualità del prodotto software” si rimanda alla norma ISO/IEC 25010, che identifica gli elementi riportati nella tabella che segue\ `11 <#fn11>`__.
 
 Tabella 8 - Caratteristiche e sottocaratteristiche di qualità ISO/IEC 25010
 
@@ -533,7 +533,7 @@ Nella definizione ISO/IEC/IEEE 24765:2017 Systems and software engineering-Vocab
 
 Con riferimento alla classificazione del paragrafo precedente, si possono distinguere:
 
--  metriche interne (statiche, o strutturali): utili per misurare le proprietà statiche e intrinseche del software (qualità interna); si applicano alle specifiche o al codice sorgente (tecniche di analisi statica, ispezione diretta), alla documentazione e ai grafi di flusso di controllo; queste metriche sono usate durante le fasi:sup:12\ `#fn12 <#fn12>`__ di Analisi, Design e Codifica, sempre dal punto di vista degli sviluppatori, non considerano il comportamento in fase di esecuzione, ma solo gli attributi statici e strutturali;
+-  metriche interne (statiche, o strutturali): utili per misurare le proprietà statiche e intrinseche del software (qualità interna); si applicano alle specifiche o al codice sorgente (tecniche di analisi statica, ispezione diretta), alla documentazione e ai grafi di flusso di controllo; queste metriche sono usate durante le fasi\ `12 <#fn12>`__ di Analisi, Design e Codifica, sempre dal punto di vista degli sviluppatori, non considerano il comportamento in fase di esecuzione, ma solo gli attributi statici e strutturali;
 -  metriche esterne (dinamiche, o operative): misurano il comportamento dinamico del software, osservandolo in fase di esecuzione, nell’ambiente, reale o simulato, di utilizzo (qualità esterna); vengono impiegate a partire dalla fase di progettazione di dettaglio in poi, da parte di sviluppatori e/o utenti; i risultati di tali misurazioni sono influenzate dal livello di qualità interna raggiunto;
 -  metriche in uso: misurano il grado di qualità percepita dall’utente finale, nello specifico contesto d’uso previsto per il prodotto; si fissa uno specifico scenario d’uso e si osserva l’effetto dell’esecuzione del prodotto sull’utente. Si ribadisce che la qualità in uso rappresenta l’effetto combinato di più caratteristiche di qualità interna ed esterna. Le metriche in uso sono impiegabili solo al momento del rilascio del prodotto, nell’ambiente reale di messa in esercizio.
 
@@ -542,7 +542,7 @@ Per fornire un esempio pratico di tale classificazione, si consideri la caratter
 Dimensioni del prodotto software
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-La figura che segue illustra nella forma di un diagramma E-R le relazioni che, nel presente studio, si identificano tra le entità “prodotto software”, “progetto” (generalizzazione di “progetto di sviluppo” e “progetto di manutenzione”:sup:13\ `#fn13 <#fn13>`__) e i loro attributi.
+La figura che segue illustra nella forma di un diagramma E-R le relazioni che, nel presente studio, si identificano tra le entità “prodotto software”, “progetto” (generalizzazione di “progetto di sviluppo” e “progetto di manutenzione”\ `13 <#fn13>`__) e i loro attributi.
 
 Sulla dimensione di un prodotto software influiscono i requisiti funzionali e non funzionali del prodotto stesso. A sua volta, la dimensione ha impatto sul valore di mercato del prodotto software. I requisiti e vincoli di progetto influiscono sull’impegno di progetto. A sua volta, quest’ultimo determina (in massima parte) il costo del progetto stesso.
 

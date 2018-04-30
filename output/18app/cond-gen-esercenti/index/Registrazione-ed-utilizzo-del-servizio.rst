@@ -1,7 +1,7 @@
 Registrazione ed utilizzo del servizio
 ======================================
 
-Per partecipare all’iniziativa ed essere inserito nell’elenco degli esercizi commerciali presso i quali i buoni di cui al punto precedente possono essere utilizzati, l’esercente deve registrarsi al presente servizio utilizzando le credenziali, già in suo possesso, fornite dall’Agenzie delle Entrate, seguendo le istruzioni riportate qui: [`https://assistenza.agenziaentrate.gov.it/assistenza/index.asp?idFolder=471&idServ=1 <https://assistenza.agenziaentrate.gov.it/assistenza/index.asp?idFolder=471&amp;amp%3BidServ=1>`__]
+Per partecipare all’iniziativa ed essere inserito nell’elenco degli esercizi commerciali presso i quali i buoni di cui al punto precedente possono essere utilizzati, l’esercente deve registrarsi al presente servizio utilizzando le credenziali, già in suo possesso, fornite dall’Agenzie delle Entrate, seguendo le istruzioni riportate qui: [https://assistenza.agenziaentrate.gov.it/assistenza/index.asp?idFolder=471&amp;amp%3BidServ=1\ https://assistenza.agenziaentrate.gov.it/assistenza/index.asp?idFolder=471&idServ=1]
 
 .
 

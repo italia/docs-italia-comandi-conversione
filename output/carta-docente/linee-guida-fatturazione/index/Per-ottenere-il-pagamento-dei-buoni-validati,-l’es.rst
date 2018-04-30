@@ -3,7 +3,7 @@ Per ottenere il pagamento dei buoni validati, l’esercente deve provvedere a em
 
 **Nota Bene**
 
--  \*\ **\*Le fatture così emesse non hanno rilevanza ai fini fiscali** – essendo l’evento fiscale già regolato mediante il biglietto o la ricevuta fiscale emessa dall’esercente all’atto dell’accettazione del buono – ma servono unicamente a consentire il riscontro dei buoni validati prima di procedere al loro pagamento.*\*
+-  **Le fatture così emesse non hanno rilevanza ai fini fiscali – essendo l’evento fiscale già regolato mediante il biglietto o la ricevuta fiscale emessa dall’esercente all’atto dell’accettazione del buono – ma servono unicamente a consentire il riscontro dei buoni validati prima di procedere al loro pagamento.**
 -  A tal proposito si comunica che **non è necessario l’assolvimento dell’imposta di bollo.**
 -  **Al fine di limitare la possibilità di errore in fase di caricamento ed invio della fattura si consiglia di utilizzare il portale web per la fatturazione elettronica disponibile gratuitamente all’indirizzo:**
 
