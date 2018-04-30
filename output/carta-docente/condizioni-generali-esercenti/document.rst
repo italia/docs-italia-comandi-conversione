@@ -10,7 +10,7 @@ Eventuali questioni relative alla liquidazione delle somme dovute agli esercenti
 Registrazione ed utilizzo del servizio
 ======================================
 
-Per partecipare all’iniziativa Carta del Docente ed essere inserito nell’elenco degli esercizi commerciali o nell’elenco degli enti di formazione, accreditati/qualificati ai sensi della Direttiva 170/2016, presso i quali i buoni di spesa di cui al punto precedente possono essere utilizzati, l’esercente o l’ente di formazione deve registrarsi al presente servizio utilizzando le credenziali, già in suo possesso, fornite dall’Agenzie delle Entrate, seguendo le istruzioni riportate qui: ` <https://assistenza.agenziaentrate.gov.it/assistenza/index.asp?idFolder=471&amp;idServ=1>`__\ https://assistenza.agenziaentrate.gov.it/assistenza/index.asp?idFolder=471&idServ=1
+Per partecipare all’iniziativa Carta del Docente ed essere inserito nell’elenco degli esercizi commerciali o nell’elenco degli enti di formazione, accreditati/qualificati ai sensi della Direttiva 170/2016, presso i quali i buoni di spesa di cui al punto precedente possono essere utilizzati, l’esercente o l’ente di formazione deve registrarsi al presente servizio utilizzando le credenziali, già in suo possesso, fornite dall’Agenzie delle Entrate, seguendo le istruzioni riportate qui: `https://assistenza.agenziaentrate.gov.it/assistenza/index.asp?idFolder=471&idServ=1 <https://assistenza.agenziaentrate.gov.it/assistenza/index.asp?idFolder=471&amp;idServ=1>`__
 
 L’esercente o l’ente di formazione prende atto ed accetta che il servizio lo identificherà, riconoscendogli accesso alle funzionalità di verifica, incasso e richiesta di liquidazione dei buono attraverso le citate credenziali e che, pertanto, chiunque entrasse fraudolentemente in possesso delle stesse potrà essere abilitato all’utilizzo del servizio medesimo al suo posto.
 
@@ -59,7 +59,7 @@ I fornitori di Identità SPID garantiscono i livelli di servizio come riportato 
 
 -  SIELTE S.p.A. - Sielte ID (pagina 27) http://www.sielteid.it/documents/ManualeOperativo.pdf
 
--  TI Trust Technologies S.r.l. - TIM ID (pagina 16) ` <http://www.agid.gov.it/sites/default/files/spidprin.tt_.somo15000.00-manuale-operativo-del-servizio-tim-id.pdf>`__\ http://www.agid.gov.it/sites/default/files/spidprin.tt_.somo15000.00-manuale- `operativo-del-servizio-tim-id.pdf <http://www.agid.gov.it/sites/default/files/spidprin.tt_.somo15000.00-manuale-operativo-del-servizio-tim-id.pdf>`__
+-  TI Trust Technologies S.r.l. - TIM ID (pagina 16) `http://www.agid.gov.it/sites/default/files/spidprin.tt_.somo15000.00-manuale- <http://www.agid.gov.it/sites/default/files/spidprin.tt_.somo15000.00-manuale-operativo-del-servizio-tim-id.pdf>`__ `operativo-del-servizio-tim-id.pdf <http://www.agid.gov.it/sites/default/files/spidprin.tt_.somo15000.00-manuale-operativo-del-servizio-tim-id.pdf>`__
 
 Privacy
 =======

@@ -532,83 +532,83 @@ LINEE GUIDA PER ESERCENTI PAG. 16 DI 26
 
 binding **VerificaVoucherSOAP**
 
-+---------------+------------------------------------------------------------------------------------------------------------------------------------+
-| diagram       | |image4|                                                                                                                           |
-+===============+====================================================================================================================================+
-| type          | `tns:VerificaVoucher <#_bookmark3>`__                                                                                              |
-+---------------+------------------------------------------------------------------------------------------------------------------------------------+
-| extensibility | <soap:binding style="document" transport=\ `" <http://schemas.xmlsoap.org/soap/http>`__\ http://schemas.xmlsoap.org/soap/http"/>   |
-+---------------+------------------------------------------------------------------------------------------------------------------------------------+
-| operations    | **Check**                                                                                                                          |
-|               |                                                                                                                                    |
-|               | extensibility <soap:operation                                                                                                      |
-|               |                                                                                                                                    |
-|               | soapAction="\ http://bonus.mibact.it/VerificaVoucher/Check%22/>                                                                    |
-|               |                                                                                                                                    |
-|               | input <soap:body use="literal"/>                                                                                                   |
-|               |                                                                                                                                    |
-|               | output <soap:body use="literal"/>                                                                                                  |
-|               |                                                                                                                                    |
-|               | **Confirm**                                                                                                                        |
-|               |                                                                                                                                    |
-|               | extensibility <soap:operation                                                                                                      |
-|               |                                                                                                                                    |
-|               | soapAction="\ http://bonus.mibact.it/VerificaVoucher/Confirm%22/>                                                                  |
-|               |                                                                                                                                    |
-|               | input <soap:body use="literal"/>                                                                                                   |
-|               |                                                                                                                                    |
-|               | output <soap:body use="literal"/>                                                                                                  |
-+---------------+------------------------------------------------------------------------------------------------------------------------------------+
-| used by       | Port `VerificaVoucherSOAP <#_bookmark1>`__ in Service `VerificaVoucher <#_bookmark0>`__                                            |
-+---------------+------------------------------------------------------------------------------------------------------------------------------------+
-| source        | <wsdl:binding name="VerificaVoucherSOAP" type="tns:VerificaVoucher">                                                               |
-|               |                                                                                                                                    |
-|               | <soap:binding style="document" transport=\ `" <http://schemas.xmlsoap.org/soap/http>`__\ http://schemas.xmlsoap.org/soap/http"/>   |
-|               |                                                                                                                                    |
-|               | <wsdl:operation name="Check">                                                                                                      |
-|               |                                                                                                                                    |
-|               | <soap:operation soapAction=\ `" <http://bonus.mibact.it/VerificaVoucher/Check>`__\ http://bonus.mibact.it/VerificaVoucher/Check"/> |
-|               |                                                                                                                                    |
-|               | <wsdl:input>                                                                                                                       |
-|               |                                                                                                                                    |
-|               | <soap:body use="literal"/>                                                                                                         |
-+---------------+------------------------------------------------------------------------------------------------------------------------------------+
++---------------+----------------------------------------------------------------------------------------------------------------------------------+
+| diagram       | |image4|                                                                                                                         |
++===============+==================================================================================================================================+
+| type          | `tns:VerificaVoucher <#_bookmark3>`__                                                                                            |
++---------------+----------------------------------------------------------------------------------------------------------------------------------+
+| extensibility | <soap:binding style="document" transport=\ `"http://schemas.xmlsoap.org/soap/http <http://schemas.xmlsoap.org/soap/http>`__"/>   |
++---------------+----------------------------------------------------------------------------------------------------------------------------------+
+| operations    | **Check**                                                                                                                        |
+|               |                                                                                                                                  |
+|               | extensibility <soap:operation                                                                                                    |
+|               |                                                                                                                                  |
+|               | soapAction="\ http://bonus.mibact.it/VerificaVoucher/Check%22/>                                                                  |
+|               |                                                                                                                                  |
+|               | input <soap:body use="literal"/>                                                                                                 |
+|               |                                                                                                                                  |
+|               | output <soap:body use="literal"/>                                                                                                |
+|               |                                                                                                                                  |
+|               | **Confirm**                                                                                                                      |
+|               |                                                                                                                                  |
+|               | extensibility <soap:operation                                                                                                    |
+|               |                                                                                                                                  |
+|               | soapAction="\ http://bonus.mibact.it/VerificaVoucher/Confirm%22/>                                                                |
+|               |                                                                                                                                  |
+|               | input <soap:body use="literal"/>                                                                                                 |
+|               |                                                                                                                                  |
+|               | output <soap:body use="literal"/>                                                                                                |
++---------------+----------------------------------------------------------------------------------------------------------------------------------+
+| used by       | Port `VerificaVoucherSOAP <#_bookmark1>`__ in Service `VerificaVoucher <#_bookmark0>`__                                          |
++---------------+----------------------------------------------------------------------------------------------------------------------------------+
+| source        | <wsdl:binding name="VerificaVoucherSOAP" type="tns:VerificaVoucher">                                                             |
+|               |                                                                                                                                  |
+|               | <soap:binding style="document" transport=\ `"http://schemas.xmlsoap.org/soap/http <http://schemas.xmlsoap.org/soap/http>`__"/>   |
+|               |                                                                                                                                  |
+|               | <wsdl:operation name="Check">                                                                                                    |
+|               |                                                                                                                                  |
+|               | <soap:operation soapAction=\ `"http://bonus.mibact.it/VerificaVoucher/Check <http://bonus.mibact.it/VerificaVoucher/Check>`__"/> |
+|               |                                                                                                                                  |
+|               | <wsdl:input>                                                                                                                     |
+|               |                                                                                                                                  |
+|               | <soap:body use="literal"/>                                                                                                       |
++---------------+----------------------------------------------------------------------------------------------------------------------------------+
 
 APPLICAZIONE 18APP ALLEGATO
 
 LINEE GUIDA PER ESERCENTI PAG. 17 DI 26
 
-+--+----------------------------------------------------------------------------------------------------------------------------------------+
-|  | </wsdl:input>                                                                                                                          |
-|  |                                                                                                                                        |
-|  | <wsdl:output>                                                                                                                          |
-|  |                                                                                                                                        |
-|  | <soap:body use="literal"/>                                                                                                             |
-|  |                                                                                                                                        |
-|  | </wsdl:output>                                                                                                                         |
-|  |                                                                                                                                        |
-|  | </wsdl:operation>                                                                                                                      |
-|  |                                                                                                                                        |
-|  | <wsdl:operation name="Confirm">                                                                                                        |
-|  |                                                                                                                                        |
-|  | <soap:operation soapAction=\ `" <http://bonus.mibact.it/VerificaVoucher/Confirm>`__\ http://bonus.mibact.it/VerificaVoucher/Confirm"/> |
-|  |                                                                                                                                        |
-|  | <wsdl:input>                                                                                                                           |
-|  |                                                                                                                                        |
-|  | <soap:body use="literal"/>                                                                                                             |
-|  |                                                                                                                                        |
-|  | </wsdl:input>                                                                                                                          |
-|  |                                                                                                                                        |
-|  | <wsdl:output>                                                                                                                          |
-|  |                                                                                                                                        |
-|  | <soap:body use="literal"/>                                                                                                             |
-|  |                                                                                                                                        |
-|  | </wsdl:output>                                                                                                                         |
-|  |                                                                                                                                        |
-|  | </wsdl:operation>                                                                                                                      |
-|  |                                                                                                                                        |
-|  | </wsdl:binding>                                                                                                                        |
-+--+----------------------------------------------------------------------------------------------------------------------------------------+
++--+--------------------------------------------------------------------------------------------------------------------------------------+
+|  | </wsdl:input>                                                                                                                        |
+|  |                                                                                                                                      |
+|  | <wsdl:output>                                                                                                                        |
+|  |                                                                                                                                      |
+|  | <soap:body use="literal"/>                                                                                                           |
+|  |                                                                                                                                      |
+|  | </wsdl:output>                                                                                                                       |
+|  |                                                                                                                                      |
+|  | </wsdl:operation>                                                                                                                    |
+|  |                                                                                                                                      |
+|  | <wsdl:operation name="Confirm">                                                                                                      |
+|  |                                                                                                                                      |
+|  | <soap:operation soapAction=\ `"http://bonus.mibact.it/VerificaVoucher/Confirm <http://bonus.mibact.it/VerificaVoucher/Confirm>`__"/> |
+|  |                                                                                                                                      |
+|  | <wsdl:input>                                                                                                                         |
+|  |                                                                                                                                      |
+|  | <soap:body use="literal"/>                                                                                                           |
+|  |                                                                                                                                      |
+|  | </wsdl:input>                                                                                                                        |
+|  |                                                                                                                                      |
+|  | <wsdl:output>                                                                                                                        |
+|  |                                                                                                                                      |
+|  | <soap:body use="literal"/>                                                                                                           |
+|  |                                                                                                                                      |
+|  | </wsdl:output>                                                                                                                       |
+|  |                                                                                                                                      |
+|  | </wsdl:operation>                                                                                                                    |
+|  |                                                                                                                                      |
+|  | </wsdl:binding>                                                                                                                      |
++--+--------------------------------------------------------------------------------------------------------------------------------------+
 
 porttype **VerificaVoucher**
 

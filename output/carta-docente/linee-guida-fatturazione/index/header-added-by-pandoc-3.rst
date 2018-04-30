@@ -23,7 +23,7 @@ A seguito della verifica effettuata da Consap, l’esercente riceve dalla Piatta
 
 L’esercente ha inoltre la possibilità di verificare, sull’applicazione Carta del Docente, i buoni liquidati.
 
-Attraverso l’applicazione web raggiungibile dal sito https://cartadocente.consap.it/\ https://cartadocente.consap.it sarà possibile consultare lo stato di avanzamento delle fatture inviate così distinto:
+Attraverso l’applicazione web raggiungibile dal sito `https://cartadocente.consap.it <https://cartadocente.consap.it/>`__ sarà possibile consultare lo stato di avanzamento delle fatture inviate così distinto:
 
 -  Accettate: fatture correttamente importate nel sistema, già liquidate o prossime alla liquidazione.
 -  In elaborazione: fatture in fase di controllo.
@@ -227,7 +227,7 @@ Appendice 1 - Codici dei Regimi fiscali
 
 Si riporta nel seguito un esempio di fattura elettronica in formato XML conforme allo standard di fatturazione elettronica e alle linee guida specifiche fornite per l’iniziativa CartaDelDocente.
 
-<ns2:FatturaElettronica versione='FPA12' `xmlns:ns2=' <http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2%27>`__\ http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2'>
+<ns2:FatturaElettronica versione='FPA12' `xmlns:ns2='http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2'> <http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2%27>`__
 
 <FatturaElettronicaHeader>
 

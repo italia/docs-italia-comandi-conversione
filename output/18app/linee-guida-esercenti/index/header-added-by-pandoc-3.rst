@@ -86,8 +86,8 @@ binding **VerificaVoucherSOAP**
 | type | `tns:VerificaVoucher <#_bookmark3>`__                         |
 +------+---------------------------------------------------------------+
 | exte | <soap:binding style="document"                                |
-| nsib | transport=\ `" <http://schemas.xmlsoap.org/soap/http>`__\ htt |
-| ilit | p://schemas.xmlsoap.org/soap/http%22/>                        |
+| nsib | transport=\ `"http://schemas.xmlsoap.org/soap/http <http://sc |
+| ilit | hemas.xmlsoap.org/soap/http>`__"/>                            |
 | y    |                                                               |
 +------+---------------------------------------------------------------+
 | oper | **Check**                                                     |
@@ -119,14 +119,14 @@ binding **VerificaVoucherSOAP**
 | ce   | type="tns:VerificaVoucher">                                   |
 |      |                                                               |
 |      | <soap:binding style="document"                                |
-|      | transport=\ `" <http://schemas.xmlsoap.org/soap/http>`__\ htt |
-|      | p://schemas.xmlsoap.org/soap/http%22/>                        |
+|      | transport=\ `"http://schemas.xmlsoap.org/soap/http <http://sc |
+|      | hemas.xmlsoap.org/soap/http>`__"/>                            |
 |      |                                                               |
 |      | <wsdl:operation name="Check">                                 |
 |      |                                                               |
 |      | <soap:operation                                               |
-|      | soapAction=\ `" <http://bonus.mibact.it/VerificaVoucher/Check |
-|      | >`__\ http://bonus.mibact.it/VerificaVoucher/Check%22/>       |
+|      | soapAction=\ `"http://bonus.mibact.it/VerificaVoucher/Check < |
+|      | http://bonus.mibact.it/VerificaVoucher/Check>`__"/>           |
 |      |                                                               |
 |      | <wsdl:input>                                                  |
 |      |                                                               |
@@ -151,8 +151,8 @@ LINEE GUIDA PER ESERCENTI PAG. 17 DI 26
 |   | <wsdl:operation name="Confirm">                                     |
 |   |                                                                     |
 |   | <soap:operation                                                     |
-|   | soapAction=\ `" <http://bonus.mibact.it/VerificaVoucher/Confirm>`__ |
-|   | \ http://bonus.mibact.it/VerificaVoucher/Confirm%22/>               |
+|   | soapAction=\ `"http://bonus.mibact.it/VerificaVoucher/Confirm <http |
+|   | ://bonus.mibact.it/VerificaVoucher/Confirm>`__"/>                   |
 |   |                                                                     |
 |   | <wsdl:input>                                                        |
 |   |                                                                     |

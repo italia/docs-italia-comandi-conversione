@@ -255,7 +255,7 @@ Per il pagamento dei buoni autorizzati devi emettere fattura elettronica utilizz
 
 I campi da valorizzare sono riportati nel documento “fatturaelettronica.pdf” in corso di definizione.
 
-La fattura dovrà essere inviata direttamente o tramite un intermediario secondo le modalità riportate nel seguente link: ` <http://www.fatturapa.gov.it/export/fatturazione/it/c-13.htm#PEC>`__\ http://www.fatturapa.gov.it/export/fatturazione/it/c-13.htm
+La fattura dovrà essere inviata direttamente o tramite un intermediario secondo le modalità riportate nel seguente link: `http://www.fatturapa.gov.it/export/fatturazione/it/c-13 <http://www.fatturapa.gov.it/export/fatturazione/it/c-13.htm#PEC>`__.htm
 
 L’applicazione “18app” fornirà una lista dei buoni autorizzati (con l’evidenza del codice di riferimento) che potranno essere oggetto di fatturazione.
 
@@ -290,7 +290,7 @@ Riceverai un messaggio di rifiuto nel quale sarà indicata la motivazione al fin
 Come posso controllare lo stato di avanzamento della fattura?
 =============================================================
 
-È stata predisposta una web app all’indirizzo intern\ `et <http://18app.consap.it/>`__\ http://18app.consap.it attraverso la quale sarà possibile verificare lo stato di avanzamento della fattura così distinto:
+È stata predisposta una web app all’indirizzo intern\ `et http://18app.consap.it <http://18app.consap.it/>`__ attraverso la quale sarà possibile verificare lo stato di avanzamento della fattura così distinto:
 
 -  Accettata: fattura correttamente importata nel sistema, già liquidata o prossima alla liquidazione
 

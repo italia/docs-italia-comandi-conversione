@@ -7,6 +7,6 @@ Per il pagamento dei buoni autorizzati devi emettere fattura elettronica utilizz
 
 I campi da valorizzare sono riportati nel documento “fatturaelettronica.pdf” in corso di definizione.
 
-La fattura dovrà essere inviata direttamente o tramite un intermediario secondo le modalità riportate nel seguente link: http://www.fatturapa.gov.it/export/fatturazione/it/c-13.htm#PEC\ http://www.fatturapa.gov.it/export/fatturazione/it/c-13.htm
+La fattura dovrà essere inviata direttamente o tramite un intermediario secondo le modalità riportate nel seguente link: `http://www.fatturapa.gov.it/export/fatturazione/it/c-13 <http://www.fatturapa.gov.it/export/fatturazione/it/c-13.htm#PEC>`__.htm
 
 L’applicazione “18app” fornirà una lista dei buoni autorizzati (con l’evidenza del codice di riferimento) che potranno essere oggetto di fatturazione.

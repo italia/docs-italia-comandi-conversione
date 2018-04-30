@@ -1,16 +1,27 @@
 
+Nel README, nella sezione dedicata al test finale, trovi informazioni
+riguardo al modo in cui questi documenti sono stati convertiti.
+
+### Fork italiano
+
+Se i documenti sono stati convertiti col [fork italiano di
+pandoc](https://github.com/italia/pandoc-docs2rst/blob/master/fork-italiano.md),
+assicurati di aver installato pandoc a partire dal branch del fork.
+
 ### Controlla la versione di pandoc
+
+Se i documenti sono stati convertiti con una versione ufficiale di
+pandoc, una versione differente potrebbe provocare risultati
+differenti.
 
 Per verificare che la tua versione di pandoc sia recente prova ad
 eseguire questo comando:
 
     stack exec --resolver lts-10.10 -- pandoc --version
 
-Questi documenti sono stati tradotti con la versione 2.2 di pandoc,
-quindi una versione differente potrebbe provocare risultati
-differenti. Se la tua versione è precedente prova ad aggiornarla, se è
-successiva apri una issue su questo repo così che possiamo investigare
-il problema.
+Se la tua versione è precedente prova ad aggiornarla, se è successiva
+apri una issue su questo repo così che possiamo investigare il
+problema.
 
 Per aggiornare la versione di pandoc installata basta seguire di nuovo
 le istruzioni di installazione con slack. Se hai già clonato il
