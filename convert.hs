@@ -26,10 +26,8 @@ offset = "../../../" :: String
 
 filters = concat $ intersperse " " $ map addFilter files
   where files = [ "add-headers.hs"
-                , "merge-code.hs"
                 , "remove-divs.hs"
                 , "remove-quotes.hs"
-                , "flatten.hs"
                 ]
 
 addFilter f = "--filter " <> offset <> "pandoc-filters/filters/" <> f
