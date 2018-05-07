@@ -3,54 +3,68 @@
 
 > See [README-en](README-en.md) for a description in English
 
-Questo repo è il tuo punto di partenza se vuoi convertire un documento
+Questo repository è il punto di partenza per convertire un documento
 `.docx` o `.odt` trasformandolo in un insieme di files `.rst` da
-caricare su ReadTheDocs o su Docs Italia.
+caricare su [Read the Docs](http://readthedocs.org/) o su 
+[Docs Italia](http://docs.italia.it/).
 
-Gli script qui inclusi si basano principalmente su Pandoc, che viene
-invocato con un insieme di opzioni e filtri che ci sono sembrati utili
-in passato. Qualsiasi contributo o suggerimento è benvenuto e può
-essere proposto tramite le issues.
+Gli script qui inclusi si basano principalmente su 
+[Pandoc](https://pandoc.org/), un programma gratuito open source, e
+su un insieme di opzioni e di filtri che possono semplificare la conversione. 
+Qualsiasi contributo o suggerimento è benvenuto e può
+essere proposto tramite le [issues](https://github.com/italia/pandoc-docs2rst/issues).
 
 Questi script richiedono un sistema operativo compatibile con Posix,
-il che include Linux e Mac. Usare questi script con un sistema Windows
-richiederà lavoro aggiuntivo
+il che include Linux e Mac. L'uso degli script con un sistema Windows
+è attualmente in fase di studio. 
 
-#### È semplice
+## Come convertire un file
 
 Vogliamo che l'utilizzo di questi script sia il più semplice
-possibile. [Dopo l'installazione](#installazione) si può tradurre un
-documento salvandolo in `input/loose` ed eseguendo:
+possibile. 
 
-    docs2rst $ ./convert.hs input/loose/document.docx
+Prima di tutto, [esegui l'installazione](#installazione).
 
-Se non si verificano errori troverai i files `.rst` nella cartella
-`output/loose/document`, se `document` era il nome del tuo documento
+Per convertire un file `.docx` o `.odt` chiamato `nome-file.ext`,
 
-#### Documento convertito e files strutturati
+- salva il file nella cartella `input/loose`
 
-Trovi il documento convertito in un file chiamato `document.rst`. A
-partire da quello proviamo anche a strutturare automaticamente i
-contenuti in un formato adatto a Sphinx, producendo un file
+- `cd` alla cartella di `docs2rst`
+
+- da linea di comando, esegui:
+
+      $ ./convert.hs input/loose/nome-file.ext
+
+Se non si verificano errori, troverai i files `.rst` nella cartella
+`output/loose/nome-file`.
+
+### Documento convertito e file strutturati
+
+L'intero documento verrà convertito in un file chiamato `document.rst`. 
+
+A partire da quello proviamo anche a strutturare automaticamente i
+contenuti in un formato adatto a Docs Italia, dividendo il documento di origine
+in file separati a livello di sezioni. A questo scopo vengono prodotti un file
 `index.rst` e altri files `.rst` collegati ad esso.
 
 Se i files strutturati in sezioni ti soddisfano puoi semplicemente
 ignorare o rimuovere `document.rst`. In caso contrario puoi partire da
-`document.rst` e strutturare manualmente i files per Sphinx.
+`document.rst` e strutturare manualmente i files per Docs Italia.
 
-In ogni caso invitiamo a segnalare ogni errore di conversione o
-strutturazione tramite le issues
+In ogni caso, ti invitiamo a segnalare ogni errore di conversione o
+strutturazione tramite le issues.
 
-#### Conversione di intere cartelle
+### Conversione di intere cartelle
 
-Se si vuole convertire una cartella piena di documenti lo si può fare
-salvando la cartella in `input` ed eseguendo `$ . update all`
+Per convertire una cartella piena di documenti, puoi
+salvare la cartella in `input` ed eseguire `$ . update all`
 
-### Installazione
+## Installazione
 
-Per usare questo repo serve fondamentalmente una versione recente di
-Pandoc ed il comando `stack` per gestire le dipendenze Haskell, le
-istruzioni per averli sono linkate di seguito, in inglese:
+Per usare questo repository serve una versione recente di
+pandoc e il comando `stack` per gestire le dipendenze Haskell.
+
+Ecco le istruzioni per ottenere questi programmi (in inglese):
 
 - [come installare stack](https://docs.haskellstack.org/en/stable/README/#how-to-install)
 - [come installare pandoc con stack](http://pandoc.org/installing.html#quick-stack-method)
@@ -58,57 +72,69 @@ istruzioni per averli sono linkate di seguito, in inglese:
 Installare pandoc con stack ti permetterà di usare la versione più
 recente di pandoc sulla tua macchina. Docs Italia contribuisce
 costantemente al miglioramento di pandoc e le modifiche più recenti
-sono disponibili solo installando in questo modo.
+sono disponibili solo eseguendo l'installazione in questo modo.
 
 Quando `stack` e `pandoc` saranno disponibili sul tuo sistema basterà:
 
-- clonare questo repo
-- clonare il repo coi filtri
+- clonare questo repository con:
 
-Clona così:
+		  $ git clone https://github.com/italia/pandoc-docs2rst.git
 
-   docs2rst $ git clone git@github.com:italia/pandoc-filters.git
 
-In modo che il secondo repo sia contenuto nel primo secondo la
-seguente struttura:
+- eseguire `cd pandoc-docs2rst`
+
+- clonare il repository coi filtri:
+
+		  $ git clone https://github.com/italia/pandoc-filters.git
+
+
+Il secondo repository dovrebbe essere contenuto nel primo secondo 
+la seguente struttura:
 
     pandoc-docs2rst/
         pandoc-filters/
 
+Puoi trovare [maggiori informazioni sui filtri disponibili](https://github.com/italia/pandoc-filters/blob/master/filters/guida.md) 
+nella guida dedicata. 
+
 A questo punto puoi eseguire `./convert.hs`. La prima esecuzione sarà
-molto più lenta perchè installerà tutte le dipendenze. Le esecuzioni
+molto più lenta perché installerà tutte le dipendenze. Le esecuzioni
 successive di `convert.hs` dovrebbero richiedere pochi secondi.
 
-- collegamenti automatici alla normativa (opzionale)
 
-Questa funzionalità è disponibile solo per utenti Linux. Trovate i
-dettagli
-[qui](https://github.com/italia/pandoc-docs2rst/blob/master/link-normattiva.md).
+## Funzionalità opzionali
 
-- test finale (opzionale)
+### Test dell'ambiente di conversione
 
-Questo repo contiene anche dei documenti già convertiti. Se vuoi
-essere sicur* di usare la versione più recente di pandoc e che gli
-script di conversione funzionino come ci si aspetta, puoi eseguire
-`docs2rst $ . update-all.sh`. Il comando impiegherà un po' di tempo
-per convertire tutti i documenti di nuovo, non dovrebbe esserci nessun
-output e dopo l'esecuzione il comando `git status` non dovrebbe
-mostrare nessun cambiamento.
+Questo repository contiene anche dei documenti di esempio già convertiti. 
 
-Questi documenti sono stati convertiti col fork italiano di pandoc.
+Per essere certi di usare la versione più recente di pandoc e che gli
+script di conversione funzionino come ci si aspetta, è possibile eseguire
+`$ . update-all.sh`. Il comando convertirà nuovamente tutti i documenti presenti 
+(l'operazione potrebbe richiedere un po' di tempo). 
 
-Se riscontri delle differenze c`è qualcosa che non va,
-[qui](https://github.com/italia/pandoc-docs2rst/blob/master/in-caso-di-differenze.md)
-trovi alcuni suggerimenti su come risolvere il problema.
+L'operazione non dovrebbe produrre alcun output e dopo l'esecuzione il 
+comando `git status` non dovrebbe mostrare alcun cambiamento.
 
-### Documents License
+Questi documenti sono stati convertiti col 
+[fork italiano di pandoc](https://github.com/italia/pandoc).
+
+Se riscontri delle differenze c'è qualcosa che non va, puoi consultare
+[alcuni suggerimenti su come risolvere il problema](https://github.com/italia/pandoc-docs2rst/blob/master/in-caso-di-differenze.md).
+
+### Collegamenti automatici alla normativa
+
+Questa funzionalità è disponibile solo per utenti Linux. È possibile trovare i
+dettagli [qui](https://github.com/italia/pandoc-docs2rst/blob/master/link-normattiva.md).
+
+## Documents License
 
 Sample documents are collected from the forum at docs.italia.it or
 from other public domain sources. Where not specified differently, the
 license is CC-BY 3.0 as written
 [here](https://developers.italia.it/en/note-legali/)
 
-### Software License
+## Software License
 
 Copyright (c) the respective contributors, as shown by the AUTHORS file.
 
