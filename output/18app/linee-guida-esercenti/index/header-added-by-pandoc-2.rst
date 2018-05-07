@@ -275,6 +275,6 @@ targetnamespace: http://bonus.mibact.it/VerificaVoucher/
 
 services bindings porttypes messages types
 
-.. |image0| image:: media/media/image1.png
-.. |image1| image:: media/media/image2.jpeg
-.. |image2| image:: media/media/image3.jpeg
+.. |image0| image:: ./media/image1.png
+.. |image1| image:: ./media/image2.jpeg
+.. |image2| image:: ./media/image3.jpeg

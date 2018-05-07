@@ -2482,4 +2482,4 @@ In generale, gli attuali schemi contrattuali sembrano troppo rigidi. Si sono ril
 
 Una maggiore flessibilità dei contratti eviterebbe applicazioni incorrette o negoziazioni successive tra amministrazione e fornitore per consentire la gestione del progetto nell’ambito di una “gabbia” contrattuale troppo stretta.
 
-.. |image0| image:: media/media/image1.png
+.. |image0| image:: ./media/image1.png

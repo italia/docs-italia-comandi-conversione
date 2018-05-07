@@ -17,4 +17,4 @@ Quindi cliccare su >\ **Vai a Riepilogo**
 Passo 5
 =======
 
-.. |image11| image:: media/media/image12.png
+.. |image11| image:: ./media/image12.png

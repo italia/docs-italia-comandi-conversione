@@ -1935,4 +1935,4 @@ Per esempi operativi di applicazioni delle metriche CISQ-OMG, si rimanda al capi
 
 Riguardo a queste metriche e al loro impiego si segnala la presenza di linee guida e documenti metodologici liberamente disponibili sul sito del CISQ (`www.it-cisq.org <http://www.it-cisq.org>`__).
 
-.. |image3| image:: media/media/image4.png
+.. |image3| image:: ./media/image4.png

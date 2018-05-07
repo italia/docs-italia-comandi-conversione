@@ -1498,4 +1498,4 @@ La valorizzazione degli elementi del tracciato xml deve rispettare i requisiti f
 |   | **  | corrente del beneficiario )   |                            |   |
 +---+-----+-------------------------------+----------------------------+---+
 
-.. |image12| image:: media/media/image13.png
+.. |image12| image:: ./media/image13.png

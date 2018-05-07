@@ -68,9 +68,9 @@ Quindi cliccare su >Verifica Dati
 Passo 4
 =======
 
-.. |image5| image:: media/media/image6.png
-.. |image6| image:: media/media/image7.png
-.. |image7| image:: media/media/image8.png
-.. |image8| image:: media/media/image9.png
-.. |image9| image:: media/media/image10.png
-.. |image10| image:: media/media/image11.jpeg
+.. |image5| image:: ./media/image6.png
+.. |image6| image:: ./media/image7.png
+.. |image7| image:: ./media/image8.png
+.. |image8| image:: ./media/image9.png
+.. |image9| image:: ./media/image10.png
+.. |image10| image:: ./media/image11.jpeg

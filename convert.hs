@@ -35,7 +35,7 @@ addFilter f = "--filter " <> offset <> "pandoc-filters/filters/" <> f
 -- options to use every time we write an RST
 writeOpts = "--wrap none " <> addFilter "loosen-lists.hs" <> " --standalone"
 
-opts = writeOpts <> " --extract-media media " <> filters
+opts = writeOpts <> " --extract-media . " <> filters
 
 
 -- | convert the input file to the output folder

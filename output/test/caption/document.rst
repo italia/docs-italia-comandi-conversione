@@ -12,4 +12,4 @@ Figura 1 Libri. Immagine CC0 da https://pixabay.com/en/book-read-old-literature-
 
 L’immagine contiene un titolo e un testo alternativo (alt text).
 
-.. |Libri antichi con copertina rigida su uno scaffale.| image:: media/media/image1.jpeg
+.. |Libri antichi con copertina rigida su uno scaffale.| image:: ./media/image1.jpeg

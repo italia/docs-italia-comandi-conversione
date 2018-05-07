@@ -16,5 +16,5 @@ L’immagine contiene un titolo e un testo alternativo (alt text).
   :maxdepth: 2
   :caption: Indice dei contenuti
 
-.. |Libri antichi con copertina rigida su uno scaffale.| image:: media/media/image1.jpeg
+.. |Libri antichi con copertina rigida su uno scaffale.| image:: ./media/image1.jpeg
 

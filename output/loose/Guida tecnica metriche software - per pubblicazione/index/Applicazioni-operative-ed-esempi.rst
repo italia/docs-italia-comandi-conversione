@@ -1327,6 +1327,6 @@ AgID, per via del suo ruolo istituzionale e dei compiti che le vengono assegnati
 
    </div>
 
-.. |image4| image:: media/media/image5.png
-.. |image5| image:: media/media/image6.png
-.. |image6| image:: media/media/image7.png
+.. |image4| image:: ./media/image5.png
+.. |image5| image:: ./media/image6.png
+.. |image6| image:: ./media/image7.png
