@@ -5,18 +5,27 @@
 
 Questo repository è il punto di partenza per convertire un documento
 `.docx` o `.odt` trasformandolo in un insieme di files `.rst` da
-caricare su [Read the Docs](http://readthedocs.org/) o su 
-[Docs Italia](http://docs.italia.it/).
+caricare su [Read the Docs](http://readthedocs.org/) o su [Docs
+Italia](http://docs.italia.it/).
 
-Gli script qui inclusi si basano principalmente su 
-[Pandoc](https://pandoc.org/), un programma gratuito open source, e
-su un insieme di opzioni e di filtri che possono semplificare la conversione. 
-Qualsiasi contributo o suggerimento è benvenuto e può
-essere proposto tramite le [issues](https://github.com/italia/pandoc-docs2rst/issues).
+#### Compatibilità
 
 Questi script richiedono un sistema operativo compatibile con Posix,
 il che include Linux e Mac. L'uso degli script con un sistema Windows
 è attualmente in fase di studio. 
+
+#### Alternative
+
+Questo comando è basato su:
+
+- [pandoc](pandoc.org)
+- [pandoc-filters](https://github.com/italia/pandoc-filters)
+- [xmLegesLinker](http://www.ittig.cnr.it/lab/xmleges/xmlegeslinker/).
+
+Se preferite usate direttamente gli strumenti di cui sopra, forniamo
+una breve
+[guida](https://github.com/italia/pandoc-docs2rst/blob/master/guida.md)
+contenente alcuni suggerimenti.
 
 ## Come convertire un file
 
@@ -33,7 +42,7 @@ Per convertire un file `.docx` o `.odt` chiamato `nome-file.ext`,
 
 - da linea di comando, esegui:
 
-      $ ./convert.hs input/loose/nome-file.ext
+      $ stack exec convert-docs-italia input/loose/nome-file.ext
 
 Se non si verificano errori, troverai i files `.rst` nella cartella
 `output/loose/nome-file`.
@@ -61,46 +70,19 @@ salvare la cartella in `input` ed eseguire `$ . update all`
 
 ## Installazione
 
-Per usare questo repository serve una versione recente di
-pandoc e il comando `stack` per gestire le dipendenze Haskell.
+Puoi installare questo comando con
+[stack](https://docs.haskellstack.org/en/stable/README/#how-to-install)
+e `git` nei seguenti passi:
 
-Ecco le istruzioni per ottenere questi programmi (in inglese):
+    $ git clone https://github.com/italia/pandoc-docs2rst.git
+    $ cd pandoc-docs2rst
+    $ git clone https://github.com/italia/pandoc-filters.git
+    $ stack install
 
-- [come installare stack](https://docs.haskellstack.org/en/stable/README/#how-to-install)
-- [come installare pandoc con stack](http://pandoc.org/installing.html#quick-stack-method)
-
-Installare pandoc con stack ti permetterà di usare la versione più
-recente di pandoc sulla tua macchina. Docs Italia contribuisce
-costantemente al miglioramento di pandoc e le modifiche più recenti
-sono disponibili solo eseguendo l'installazione in questo modo.
-
-Quando `stack` e `pandoc` saranno disponibili sul tuo sistema basterà:
-
-- clonare questo repository con:
-
-		  $ git clone https://github.com/italia/pandoc-docs2rst.git
-
-
-- eseguire `cd pandoc-docs2rst`
-
-- clonare il repository coi filtri:
-
-		  $ git clone https://github.com/italia/pandoc-filters.git
-
-
-Il secondo repository dovrebbe essere contenuto nel primo secondo 
-la seguente struttura:
+Il repository dei filtri dovrebbe essere contenuto nel primo così:
 
     pandoc-docs2rst/
         pandoc-filters/
-
-Puoi trovare [maggiori informazioni sui filtri disponibili](https://github.com/italia/pandoc-filters/blob/master/filters/guida.md) 
-nella guida dedicata. 
-
-A questo punto puoi eseguire `./convert.hs`. La prima esecuzione sarà
-molto più lenta perché installerà tutte le dipendenze. Le esecuzioni
-successive di `convert.hs` dovrebbero richiedere pochi secondi.
-
 
 ## Funzionalità opzionali
 
@@ -126,6 +108,11 @@ Se riscontri delle differenze c'è qualcosa che non va, puoi consultare
 
 Questa funzionalità è disponibile solo per utenti Linux. È possibile trovare i
 dettagli [qui](https://github.com/italia/pandoc-docs2rst/blob/master/link-normattiva.md).
+
+## Contribuire
+
+Qualsiasi contributo o suggerimento è benvenuto e può
+essere proposto tramite le [issues](https://github.com/italia/pandoc-docs2rst/issues).
 
 ## Documents License
 
