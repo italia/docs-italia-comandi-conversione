@@ -52,24 +52,21 @@ Per riportare queste misure a livello di portafoglio complessivo, si procederà:
 
 Tabella 43: assessment del parco applicativo dell’amministrazione AMM1
 
-+---------------+------------------+----------------+-----------------+
-| **Applicazion | **Dimensione     | **Misura di    | **Misura di     |
-| e**           | funzionale       | affidabilità** | manutenibilità* |
-|               | (PF)**           |                | *               |
-+===============+==================+================+=================+
-| Appl 1        | 1.200            | 1,4            | 3,3             |
-+---------------+------------------+----------------+-----------------+
-| Appl 2        | 650              | 2,2            | 2,6             |
-+---------------+------------------+----------------+-----------------+
-| Appl 3        | 1.720            | 1,7            | 3               |
-+---------------+------------------+----------------+-----------------+
-| Appl 4        | 2.400            | 3,6            | 3,9             |
-+---------------+------------------+----------------+-----------------+
-| Appl 5        | 880              | 0,9            | 2               |
-+---------------+------------------+----------------+-----------------+
-| Totale Parco  | 6.850            | 2,26\ `24 <#fn | 3,20\ `25 <#fn2 |
-| Applicativo   |                  | 24>`__         | 5>`__           |
-+---------------+------------------+----------------+-----------------+
++--------------------------+--------------------------------+----------------------------+------------------------------+
+| **Applicazione**         | **Dimensione funzionale (PF)** | **Misura di affidabilità** | **Misura di manutenibilità** |
++==========================+================================+============================+==============================+
+| Appl 1                   | 1.200                          | 1,4                        | 3,3                          |
++--------------------------+--------------------------------+----------------------------+------------------------------+
+| Appl 2                   | 650                            | 2,2                        | 2,6                          |
++--------------------------+--------------------------------+----------------------------+------------------------------+
+| Appl 3                   | 1.720                          | 1,7                        | 3                            |
++--------------------------+--------------------------------+----------------------------+------------------------------+
+| Appl 4                   | 2.400                          | 3,6                        | 3,9                          |
++--------------------------+--------------------------------+----------------------------+------------------------------+
+| Appl 5                   | 880                            | 0,9                        | 2                            |
++--------------------------+--------------------------------+----------------------------+------------------------------+
+| Totale Parco Applicativo | 6.850                          | 2,26\ `24 <#fn24>`__       | 3,20\ `25 <#fn25>`__         |
++--------------------------+--------------------------------+----------------------------+------------------------------+
 
 Si noti che i risultati del processo descritto potrebbero essere utilizzati anche per classificare, in base alla loro qualità, le applicazioni di un parco applicativo, oppure – in un’analisi di maggior dettaglio e granularità – per classificare i moduli software nell’ambito di una sezione specifica (es. contabilità, servizi del portale web) del portafoglio dell’amministrazione.
 
@@ -134,44 +131,19 @@ Un primo suggerimento riguarda la definizione dei requisiti utente. L’utilizzo
 
 Tabella 44: uso di metriche nella definizione di NFR (esempi)
 
-+--------+-------------------+-----------------------------------------+
-| **Cara | **Definizione non | **Definizione corretta del requisito    |
-| tteris | corretta del      | (con esempi di metriche)**              |
-| tica   | requisito (es.    |                                         |
-| non    | vaga o non        |                                         |
-| funzio | verificabile)**   |                                         |
-| nale** |                   |                                         |
-+========+===================+=========================================+
-| Affida | L’applicazione    | L’applicazione deve presentare una      |
-| bilità | dev’essere        | tolleranza agli errori critici,         |
-|        | robusta rispetto  | misurata con l’indicatore RFt-1-G (vedi |
-|        | agli errori       | 4.4.3.3), non inferiore a 0,9.          |
-|        | critici           |                                         |
-+--------+-------------------+-----------------------------------------+
-| Presta | L’applicazione    | Il tempo medio di risposta              |
-| zione/ | deve rispondere   | dell’applicazione a una richiesta       |
-| effici | velocemente       | utente, misurato con l’indicatore       |
-| enza   |                   | PTb-1-G (vedi 4.4.1.1), non deve essere |
-|        |                   | superiore a 0,5 secondi.                |
-+--------+-------------------+-----------------------------------------+
-| Usabil | L’applicazione    | L’applicazione deve poter fornire       |
-| ità    | deve essere       | dimostrazioni d’uso (indicatore UAp-2-S |
-|        | usabile           | di §4.4.1.1) per non meno del 90% delle |
-|        |                   | funzionalità offerte all’utente.        |
-+--------+-------------------+-----------------------------------------+
-| Usabil | L’applicazione    | Le maschere d’inserimento dati          |
-| ità    | deve favorire un  | dell’applicazione devono prevedere      |
-|        | uso rapido delle  | valori di default almeno nel 90% dei    |
-|        | maschere          | casi (indicatore ULe-2-S del §4.4.2.2). |
-|        | d’inserimento     |                                         |
-|        | dati              |                                         |
-+--------+-------------------+-----------------------------------------+
-| Portab | L’applicazione    | L’adattabilità dell’applicazione alla   |
-| ilità  | deve essere       | piattaforma Linux, misurata con         |
-|        | facilmente        | l’indicatore PAd-1-G (vedi §4.4.7.1),   |
-|        | portabile sulla   | non dev’essere inferiore al 70%.        |
-|        | piattaforma Linux |                                         |
-+--------+-------------------+-----------------------------------------+
++-----------------------------------+------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Caratteristica non funzionale** | **Definizione non corretta del requisito (es. vaga o non verificabile)**     | **Definizione corretta del requisito (con esempi di metriche)**                                                                                                 |
++===================================+==============================================================================+=================================================================================================================================================================+
+| Affidabilità                      | L’applicazione dev’essere robusta rispetto agli errori critici               | L’applicazione deve presentare una tolleranza agli errori critici, misurata con l’indicatore RFt-1-G (vedi 4.4.3.3), non inferiore a 0,9.                       |
++-----------------------------------+------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Prestazione/efficienza            | L’applicazione deve rispondere velocemente                                   | Il tempo medio di risposta dell’applicazione a una richiesta utente, misurato con l’indicatore PTb-1-G (vedi 4.4.1.1), non deve essere superiore a 0,5 secondi. |
++-----------------------------------+------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Usabilità                         | L’applicazione deve essere usabile                                           | L’applicazione deve poter fornire dimostrazioni d’uso (indicatore UAp-2-S di §4.4.1.1) per non meno del 90% delle funzionalità offerte all’utente.              |
++-----------------------------------+------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Usabilità                         | L’applicazione deve favorire un uso rapido delle maschere d’inserimento dati | Le maschere d’inserimento dati dell’applicazione devono prevedere valori di default almeno nel 90% dei casi (indicatore ULe-2-S del §4.4.2.2).                  |
++-----------------------------------+------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Portabilità                       | L’applicazione deve essere facilmente portabile sulla piattaforma Linux      | L’adattabilità dell’applicazione alla piattaforma Linux, misurata con l’indicatore PAd-1-G (vedi §4.4.7.1), non dev’essere inferiore al 70%.                    |
++-----------------------------------+------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 Il suggerimento di utilizzare metriche per meglio definire i NFR, ovviamente, va recepito tenendo presente la rilevanza dell’applicazione da realizzare e le dimensioni del progetto. Un numero eccessivo di metriche, e una loro eccessiva complessità, potrebbe infatti rendere laborioso il collaudo dell’applicazione e in generale l’operatività del contratto, vanificando i benefici ottenuti.
 
@@ -348,620 +320,161 @@ Una prima soluzione per valutare quantitativamente l’intervento, in termini di
 
 Tabella 45: checklist per accessibilità
 
-+---------------------------------+-------+-------------------------+---+
-| **Descrizione del requisito**   | **Pun | **Descrizione degli     | \ |
-|                                 | to    | elementi del punto di   | * |
-|                                 | di    | controllo**             | \ |
-|                                 | contr |                         |   |
-|                                 | ollo* |                         | * |
-|                                 | *     |                         | C |
-|                                 |       |                         | o |
-|                                 |       |                         | n |
-|                                 |       |                         | f |
-|                                 |       |                         | o |
-|                                 |       |                         | r |
-|                                 |       |                         | m |
-|                                 |       |                         | i |
-|                                 |       |                         | t |
-|                                 |       |                         | à |
-|                                 |       |                         | ( |
-|                                 |       |                         | S |
-|                                 |       |                         | / |
-|                                 |       |                         | N |
-|                                 |       |                         | / |
-|                                 |       |                         | N |
-|                                 |       |                         | A |
-|                                 |       |                         | ) |
-|                                 |       |                         | * |
-|                                 |       |                         | \ |
-|                                 |       |                         |   |
-|                                 |       |                         | \ |
-|                                 |       |                         | * |
-+=================================+=======+=========================+===+
-| Req1 - Alternative testuali:    | 1.1 – | Tutti i contenuti non   |   |
-| fornire alternative testuali    | Conte | testuali presentano     |   |
-| per qualsiasi contenuto di      | nuti  | un’alternativa testuale |   |
-| natura non testuale in modo che | non   | equivalente.            |   |
-| il testo predisposto come       | testu |                         |   |
-| alternativa possa essere fruito | ali   |                         |   |
-| e trasformato secondo le        |       |                         |   |
-| necessità degli utenti, come    |       |                         |   |
-| per esempio convertito in       |       |                         |   |
-| stampa a caratteri ingranditi,  |       |                         |   |
-| in stampa Braille, letto da una |       |                         |   |
-| sintesi vocale, simboli o altra |       |                         |   |
-| modalità di rappresentazione    |       |                         |   |
-| del contenuto.                  |       |                         |   |
-+---------------------------------+-------+-------------------------+---+
-|                                 |       | I controlli e gli       |   |
-|                                 |       | elementi che raccolgono |   |
-|                                 |       | l’input dell’utente     |   |
-|                                 |       | possiedono un nome      |   |
-|                                 |       | esplicativo che ne      |   |
-|                                 |       | descrive la finalità.   |   |
-+---------------------------------+-------+-------------------------+---+
-|                                 |       | In presenza di audio,   |   |
-|                                 |       | video, animazioni, è    |   |
-|                                 |       | stata fornita           |   |
-|                                 |       | un’alternativa testuale |   |
-|                                 |       | che ne contiene la      |   |
-|                                 |       | descrizione sintetica.  |   |
-+---------------------------------+-------+-------------------------+---+
-|                                 |       | Test ed esercizi che    |   |
-|                                 |       | non possono essere      |   |
-|                                 |       | compresi se presentati  |   |
-|                                 |       | in versione testuale    |   |
-|                                 |       | sono comunque corredati |   |
-|                                 |       | di una breve            |   |
-|                                 |       | descrizione che ne      |   |
-|                                 |       | specifichi il           |   |
-|                                 |       | contenuto.              |   |
-+---------------------------------+-------+-------------------------+---+
-|                                 |       | I contenuti non         |   |
-|                                 |       | testuali che            |   |
-|                                 |       | rappresentino           |   |
-|                                 |       | specifiche esperienze   |   |
-|                                 |       | sensoriali sono         |   |
-|                                 |       | corredati di didascalie |   |
-|                                 |       | sintetiche che ne       |   |
-|                                 |       | identifichino           |   |
-|                                 |       | chiaramente lo scopo.   |   |
-+---------------------------------+-------+-------------------------+---+
-|                                 |       | I CAPTCHA sono muniti   |   |
-|                                 |       | di alternative testuali |   |
-|                                 |       | commisurate alle        |   |
-|                                 |       | diverse tipologie di    |   |
-|                                 |       | disabilità (captcha     |   |
-|                                 |       | audio, captcha visivo,  |   |
-|                                 |       | captcha semantico).     |   |
-+---------------------------------+-------+-------------------------+---+
-|                                 |       | I contenuti non         |   |
-|                                 |       | testuali che            |   |
-|                                 |       | rappresentino           |   |
-|                                 |       | decorazioni,            |   |
-|                                 |       | formattazioni, elementi |   |
-|                                 |       | invisibili, sono        |   |
-|                                 |       | costruiti in modo tale  |   |
-|                                 |       | da poter essere         |   |
-|                                 |       | ignorati dalle          |   |
-|                                 |       | tecnologie assistive.   |   |
-+---------------------------------+-------+-------------------------+---+
-| Req2 - Contenuti audio,         | 2.1 – | I contenuti             |   |
-| contenuti video, animazioni:    | Conte | multimediali (solo      |   |
-| fornire alternative testuali    | nuti  | audio, solo video o     |   |
-| equivalenti per le informazioni | regis | animazione senza audio) |   |
-| veicolate da formati audio,     | trati | che non rappresentino   |   |
-| formati video, formati          | prese | un’alternativa ad un    |   |
-| contenenti immagini animate     | ntati | contenuto testuale già  |   |
-| (animazioni), formati           | in    | esistente nel sito ed   |   |
-| multisensoriali in genere.      | forma | etichettato come tale,  |   |
-|                                 | to    | sono corredati della    |   |
-|                                 | solo  | relativa alternativa    |   |
-|                                 | audio | testuale equivalente.   |   |
-|                                 | ,     |                         |   |
-|                                 | solo  |                         |   |
-|                                 | video |                         |   |
-|                                 | o     |                         |   |
-|                                 | anima |                         |   |
-|                                 | zione |                         |   |
-|                                 | senza |                         |   |
-|                                 | audio |                         |   |
-+---------------------------------+-------+-------------------------+---+
-|                                 | 2.2 - | I contenuti             |   |
-|                                 | Sotto | multisensoriali (video  |   |
-|                                 | titol | con audio, animazione   |   |
-|                                 | i     | con audio) che non      |   |
-|                                 | (per  | rappresentino           |   |
-|                                 | conte | un’alternativa ad un    |   |
-|                                 | nuti  | contenuto testuale già  |   |
-|                                 | regis | esistente nel sito ed   |   |
-|                                 | trati | etichettato come tale,  |   |
-|                                 | )     | sono corredati di       |   |
-|                                 |       | sottotitoli             |   |
-|                                 |       | sincronizzati.          |   |
-+---------------------------------+-------+-------------------------+---+
-|                                 | 2.3 – | I contenuti registrati  |   |
-|                                 | Audio | in formato video o      |   |
-|                                 | –     | animazioni che          |   |
-|                                 | descr | contengano informazioni |   |
-|                                 | izion | o azioni necessarie     |   |
-|                                 | i     | all’erogazione di un    |   |
-|                                 | o     | servizio e non          |   |
-|                                 | trasc | rappresentino           |   |
-|                                 | rizio | un’alternativa ad un    |   |
-|                                 | ni    | contenuto testuale già  |   |
-|                                 | descr | esistente nel sito ed   |   |
-|                                 | ittiv | etichettato come tale,  |   |
-|                                 | e     | sono corredati di       |   |
-|                                 | (per  | descrizione alternativa |   |
-|                                 | conte | in formato audio o      |   |
-|                                 | nuti  | testuale.               |   |
-|                                 | regis |                         |   |
-|                                 | trati |                         |   |
-|                                 | )     |                         |   |
-+---------------------------------+-------+-------------------------+---+
-|                                 | 2.4 – | I contenuti             |   |
-|                                 | Sotto | multimediali presentati |   |
-|                                 | titol | in diretta, ritenuti    |   |
-|                                 | i     | essenziali per          |   |
-|                                 | (per  | l’erogazione di un      |   |
-|                                 | conte | servizio sono corredati |   |
-|                                 | nuti  | di sottotitoli          |   |
-|                                 | in    | sincronizzati.          |   |
-|                                 | diret |                         |   |
-|                                 | ta)   |                         |   |
-+---------------------------------+-------+-------------------------+---+
-| Req3 - Adattabile: creare       | 3.1 – | Informazioni, struttura |   |
-| contenuti che possano essere    | Infor | e correlazione tra      |   |
-| presentati in modalità          | mazio | distinti blocchi di     |   |
-| differenti (ad esempio, con     | ni    | contenuto presentati    |   |
-| layout più semplici), senza     | e     | nelle pagine sono       |   |
-| perdita di informazioni o       | corre | fruibili in qualsiasi   |   |
-| struttura.                      | lazio | situazione in quanto    |   |
-|                                 | ni    | definite tramite        |   |
-|                                 |       | tecnologie compatibili  |   |
-|                                 |       | con l’accessibilità o   |   |
-|                                 |       | resi disponibili in     |   |
-|                                 |       | formato testuale.       |   |
-+---------------------------------+-------+-------------------------+---+
-|                                 | 3.2 – | La sequenza di lettura  |   |
-|                                 | Seque | dei contenuti, laddove  |   |
-|                                 | nze   | necessaria per la       |   |
-|                                 | signi | comprensione degli      |   |
-|                                 | ficat | stessi, è stata         |   |
-|                                 | ive   | correttamente definita  |   |
-|                                 |       | tramite tecnologie      |   |
-|                                 |       | compatibili con         |   |
-|                                 |       | l’accessibilità.        |   |
-+---------------------------------+-------+-------------------------+---+
-|                                 | 3.3 – | Le istruzioni fornite   |   |
-|                                 | Infor | per comprendere ed      |   |
-|                                 | mazio | operare sui contenuti   |   |
-|                                 | ni    | non si basano           |   |
-|                                 | e     | esclusivamente sulle    |   |
-|                                 | corre | caratteristiche         |   |
-|                                 | lazio | sensoriali dei loro     |   |
-|                                 | ni    | componenti (forma,      |   |
-|                                 |       | dimensione, posizione,  |   |
-|                                 |       | orientamento o suono).  |   |
-+---------------------------------+-------+-------------------------+---+
-| Req4 - Distinguibile: rendere   | 4.1 – | Il colore non è l’unica |   |
-| più semplice agli utenti la     | Uso   | modalità utilizzata per |   |
-| visione e l'ascolto dei         | del   | rappresentare           |   |
-| contenuti, separando i          | color | informazioni, indicare  |   |
-| contenuti in primo piano dallo  | e     | azioni, richiedere      |   |
-| sfondo.                         |       | risposte o come         |   |
-|                                 |       | elemento di distinzione |   |
-|                                 |       | visiva.                 |   |
-+---------------------------------+-------+-------------------------+---+
-|                                 | 4.2 – | Sonoro: sono previste   |   |
-|                                 | Contr | funzionalità di avvio,  |   |
-|                                 | ollo  | messa in pausa o        |   |
-|                                 | del   | interruzione. In        |   |
-|                                 | sonor | alternativa è prevista  |   |
-|                                 | o     | una modalità del        |   |
-|                                 |       | controllo del volume    |   |
-|                                 |       | indipendente da quella  |   |
-|                                 |       | predefinita dal         |   |
-|                                 |       | sistema.                |   |
-+---------------------------------+-------+-------------------------+---+
-|                                 |       | L’audio avviato in      |   |
-|                                 |       | automatico non dura più |   |
-|                                 |       | di tre secondi.         |   |
-+---------------------------------+-------+-------------------------+---+
-|                                 | 4.3 – | I testi, compresi       |   |
-|                                 | Contr | quelli rappresentati    |   |
-|                                 | asto  | come immagine hanno un  |   |
-|                                 | (mini | contrasto minimo tra    |   |
-|                                 | mo)   | primo piano e sfondo di |   |
-|                                 |       | almeno 4.5:1            |   |
-+---------------------------------+-------+-------------------------+---+
-|                                 |       | Testi di almeno 18      |   |
-|                                 |       | punti normale o 14      |   |
-|                                 |       | punti grassetto,        |   |
-|                                 |       | ritenuti di grandi      |   |
-|                                 |       | dimensioni, anche       |   |
-|                                 |       | quando rappresentati    |   |
-|                                 |       | come immagine, hanno un |   |
-|                                 |       | contrasto minimo di 3:1 |   |
-+---------------------------------+-------+-------------------------+---+
-|                                 | 4.4 – | I testi sono            |   |
-|                                 | ridim | ridimensionabili fino   |   |
-|                                 | ensio | al 200% senza l’ausilio |   |
-|                                 | namen | di tecnologie assistive |   |
-|                                 | to    | e senza che vi sia      |   |
-|                                 | del   | perdita di contenuti e  |   |
-|                                 | testo | funzionalità.           |   |
-+---------------------------------+-------+-------------------------+---+
-|                                 | 4.5 – | Sono evitati testi      |   |
-|                                 | Testo | sotto forma di immagine |   |
-|                                 | rappr | ad eccezione di         |   |
-|                                 | esent | immagini                |   |
-|                                 | ato   | personalizzabili,       |   |
-|                                 | come  | logotipi e casi in cui  |   |
-|                                 | immag | una particolare         |   |
-|                                 | ine   | rappresentazione di un  |   |
-|                                 |       | testo sia ritenuta      |   |
-|                                 |       | essenziale per il tipo  |   |
-|                                 |       | di informazione         |   |
-|                                 |       | veicolata.              |   |
-+---------------------------------+-------+-------------------------+---+
-| Req5 - Accessibile da tastiera: | 5.1 – | Tutte le funzionalità   |   |
-| rendere disponibili tutte le    | Tasti | sono utilizzabili       |   |
-| funzionalità anche tramite      | era   | tramite tastiera senza  |   |
-| tastiera.                       |       | che vi sia obbligo di   |   |
-|                                 |       | tempi specifici per le  |   |
-|                                 |       | singole battute.        |   |
-+---------------------------------+-------+-------------------------+---+
-|                                 |       | Le funzioni che         |   |
-|                                 |       | richiedono un input     |   |
-|                                 |       | dipendente dai          |   |
-|                                 |       | movimenti dell’utente e |   |
-|                                 |       | che non possano essere  |   |
-|                                 |       | ottenute in modo        |   |
-|                                 |       | equivalente tramite     |   |
-|                                 |       | input da tastiera sono  |   |
-|                                 |       | utilizzabili tramite    |   |
-|                                 |       | altre periferiche di    |   |
-|                                 |       | input.                  |   |
-+---------------------------------+-------+-------------------------+---+
-|                                 | 5.2 – | Tutti i componenti      |   |
-|                                 | Nessu | della pagina sono       |   |
-|                                 | n     | navigabili tramite      |   |
-|                                 | imped | tastiera.               |   |
-|                                 | iment |                         |   |
-|                                 | o     |                         |   |
-|                                 | all'u |                         |   |
-|                                 | so    |                         |   |
-|                                 | della |                         |   |
-|                                 | tasti |                         |   |
-|                                 | era   |                         |   |
-+---------------------------------+-------+-------------------------+---+
-|                                 |       | L’utente è in grado di  |   |
-|                                 |       | gestire il focus dei    |   |
-|                                 |       | componenti della pagina |   |
-|                                 |       | tramite tastiera        |   |
-+---------------------------------+-------+-------------------------+---+
-|                                 |       | L’utente è informato    |   |
-|                                 |       | esplicitamente sulle    |   |
-|                                 |       | modalità di rilascio    |   |
-|                                 |       | del focus quando non è  |   |
-|                                 |       | sufficiente l’uso di    |   |
-|                                 |       | normali tasti (freccia  |   |
-|                                 |       | o tab).                 |   |
-+---------------------------------+-------+-------------------------+---+
-| Req6 - Adeguata disponibilità   | 6.1 – | Per i limiti di tempo   |   |
-| di tempo: fornire all'utente    | Regol | inferiori a 20 ore, non |   |
-| tempo sufficiente per leggere   | azion | essenziali per          |   |
-| ed utilizzare i contenuti.      | e     | l’attività e che non    |   |
-|                                 | tempi | riguardino eventi in    |   |
-|                                 | di    | tempo reale è           |   |
-|                                 | esecu | soddisfatto almeno uno  |   |
-|                                 | zione | dei seguenti casi:      |   |
-|                                 |       | (selezionare una delle  |   |
-|                                 |       | seguenti opzioni)       |   |
-+---------------------------------+-------+-------------------------+---+
-|                                 |       | L’utente può rimuovere  |   |
-|                                 |       | il limite di tempo      |   |
-|                                 |       | prima che esso sia      |   |
-|                                 |       | raggiunto.              |   |
-+---------------------------------+-------+-------------------------+---+
-|                                 |       | L’utente può regolare   |   |
-|                                 |       | il limite di tempo      |   |
-|                                 |       | prima che esso sia      |   |
-|                                 |       | raggiunto estendendone  |   |
-|                                 |       | la durata di almeno 10  |   |
-|                                 |       | volte.                  |   |
-+---------------------------------+-------+-------------------------+---+
-|                                 |       | L’utente può prolungare |   |
-|                                 |       | il limite di tempo      |   |
-|                                 |       | compiendo un’operazione |   |
-|                                 |       | fino ad un massimo di   |   |
-|                                 |       | 10 volte .              |   |
-+---------------------------------+-------+-------------------------+---+
-|                                 | 6.2 – | Per animazioni,         |   |
-|                                 | Pausa | immagini lampeggianti,  |   |
-|                                 | ,     | in scorrimento o        |   |
-|                                 | stop, | contenuti che si        |   |
-|                                 | nasco | auto-aggiornano che non |   |
-|                                 | ndi   | siano parte essenziale  |   |
-|                                 |       | dell’attività, sono     |   |
-|                                 |       | previsti meccanismi per |   |
-|                                 |       | la messa in pausa,      |   |
-|                                 |       | interruzione e          |   |
-|                                 |       | nascondimento.          |   |
-+---------------------------------+-------+-------------------------+---+
-|                                 |       | Gli aggiornamenti       |   |
-|                                 |       | automatici, presentati  |   |
-|                                 |       | in parallelo con altri  |   |
-|                                 |       | contenuti, che non      |   |
-|                                 |       | siano parte essenziale  |   |
-|                                 |       | dell’attività, sono     |   |
-|                                 |       | muniti di meccanismi    |   |
-|                                 |       | per la messa in pausa,  |   |
-|                                 |       | interruzione e          |   |
-|                                 |       | nascondimento degli     |   |
-|                                 |       | stessi.                 |   |
-+---------------------------------+-------+-------------------------+---+
-| Req7 - Crisi epilettiche: non   | 7.1 – | Le pagine non           |   |
-| sviluppare contenuti che        | Lampe | contengono elementi che |   |
-| possano causare crisi           | ggiam | lampeggino più di tre   |   |
-| epilettiche.                    | enti  | volte al secondo.       |   |
-+---------------------------------+-------+-------------------------+---+
-|                                 |       | L’eventuale             |   |
-|                                 |       | lampeggiamento rispetta |   |
-|                                 |       | le soglie indicate      |   |
-|                                 |       | nelle WCAG 2.0          |   |
-+---------------------------------+-------+-------------------------+---+
-| Req8 - Navigabile: fornire      | 8.1 – | Sono fornite modalità   |   |
-| all'utente funzionalità di      | Salto | per saltare blocchi di  |   |
-| supporto per navigare, trovare  | di    | contenuto comuni a più  |   |
-| contenuti e determinare la      | blocc | pagine.                 |   |
-| posizione nel sito e nelle      | hi    |                         |   |
-| pagine.                         |       |                         |   |
-+---------------------------------+-------+-------------------------+---+
-|                                 | 8.2 – | Le pagine possiedono    |   |
-|                                 | Titol | titoli (<title>)        |   |
-|                                 | o     | esplicativi che ne      |   |
-|                                 | della | descrivano argomento e  |   |
-|                                 | pagin | finalità.               |   |
-|                                 | a     |                         |   |
-+---------------------------------+-------+-------------------------+---+
-|                                 | 8.3 – | Gli oggetti ricevono il |   |
-|                                 | Ordin | focus secondo un ordine |   |
-|                                 | e     | che ne preservi il      |   |
-|                                 | del   | senso e l’operatività   |   |
-|                                 | focus |                         |   |
-|                                 | .3    |                         |   |
-|                                 | –     |                         |   |
-+---------------------------------+-------+-------------------------+---+
-|                                 | 8.4 – | Scopi e testi dei       |   |
-|                                 | Scopo | collegamenti sono       |   |
-|                                 | del   | chiaramente             |   |
-|                                 | colle | comprensibili sia se    |   |
-|                                 | gamen | estrapolati dal         |   |
-|                                 | to    | contesto sia se letti   |   |
-|                                 | (nel  | in sinergia con i       |   |
-|                                 | conte | contenuti circostanti.  |   |
-|                                 | sto)  |                         |   |
-+---------------------------------+-------+-------------------------+---+
-|                                 | 8.5 – | Le pagine che non sono  |   |
-|                                 | Diffe | il risultato o la fase  |   |
-|                                 | renti | di un’azione sono       |   |
-|                                 | modal | identificate tramite    |   |
-|                                 | ità   | diverse modalità        |   |
-+---------------------------------+-------+-------------------------+---+
-|                                 | 8.6 – | I contenuti sono        |   |
-|                                 | Titol | organizzati logicamente |   |
-|                                 | i     | rispettandone il        |   |
-|                                 | ed    | corretto ordine         |   |
-|                                 | etich | sequenziale gerarchico  |   |
-|                                 | ette  | tramite l’uso           |   |
-|                                 |       | appropriato di titoli   |   |
-|                                 |       | (<H[x]>).               |   |
-+---------------------------------+-------+-------------------------+---+
-|                                 | 8.7 – | Tutte le interfacce     |   |
-|                                 | Focus | utente utilizzabili     |   |
-|                                 | visib | tramite tastiera        |   |
-|                                 | ile   | possiedono funzioni che |   |
-|                                 |       | evidenzino chiaramente  |   |
-|                                 |       | gli indicatori del      |   |
-|                                 |       | focus (Active, Focus,   |   |
-|                                 |       | Hover)                  |   |
-+---------------------------------+-------+-------------------------+---+
-| Req9 - Leggibile: rendere       | 9.1 – | La lingua della pagina  |   |
-| leggibile e comprensibile il    | Lingu | è definita tramite      |   |
-| contenuto testuale.             | a     | tecnologie compatibili  |   |
-|                                 | della | con l’accessibilità     |   |
-|                                 | pagin |                         |   |
-|                                 | a     |                         |   |
-+---------------------------------+-------+-------------------------+---+
-|                                 | 9.2 – | Testi presentati in     |   |
-|                                 | Parti | lingue diverse da       |   |
-|                                 | in    | quella indicata come    |   |
-|                                 | lingu | principale sono         |   |
-|                                 | a     | correttamente definiti  |   |
-|                                 | diver | tramite gli attributi   |   |
-|                                 | sa    | previsti dalle          |   |
-|                                 | da    | tecnologie compatibili  |   |
-|                                 | quell | con l’accessibilità.    |   |
-|                                 | a     |                         |   |
-|                                 | defin |                         |   |
-|                                 | ita   |                         |   |
-|                                 | per   |                         |   |
-|                                 | la    |                         |   |
-|                                 | pagin |                         |   |
-|                                 | a     |                         |   |
-+---------------------------------+-------+-------------------------+---+
-| Req10 - Prevedibile: creare     | 10.1  | Non vengono avviati     |   |
-| pagine web che appaiano e che   | – Al  | automaticamente         |   |
-| si comportino in maniera        | focus | cambiamenti di contesto |   |
-| prevedibile.                    |       | quando un qualsiasi     |   |
-|                                 |       | componente riceve il    |   |
-|                                 |       | focus.                  |   |
-+---------------------------------+-------+-------------------------+---+
-|                                 | 10.2  | I cambiamenti di        |   |
-|                                 | –     | contesto non sono       |   |
-|                                 | All’i | automatici. In casi     |   |
-|                                 | nput  | particolari in cui ciò  |   |
-|                                 |       | non sia possibile       |   |
-|                                 |       | l’utente è              |   |
-|                                 |       | preventivamente         |   |
-|                                 |       | avvisato.               |   |
-+---------------------------------+-------+-------------------------+---+
-|                                 | 10.3  | I meccanismi di         |   |
-|                                 | –     | navigazione ripetuti su |   |
-|                                 | Navig | più pagine sono sempre  |   |
-|                                 | azion | presentati allo stesso  |   |
-|                                 | e     | modo a meno che         |   |
-|                                 | costa | l’utente non avvii un   |   |
-|                                 | nte   | cambiamento.            |   |
-+---------------------------------+-------+-------------------------+---+
-|                                 | 10.4  | I componenti che hanno  |   |
-|                                 | –     | stesse funzionalità     |   |
-|                                 | Ident | sono identificati in    |   |
-|                                 | ifica | modo uniforme.          |   |
-|                                 | zione |                         |   |
-|                                 | coere |                         |   |
-|                                 | nte   |                         |   |
-+---------------------------------+-------+-------------------------+---+
-| Req11 - Assistenza              | 11.1  | Gli errori rilevati     |   |
-| nell'inserimento di dati e      | –     | automaticamente in fase |   |
-| informazioni: aiutare l'utente  | Ident | di inserimento sono     |   |
-| ad evitare gli errori ed        | ifica | identificati            |   |
-| agevolarlo nella loro           | zione | chiaramente e descritti |   |
-| correzione.                     | di    | in modo esaustivo       |   |
-|                                 | error | tramite testo.          |   |
-|                                 | i     |                         |   |
-+---------------------------------+-------+-------------------------+---+
-|                                 | 11.2  | Sono fornite etichette  |   |
-|                                 | –     | o istruzioni per la     |   |
-|                                 | Etich | corretta esecuzione di  |   |
-|                                 | ette  | azioni/operazioni di    |   |
-|                                 | o     | input.                  |   |
-|                                 | istru |                         |   |
-|                                 | zioni |                         |   |
-+---------------------------------+-------+-------------------------+---+
-|                                 | 11.3  | Per errori che è        |   |
-|                                 | –     | possibile correggere    |   |
-|                                 | Sugge | senza che siano         |   |
-|                                 | rimen | pregiudicati sicurezza  |   |
-|                                 | ti    | e finalità del          |   |
-|                                 | per   | contenuto, sono forniti |   |
-|                                 | gli   | suggerimenti            |   |
-|                                 | error | all’utente.             |   |
-|                                 | i     |                         |   |
-+---------------------------------+-------+-------------------------+---+
-|                                 | 11.4  | Le pagine web che       |   |
-|                                 | –     | presentano funzionalità |   |
-|                                 | Preve | di gestione dati        |   |
-|                                 | nzion | controllabili           |   |
-|                                 | e     | dall’utente, soddisfano |   |
-|                                 | degli | almeno una delle        |   |
-|                                 | error | seguenti condizioni     |   |
-|                                 | i     | (selezionare una delle  |   |
-|                                 | (lega | seguenti opzioni):      |   |
-|                                 | li,   |                         |   |
-|                                 | finan |                         |   |
-|                                 | ziari |                         |   |
-|                                 | ,     |                         |   |
-|                                 | dati) |                         |   |
-+---------------------------------+-------+-------------------------+---+
-|                                 |       | Reversibilità: le       |   |
-|                                 |       | azioni/operazioni sono  |   |
-|                                 |       | reversibili.            |   |
-+---------------------------------+-------+-------------------------+---+
-|                                 |       | Controllo: i dati       |   |
-|                                 |       | inseriti dall'utente    |   |
-|                                 |       | sono verificati ed è    |   |
-|                                 |       | fornita la possibilità  |   |
-|                                 |       | di correggere eventuali |   |
-|                                 |       | errori di inserimento.  |   |
-+---------------------------------+-------+-------------------------+---+
-|                                 |       | Conferma: è disponibile |   |
-|                                 |       | una funzionalità per la |   |
-|                                 |       | revisione, conferma e   |   |
-|                                 |       | correzione delle        |   |
-|                                 |       | informazioni prima      |   |
-|                                 |       | dell’invio definitivo.  |   |
-+---------------------------------+-------+-------------------------+---+
-| Req12 - Compatibile: garantire  | 12.1  | I linguaggi di          |   |
-| la massima compatibilità con i  | –     | marcatura sono          |   |
-| programmi utente e con le       | Anali | utilizzati in modo      |   |
-| tecnologie assistive.           | si    | conforme alle           |   |
-|                                 | sinta | specifiche previste     |   |
-|                                 | ttica | dalla grammatica        |   |
-|                                 | :     | formale di riferimento. |   |
-|                                 | parsi |                         |   |
-|                                 | ng    |                         |   |
-+---------------------------------+-------+-------------------------+---+
-|                                 |       | Le pagine analizzate    |   |
-|                                 |       | tramite il Markup       |   |
-|                                 |       | Validation Service      |   |
-|                                 |       | (W3C) risultano valide. |   |
-+---------------------------------+-------+-------------------------+---+
-|                                 |       | I fogli di stile        |   |
-|                                 |       | analizzati tramite il   |   |
-|                                 |       | CSS Validation Service  |   |
-|                                 |       | (W3C) risultano validi. |   |
-+---------------------------------+-------+-------------------------+---+
-|                                 | 12.2  | In tutti i componenti   |   |
-|                                 | –     | dell’interfaccia        |   |
-|                                 | Name, | utente, name            |   |
-|                                 | Role, | (descrizione) e role    |   |
-|                                 | Value | (scopo o funzionalità)  |   |
-|                                 |       | sono definiti tramite   |   |
-|                                 |       | tecnologie compatibili  |   |
-|                                 |       | con l’accessibilità.    |   |
-+---------------------------------+-------+-------------------------+---+
-|                                 |       | Stati proprietà e       |   |
-|                                 |       | valori dei componenti   |   |
-|                                 |       | dell’interfaccia        |   |
-|                                 |       | possono essere          |   |
-|                                 |       | impostati dall’utente;  |   |
-|                                 |       | le notifiche sui cambi  |   |
-|                                 |       | di stato di questi      |   |
-|                                 |       | elementi sono rese      |   |
-|                                 |       | disponibili ai          |   |
-|                                 |       | programmi utente,       |   |
-|                                 |       | tecnologie assistive    |   |
-|                                 |       | incluse.                |   |
-+---------------------------------+-------+-------------------------+---+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+| **Descrizione del requisito**                                                                                                                                                                                                                                                                                                                                                                             | **Punto di controllo**                                                                           | **Descrizione degli elementi del punto di controllo**                                                                                                                                                                                                                                                                  | \*\ *Conformità (S/N/NA)*\ \* |
++===========================================================================================================================================================================================================================================================================================================================================================================================================+==================================================================================================+========================================================================================================================================================================================================================================================================================================================+===============================+
+| Req1 - Alternative testuali: fornire alternative testuali per qualsiasi contenuto di natura non testuale in modo che il testo predisposto come alternativa possa essere fruito e trasformato secondo le necessità degli utenti, come per esempio convertito in stampa a caratteri ingranditi, in stampa Braille, letto da una sintesi vocale, simboli o altra modalità di rappresentazione del contenuto. | 1.1 – Contenuti non testuali                                                                     | Tutti i contenuti non testuali presentano un’alternativa testuale equivalente.                                                                                                                                                                                                                                         |                               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  | I controlli e gli elementi che raccolgono l’input dell’utente possiedono un nome esplicativo che ne descrive la finalità.                                                                                                                                                                                              |                               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  | In presenza di audio, video, animazioni, è stata fornita un’alternativa testuale che ne contiene la descrizione sintetica.                                                                                                                                                                                             |                               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  | Test ed esercizi che non possono essere compresi se presentati in versione testuale sono comunque corredati di una breve descrizione che ne specifichi il contenuto.                                                                                                                                                   |                               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  | I contenuti non testuali che rappresentino specifiche esperienze sensoriali sono corredati di didascalie sintetiche che ne identifichino chiaramente lo scopo.                                                                                                                                                         |                               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  | I CAPTCHA sono muniti di alternative testuali commisurate alle diverse tipologie di disabilità (captcha audio, captcha visivo, captcha semantico).                                                                                                                                                                     |                               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  | I contenuti non testuali che rappresentino decorazioni, formattazioni, elementi invisibili, sono costruiti in modo tale da poter essere ignorati dalle tecnologie assistive.                                                                                                                                           |                               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+| Req2 - Contenuti audio, contenuti video, animazioni: fornire alternative testuali equivalenti per le informazioni veicolate da formati audio, formati video, formati contenenti immagini animate (animazioni), formati multisensoriali in genere.                                                                                                                                                         | 2.1 – Contenuti registrati presentati in formato solo audio, solo video o animazione senza audio | I contenuti multimediali (solo audio, solo video o animazione senza audio) che non rappresentino un’alternativa ad un contenuto testuale già esistente nel sito ed etichettato come tale, sono corredati della relativa alternativa testuale equivalente.                                                              |                               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           | 2.2 - Sottotitoli (per contenuti registrati)                                                     | I contenuti multisensoriali (video con audio, animazione con audio) che non rappresentino un’alternativa ad un contenuto testuale già esistente nel sito ed etichettato come tale, sono corredati di sottotitoli sincronizzati.                                                                                        |                               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           | 2.3 – Audio – descrizioni o trascrizioni descrittive (per contenuti registrati)                  | I contenuti registrati in formato video o animazioni che contengano informazioni o azioni necessarie all’erogazione di un servizio e non rappresentino un’alternativa ad un contenuto testuale già esistente nel sito ed etichettato come tale, sono corredati di descrizione alternativa in formato audio o testuale. |                               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           | 2.4 – Sottotitoli (per contenuti in diretta)                                                     | I contenuti multimediali presentati in diretta, ritenuti essenziali per l’erogazione di un servizio sono corredati di sottotitoli sincronizzati.                                                                                                                                                                       |                               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+| Req3 - Adattabile: creare contenuti che possano essere presentati in modalità differenti (ad esempio, con layout più semplici), senza perdita di informazioni o struttura.                                                                                                                                                                                                                                | 3.1 – Informazioni e correlazioni                                                                | Informazioni, struttura e correlazione tra distinti blocchi di contenuto presentati nelle pagine sono fruibili in qualsiasi situazione in quanto definite tramite tecnologie compatibili con l’accessibilità o resi disponibili in formato testuale.                                                                   |                               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           | 3.2 – Sequenze significative                                                                     | La sequenza di lettura dei contenuti, laddove necessaria per la comprensione degli stessi, è stata correttamente definita tramite tecnologie compatibili con l’accessibilità.                                                                                                                                          |                               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           | 3.3 – Informazioni e correlazioni                                                                | Le istruzioni fornite per comprendere ed operare sui contenuti non si basano esclusivamente sulle caratteristiche sensoriali dei loro componenti (forma, dimensione, posizione, orientamento o suono).                                                                                                                 |                               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+| Req4 - Distinguibile: rendere più semplice agli utenti la visione e l'ascolto dei contenuti, separando i contenuti in primo piano dallo sfondo.                                                                                                                                                                                                                                                           | 4.1 – Uso del colore                                                                             | Il colore non è l’unica modalità utilizzata per rappresentare informazioni, indicare azioni, richiedere risposte o come elemento di distinzione visiva.                                                                                                                                                                |                               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           | 4.2 – Controllo del sonoro                                                                       | Sonoro: sono previste funzionalità di avvio, messa in pausa o interruzione. In alternativa è prevista una modalità del controllo del volume indipendente da quella predefinita dal sistema.                                                                                                                            |                               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  | L’audio avviato in automatico non dura più di tre secondi.                                                                                                                                                                                                                                                             |                               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           | 4.3 – Contrasto (minimo)                                                                         | I testi, compresi quelli rappresentati come immagine hanno un contrasto minimo tra primo piano e sfondo di almeno 4.5:1                                                                                                                                                                                                |                               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  | Testi di almeno 18 punti normale o 14 punti grassetto, ritenuti di grandi dimensioni, anche quando rappresentati come immagine, hanno un contrasto minimo di 3:1                                                                                                                                                       |                               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           | 4.4 – ridimensionamento del testo                                                                | I testi sono ridimensionabili fino al 200% senza l’ausilio di tecnologie assistive e senza che vi sia perdita di contenuti e funzionalità.                                                                                                                                                                             |                               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           | 4.5 – Testo rappresentato come immagine                                                          | Sono evitati testi sotto forma di immagine ad eccezione di immagini personalizzabili, logotipi e casi in cui una particolare rappresentazione di un testo sia ritenuta essenziale per il tipo di informazione veicolata.                                                                                               |                               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+| Req5 - Accessibile da tastiera: rendere disponibili tutte le funzionalità anche tramite tastiera.                                                                                                                                                                                                                                                                                                         | 5.1 – Tastiera                                                                                   | Tutte le funzionalità sono utilizzabili tramite tastiera senza che vi sia obbligo di tempi specifici per le singole battute.                                                                                                                                                                                           |                               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  | Le funzioni che richiedono un input dipendente dai movimenti dell’utente e che non possano essere ottenute in modo equivalente tramite input da tastiera sono utilizzabili tramite altre periferiche di input.                                                                                                         |                               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           | 5.2 – Nessun impedimento all'uso della tastiera                                                  | Tutti i componenti della pagina sono navigabili tramite tastiera.                                                                                                                                                                                                                                                      |                               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  | L’utente è in grado di gestire il focus dei componenti della pagina tramite tastiera                                                                                                                                                                                                                                   |                               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  | L’utente è informato esplicitamente sulle modalità di rilascio del focus quando non è sufficiente l’uso di normali tasti (freccia o tab).                                                                                                                                                                              |                               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+| Req6 - Adeguata disponibilità di tempo: fornire all'utente tempo sufficiente per leggere ed utilizzare i contenuti.                                                                                                                                                                                                                                                                                       | 6.1 – Regolazione tempi di esecuzione                                                            | Per i limiti di tempo inferiori a 20 ore, non essenziali per l’attività e che non riguardino eventi in tempo reale è soddisfatto almeno uno dei seguenti casi: (selezionare una delle seguenti opzioni)                                                                                                                |                               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  | L’utente può rimuovere il limite di tempo prima che esso sia raggiunto.                                                                                                                                                                                                                                                |                               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  | L’utente può regolare il limite di tempo prima che esso sia raggiunto estendendone la durata di almeno 10 volte.                                                                                                                                                                                                       |                               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  | L’utente può prolungare il limite di tempo compiendo un’operazione fino ad un massimo di 10 volte .                                                                                                                                                                                                                    |                               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           | 6.2 – Pausa, stop, nascondi                                                                      | Per animazioni, immagini lampeggianti, in scorrimento o contenuti che si auto-aggiornano che non siano parte essenziale dell’attività, sono previsti meccanismi per la messa in pausa, interruzione e nascondimento.                                                                                                   |                               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  | Gli aggiornamenti automatici, presentati in parallelo con altri contenuti, che non siano parte essenziale dell’attività, sono muniti di meccanismi per la messa in pausa, interruzione e nascondimento degli stessi.                                                                                                   |                               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+| Req7 - Crisi epilettiche: non sviluppare contenuti che possano causare crisi epilettiche.                                                                                                                                                                                                                                                                                                                 | 7.1 – Lampeggiamenti                                                                             | Le pagine non contengono elementi che lampeggino più di tre volte al secondo.                                                                                                                                                                                                                                          |                               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  | L’eventuale lampeggiamento rispetta le soglie indicate nelle WCAG 2.0                                                                                                                                                                                                                                                  |                               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+| Req8 - Navigabile: fornire all'utente funzionalità di supporto per navigare, trovare contenuti e determinare la posizione nel sito e nelle pagine.                                                                                                                                                                                                                                                        | 8.1 – Salto di blocchi                                                                           | Sono fornite modalità per saltare blocchi di contenuto comuni a più pagine.                                                                                                                                                                                                                                            |                               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           | 8.2 – Titolo della pagina                                                                        | Le pagine possiedono titoli (<title>) esplicativi che ne descrivano argomento e finalità.                                                                                                                                                                                                                              |                               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           | 8.3 – Ordine del focus.3 –                                                                       | Gli oggetti ricevono il focus secondo un ordine che ne preservi il senso e l’operatività                                                                                                                                                                                                                               |                               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           | 8.4 – Scopo del collegamento (nel contesto)                                                      | Scopi e testi dei collegamenti sono chiaramente comprensibili sia se estrapolati dal contesto sia se letti in sinergia con i contenuti circostanti.                                                                                                                                                                    |                               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           | 8.5 – Differenti modalità                                                                        | Le pagine che non sono il risultato o la fase di un’azione sono identificate tramite diverse modalità                                                                                                                                                                                                                  |                               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           | 8.6 – Titoli ed etichette                                                                        | I contenuti sono organizzati logicamente rispettandone il corretto ordine sequenziale gerarchico tramite l’uso appropriato di titoli (<H[x]>).                                                                                                                                                                         |                               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           | 8.7 – Focus visibile                                                                             | Tutte le interfacce utente utilizzabili tramite tastiera possiedono funzioni che evidenzino chiaramente gli indicatori del focus (Active, Focus, Hover)                                                                                                                                                                |                               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+| Req9 - Leggibile: rendere leggibile e comprensibile il contenuto testuale.                                                                                                                                                                                                                                                                                                                                | 9.1 – Lingua della pagina                                                                        | La lingua della pagina è definita tramite tecnologie compatibili con l’accessibilità                                                                                                                                                                                                                                   |                               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           | 9.2 – Parti in lingua diversa da quella definita per la pagina                                   | Testi presentati in lingue diverse da quella indicata come principale sono correttamente definiti tramite gli attributi previsti dalle tecnologie compatibili con l’accessibilità.                                                                                                                                     |                               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+| Req10 - Prevedibile: creare pagine web che appaiano e che si comportino in maniera prevedibile.                                                                                                                                                                                                                                                                                                           | 10.1 – Al focus                                                                                  | Non vengono avviati automaticamente cambiamenti di contesto quando un qualsiasi componente riceve il focus.                                                                                                                                                                                                            |                               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           | 10.2 – All’input                                                                                 | I cambiamenti di contesto non sono automatici. In casi particolari in cui ciò non sia possibile l’utente è preventivamente avvisato.                                                                                                                                                                                   |                               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           | 10.3 – Navigazione costante                                                                      | I meccanismi di navigazione ripetuti su più pagine sono sempre presentati allo stesso modo a meno che l’utente non avvii un cambiamento.                                                                                                                                                                               |                               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           | 10.4 – Identificazione coerente                                                                  | I componenti che hanno stesse funzionalità sono identificati in modo uniforme.                                                                                                                                                                                                                                         |                               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+| Req11 - Assistenza nell'inserimento di dati e informazioni: aiutare l'utente ad evitare gli errori ed agevolarlo nella loro correzione.                                                                                                                                                                                                                                                                   | 11.1 – Identificazione di errori                                                                 | Gli errori rilevati automaticamente in fase di inserimento sono identificati chiaramente e descritti in modo esaustivo tramite testo.                                                                                                                                                                                  |                               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           | 11.2 – Etichette o istruzioni                                                                    | Sono fornite etichette o istruzioni per la corretta esecuzione di azioni/operazioni di input.                                                                                                                                                                                                                          |                               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           | 11.3 – Suggerimenti per gli errori                                                               | Per errori che è possibile correggere senza che siano pregiudicati sicurezza e finalità del contenuto, sono forniti suggerimenti all’utente.                                                                                                                                                                           |                               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           | 11.4 – Prevenzione degli errori (legali, finanziari, dati)                                       | Le pagine web che presentano funzionalità di gestione dati controllabili dall’utente, soddisfano almeno una delle seguenti condizioni (selezionare una delle seguenti opzioni):                                                                                                                                        |                               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  | Reversibilità: le azioni/operazioni sono reversibili.                                                                                                                                                                                                                                                                  |                               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  | Controllo: i dati inseriti dall'utente sono verificati ed è fornita la possibilità di correggere eventuali errori di inserimento.                                                                                                                                                                                      |                               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  | Conferma: è disponibile una funzionalità per la revisione, conferma e correzione delle informazioni prima dell’invio definitivo.                                                                                                                                                                                       |                               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+| Req12 - Compatibile: garantire la massima compatibilità con i programmi utente e con le tecnologie assistive.                                                                                                                                                                                                                                                                                             | 12.1 – Analisi sintattica: parsing                                                               | I linguaggi di marcatura sono utilizzati in modo conforme alle specifiche previste dalla grammatica formale di riferimento.                                                                                                                                                                                            |                               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  | Le pagine analizzate tramite il Markup Validation Service (W3C) risultano valide.                                                                                                                                                                                                                                      |                               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  | I fogli di stile analizzati tramite il CSS Validation Service (W3C) risultano validi.                                                                                                                                                                                                                                  |                               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           | 12.2 – Name, Role, Value                                                                         | In tutti i componenti dell’interfaccia utente, name (descrizione) e role (scopo o funzionalità) sono definiti tramite tecnologie compatibili con l’accessibilità.                                                                                                                                                      |                               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
+|                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                                  | Stati proprietà e valori dei componenti dell’interfaccia possono essere impostati dall’utente; le notifiche sui cambi di stato di questi elementi sono rese disponibili ai programmi utente, tecnologie assistive incluse.                                                                                             |                               |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------+
 
 Ove l’amministrazione non consideri ugualmente importanti tutti i punti della checklist, potrà classificarli per priorità definendo opportuni pesi. Ad esempio, potrà stabilire che all’applicazione in esame non si applicano i requisiti 4 e 5, che il requisito 2 è il più importante e gli va assegnato un peso pari a 50, che al requisito 8 va assegnato un peso 10, che i restanti requisiti sono di pari rilevanza e a ciascuno di questi va assegnato un requisito pari a 5, come nella tabella seguente.
 
 Tabella 46: valutazione di accessibilità
 
-+------------+--------+---------------------+-------------------------+
-| **Requisit | **Peso | **Valutazione       | **Obiettivo             |
-| o**        | **     | iniziale**          | dell’intervento**       |
-+============+========+=====================+=========================+
-| Req1       | 5      | S                   | S                       |
-+------------+--------+---------------------+-------------------------+
-| Req2       | 50     | N                   | S - MANDATORIO          |
-+------------+--------+---------------------+-------------------------+
-| Req3       | 5      | N                   | S                       |
-+------------+--------+---------------------+-------------------------+
-| Req4       | -      | -                   | -                       |
-+------------+--------+---------------------+-------------------------+
-| Req5       | -      | -                   | -                       |
-+------------+--------+---------------------+-------------------------+
-| Req6       | 5      | S                   | S                       |
-+------------+--------+---------------------+-------------------------+
-| Req7       | 5      | S                   | S                       |
-+------------+--------+---------------------+-------------------------+
-| Req8       | 10     | N                   | S - MANDATORIO          |
-+------------+--------+---------------------+-------------------------+
-| Req9       | 5      | N                   | S                       |
-+------------+--------+---------------------+-------------------------+
-| Req10      | 5      | N                   | S                       |
-+------------+--------+---------------------+-------------------------+
-| Req11      | 5      | S                   | S                       |
-+------------+--------+---------------------+-------------------------+
-| Req12      | 5      | S                   | S                       |
-+------------+--------+---------------------+-------------------------+
-| Totale     | 100    | 25                  | 100                     |
-+------------+--------+---------------------+-------------------------+
++---------------+----------+--------------------------+-------------------------------+
+| **Requisito** | **Peso** | **Valutazione iniziale** | **Obiettivo dell’intervento** |
++===============+==========+==========================+===============================+
+| Req1          | 5        | S                        | S                             |
++---------------+----------+--------------------------+-------------------------------+
+| Req2          | 50       | N                        | S - MANDATORIO                |
++---------------+----------+--------------------------+-------------------------------+
+| Req3          | 5        | N                        | S                             |
++---------------+----------+--------------------------+-------------------------------+
+| Req4          | -        | -                        | -                             |
++---------------+----------+--------------------------+-------------------------------+
+| Req5          | -        | -                        | -                             |
++---------------+----------+--------------------------+-------------------------------+
+| Req6          | 5        | S                        | S                             |
++---------------+----------+--------------------------+-------------------------------+
+| Req7          | 5        | S                        | S                             |
++---------------+----------+--------------------------+-------------------------------+
+| Req8          | 10       | N                        | S - MANDATORIO                |
++---------------+----------+--------------------------+-------------------------------+
+| Req9          | 5        | N                        | S                             |
++---------------+----------+--------------------------+-------------------------------+
+| Req10         | 5        | N                        | S                             |
++---------------+----------+--------------------------+-------------------------------+
+| Req11         | 5        | S                        | S                             |
++---------------+----------+--------------------------+-------------------------------+
+| Req12         | 5        | S                        | S                             |
++---------------+----------+--------------------------+-------------------------------+
+| Totale        | 100      | 25                       | 100                           |
++---------------+----------+--------------------------+-------------------------------+
 
 Valutando la conformità dell’applicazione prima dell’intervento ai punti della checklist, l’amministrazione può ottenere una misura iniziale della caratteristica accessibilità, in questo caso pari a 25 (vedi tabella).
 

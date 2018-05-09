@@ -9,19 +9,19 @@ Il servizio web di **verifica del buono** da parte degli esercenti o degli enti 
 
 1. **Check**
 
-+---------+------------------------------+------------------------------+
-| INPUT:  | tipo operazione              | *“1”, “2”*                   |
-+=========+==============================+==============================+
-|         | codice buono                 |                              |
-+---------+------------------------------+------------------------------+
-| OUTPUT: | nominativo beneficiario      | *CF o Nome e Cognome*        |
-+---------+------------------------------+------------------------------+
-|         | partita IVA esercente ambito | *cinema, teatro, libreria…*  |
-+---------+------------------------------+------------------------------+
-|         | bene                         | *libri, spettacoli…*         |
-+---------+------------------------------+------------------------------+
-|         | importo                      | *importo totale del buono*   |
-+---------+------------------------------+------------------------------+
++---------+------------------------------+-----------------------------+
+| INPUT:  | tipo operazione              | *“1”, “2”*                  |
++=========+==============================+=============================+
+|         | codice buono                 |                             |
++---------+------------------------------+-----------------------------+
+| OUTPUT: | nominativo beneficiario      | *CF o Nome e Cognome*       |
++---------+------------------------------+-----------------------------+
+|         | partita IVA esercente ambito | *cinema, teatro, libreria…* |
++---------+------------------------------+-----------------------------+
+|         | bene                         | *libri, spettacoli…*        |
++---------+------------------------------+-----------------------------+
+|         | importo                      | *importo totale del buono*  |
++---------+------------------------------+-----------------------------+
 
 Se **tipo operazione** verrà valorizzato con **“1”**, il check del buono restituerà all’esercente i campi previsti in output senza consumare il buono e quindi senza scalare l’importo dal Portafoglio del beneficiario. Questa modalità di utilizzo dell’operazione non è obbligatoria, ma lascia all’esercente la possibilità di eseguire un controllo tra il nominativo del beneficiario e quello del suo cliente in sessione.
 
@@ -78,46 +78,33 @@ Codici di errore
 
 La seguente tabella rappresenta i possibili errori gestiti dal sistema:
 
-+--------+-------------------------------------------------------------+
-| **Codi | **Descrizione/Description**                                 |
-| ce/Cod |                                                             |
-| e**    |                                                             |
-+========+=============================================================+
-| 01     | Errore nel formato dei parametri in input, verificarli e    |
-|        | riprovare                                                   |
-+--------+-------------------------------------------------------------+
-|        | Error in the input parameters, check and try again          |
-+--------+-------------------------------------------------------------+
-| 02     | Il buono richiesto non è disponibile sul sistema o è già    |
-|        | stato riscosso o annullato                                  |
-+--------+-------------------------------------------------------------+
-|        | The requested buono is not available on the system. It      |
-|        | could be already collected or canceled                      |
-+--------+-------------------------------------------------------------+
-| 03     | Impossibile attivare l'esercente. Verificare che i dati     |
-|        | siano corretti e che l'esercente non sia già stato attivato |
-+--------+-------------------------------------------------------------+
-|        | Impossible to activate the user. Please verify input        |
-|        | parameters and that the user has not been already           |
-|        | activated.                                                  |
-+--------+-------------------------------------------------------------+
-| 04     | L'importo richiesto è superiore all'importo del buono       |
-|        | selezionato                                                 |
-+--------+-------------------------------------------------------------+
-|        | The amount claimed is greater than the amount of the        |
-|        | selected buono                                              |
-+--------+-------------------------------------------------------------+
-| 05     | Non si può verificare o consumare il buono poichè           |
-|        | l'esercente risulta non attivo                              |
-+--------+-------------------------------------------------------------+
-|        | User inactive, buono impossible to verify.                  |
-+--------+-------------------------------------------------------------+
-| 06     | Ambito e bene del buono non coincidono con ambiti e beni    |
-|        | trattati dall’esercente                                     |
-+--------+-------------------------------------------------------------+
-|        | Category and type of this buono are not aligned with        |
-|        | category and type managed by the user.                      |
-+--------+-------------------------------------------------------------+
++-----------------+---------------------------------------------------------------------------------------------------------------------+
+| **Codice/Code** | **Descrizione/Description**                                                                                         |
++=================+=====================================================================================================================+
+| 01              | Errore nel formato dei parametri in input, verificarli e riprovare                                                  |
++-----------------+---------------------------------------------------------------------------------------------------------------------+
+|                 | Error in the input parameters, check and try again                                                                  |
++-----------------+---------------------------------------------------------------------------------------------------------------------+
+| 02              | Il buono richiesto non è disponibile sul sistema o è già stato riscosso o annullato                                 |
++-----------------+---------------------------------------------------------------------------------------------------------------------+
+|                 | The requested buono is not available on the system. It could be already collected or canceled                       |
++-----------------+---------------------------------------------------------------------------------------------------------------------+
+| 03              | Impossibile attivare l'esercente. Verificare che i dati siano corretti e che l'esercente non sia già stato attivato |
++-----------------+---------------------------------------------------------------------------------------------------------------------+
+|                 | Impossible to activate the user. Please verify input parameters and that the user has not been already activated.   |
++-----------------+---------------------------------------------------------------------------------------------------------------------+
+| 04              | L'importo richiesto è superiore all'importo del buono selezionato                                                   |
++-----------------+---------------------------------------------------------------------------------------------------------------------+
+|                 | The amount claimed is greater than the amount of the selected buono                                                 |
++-----------------+---------------------------------------------------------------------------------------------------------------------+
+| 05              | Non si può verificare o consumare il buono poichè l'esercente risulta non attivo                                    |
++-----------------+---------------------------------------------------------------------------------------------------------------------+
+|                 | User inactive, buono impossible to verify.                                                                          |
++-----------------+---------------------------------------------------------------------------------------------------------------------+
+| 06              | Ambito e bene del buono non coincidono con ambiti e beni trattati dall’esercente                                    |
++-----------------+---------------------------------------------------------------------------------------------------------------------+
+|                 | Category and type of this buono are not aligned with category and type managed by the user.                         |
++-----------------+---------------------------------------------------------------------------------------------------------------------+
 
 Esempi di request/response
 ==========================
@@ -255,108 +242,95 @@ Elements Complex types
 
 service **VerificaVoucher**
 
-+----+-----------------------------------------------------------------+
-| di | |image3|                                                        |
-| ag |                                                                 |
-| ra |                                                                 |
-|    |                                                                 |
-| m  |                                                                 |
-+====+=================================================================+
-| po | **VerificaVoucherSOAP**                                         |
-| rt |                                                                 |
-| s  | binding **tns:VerificaVoucherSOAP**                             |
-|    |                                                                 |
-|    | extensibil <soap:address                                        |
-|    |                                                                 |
-|    | ity                                                             |
-|    | location="\ https://ws.cartadeldocente.istruzione.it/VerificaVo |
-|    | ucherDocWEB/V                                                   |
-|    | erificaVoucher"/>                                               |
-+----+-----------------------------------------------------------------+
++--------+----------------------------------------------------------------------------------------------------+
+| diagra | |image3|                                                                                           |
+|        |                                                                                                    |
+| m      |                                                                                                    |
++========+====================================================================================================+
+| ports  | **VerificaVoucherSOAP**                                                                            |
+|        |                                                                                                    |
+|        | binding **tns:VerificaVoucherSOAP**                                                                |
+|        |                                                                                                    |
+|        | extensibil <soap:address                                                                           |
+|        |                                                                                                    |
+|        | ity location="\ https://ws.cartadeldocente.istruzione.it/VerificaVoucherDocWEB/V erificaVoucher"/> |
++--------+----------------------------------------------------------------------------------------------------+
 
 binding **VerificaVoucherSOAP**
 
-+----------+-----------------------------------------------------------+
-| diagram  | |image4|                                                  |
-+==========+===========================================================+
-| type     | **tns:VerificaVoucher**                                   |
-+----------+-----------------------------------------------------------+
-| extensib | <soap:binding style="document"                            |
-| ility    | transport="\ http://schemas.xmlsoap.org/soap/http%22/>    |
-+----------+-----------------------------------------------------------+
-| operatio | **Check**                                                 |
-| ns       |                                                           |
-|          | extensibility <soap:operation                             |
-|          |                                                           |
-|          | soapAction="\ http://bonus.miur.it/VerificaVoucher/Check% |
-|          | 22/>                                                      |
-|          |                                                           |
-|          | input <soap:body use="literal"/>                          |
-|          |                                                           |
-|          | output <soap:body use="literal"/>                         |
-|          |                                                           |
-|          | **Confirm**                                               |
-|          |                                                           |
-|          | extensibility <soap:operation                             |
-|          |                                                           |
-|          | soapAction="\ http://bonus.miur.it/VerificaVoucher/Confir |
-|          | m%22/>                                                    |
-|          |                                                           |
-|          | input <soap:body use="literal"/>                          |
-|          |                                                           |
-|          | output <soap:body use="literal"/>                         |
-+----------+-----------------------------------------------------------+
-| used by  | Port **VerificaVoucherSOAP** in Service                   |
-|          | **VerificaVoucher**                                       |
-+----------+-----------------------------------------------------------+
-| source   | <wsdl:binding name="VerificaVoucherSOAP"                  |
-|          | type="tns:VerificaVoucher">                               |
-|          |                                                           |
-|          | <soap:binding style="document"                            |
-|          | transport="\ http://schemas.xmlsoap.org/soap/http%22/>    |
-|          |                                                           |
-|          | <wsdl:operation name="Check">                             |
-+----------+-----------------------------------------------------------+
++---------------+---------------------------------------------------------------------------------------+
+| diagram       | |image4|                                                                              |
++===============+=======================================================================================+
+| type          | **tns:VerificaVoucher**                                                               |
++---------------+---------------------------------------------------------------------------------------+
+| extensibility | <soap:binding style="document" transport="\ http://schemas.xmlsoap.org/soap/http%22/> |
++---------------+---------------------------------------------------------------------------------------+
+| operations    | **Check**                                                                             |
+|               |                                                                                       |
+|               | extensibility <soap:operation                                                         |
+|               |                                                                                       |
+|               | soapAction="\ http://bonus.miur.it/VerificaVoucher/Check%22/>                         |
+|               |                                                                                       |
+|               | input <soap:body use="literal"/>                                                      |
+|               |                                                                                       |
+|               | output <soap:body use="literal"/>                                                     |
+|               |                                                                                       |
+|               | **Confirm**                                                                           |
+|               |                                                                                       |
+|               | extensibility <soap:operation                                                         |
+|               |                                                                                       |
+|               | soapAction="\ http://bonus.miur.it/VerificaVoucher/Confirm%22/>                       |
+|               |                                                                                       |
+|               | input <soap:body use="literal"/>                                                      |
+|               |                                                                                       |
+|               | output <soap:body use="literal"/>                                                     |
++---------------+---------------------------------------------------------------------------------------+
+| used by       | Port **VerificaVoucherSOAP** in Service **VerificaVoucher**                           |
++---------------+---------------------------------------------------------------------------------------+
+| source        | <wsdl:binding name="VerificaVoucherSOAP" type="tns:VerificaVoucher">                  |
+|               |                                                                                       |
+|               | <soap:binding style="document" transport="\ http://schemas.xmlsoap.org/soap/http%22/> |
+|               |                                                                                       |
+|               | <wsdl:operation name="Check">                                                         |
++---------------+---------------------------------------------------------------------------------------+
 
-+---+--------------------------------------------------------------------+
-|   | <soap:operation                                                    |
-|   | soapAction="\ http://bonus.miur.it/VerificaVoucher/Check%22/>      |
-|   |                                                                    |
-|   | <wsdl:input>                                                       |
-|   |                                                                    |
-|   | <soap:body use="literal"/>                                         |
-|   |                                                                    |
-|   | </wsdl:input>                                                      |
-|   |                                                                    |
-|   | <wsdl:output>                                                      |
-|   |                                                                    |
-|   | <soap:body use="literal"/>                                         |
-|   |                                                                    |
-|   | </wsdl:output>                                                     |
-|   |                                                                    |
-|   | </wsdl:operation>                                                  |
-|   |                                                                    |
-|   | <wsdl:operation name="Confirm">                                    |
-|   |                                                                    |
-|   | <soap:operation                                                    |
-|   | soapAction="\ http://bonus.miur.it/VerificaVoucher/Confirm%22/>    |
-|   |                                                                    |
-|   | <wsdl:input>                                                       |
-|   |                                                                    |
-|   | <soap:body use="literal"/>                                         |
-|   |                                                                    |
-|   | </wsdl:input>                                                      |
-|   |                                                                    |
-|   | <wsdl:output>                                                      |
-|   |                                                                    |
-|   | <soap:body use="literal"/>                                         |
-|   |                                                                    |
-|   | </wsdl:output>                                                     |
-|   |                                                                    |
-|   | </wsdl:operation>                                                  |
-|   |                                                                    |
-|   | </wsdl:binding>                                                    |
-+---+--------------------------------------------------------------------+
++--+---------------------------------------------------------------------------------+
+|  | <soap:operation soapAction="\ http://bonus.miur.it/VerificaVoucher/Check%22/>   |
+|  |                                                                                 |
+|  | <wsdl:input>                                                                    |
+|  |                                                                                 |
+|  | <soap:body use="literal"/>                                                      |
+|  |                                                                                 |
+|  | </wsdl:input>                                                                   |
+|  |                                                                                 |
+|  | <wsdl:output>                                                                   |
+|  |                                                                                 |
+|  | <soap:body use="literal"/>                                                      |
+|  |                                                                                 |
+|  | </wsdl:output>                                                                  |
+|  |                                                                                 |
+|  | </wsdl:operation>                                                               |
+|  |                                                                                 |
+|  | <wsdl:operation name="Confirm">                                                 |
+|  |                                                                                 |
+|  | <soap:operation soapAction="\ http://bonus.miur.it/VerificaVoucher/Confirm%22/> |
+|  |                                                                                 |
+|  | <wsdl:input>                                                                    |
+|  |                                                                                 |
+|  | <soap:body use="literal"/>                                                      |
+|  |                                                                                 |
+|  | </wsdl:input>                                                                   |
+|  |                                                                                 |
+|  | <wsdl:output>                                                                   |
+|  |                                                                                 |
+|  | <soap:body use="literal"/>                                                      |
+|  |                                                                                 |
+|  | </wsdl:output>                                                                  |
+|  |                                                                                 |
+|  | </wsdl:operation>                                                               |
+|  |                                                                                 |
+|  | </wsdl:binding>                                                                 |
++--+---------------------------------------------------------------------------------+
 
 porttype **VerificaVoucher**
 
@@ -384,75 +358,69 @@ porttype **VerificaVoucher**
 |            | <wsdl:input message="tns:CheckRequest"/> |
 +------------+------------------------------------------+
 
-+---+----------------------------------------------+
-|   | <wsdl:output message="tns:CheckResponse"/>   |
-|   |                                              |
-|   | </wsdl:operation>                            |
-|   |                                              |
-|   | <wsdl:operation name="Confirm">              |
-|   |                                              |
-|   | <wsdl:input message="tns:ConfirmRequest"/>   |
-|   |                                              |
-|   | <wsdl:output message="tns:ConfirmResponse"/> |
-|   |                                              |
-|   | </wsdl:operation>                            |
-|   |                                              |
-|   | </wsdl:portType>                             |
-+---+----------------------------------------------+
++--+----------------------------------------------+
+|  | <wsdl:output message="tns:CheckResponse"/>   |
+|  |                                              |
+|  | </wsdl:operation>                            |
+|  |                                              |
+|  | <wsdl:operation name="Confirm">              |
+|  |                                              |
+|  | <wsdl:input message="tns:ConfirmRequest"/>   |
+|  |                                              |
+|  | <wsdl:output message="tns:ConfirmResponse"/> |
+|  |                                              |
+|  | </wsdl:operation>                            |
+|  |                                              |
+|  | </wsdl:portType>                             |
++--+----------------------------------------------+
 
 message **CheckRequest**
 
-+--------+-------------------------------------------------------------+
-| parts  | **parameters**                                              |
-|        |                                                             |
-|        | element **tns:CheckRequestObj**                             |
-+========+=============================================================+
-| used   | Operation **Check** in PortType **VerificaVoucher**         |
-| by     |                                                             |
-+--------+-------------------------------------------------------------+
-| source | <wsdl:message name="CheckRequest">                          |
-|        |                                                             |
-|        | <wsdl:part name="parameters"                                |
-|        | element="tns:CheckRequestObj"/>                             |
-|        |                                                             |
-|        | </wsdl:message>                                             |
-+--------+-------------------------------------------------------------+
++---------+--------------------------------------------------------------+
+| parts   | **parameters**                                               |
+|         |                                                              |
+|         | element **tns:CheckRequestObj**                              |
++=========+==============================================================+
+| used by | Operation **Check** in PortType **VerificaVoucher**          |
++---------+--------------------------------------------------------------+
+| source  | <wsdl:message name="CheckRequest">                           |
+|         |                                                              |
+|         | <wsdl:part name="parameters" element="tns:CheckRequestObj"/> |
+|         |                                                              |
+|         | </wsdl:message>                                              |
++---------+--------------------------------------------------------------+
 
 message **CheckResponse**
 
-+--------+-------------------------------------------------------------+
-| parts  | **parameters**                                              |
-|        |                                                             |
-|        | element **tns:CheckResponseObj**                            |
-+========+=============================================================+
-| used   | Operation **Check** in PortType **VerificaVoucher**         |
-| by     |                                                             |
-+--------+-------------------------------------------------------------+
-| source | <wsdl:message name="CheckResponse">                         |
-|        |                                                             |
-|        | <wsdl:part name="parameters"                                |
-|        | element="tns:CheckResponseObj"/>                            |
-|        |                                                             |
-|        | </wsdl:message>                                             |
-+--------+-------------------------------------------------------------+
++---------+---------------------------------------------------------------+
+| parts   | **parameters**                                                |
+|         |                                                               |
+|         | element **tns:CheckResponseObj**                              |
++=========+===============================================================+
+| used by | Operation **Check** in PortType **VerificaVoucher**           |
++---------+---------------------------------------------------------------+
+| source  | <wsdl:message name="CheckResponse">                           |
+|         |                                                               |
+|         | <wsdl:part name="parameters" element="tns:CheckResponseObj"/> |
+|         |                                                               |
+|         | </wsdl:message>                                               |
++---------+---------------------------------------------------------------+
 
 message **ConfirmRequest**
 
-+--------+-------------------------------------------------------------+
-| parts  | **parameters**                                              |
-|        |                                                             |
-|        | element **tns:ConfirmRequestObj**                           |
-+========+=============================================================+
-| used   | Operation **Confirm** in PortType **VerificaVoucher**       |
-| by     |                                                             |
-+--------+-------------------------------------------------------------+
-| source | <wsdl:message name="ConfirmRequest">                        |
-|        |                                                             |
-|        | <wsdl:part name="parameters"                                |
-|        | element="tns:ConfirmRequestObj"/>                           |
-|        |                                                             |
-|        | </wsdl:message>                                             |
-+--------+-------------------------------------------------------------+
++---------+----------------------------------------------------------------+
+| parts   | **parameters**                                                 |
+|         |                                                                |
+|         | element **tns:ConfirmRequestObj**                              |
++=========+================================================================+
+| used by | Operation **Confirm** in PortType **VerificaVoucher**          |
++---------+----------------------------------------------------------------+
+| source  | <wsdl:message name="ConfirmRequest">                           |
+|         |                                                                |
+|         | <wsdl:part name="parameters" element="tns:ConfirmRequestObj"/> |
+|         |                                                                |
+|         | </wsdl:message>                                                |
++---------+----------------------------------------------------------------+
 
 message **ConfirmResponse**
 
@@ -466,11 +434,11 @@ message **ConfirmResponse**
 | source  | <wsdl:message name="ConfirmResponse">                 |
 +---------+-------------------------------------------------------+
 
-+---+-----------------------------------------------------------------+
-|   | <wsdl:part name="parameters" element="tns:ConfirmResponseObj"/> |
-|   |                                                                 |
-|   | </wsdl:message>                                                 |
-+---+-----------------------------------------------------------------+
++--+-----------------------------------------------------------------+
+|  | <wsdl:part name="parameters" element="tns:ConfirmResponseObj"/> |
+|  |                                                                 |
+|  | </wsdl:message>                                                 |
++--+-----------------------------------------------------------------+
 
 element **CheckRequestObj**
 
@@ -542,19 +510,17 @@ element **CheckResponseObj**
 
 element **CheckResponseObj/checkResp**
 
-+----------+-----------------------------------------------------------+
-| diagram  | |image9|                                                  |
-+==========+===========================================================+
-| type     | **tns:CheckResponse**                                     |
-+----------+-----------------------------------------------------------+
-| properti | content complex                                           |
-| es       |                                                           |
-+----------+-----------------------------------------------------------+
-| children | **nominativoBeneficiario partitaIvaEsercente ambito bene  |
-|          | importo**                                                 |
-+----------+-----------------------------------------------------------+
-| source   | <xsd:element name="checkResp" type="tns:CheckResponse"/>  |
-+----------+-----------------------------------------------------------+
++------------+--------------------------------------------------------------------+
+| diagram    | |image9|                                                           |
++============+====================================================================+
+| type       | **tns:CheckResponse**                                              |
++------------+--------------------------------------------------------------------+
+| properties | content complex                                                    |
++------------+--------------------------------------------------------------------+
+| children   | **nominativoBeneficiario partitaIvaEsercente ambito bene importo** |
++------------+--------------------------------------------------------------------+
+| source     | <xsd:element name="checkResp" type="tns:CheckResponse"/>           |
++------------+--------------------------------------------------------------------+
 
 element **ConfirmRequestObj**
 
@@ -576,13 +542,13 @@ element **ConfirmRequestObj**
 |            | <xsd:element name="checkReq" type="tns:Confirm"/> |
 +------------+---------------------------------------------------+
 
-+---+--------------------+
-|   | </xsd:sequence>    |
-|   |                    |
-|   | </xsd:complexType> |
-|   |                    |
-|   | </xsd:element>     |
-+---+--------------------+
++--+--------------------+
+|  | </xsd:sequence>    |
+|  |                    |
+|  | </xsd:complexType> |
+|  |                    |
+|  | </xsd:element>     |
++--+--------------------+
 
 element **ConfirmRequestObj/checkReq**
 
@@ -600,362 +566,301 @@ element **ConfirmRequestObj/checkReq**
 
 element **ConfirmResponseObj**
 
-+-----------+----------------------------------------------------------+
-| diagram   | |image12|                                                |
-+===========+==========================================================+
-| namespace | http://bonus.miur.it/VerificaVoucher/                    |
-+-----------+----------------------------------------------------------+
-| propertie | content complex                                          |
-| s         |                                                          |
-+-----------+----------------------------------------------------------+
-| children  | **checkResp**                                            |
-+-----------+----------------------------------------------------------+
-| source    | <xsd:element name="ConfirmResponseObj">                  |
-|           |                                                          |
-|           | <xsd:complexType>                                        |
-|           |                                                          |
-|           | <xsd:sequence>                                           |
-|           |                                                          |
-|           | <xsd:element name="checkResp"                            |
-|           | type="tns:ConfirmResponse"/>                             |
-|           |                                                          |
-|           | </xsd:sequence>                                          |
-|           |                                                          |
-|           | </xsd:complexType>                                       |
-|           |                                                          |
-|           | </xsd:element>                                           |
-+-----------+----------------------------------------------------------+
++------------+------------------------------------------------------------+
+| diagram    | |image12|                                                  |
++============+============================================================+
+| namespace  | http://bonus.miur.it/VerificaVoucher/                      |
++------------+------------------------------------------------------------+
+| properties | content complex                                            |
++------------+------------------------------------------------------------+
+| children   | **checkResp**                                              |
++------------+------------------------------------------------------------+
+| source     | <xsd:element name="ConfirmResponseObj">                    |
+|            |                                                            |
+|            | <xsd:complexType>                                          |
+|            |                                                            |
+|            | <xsd:sequence>                                             |
+|            |                                                            |
+|            | <xsd:element name="checkResp" type="tns:ConfirmResponse"/> |
+|            |                                                            |
+|            | </xsd:sequence>                                            |
+|            |                                                            |
+|            | </xsd:complexType>                                         |
+|            |                                                            |
+|            | </xsd:element>                                             |
++------------+------------------------------------------------------------+
 
 element **ConfirmResponseObj/checkResp**
 
-+-----------+----------------------------------------------------------+
-| diagram   | |image13|                                                |
-+===========+==========================================================+
-| type      | **tns:ConfirmResponse**                                  |
-+-----------+----------------------------------------------------------+
-| propertie | content complex                                          |
-| s         |                                                          |
-+-----------+----------------------------------------------------------+
-| children  | **esito**                                                |
-+-----------+----------------------------------------------------------+
-| source    | <xsd:element name="checkResp"                            |
-|           | type="tns:ConfirmResponse"/>                             |
-+-----------+----------------------------------------------------------+
++------------+------------------------------------------------------------+
+| diagram    | |image13|                                                  |
++============+============================================================+
+| type       | **tns:ConfirmResponse**                                    |
++------------+------------------------------------------------------------+
+| properties | content complex                                            |
++------------+------------------------------------------------------------+
+| children   | **esito**                                                  |
++------------+------------------------------------------------------------+
+| source     | <xsd:element name="checkResp" type="tns:ConfirmResponse"/> |
++------------+------------------------------------------------------------+
 
 complexType **Check**
 
-+-------+--------------------------------------------------------------+
-| diagr | |image14|                                                    |
-| am    |                                                              |
-+=======+==============================================================+
-| names | http://bonus.miur.it/VerificaVoucher/                        |
-| pace  |                                                              |
-+-------+--------------------------------------------------------------+
-| child | **tipoOperazione codiceVoucher partitaIvaEsercente**         |
-| ren   |                                                              |
-+-------+--------------------------------------------------------------+
-| used  | element **CheckRequestObj/checkReq**                         |
-| by    |                                                              |
-+-------+--------------------------------------------------------------+
-| sourc | <xsd:complexType name="Check">                               |
-| e     |                                                              |
-|       | <xsd:sequence>                                               |
-|       |                                                              |
-|       | <xsd:element name="tipoOperazione" type="xsd:string"         |
-|       | minOccurs="1" maxOccurs="1"/>                                |
-|       |                                                              |
-|       | <xsd:element name="codiceVoucher" type="xsd:string"          |
-|       | minOccurs="1" maxOccurs="1"/>                                |
-|       |                                                              |
-|       | <xsd:element name="partitaIvaEsercente" type="xsd:string"    |
-|       | minOccurs="0" maxOccurs="1"/>                                |
-|       |                                                              |
-|       | </xsd:sequence>                                              |
-|       |                                                              |
-|       | </xsd:complexType>                                           |
-+-------+--------------------------------------------------------------+
++-----------+-----------------------------------------------------------------------------------------+
+| diagram   | |image14|                                                                               |
++===========+=========================================================================================+
+| namespace | http://bonus.miur.it/VerificaVoucher/                                                   |
++-----------+-----------------------------------------------------------------------------------------+
+| children  | **tipoOperazione codiceVoucher partitaIvaEsercente**                                    |
++-----------+-----------------------------------------------------------------------------------------+
+| used by   | element **CheckRequestObj/checkReq**                                                    |
++-----------+-----------------------------------------------------------------------------------------+
+| source    | <xsd:complexType name="Check">                                                          |
+|           |                                                                                         |
+|           | <xsd:sequence>                                                                          |
+|           |                                                                                         |
+|           | <xsd:element name="tipoOperazione" type="xsd:string" minOccurs="1" maxOccurs="1"/>      |
+|           |                                                                                         |
+|           | <xsd:element name="codiceVoucher" type="xsd:string" minOccurs="1" maxOccurs="1"/>       |
+|           |                                                                                         |
+|           | <xsd:element name="partitaIvaEsercente" type="xsd:string" minOccurs="0" maxOccurs="1"/> |
+|           |                                                                                         |
+|           | </xsd:sequence>                                                                         |
+|           |                                                                                         |
+|           | </xsd:complexType>                                                                      |
++-----------+-----------------------------------------------------------------------------------------+
 
 element **Check/tipoOperazione**
 
-+----------+-----------------------------------------------------------+
-| diagram  | |image15|                                                 |
-+==========+===========================================================+
-| type     | **xsd:string**                                            |
-+----------+-----------------------------------------------------------+
-| properti | content simple                                            |
-| es       |                                                           |
-+----------+-----------------------------------------------------------+
-| source   | <xsd:element name="tipoOperazione" type="xsd:string"      |
-|          | minOccurs="1"                                             |
-+----------+-----------------------------------------------------------+
++------------+--------------------------------------------------------------------+
+| diagram    | |image15|                                                          |
++============+====================================================================+
+| type       | **xsd:string**                                                     |
++------------+--------------------------------------------------------------------+
+| properties | content simple                                                     |
++------------+--------------------------------------------------------------------+
+| source     | <xsd:element name="tipoOperazione" type="xsd:string" minOccurs="1" |
++------------+--------------------------------------------------------------------+
 
-+---+-----------------+
-|   | maxOccurs="1"/> |
-+---+-----------------+
++--+-----------------+
+|  | maxOccurs="1"/> |
++--+-----------------+
 
 element **Check/codiceVoucher**
 
-+--------+-------------------------------------------------------------+
-| diagra | |image16|                                                   |
-| m      |                                                             |
-+========+=============================================================+
-| type   | **xsd:string**                                              |
-+--------+-------------------------------------------------------------+
-| proper | content simple                                              |
-| ties   |                                                             |
-+--------+-------------------------------------------------------------+
-| source | <xsd:element name="codiceVoucher" type="xsd:string"         |
-|        | minOccurs="1" maxOccurs="1"/>                               |
-+--------+-------------------------------------------------------------+
++------------+-----------------------------------------------------------------------------------+
+| diagram    | |image16|                                                                         |
++============+===================================================================================+
+| type       | **xsd:string**                                                                    |
++------------+-----------------------------------------------------------------------------------+
+| properties | content simple                                                                    |
++------------+-----------------------------------------------------------------------------------+
+| source     | <xsd:element name="codiceVoucher" type="xsd:string" minOccurs="1" maxOccurs="1"/> |
++------------+-----------------------------------------------------------------------------------+
 
 element **Check/partitaIvaEsercente**
 
-+--------+-------------------------------------------------------------+
-| diagra | |image17|                                                   |
-| m      |                                                             |
-+========+=============================================================+
-| type   | **xsd:string**                                              |
-+--------+-------------------------------------------------------------+
-| proper | minOcc 0                                                    |
-| ties   |                                                             |
-|        | maxOcc 1 content simple                                     |
-+--------+-------------------------------------------------------------+
-| source | <xsd:element name="partitaIvaEsercente" type="xsd:string"   |
-|        | minOccurs="0" maxOccurs="1"/>                               |
-+--------+-------------------------------------------------------------+
++------------+-----------------------------------------------------------------------------------------+
+| diagram    | |image17|                                                                               |
++============+=========================================================================================+
+| type       | **xsd:string**                                                                          |
++------------+-----------------------------------------------------------------------------------------+
+| properties | minOcc 0                                                                                |
+|            |                                                                                         |
+|            | maxOcc 1 content simple                                                                 |
++------------+-----------------------------------------------------------------------------------------+
+| source     | <xsd:element name="partitaIvaEsercente" type="xsd:string" minOccurs="0" maxOccurs="1"/> |
++------------+-----------------------------------------------------------------------------------------+
 
 complexType **CheckResponse**
 
-+--------+-------------------------------------------------------------+
-| diagra | |image18|                                                   |
-| m      |                                                             |
-+========+=============================================================+
-| namesp | http://bonus.miur.it/VerificaVoucher/                       |
-| ace    |                                                             |
-+--------+-------------------------------------------------------------+
-| childr | **nominativoBeneficiario partitaIvaEsercente ambito bene    |
-| en     | importo**                                                   |
-+--------+-------------------------------------------------------------+
-| used   | element **CheckResponseObj/checkResp**                      |
-| by     |                                                             |
-+--------+-------------------------------------------------------------+
-| source | <xsd:complexType name="CheckResponse">                      |
-|        |                                                             |
-|        | <xsd:sequence>                                              |
-|        |                                                             |
-|        | <xsd:element name="nominativoBeneficiario"                  |
-|        | type="xsd:string" minOccurs="1"                             |
-+--------+-------------------------------------------------------------+
++-----------+----------------------------------------------------------------------------+
+| diagram   | |image18|                                                                  |
++===========+============================================================================+
+| namespace | http://bonus.miur.it/VerificaVoucher/                                      |
++-----------+----------------------------------------------------------------------------+
+| children  | **nominativoBeneficiario partitaIvaEsercente ambito bene importo**         |
++-----------+----------------------------------------------------------------------------+
+| used by   | element **CheckResponseObj/checkResp**                                     |
++-----------+----------------------------------------------------------------------------+
+| source    | <xsd:complexType name="CheckResponse">                                     |
+|           |                                                                            |
+|           | <xsd:sequence>                                                             |
+|           |                                                                            |
+|           | <xsd:element name="nominativoBeneficiario" type="xsd:string" minOccurs="1" |
++-----------+----------------------------------------------------------------------------+
 
-+---+--------------------------------------------------------------------+
-|   | maxOccurs="1"/>                                                    |
-|   |                                                                    |
-|   | <xsd:element name="partitaIvaEsercente" type="xsd:string"          |
-|   | minOccurs="1" maxOccurs="1"/>                                      |
-|   |                                                                    |
-|   | <xsd:element name="ambito" type="xsd:string" minOccurs="1"         |
-|   | maxOccurs="1"/>                                                    |
-|   |                                                                    |
-|   | <xsd:element name="bene" type="xsd:string" minOccurs="1"           |
-|   | maxOccurs="1"/>                                                    |
-|   |                                                                    |
-|   | <xsd:element name="importo" type="xsd:double" minOccurs="1"        |
-|   | maxOccurs="1"/>                                                    |
-|   |                                                                    |
-|   | </xsd:sequence>                                                    |
-|   |                                                                    |
-|   | </xsd:complexType>                                                 |
-+---+--------------------------------------------------------------------+
++--+-----------------------------------------------------------------------------------------+
+|  | maxOccurs="1"/>                                                                         |
+|  |                                                                                         |
+|  | <xsd:element name="partitaIvaEsercente" type="xsd:string" minOccurs="1" maxOccurs="1"/> |
+|  |                                                                                         |
+|  | <xsd:element name="ambito" type="xsd:string" minOccurs="1" maxOccurs="1"/>              |
+|  |                                                                                         |
+|  | <xsd:element name="bene" type="xsd:string" minOccurs="1" maxOccurs="1"/>                |
+|  |                                                                                         |
+|  | <xsd:element name="importo" type="xsd:double" minOccurs="1" maxOccurs="1"/>             |
+|  |                                                                                         |
+|  | </xsd:sequence>                                                                         |
+|  |                                                                                         |
+|  | </xsd:complexType>                                                                      |
++--+-----------------------------------------------------------------------------------------+
 
 element **CheckResponse/nominativoBeneficiario**
 
-+-------+--------------------------------------------------------------+
-| diagr | |image19|                                                    |
-| am    |                                                              |
-+=======+==============================================================+
-| type  | **xsd:string**                                               |
-+-------+--------------------------------------------------------------+
-| prope | content simple                                               |
-| rties |                                                              |
-+-------+--------------------------------------------------------------+
-| sourc | <xsd:element name="nominativoBeneficiario" type="xsd:string" |
-| e     | minOccurs="1" maxOccurs="1"/>                                |
-+-------+--------------------------------------------------------------+
++------------+--------------------------------------------------------------------------------------------+
+| diagram    | |image19|                                                                                  |
++============+============================================================================================+
+| type       | **xsd:string**                                                                             |
++------------+--------------------------------------------------------------------------------------------+
+| properties | content simple                                                                             |
++------------+--------------------------------------------------------------------------------------------+
+| source     | <xsd:element name="nominativoBeneficiario" type="xsd:string" minOccurs="1" maxOccurs="1"/> |
++------------+--------------------------------------------------------------------------------------------+
 
 element **CheckResponse/partitaIvaEsercente**
 
-+--------+-------------------------------------------------------------+
-| diagra | |image20|                                                   |
-| m      |                                                             |
-+========+=============================================================+
-| type   | **xsd:string**                                              |
-+--------+-------------------------------------------------------------+
-| proper | content simple                                              |
-| ties   |                                                             |
-+--------+-------------------------------------------------------------+
-| source | <xsd:element name="partitaIvaEsercente" type="xsd:string"   |
-|        | minOccurs="1" maxOccurs="1"/>                               |
-+--------+-------------------------------------------------------------+
++------------+-----------------------------------------------------------------------------------------+
+| diagram    | |image20|                                                                               |
++============+=========================================================================================+
+| type       | **xsd:string**                                                                          |
++------------+-----------------------------------------------------------------------------------------+
+| properties | content simple                                                                          |
++------------+-----------------------------------------------------------------------------------------+
+| source     | <xsd:element name="partitaIvaEsercente" type="xsd:string" minOccurs="1" maxOccurs="1"/> |
++------------+-----------------------------------------------------------------------------------------+
 
 element **CheckResponse/ambito**
 
-+---------+------------------------------------------------------------+
-| diagram | |image21|                                                  |
-+=========+============================================================+
-| type    | **xsd:string**                                             |
-+---------+------------------------------------------------------------+
-| propert | content simple                                             |
-| ies     |                                                            |
-+---------+------------------------------------------------------------+
-| source  | <xsd:element name="ambito" type="xsd:string" minOccurs="1" |
-|         | maxOccurs="1"/>                                            |
-+---------+------------------------------------------------------------+
++------------+----------------------------------------------------------------------------+
+| diagram    | |image21|                                                                  |
++============+============================================================================+
+| type       | **xsd:string**                                                             |
++------------+----------------------------------------------------------------------------+
+| properties | content simple                                                             |
++------------+----------------------------------------------------------------------------+
+| source     | <xsd:element name="ambito" type="xsd:string" minOccurs="1" maxOccurs="1"/> |
++------------+----------------------------------------------------------------------------+
 
 element **CheckResponse/bene**
 
-+---------+------------------------------------------------------------+
-| diagram | |image22|                                                  |
-+=========+============================================================+
-| type    | **xsd:string**                                             |
-+---------+------------------------------------------------------------+
-| propert | content simple                                             |
-| ies     |                                                            |
-+---------+------------------------------------------------------------+
-| source  | <xsd:element name="bene" type="xsd:string" minOccurs="1"   |
-|         | maxOccurs="1"/>                                            |
-+---------+------------------------------------------------------------+
++------------+--------------------------------------------------------------------------+
+| diagram    | |image22|                                                                |
++============+==========================================================================+
+| type       | **xsd:string**                                                           |
++------------+--------------------------------------------------------------------------+
+| properties | content simple                                                           |
++------------+--------------------------------------------------------------------------+
+| source     | <xsd:element name="bene" type="xsd:string" minOccurs="1" maxOccurs="1"/> |
++------------+--------------------------------------------------------------------------+
 
 element **CheckResponse/importo**
 
-+---------+------------------------------------------------------------+
-| diagram | |image23|                                                  |
-+=========+============================================================+
-| type    | **xsd:double**                                             |
-+---------+------------------------------------------------------------+
-| propert | content simple                                             |
-| ies     |                                                            |
-+---------+------------------------------------------------------------+
-| source  | <xsd:element name="importo" type="xsd:double"              |
-|         | minOccurs="1" maxOccurs="1"/>                              |
-+---------+------------------------------------------------------------+
++------------+-----------------------------------------------------------------------------+
+| diagram    | |image23|                                                                   |
++============+=============================================================================+
+| type       | **xsd:double**                                                              |
++------------+-----------------------------------------------------------------------------+
+| properties | content simple                                                              |
++------------+-----------------------------------------------------------------------------+
+| source     | <xsd:element name="importo" type="xsd:double" minOccurs="1" maxOccurs="1"/> |
++------------+-----------------------------------------------------------------------------+
 
 complexType **Confirm**
 
-+-------+--------------------------------------------------------------+
-| diagr | |image24|                                                    |
-| am    |                                                              |
-+=======+==============================================================+
-| names | http://bonus.miur.it/VerificaVoucher/                        |
-| pace  |                                                              |
-+-------+--------------------------------------------------------------+
-| child | **tipoOperazione codiceVoucher importo**                     |
-| ren   |                                                              |
-+-------+--------------------------------------------------------------+
-| used  | element **ConfirmRequestObj/checkReq**                       |
-| by    |                                                              |
-+-------+--------------------------------------------------------------+
-| sourc | <xsd:complexType name="Confirm">                             |
-| e     |                                                              |
-|       | <xsd:sequence>                                               |
-|       |                                                              |
-|       | <xsd:element name="tipoOperazione" type="xsd:string"         |
-|       | minOccurs="1" maxOccurs="1"/>                                |
-|       |                                                              |
-|       | <xsd:element name="codiceVoucher" type="xsd:string"          |
-|       | minOccurs="1" maxOccurs="1"/>                                |
-|       |                                                              |
-|       | <xsd:element name="importo" type="xsd:double" minOccurs="1"  |
-|       | maxOccurs="1"/>                                              |
-|       |                                                              |
-|       | </xsd:sequence>                                              |
-|       |                                                              |
-|       | </xsd:complexType>                                           |
-+-------+--------------------------------------------------------------+
++-----------+------------------------------------------------------------------------------------+
+| diagram   | |image24|                                                                          |
++===========+====================================================================================+
+| namespace | http://bonus.miur.it/VerificaVoucher/                                              |
++-----------+------------------------------------------------------------------------------------+
+| children  | **tipoOperazione codiceVoucher importo**                                           |
++-----------+------------------------------------------------------------------------------------+
+| used by   | element **ConfirmRequestObj/checkReq**                                             |
++-----------+------------------------------------------------------------------------------------+
+| source    | <xsd:complexType name="Confirm">                                                   |
+|           |                                                                                    |
+|           | <xsd:sequence>                                                                     |
+|           |                                                                                    |
+|           | <xsd:element name="tipoOperazione" type="xsd:string" minOccurs="1" maxOccurs="1"/> |
+|           |                                                                                    |
+|           | <xsd:element name="codiceVoucher" type="xsd:string" minOccurs="1" maxOccurs="1"/>  |
+|           |                                                                                    |
+|           | <xsd:element name="importo" type="xsd:double" minOccurs="1" maxOccurs="1"/>        |
+|           |                                                                                    |
+|           | </xsd:sequence>                                                                    |
+|           |                                                                                    |
+|           | </xsd:complexType>                                                                 |
++-----------+------------------------------------------------------------------------------------+
 
 element **Confirm/tipoOperazione**
 
-+--------+-------------------------------------------------------------+
-| diagra | |image25|                                                   |
-| m      |                                                             |
-+========+=============================================================+
-| type   | **xsd:string**                                              |
-+--------+-------------------------------------------------------------+
-| proper | content simple                                              |
-| ties   |                                                             |
-+--------+-------------------------------------------------------------+
-| source | <xsd:element name="tipoOperazione" type="xsd:string"        |
-|        | minOccurs="1" maxOccurs="1"/>                               |
-+--------+-------------------------------------------------------------+
++------------+------------------------------------------------------------------------------------+
+| diagram    | |image25|                                                                          |
++============+====================================================================================+
+| type       | **xsd:string**                                                                     |
++------------+------------------------------------------------------------------------------------+
+| properties | content simple                                                                     |
++------------+------------------------------------------------------------------------------------+
+| source     | <xsd:element name="tipoOperazione" type="xsd:string" minOccurs="1" maxOccurs="1"/> |
++------------+------------------------------------------------------------------------------------+
 
 element **Confirm/codiceVoucher**
 
-+--------+-------------------------------------------------------------+
-| diagra | |image26|                                                   |
-| m      |                                                             |
-+========+=============================================================+
-| type   | **xsd:string**                                              |
-+--------+-------------------------------------------------------------+
-| proper | content simple                                              |
-| ties   |                                                             |
-+--------+-------------------------------------------------------------+
-| source | <xsd:element name="codiceVoucher" type="xsd:string"         |
-|        | minOccurs="1" maxOccurs="1"/>                               |
-+--------+-------------------------------------------------------------+
++------------+-----------------------------------------------------------------------------------+
+| diagram    | |image26|                                                                         |
++============+===================================================================================+
+| type       | **xsd:string**                                                                    |
++------------+-----------------------------------------------------------------------------------+
+| properties | content simple                                                                    |
++------------+-----------------------------------------------------------------------------------+
+| source     | <xsd:element name="codiceVoucher" type="xsd:string" minOccurs="1" maxOccurs="1"/> |
++------------+-----------------------------------------------------------------------------------+
 
 element **Confirm/importo**
 
-+---------+------------------------------------------------------------+
-| diagram | |image27|                                                  |
-+=========+============================================================+
-| type    | **xsd:double**                                             |
-+---------+------------------------------------------------------------+
-| propert | content simple                                             |
-| ies     |                                                            |
-+---------+------------------------------------------------------------+
-| source  | <xsd:element name="importo" type="xsd:double"              |
-|         | minOccurs="1" maxOccurs="1"/>                              |
-+---------+------------------------------------------------------------+
++------------+-----------------------------------------------------------------------------+
+| diagram    | |image27|                                                                   |
++============+=============================================================================+
+| type       | **xsd:double**                                                              |
++------------+-----------------------------------------------------------------------------+
+| properties | content simple                                                              |
++------------+-----------------------------------------------------------------------------+
+| source     | <xsd:element name="importo" type="xsd:double" minOccurs="1" maxOccurs="1"/> |
++------------+-----------------------------------------------------------------------------+
 
 complexType **ConfirmResponse**
 
-+--------+-------------------------------------------------------------+
-| diagra | |image28|                                                   |
-| m      |                                                             |
-+========+=============================================================+
-| namesp | http://bonus.miur.it/VerificaVoucher/                       |
-| ace    |                                                             |
-+--------+-------------------------------------------------------------+
-| childr | **esito**                                                   |
-| en     |                                                             |
-+--------+-------------------------------------------------------------+
-| used   | element **ConfirmResponseObj/checkResp**                    |
-| by     |                                                             |
-+--------+-------------------------------------------------------------+
-| source | <xsd:complexType name="ConfirmResponse">                    |
-|        |                                                             |
-|        | <xsd:sequence>                                              |
-|        |                                                             |
-|        | <xsd:element name="esito" type="xsd:string" minOccurs="1"   |
-|        | maxOccurs="1"/>                                             |
-|        |                                                             |
-|        | </xsd:sequence>                                             |
-|        |                                                             |
-|        | </xsd:complexType>                                          |
-+--------+-------------------------------------------------------------+
++-----------+---------------------------------------------------------------------------+
+| diagram   | |image28|                                                                 |
++===========+===========================================================================+
+| namespace | http://bonus.miur.it/VerificaVoucher/                                     |
++-----------+---------------------------------------------------------------------------+
+| children  | **esito**                                                                 |
++-----------+---------------------------------------------------------------------------+
+| used by   | element **ConfirmResponseObj/checkResp**                                  |
++-----------+---------------------------------------------------------------------------+
+| source    | <xsd:complexType name="ConfirmResponse">                                  |
+|           |                                                                           |
+|           | <xsd:sequence>                                                            |
+|           |                                                                           |
+|           | <xsd:element name="esito" type="xsd:string" minOccurs="1" maxOccurs="1"/> |
+|           |                                                                           |
+|           | </xsd:sequence>                                                           |
+|           |                                                                           |
+|           | </xsd:complexType>                                                        |
++-----------+---------------------------------------------------------------------------+
 
 element **ConfirmResponse/esito**
 
-+---------+------------------------------------------------------------+
-| diagram | |image29|                                                  |
-+=========+============================================================+
-| type    | **xsd:string**                                             |
-+---------+------------------------------------------------------------+
-| propert | content simple                                             |
-| ies     |                                                            |
-+---------+------------------------------------------------------------+
-| source  | <xsd:element name="esito" type="xsd:string" minOccurs="1"  |
-|         | maxOccurs="1"/>                                            |
-+---------+------------------------------------------------------------+
++------------+---------------------------------------------------------------------------+
+| diagram    | |image29|                                                                 |
++============+===========================================================================+
+| type       | **xsd:string**                                                            |
++------------+---------------------------------------------------------------------------+
+| properties | content simple                                                            |
++------------+---------------------------------------------------------------------------+
+| source     | <xsd:element name="esito" type="xsd:string" minOccurs="1" maxOccurs="1"/> |
++------------+---------------------------------------------------------------------------+
 
 .. |image0| image:: ./media/image1.png
 .. |image1| image:: ./media/image2.png

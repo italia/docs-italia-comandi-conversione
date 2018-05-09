@@ -16,21 +16,17 @@ header added by pandoc
 Check
 '''''
 
-+-------+-----------------------------------+--------------------------+
-| INPUT | tipo operazione                   | *“1”, “2”*               |
-| :     |                                   |                          |
-+=======+===================================+==========================+
-| OUTPU | codice voucher nominativo         | *CF o Nome e Cognome*    |
-| T:    | beneficiario                      |                          |
-+-------+-----------------------------------+--------------------------+
-|       | partita IVA esercente ambito      | *cinema, teatro,         |
-|       |                                   | libreria…*               |
-+-------+-----------------------------------+--------------------------+
-|       | bene                              | *libri, spettacoli…*     |
-+-------+-----------------------------------+--------------------------+
-|       | importo                           | *importo totale del      |
-|       |                                   | voucher*                 |
-+-------+-----------------------------------+--------------------------+
++---------+----------------------------------------+------------------------------+
+| INPUT:  | tipo operazione                        | *“1”, “2”*                   |
++=========+========================================+==============================+
+| OUTPUT: | codice voucher nominativo beneficiario | *CF o Nome e Cognome*        |
++---------+----------------------------------------+------------------------------+
+|         | partita IVA esercente ambito           | *cinema, teatro, libreria…*  |
++---------+----------------------------------------+------------------------------+
+|         | bene                                   | *libri, spettacoli…*         |
++---------+----------------------------------------+------------------------------+
+|         | importo                                | *importo totale del voucher* |
++---------+----------------------------------------+------------------------------+
 
 Se **tipo operazione** verrà valorizzato con **“1”**, il check del voucher restituerà all’esercente i campi previsti in output senza consumare il voucher e quindi senza scalare l’importo dal borsellino del beneficiario. Questa modalità di utilizzo dell’operazione non è obbligatoria, ma lascia all’esercente la possibilità di eseguire un controllo tra il nominativo del beneficiario e quello del suo cliente in sessione.
 
@@ -47,15 +43,13 @@ LINEE GUIDA PER ESERCENTI PAG. 10 DI 26
 Confirm
 '''''''
 
-+--------+-----------------------+------------------------------------+
-| INPUT: | tipo operazione       | *“1”*                              |
-+========+=======================+====================================+
-|        | codice voucher        | *importo confermato                |
-|        | importo               | dall’esercente*                    |
-+--------+-----------------------+------------------------------------+
-| OUTPUT | esito                 |                                    |
-| :      |                       |                                    |
-+--------+-----------------------+------------------------------------+
++---------+------------------------+-------------------------------------+
+| INPUT:  | tipo operazione        | *“1”*                               |
++=========+========================+=====================================+
+|         | codice voucher importo | *importo confermato dall’esercente* |
++---------+------------------------+-------------------------------------+
+| OUTPUT: | esito                  |                                     |
++---------+------------------------+-------------------------------------+
 
 In questa versione del servizio il **tipo operazione** verrà valorizzato sempre con **“1”** e l’esercente potrà comunicare la quota utilizzata rispetto all’importo totale del voucher, momentaneamente impegnato. Il sistema scalerà l’importo dal borsellino del beneficiario, riaccreditando la parte non utilizzata, calcolata come differenza tra il valore totale del voucher e l’importo comunicato dall’esercente.
 
@@ -100,48 +94,35 @@ Codici di errore
 
 La seguente tabella rappresenta i possibili errori gestiti dal sistema:
 
-+--------+-------------------------------------------------------------+
-| **Codi | **Descrizione/Description**                                 |
-| ce/Cod |                                                             |
-| e**    |                                                             |
-+========+=============================================================+
-| 01     | Errore nel formato dei parametri in input, verificarli e    |
-|        | riprovare                                                   |
-+--------+-------------------------------------------------------------+
-|        | Error in the input parameters, check and try again          |
-+--------+-------------------------------------------------------------+
-| 02     | Il buono richiesto non è disponibile sul sistema o è già    |
-|        | stato riscosso o annullato                                  |
-+--------+-------------------------------------------------------------+
-|        | The requested voucher is not available on the system. It    |
-|        | could be already collected or canceled                      |
-+--------+-------------------------------------------------------------+
-| 03     | Impossibile attivare l'esercente. Verificare che i dati     |
-|        | siano corretti e che                                        |
-|        |                                                             |
-|        | l'esercente non sia già stato attivato                      |
-+--------+-------------------------------------------------------------+
-|        | Impossible to activate the user. Please verify input        |
-|        | parameters and that the user has not been already           |
-|        | activated.                                                  |
-+--------+-------------------------------------------------------------+
-| 04     | L'importo richiesto è superiore all'importo del buono       |
-|        | selezionato                                                 |
-+--------+-------------------------------------------------------------+
-|        | The amount claimed is greater than the amount of the        |
-|        | selected voucher                                            |
-+--------+-------------------------------------------------------------+
-| 05     | Non si può verificare o consumare il buono poichè           |
-|        | l'esercente risulta non attivo                              |
-+--------+-------------------------------------------------------------+
-|        | User inactive, voucher impossible to verify.                |
-+--------+-------------------------------------------------------------+
-| 06     | Ambito e bene del buono non coincidono con ambiti e beni    |
-|        | trattati dall’esercente                                     |
-+--------+-------------------------------------------------------------+
-|        | Category and type of this voucher are not aligned with      |
-|        | category and type managed by the user.                      |
-+--------+-------------------------------------------------------------+
++-----------------+-------------------------------------------------------------------------------------------------------------------+
+| **Codice/Code** | **Descrizione/Description**                                                                                       |
++=================+===================================================================================================================+
+| 01              | Errore nel formato dei parametri in input, verificarli e riprovare                                                |
++-----------------+-------------------------------------------------------------------------------------------------------------------+
+|                 | Error in the input parameters, check and try again                                                                |
++-----------------+-------------------------------------------------------------------------------------------------------------------+
+| 02              | Il buono richiesto non è disponibile sul sistema o è già stato riscosso o annullato                               |
++-----------------+-------------------------------------------------------------------------------------------------------------------+
+|                 | The requested voucher is not available on the system. It could be already collected or canceled                   |
++-----------------+-------------------------------------------------------------------------------------------------------------------+
+| 03              | Impossibile attivare l'esercente. Verificare che i dati siano corretti e che                                      |
+|                 |                                                                                                                   |
+|                 | l'esercente non sia già stato attivato                                                                            |
++-----------------+-------------------------------------------------------------------------------------------------------------------+
+|                 | Impossible to activate the user. Please verify input parameters and that the user has not been already activated. |
++-----------------+-------------------------------------------------------------------------------------------------------------------+
+| 04              | L'importo richiesto è superiore all'importo del buono selezionato                                                 |
++-----------------+-------------------------------------------------------------------------------------------------------------------+
+|                 | The amount claimed is greater than the amount of the selected voucher                                             |
++-----------------+-------------------------------------------------------------------------------------------------------------------+
+| 05              | Non si può verificare o consumare il buono poichè l'esercente risulta non attivo                                  |
++-----------------+-------------------------------------------------------------------------------------------------------------------+
+|                 | User inactive, voucher impossible to verify.                                                                      |
++-----------------+-------------------------------------------------------------------------------------------------------------------+
+| 06              | Ambito e bene del buono non coincidono con ambiti e beni trattati dall’esercente                                  |
++-----------------+-------------------------------------------------------------------------------------------------------------------+
+|                 | Category and type of this voucher are not aligned with category and type managed by the user.                     |
++-----------------+-------------------------------------------------------------------------------------------------------------------+
 
 |image1|
 

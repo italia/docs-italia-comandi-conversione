@@ -100,55 +100,19 @@ Per la prima delle tre sottocaratteristiche, la ISO 25023 propone 5 metriche, pe
 
 Tabella 12: metriche per tempi di risposta
 
-+---+--------+--------------------------+-------------------------------+
-| * | **Nome | **Descrizione**          | **Formula**                   |
-| * | **     |                          |                               |
-| I |        |                          |                               |
-| D |        |                          |                               |
-| * |        |                          |                               |
-| * |        |                          |                               |
-+===+========+==========================+===============================+
-| P | Tempo  | Tempo medio impiegato da | *AgID non è stata autorizzata |
-| T | medio  | un software per          | a riportare nel presente      |
-| b | di     | rispondere a una         | documento le formule della    |
-| - | rispos | richiesta utente o       | 25023: si rimanda pertanto    |
-| 1 | ta     | svolgere un’attività di  | alla norma originaria*        |
-| - |        | sistema                  |                               |
-| G |        |                          |                               |
-+---+--------+--------------------------+-------------------------------+
-| P | Adegua | Rapporto tra il tempo    |                               |
-| T | tezza  | medio di risposta e il   |                               |
-| b | del    | tempo previsto dai       |                               |
-| - | tempo  | requisiti                |                               |
-| 2 | di     |                          |                               |
-| - | rispos |                          |                               |
-| G | ta     |                          |                               |
-+---+--------+--------------------------+-------------------------------+
-| P | Tempo  | Tempo medio impiegato da |                               |
-| T | medio  | un software per          |                               |
-| b | di     | completare l’esecuzione  |                               |
-| - | comple | di una transazione o di  |                               |
-| 3 | tament | un processo asincrono    |                               |
-| - | o      |                          |                               |
-| G |        |                          |                               |
-+---+--------+--------------------------+-------------------------------+
-| P | Adegua | Rapporto tra il tempo    |                               |
-| T | tezza  | medio di completamento e |                               |
-| b | del    | il tempo previsto dai    |                               |
-| - | tempo  | requisiti                |                               |
-| 4 | di     |                          |                               |
-| - | comple |                          |                               |
-| G | tament |                          |                               |
-|   | o      |                          |                               |
-+---+--------+--------------------------+-------------------------------+
-| P | Volume | Numero medio di          |                               |
-| T | medio  | transazioni completato   |                               |
-| b | di     | nell’intervallo          |                               |
-| - | transa | temporale di             |                               |
-| 5 | zioni  | osservazione             |                               |
-| - |        |                          |                               |
-| G |        |                          |                               |
-+---+--------+--------------------------+-------------------------------+
++---------+----------------------------------------+----------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
+| **ID**  | **Nome**                               | **Descrizione**                                                                                                | **Formula**                                                                                                                         |
++=========+========================================+================================================================================================================+=====================================================================================================================================+
+| PTb-1-G | Tempo medio di risposta                | Tempo medio impiegato da un software per rispondere a una richiesta utente o svolgere un’attività di sistema   | *AgID non è stata autorizzata a riportare nel presente documento le formule della 25023: si rimanda pertanto alla norma originaria* |
++---------+----------------------------------------+----------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
+| PTb-2-G | Adeguatezza del tempo di risposta      | Rapporto tra il tempo medio di risposta e il tempo previsto dai requisiti                                      |                                                                                                                                     |
++---------+----------------------------------------+----------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
+| PTb-3-G | Tempo medio di completamento           | Tempo medio impiegato da un software per completare l’esecuzione di una transazione o di un processo asincrono |                                                                                                                                     |
++---------+----------------------------------------+----------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
+| PTb-4-G | Adeguatezza del tempo di completamento | Rapporto tra il tempo medio di completamento e il tempo previsto dai requisiti                                 |                                                                                                                                     |
++---------+----------------------------------------+----------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
+| PTb-5-G | Volume medio di transazioni            | Numero medio di transazioni completato nell’intervallo temporale di osservazione                               |                                                                                                                                     |
++---------+----------------------------------------+----------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+
 
 *Note*
 
@@ -181,46 +145,17 @@ Per la seconda delle tre sottocaratteristiche, la ISO 25023 propone 4 metriche, 
 
 Tabella 13: metriche per consumo di risorse
 
-+---+----------+---------------------------+----------------------------+
-| * | **Nome** | **Descrizione**           | **Formula**                |
-| * |          |                           |                            |
-| I |          |                           |                            |
-| D |          |                           |                            |
-| * |          |                           |                            |
-| * |          |                           |                            |
-+===+==========+===========================+============================+
-| P | Consumo  | Tempo medio di CPU        | Non disponibile per        |
-| R | medio di | utilizzato per compiere   | mancata autorizzazione     |
-| u | potenza  | un’elaborazione           | (vedi tabella 12), si      |
-| - | elaborat |                           | rimanda alla norma         |
-| 1 | iva      |                           | originaria                 |
-| - |          |                           |                            |
-| G |          |                           |                            |
-+---+----------+---------------------------+----------------------------+
-| P | Consumo  | Volume di memoria usato   |                            |
-| R | medio di | per compiere              |                            |
-| u | memoria  | un’elaborazione in        |                            |
-| - |          | rapporto alla memoria     |                            |
-| 2 |          | disponibile.              |                            |
-| - |          |                           |                            |
-| G |          |                           |                            |
-+---+----------+---------------------------+----------------------------+
-| P | Consumo  | Tempo medio di            |                            |
-| R | medio di | dispositivi di I/O        |                            |
-| u | I/O      | utilizzato per compiere   |                            |
-| - |          | un’elaborazione           |                            |
-| 3 |          |                           |                            |
-| - |          |                           |                            |
-| G |          |                           |                            |
-+---+----------+---------------------------+----------------------------+
-| P | Consumo  | Banda media utilizzata,   |                            |
-| R | medio di | in rapporto alla banda    |                            |
-| u | banda    | disponibile, per compiere |                            |
-| - |          | un’elaborazione           |                            |
-| 4 |          |                           |                            |
-| - |          |                           |                            |
-| S |          |                           |                            |
-+---+----------+---------------------------+----------------------------+
++---------+--------------------------------------+--------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+
+| **ID**  | **Nome**                             | **Descrizione**                                                                            | **Formula**                                                                                    |
++=========+======================================+============================================================================================+================================================================================================+
+| PRu-1-G | Consumo medio di potenza elaborativa | Tempo medio di CPU utilizzato per compiere un’elaborazione                                 | Non disponibile per mancata autorizzazione (vedi tabella 12), si rimanda alla norma originaria |
++---------+--------------------------------------+--------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+
+| PRu-2-G | Consumo medio di memoria             | Volume di memoria usato per compiere un’elaborazione in rapporto alla memoria disponibile. |                                                                                                |
++---------+--------------------------------------+--------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+
+| PRu-3-G | Consumo medio di I/O                 | Tempo medio di dispositivi di I/O utilizzato per compiere un’elaborazione                  |                                                                                                |
++---------+--------------------------------------+--------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+
+| PRu-4-S | Consumo medio di banda               | Banda media utilizzata, in rapporto alla banda disponibile, per compiere un’elaborazione   |                                                                                                |
++---------+--------------------------------------+--------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+
 
 *Note*
 
@@ -249,38 +184,15 @@ Per l’ultima sottocaratteristica, la ISO 25023 propone 3 metriche, pensate per
 
 Tabella 14: metriche per capacità
 
-+---+--------------+--------------------------------------+------------+
-| * | **Nome**     | **Descrizione**                      | **Formula* |
-| * |              |                                      | *          |
-| I |              |                                      |            |
-| D |              |                                      |            |
-| * |              |                                      |            |
-| * |              |                                      |            |
-+===+==============+======================================+============+
-| P | Capacità di  | Numero di transazioni completate     | n.d. (si   |
-| C | svolgimento  | nella finestra temporale di          | rimanda    |
-| a | transazioni  | osservazione                         | alla norma |
-| - |              |                                      | ISO)       |
-| 1 |              |                                      |            |
-| - |              |                                      |            |
-| G |              |                                      |            |
-+---+--------------+--------------------------------------+------------+
-| P | Capacità di  | Numero massimo di utenti concorrenti |            |
-| C | accesso      | accettati dal sistema per ogni       |            |
-| a | utenti       | osservazione                         |            |
-| - |              |                                      |            |
-| 2 |              |                                      |            |
-| - |              |                                      |            |
-| G |              |                                      |            |
-+---+--------------+--------------------------------------+------------+
-| P | Adeguatezza  | Numero di utenti che possono essere  |            |
-| C | di aumento   | aggiunti con successo nella finestra |            |
-| a | degli        | temporale di osservazione            |            |
-| - | accessi      |                                      |            |
-| 3 |              |                                      |            |
-| - |              |                                      |            |
-| S |              |                                      |            |
-+---+--------------+--------------------------------------+------------+
++---------+--------------------------------------+----------------------------------------------------------------------------------------------------+----------------------------------+
+| **ID**  | **Nome**                             | **Descrizione**                                                                                    | **Formula**                      |
++=========+======================================+====================================================================================================+==================================+
+| PCa-1-G | Capacità di svolgimento transazioni  | Numero di transazioni completate nella finestra temporale di osservazione                          | n.d. (si rimanda alla norma ISO) |
++---------+--------------------------------------+----------------------------------------------------------------------------------------------------+----------------------------------+
+| PCa-2-G | Capacità di accesso utenti           | Numero massimo di utenti concorrenti accettati dal sistema per ogni osservazione                   |                                  |
++---------+--------------------------------------+----------------------------------------------------------------------------------------------------+----------------------------------+
+| PCa-3-S | Adeguatezza di aumento degli accessi | Numero di utenti che possono essere aggiunti con successo nella finestra temporale di osservazione |                                  |
++---------+--------------------------------------+----------------------------------------------------------------------------------------------------+----------------------------------+
 
 *Note*
 
@@ -336,38 +248,15 @@ Per la prima delle cinque sottocaratteristiche, la ISO 25023 propone 3 metriche,
 
 Tabella 15: metriche per appropriatezza - riconoscibilità
 
-+---+---------+-------------------------------------------+-----------+
-| * | **Nome* | **Descrizione**                           | **Formula |
-| * | *       |                                           | **        |
-| I |         |                                           |           |
-| D |         |                                           |           |
-| * |         |                                           |           |
-| * |         |                                           |           |
-+===+=========+===========================================+===========+
-| U | Complet | Percentuale degli scenari d’uso descritta | n.d. (si  |
-| A | ezza    | nella documentazione                      | rimanda   |
-| p | di      |                                           | alla      |
-| - | descriz |                                           | norma     |
-| 1 | ione    |                                           | ISO)      |
-| - |         |                                           |           |
-| G |         |                                           |           |
-+---+---------+-------------------------------------------+-----------+
-| U | Capacit | Percentuale delle funzioni che ha         |           |
-| A | à       | capacità di dimostrazione (es. opzione    |           |
-| p | di      | demo) per mostrare il suo effetto agli    |           |
-| - | dimostr | utenti.                                   |           |
-| 2 | azione  |                                           |           |
-| - |         |                                           |           |
-| S |         |                                           |           |
-+---+---------+-------------------------------------------+-----------+
-| U | Auto-de | Percentuale delle pagine indirizzabili    |           |
-| A | scritti | (landing page) di un sito web che spiega  |           |
-| p | vità    | lo scopo del sito.                        |           |
-| - |         |                                           |           |
-| 3 |         |                                           |           |
-| - |         |                                           |           |
-| S |         |                                           |           |
-+---+---------+-------------------------------------------+-----------+
++---------+----------------------------+-------------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| **ID**  | **Nome**                   | **Descrizione**                                                                                                         | **Formula**                      |
++=========+============================+=========================================================================================================================+==================================+
+| UAp-1-G | Completezza di descrizione | Percentuale degli scenari d’uso descritta nella documentazione                                                          | n.d. (si rimanda alla norma ISO) |
++---------+----------------------------+-------------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| UAp-2-S | Capacità di dimostrazione  | Percentuale delle funzioni che ha capacità di dimostrazione (es. opzione demo) per mostrare il suo effetto agli utenti. |                                  |
++---------+----------------------------+-------------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| UAp-3-S | Auto-descrittività         | Percentuale delle pagine indirizzabili (landing page) di un sito web che spiega lo scopo del sito.                      |                                  |
++---------+----------------------------+-------------------------------------------------------------------------------------------------------------------------+----------------------------------+
 
 *Note*
 
@@ -392,47 +281,17 @@ Per la seconda delle cinque sottocaratteristiche, la ISO 25023 propone 4 metrich
 
 Tabella 16: metriche per apprendibilità
 
-+---+---------+-------------------------------------------------+-------+
-| * | **Nome* | **Descrizione**                                 | **For |
-| * | *       |                                                 | mula* |
-| I |         |                                                 | *     |
-| D |         |                                                 |       |
-| * |         |                                                 |       |
-| * |         |                                                 |       |
-+===+=========+=================================================+=======+
-| U | Complet | Percentuale delle funzioni che è descritta      | n.d.  |
-| L | ezza    | (nella documentazione o nell’help) con un       | (si   |
-| e | della   | dettaglio tale da consentire all’utente di      | riman |
-| - | guida   | utilizzarle.                                    | da    |
-| 1 | utente  |                                                 | alla  |
-| - |         |                                                 | norma |
-| G |         |                                                 | ISO)  |
-+---+---------+-------------------------------------------------+-------+
-| U | Valori  | Percentuale di campi di input che vengono       |       |
-| L | di      | riempiti automaticamente con valori di default. |       |
-| e | default |                                                 |       |
-| - | nei     |                                                 |       |
-| 2 | campi   |                                                 |       |
-| - | di      |                                                 |       |
-| S | input   |                                                 |       |
-+---+---------+-------------------------------------------------+-------+
-| U | Compren | Percentuale dei messaggi d’errore che           |       |
-| L | sibilit | dichiarano la ragione dell’errore e             |       |
-| e | à       | suggeriscono come risolverlo.                   |       |
-| - | dei     |                                                 |       |
-| 3 | messagg |                                                 |       |
-| - | i       |                                                 |       |
-| S | d’error |                                                 |       |
-|   | e       |                                                 |       |
-+---+---------+-------------------------------------------------+-------+
-| U | Interfa | Percentuale degli elementi di informazione e    |       |
-| L | ccia    | dei passi che sono presentati all’utente        |       |
-| e | utente  | inesperto in modo che questi possa completare   |       |
-| - | auto-es | un’attività senza un addestramento preliminare  |       |
-| 4 | plicati | o assistenza esterna.                           |       |
-| - | va      |                                                 |       |
-| S |         |                                                 |       |
-+---+---------+-------------------------------------------------+-------+
++---------+---------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| **ID**  | **Nome**                              | **Descrizione**                                                                                                                                                                                          | **Formula**                      |
++=========+=======================================+==========================================================================================================================================================================================================+==================================+
+| ULe-1-G | Completezza della guida utente        | Percentuale delle funzioni che è descritta (nella documentazione o nell’help) con un dettaglio tale da consentire all’utente di utilizzarle.                                                             | n.d. (si rimanda alla norma ISO) |
++---------+---------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| ULe-2-S | Valori di default nei campi di input  | Percentuale di campi di input che vengono riempiti automaticamente con valori di default.                                                                                                                |                                  |
++---------+---------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| ULe-3-S | Comprensibilità dei messaggi d’errore | Percentuale dei messaggi d’errore che dichiarano la ragione dell’errore e suggeriscono come risolverlo.                                                                                                  |                                  |
++---------+---------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| ULe-4-S | Interfaccia utente auto-esplicativa   | Percentuale degli elementi di informazione e dei passi che sono presentati all’utente inesperto in modo che questi possa completare un’attività senza un addestramento preliminare o assistenza esterna. |                                  |
++---------+---------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+
 
 *Note*
 
@@ -458,78 +317,25 @@ Per la terza sottocaratteristica, la ISO 25023 propone 8 metriche, pensate per v
 
 Tabella 17: metriche per operabilità
 
-+---+------------+--------------------------------------------+---------+
-| * | **Nome**   | **Descrizione**                            | **Formu |
-| * |            |                                            | la**    |
-| I |            |                                            |         |
-| D |            |                                            |         |
-| * |            |                                            |         |
-| * |            |                                            |         |
-+===+============+============================================+=========+
-| U | Consistenz | Misura della consistenza, per              | n.d.    |
-| O | a          | comportamento e apparenza, all’interno     | (si     |
-| p | di         | della singola attività e tra attività      | rimanda |
-| - | comportame | simili.                                    | alla    |
-| 1 | nto        |                                            | norma   |
-| - |            |                                            | ISO)    |
-| G |            |                                            |         |
-+---+------------+--------------------------------------------+---------+
-| U | Chiarezza  | Percentuale dei messaggi che possono       |         |
-| O | nei        | essere compresi facilmente.                |         |
-| p | messaggi   |                                            |         |
-| - |            |                                            |         |
-| 2 |            |                                            |         |
-| - |            |                                            |         |
-| G |            |                                            |         |
-+---+------------+--------------------------------------------+---------+
-| U | Personaliz | Percentuale di funzioni e procedure che    |         |
-| O | zabilità   | possono essere personalizzate dall’utente. |         |
-| p | funzionale |                                            |         |
-| - |            |                                            |         |
-| 3 |            |                                            |         |
-| - |            |                                            |         |
-| S |            |                                            |         |
-+---+------------+--------------------------------------------+---------+
-| U | Personaliz | Percentuale degli elementi                 |         |
-| O | zabilità   | dell’interfaccia utente che possono essere |         |
-| p | dell’inter | personalizzati nell’aspetto.               |         |
-| - | faccia     |                                            |         |
-| 4 | utente     |                                            |         |
-| - |            |                                            |         |
-| S |            |                                            |         |
-+---+------------+--------------------------------------------+---------+
-| U | Capacità   | Percentuale degli stati di una funzione    |         |
-| O | di         | che possono essere monitorati durante      |         |
-| p | monitoragg | l’esecuzione.                              |         |
-| - | io         |                                            |         |
-| 5 |            |                                            |         |
-| - |            |                                            |         |
-| S |            |                                            |         |
-+---+------------+--------------------------------------------+---------+
-| U | Opzione    | Percentuale di attività che dispongono di  |         |
-| O | “undo”     | opzione di conferma o di “undo”.           |         |
-| p |            |                                            |         |
-| - |            |                                            |         |
-| 6 |            |                                            |         |
-| - |            |                                            |         |
-| S |            |                                            |         |
-+---+------------+--------------------------------------------+---------+
-| U | Abilità di | Percentuale della terminologia usata       |         |
-| O | capire la  | nell’interfaccia utente che è familiare    |         |
-| p | terminolog | all’utente stesso.                         |         |
-| - | ia         |                                            |         |
-| 7 |            |                                            |         |
-| - |            |                                            |         |
-| S |            |                                            |         |
-+---+------------+--------------------------------------------+---------+
-| U | Consistenz | Percentuale degli elementi                 |         |
-| O | a          | dell’interfaccia utente che ha aspetto     |         |
-| p | dell’aspet | simile. Esempio: tasto “OK” posizionato    |         |
-| - | to         | nello stesso posto in tutte le schermate.  |         |
-| 8 |            |                                            |         |
-| - |            |                                            |         |
-| S |            |                                            |         |
-+---+------------+--------------------------------------------+---------+
++---------+--------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| **ID**  | **Nome**                                   | **Descrizione**                                                                                                                                     | **Formula**                      |
++=========+============================================+=====================================================================================================================================================+==================================+
+| UOp-1-G | Consistenza di comportamento               | Misura della consistenza, per comportamento e apparenza, all’interno della singola attività e tra attività simili.                                  | n.d. (si rimanda alla norma ISO) |
++---------+--------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| UOp-2-G | Chiarezza nei messaggi                     | Percentuale dei messaggi che possono essere compresi facilmente.                                                                                    |                                  |
++---------+--------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| UOp-3-S | Personalizzabilità funzionale              | Percentuale di funzioni e procedure che possono essere personalizzate dall’utente.                                                                  |                                  |
++---------+--------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| UOp-4-S | Personalizzabilità dell’interfaccia utente | Percentuale degli elementi dell’interfaccia utente che possono essere personalizzati nell’aspetto.                                                  |                                  |
++---------+--------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| UOp-5-S | Capacità di monitoraggio                   | Percentuale degli stati di una funzione che possono essere monitorati durante l’esecuzione.                                                         |                                  |
++---------+--------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| UOp-6-S | Opzione “undo”                             | Percentuale di attività che dispongono di opzione di conferma o di “undo”.                                                                          |                                  |
++---------+--------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| UOp-7-S | Abilità di capire la terminologia          | Percentuale della terminologia usata nell’interfaccia utente che è familiare all’utente stesso.                                                     |                                  |
++---------+--------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| UOp-8-S | Consistenza dell’aspetto                   | Percentuale degli elementi dell’interfaccia utente che ha aspetto simile. Esempio: tasto “OK” posizionato nello stesso posto in tutte le schermate. |                                  |
++---------+--------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+
 
 *Note*
 
@@ -554,38 +360,15 @@ Per questa sottocaratteristica, la ISO 25023 propone 3 metriche, pensate per ver
 
 Tabella 18: metriche per protezione da errore utente
 
-+---+----------------+-----------------------------------+------------+
-| * | **Nome**       | **Descrizione**                   | **Formula* |
-| * |                |                                   | *          |
-| I |                |                                   |            |
-| D |                |                                   |            |
-| * |                |                                   |            |
-| * |                |                                   |            |
-+===+================+===================================+============+
-| U | Evitare errori | Percentuale delle azioni e input  | n.d. (si   |
-| E | nelle          | degli utenti che sono protette    | rimanda    |
-| p | operazioni     | dal causare malfunzionamenti.     | alla norma |
-| - | dell’utente    |                                   | ISO)       |
-| 1 |                |                                   |            |
-| - |                |                                   |            |
-| G |                |                                   |            |
-+---+----------------+-----------------------------------+------------+
-| U | Correzione da  | Capacità di correggere dati di    |            |
-| E | errori di      | input errati suggerendo valori    |            |
-| p | input          | corretti                          |            |
-| - | dell’utente    |                                   |            |
-| 2 |                |                                   |            |
-| - |                |                                   |            |
-| S |                |                                   |            |
-+---+----------------+-----------------------------------+------------+
-| U | Recuperabilità | Percentuale degli errori          |            |
-| E | da errore      | dell’utente che può essere        |            |
-| p | dell’utente    | corretta o recuperata dal         |            |
-| - |                | sistema.                          |            |
-| 3 |                |                                   |            |
-| - |                |                                   |            |
-| S |                |                                   |            |
-+---+----------------+-----------------------------------+------------+
++---------+---------------------------------------------+-----------------------------------------------------------------------------------------------+----------------------------------+
+| **ID**  | **Nome**                                    | **Descrizione**                                                                               | **Formula**                      |
++=========+=============================================+===============================================================================================+==================================+
+| UEp-1-G | Evitare errori nelle operazioni dell’utente | Percentuale delle azioni e input degli utenti che sono protette dal causare malfunzionamenti. | n.d. (si rimanda alla norma ISO) |
++---------+---------------------------------------------+-----------------------------------------------------------------------------------------------+----------------------------------+
+| UEp-2-S | Correzione da errori di input dell’utente   | Capacità di correggere dati di input errati suggerendo valori corretti                        |                                  |
++---------+---------------------------------------------+-----------------------------------------------------------------------------------------------+----------------------------------+
+| UEp-3-S | Recuperabilità da errore dell’utente        | Percentuale degli errori dell’utente che può essere corretta o recuperata dal sistema.        |                                  |
++---------+---------------------------------------------+-----------------------------------------------------------------------------------------------+----------------------------------+
 
 *Note*
 
@@ -608,22 +391,11 @@ Per questa sottocaratteristica la ISO 25023 propone una sola metrica, ideata per
 
 Tabella 19: metriche per estetica dell’interfaccia utente
 
-+---+----------------+------------------------------------+------------+
-| * | **Nome**       | **Descrizione**                    | **Formula* |
-| * |                |                                    | *          |
-| I |                |                                    |            |
-| D |                |                                    |            |
-| * |                |                                    |            |
-| * |                |                                    |            |
-+===+================+====================================+============+
-| U | Apparenza      | Misura di quanto l’interfaccia     | n.d. (si   |
-| I | estetica       | utente e in generale il disegno    | rimanda    |
-| n | dell’interfacc | dell’applicazione è piacevole.     | alla norma |
-| - | ia             |                                    | ISO)       |
-| 1 | utente         |                                    |            |
-| - |                |                                    |            |
-| S |                |                                    |            |
-+---+----------------+------------------------------------+------------+
++---------+--------------------------------------------+-----------------------------------------------------------------------------------------------+----------------------------------+
+| **ID**  | **Nome**                                   | **Descrizione**                                                                               | **Formula**                      |
++=========+============================================+===============================================================================================+==================================+
+| UIn-1-S | Apparenza estetica dell’interfaccia utente | Misura di quanto l’interfaccia utente e in generale il disegno dell’applicazione è piacevole. | n.d. (si rimanda alla norma ISO) |
++---------+--------------------------------------------+-----------------------------------------------------------------------------------------------+----------------------------------+
 
 *Quando è opportuno utilizzare queste metriche?*
 
@@ -638,54 +410,19 @@ Per l’ultima sottocaratteristica, la ISO 25023 propone 5 metriche, pensate per
 
 Tabella 20: metriche per accessibilità
 
-+---+------------+--------------------------------------------+--------+
-| * | **Nome**   | **Descrizione**                            | **Form |
-| * |            |                                            | ula**  |
-| I |            |                                            |        |
-| D |            |                                            |        |
-| * |            |                                            |        |
-| * |            |                                            |        |
-+===+============+============================================+========+
-| U | Accessibil | Quota percentuale dell’applicazione che    | n.d.   |
-| A | ità        | può essere usata con successo da persone   | (si    |
-| c | per utenti | con abilità cognitive limitate. (con       | rimand |
-| - | con        | l’impiego di tecnologia assistiva, se      | a      |
-| 1 | disabilità | applicabile)                               | alla   |
-| - | cognitiva  |                                            | norma  |
-| G |            |                                            | ISO)   |
-+---+------------+--------------------------------------------+--------+
-| U | Accessibil | Quota percentuale dell’applicazione che    |        |
-| A | ità        | può essere usata con successo da persone   |        |
-| c | per utenti | con abilità fisiche limitate. (con         |        |
-| - | con        | l’impiego di tecnologia assistiva, se      |        |
-| 2 | disabilità | applicabile)                               |        |
-| - | fisica     |                                            |        |
-| G |            |                                            |        |
-+---+------------+--------------------------------------------+--------+
-| U | Accessibil | Quota percentuale dell’applicazione che    |        |
-| A | ità        | può essere usata con successo da persone   |        |
-| c | per utenti | con abilità uditive limitate. (con         |        |
-| - | con        | l’impiego di tecnologia assistiva, se      |        |
-| 3 | disabilità | applicabile)                               |        |
-| - | uditiva    |                                            |        |
-| G |            |                                            |        |
-+---+------------+--------------------------------------------+--------+
-| U | Accessibil | Quota percentuale dell’applicazione che    |        |
-| A | ità        | può essere usata con successo da persone   |        |
-| c | per utenti | con abilità visive limitate. (con          |        |
-| - | con        | l’impiego di tecnologia assistiva, se      |        |
-| 4 | disabilità | applicabile)                               |        |
-| - | visiva     |                                            |        |
-| G |            |                                            |        |
-+---+------------+--------------------------------------------+--------+
-| U | Adeguatezz | Percentuale dei linguaggi richiesti che è  |        |
-| A | a          | supportata.                                |        |
-| c | dei        |                                            |        |
-| - | linguaggi  |                                            |        |
-| 5 | supportati |                                            |        |
-| - |            |                                            |        |
-| S |            |                                            |        |
-+---+------------+--------------------------------------------+--------+
++---------+---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| **ID**  | **Nome**                                          | **Descrizione**                                                                                                                                                          | **Formula**                      |
++=========+===================================================+==========================================================================================================================================================================+==================================+
+| UAc-1-G | Accessibilità per utenti con disabilità cognitiva | Quota percentuale dell’applicazione che può essere usata con successo da persone con abilità cognitive limitate. (con l’impiego di tecnologia assistiva, se applicabile) | n.d. (si rimanda alla norma ISO) |
++---------+---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| UAc-2-G | Accessibilità per utenti con disabilità fisica    | Quota percentuale dell’applicazione che può essere usata con successo da persone con abilità fisiche limitate. (con l’impiego di tecnologia assistiva, se applicabile)   |                                  |
++---------+---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| UAc-3-G | Accessibilità per utenti con disabilità uditiva   | Quota percentuale dell’applicazione che può essere usata con successo da persone con abilità uditive limitate. (con l’impiego di tecnologia assistiva, se applicabile)   |                                  |
++---------+---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| UAc-4-G | Accessibilità per utenti con disabilità visiva    | Quota percentuale dell’applicazione che può essere usata con successo da persone con abilità visive limitate. (con l’impiego di tecnologia assistiva, se applicabile)    |                                  |
++---------+---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| UAc-5-S | Adeguatezza dei linguaggi supportati              | Percentuale dei linguaggi richiesti che è supportata.                                                                                                                    |                                  |
++---------+---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+
 
 *Note*
 
@@ -761,46 +498,17 @@ Le metriche proposte dalla ISO 25023 per questa sottocaratteristica sono riporta
 
 Tabella 21: metriche per maturità
 
-+---+-------------+----------------------------------------+-----------+
-| * | **Definizio | **Descrizione**                        | **Formula |
-| * | ne**        |                                        | **        |
-| I |             |                                        |           |
-| D |             |                                        |           |
-| * |             |                                        |           |
-| * |             |                                        |           |
-+===+=============+========================================+===========+
-| R | Correzione  | Quale porzione di errori rilevati è    | n.d. (si  |
-| M | degli       | stata corretta?                        | rimanda   |
-| a | errori      |                                        | alla      |
-| - |             |                                        | norma     |
-| 1 |             |                                        | ISO)      |
-| - |             |                                        |           |
-| G |             |                                        |           |
-+---+-------------+----------------------------------------+-----------+
-| R | Tempo medio | Quanto tempo intercorre, in media, tra |           |
-| M | intercorso  | due errori in esercizio?               |           |
-| a | tra due     |                                        |           |
-| - | errori      |                                        |           |
-| 2 |             |                                        |           |
-| - |             |                                        |           |
-| G |             |                                        |           |
-+---+-------------+----------------------------------------+-----------+
-| R | Numero di   | Quanti errori sono stati rilevati      |           |
-| M | errori      | durante un periodo definito?           |           |
-| a |             |                                        |           |
-| - |             |                                        |           |
-| 3 |             |                                        |           |
-| - |             |                                        |           |
-| G |             |                                        |           |
-+---+-------------+----------------------------------------+-----------+
-| R | Copertura   | Quale percentuale delle funzionalità e |           |
-| M | dei test    | casi d’uso del software sono state     |           |
-| a |             | coperte da test effettivamente svolti? |           |
-| - |             |                                        |           |
-| 4 |             |                                        |           |
-| - |             |                                        |           |
-| S |             |                                        |           |
-+---+-------------+----------------------------------------+-----------+
++---------+---------------------------------------+------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| **ID**  | **Definizione**                       | **Descrizione**                                                                                                  | **Formula**                      |
++=========+=======================================+==================================================================================================================+==================================+
+| RMa-1-G | Correzione degli errori               | Quale porzione di errori rilevati è stata corretta?                                                              | n.d. (si rimanda alla norma ISO) |
++---------+---------------------------------------+------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| RMa-2-G | Tempo medio intercorso tra due errori | Quanto tempo intercorre, in media, tra due errori in esercizio?                                                  |                                  |
++---------+---------------------------------------+------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| RMa-3-G | Numero di errori                      | Quanti errori sono stati rilevati durante un periodo definito?                                                   |                                  |
++---------+---------------------------------------+------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| RMa-4-S | Copertura dei test                    | Quale percentuale delle funzionalità e casi d’uso del software sono state coperte da test effettivamente svolti? |                                  |
++---------+---------------------------------------+------------------------------------------------------------------------------------------------------------------+----------------------------------+
 
 *Note*
 
@@ -826,38 +534,15 @@ Le metriche proposte dalla ISO 25023 per questa sottocaratteristica sono riporta
 
 Tabella 22: metriche per disponibilità
 
-+---+----------------------------+---------------------------+---------+
-| * | **Definizione**            | **Descrizione**           | **Formu |
-| * |                            |                           | la**    |
-| I |                            |                           |         |
-| D |                            |                           |         |
-| * |                            |                           |         |
-| * |                            |                           |         |
-+===+============================+===========================+=========+
-| R | Disponibilità del software | Per quale parte del tempo | n.d.    |
-| A |                            | d’esercizio il software   | (si     |
-| v |                            | in esame è effettivamente | rimanda |
-| - |                            | disponibile?              | alla    |
-| 1 |                            |                           | norma   |
-| - |                            |                           | ISO)    |
-| G |                            |                           |         |
-+---+----------------------------+---------------------------+---------+
-| R | Tempo medio di             | Per quanto tempo il       |         |
-| A | malfunzionamento           | software è indisponibile  |         |
-| v |                            | a seguito di un           |         |
-| - |                            | malfunzionamento?         |         |
-| 2 |                            |                           |         |
-| - |                            |                           |         |
-| G |                            |                           |         |
-+---+----------------------------+---------------------------+---------+
-| R | Disponibilità del software | Per quanto tempo il       |         |
-| A | in “giorni speciali” (ad   | software in esercizio è   |         |
-| v | esempio fine settimana o   | stato disponibile durante |         |
-| - | periodi festivi)           | i giorni speciali?        |         |
-| 3 |                            |                           |         |
-| - |                            |                           |         |
-| S |                            |                           |         |
-+---+----------------------------+---------------------------+---------+
++---------+-----------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------+----------------------------------+
+| **ID**  | **Definizione**                                                                               | **Descrizione**                                                                          | **Formula**                      |
++=========+===============================================================================================+==========================================================================================+==================================+
+| RAv-1-G | Disponibilità del software                                                                    | Per quale parte del tempo d’esercizio il software in esame è effettivamente disponibile? | n.d. (si rimanda alla norma ISO) |
++---------+-----------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------+----------------------------------+
+| RAv-2-G | Tempo medio di malfunzionamento                                                               | Per quanto tempo il software è indisponibile a seguito di un malfunzionamento?           |                                  |
++---------+-----------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------+----------------------------------+
+| RAv-3-S | Disponibilità del software in “giorni speciali” (ad esempio fine settimana o periodi festivi) | Per quanto tempo il software in esercizio è stato disponibile durante i giorni speciali? |                                  |
++---------+-----------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------+----------------------------------+
 
 *Quando è opportuno utilizzare queste metriche?*
 
@@ -872,38 +557,15 @@ Le metriche di tolleranza agli errori sono utilizzate per definire il grado in c
 
 Tabella 23: metriche per tolleranza agli errori
 
-+---+--------------+-------------------------------------+------------+
-| * | **Definizion | **Descrizione**                     | **Formula* |
-| * | e**          |                                     | *          |
-| I |              |                                     |            |
-| D |              |                                     |            |
-| * |              |                                     |            |
-| * |              |                                     |            |
-+===+==============+=====================================+============+
-| R | Robustezza   | Quale parte di tutti gli errori     | n.d. (si   |
-| F | agli errori  | critici è stata messa sotto         | rimanda    |
-| t |              | controllo                           | alla norma |
-| - |              |                                     | ISO)       |
-| 1 |              |                                     |            |
-| - |              |                                     |            |
-| G |              |                                     |            |
-+---+--------------+-------------------------------------+------------+
-| R | Ridondanza   | Quale porzione dei componenti del   |            |
-| F | dei          | sistema è installato in modo        |            |
-| t | componenti   | ridondante per evitare blocchi?     |            |
-| - |              |                                     |            |
-| 2 |              |                                     |            |
-| - |              |                                     |            |
-| S |              |                                     |            |
-+---+--------------+-------------------------------------+------------+
-| R | Tempo medio  | In quanto tempo il sistema riporta  |            |
-| F | di notifica  | l’occorrenza dell’errore?           |            |
-| t | degli errori |                                     |            |
-| - |              |                                     |            |
-| 3 |              |                                     |            |
-| - |              |                                     |            |
-| S |              |                                     |            |
-+---+--------------+-------------------------------------+------------+
++---------+--------------------------------------+------------------------------------------------------------------------------------------------+----------------------------------+
+| **ID**  | **Definizione**                      | **Descrizione**                                                                                | **Formula**                      |
++=========+======================================+================================================================================================+==================================+
+| RFt-1-G | Robustezza agli errori               | Quale parte di tutti gli errori critici è stata messa sotto controllo                          | n.d. (si rimanda alla norma ISO) |
++---------+--------------------------------------+------------------------------------------------------------------------------------------------+----------------------------------+
+| RFt-2-S | Ridondanza dei componenti            | Quale porzione dei componenti del sistema è installato in modo ridondante per evitare blocchi? |                                  |
++---------+--------------------------------------+------------------------------------------------------------------------------------------------+----------------------------------+
+| RFt-3-S | Tempo medio di notifica degli errori | In quanto tempo il sistema riporta l’occorrenza dell’errore?                                   |                                  |
++---------+--------------------------------------+------------------------------------------------------------------------------------------------+----------------------------------+
 
 *Note*
 
@@ -924,21 +586,13 @@ Le metriche di recuperabilità sono utilizzate per definire il grado con cui, in
 
 Tabella 24: metriche per recuperabilità
 
-+----+-------------+-------------------------------+------------------+
-| ** | **Definizio | **Descrizione**               | **Formula**      |
-| ID | ne**        |                               |                  |
-| ** |             |                               |                  |
-+====+=============+===============================+==================+
-| RR | Tempo medio | Quanto tempo è necessario per | n.d. (si rimanda |
-| e- | di recupero | recuperare dall’errore?       | alla norma ISO)  |
-| 1- |             |                               |                  |
-| G  |             |                               |                  |
-+----+-------------+-------------------------------+------------------+
-| RR | Completezza | Quale porzione dei dati è     |                  |
-| e- | del backup  | oggetto di backup             |                  |
-| 2- |             | regolarmente?                 |                  |
-| S  |             |                               |                  |
-+----+-------------+-------------------------------+------------------+
++---------+-------------------------+-----------------------------------------------------------+----------------------------------+
+| **ID**  | **Definizione**         | **Descrizione**                                           | **Formula**                      |
++=========+=========================+===========================================================+==================================+
+| RRe-1-G | Tempo medio di recupero | Quanto tempo è necessario per recuperare dall’errore?     | n.d. (si rimanda alla norma ISO) |
++---------+-------------------------+-----------------------------------------------------------+----------------------------------+
+| RRe-2-S | Completezza del backup  | Quale porzione dei dati è oggetto di backup regolarmente? |                                  |
++---------+-------------------------+-----------------------------------------------------------+----------------------------------+
 
 *Quando è opportuno utilizzare queste metriche?*
 
@@ -986,38 +640,15 @@ Per la prima delle cinque sottocaratteristiche, la ISO 25023 propone 3 metriche,
 
 Tabella 25: metriche per riservatezza
 
-+---+---------------+------------------------------------+------------+
-| * | **Nome**      | **Descrizione**                    | **Formula* |
-| * |               |                                    | *          |
-| I |               |                                    |            |
-| D |               |                                    |            |
-| * |               |                                    |            |
-| * |               |                                    |            |
-+===+===============+====================================+============+
-| S | Controllo     | Percentuale di dati riservati      | n.d. (si   |
-| C | accessi       | protetti da accessi non            | rimanda    |
-| o |               | autorizzati                        | alla norma |
-| - |               |                                    | ISO)       |
-| 1 |               |                                    |            |
-| - |               |                                    |            |
-| G |               |                                    |            |
-+---+---------------+------------------------------------+------------+
-| S | Correttezza   | Quanto correttamente viene         |            |
-| C | della         | implementata la procedura di       |            |
-| o | crittografia  | crittografia / decrittografia dei  |            |
-| - | dei dati      | dati.                              |            |
-| 2 |               |                                    |            |
-| - |               |                                    |            |
-| G |               |                                    |            |
-+---+---------------+------------------------------------+------------+
-| S | Robustezza    | Percentuale degli algoritmi        |            |
-| C | degli         | crittografici validi sul totale    |            |
-| o | algoritmi     | degli algoritmi usati              |            |
-| - | crittografici |                                    |            |
-| 3 |               |                                    |            |
-| - |               |                                    |            |
-| S |               |                                    |            |
-+---+---------------+------------------------------------+------------+
++---------+------------------------------------------+-------------------------------------------------------------------------------------------------+----------------------------------+
+| **ID**  | **Nome**                                 | **Descrizione**                                                                                 | **Formula**                      |
++=========+==========================================+=================================================================================================+==================================+
+| SCo-1-G | Controllo accessi                        | Percentuale di dati riservati protetti da accessi non autorizzati                               | n.d. (si rimanda alla norma ISO) |
++---------+------------------------------------------+-------------------------------------------------------------------------------------------------+----------------------------------+
+| SCo-2-G | Correttezza della crittografia dei dati  | Quanto correttamente viene implementata la procedura di crittografia / decrittografia dei dati. |                                  |
++---------+------------------------------------------+-------------------------------------------------------------------------------------------------+----------------------------------+
+| SCo-3-S | Robustezza degli algoritmi crittografici | Percentuale degli algoritmi crittografici validi sul totale degli algoritmi usati               |                                  |
++---------+------------------------------------------+-------------------------------------------------------------------------------------------------+----------------------------------+
 
 *Note*
 
@@ -1036,38 +667,15 @@ Per la seconda delle cinque sottocaratteristiche, la ISO 25023 propone 3 metrich
 
 Tabella 26: metriche per integrità
 
-+---+----------------------+-----------------------------+-------------+
-| * | **Nome**             | **Descrizione**             | **Formula** |
-| * |                      |                             |             |
-| I |                      |                             |             |
-| D |                      |                             |             |
-| * |                      |                             |             |
-| * |                      |                             |             |
-+===+======================+=============================+=============+
-| S | Integrità dei dati   | Numero di dati corrotti o   | n.d. (si    |
-| I |                      | modificati a seguito di     | rimanda     |
-| n |                      | accesso non autorizzato     | alla norma  |
-| - |                      |                             | ISO)        |
-| 1 |                      |                             |             |
-| - |                      |                             |             |
-| G |                      |                             |             |
-+---+----------------------+-----------------------------+-------------+
-| S | Prevenzione della    | Misura dell’efficacia dei   |             |
-| I | corruzione dei dati  | metodi di prevenzione della |             |
-| n | da eventi interni    | corruzione dei dati         |             |
-| - |                      |                             |             |
-| 2 |                      |                             |             |
-| - |                      |                             |             |
-| G |                      |                             |             |
-+---+----------------------+-----------------------------+-------------+
-| S | Validità degli       | Numero degli accessi validi |             |
-| I | accessi alle         | agli elementi di un array   |             |
-| n | strutture dati       |                             |             |
-| - | (array)              |                             |             |
-| 3 |                      |                             |             |
-| - |                      |                             |             |
-| S |                      |                             |             |
-+---+----------------------+-----------------------------+-------------+
++---------+---------------------------------------------------------+---------------------------------------------------------------------------+----------------------------------+
+| **ID**  | **Nome**                                                | **Descrizione**                                                           | **Formula**                      |
++=========+=========================================================+===========================================================================+==================================+
+| SIn-1-G | Integrità dei dati                                      | Numero di dati corrotti o modificati a seguito di accesso non autorizzato | n.d. (si rimanda alla norma ISO) |
++---------+---------------------------------------------------------+---------------------------------------------------------------------------+----------------------------------+
+| SIn-2-G | Prevenzione della corruzione dei dati da eventi interni | Misura dell’efficacia dei metodi di prevenzione della corruzione dei dati |                                  |
++---------+---------------------------------------------------------+---------------------------------------------------------------------------+----------------------------------+
+| SIn-3-S | Validità degli accessi alle strutture dati (array)      | Numero degli accessi validi agli elementi di un array                     |                                  |
++---------+---------------------------------------------------------+---------------------------------------------------------------------------+----------------------------------+
 
 *Note*
 
@@ -1086,16 +694,11 @@ Per la terza sottocaratteristica, la ISO 25023 propone una metrica, pensata per 
 
 Tabella 27: metriche per non ripudio
 
-+----+-------------+--------------------------------------------------+
-| ** | **Nome**    | **Descrizione**                                  |
-| ID |             |                                                  |
-| ** |             |                                                  |
-+====+=============+==================================================+
-| SN | Uso della   | Percentuale di eventi che richiedono il *non     |
-| o- | firma       | ripudio*, e che utilizzano la firma digitale.    |
-| 1- | digitale    |                                                  |
-| G  |             |                                                  |
-+----+-------------+--------------------------------------------------+
++---------+--------------------------+--------------------------------------------------------------------------------------------+
+| **ID**  | **Nome**                 | **Descrizione**                                                                            |
++=========+==========================+============================================================================================+
+| SNo-1-G | Uso della firma digitale | Percentuale di eventi che richiedono il *non ripudio*, e che utilizzano la firma digitale. |
++---------+--------------------------+--------------------------------------------------------------------------------------------+
 
 *Note*
 
@@ -1112,30 +715,13 @@ Per la quarta sottocaratteristica, la ISO 25023 propone 2 metriche, pensate per 
 
 Tabella 28: metriche per responsabilità
 
-+---+----------------+---------------------------------+--------------+
-| * | **Nome**       | **Descrizione**                 | **Formula**  |
-| * |                |                                 |              |
-| I |                |                                 |              |
-| D |                |                                 |              |
-| * |                |                                 |              |
-| * |                |                                 |              |
-+===+================+=================================+==============+
-| S | Completezza    | Percentuale di tracciabilità    | n.d. (si     |
-| A | della          | utente all’accesso ai sistemi o | rimanda alla |
-| c | tracciabilità  | alle informazioni               | norma ISO)   |
-| - | utente         |                                 |              |
-| 1 |                |                                 |              |
-| - |                |                                 |              |
-| G |                |                                 |              |
-+---+----------------+---------------------------------+--------------+
-| S | Conservazione  | Durata di conservazione del     |              |
-| A | del registro   | registro di sistema in archivio |              |
-| c | di sistema     |                                 |              |
-| - |                |                                 |              |
-| 2 |                |                                 |              |
-| - |                |                                 |              |
-| G |                |                                 |              |
-+---+----------------+---------------------------------+--------------+
++---------+----------------------------------------+--------------------------------------------------------------------------------+----------------------------------+
+| **ID**  | **Nome**                               | **Descrizione**                                                                | **Formula**                      |
++=========+========================================+================================================================================+==================================+
+| SAc-1-G | Completezza della tracciabilità utente | Percentuale di tracciabilità utente all’accesso ai sistemi o alle informazioni | n.d. (si rimanda alla norma ISO) |
++---------+----------------------------------------+--------------------------------------------------------------------------------+----------------------------------+
+| SAc-2-G | Conservazione del registro di sistema  | Durata di conservazione del registro di sistema in archivio                    |                                  |
++---------+----------------------------------------+--------------------------------------------------------------------------------+----------------------------------+
 
 *Note*
 
@@ -1154,30 +740,13 @@ Per la quinta sottocaratteristica, la ISO 25023 propone 2 metriche, pensate per 
 
 Tabella 29: metriche per autenticità
 
-+---+---------------+-------------------------------------+------------+
-| * | **Nome**      | **Descrizione**                     | **Formula* |
-| * |               |                                     | *          |
-| I |               |                                     |            |
-| D |               |                                     |            |
-| * |               |                                     |            |
-| * |               |                                     |            |
-+===+===============+=====================================+============+
-| S | Procedure di  | Grado di implementazione efficace   | n.d. (si   |
-| A | autenticazion | di un sistema di autenticazione di  | rimanda    |
-| u | e             | un soggetto o di una risorsa        | alla norma |
-| - |               |                                     | ISO)       |
-| 1 |               |                                     |            |
-| - |               |                                     |            |
-| G |               |                                     |            |
-+---+---------------+-------------------------------------+------------+
-| S | Conformità    | Percentuale di regole di            |            |
-| A | alle regole   | autenticazione stabilite            |            |
-| u | di            |                                     |            |
-| - | autenticazion |                                     |            |
-| 2 | e             |                                     |            |
-| - |               |                                     |            |
-| G |               |                                     |            |
-+---+---------------+-------------------------------------+------------+
++---------+------------------------------------------+---------------------------------------------------------------------------------------------------+----------------------------------+
+| **ID**  | **Nome**                                 | **Descrizione**                                                                                   | **Formula**                      |
++=========+==========================================+===================================================================================================+==================================+
+| SAu-1-G | Procedure di autenticazione              | Grado di implementazione efficace di un sistema di autenticazione di un soggetto o di una risorsa | n.d. (si rimanda alla norma ISO) |
++---------+------------------------------------------+---------------------------------------------------------------------------------------------------+----------------------------------+
+| SAu-2-G | Conformità alle regole di autenticazione | Percentuale di regole di autenticazione stabilite                                                 |                                  |
++---------+------------------------------------------+---------------------------------------------------------------------------------------------------+----------------------------------+
 
 *Quando è opportuno utilizzare queste metriche?*
 
@@ -1218,30 +787,13 @@ Si tratta di metriche pensate per misurare il grado con cui un prodotto/sistema 
 
 Tabella 30: metriche per modularità
 
-+---+-----------+---------------------------------------------+--------+
-| * | **Nome**  | **Descrizione**                             | **Form |
-| * |           |                                             | ula**  |
-| I |           |                                             |        |
-| D |           |                                             |        |
-| * |           |                                             |        |
-| * |           |                                             |        |
-+===+===========+=============================================+========+
-| M | Accoppiam | In un prodotto/sistema software quanto      | n.d.   |
-| M | ento      | strettamente sono indipendenti i componenti | (si    |
-| o | di        | e quanti componenti sono esenti da impatti  | rimand |
-| - | component | da cambiamenti negli altri componenti?      | a      |
-| 1 | i         |                                             | alla   |
-| - |           |                                             | norma  |
-| G |           |                                             | ISO)   |
-+---+-----------+---------------------------------------------+--------+
-| M | Adeguatez | Quanti moduli software hanno una            |        |
-| M | za        | complessità ciclomatica accettabile?        |        |
-| o | della     |                                             |        |
-| - | complessi |                                             |        |
-| 2 | tà        |                                             |        |
-| - | ciclomati |                                             |        |
-| S | ca        |                                             |        |
-+---+-----------+---------------------------------------------+--------+
++---------+-------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| **ID**  | **Nome**                                  | **Descrizione**                                                                                                                                                      | **Formula**                      |
++=========+===========================================+======================================================================================================================================================================+==================================+
+| MMo-1-G | Accoppiamento di componenti               | In un prodotto/sistema software quanto strettamente sono indipendenti i componenti e quanti componenti sono esenti da impatti da cambiamenti negli altri componenti? | n.d. (si rimanda alla norma ISO) |
++---------+-------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| MMo-2-S | Adeguatezza della complessità ciclomatica | Quanti moduli software hanno una complessità ciclomatica accettabile?                                                                                                |                                  |
++---------+-------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+
 
 *Note*
 
@@ -1281,30 +833,13 @@ Si tratta di metriche pensate per misurare il grado con cui un software può ess
 
 Tabella 31: metriche per riusabilità
 
-+---+-------------+-------------------------------------+-------------+
-| * | **Nome**    | **Descrizione**                     | **Formula** |
-| * |             |                                     |             |
-| I |             |                                     |             |
-| D |             |                                     |             |
-| * |             |                                     |             |
-| * |             |                                     |             |
-+===+=============+=====================================+=============+
-| M | Riusabilità | Quanti asset (moduli software       | n.d. (si    |
-| R | degli asset | autoconsistenti) in un sistema      | rimanda     |
-| e |             | possono essere riusabili?           | alla norma  |
-| - |             |                                     | ISO)        |
-| 1 |             |                                     |             |
-| - |             |                                     |             |
-| G |             |                                     |             |
-+---+-------------+-------------------------------------+-------------+
-| M | Conformità  | Quanti moduli software nel          |             |
-| R | alle regole | prodotto/sistema sviluppato sono    |             |
-| e | di codifica | conformi alle regole di codifica?   |             |
-| - |             |                                     |             |
-| 2 |             |                                     |             |
-| - |             |                                     |             |
-| S |             |                                     |             |
-+---+-------------+-------------------------------------+-------------+
++---------+------------------------------------+-----------------------------------------------------------------------------------------------+----------------------------------+
+| **ID**  | **Nome**                           | **Descrizione**                                                                               | **Formula**                      |
++=========+====================================+===============================================================================================+==================================+
+| MRe-1-G | Riusabilità degli asset            | Quanti asset (moduli software autoconsistenti) in un sistema possono essere riusabili?        | n.d. (si rimanda alla norma ISO) |
++---------+------------------------------------+-----------------------------------------------------------------------------------------------+----------------------------------+
+| MRe-2-S | Conformità alle regole di codifica | Quanti moduli software nel prodotto/sistema sviluppato sono conformi alle regole di codifica? |                                  |
++---------+------------------------------------+-----------------------------------------------------------------------------------------------+----------------------------------+
 
 *Note*
 
@@ -1327,38 +862,15 @@ Si tratta di metriche pensate per misurare il grado di efficacia ed efficienza c
 
 Tabella 32: metriche per analizzabilità
 
-+---+-------------+-----------------------------------------+-----------+
-| * | **Nome**    | **Descrizione**                         | **Formula |
-| * |             |                                         | **        |
-| I |             |                                         |           |
-| D |             |                                         |           |
-| * |             |                                         |           |
-| * |             |                                         |           |
-+===+=============+=========================================+===========+
-| M | Completezza | Quanto è estesa la copertura dei log di | n.d. (si  |
-| A | dei log di  | sistema al fine di tracciare le         | rimanda   |
-| n | sistema     | operazioni che avvengono nel            | alla      |
-| - |             | prodotto/sistema?                       | norma     |
-| 1 |             |                                         | ISO)      |
-| - |             |                                         |           |
-| G |             |                                         |           |
-+---+-------------+-----------------------------------------+-----------+
-| M | Efficacia   | Quale proporzione delle funzioni di     |           |
-| A | delle       | diagnosi soddisfa i requisiti di        |           |
-| n | funzioni di | un’analisi causale?                     |           |
-| - | diagnosi    |                                         |           |
-| 2 |             |                                         |           |
-| - |             |                                         |           |
-| S |             |                                         |           |
-+---+-------------+-----------------------------------------+-----------+
-| M | Sufficienza | A cosa si estendono le funzioni di      |           |
-| A | delle       | diagnosi preparate?                     |           |
-| n | funzioni di |                                         |           |
-| - | diagnosi    |                                         |           |
-| 3 |             |                                         |           |
-| - |             |                                         |           |
-| S |             |                                         |           |
-+---+-------------+-----------------------------------------+-----------+
++---------+----------------------------------------+------------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| **ID**  | **Nome**                               | **Descrizione**                                                                                                        | **Formula**                      |
++=========+========================================+========================================================================================================================+==================================+
+| MAn-1-G | Completezza dei log di sistema         | Quanto è estesa la copertura dei log di sistema al fine di tracciare le operazioni che avvengono nel prodotto/sistema? | n.d. (si rimanda alla norma ISO) |
++---------+----------------------------------------+------------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| MAn-2-S | Efficacia delle funzioni di diagnosi   | Quale proporzione delle funzioni di diagnosi soddisfa i requisiti di un’analisi causale?                               |                                  |
++---------+----------------------------------------+------------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| MAn-3-S | Sufficienza delle funzioni di diagnosi | A cosa si estendono le funzioni di diagnosi preparate?                                                                 |                                  |
++---------+----------------------------------------+------------------------------------------------------------------------------------------------------------------------+----------------------------------+
 
 *Note*
 
@@ -1381,38 +893,15 @@ Si tratta di metriche pensate per misurare il grado con cui un software può ess
 
 Tabella 33: metriche per modificabilità
 
-+---+------------+--------------------------------------+--------------+
-| * | **Nome**   | **Descrizione**                      | **Formula**  |
-| * |            |                                      |              |
-| I |            |                                      |              |
-| D |            |                                      |              |
-| * |            |                                      |              |
-| * |            |                                      |              |
-+===+============+======================================+==============+
-| M | Efficienza | Quanto efficientemente possono       | n.d. (si     |
-| M | delle      | essere apportate le modifiche        | rimanda alla |
-| d | modifiche  | rispetto al tempo previsto?          | norma ISO)   |
-| - |            |                                      |              |
-| 1 |            |                                      |              |
-| - |            |                                      |              |
-| G |            |                                      |              |
-+---+------------+--------------------------------------+--------------+
-| M | Correttezz | Quale proporzione delle modifiche è  |              |
-| M | a          | stato implementato correttamente?    |              |
-| d | delle      |                                      |              |
-| - | modifiche  |                                      |              |
-| 2 |            |                                      |              |
-| - |            |                                      |              |
-| G |            |                                      |              |
-+---+------------+--------------------------------------+--------------+
-| M | Capacità   | Quanto sono estese le modifiche      |              |
-| M | di         | richieste realizzate in uno          |              |
-| d | modifica   | specifico periodo di tempo?          |              |
-| - |            |                                      |              |
-| 3 |            |                                      |              |
-| - |            |                                      |              |
-| S |            |                                      |              |
-+---+------------+--------------------------------------+--------------+
++---------+-----------------------------+------------------------------------------------------------------------------------------+----------------------------------+
+| **ID**  | **Nome**                    | **Descrizione**                                                                          | **Formula**                      |
++=========+=============================+==========================================================================================+==================================+
+| MMd-1-G | Efficienza delle modifiche  | Quanto efficientemente possono essere apportate le modifiche rispetto al tempo previsto? | n.d. (si rimanda alla norma ISO) |
++---------+-----------------------------+------------------------------------------------------------------------------------------+----------------------------------+
+| MMd-2-G | Correttezza delle modifiche | Quale proporzione delle modifiche è stato implementato correttamente?                    |                                  |
++---------+-----------------------------+------------------------------------------------------------------------------------------+----------------------------------+
+| MMd-3-S | Capacità di modifica        | Quanto sono estese le modifiche richieste realizzate in uno specifico periodo di tempo?  |                                  |
++---------+-----------------------------+------------------------------------------------------------------------------------------+----------------------------------+
 
 *Note*
 
@@ -1437,38 +926,15 @@ Si tratta di metriche pensate per misurare il grado di efficacia e di efficienza
 
 Tabella 34: metriche per testabilità
 
-+---+-------------+--------------------------------------+------------+
-| * | **Nome**    | **Descrizione**                      | **Formula* |
-| * |             |                                      | *          |
-| I |             |                                      |            |
-| D |             |                                      |            |
-| * |             |                                      |            |
-| * |             |                                      |            |
-+===+=============+======================================+============+
-| M | Completezza | Quanto completamente sono            | n.d. (si   |
-| T | della       | implementate le funzioni e le        | rimanda    |
-| e | funzione di | strutture di test?                   | alla norma |
-| - | test        |                                      | ISO)       |
-| 1 |             |                                      |            |
-| - |             |                                      |            |
-| G |             |                                      |            |
-+---+-------------+--------------------------------------+------------+
-| M | Autonomia   | Quanto indipendentemente può essere  |            |
-| T | di          | testato il software?                 |            |
-| e | testabilità |                                      |            |
-| - |             |                                      |            |
-| 2 |             |                                      |            |
-| - |             |                                      |            |
-| S |             |                                      |            |
-+---+-------------+--------------------------------------+------------+
-| M | Ripetibilit | Quanto facilmente possono essere     |            |
-| T | à           | rieseguite da capo le operazioni di  |            |
-| e | dei test    | test dopo una manutenzione?          |            |
-| - |             |                                      |            |
-| 3 |             |                                      |            |
-| - |             |                                      |            |
-| S |             |                                      |            |
-+---+-------------+--------------------------------------+------------+
++---------+------------------------------------+--------------------------------------------------------------------------------------------------+----------------------------------+
+| **ID**  | **Nome**                           | **Descrizione**                                                                                  | **Formula**                      |
++=========+====================================+==================================================================================================+==================================+
+| MTe-1-G | Completezza della funzione di test | Quanto completamente sono implementate le funzioni e le strutture di test?                       | n.d. (si rimanda alla norma ISO) |
++---------+------------------------------------+--------------------------------------------------------------------------------------------------+----------------------------------+
+| MTe-2-S | Autonomia di testabilità           | Quanto indipendentemente può essere testato il software?                                         |                                  |
++---------+------------------------------------+--------------------------------------------------------------------------------------------------+----------------------------------+
+| MTe-3-S | Ripetibilità dei test              | Quanto facilmente possono essere rieseguite da capo le operazioni di test dopo una manutenzione? |                                  |
++---------+------------------------------------+--------------------------------------------------------------------------------------------------+----------------------------------+
 
 *Note*
 
@@ -1509,13 +975,11 @@ Per la prima delle tre sottocaratteristiche, la ISO 25023 propone una metrica pe
 
 Tabella 35: metriche per completezza
 
-+------+----------------+---------------------------------------------+
-| **ID | **Nome**       | **Descrizione**                             |
-| **   |                |                                             |
-+======+================+=============================================+
-| FCp- | Copertura      | Percentuale di implementazione delle        |
-| 1-G  | funzionale     | funzioni specificate.                       |
-+------+----------------+---------------------------------------------+
++---------+----------------------+------------------------------------------------------------+
+| **ID**  | **Nome**             | **Descrizione**                                            |
++=========+======================+============================================================+
+| FCp-1-G | Copertura funzionale | Percentuale di implementazione delle funzioni specificate. |
++---------+----------------------+------------------------------------------------------------+
 
 *Quando è opportuno utilizzare queste metriche?*
 
@@ -1534,13 +998,11 @@ Per la seconda delle tre sottocaratteristiche, la ISO 25023 propone una metrica 
 
 Tabella 36: metriche per correttezza
 
-+------+-----------------+--------------------------------------------+
-| **ID | **Nome**        | **Descrizione**                            |
-| **   |                 |                                            |
-+======+=================+============================================+
-| FCr- | Correttezza     | Percentuale di funzioni che forniscono     |
-| 1-G  | funzionale      | risultati corretti.                        |
-+------+-----------------+--------------------------------------------+
++---------+------------------------+------------------------------------------------------------+
+| **ID**  | **Nome**               | **Descrizione**                                            |
++=========+========================+============================================================+
+| FCr-1-G | Correttezza funzionale | Percentuale di funzioni che forniscono risultati corretti. |
++---------+------------------------+------------------------------------------------------------+
 
 *Note*
 
@@ -1559,30 +1021,13 @@ Per la terza sottocaratteristica, la ISO 25023 propone 2 metriche pensate per va
 
 Tabella 37: metriche per adeguatezza
 
-+---+-------------+------------------------------------------+----------+
-| * | **Nome**    | **Descrizione**                          | **Formul |
-| * |             |                                          | a**      |
-| I |             |                                          |          |
-| D |             |                                          |          |
-| * |             |                                          |          |
-| * |             |                                          |          |
-+===+=============+==========================================+==========+
-| F | Adeguatezza | Percentuale delle funzioni richieste     | n.d. (si |
-| A | funzionale  | dall'utente che fornisce un risultato    | rimanda  |
-| p | dell’obiett | adeguato per raggiungere un obiettivo    | alla     |
-| - | ivo         | specifico di utilizzo.                   | norma    |
-| 1 | d’uso       |                                          | ISO)     |
-| - |             |                                          |          |
-| G |             |                                          |          |
-+---+-------------+------------------------------------------+----------+
-| F | Adeguatezza | Percentuale delle funzioni richieste     |          |
-| A | funzionale  | dall'utente per raggiungere i propri     |          |
-| p | del sistema | obiettivi che forniscono risultati       |          |
-| - |             | adeguati.                                |          |
-| 2 |             |                                          |          |
-| - |             |                                          |          |
-| G |             |                                          |          |
-+---+-------------+------------------------------------------+----------+
++---------+---------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| **ID**  | **Nome**                                    | **Descrizione**                                                                                                                         | **Formula**                      |
++=========+=============================================+=========================================================================================================================================+==================================+
+| FAp-1-G | Adeguatezza funzionale dell’obiettivo d’uso | Percentuale delle funzioni richieste dall'utente che fornisce un risultato adeguato per raggiungere un obiettivo specifico di utilizzo. | n.d. (si rimanda alla norma ISO) |
++---------+---------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| FAp-2-G | Adeguatezza funzionale del sistema          | Percentuale delle funzioni richieste dall'utente per raggiungere i propri obiettivi che forniscono risultati adeguati.                  |                                  |
++---------+---------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+
 
 *Note*
 
@@ -1621,41 +1066,17 @@ Le metriche di adattabilità sono pensate per valutare il livello di facilità c
 
 Tabella 38: metriche per adattabilità
 
-+---+--------+---------------------------------------------------+-------+
-| * | **Nome | **Descrizione**                                   | **For |
-| * | **     |                                                   | mula* |
-| I |        |                                                   | *     |
-| D |        |                                                   |       |
-| * |        |                                                   |       |
-| * |        |                                                   |       |
-+===+========+===================================================+=======+
-| P | Adatta | Percentuale delle funzioni i cui task sono        | n.d.  |
-| A | bilità | completati durante i test e i cui risultati hanno | (si   |
-| d | ad un  | soddisfatto i requisiti, rispetto al totale delle | riman |
-| - | ambien | funzioni testate su un hardware differente da     | da    |
-| 1 | te     | quello originario.                                | alla  |
-| - | hardwa |                                                   | norma |
-| G | re     |                                                   | ISO)  |
-+---+--------+---------------------------------------------------+-------+
-| P | Adatta | Percentuale delle funzioni i cui task sono        |       |
-| A | bilità | completati durante i test e i cui risultati hanno |       |
-| d | ad un  | soddisfatto i requisiti, rispetto al totale delle |       |
-| - | ambien | funzioni testate su una piattaforma software      |       |
-| 2 | te     | differente da quello originario.                  |       |
-| - | softwa |                                                   |       |
-| G | re     | NOTA: La piattaforma software comprende, per      |       |
-|   |        | esempio, il sistema operativo, il DBMS, il        |       |
-|   |        | compilatore, il sistema di gestione della rete,   |       |
-|   |        | ecc.                                              |       |
-+---+--------+---------------------------------------------------+-------+
-| P | Adatta | Percentuale delle funzioni i cui task sono        |       |
-| A | bilità | completati durante i test e i cui risultati hanno |       |
-| d | all’am | soddisfatto i requisiti, rispetto al totale delle |       |
-| - | biente | funzioni testate in un ambiente operativo         |       |
-| 3 | operat | differente da quello originario.                  |       |
-| - | ivo    |                                                   |       |
-| G |        |                                                   |       |
-+---+--------+---------------------------------------------------+-------+
++---------+--------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| **ID**  | **Nome**                             | **Descrizione**                                                                                                                                                                                                              | **Formula**                      |
++=========+======================================+==============================================================================================================================================================================================================================+==================================+
+| PAd-1-G | Adattabilità ad un ambiente hardware | Percentuale delle funzioni i cui task sono completati durante i test e i cui risultati hanno soddisfatto i requisiti, rispetto al totale delle funzioni testate su un hardware differente da quello originario.              | n.d. (si rimanda alla norma ISO) |
++---------+--------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| PAd-2-G | Adattabilità ad un ambiente software | Percentuale delle funzioni i cui task sono completati durante i test e i cui risultati hanno soddisfatto i requisiti, rispetto al totale delle funzioni testate su una piattaforma software differente da quello originario. |                                  |
+|         |                                      |                                                                                                                                                                                                                              |                                  |
+|         |                                      | NOTA: La piattaforma software comprende, per esempio, il sistema operativo, il DBMS, il compilatore, il sistema di gestione della rete, ecc.                                                                                 |                                  |
++---------+--------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| PAd-3-G | Adattabilità all’ambiente operativo  | Percentuale delle funzioni i cui task sono completati durante i test e i cui risultati hanno soddisfatto i requisiti, rispetto al totale delle funzioni testate in un ambiente operativo differente da quello originario.    |                                  |
++---------+--------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+
 
 *Note*
 
@@ -1672,33 +1093,17 @@ Le metriche di installabilità sono pensate per valutare il livello di efficacia
 
 Tabella 39: metriche per installabilità
 
-+---+--------------+-------------------------------------------+-------+
-| * | **Nome**     | **Descrizione**                           | **For |
-| * |              |                                           | mula* |
-| I |              |                                           | *     |
-| D |              |                                           |       |
-| * |              |                                           |       |
-| * |              |                                           |       |
-+===+==============+===========================================+=======+
-| P | Efficienza   | Durata effettiva dell’installazione       | n.d.  |
-| I | dell’install | rispetto alla durata attesa.              | (si   |
-| n | azione       |                                           | riman |
-| - | in termini   | NOTA: La durata attesa può essere         | da    |
-| 1 | di tempo     | ricavata da dati storici o medie riferite | alla  |
-| - | impiegato.   | a prodotti commerciali.                   | norma |
-| G |              |                                           | ISO)  |
-+---+--------------+-------------------------------------------+-------+
-| P | Semplicità   | Percentuale dei tentativi di modifica     |       |
-| I | dell’install | eseguiti con successo, rispetto al totale |       |
-| n | azione.      | dei tentativi di modifica della procedura |       |
-| - |              | di installazione in base alle esigenze    |       |
-| 2 |              | dell’utente.                              |       |
-| - |              |                                           |       |
-| G |              | NOTA: Le modifiche a cui ci si riferisce  |       |
-|   |              | possono essere ricondotte a               |       |
-|   |              | personalizzazioni della procedura         |       |
-|   |              | d’installazione fatte dall’utente.        |       |
-+---+--------------+-------------------------------------------+-------+
++---------+--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| **ID**  | **Nome**                                                     | **Descrizione**                                                                                                                                                               | **Formula**                      |
++=========+==============================================================+===============================================================================================================================================================================+==================================+
+| PIn-1-G | Efficienza dell’installazione in termini di tempo impiegato. | Durata effettiva dell’installazione rispetto alla durata attesa.                                                                                                              | n.d. (si rimanda alla norma ISO) |
+|         |                                                              |                                                                                                                                                                               |                                  |
+|         |                                                              | NOTA: La durata attesa può essere ricavata da dati storici o medie riferite a prodotti commerciali.                                                                           |                                  |
++---------+--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| PIn-2-G | Semplicità dell’installazione.                               | Percentuale dei tentativi di modifica eseguiti con successo, rispetto al totale dei tentativi di modifica della procedura di installazione in base alle esigenze dell’utente. |                                  |
+|         |                                                              |                                                                                                                                                                               |                                  |
+|         |                                                              | NOTA: Le modifiche a cui ci si riferisce possono essere ricondotte a personalizzazioni della procedura d’installazione fatte dall’utente.                                     |                                  |
++---------+--------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+
 
 *Note*
 
@@ -1721,56 +1126,19 @@ Le metriche di adattabilità sono pensate per valutare il grado di facilità con
 
 Tabella 40: metriche per sostituibilità
 
-+---+-----------------+--------------------------------------------+-----+
-| * | **Nome**        | **Descrizione**                            | **F |
-| * |                 |                                            | orm |
-| I |                 |                                            | ula |
-| D |                 |                                            | **  |
-| * |                 |                                            |     |
-| * |                 |                                            |     |
-+===+=================+============================================+=====+
-| P | Somiglianza     | In caso di sostituzione di un prodotto     | n.d |
-| R | durante         | software, è la percentuale delle funzioni  | .   |
-| e | l’utilizzo.     | utente che possono essere eseguite senza   | (si |
-| - |                 | necessità di training o di espedienti      | rim |
-| 1 |                 | particolari, rispetto al totale delle      | and |
-| - |                 | funzioni presenti nel software sostituito. | a   |
-| G |                 |                                            | all |
-|   |                 |                                            | a   |
-|   |                 |                                            | nor |
-|   |                 |                                            | ma  |
-|   |                 |                                            | ISO |
-|   |                 |                                            | )   |
-+---+-----------------+--------------------------------------------+-----+
-| P | Equivalenza     | In caso di sostituzione di un prodotto     |     |
-| R | della qualità   | software, è la percentuale delle misure di |     |
-| e | del prodotto.   | qualità che hanno prodotto risultati       |     |
-| - |                 | uguali o superiori a quelli del prodotto   |     |
-| 2 |                 | sostituito, rispetto al totale delle       |     |
-| - |                 | misure di qualità che hanno rilevanza nel  |     |
-| S |                 | caso in esame.                             |     |
-|   |                 |                                            |     |
-|   |                 | NOTA: Alcune delle misure di qualità       |     |
-|   |                 | critiche per la sostituibilità sono, ad    |     |
-|   |                 | esempio, l’interoperabilità, la sicurezza  |     |
-|   |                 | e l’efficienza prestazionale.              |     |
-+---+-----------------+--------------------------------------------+-----+
-| P | Inclusione      | In caso di sostituzione di un prodotto     |     |
-| R | funzionale      | software, è la percentuale delle funzioni  |     |
-| e |                 | che producono risultati simili a quelli    |     |
-| - |                 | del prodotto originario, rispetto al       |     |
-| 3 |                 | totale delle funzioni testate dopo la      |     |
-| - |                 | sostituzione del prodotto.                 |     |
-| S |                 |                                            |     |
-+---+-----------------+--------------------------------------------+-----+
-| P | Riusabilità dei | In caso di sostituzione di un prodotto     |     |
-| R | dati / capacità | software, è la percentuale dati che        |     |
-| e | di importare i  | possono essere riutilizzati / importati,   |     |
-| - | dati utilizzati | rispetto al totale dei dati che si         |     |
-| 4 | prima della     | richiede siano riutilizzabili /            |     |
-| - | sostituzione    | importabili dal nuovo prodotto software.   |     |
-| S | del prodotto    |                                            |     |
-+---+-----------------+--------------------------------------------+-----+
++---------+------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| **ID**  | **Nome**                                                                                             | **Descrizione**                                                                                                                                                                                                                                               | **Formula**                      |
++=========+======================================================================================================+===============================================================================================================================================================================================================================================================+==================================+
+| PRe-1-G | Somiglianza durante l’utilizzo.                                                                      | In caso di sostituzione di un prodotto software, è la percentuale delle funzioni utente che possono essere eseguite senza necessità di training o di espedienti particolari, rispetto al totale delle funzioni presenti nel software sostituito.              | n.d. (si rimanda alla norma ISO) |
++---------+------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| PRe-2-S | Equivalenza della qualità del prodotto.                                                              | In caso di sostituzione di un prodotto software, è la percentuale delle misure di qualità che hanno prodotto risultati uguali o superiori a quelli del prodotto sostituito, rispetto al totale delle misure di qualità che hanno rilevanza nel caso in esame. |                                  |
+|         |                                                                                                      |                                                                                                                                                                                                                                                               |                                  |
+|         |                                                                                                      | NOTA: Alcune delle misure di qualità critiche per la sostituibilità sono, ad esempio, l’interoperabilità, la sicurezza e l’efficienza prestazionale.                                                                                                          |                                  |
++---------+------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| PRe-3-S | Inclusione funzionale                                                                                | In caso di sostituzione di un prodotto software, è la percentuale delle funzioni che producono risultati simili a quelli del prodotto originario, rispetto al totale delle funzioni testate dopo la sostituzione del prodotto.                                |                                  |
++---------+------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+
+| PRe-4-S | Riusabilità dei dati / capacità di importare i dati utilizzati prima della sostituzione del prodotto | In caso di sostituzione di un prodotto software, è la percentuale dati che possono essere riutilizzati / importati, rispetto al totale dei dati che si richiede siano riutilizzabili / importabili dal nuovo prodotto software.                               |                                  |
++---------+------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+
 
 *Note*
 
@@ -1799,24 +1167,22 @@ Ciascuna delle 14 sotto-categorie, elencate nella tabella che segue, è un modo 
 
 Tabella 41: categorie SNAP
 
-+-----------------------------------------+----------------------------+
-| **DATA OPERATIONS**                     | **INTERFACE DESIGN**       |
-|                                         |                            |
-| -  Data Entry Validations               | -  User Interfaces         |
-| -  Logical and Mathematical Operations  | -  Help Methods            |
-| -  Data formatting                      | -  Multiple Input Methods  |
-| -  Internal Data Movements              |                            |
-|                                         | - Multiple Output Methods  |
-| - Delivering added value to users by    |                            |
-| data configuration                      |                            |
-+=========================================+============================+
-| **TECHNICAL ENVIRONMENT**               | **ARCHITECTURE**           |
-|                                         |                            |
-| -  Multiple Platforms                   | -  Component based         |
-| -  Database Technology                  |    software                |
-| -  Batch Processes                      | -  Multiple Input / Output |
-|                                         |    interfaces              |
-+-----------------------------------------+----------------------------+
++---------------------------------------------------------+---------------------------------------+
+| **DATA OPERATIONS**                                     | **INTERFACE DESIGN**                  |
+|                                                         |                                       |
+| -  Data Entry Validations                               | -  User Interfaces                    |
+| -  Logical and Mathematical Operations                  | -  Help Methods                       |
+| -  Data formatting                                      | -  Multiple Input Methods             |
+| -  Internal Data Movements                              |                                       |
+|                                                         | - Multiple Output Methods             |
+| - Delivering added value to users by data configuration |                                       |
++=========================================================+=======================================+
+| **TECHNICAL ENVIRONMENT**                               | **ARCHITECTURE**                      |
+|                                                         |                                       |
+| -  Multiple Platforms                                   | -  Component based software           |
+| -  Database Technology                                  | -  Multiple Input / Output interfaces |
+| -  Batch Processes                                      |                                       |
++---------------------------------------------------------+---------------------------------------+
 
 Nel seguito, per chiarezza di esposizione, si riporta una traduzione in italiano delle descrizioni presenti nella “Quick Guide” di SNAP. Per una definizione più rigorosa fa testo la versione originale in inglese, cui si rimanda.
 

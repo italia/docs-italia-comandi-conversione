@@ -1,14 +1,3 @@
-#!/usr/bin/env stack
-{- stack script
---resolver lts-10.10
---package turtle
---package text
---package filepath
---package directory
---package pandoc
---package aeson
--}
--- pandoc and aeson are there for the filters
 {-# LANGUAGE OverloadedStrings #-}
 
 import Turtle hiding (splitDirectories, replaceExtensions, stdout, stderr)
