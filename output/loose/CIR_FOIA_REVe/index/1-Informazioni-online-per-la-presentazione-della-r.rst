@@ -26,13 +26,13 @@ Tra le informazioni, è sufficiente indicare le seguenti: indicazione degli Uffi
 
 Queste informazioni possono essere utili sia per instaurare un dialogo con il richiedente (§ 8 della circolare), sia per trasmettere i dati e i documenti richiesti. Con il consenso del richiedente, è opportuno privilegiare la comunicazione in forma elettronica.
 
-d. **Oggetto della richiesta**
+d) **Oggetto della richiesta**
 
 Per una migliore identificazione dei dati o documenti ai quali si chiede di accedere, si potrebbe segnalare al richiedente l’opportunità di indicare, oltre all’oggetto del dato o documento richiesto, anche, se noti, gli estremi del documento o la fonte del dato, una descrizione del loro contenuto e l’ufficio competente.
 
 Potrebbe, inoltre, essere utile classificare e rendere disponibili – nella modulistica o nella pagina web dedicata all’accesso generalizzato – i principali settori o ambiti di competenza di ciascuna amministrazione e delle sue articolazioni, in modo che il richiedente possa specificare il settore o ambito che ritiene rilevante ai fini della trattazione della domanda. Sarebbe, così, favorito il corretto instradamento della richiesta, anche a beneficio dell’amministrazione, che sarebbe facilitata nella corretta assegnazione della domanda all’ufficio interno competente.
 
-e. **Modalità di risposta e trasmissione dei dati o documenti**
+e) **Modalità di risposta e trasmissione dei dati o documenti**
 
 Ferma restando l’opportunità di privilegiare la via telematica per tutte le comunicazioni, è opportuno acquisire il consenso del richiedente sulle modalità di trasmissione:
 
@@ -42,7 +42,7 @@ L’amministrazione tiene conto della preferenza espressa dal richiedente, nel c
 
 **f) Finalità della richiesta (informazione facoltativa)**
 
-Fermo restando che il richiedente non è tenuto a indicare i motivi della domanda (`art. 5, c. 3, d.lgs. n. 33/2013 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2013;33~art5-com3>`__), l’amministrazione potrebbe chiedere al richiedente di precisare le finalità della domanda, chiarendo che questa informazione è facoltativa e potrebbe essere utilizzata a fini statistici, e/o per precisare ulteriormente l’oggetto della richiesta e/o per adottare una decisione che tenga conto della natura dell’interesse conoscitivo del richiedente.
+Fermo restando che il richiedente non è tenuto a indicare i motivi della domanda (art. 5, c. 3, d.lgs. n. 33/2013), l’amministrazione potrebbe chiedere al richiedente di precisare le finalità della domanda, chiarendo che questa informazione è facoltativa e potrebbe essere utilizzata a fini statistici, e/o per precisare ulteriormente l’oggetto della richiesta e/o per adottare una decisione che tenga conto della natura dell’interesse conoscitivo del richiedente.
 
 Nel precisare che l’indicazione delle finalità della richiesta non è obbligatoria, la modulistica potrebbe prevedere, ad esempio, le seguenti opzioni:
 
@@ -66,7 +66,7 @@ Le amministrazioni sono invitate, in particolare, a predisporre un modulo di rie
 -  gli estremi della decisione amministrativa oggetto della domanda di riesame;
 -  il numero di protocollo della domanda originaria;
 -  i recapiti del responsabile della prevenzione della corruzione e della trasparenza al quale inviare la domanda;
--  l’indicazione dei rimedi giurisdizionali utilizzabili ai sensi dell’\ `art. 5, c. 7, d.lgs. n. 33/2013 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2013;33~art5-com7>`__ nei confronti della decisione di riesame.
+-  l’indicazione dei rimedi giurisdizionali utilizzabili ai sensi dell’art. 5, c. 7, d.lgs. n. 33/2013 nei confronti della decisione di riesame.
 
 ALLEGATO 3: MODALITÀ DI REALIZZAZIONE DEL REGISTRO DEGLI ACCESSI
 ================================================================
@@ -75,6 +75,9 @@ Per gestire correttamente le domande di accesso generalizzato presentate, nonch�
 
 In vista di questo utilizzo, si possono ipotizzare tre possibili scenari o situazioni di partenza:
 
--  *scenario I*: amministrazione dotata di un sistema che gestisce, oltre alla registrazione di protocollo, anche la gestione di fascicoli procedimentali con un profilo di metadati estendibile e configurabile, con o senza un motore di *workflow* di ausilio alla esecuzione automatica delle attività previste dalle procedure\ *;*\ `1 <#fn1>`__
+-  *scenario I*: amministrazione dotata di un sistema che gestisce, oltre alla registrazione di protocollo, anche la gestione di fascicoli procedimentali con un profilo di metadati estendibile e configurabile, con o senza un motore di *workflow* di ausilio alla esecuzione automatica delle attività previste dalle procedure\ *;*\  [1]_
 -  *scenario II*: amministrazione dotata di sistemi di protocollo che, pur non disponendo di funzionalità per configurare il profilo esteso di fascicoli procedimentali, offrano almeno la possibilità di definire un profilo di metadati esteso per le classi documentali;
 -  *scenario III*: amministrazione dotata di un sistema che realizzi la sola funzionalità minima di registrazione di protocollo.
+
+.. [1]
+   1 Per fascicolo procedimentale si intende una unità archivistica atta ad aggregare documenti e metadati specifici raccolti o generati durante la trattazione di un’istanza di qualunque procedimento amministrativo.

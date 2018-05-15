@@ -17,4 +17,5 @@ L’immagine contiene un titolo e un testo alternativo (alt text).
   :caption: Indice dei contenuti
 
 .. |Libri antichi con copertina rigida su uno scaffale.| image:: ./media/image1.jpeg
-
+   :width: 2.13056in
+   :height: 1.22847in

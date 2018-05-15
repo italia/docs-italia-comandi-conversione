@@ -8,7 +8,7 @@ VERIFICA DATI
 
 **I. Nel campo Riepilogo Importi Aliquota inserire:**
 
-o Rif. Normativo: `Art. 2 DPR 633/72 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1972;633~art2>`__
+o Rif. Normativo: Art. 2 DPR 633/72
 
 |image11|
 
@@ -18,3 +18,5 @@ Passo 5
 =======
 
 .. |image11| image:: ./media/image12.png
+   :width: 6.38448in
+   :height: 2.46875in

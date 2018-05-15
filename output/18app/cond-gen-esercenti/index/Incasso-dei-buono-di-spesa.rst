@@ -11,13 +11,13 @@ c. titoli di accesso a musei, mostre ed eventi culturali, monumenti, gallerie, a
 
 Per i nati nel 1999 (bonus 2017)
 
-a. biglietti per rappresentazioni teatrali e cinematografiche e spettacoli dal vivo;
-b. libri;
-c. titoli di accesso a musei, mostre ed eventi culturali, monumenti, gallerie, aree archeologiche, parchi naturali;
-d. musica registrata (cd, dvd musicali, dischi in vinile e musica online);
-e. corsi di musica;
-f. corsi di teatro;
-g. corsi di lingua straniera.
+a) biglietti per rappresentazioni teatrali e cinematografiche e spettacoli dal vivo;
+b) libri;
+c) titoli di accesso a musei, mostre ed eventi culturali, monumenti, gallerie, aree archeologiche, parchi naturali;
+d) musica registrata (cd, dvd musicali, dischi in vinile e musica online);
+e) corsi di musica;
+f) corsi di teatro;
+g) corsi di lingua straniera.
 
 E’, pertanto, vietato incassare i buoni generati attraverso il servizio da un soggetto diverso rispetto al titolare del buono il cui nome è riportato sullo stesso e/o a fronte della vendita di beni o servizi diversi rispetto a quelli di cui alle lettere da a) a c) che precedono.
 

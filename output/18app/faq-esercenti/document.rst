@@ -48,7 +48,8 @@ No, i beni sono vendibili solamente ai diciottenni intestatari del buono.
 
 4. **Cosa succede nell’eventualità che il cliente debba effettuare un cambio/reso?** I buoni, una volta validati dall’esercente, non possono più essere annullati e riaccreditati. Nel caso di cambi o resi di prodotti acquistati con il bonus, sarai tu stesso a regolare i rapporti con il cliente, fermo restando che non potrai restituirgli denaro o consentire l’acquisto di beni differenti da quelli previsti dalla normativa della “carta elettronica” ai diciottenni.
 
-5. **Se nel momento dell’acquisto effettuo uno sconto ad un ragazzo che presenta pertanto un buono di importo superiore come mi regolo? Posso restituirgli il resto in denaro?**
+5. .. rubric:: Se nel momento dell’acquisto effettuo uno sconto ad un ragazzo che presenta pertanto un buono di importo superiore come mi regolo? Posso restituirgli il resto in denaro?
+      :name: se-nel-momento-dellacquisto-effettuo-uno-sconto-ad-un-ragazzo-che-presenta-pertanto-un-buono-di-importo-superiore-come-mi-regolo-posso-restituirgli-il-resto-in-denaro
 
 No, non è consentito restituire denaro. Il ragazzo dovrà generare un nuovo buono attraverso la piattaforma 18app.
 
@@ -115,7 +116,8 @@ In sede di registrazione al servizio “18app” puoi inserire i tuoi punti nego
 
 4. **La mia azienda ha più punti negozio, devo fare la registrazione per ognuno di essi?** Per la geo-localizzazione di tutti i punti negozio da parte dei diciottenni occorre inserire nell’applicazione i dati dei singoli esercizi commerciali.
 
-5. **Devo registrare al servizio un museo? Come devo operare?**
+5. .. rubric:: Devo registrare al servizio un museo? Come devo operare?
+      :name: devo-registrare-al-servizio-un-museo-come-devo-operare
 
 I musei che fanno riferimento al Ministero dei beni e delle attività culturali e del turismo sono censiti direttamente dalla Direzione Generale Musei e saranno geo-localizzabili dai diciottenni nell’applicazione a loro dedicata.
 
@@ -313,7 +315,7 @@ La fattura non produce reddito e non rientra nel volume d’affari pertanto non 
 La fattura emessa nei confronti della PA è imponibile ai fini IVA?
 ==================================================================
 
-No; la fattura è emessa per regolare la movimentazione finanziaria e quindi per un’operazione al di fuori del campo di applicazione dell’Iva ai sensi dell’\ `art. 2, terzo comma, del DPR 633/72 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1972;633~art2-com3>`__
+No; la fattura è emessa per regolare la movimentazione finanziaria e quindi per un’operazione al di fuori del campo di applicazione dell’Iva ai sensi dell’art. 2, terzo comma, del DPR 633/72
 
 La fattura emessa dovrà essere registrata contabilmente?
 ========================================================
@@ -349,7 +351,8 @@ Le fatture emesse devono riportare il valore dei singoli buoni accettati e da fa
 
 16. **Cosa devo fare se non ricevo il rimborso dopo aver generato e inviato le fatture elettroniche?** Devi contattare CONSAP ai seguenti recapiti dedicati all’iniziativa: telefono: 06-85796338 / email: 18app@consap.it
 
-17. **Ho un tetto massimo di fatturazione sui singoli beni venduti? C’è una tetto massimo totale di fatturazione che non posso superare?**
+17. .. rubric:: Ho un tetto massimo di fatturazione sui singoli beni venduti? C’è una tetto massimo totale di fatturazione che non posso superare?
+       :name: ho-un-tetto-massimo-di-fatturazione-sui-singoli-beni-venduti-cè-una-tetto-massimo-totale-di-fatturazione-che-non-posso-superare
 
 Non è previsto un tetto massimo per la fatturazione.
 
