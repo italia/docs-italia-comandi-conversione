@@ -90,7 +90,7 @@ Il repository dei filtri dovrebbe essere contenuto nel primo così:
 
 Questo repository contiene anche dei documenti di esempio già convertiti. 
 
-Per essere certi di usare la versione più recente di pandoc e che gli
+Per essere certi che gli
 script di conversione funzionino come ci si aspetta, è possibile eseguire
 `$ . update-all.sh`. Il comando convertirà nuovamente tutti i documenti presenti 
 (l'operazione potrebbe richiedere un po' di tempo). 
@@ -98,11 +98,7 @@ script di conversione funzionino come ci si aspetta, è possibile eseguire
 L'operazione non dovrebbe produrre alcun output e dopo l'esecuzione il 
 comando `git status` non dovrebbe mostrare alcun cambiamento.
 
-Questi documenti sono stati convertiti col 
-[fork italiano di pandoc](https://github.com/italia/pandoc).
-
-Se riscontri delle differenze c'è qualcosa che non va, puoi consultare
-[alcuni suggerimenti su come risolvere il problema](https://github.com/italia/pandoc-docs2rst/blob/master/in-caso-di-differenze.md).
+Se riscontri delle differenze c'è qualcosa che non va: puoi segnalarcelo aprendo una issue o una pull request.
 
 ### Collegamenti automatici alla normativa
 
