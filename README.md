@@ -90,20 +90,24 @@ Il repository dei filtri dovrebbe essere contenuto nel primo così:
 
 Questo repository contiene anche dei documenti di esempio già convertiti. 
 
-Per essere certi che gli
-script di conversione funzionino come ci si aspetta, è possibile eseguire
-`$ . update-all.sh`. Il comando convertirà nuovamente tutti i documenti presenti 
-(l'operazione potrebbe richiedere un po' di tempo). 
+Per essere certi che gli script di conversione funzionino come ci si
+aspetta, è possibile eseguire `$ . update-all.sh`. Il comando
+convertirà nuovamente tutti i documenti presenti (l'operazione
+potrebbe richiedere un po' di tempo).
 
 L'operazione non dovrebbe produrre alcun output e dopo l'esecuzione il 
 comando `git status` non dovrebbe mostrare alcun cambiamento.
 
-Se riscontri delle differenze c'è qualcosa che non va: puoi segnalarcelo aprendo una issue o una pull request. La tua copia del repo potrebbe contenere documenti su cui stai ancora lavorando, quindi fai attenzione a fare commit solo di ciò che è pubblicabile.
+Se riscontri delle differenze c'è qualcosa che non va: puoi
+segnalarcelo aprendo una issue o una pull request. La tua copia del
+repo potrebbe contenere documenti su cui stai ancora lavorando, quindi
+fai attenzione a fare commit solo di ciò che è pubblicabile.
 
 ### Collegamenti automatici alla normativa
 
-Questa funzionalità è disponibile solo per utenti Linux. È possibile trovare i
-dettagli [qui](https://github.com/italia/pandoc-docs2rst/blob/master/link-normattiva.md).
+Questa funzionalità è disponibile solo per utenti Linux. È possibile
+trovare i dettagli
+[qui](https://github.com/italia/pandoc-docs2rst/blob/master/link-normattiva.md).
 
 ## Contribuire
 
