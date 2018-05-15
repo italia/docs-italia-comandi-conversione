@@ -98,7 +98,7 @@ script di conversione funzionino come ci si aspetta, è possibile eseguire
 L'operazione non dovrebbe produrre alcun output e dopo l'esecuzione il 
 comando `git status` non dovrebbe mostrare alcun cambiamento.
 
-Se riscontri delle differenze c'è qualcosa che non va: puoi segnalarcelo aprendo una issue o una pull request.
+Se riscontri delle differenze c'è qualcosa che non va: puoi segnalarcelo aprendo una issue o una pull request. La tua copia del repo potrebbe contenere documenti su cui stai ancora lavorando, quindi fai attenzione a fare commit solo di ciò che è pubblicabile.
 
 ### Collegamenti automatici alla normativa
 
