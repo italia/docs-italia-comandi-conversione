@@ -103,6 +103,11 @@ segnalarcelo aprendo una issue o una pull request. La tua copia del
 repo potrebbe contenere documenti su cui stai ancora lavorando, quindi
 fai attenzione a fare commit solo di ciò che è pubblicabile.
 
+I documenti sono tradotti includendo i collegamenti automatici alla
+normativa, come descritto nel prossimo paragrafo. Se non avete
+configurato i collegamenti automatici riscontrerete sicuramente delle
+differenze nel risultato.
+
 ### Collegamenti automatici alla normativa
 
 Questa funzionalità è disponibile solo per utenti Linux. È possibile
