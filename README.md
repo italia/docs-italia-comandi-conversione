@@ -90,24 +90,29 @@ Il repository dei filtri dovrebbe essere contenuto nel primo così:
 
 Questo repository contiene anche dei documenti di esempio già convertiti. 
 
-Per essere certi di usare la versione più recente di pandoc e che gli
-script di conversione funzionino come ci si aspetta, è possibile eseguire
-`$ . update-all.sh`. Il comando convertirà nuovamente tutti i documenti presenti 
-(l'operazione potrebbe richiedere un po' di tempo). 
+Per essere certi che gli script di conversione funzionino come ci si
+aspetta, è possibile eseguire `$ . update-all.sh`. Il comando
+convertirà nuovamente tutti i documenti presenti (l'operazione
+potrebbe richiedere un po' di tempo).
 
 L'operazione non dovrebbe produrre alcun output e dopo l'esecuzione il 
 comando `git status` non dovrebbe mostrare alcun cambiamento.
 
-Questi documenti sono stati convertiti col 
-[fork italiano di pandoc](https://github.com/italia/pandoc).
+Se riscontri delle differenze c'è qualcosa che non va: puoi
+segnalarcelo aprendo una issue o una pull request. La tua copia del
+repo potrebbe contenere documenti su cui stai ancora lavorando, quindi
+fai attenzione a fare commit solo di ciò che è pubblicabile.
 
-Se riscontri delle differenze c'è qualcosa che non va, puoi consultare
-[alcuni suggerimenti su come risolvere il problema](https://github.com/italia/pandoc-docs2rst/blob/master/in-caso-di-differenze.md).
+I documenti sono tradotti includendo i collegamenti automatici alla
+normativa, come descritto nel prossimo paragrafo. Se non hai
+configurato i collegamenti automatici riscontrerai sicuramente delle
+differenze nel risultato.
 
 ### Collegamenti automatici alla normativa
 
-Questa funzionalità è disponibile solo per utenti Linux. È possibile trovare i
-dettagli [qui](https://github.com/italia/pandoc-docs2rst/blob/master/link-normattiva.md).
+Questa funzionalità è disponibile solo per utenti Linux. È possibile
+trovare i dettagli
+[qui](https://github.com/italia/pandoc-docs2rst/blob/master/link-normattiva.md).
 
 ## Contribuire
 
