@@ -18,7 +18,7 @@ I medesimi principi sono applicabili all’ipotesi in cui uno stesso soggetto (o
 8. Il dialogo con i richiedenti
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Il `d.lgs. n. 33/2013 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2013;33>`__, come modificato dal `d.lgs. n. 97/2016 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2016;97>`__, pone a carico delle pubbliche amministrazioni l’obbligo di erogare un servizio conoscitivo, che consiste nel condividere con la collettività il proprio patrimonio di informazioni secondo le modalità indicate dalla legge.
+Il d.lgs. n. 33/2013, come modificato dal d.lgs. n. 97/2016, pone a carico delle pubbliche amministrazioni l’obbligo di erogare un servizio conoscitivo, che consiste nel condividere con la collettività il proprio patrimonio di informazioni secondo le modalità indicate dalla legge.
 
 Per realizzare questo obiettivo e, più in generale, le finalità di partecipazione e *accountability* proprie del c.d. modello FOIA, è auspicabile che le amministrazioni si adoperino per soddisfare l’interesse conoscitivo su cui si fondano le domande di accesso, evitando atteggiamenti ostruzionistici.
 
@@ -34,7 +34,7 @@ Nel trattare una richiesta, è necessario che l’amministrazione instauri un �
 
 ▪ confermare che l’invio dei dati o documenti richiesti avverrà in formato digitale, salvo che una diversa modalità di trasmissione sia stata indicata dal richiedente e non risulti eccessivamente onerosa per l’amministrazione;
 
-▪ indicare gli eventuali costi di riproduzione derivanti dalle diverse modalità di accesso, nel rispetto del criterio di effettività indicato dall’\ `art. 5, c. 4, d.lgs. n. 33/2013 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2013;33~art5-com4>`__;
+▪ indicare gli eventuali costi di riproduzione derivanti dalle diverse modalità di accesso, nel rispetto del criterio di effettività indicato dall’art. 5, c. 4, d.lgs. n. 33/2013;
 
 -  entro il termine di conclusione del procedimento, al fine di:
 
@@ -52,7 +52,7 @@ Ferma restando la necessità di istruire in modo completo e accurato ogni singol
 8.2. Pubblicazione proattiva
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Per accrescere la fruibilità delle informazioni di interesse generale e l’efficienza nella gestione delle domande, si raccomanda alle amministrazioni di valorizzare la possibilità di pubblicare informazioni anche diverse da quelle oggetto di pubblicazione obbligatoria, fermo restando il rispetto delle esclusioni e dei limiti previsti dall’art. 5-\ *bis*, c. 1-3, del `d.lgs. n. 33/2013 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2013;33>`__. In particolare, la pubblicazione proattiva sui siti istituzionali delle amministrazioni è fortemente auspicabile quando si tratti di informazioni di interesse generale o che siano oggetto di richieste ricorrenti: ad esempio, quando si tratti di dati o documenti richiesti, nell’arco di un anno, più di tre volte da soggetti diversi.
+Per accrescere la fruibilità delle informazioni di interesse generale e l’efficienza nella gestione delle domande, si raccomanda alle amministrazioni di valorizzare la possibilità di pubblicare informazioni anche diverse da quelle oggetto di pubblicazione obbligatoria, fermo restando il rispetto delle esclusioni e dei limiti previsti dall’art. 5-\ *bis*, c. 1-3, del d.lgs. n. 33/2013. In particolare, la pubblicazione proattiva sui siti istituzionali delle amministrazioni è fortemente auspicabile quando si tratti di informazioni di interesse generale o che siano oggetto di richieste ricorrenti: ad esempio, quando si tratti di dati o documenti richiesti, nell’arco di un anno, più di tre volte da soggetti diversi.
 
 Per gli stessi motivi, le pubbliche amministrazioni sono invitate a valorizzare il dialogo con le comunità di utenti dei *social media* (Facebook, Twitter, ecc.). I richiedenti spesso rendono pubbliche su questi mezzi di comunicazione le domande di accesso generalizzato da essi presentate. In questi casi, e comunque quando si tratti di informazioni di interesse generale, è opportuno che anche le amministrazioni utilizzino i medesimi canali a fini di comunicazione.
 
@@ -68,9 +68,9 @@ Il registro dovrebbe contenere l’elenco delle richieste e il relativo esito, e
 -  agevolare i cittadini nella consultazione delle richieste già presentate;
 -  monitorare l’andamento delle richieste di accesso e la trattazione delle stesse.
 
-Per promuovere la realizzazione del registro, le attività di registrazione, gestione e trattamento della richiesta dovrebbero essere effettuate utilizzando i sistemi di gestione del protocollo informatico e dei flussi documentali, di cui le amministrazioni sono da tempo dotate ai sensi del `D.P.R. n. 445/2000 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:2000;445>`__, del `d.lgs. n. 82/2005 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2005;82>`__ (Codice dell’amministrazione digitale) e delle relative regole tecniche (`D.P.C.M. 3 dicembre 2013 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.consiglio.ministri:decreto:2013-12-03>`__).
+Per promuovere la realizzazione del registro, le attività di registrazione, gestione e trattamento della richiesta dovrebbero essere effettuate utilizzando i sistemi di gestione del protocollo informatico e dei flussi documentali, di cui le amministrazioni sono da tempo dotate ai sensi del D.P.R. n. 445/2000, del d.lgs. n. 82/2005 (Codice dell’amministrazione digitale) e delle relative regole tecniche (D.P.C.M. 3 dicembre 2013).
 
-I dati da inserire nei sistemi di protocollo sono desumibili dalla domanda di accesso o dall’esito della richiesta. Ai fini della pubblicazione periodica del registro (preferibilmente con cadenza trimestrale), le amministrazioni potrebbero ricavare i dati rilevanti attraverso estrazioni periodiche dai sistemi di protocollo informatico, ferma restando la necessità di non pubblicare i dati personali eventualmente presenti, nel rispetto di quanto previsto dall’\ `art. 19, c. 3, d.lgs. 30 giugno 2013, n. 196 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2013-06-30;196~art19-com3>`__.
+I dati da inserire nei sistemi di protocollo sono desumibili dalla domanda di accesso o dall’esito della richiesta. Ai fini della pubblicazione periodica del registro (preferibilmente con cadenza trimestrale), le amministrazioni potrebbero ricavare i dati rilevanti attraverso estrazioni periodiche dai sistemi di protocollo informatico, ferma restando la necessità di non pubblicare i dati personali eventualmente presenti, nel rispetto di quanto previsto dall’art. 19, c. 3, d.lgs. 30 giugno 2013, n. 196.
 
 L’obiettivo finale è la realizzazione di un registro degli accessi che consenta di “tracciare” tutte le domande e la relativa trattazione in modalità automatizzata, e renda disponibili ai cittadini gli elementi conoscitivi rilevanti. Realizzare tale obiettivo richiede opportune configurazioni dei sistemi di gestione del protocollo informatico, per le quali si rinvia all’allegato 3.
 

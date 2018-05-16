@@ -1,4 +1,4 @@
-Alle Amministrazioni pubbliche di cui all’\ `art.1, comma 2 del decreto legislativo 30 marzo 2001 n.165 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2001-03-30;165~art1-com2>`__
+Alle Amministrazioni pubbliche di cui all’art.1, comma 2 del decreto legislativo 30 marzo 2001 n.165
 
 Alle Autorità indipendenti
 

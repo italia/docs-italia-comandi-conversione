@@ -5,7 +5,7 @@ Il presente servizio è volto a consentire agli esercenti commerciali, di incass
 
 Il servizio è disciplinato dalle presenti condizioni generali, dai commi 979 e 980 dell’art.
 
-1 della `Legge 28 dicembre 2015, n. 208 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2015-12-28;208>`__, Disposizioni per la formazione del bilancio annuale e pluriennale dello Stato (legge di stabilità 2016) e al `comma 626 dell’articolo 1 della Legge 11 dicembre 2016, n. 232 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2016-12-11;232~art1-com626>`__ recante «Bilancio di previsione dello Stato per l’anno finanziario 2017 e bilancio pluriennale per il triennio 2017-2019» (legge di stabilità 2017) nonché dal relativo Decreto del Presidente del Consiglio dei Ministri disponibile al seguente collegamento: `http://www.gazzettaufficiale.it/atto/serie_generale/caricaDettaglioAtto/originario?at to.dataPubblicazioneGazzetta=2017-09- 18&atto.codiceRedazionale=17G00146&elenco30giorni=false <http://www.gazzettaufficiale.it/atto/serie_generale/caricaDettaglioAtto/originario?atto.dataPubblicazioneGazzetta=2017-09-18&amp;atto.codiceRedazionale=17G00146&amp;elenco30giorni=false>`__
+1 della Legge 28 dicembre 2015, n. 208, Disposizioni per la formazione del bilancio annuale e pluriennale dello Stato (legge di stabilità 2016) e al comma 626 dell’articolo 1 della Legge 11 dicembre 2016, n. 232 recante «Bilancio di previsione dello Stato per l’anno finanziario 2017 e bilancio pluriennale per il triennio 2017-2019» (legge di stabilità 2017) nonché dal relativo Decreto del Presidente del Consiglio dei Ministri disponibile al seguente collegamento: `http://www.gazzettaufficiale.it/atto/serie_generale/caricaDettaglioAtto/originario?at to.dataPubblicazioneGazzetta=2017-09- 18&atto.codiceRedazionale=17G00146&elenco30giorni=false <http://www.gazzettaufficiale.it/atto/serie_generale/caricaDettaglioAtto/originario?atto.dataPubblicazioneGazzetta=2017-09-18&amp;atto.codiceRedazionale=17G00146&amp;elenco30giorni=false>`__
 
 Registrazione ed utilizzo del servizio
 ======================================
@@ -35,19 +35,19 @@ c. titoli di accesso a musei, mostre ed eventi culturali, monumenti, gallerie, a
 
 Per i nati nel 1999 (bonus 2017)
 
-a. biglietti per rappresentazioni teatrali e cinematografiche e spettacoli dal vivo;
+a) biglietti per rappresentazioni teatrali e cinematografiche e spettacoli dal vivo;
 
-b. libri;
+b) libri;
 
-c. titoli di accesso a musei, mostre ed eventi culturali, monumenti, gallerie, aree archeologiche, parchi naturali;
+c) titoli di accesso a musei, mostre ed eventi culturali, monumenti, gallerie, aree archeologiche, parchi naturali;
 
-d. musica registrata (cd, dvd musicali, dischi in vinile e musica online);
+d) musica registrata (cd, dvd musicali, dischi in vinile e musica online);
 
-e. corsi di musica;
+e) corsi di musica;
 
-f. corsi di teatro;
+f) corsi di teatro;
 
-g. corsi di lingua straniera.
+g) corsi di lingua straniera.
 
 E’, pertanto, vietato incassare i buoni generati attraverso il servizio da un soggetto diverso rispetto al titolare del buono il cui nome è riportato sullo stesso e/o a fronte della vendita di beni o servizi diversi rispetto a quelli di cui alle lettere da a) a c) che precedono.
 
@@ -93,6 +93,6 @@ I dati personali dell’esercente saranno trattati esclusivamente per consentirg
 Disciplina applicabile
 ======================
 
-Per tutto quanto non espressamente previsto nelle presenti condizioni, sarà applicabile la disciplina di cui ai commi 979 e 980 dell’\ `art. 1 della Legge 28 dicembre 2015, n. 208 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2015-12-28;208~art1>`__, Disposizioni per la formazione del bilancio annuale e pluriennale dello Stato (legge di stabilità 2016) e al `comma 626 dell’articolo 1 della Legge 11 dicembre 2016, n. 232 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2016-12-11;232~art1-com626>`__
+Per tutto quanto non espressamente previsto nelle presenti condizioni, sarà applicabile la disciplina di cui ai commi 979 e 980 dell’art. 1 della Legge 28 dicembre 2015, n. 208, Disposizioni per la formazione del bilancio annuale e pluriennale dello Stato (legge di stabilità 2016) e al comma 626 dell’articolo 1 della Legge 11 dicembre 2016, n. 232
 
 recante «Bilancio di previsione dello Stato per l’anno finanziario 2017 e bilancio pluriennale per il triennio 2017-2019» (legge di stabilità 2017) nonché dal relativo Decreto del Presidente del Consiglio dei Ministri disponibile al seguente collegamento: `http://www.gazzettaufficiale.it/atto/serie_generale/caricaDettaglioAtto/originario?at <http://www.gazzettaufficiale.it/atto/serie_generale/caricaDettaglioAtto/originario?atto.dataPubblicazioneGazzetta=2017-09-18&amp;atto.codiceRedazionale=17G00146&amp;elenco30giorni=false>`__ `to.dataPubblicazioneGazzetta=2017-09- <http://www.gazzettaufficiale.it/atto/serie_generale/caricaDettaglioAtto/originario?atto.dataPubblicazioneGazzetta=2017-09-18&amp;atto.codiceRedazionale=17G00146&amp;elenco30giorni=false>`__ `18&atto.codiceRedazionale=17G00146&elenco30giorni=false <http://www.gazzettaufficiale.it/atto/serie_generale/caricaDettaglioAtto/originario?atto.dataPubblicazioneGazzetta=2017-09-18&amp;atto.codiceRedazionale=17G00146&amp;elenco30giorni=false>`__

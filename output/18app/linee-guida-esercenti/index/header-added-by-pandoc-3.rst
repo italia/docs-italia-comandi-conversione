@@ -706,29 +706,83 @@ element **ConfirmResponse/esito**
 +------------+---------------------------------------------------------------------------+
 
 .. |image3| image:: ./media/image4.png
+   :width: 3.23748in
+   :height: 0.49875in
 .. |image4| image:: ./media/image5.png
+   :width: 2.8175in
+   :height: 2.26625in
 .. |image5| image:: ./media/image6.png
+   :width: 2.52in
+   :height: 1.89in
 .. |image6| image:: ./media/image7.png
+   :width: 2.52877in
+   :height: 0.30625in
 .. |image7| image:: ./media/image8.png
+   :width: 2.85249in
+   :height: 1.2775in
 .. |image8| image:: ./media/image9.png
+   :width: 2.67741in
+   :height: 0.30625in
 .. |image9| image:: ./media/image10.png
+   :width: 3.08875in
+   :height: 1.855in
 .. |image10| image:: ./media/image11.png
+   :width: 2.61629in
+   :height: 0.30625in
 .. |image11| image:: ./media/image12.png
+   :width: 2.65994in
+   :height: 1.2775in
 .. |image12| image:: ./media/image13.png
+   :width: 2.76493in
+   :height: 0.30625in
 .. |image13| image:: ./media/image14.png
+   :width: 2.33625in
+   :height: 0.7in
 .. |image14| image:: ./media/image15.png
+   :width: 2.46753in
+   :height: 0.88375in
 .. |image15| image:: ./media/image16.png
+   :width: 1.08498in
+   :height: 0.30625in
 .. |image16| image:: ./media/image17.png
+   :width: 1.07624in
+   :height: 0.30625in
 .. |image17| image:: ./media/image18.png
+   :width: 1.27748in
+   :height: 0.30625in
 .. |image18| image:: ./media/image19.png
+   :width: 3.1327in
+   :height: 1.46125in
 .. |image19| image:: ./media/image20.png
+   :width: 1.45255in
+   :height: 0.30625in
 .. |image20| image:: ./media/image21.png
+   :width: 1.27748in
+   :height: 0.30625in
 .. |image21| image:: ./media/image22.png
+   :width: 0.68249in
+   :height: 0.30625in
 .. |image22| image:: ./media/image23.png
+   :width: 0.665in
+   :height: 0.30625in
 .. |image23| image:: ./media/image24.png
+   :width: 0.73499in
+   :height: 0.30625in
 .. |image24| image:: ./media/image25.png
+   :width: 2.3625in
+   :height: 0.88375in
 .. |image25| image:: ./media/image16.png
+   :width: 1.08498in
+   :height: 0.30625in
 .. |image26| image:: ./media/image17.png
+   :width: 1.07624in
+   :height: 0.30625in
 .. |image27| image:: ./media/image24.png
+   :width: 0.73499in
+   :height: 0.30625in
 .. |image28| image:: ./media/image26.png
+   :width: 2.30997in
+   :height: 0.30625in
 .. |image29| image:: ./media/image27.png
+   :width: 0.665in
+   :height: 0.30625in

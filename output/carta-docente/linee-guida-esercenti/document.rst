@@ -2,21 +2,21 @@
 
 **LINEE GUIDA PER ESERCENTI/ENTI DI FORMAZIONE**
 
-L’\ `art 1, comma 121, della Legge n. 107 del 2015 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2015;107~art1-com121>`__ (Buona Scuola) istituisce la Carta elettronica per l’aggiornamento e la formazione dei docenti di ruolo a tempo indeterminato delle Istituzioni scolastiche statali, sia a tempo pieno che a tempo parziale, compresi i docenti che sono in periodo di formazione e prova, i docenti dichiarati inidonei per motivi di salute di cui all’\ `art. 514 del Dlgs.16/04/94, n.297 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1994-04-16;297~art514>`__, e successive modificazioni, i docenti in posizione di comando, distacco, fuori ruolo o altrimenti utilizzati, i docenti nelle scuole all’estero, delle scuole militari. L’importo della carta è di euro 500 per ogni anno scolastico e può essere utilizzata per l’acquisto dei seguenti beni o servizi:
+L’art 1, comma 121, della Legge n. 107 del 2015 (Buona Scuola) istituisce la Carta elettronica per l’aggiornamento e la formazione dei docenti di ruolo a tempo indeterminato delle Istituzioni scolastiche statali, sia a tempo pieno che a tempo parziale, compresi i docenti che sono in periodo di formazione e prova, i docenti dichiarati inidonei per motivi di salute di cui all’art. 514 del Dlgs.16/04/94, n.297, e successive modificazioni, i docenti in posizione di comando, distacco, fuori ruolo o altrimenti utilizzati, i docenti nelle scuole all’estero, delle scuole militari. L’importo della carta è di euro 500 per ogni anno scolastico e può essere utilizzata per l’acquisto dei seguenti beni o servizi:
 
-a. libri e testi, anche in formato digitale, pubblicazioni e riviste comunque utili all'aggiornamento professionale;
+a) libri e testi, anche in formato digitale, pubblicazioni e riviste comunque utili all'aggiornamento professionale;
 
-b. hardware e software;
+b) hardware e software;
 
-c. iscrizione a corsi per attività di aggiornamento e di qualificazione delle competenze professionali, svolti da enti accreditati presso il Ministero dell'istruzione, dell'università e della ricerca;
+c) iscrizione a corsi per attività di aggiornamento e di qualificazione delle competenze professionali, svolti da enti accreditati presso il Ministero dell'istruzione, dell'università e della ricerca;
 
-d. iscrizione a corsi di laurea, di laurea magistrale, specialistica o a ciclo unico, inerenti al profilo professionale, ovvero a corsi post lauream o a master universitari inerenti al profilo professionale;
+d) iscrizione a corsi di laurea, di laurea magistrale, specialistica o a ciclo unico, inerenti al profilo professionale, ovvero a corsi post lauream o a master universitari inerenti al profilo professionale;
 
-e. titoli di accesso per rappresentazioni teatrali e cinematografiche;
+e) titoli di accesso per rappresentazioni teatrali e cinematografiche;
 
-f. titoli per l’ingresso a musei, mostre ed eventi culturali e spettacoli dal vivo;
+f) titoli per l’ingresso a musei, mostre ed eventi culturali e spettacoli dal vivo;
 
-g. iniziative coerenti con le attività individuate nell'ambito del piano triennale dell'offerta formativa delle scuole e del Piano nazionale di formazione, di cui `articolo 1, comma 124, della legge n. 107 del 2015 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2015;107~art1-com124>`__.
+g) iniziative coerenti con le attività individuate nell'ambito del piano triennale dell'offerta formativa delle scuole e del Piano nazionale di formazione, di cui articolo 1, comma 124, della legge n. 107 del 2015.
 
 La gestione dei buoni di spesa può avvenire tramite qualunque tipo di device (smartphone, tablet, computer) connesso ad Internet, sia da parte dei docenti che da parte degli esercenti o degli enti di formazione (soggetti pubbilici o privati).
 
@@ -201,7 +201,7 @@ Questa operazione equivale ad una transazione di attivazione, il cui unico effet
 
 Endpoint del servizio
 
-Il servizio risponde ai seguenti endpoint `https://wstest.”cartadeldocente”.italia.it/VerificaVoucherWEB/Verifica <https://wstest./>`__\ Voucher (ambiente di prova) `https://ws.”cartadeldocente”.italia.it/VerificaVoucherWEB/VerificaVoucher <https://ws./>`__ (ambiente reale)
+Il servizio risponde ai seguenti endpoint `https://wstest.”cartadeldocente”.italia.it/VerificaVoucherWEB/Verifica <https://wstest./>`__\ \ Voucher (ambiente di prova) `https://ws.”cartadeldocente”.italia.it/VerificaVoucherWEB/VerificaVoucher <https://ws./>`__ (ambiente reale)
 
 Codici di errore
 ================
@@ -372,95 +372,95 @@ Elements Complex types
 
 service **VerificaVoucher**
 
-+--------+----------------------------------------------------------------------------------------------------+
-| diagra | |image3|                                                                                           |
-|        |                                                                                                    |
-| m      |                                                                                                    |
-+========+====================================================================================================+
-| ports  | **VerificaVoucherSOAP**                                                                            |
-|        |                                                                                                    |
-|        | binding **tns:VerificaVoucherSOAP**                                                                |
-|        |                                                                                                    |
-|        | extensibil <soap:address                                                                           |
-|        |                                                                                                    |
-|        | ity location="\ https://ws.cartadeldocente.istruzione.it/VerificaVoucherDocWEB/V erificaVoucher"/> |
-+--------+----------------------------------------------------------------------------------------------------+
++--------+--------------------------------------------------------------------------------------------------+
+| diagra | |image3|                                                                                         |
+|        |                                                                                                  |
+| m      |                                                                                                  |
++========+==================================================================================================+
+| ports  | **VerificaVoucherSOAP**                                                                          |
+|        |                                                                                                  |
+|        | binding **tns:VerificaVoucherSOAP**                                                              |
+|        |                                                                                                  |
+|        | extensibil <soap:address                                                                         |
+|        |                                                                                                  |
+|        | ity location="https://ws.cartadeldocente.istruzione.it/VerificaVoucherDocWEB/V erificaVoucher"/> |
++--------+--------------------------------------------------------------------------------------------------+
 
 binding **VerificaVoucherSOAP**
 
-+---------------+---------------------------------------------------------------------------------------+
-| diagram       | |image4|                                                                              |
-+===============+=======================================================================================+
-| type          | **tns:VerificaVoucher**                                                               |
-+---------------+---------------------------------------------------------------------------------------+
-| extensibility | <soap:binding style="document" transport="\ http://schemas.xmlsoap.org/soap/http%22/> |
-+---------------+---------------------------------------------------------------------------------------+
-| operations    | **Check**                                                                             |
-|               |                                                                                       |
-|               | extensibility <soap:operation                                                         |
-|               |                                                                                       |
-|               | soapAction="\ http://bonus.miur.it/VerificaVoucher/Check%22/>                         |
-|               |                                                                                       |
-|               | input <soap:body use="literal"/>                                                      |
-|               |                                                                                       |
-|               | output <soap:body use="literal"/>                                                     |
-|               |                                                                                       |
-|               | **Confirm**                                                                           |
-|               |                                                                                       |
-|               | extensibility <soap:operation                                                         |
-|               |                                                                                       |
-|               | soapAction="\ http://bonus.miur.it/VerificaVoucher/Confirm%22/>                       |
-|               |                                                                                       |
-|               | input <soap:body use="literal"/>                                                      |
-|               |                                                                                       |
-|               | output <soap:body use="literal"/>                                                     |
-+---------------+---------------------------------------------------------------------------------------+
-| used by       | Port **VerificaVoucherSOAP** in Service **VerificaVoucher**                           |
-+---------------+---------------------------------------------------------------------------------------+
-| source        | <wsdl:binding name="VerificaVoucherSOAP" type="tns:VerificaVoucher">                  |
-|               |                                                                                       |
-|               | <soap:binding style="document" transport="\ http://schemas.xmlsoap.org/soap/http%22/> |
-|               |                                                                                       |
-|               | <wsdl:operation name="Check">                                                         |
-+---------------+---------------------------------------------------------------------------------------+
++---------------+-----------------------------------------------------------------------------------+
+| diagram       | |image4|                                                                          |
++===============+===================================================================================+
+| type          | **tns:VerificaVoucher**                                                           |
++---------------+-----------------------------------------------------------------------------------+
+| extensibility | <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/> |
++---------------+-----------------------------------------------------------------------------------+
+| operations    | **Check**                                                                         |
+|               |                                                                                   |
+|               | extensibility <soap:operation                                                     |
+|               |                                                                                   |
+|               | soapAction="http://bonus.miur.it/VerificaVoucher/Check"/>                         |
+|               |                                                                                   |
+|               | input <soap:body use="literal"/>                                                  |
+|               |                                                                                   |
+|               | output <soap:body use="literal"/>                                                 |
+|               |                                                                                   |
+|               | **Confirm**                                                                       |
+|               |                                                                                   |
+|               | extensibility <soap:operation                                                     |
+|               |                                                                                   |
+|               | soapAction="http://bonus.miur.it/VerificaVoucher/Confirm"/>                       |
+|               |                                                                                   |
+|               | input <soap:body use="literal"/>                                                  |
+|               |                                                                                   |
+|               | output <soap:body use="literal"/>                                                 |
++---------------+-----------------------------------------------------------------------------------+
+| used by       | Port **VerificaVoucherSOAP** in Service **VerificaVoucher**                       |
++---------------+-----------------------------------------------------------------------------------+
+| source        | <wsdl:binding name="VerificaVoucherSOAP" type="tns:VerificaVoucher">              |
+|               |                                                                                   |
+|               | <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/> |
+|               |                                                                                   |
+|               | <wsdl:operation name="Check">                                                     |
++---------------+-----------------------------------------------------------------------------------+
 
-+--+---------------------------------------------------------------------------------+
-|  | <soap:operation soapAction="\ http://bonus.miur.it/VerificaVoucher/Check%22/>   |
-|  |                                                                                 |
-|  | <wsdl:input>                                                                    |
-|  |                                                                                 |
-|  | <soap:body use="literal"/>                                                      |
-|  |                                                                                 |
-|  | </wsdl:input>                                                                   |
-|  |                                                                                 |
-|  | <wsdl:output>                                                                   |
-|  |                                                                                 |
-|  | <soap:body use="literal"/>                                                      |
-|  |                                                                                 |
-|  | </wsdl:output>                                                                  |
-|  |                                                                                 |
-|  | </wsdl:operation>                                                               |
-|  |                                                                                 |
-|  | <wsdl:operation name="Confirm">                                                 |
-|  |                                                                                 |
-|  | <soap:operation soapAction="\ http://bonus.miur.it/VerificaVoucher/Confirm%22/> |
-|  |                                                                                 |
-|  | <wsdl:input>                                                                    |
-|  |                                                                                 |
-|  | <soap:body use="literal"/>                                                      |
-|  |                                                                                 |
-|  | </wsdl:input>                                                                   |
-|  |                                                                                 |
-|  | <wsdl:output>                                                                   |
-|  |                                                                                 |
-|  | <soap:body use="literal"/>                                                      |
-|  |                                                                                 |
-|  | </wsdl:output>                                                                  |
-|  |                                                                                 |
-|  | </wsdl:operation>                                                               |
-|  |                                                                                 |
-|  | </wsdl:binding>                                                                 |
-+--+---------------------------------------------------------------------------------+
++--+-----------------------------------------------------------------------------+
+|  | <soap:operation soapAction="http://bonus.miur.it/VerificaVoucher/Check"/>   |
+|  |                                                                             |
+|  | <wsdl:input>                                                                |
+|  |                                                                             |
+|  | <soap:body use="literal"/>                                                  |
+|  |                                                                             |
+|  | </wsdl:input>                                                               |
+|  |                                                                             |
+|  | <wsdl:output>                                                               |
+|  |                                                                             |
+|  | <soap:body use="literal"/>                                                  |
+|  |                                                                             |
+|  | </wsdl:output>                                                              |
+|  |                                                                             |
+|  | </wsdl:operation>                                                           |
+|  |                                                                             |
+|  | <wsdl:operation name="Confirm">                                             |
+|  |                                                                             |
+|  | <soap:operation soapAction="http://bonus.miur.it/VerificaVoucher/Confirm"/> |
+|  |                                                                             |
+|  | <wsdl:input>                                                                |
+|  |                                                                             |
+|  | <soap:body use="literal"/>                                                  |
+|  |                                                                             |
+|  | </wsdl:input>                                                               |
+|  |                                                                             |
+|  | <wsdl:output>                                                               |
+|  |                                                                             |
+|  | <soap:body use="literal"/>                                                  |
+|  |                                                                             |
+|  | </wsdl:output>                                                              |
+|  |                                                                             |
+|  | </wsdl:operation>                                                           |
+|  |                                                                             |
+|  | </wsdl:binding>                                                             |
++--+-----------------------------------------------------------------------------+
 
 porttype **VerificaVoucher**
 
@@ -993,32 +993,92 @@ element **ConfirmResponse/esito**
 +------------+---------------------------------------------------------------------------+
 
 .. |image0| image:: ./media/image1.png
+   :width: 6.09607in
+   :height: 5.05208in
 .. |image1| image:: ./media/image2.png
+   :width: 7.63847in
+   :height: 2.59375in
 .. |image2| image:: ./media/image3.png
+   :width: 7.63847in
+   :height: 1.75633in
 .. |image3| image:: ./media/image4.png
+   :width: 4.88542in
+   :height: 0.59375in
 .. |image4| image:: ./media/image5.png
+   :width: 3.23958in
+   :height: 2.69792in
 .. |image5| image:: ./media/image6.png
+   :width: 3in
+   :height: 2.25in
 .. |image6| image:: ./media/image7.png
+   :width: 2.82292in
+   :height: 0.26042in
 .. |image7| image:: ./media/image8.png
+   :width: 3.1875in
+   :height: 1.41667in
 .. |image8| image:: ./media/image9.png
+   :width: 3in
+   :height: 0.26042in
 .. |image9| image:: ./media/image10.png
+   :width: 3.46875in
+   :height: 2.10417in
 .. |image10| image:: ./media/image11.png
+   :width: 2.92708in
+   :height: 0.26042in
 .. |image11| image:: ./media/image12.png
+   :width: 2.95833in
+   :height: 1.41667in
 .. |image12| image:: ./media/image13.png
+   :width: 3.10417in
+   :height: 0.26042in
 .. |image13| image:: ./media/image14.png
+   :width: 2.45833in
+   :height: 0.72917in
 .. |image14| image:: ./media/image15.png
+   :width: 2.72917in
+   :height: 0.94792in
 .. |image15| image:: ./media/image16.png
+   :width: 1.08333in
+   :height: 0.26042in
 .. |image16| image:: ./media/image17.png
+   :width: 1.07292in
+   :height: 0.26042in
 .. |image17| image:: ./media/image18.png
+   :width: 1.3125in
+   :height: 0.26042in
 .. |image18| image:: ./media/image19.png
+   :width: 3.52083in
+   :height: 1.63542in
 .. |image19| image:: ./media/image20.png
+   :width: 1.52083in
+   :height: 0.26042in
 .. |image20| image:: ./media/image21.png
+   :width: 1.3125in
+   :height: 0.26042in
 .. |image21| image:: ./media/image22.png
+   :width: 0.60417in
+   :height: 0.26042in
 .. |image22| image:: ./media/image23.png
+   :width: 0.58333in
+   :height: 0.26042in
 .. |image23| image:: ./media/image24.png
+   :width: 0.66667in
+   :height: 0.26042in
 .. |image24| image:: ./media/image25.png
+   :width: 2.60417in
+   :height: 0.94792in
 .. |image25| image:: ./media/image26.png
+   :width: 1.08333in
+   :height: 0.26042in
 .. |image26| image:: ./media/image27.png
+   :width: 1.07292in
+   :height: 0.26042in
 .. |image27| image:: ./media/image28.png
+   :width: 0.66667in
+   :height: 0.26042in
 .. |image28| image:: ./media/image29.png
+   :width: 2.54167in
+   :height: 0.27083in
 .. |image29| image:: ./media/image30.png
+   :width: 0.58333in
+   :height: 0.26042in

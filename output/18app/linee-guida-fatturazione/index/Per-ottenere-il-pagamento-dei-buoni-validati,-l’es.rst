@@ -81,7 +81,17 @@ o Cap: 00186
 |image4|
 
 .. |image0| image:: ./media/image1.png
+   :width: 6.37509in
+   :height: 3.04792in
 .. |image1| image:: ./media/image2.png
+   :width: 6.26532in
+   :height: 0.24969in
 .. |image2| image:: ./media/image3.png
+   :width: 6.15254in
+   :height: 2.83771in
 .. |image3| image:: ./media/image4.png
+   :width: 6.72788in
+   :height: 2.66062in
 .. |image4| image:: ./media/image5.png
+   :width: 6.34206in
+   :height: 2.87083in

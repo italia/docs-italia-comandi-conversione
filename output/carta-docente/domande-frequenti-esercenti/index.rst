@@ -5,14 +5,14 @@
   :caption: Indice dei contenuti
 
   index/Domande-frequenti-esercenti-o-enti-di-formazione-.rst
-  index/Domande-Frequenti-esercenti-o-enti-di-formazione-.rst
+  index/Domande-Frequenti-esercenti-o-enti-di-formazione--2.rst
   index/I-servizi-rientranti-nell’ambito-FORMAZIONE-E-AGGI.rst
   index/Per-verificare-che-chi-presenta-il-buono-di-spesa-.rst
   index/Posso-vendere-i-beni-o-i-servizi-a-una-persona-non.rst
   index/Cosa-succede-nell’eventualità-che-il-cliente-debba.rst
   index/Qualora-uno-dei-beni-che-ho-venduto-online-non-dov.rst
   index/Un-insegnante-di-musica-può-utilizzare-il-bonus-l’.rst
-  index/Domande-Frequenti-Esercenti-o-enti-di-formazione-.rst
+  index/Domande-Frequenti-Esercenti-o-enti-di-formazione--3.rst
   index/Che-dati-devo-fornire-per-la-registrazione-all’app.rst
   index/Come-faccio-per-essere-geo-localizzato-dal-docente.rst
   index/Il-nome-con-cui-mi-registro-non-corrisponde-a-quel.rst

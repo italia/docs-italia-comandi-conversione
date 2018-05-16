@@ -29,19 +29,19 @@ c. titoli di accesso a musei, mostre ed eventi culturali, monumenti, gallerie, a
 
 Per i nati nel 1999 (bonus 2017)
 
-a. biglietti per rappresentazioni teatrali e cinematografiche e spettacoli dal vivo;
+a) biglietti per rappresentazioni teatrali e cinematografiche e spettacoli dal vivo;
 
-b. libri;
+b) libri;
 
-c. titoli di accesso a musei, mostre ed eventi culturali, monumenti, gallerie, aree archeologiche, parchi naturali;
+c) titoli di accesso a musei, mostre ed eventi culturali, monumenti, gallerie, aree archeologiche, parchi naturali;
 
-d. musica registrata (cd, dvd musicali, dischi in vinile e musica online);
+d) musica registrata (cd, dvd musicali, dischi in vinile e musica online);
 
-e. corsi di musica;
+e) corsi di musica;
 
-f. corsi di teatro;
+f) corsi di teatro;
 
-g. corsi di lingua straniera.
+g) corsi di lingua straniera.
 
 L’utilizzo – in qualsiasi modo realizzato – del valore dei buoni generati attraverso il servizio per l’acquisto di beni o servizi diversi da quelli che precedono è vietato.
 
@@ -83,4 +83,4 @@ Il Ministero dei beni e delle attività culturali vigila sul rispetto da parte d
 Disciplina applicabile
 ======================
 
-Per tutto quanto non espressamente previsto nelle presenti condizioni, sarà applicabile la disciplina di cui ai commi 979 e 980 dell’\ `art. 1 della Legge 28 dicembre 2015, n. 208 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2015-12-28;208~art1>`__, Disposizioni per la formazione del bilancio annuale e pluriennale dello Stato (legge di stabilità 2016) e al `comma 626 dell’articolo 1 della Legge 11 dicembre 2016, n. 232 <http://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2016-12-11;232~art1-com626>`__ recante «Bilancio di previsione dello Stato per l’anno finanziario 2017 e bilancio pluriennale per il triennio 2017-2019» (legge di stabilità 2017) nonché dal relativo Decreto del Presidente del Consiglio dei Ministri disponibile al seguente collegamento: `http://www.gazzettaufficiale.it/atto/serie_generale/caricaDettaglioAtto/originario?atto.data <http://www.gazzettaufficiale.it/atto/serie_generale/caricaDettaglioAtto/originario?atto.dataPubblicazioneGazzetta=2017-09-18&amp;atto.codiceRedazionale=17G00146&amp;elenco30giorni=false>`__ `PubblicazioneGazzetta=2017-09- <http://www.gazzettaufficiale.it/atto/serie_generale/caricaDettaglioAtto/originario?atto.dataPubblicazioneGazzetta=2017-09-18&amp;atto.codiceRedazionale=17G00146&amp;elenco30giorni=false>`__ `18&atto.codiceRedazionale=17G00146&elenco30giorni=false <http://www.gazzettaufficiale.it/atto/serie_generale/caricaDettaglioAtto/originario?atto.dataPubblicazioneGazzetta=2017-09-18&amp;atto.codiceRedazionale=17G00146&amp;elenco30giorni=false>`__
+Per tutto quanto non espressamente previsto nelle presenti condizioni, sarà applicabile la disciplina di cui ai commi 979 e 980 dell’art. 1 della Legge 28 dicembre 2015, n. 208, Disposizioni per la formazione del bilancio annuale e pluriennale dello Stato (legge di stabilità 2016) e al comma 626 dell’articolo 1 della Legge 11 dicembre 2016, n. 232 recante «Bilancio di previsione dello Stato per l’anno finanziario 2017 e bilancio pluriennale per il triennio 2017-2019» (legge di stabilità 2017) nonché dal relativo Decreto del Presidente del Consiglio dei Ministri disponibile al seguente collegamento: `http://www.gazzettaufficiale.it/atto/serie_generale/caricaDettaglioAtto/originario?atto.data <http://www.gazzettaufficiale.it/atto/serie_generale/caricaDettaglioAtto/originario?atto.dataPubblicazioneGazzetta=2017-09-18&amp;atto.codiceRedazionale=17G00146&amp;elenco30giorni=false>`__ `PubblicazioneGazzetta=2017-09- <http://www.gazzettaufficiale.it/atto/serie_generale/caricaDettaglioAtto/originario?atto.dataPubblicazioneGazzetta=2017-09-18&amp;atto.codiceRedazionale=17G00146&amp;elenco30giorni=false>`__ `18&atto.codiceRedazionale=17G00146&elenco30giorni=false <http://www.gazzettaufficiale.it/atto/serie_generale/caricaDettaglioAtto/originario?atto.dataPubblicazioneGazzetta=2017-09-18&amp;atto.codiceRedazionale=17G00146&amp;elenco30giorni=false>`__

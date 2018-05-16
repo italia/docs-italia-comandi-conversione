@@ -81,7 +81,17 @@ o Cap: 00153
 |image4|
 
 .. |image0| image:: ./media/image1.png
+   :width: 5.98432in
+   :height: 2.89323in
 .. |image1| image:: ./media/image2.png
+   :width: 6.26532in
+   :height: 0.20073in
 .. |image2| image:: ./media/image3.png
+   :width: 5.77124in
+   :height: 3.2125in
 .. |image3| image:: ./media/image4.png
+   :width: 6.36262in
+   :height: 2.43812in
 .. |image4| image:: ./media/image5.png
+   :width: 5.49414in
+   :height: 2.65625in

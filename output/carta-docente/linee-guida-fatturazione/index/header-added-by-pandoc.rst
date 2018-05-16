@@ -69,8 +69,20 @@ Passo 4
 =======
 
 .. |image5| image:: ./media/image6.png
+   :width: 6.30705in
+   :height: 1.96458in
 .. |image6| image:: ./media/image7.png
+   :width: 5.54583in
+   :height: 3.26653in
 .. |image7| image:: ./media/image8.png
+   :width: 6.4197in
+   :height: 4.80937in
 .. |image8| image:: ./media/image9.png
+   :width: 6.36645in
+   :height: 2.39333in
 .. |image9| image:: ./media/image10.png
+   :width: 6.14449in
+   :height: 4.15125in
 .. |image10| image:: ./media/image11.jpeg
+   :width: 6.39293in
+   :height: 3.15in

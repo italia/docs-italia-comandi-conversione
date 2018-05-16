@@ -863,32 +863,92 @@ element **ConfirmResponse/esito**
 +------------+---------------------------------------------------------------------------+
 
 .. |image0| image:: ./media/image1.png
+   :width: 6.09607in
+   :height: 5.05208in
 .. |image1| image:: ./media/image2.png
+   :width: 7.63847in
+   :height: 2.59375in
 .. |image2| image:: ./media/image3.png
+   :width: 7.63847in
+   :height: 1.75633in
 .. |image3| image:: ./media/image4.png
+   :width: 4.88542in
+   :height: 0.59375in
 .. |image4| image:: ./media/image5.png
+   :width: 3.23958in
+   :height: 2.69792in
 .. |image5| image:: ./media/image6.png
+   :width: 3in
+   :height: 2.25in
 .. |image6| image:: ./media/image7.png
+   :width: 2.82292in
+   :height: 0.26042in
 .. |image7| image:: ./media/image8.png
+   :width: 3.1875in
+   :height: 1.41667in
 .. |image8| image:: ./media/image9.png
+   :width: 3in
+   :height: 0.26042in
 .. |image9| image:: ./media/image10.png
+   :width: 3.46875in
+   :height: 2.10417in
 .. |image10| image:: ./media/image11.png
+   :width: 2.92708in
+   :height: 0.26042in
 .. |image11| image:: ./media/image12.png
+   :width: 2.95833in
+   :height: 1.41667in
 .. |image12| image:: ./media/image13.png
+   :width: 3.10417in
+   :height: 0.26042in
 .. |image13| image:: ./media/image14.png
+   :width: 2.45833in
+   :height: 0.72917in
 .. |image14| image:: ./media/image15.png
+   :width: 2.72917in
+   :height: 0.94792in
 .. |image15| image:: ./media/image16.png
+   :width: 1.08333in
+   :height: 0.26042in
 .. |image16| image:: ./media/image17.png
+   :width: 1.07292in
+   :height: 0.26042in
 .. |image17| image:: ./media/image18.png
+   :width: 1.3125in
+   :height: 0.26042in
 .. |image18| image:: ./media/image19.png
+   :width: 3.52083in
+   :height: 1.63542in
 .. |image19| image:: ./media/image20.png
+   :width: 1.52083in
+   :height: 0.26042in
 .. |image20| image:: ./media/image21.png
+   :width: 1.3125in
+   :height: 0.26042in
 .. |image21| image:: ./media/image22.png
+   :width: 0.60417in
+   :height: 0.26042in
 .. |image22| image:: ./media/image23.png
+   :width: 0.58333in
+   :height: 0.26042in
 .. |image23| image:: ./media/image24.png
+   :width: 0.66667in
+   :height: 0.26042in
 .. |image24| image:: ./media/image25.png
+   :width: 2.60417in
+   :height: 0.94792in
 .. |image25| image:: ./media/image26.png
+   :width: 1.08333in
+   :height: 0.26042in
 .. |image26| image:: ./media/image27.png
+   :width: 1.07292in
+   :height: 0.26042in
 .. |image27| image:: ./media/image28.png
+   :width: 0.66667in
+   :height: 0.26042in
 .. |image28| image:: ./media/image29.png
+   :width: 2.54167in
+   :height: 0.27083in
 .. |image29| image:: ./media/image30.png
+   :width: 0.58333in
+   :height: 0.26042in

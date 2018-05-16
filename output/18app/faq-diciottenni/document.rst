@@ -89,7 +89,8 @@ Puoi usare tue credenziali SPID anche per accedere ai servizi online del tuo com
 
 12. **Posso annullare la richiesta dell’identità ad un Identity Provider e sceglierne un altro?** Si, in ogni momento è possibile annullare la procedura di registrazione avviata con ciascun gestore d’identità senza alcun tipo di obbligo o conseguenza. Per avere indicazioni specifiche sulla procedura da seguire puoi contattare i singoli gestori di identità. In ogni caso, puoi richiedere la tua identità digitale a un altro operatore anche senza aspettare l’annullamento della registrazione precedente.
 
-13. **Esistono modalità di registrazione e ottenimento SPID per le persone con disabilità?**
+13. .. rubric:: Esistono modalità di registrazione e ottenimento SPID per le persone con disabilità?
+       :name: esistono-modalità-di-registrazione-e-ottenimento-spid-per-le-persone-con-disabilità
 
 Il processo di erogazione delle credenziali SPID per persone fisiche soggette a tutela o amministrazione di sostegno è previsto da Poste Italiane.
 
@@ -264,7 +265,8 @@ b. **Accedi a 18app:** Effettua l’accesso a 18app immettendo le tue credenzial
 
 c. **Scegli se compiere l’acquisto presso un esercente fisico oppure online** e successivamente seleziona l’ambito ed il tipo di bene da acquistare.
 
-d. **Genera il buono del valore economico pari al bene da acquistare: inserisci, nel**
+d. .. rubric:: Genera il buono del valore economico pari al bene da acquistare: inserisci, nel
+      :name: genera-il-buono-del-valore-economico-pari-al-bene-da-acquistare-inserisci-nel
 
 riquadro, l’importo e seleziona la voce “CREA BUONO”. Se il buono è stato generato correttamente riceverai immediata comunicazione. Nota bene: se hai scelto di generare un buono per visitare Musei, Monumenti o Parchi non potrai annullare subito il buono, ma dovrai attendere qualche giorno.
 
@@ -288,7 +290,8 @@ I Musei, i Monumenti e i Parchi seguono un processo differente di validazione de
 
 4. **Posso compiere un acquisto utilizzando in parte il Bonus Cultura e in parte denaro?** Certo! Puoi effettuare i tuoi acquisti generando un buono per il valore che desideri utilizzare e aggiungere la parte rimanente in contanti. È possibile però che non tutti gli esercenti accettino il pagamento “misto” (buono+contanti o carta di credito). In quel caso dovrai attenerti alle regole interne (o proprie) dell’esercente.
 
-5. **Cosa succede se il mio ultimo acquisto supera i 500€?**
+5. .. rubric:: Cosa succede se il mio ultimo acquisto supera i 500€?
+      :name: cosa-succede-se-il-mio-ultimo-acquisto-supera-i-500
 
 Potrai comunque usufruire del valore residuo del tuo Bonus Cultura, in modo tale da esaurirlo completamente e aggiungere in contanti (o con altro metodo di pagamento accettato dall’esercente) la parte rimanente per effettuare l’acquisto.
 
