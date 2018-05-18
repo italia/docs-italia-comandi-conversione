@@ -16,7 +16,7 @@ extra-source-files:  ChangeLog.md, README.md
 cabal-version:       >=1.10
 
 executable convert-docs-italia
-  main-is:             convert.hs
+  main-is:             convert-docs-italia.hs
   -- other-modules:       
   -- other-extensions:    
   build-depends:       base >=4.10 && <4.11,
