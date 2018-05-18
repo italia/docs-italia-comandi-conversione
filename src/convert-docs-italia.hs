@@ -15,6 +15,7 @@ offset = "../../../" :: String
 
 filters = concat $ intersperse " " $ map addFilter files
   where files = [ "add-headers.hs"
+                , "figure.hs" -- before divs are removed
                 , "remove-divs.hs"
                 , "remove-quotes.hs"
                 ]
