@@ -70,15 +70,15 @@ makeDocument it = do
 linker = offset <> "xmLeges-Linker-1.13a.exe"
 doc = "document.rst" :: String
 docNative = "document.native" :: String -- for troubleshooting
-doc2 = "document-2.rst" :: String
+docUnlinked = "document-unlinked.rst" :: String
 
 linkNormattiva = do
   t <- doesFileExist linker
   when t (do
-    shell (pack command) empty
-    renameFile doc2 doc
+    renameFile doc docUnlinked
+    void $ shell (pack command) empty
     )
-  where command = version <> " " <> doc <> " -t html | " <> linker <> " | pandoc -f html -o " <> doc2 <> " " <> writeOpts
+  where command = version <> " " <> docUnlinked <> " -t html | " <> linker <> " | pandoc -f html -o " <> doc <> " " <> writeOpts
 
 
 makeSphinx = do
