@@ -57,14 +57,17 @@ version = "pandoc"
 --version = offset <> "fork" -- in order to use a local fork
 
 -- | translate applying most filters
-makeDocument it = shell (pack command) empty
-  where command = version <> " " <> (x inFile) <> " " <> opts <> " -o " <> doc
+makeDocument it = do
+  shell (command doc) empty
+  shell (command docNative) empty
+  where command d = pack $ version <> " " <> (x inFile) <> " " <> opts <> " -o " <> d
         inFile = inputName i
         i = unpack it
         x f = "\"" <> f <> "\""
 
 linker = offset <> "xmLeges-Linker-1.13a.exe"
 doc = "document.rst" :: String
+docNative = "document.native" :: String -- for troubleshooting
 doc2 = "document-2.rst" :: String
 
 linkNormattiva = do
