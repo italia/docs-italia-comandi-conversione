@@ -25,7 +25,7 @@ addFilter f = "--filter " <> offset <> "pandoc-filters/filters/" <> f
 -- options to use every time we write an RST
 writeOpts = "--wrap none " <> addFilter "loosen-lists.hs" <> " --standalone"
 
-opts = writeOpts <> " --extract-media . " <> filters
+opts = writeOpts <> " --extract-media . " <> filters <> "  -f docx+styles"
 
 
 -- | convert the input file to the output folder
@@ -58,9 +58,11 @@ version = "pandoc"
 
 -- | translate applying most filters
 makeDocument it = do
-  shell (command doc) empty
-  shell (command docNative) empty
-  where command d = pack $ version <> " " <> (x inFile) <> " " <> opts <> " -o " <> d
+  shell toRST empty
+  shell toNative empty
+  where toRST = pack $ command doc
+        toNative = pack $ command docNative
+        command d = version <> " " <> (x inFile) <> " " <> opts <> " -o " <> d
         inFile = inputName i
         i = unpack it
         x f = "\"" <> f <> "\""
