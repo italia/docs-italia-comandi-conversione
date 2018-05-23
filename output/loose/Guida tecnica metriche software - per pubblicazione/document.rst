@@ -3660,6 +3660,18 @@ In prospettiva, tuttavia, la proposta di costituire il repository di progetti pu
 
 AgID, per via del suo ruolo istituzionale e dei compiti che le vengono assegnati dal Piano Triennale, sembra il soggetto più indicato per gestire questo repository, di cui alcuni contenuti potrebbero essere fruibili in modalità open data anche alle aziende per meglio formulare le loro offerte alle procedure concorsuali pubbliche.
 
+   ISO 20968: 2002 (MARK II, UK);
+
+   ISO 24570: 2017 (NESMA, Olanda);
+
+   ISO 20926: 2009 (IFPUG, USA);
+
+   ISO/IEC 29881:2010 (FiSMA, Finlandia);
+
+   ISO 19761: 2011 (COSMIC, Canada).
+
+   Gli standard ISO 14143-1, 2, 3, 4, 5, 6 forniscono dettagli sui concetti funzionali e regole di applicazione.
+
 .. raw:: html
 
    <div class="section footnotes">
@@ -3828,19 +3840,7 @@ AgID, per via del suo ruolo istituzionale e dei compiti che le vengono assegnati
 
       <div id="fn14">
 
-   Si ricordano gli standard ISO che descrivono come applicare le misure di dimensionamento funzionale, alla data attuale:
-
-   ISO 20968: 2002 (MARK II, UK);
-
-   ISO 24570: 2017 (NESMA, Olanda);
-
-   ISO 20926: 2009 (IFPUG, USA);
-
-   ISO/IEC 29881:2010 (FiSMA, Finlandia);
-
-   ISO 19761: 2011 (COSMIC, Canada).
-
-   Gli standard ISO 14143-1, 2, 3, 4, 5, 6 forniscono dettagli sui concetti funzionali e regole di applicazione.\ `↩ <#fnref14>`__
+   Si ricordano gli standard ISO che descrivono come applicare le misure di dimensionamento funzionale, alla data attuale:\ `↩ <#fnref14>`__
 
    .. raw:: html
 
