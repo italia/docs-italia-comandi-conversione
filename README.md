@@ -49,6 +49,11 @@ Per convertire un file `.docx` o `.odt` chiamato `nome-file.ext`,
 Se non si verificano errori, troverai i files `.rst` nella cartella
 `output/loose/nome-file`.
 
+Tenete a mente che usando la riga di comando, i nomi di files vanno
+scritti fra apici se contengono spazi, così:
+
+      $ stack exec convert-docs-italia "input/loose/file con spazi.ext"
+
 ### Documento convertito e file strutturati
 
 L'intero documento verrà convertito in un file chiamato `document.rst`. 
