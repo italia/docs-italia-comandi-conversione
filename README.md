@@ -17,6 +17,10 @@ il che include Linux e Mac. L'uso degli script con un sistema Windows
 
 #### Alternative
 
+Questo software è un prototipo evolutivo che continuiamo a modificare
+per migliorarlo. Se preferite lavorare con software più stabile potete
+scegliere fra diverse alternative.
+
 `convert-docs-italia` permette di semplificare il processo di
 conversione eseguendo diversi passaggi con un solo
 comando. L'alternativa più semplice è quella di eseguire i passaggi
