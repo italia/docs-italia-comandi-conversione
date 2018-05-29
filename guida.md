@@ -1,7 +1,20 @@
 
-## Come convertire documenti senza usare questi script
+L'invocazione di `convert-docs-italia` esegue i seguenti passaggi:
 
-Questi script eseguono pandoc usando alcune opzioni da riga di comando ed alcuni filtri che possono essere applicati anche manualmente se preferite usare pandoc direttamente sulla vostra macchina.
+- conversione [pandoc](pandoc.org) con una selezione di [opzioni](http://pandoc.org/MANUAL.html#options) e [filtri](http://pandoc.org/filters.html)
+- collegamento a Normattiva con [xmLegesLinker](http://www.ittig.cnr.it/lab/xmleges/xmlegeslinker/)
+- divisione delle sezioni (in futuro disponibile come comando dedicato)
+
+Di questi passi solo la conversione è necessaria per la pubblicazione
+in Docs Italia, mentre i restanti sono agevolazioni che, nel caso non
+usiate `convert-docs-italia`, potete decidere autonomamente di
+adottare o meno.
+
+In generale un compito di conversione potrebbe richiedere opzioni
+specifiche o lo sviluppo e l'uso di filtri ad-hoc. Se da un lato fare
+riferimento a `convert-docs-italia` ci permette di convergere,
+l'esperienza con l'uso diretto di pandoc e degli altri comandi aiuta a
+districarsi nei casi più complessi
 
 ### Opzioni
 
@@ -13,9 +26,12 @@ Pandoc viene eseguito con le seguenti opzioni:
 
 ### Filtri
 
-Le funzionalità dei vari filtri sono brevemente descritte [nel loro repository](https://github.com/italia/pandoc-filters/blob/master/filters/guida.md)
+Le funzionalità dei vari filtri sono brevemente descritte [nel loro
+repository](https://github.com/italia/pandoc-filters/blob/master/filters/guida.md). Attualmente
+`convert-docs-italia` applica i filtri `add-headers`, `figure`,
+`remove-divs` e `remove-quotes`.
 
-### xmlLegesLinker
+### collegamento a Normattiva con `xmlLegesLinker`
 
 Questo strumento permette di inserire automaticamente i collegamenti a
 [Normattiva](normattiva.it), modificando un file in formato HTML. Per
