@@ -1,12 +1,13 @@
 
-# Docs To RST
+# Convert Docs Italia
 
 > See [README-en](README-en.md) for a description in English
 
-Questo repository è il punto di partenza per convertire un documento
-`.docx` o `.odt` trasformandolo in un insieme di files `.rst` da
-caricare su [Read the Docs](http://readthedocs.org/) o su [Docs
-Italia](http://docs.italia.it/).
+Questo comando semplifica la conversione di documenti `.docx` o `.odt`
+per la pubblicazione in [Docs Italia](http://docs.italia.it/). Se hai
+familiarità con [pandoc](pandoc.org) ed i principi di base di Docs
+Italia, questo comando è un buon punto di partenza per semplificare il
+tuo processo.
 
 #### Compatibilità
 
@@ -16,21 +17,22 @@ il che include Linux e Mac. L'uso degli script con un sistema Windows
 
 #### Alternative
 
-Questo comando è basato su:
+Questo software è un prototipo evolutivo che continuiamo a modificare
+per migliorarlo. Se preferite lavorare con software più stabile potete
+scegliere fra diverse alternative.
 
-- [pandoc](pandoc.org)
-- [pandoc-filters](https://github.com/italia/pandoc-filters)
-- [xmLegesLinker](http://www.ittig.cnr.it/lab/xmleges/xmlegeslinker/).
+`convert-docs-italia` permette di semplificare il processo di
+conversione eseguendo diversi passaggi con un solo
+comando. L'alternativa più semplice è quella di eseguire i passaggi
+separatamente, come descritto in questa breve
+[guida](https://github.com/italia/pandoc-docs2rst/blob/master/guida.md).
 
-Se preferite usate direttamente gli strumenti di cui sopra, forniamo
-una breve
-[guida](https://github.com/italia/pandoc-docs2rst/blob/master/guida.md)
-contenente alcuni suggerimenti.
+Esistono anche altri modi di semplificare processi basati su pandoc,
+come [panzer](https://github.com/msprev/panzer) e gli altri tool
+descritti [nella sezione _workflow_ del wiki di pandoc](
+https://github.com/jgm/pandoc/wiki/Pandoc-Extras#workflow)
 
 ## Come convertire un file
-
-Vogliamo che l'utilizzo di questi script sia il più semplice
-possibile. 
 
 Prima di tutto, [esegui l'installazione](#installazione).
 
@@ -46,6 +48,11 @@ Per convertire un file `.docx` o `.odt` chiamato `nome-file.ext`,
 
 Se non si verificano errori, troverai i files `.rst` nella cartella
 `output/loose/nome-file`.
+
+Tenete a mente che usando la riga di comando, i nomi di files vanno
+scritti fra apici se contengono spazi, così:
+
+      $ stack exec convert-docs-italia "input/loose/file con spazi.ext"
 
 ### Documento convertito e file strutturati
 
