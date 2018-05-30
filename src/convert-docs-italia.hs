@@ -22,6 +22,8 @@ filters = intercalate " " $ map addFilter files
                 , "figure.hs" -- before divs are removed
                 , "remove-divs.hs"
                 , "remove-quotes.hs"
+--                , "bold-headers.hs"
+--                , "remove-page-numbers.hs"
                 ] :: [Text]
 
 addFilter :: Text -> Text
