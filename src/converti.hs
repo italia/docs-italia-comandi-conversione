@@ -9,29 +9,22 @@ import Turtle hiding (splitDirectories,
 import Data.Text (pack, unpack, intercalate)
 import System.FilePath.Posix
 import System.Directory
+import Data.Maybe (isJust)
 
 parser :: Parser (Text)
 parser = argText "doc" "document to convert"
         --   <*> optText "to" 't' "destination format"
 
-
-offset = "../../../"
-
 filters = intercalate " " $ map addFilter files
-  where files = [ "add-headers.hs"
-                , "figure.hs" -- before divs are removed
-                , "remove-divs.hs"
-                , "remove-quotes.hs"
---                , "bold-headers.hs"
---                , "remove-page-numbers.hs"
-                ] :: [Text]
+  where files = [ "filtro-didascalia",
+                  "filtro-quotes" ] :: [Text]
 
 addFilter :: Text -> Text
-addFilter f = "--filter " <> offset <> "pandoc-filters/filters/" <> f
+addFilter f = "--filter " <> f
 
 -- options to use every time we write an RST
 writeOpts :: Text
-writeOpts = "--wrap none " <> addFilter "loosen-lists.hs" <> " --standalone"
+writeOpts = "--wrap none " <> addFilter "filtro-stile-liste" <> " --standalone"
 
 opts :: Text
 opts = writeOpts <> " --extract-media . " <> filters <> "  -f docx+styles"
@@ -39,8 +32,8 @@ opts = writeOpts <> " --extract-media . " <> filters <> "  -f docx+styles"
 -- | convert the input file to the output folder
 --
 -- >>> fileToFolder "somedir/otherdir/file.ext"
--- "output/otherdir/file"
-fileToFolder i = joinPath ["output", firstParent i, takeBaseName i]
+-- "risultato-conversione/otherdir/file"
+fileToFolder i = joinPath ["risultato-conversione", firstParent i, takeBaseName i]
   where firstParent = head . drop 1 . reverse . splitDirectories
 -- | move the input file to the destination folder
 --
@@ -63,8 +56,7 @@ inToOut = addExtension "document"
 
 -- paths
 --
---version = offset <> "fork" -- in order to use a local fork
-linker = unpack offset <> "xmLeges-Linker-1.13a.exe"
+linker = "xmLeges-Linker-1.13a.exe"
 doc = "document.rst" :: FilePath
 -- the following are for troubleshooting
 docNative = "document.native" :: FilePath
@@ -81,7 +73,7 @@ makeDocument :: Text -> Text
 makeDocument d = version <> " input.docx " <> opts <> " -o " <> d
 toRST = makeDocument $ pack doc :: Text
 toNative = makeDocument $ pack docNative :: Text
-makeSphinx = version <> " " <> pack doc <> " --wrap none -o index.rst " <> addFilter "to-sphinx.hs"
+makeSphinx = "pandoc-to-sphinx " <> pack doc
 linkNormattiva = version <> " " <> pack docUnlinked <> " -t html | " <> pack linker <> " | pandoc -f html -o " <> pack doc <> " " <> writeOpts
 
 main = do
@@ -96,8 +88,8 @@ convertDocsItalia d = do
   void $ withCurrentDirectory (fileToFolder d) (do
     mys toRST
     mys toNative
-    t <- doesFileExist linker
-    when t (do
+    maybeLinker <- findExecutable linker
+    when (isJust maybeLinker) (do
       renameFile doc docUnlinked
       void $ mys linkNormattiva
       )

@@ -27,9 +27,11 @@ Pandoc viene eseguito con le seguenti opzioni:
 ### Filtri
 
 Le funzionalità dei vari filtri sono brevemente descritte [nel loro
-repository](https://github.com/italia/pandoc-filters/blob/master/filters/guida.md). Attualmente
-`convert-docs-italia` applica i filtri `add-headers`, `figure`,
-`remove-divs` e `remove-quotes`.
+repository](https://github.com/italia/pandoc-filters/blob/master/filters/guida.md). Attualmente `converti` applica i seguenti filtri:
+
+- `filtro-didascalia`
+- `filtro-quotes`
+- `filtro-stile-liste`
 
 ### collegamento a Normattiva con `xmlLegesLinker`
 
