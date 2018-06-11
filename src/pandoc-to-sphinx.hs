@@ -20,9 +20,11 @@ import System.Directory (createDirectory,
 import Control.Applicative ((<$>))
 import Control.Monad (when)
 import System.FilePath.Posix (dropExtension, addExtension)
+import Turtle (shell)
 
 main = T.getContents >>=
-       split . fromRight (Pandoc nullMeta []) . readJSON def
+       split . fromRight (Pandoc nullMeta []) . readJSON def >>
+       shell "test -e media && cp -r media index" empty
 
 split :: Pandoc -> IO ()
 split (Pandoc meta blocks) = do

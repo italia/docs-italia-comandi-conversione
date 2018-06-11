@@ -1,5 +1,9 @@
 # Note sulle versioni di docs-italia-comandi-conversione
 
+## 0.2.0.1  -- da rilasciare
+
+* Modifiche interne
+
 ## 0.2      -- June 7, 2018
 
 * Ristrutturo completamente il modulo grazie ai suggerimenti ed alle

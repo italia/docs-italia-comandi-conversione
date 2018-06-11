@@ -30,10 +30,6 @@ executable converti
 executable pandoc
   main-is:             pandoc.hs
   build-depends:       base >=4.10 && <4.11,
-                       turtle,
-                       text,
-                       filepath,
-                       directory,
                        pandoc == 2.2.174
   hs-source-dirs:      src
   default-language:    Haskell2010
@@ -57,7 +53,6 @@ executable pandoc-to-sphinx
 executable pandoc-font-to-style
   main-is:             pandoc-font-to-style.hs
   build-depends:       base >=4.10 && <4.11,
-                       turtle,
                        text,
                        filepath,
                        directory,

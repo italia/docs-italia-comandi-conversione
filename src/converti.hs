@@ -94,7 +94,6 @@ convertDocsItalia d = do
       void $ mys linkNormattiva
       )
     mys makeSphinx
-    mys "test -e media && cp -r media index" -- for Sphinx
     )
   where mys c = shell c empty -- for readability
 
