@@ -11,6 +11,15 @@ import System.FilePath.Posix
 import System.Directory
 import Data.Maybe (isJust)
 
+maybeHead [] = Nothing
+maybeHead l = Just (head l)
+
+-- default
+def d Nothing = d
+def d (Just something) = something
+
+headDefault d = def d . maybeHead
+
 parser :: Parser (Text)
 parser = argText "doc" "document to convert"
         --   <*> optText "to" 't' "destination format"
@@ -33,14 +42,18 @@ opts = writeOpts <> " --extract-media . " <> filters <> "  -f docx+styles"
 --
 -- >>> fileToFolder "somedir/otherdir/file.ext"
 -- "risultato-conversione/otherdir/file"
-fileToFolder i = joinPath ["risultato-conversione", firstParent i, takeBaseName i]
-  where firstParent = head . drop 1 . reverse . splitDirectories
+-- >>> fileToFolder "file.ext"
+-- "risultato-conversione/file"
+fileToFolder i = joinPath ["risultato-conversione", parent, basename]
+  where basename = takeBaseName i
+        parent = headDefault "loose" $ drop 1 $ reverse $ splitDirectories i
+
 -- | move the input file to the destination folder
 --
 -- >>> inputName "somedir/otherdir/file.ext"
--- "input.ext"
+-- "originale.ext"
 inputName :: FilePath -> FilePath
-inputName i = addExtension "input" (takeExtension i)
+inputName i = addExtension "originale" (takeExtension i)
 -- | move the input file to the destination folder
 --
 -- >>> inToCopy "somedir/otherdir/file.ext"
@@ -57,10 +70,10 @@ inToOut = addExtension "document"
 -- paths
 --
 linker = "xmLeges-Linker-1.13a.exe"
-doc = "document.rst" :: FilePath
+doc = "documento.rst" :: FilePath
 -- the following are for troubleshooting
 docNative = "document.native" :: FilePath
-docUnlinked = "document-unlinked.rst" :: FilePath
+docUnlinked = "documento-senza-collegamenti.rst" :: FilePath
 
 -- commands
 --
@@ -87,7 +100,7 @@ convertDocsItalia d = do
   copyFile d (inToCopy d)
   void $ withCurrentDirectory (fileToFolder d) (do
     mys toRST
-    mys toNative
+    --mys toNative
     maybeLinker <- findExecutable linker
     when (isJust maybeLinker) (do
       renameFile doc docUnlinked

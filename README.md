@@ -17,11 +17,11 @@ l'installazione:
 - [`pandoc`](pandoc.org)
 - [`pandoc-to-sphinx`](doc/comandi/pandoc-font-to-style.md) per
   dividere un documento rST in più pagine da pubblicare
-- [`converti`](doc/comandi/converti.md) un'alternativa a `pandoc`
- consigliabile agli utenti più esperti, applica automaticamente le
- buone pratiche
 - [`pandoc-font-to-style`](doc/comandi/pandoc-font-to-style.md) per
   tenere conto del carattere nella conversione
+- [`converti`](doc/comandi/converti.md) un'alternativa a `pandoc`
+  consigliabile agli utenti più esperti, applica automaticamente le
+  buone pratiche
 
 Prima di intraprendere l'uso di altri comandi consigliamo di
 familiarizzarsi con l'uso di [pandoc](pandoc.org). Qui trovate anche
@@ -44,7 +44,7 @@ pandoc](https://github.com/italia/docs-italia-pandoc-filters), quindi
 è necessario [installare prima i
 filtri](https://github.com/italia/docs-italia-pandoc-filters#installazione).
 
-Puoi installare questo comando con
+Puoi installare questi comandi con
 [stack](https://docs.haskellstack.org/en/stable/README/#how-to-install)
 e `git` nei seguenti passi:
 

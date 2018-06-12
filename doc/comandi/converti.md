@@ -1,13 +1,28 @@
 
 # Comando `converti`
 
-> See [README-en](README-en.md) for a description in English
-
 Questo comando semplifica la conversione di documenti `.docx` o `.odt`
-per la pubblicazione in [Docs Italia](http://docs.italia.it/). Se hai
-familiarità con [pandoc](pandoc.org) ed i principi di base di Docs
-Italia, questo comando è un buon punto di partenza per semplificare il
-tuo processo.
+per la pubblicazione in [Docs Italia](http://docs.italia.it/). Se
+avete familiarità con [pandoc](pandoc.org) ed i principi di base di
+Docs Italia, questo comando è un buon punto di partenza per
+semplificare il vostro processo.
+
+## Come convertire un file
+
+Potete convertire un file chiamato `documento.ext` lanciando:
+
+    $ converti documento.ext
+
+Il comando creerà una cartella `risultato-conversione/documento`
+contenente i files `.rst` pronti da pubblicare:
+
+    $ ls risultato-conversione/documento/
+    documento.rst  index  index.rst  originale.docx
+
+Tenete a mente che quando si usa la riga di comando i nomi che
+contengono spazi vanno circondati da apici così:
+
+      $ converti "un documento con spazi nel nome.ext"
 
 #### Compatibilità
 
@@ -21,80 +36,75 @@ Questo software è un prototipo evolutivo che continuiamo a modificare
 per migliorarlo. Se preferite lavorare con software più stabile potete
 scegliere fra diverse alternative.
 
-`convert-docs-italia` permette di semplificare il processo di
-conversione eseguendo diversi passaggi con un solo
-comando. L'alternativa più semplice è quella di eseguire i passaggi
-separatamente, come descritto in questa breve
-[guida](https://github.com/italia/pandoc-docs2rst/blob/master/guida.md).
+`converti` permette di semplificare il processo di conversione
+eseguendo diversi passaggi con un solo comando. L'alternativa più
+semplice è quella di eseguire i passaggi separatamente, come descritto
+nelle [buone pratiche](../buone-pratiche.md).
 
 Esistono anche altri modi di semplificare processi basati su pandoc,
 come [panzer](https://github.com/msprev/panzer) e gli altri tool
 descritti [nella sezione _workflow_ del wiki di pandoc](
 https://github.com/jgm/pandoc/wiki/Pandoc-Extras#workflow)
 
-## Come convertire un file
+### Contenuti della cartella risultante
 
-Prima di tutto, [esegui l'installazione](#installazione).
+La cartella `risultati-conversione/documento` conterrà diverse
+versioni dello stesso documento corrispondenti a diversi stadi di
+conversione.
 
-Per convertire un file `.docx` o `.odt` chiamato `nome-file.ext`,
+L'ultimo stadio di conversione è quello che produce il file
+`index.rst`, quindi nel caso ideale il file `index.rst` ed i contenuti
+della cartella `index` saranno già di vostro gradimento e pronti per
+la pubblicazione.
 
-- salva il file nella cartella `input/loose`
+Può però darsi che la divisione automatica in sezioni non vi soddisfi,
+in quel caso potrete partire da `documento.rst` e dividere
+manualmente.
 
-- `cd` alla cartella di `docs2rst`
+Per praticità la cartella conterrà anche una copia del file nel
+formato originale.
 
-- da linea di comando, esegui:
+Nel caso abbiate attivato i collegamenti automatici alla normativa
+come indicato più avanti, troverete anche un file
+`documento-senza-collegamenti.rst`. Il motivo è che aggiungere i
+collegamenti richiede una tripla conversione e questo può causare più
+errori sia in `documento.rst` che nei file suddivisi a partire da
+esso.
 
-      $ stack exec convert-docs-italia input/loose/nome-file.ext
+In ogni caso vi invitiamo a segnalare ogni errore o risultato
+indesiderato tramite le issues.
 
-Se non si verificano errori, troverai i files `.rst` nella cartella
-`output/loose/nome-file`.
+## Collegamenti automatici alla normativa
 
-Tenete a mente che usando la riga di comando, i nomi di files vanno
-scritti fra apici se contengono spazi, così:
-
-      $ stack exec convert-docs-italia "input/loose/file con spazi.ext"
-
-### Documento convertito e file strutturati
-
-L'intero documento verrà convertito in un file chiamato `document.rst`. 
-
-A partire da quello proviamo anche a strutturare automaticamente i
-contenuti in un formato adatto a Docs Italia, dividendo il documento di origine
-in file separati a livello di sezioni. A questo scopo vengono prodotti un file
-`index.rst` e altri files `.rst` collegati ad esso.
-
-Se i files strutturati in sezioni ti soddisfano puoi semplicemente
-ignorare o rimuovere `document.rst`. In caso contrario puoi partire da
-`document.rst` e strutturare manualmente i files per Docs Italia.
-
-In ogni caso, ti invitiamo a segnalare ogni errore di conversione o
-strutturazione tramite le issues.
-
-### Conversione di intere cartelle
-
-Per convertire una cartella piena di documenti, puoi
-salvare la cartella in `input` ed eseguire `$ . update all`
-
-## Installazione
-
-Puoi installare questo comando con
-[stack](https://docs.haskellstack.org/en/stable/README/#how-to-install)
-e `git` nei seguenti passi:
-
-    $ git clone https://github.com/italia/pandoc-docs2rst.git
-    $ cd pandoc-docs2rst
-    $ git clone https://github.com/italia/pandoc-filters.git
-    $ stack install
-
-Il repository dei filtri dovrebbe essere contenuto nel primo così:
-
-    pandoc-docs2rst/
-        pandoc-filters/
-
-## Funzionalità opzionali
-
-### Collegamenti automatici alla normativa
-
-Questa funzionalità è disponibile solo per utenti Linux. È possibile
+Questa funzionalità opzionale è disponibile solo per utenti Linux. È possibile
 trovare i dettagli
 [qui](../link-normattiva.md).
+
+## Conversione di intere cartelle
+
+Consideriamo una cartella contenente diversi documenti come nel seguente caso:
+
+```bash
+$ ls carta-docente/
+condizioni-generali-esercenti.docx  linee-guida-esercenti.docx
+domande-frequenti-esercenti.docx    linee-guida-fatturazione.docx
+```
+
+Possiamo facilmente eseguire `converti` su tutti i files con il
+seguente ciclo:
+
+```bash
+$ find carta-docente/ | while read documento; do converti $documento; done
+```
+
+Il comando eseguirà `converti` su ciascun file. `converti` tiene conto
+della cartella genitore nel salvare il file in
+`risultato-conversione`, quindi i files `.rst` risultano raggruppati:
+
+```bash
+$ lt risultato-conversione/carta-docente/
+linee-guida-fatturazione/
+linee-guida-esercenti/
+domande-frequenti-esercenti/
+condizioni-generali-esercenti/
+```
