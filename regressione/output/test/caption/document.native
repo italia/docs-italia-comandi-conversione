@@ -1,5 +1,0 @@
-Pandoc (Meta {unMeta = fromList [("title",MetaInlines [Str "Accessibilit\224",Space,Str "delle",Space,Str "immagini"])]})
-[Header 1 ("test-di-conversione",[],[]) [Str "Test",Space,Str "di",Space,Str "conversione"]
-,Para [Str "Questo",Space,Str "\232",Space,Str "un",Space,Str "paragrafo",Space,Str "prima",Space,Str "dell\8217immagine."]
-,Para [Image ("",[],[("width","2.1305555555555555in"),("height","1.2284722222222222in")]) [Str "Figura",Space,Str "1",Space,Str "Libri.",Space,Str "Immagine",Space,Str "CC0",Space,Str "da",Space,Link ("",[],[]) [Span ("",[],[("custom-style","Hyperlink")]) [Str "https://pixabay.com/en/book-read-old-literature-pages-1659717/"]] ("https://pixabay.com/en/book-read-old-literature-pages-1659717/","")] ("./media/image1.jpeg","fig:Libri antichi con copertina rigida su uno scaffale.")]
-,Para [Str "L\8217immagine",Space,Str "contiene",Space,Str "un",Space,Str "titolo",Space,Str "e",Space,Str "un",Space,Str "testo",Space,Str "alternativo",Space,Str "(alt",Space,Str "text)."]]
