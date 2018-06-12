@@ -20,7 +20,7 @@ l'installazione:
 - [`pandoc-font-to-style`](doc/comandi/pandoc-font-to-style.md) per
   tenere conto del carattere nella conversione
 - [`converti`](doc/comandi/converti.md) un'alternativa a `pandoc`
-  consigliabile agli utenti più esperti, applica automaticamente le
+  consigliabile per gli utenti più esperti, applica automaticamente le
   buone pratiche
 
 Prima di intraprendere l'uso di altri comandi consigliamo di
@@ -28,8 +28,8 @@ familiarizzarsi con l'uso di [pandoc](pandoc.org). Qui trovate anche
 un breve testo sulle [buone pratiche di traduzione con
 pandoc](doc/buone-pratiche.md).
 
-I comandi hanno nomi in inglese qualora ne sia immaginabile l'uso al
-di fuori del contesto italiano.
+I comandi hanno nomi e documentazione in inglese qualora ne sia
+immaginabile l'uso al di fuori del contesto italiano.
 
 #### Compatibilità
 
@@ -39,11 +39,6 @@ il che include Linux e Mac. L'uso degli script con un sistema Windows
 
 ## Installazione
 
-Alcuni di questi comandi usano i nostri [filtri
-pandoc](https://github.com/italia/docs-italia-pandoc-filters), quindi
-è necessario [installare prima i
-filtri](https://github.com/italia/docs-italia-pandoc-filters#installazione).
-
 Puoi installare questi comandi con
 [stack](https://docs.haskellstack.org/en/stable/README/#how-to-install)
 e `git` nei seguenti passi:
@@ -51,6 +46,11 @@ e `git` nei seguenti passi:
     $ git clone https://github.com/italia/docs-italia-comandi-conversione.git
     $ cd docs-italia-comandi-conversione
     $ stack install
+
+Il comando `converti` fa uso dei nostri [filtri
+pandoc](https://github.com/italia/docs-italia-pandoc-filters), quindi
+per usare quel comando è necessario [installare prima i
+filtri](https://github.com/italia/docs-italia-pandoc-filters#installazione).
 
 ## Contribuire
 

@@ -24,19 +24,23 @@ parser :: Parser (Text)
 parser = argText "doc" "document to convert"
         --   <*> optText "to" 't' "destination format"
 
-filters = intercalate " " $ map addFilter files
-  where files = [ "filtro-didascalia",
-                  "filtro-quotes" ] :: [Text]
+-- for openXML parsing
+parseOpenXMLFilters = [ "filtro-didascalia",
+                        "filtro-quotes" ] :: [Text]
+-- for rST writing
+writeRSTFilters = ["filtro-stile-liste" ] :: [Text]
+allFilters = parseOpenXMLFilters <> writeRSTFilters
+
+makeOpts opts filters = intercalate " " (opts <> map addFilter filters)
 
 addFilter :: Text -> Text
 addFilter f = "--filter " <> f
 
--- options to use every time we write an RST
 writeOpts :: Text
-writeOpts = "--wrap none " <> addFilter "filtro-stile-liste" <> " --standalone"
+writeOpts = makeOpts ["--wrap none", "--standalone"] writeRSTFilters
 
-opts :: Text
-opts = writeOpts <> " --extract-media . " <> filters <> "  -f docx+styles"
+parseOpts :: Text
+parseOpts = makeOpts ["--extract-media .", "-f docx+styles"] parseOpenXMLFilters
 
 -- | convert the input file to the output folder
 --
@@ -83,7 +87,7 @@ inputNameText :: Text -> Text
 inputNameText = pack . inputName . unpack
 -- | translate applying most filters. we try to work in Text
 makeDocument :: Text -> Text
-makeDocument d = version <> " input.docx " <> opts <> " -o " <> d
+makeDocument d = version <> " input.docx " <> parseOpts <> " -o " <> d
 toRST = makeDocument $ pack doc :: Text
 toNative = makeDocument $ pack docNative :: Text
 makeSphinx = "pandoc-to-sphinx " <> pack doc
@@ -93,9 +97,20 @@ main = do
   (docArg) <- options "translate DOCX file" parser
   convertDocsItalia (unpack docArg)
 
--- this function is a good high-lever description of the logic
+checkExecutables = do
+  maybeExecutables <- sequence $ map findExecutable allFilters'
+  maybeNotify (dropWhile isJust maybeExecutables)
+    where allFilters' = map unpack allFilters
+
+maybeNotify []       = pure ()
+maybeNotify missing  = print (errore $ head missing)
+  where errore c = "`converti` si basa sui filtri di Docs Italia che non sono disponibili sul tuo sistema. Puoi installarli seguendo le istruzioni che trovi su https://github.com/italia/docs-italia-pandoc-filters"
+  -- where errore c = "`converti` si basa sul comando " <> c <> " che non è disponibile sul tuo sistema. Puoi installarlo seguendo le istruzioni che trovi su https://github.com/italia/docs-italia-pandoc-filters"
+
+-- this function is a good high-level description of the logic
 convertDocsItalia :: System.FilePath.Posix.FilePath -> IO ()
 convertDocsItalia d = do
+  checkExecutables
   createDirectoryIfMissing True (fileToFolder d)
   copyFile d (inToCopy d)
   void $ withCurrentDirectory (fileToFolder d) (do
