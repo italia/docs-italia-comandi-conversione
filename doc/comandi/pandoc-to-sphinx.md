@@ -1,28 +1,18 @@
-`pandoc-to-sphinx`
 
-from any pandoc-compatible document to a set of files ready to be
-published on read the docs
+# `pandoc-to-sphinx`
+
+This is a [_pandoc source_](../pandoc-sinks-and-sources.md) producing
+a set of files ready to be published on ReadTheDocs
+
+#### Splitting level logic
+
+A document could be split in files containing sections at level 1, 2
+or higher. Documents could contain just one section belonging to a
+given level which would make the split pointless. In order to
+determine the level to use for the split, `pandoc-to-sphinx` selects
+the first level containing multiple sections.
 
 #### Status
 
 This is pre-alpha at the moment, it's an usable evolutionary prototype
 
-#### Installation
-
-This is an Haskell package and can be installed from its sources with
-[stack](https://docs.haskellstack.org/en/stable/GUIDE/)
-
-#### Usage
-
-After installation, typing `pandoc-to-sphinx --help` will give you the
-following:
-
-```
-pandoc-to-sphinx <document.ext> <output-dir>
-
-
--l --level: (optional) the section level to use for splitting the document
-
--s --second-split: (optional) the level for the second split
-
-```

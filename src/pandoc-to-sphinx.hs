@@ -89,17 +89,11 @@ maybeHead l
   | null l = Nothing
   | otherwise = Just (head l)
 
-level = const 1
-
-{-
-
 -- | if we have only one header 2 break by header 3 and so on
 level :: [Block] -> Int
-level body = headDefault 1 $ filter hasSeveral [2, 3, 4, 5, 1]
+level body = headDefault 1 $ filter hasSeveral [1, 2, 3, 4, 5]
   where hasSeveral l = (length $ query (collectHeading l) body) > 1
         collectHeading l i = if isHeading l i then [i] else []
-
--}
 
 -- | Multiple version of break, like a `split` that keeps the delimiter
 -- >>> multiBreak (==' ') "bla bla bla b"
