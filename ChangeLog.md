@@ -2,6 +2,11 @@
 
 ## versione da assegnare -- data di rilascio da definire
 
+* ...
+
+## 0.2.0.3  -- Giugno 13, 2018
+
+* Elimino un errore adattando `converti` alla sua doc
 * Modifiche interne
 
 ## 0.2.0.2  -- Giugno 13, 2018

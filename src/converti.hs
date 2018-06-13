@@ -48,9 +48,12 @@ parseOpts = makeOpts ["--extract-media .", "-f docx+styles"] parseOpenXMLFilters
 -- "risultato-conversione/otherdir/file"
 -- >>> fileToFolder "file.ext"
 -- "risultato-conversione/file"
-fileToFolder i = joinPath ["risultato-conversione", parent, basename]
-  where basename = takeBaseName i
-        parent = headDefault "loose" $ drop 1 $ reverse $ splitDirectories i
+fileToFolder i = case maybeParent of
+  Nothing -> joinPath [res, baseName]
+  Just parent -> joinPath [res, parent, baseName]
+  where res = "risultato-conversione"
+        baseName = takeBaseName i
+        maybeParent = maybeHead $ drop 1 $ reverse $ splitDirectories i
 
 -- | move the input file to the destination folder
 --
@@ -61,7 +64,7 @@ inputName i = addExtension "originale" (takeExtension i)
 -- | move the input file to the destination folder
 --
 -- >>> inToCopy "somedir/otherdir/file.ext"
--- "output/otherdir/file/input.ext"
+-- "risultato-conversione/otherdir/file/originale.ext"
 inToCopy :: FilePath -> FilePath
 inToCopy i = joinPath [fileToFolder i, inputName i]
 -- | convert the input file to the output file
