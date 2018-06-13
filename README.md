@@ -14,7 +14,7 @@ qui incluso nella sua versione italiana modificata, il _fork
 italiano_. Ecco l'elenco completo dei comandi che otterrete dopo
 l'installazione:
 
-- [`pandoc`](pandoc.org) il principale comando di conversione
+- [`pandoc`](https://pandoc.org) il principale comando di conversione
 - [`pandoc-to-sphinx`](doc/comandi/pandoc-font-to-style.md) per
   dividere un documento rST in più pagine da pubblicare
 - [`pandoc-font-to-style`](doc/comandi/pandoc-font-to-style.md) per
