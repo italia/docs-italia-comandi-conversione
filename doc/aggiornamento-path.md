@@ -7,8 +7,8 @@ Se installando questi comandi vi imbattete in un warning simile al seguente
 Warning: Installation path /home/opiccolo/.local/bin not found on the PATH environment variable
 ```
 
-Significa che non avete eseguito uno dei passaggi dell'installazine di
-Stack, e non potrete eseguire i comandi.
+Significa che non avete eseguito uno dei passaggi dell'installazione
+di Stack, e non potrete eseguire i comandi.
 
 #### Cos'è il `$PATH`
 
