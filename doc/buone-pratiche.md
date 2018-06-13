@@ -27,7 +27,7 @@ Pandoc viene eseguito con le seguenti opzioni:
 ### Filtri
 
 Le funzionalità dei vari filtri sono brevemente descritte [nel loro
-repository](https://github.com/italia/pandoc-filters/blob/master/filters/guida.md). Attualmente `converti` applica i seguenti filtri:
+repository](https://github.com/italia/docs-italia-pandoc-filters/blob/master/filters/guida.md). Attualmente `converti` applica i seguenti filtri:
 
 - `filtro-didascalia`
 - `filtro-quotes`
