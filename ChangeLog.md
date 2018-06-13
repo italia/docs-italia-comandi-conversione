@@ -1,5 +1,9 @@
 # Note sulle versioni di docs-italia-comandi-conversione
 
+## versione da assegnare -- data di rilascio da definire
+
+* Modifiche interne
+
 ## 0.2.0.2  -- Giugno 13, 2018
 
 * Risolvo issue #15

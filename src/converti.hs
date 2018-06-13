@@ -86,10 +86,11 @@ version = "pandoc" -- change to switch the executable name everywhere
 inputNameText :: Text -> Text
 inputNameText = pack . inputName . unpack
 -- | translate applying most filters. we try to work in Text
-makeDocument :: Text -> Text
-makeDocument d = version <> " originale.docx " <> parseOpts <> " -o " <> d
-toRST = makeDocument $ pack doc :: Text
-toNative = makeDocument $ pack docNative :: Text
+convert :: String -> Text -> Text
+convert i d = version <> " " <> inputName' i <> " " <> parseOpts <> " -o " <> d
+  where inputName' = pack . inputName
+toRST i = convert i (pack doc :: Text)
+toNative i = convert i (pack docNative :: Text)
 makeSphinx = "pandoc-to-sphinx " <> pack doc
 linkNormattiva = version <> " " <> pack docUnlinked <> " -t html | " <> pack linker <> " | pandoc -f html -o " <> pack doc <> " " <> writeOpts
 
@@ -109,12 +110,12 @@ maybeNotify missing  = print (errore $ head missing)
 
 -- this function is a good high-level description of the logic
 convertDocsItalia :: System.FilePath.Posix.FilePath -> IO ()
-convertDocsItalia d = do
+convertDocsItalia i = do
   checkExecutables
-  createDirectoryIfMissing True (fileToFolder d)
-  copyFile d (inToCopy d)
-  void $ withCurrentDirectory (fileToFolder d) (do
-    mys toRST
+  createDirectoryIfMissing True (fileToFolder i)
+  copyFile i (inToCopy i)
+  void $ withCurrentDirectory (fileToFolder i) (do
+    mys (toRST i)
     --mys toNative
     maybeLinker <- findExecutable linker
     when (isJust maybeLinker) (do
