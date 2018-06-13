@@ -87,7 +87,7 @@ inputNameText :: Text -> Text
 inputNameText = pack . inputName . unpack
 -- | translate applying most filters. we try to work in Text
 makeDocument :: Text -> Text
-makeDocument d = version <> " input.docx " <> parseOpts <> " -o " <> d
+makeDocument d = version <> " originale.docx " <> parseOpts <> " -o " <> d
 toRST = makeDocument $ pack doc :: Text
 toNative = makeDocument $ pack docNative :: Text
 makeSphinx = "pandoc-to-sphinx " <> pack doc
