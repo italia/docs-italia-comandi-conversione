@@ -9,12 +9,12 @@ tema della conversione di formato,
 [questo](http://guida-docs-italia.readthedocs.io/it/latest/index/scrivere-un-documento.html#migrazione-su-docs-italia-di-documentazione-esistente)
 è un buon punto di partenza per imparare di più.
 
-Il comando principale che forniamo è [`pandoc`](pandoc.org), qui
-incluso nella sua versione italiana modificata, il _fork
+Il comando principale che forniamo è [`pandoc`](https://pandoc.org),
+qui incluso nella sua versione italiana modificata, il _fork
 italiano_. Ecco l'elenco completo dei comandi che otterrete dopo
 l'installazione:
 
-- [`pandoc`](pandoc.org) il comando di conversione principale
+- [`pandoc`](pandoc.org) il principale comando di conversione
 - [`pandoc-to-sphinx`](doc/comandi/pandoc-font-to-style.md) per
   dividere un documento rST in più pagine da pubblicare
 - [`pandoc-font-to-style`](doc/comandi/pandoc-font-to-style.md) per
@@ -24,8 +24,8 @@ l'installazione:
   buone pratiche
 
 Prima di intraprendere l'uso di altri comandi consigliamo di
-familiarizzarsi con l'uso di [pandoc](pandoc.org). Qui trovate anche
-un breve testo sulle [buone pratiche di traduzione con
+familiarizzarsi con l'uso di [pandoc](https://pandoc.org). Qui trovate
+anche un breve testo sulle [buone pratiche di traduzione con
 pandoc](doc/buone-pratiche.md).
 
 I comandi hanno nomi e documentazione in inglese qualora ne sia
