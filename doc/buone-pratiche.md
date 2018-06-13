@@ -3,18 +3,18 @@ L'invocazione di `converti` esegue i seguenti passaggi:
 
 - conversione [pandoc](pandoc.org) con una selezione di [opzioni](http://pandoc.org/MANUAL.html#options) e [filtri](http://pandoc.org/filters.html)
 - collegamento a Normattiva con [xmLegesLinker](http://www.ittig.cnr.it/lab/xmleges/xmlegeslinker/)
-- divisione delle sezioni (in futuro disponibile come comando dedicato)
+- divisione delle sezioni con [pandoc-to-sphinx](comandi/pandoc-to-sphinx.md)
 
-Di questi passi solo la conversione è necessaria per la pubblicazione
+Fra questi passi solo la conversione è necessaria per la pubblicazione
 in Docs Italia, mentre i restanti sono agevolazioni che, nel caso non
 usiate `convert-docs-italia`, potete decidere autonomamente di
 adottare o meno.
 
 In generale un compito di conversione potrebbe richiedere opzioni
 specifiche o lo sviluppo e l'uso di filtri ad-hoc. Se da un lato fare
-riferimento a `convert-docs-italia` ci permette di convergere,
-l'esperienza con l'uso diretto di pandoc e degli altri comandi aiuta a
-districarsi nei casi più complessi
+riferimento a `converti` ci permette di convergere, l'esperienza con
+l'uso diretto di pandoc e degli altri comandi aiuta a districarsi nei
+casi più complessi
 
 ### Opzioni
 
