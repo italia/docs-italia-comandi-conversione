@@ -15,7 +15,7 @@ italiano_. Ecco l'elenco completo dei comandi che otterrete dopo
 l'installazione:
 
 - [`pandoc`](https://pandoc.org) il principale comando di conversione
-- [`pandoc-to-sphinx`](doc/comandi/pandoc-font-to-style.md) per
+- [`pandoc-to-sphinx`](doc/comandi/pandoc-font-to-sphinx.md) per
   dividere un documento rST in più pagine da pubblicare
 - [`pandoc-font-to-style`](doc/comandi/pandoc-font-to-style.md) per
   tenere conto del carattere nella conversione
