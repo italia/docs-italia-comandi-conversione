@@ -14,7 +14,7 @@ Stack, e non potrete eseguire i comandi.
 
 È una variabile della riga di comando, per questo comincia con
 `$`. Contiene una lista di cartelle dove vengono cercati i comandi. Da
-`cd` a `pandoc` a `converti`, tutti i comandi che lanciate vengono
+`ls` a `pandoc` a `converti`, tutti i comandi che lanciate vengono
 cercati in una di queste cartelle, e se non vengono trovati non
 possono essere eseguiti dalll'interprete dei comandi.
 
@@ -41,3 +41,16 @@ $ echo $benvenuto | sed s/utente/Franco/
 ciao Franco ti diamo il benvenuto nel mondo della riga di comando
 ```
 
+#### Il comando `which`
+
+Esiste un comando per trovare altri comandi! Si chiama `which` che in
+inglese significa `quale`. Può essere utile per accertarsi del fatto
+che stiamo eseguendo proprio quello che vogliamo eseguire. Ecco un
+esempio d'uso:
+
+```bash
+$ which ls
+/bin/ls
+$ which pandoc
+/home/francesco/.local/bin/pandoc
+```
