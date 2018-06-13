@@ -7,7 +7,7 @@ L'invocazione di `converti` esegue i seguenti passaggi:
 
 Fra questi passi solo la conversione è necessaria per la pubblicazione
 in Docs Italia, mentre i restanti sono agevolazioni che, nel caso non
-usiate `convert-docs-italia`, potete decidere autonomamente di
+usiate `converti`, potete decidere autonomamente di
 adottare o meno.
 
 In generale un compito di conversione potrebbe richiedere opzioni
