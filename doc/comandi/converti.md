@@ -102,7 +102,7 @@ della cartella genitore nel salvare il file in
 `risultato-conversione`, quindi i files `.rst` risultano raggruppati:
 
 ```bash
-$ lt risultato-conversione/carta-docente/
+$ ls risultato-conversione/carta-docente/
 linee-guida-fatturazione/
 linee-guida-esercenti/
 domande-frequenti-esercenti/
