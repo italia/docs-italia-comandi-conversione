@@ -1,5 +1,5 @@
 
-L'invocazione di `convert-docs-italia` esegue i seguenti passaggi:
+L'invocazione di `converti` esegue i seguenti passaggi:
 
 - conversione [pandoc](pandoc.org) con una selezione di [opzioni](http://pandoc.org/MANUAL.html#options) e [filtri](http://pandoc.org/filters.html)
 - collegamento a Normattiva con [xmLegesLinker](http://www.ittig.cnr.it/lab/xmleges/xmlegeslinker/)
