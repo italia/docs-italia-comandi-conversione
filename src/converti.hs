@@ -91,7 +91,7 @@ inputNameText :: Text -> Text
 inputNameText = pack . inputName . unpack
 -- | translate applying most filters. we try to work in Text
 convert :: String -> Text -> Text
-convert i d = version <> " " <> inputName' i <> " " <> parseOpts <> " -o " <> d
+convert i d = version <> " " <> inputName' i <> " " <> parseOpts <> " " <> writeOpts <> " -o " <> d
   where inputName' = pack . inputName
 toRST i = convert i (pack doc :: Text)
 toNative i = convert i (pack docNative :: Text)

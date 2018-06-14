@@ -4,13 +4,17 @@
 
 * ...
 
+## 0.2.1.1 -- Giugno 14, 2018
+
+* Elimina un'altro errore applicando le opzioni di scrittura previste
+
 ## 0.2.1.0 -- Giugno 14, 2018
 
-* Aggiungo il `filtro-rimuovi-div`
+* Aggiunge il `filtro-rimuovi-div`
 
 ## 0.2.0.3 -- Giugno 13, 2018
 
-* Elimino un errore adattando `converti` alla sua doc
+* Elimina un errore adattando `converti` alla sua doc
 * Modifiche interne
 
 ## 0.2.0.2 -- Giugno 13, 2018
