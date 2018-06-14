@@ -19,10 +19,11 @@ HTML report by running:
 
 #### Sink example
 
-Let's consider a sink that selects the links from a document, we could
-use it to analyse links in an OpenXML document by running:
+Let's consider a sink called `pandoc-to-links` that picks the links
+from a document. We could use it to analyse links in an OpenXML
+document by running:
 
-    $ pandoc document.docx | pandoc-to-links | check-links
+    $ pandoc document.docx -t json | pandoc-to-links | check-links
     `gogle.com` points nowhere
     the certificate for `githb.com` cannot be verified
 
