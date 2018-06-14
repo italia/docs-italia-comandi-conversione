@@ -4,6 +4,10 @@
 
 * ...
 
+## 0.2.1.0 -- Giugno 14, 2018
+
+* Aggiungo il `filtro-rimuovi-div`
+
 ## 0.2.0.3  -- Giugno 13, 2018
 
 * Elimino un errore adattando `converti` alla sua doc

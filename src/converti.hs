@@ -26,6 +26,7 @@ parser = argText "doc" "document to convert"
 
 -- for openXML parsing
 parseOpenXMLFilters = [ "filtro-didascalia",
+                        "filtro-rimuovi-div", -- per `-f docx+styles`
                         "filtro-quotes" ] :: [Text]
 -- for rST writing
 writeRSTFilters = ["filtro-stile-liste" ] :: [Text]

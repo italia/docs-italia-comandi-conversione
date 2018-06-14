@@ -2,7 +2,7 @@
 -- documentation, see http://haskell.org/cabal/users-guide/
 
 name:                docs-italia-comandi-conversione
-version:             0.2.0.3
+version:             0.2.1.0
 -- synopsis:            
 -- description:         
 license:             AGPL-3

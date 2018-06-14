@@ -23,6 +23,7 @@ Pandoc viene eseguito con le seguenti opzioni:
 - `--wrap none` in modo da evitare errori di sintassi dovuti a tabelle con contenuti complessi come per esempio codice con linee molto lunghe
 - `--extract-media .` in modo che le immagini contenute nel documento vengano salvate nella cartella `media`.
 - `--standalone` serve per mostrare anche i metadati come autore, titolo, etcetera
+- `-f docx+styles` per tradurre le didascalie col `filtro-didascalia`
 
 ### Filtri
 
@@ -32,6 +33,7 @@ repository](https://github.com/italia/docs-italia-pandoc-filters/tree/master/fil
 
 - `filtro-didascalia`
 - `filtro-quotes`
+- `filtro-rimuovi-div`
 - `filtro-stile-liste`
 
 ### collegamento a Normattiva con `xmlLegesLinker`
