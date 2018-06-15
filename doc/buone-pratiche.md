@@ -39,7 +39,7 @@ repository](https://github.com/italia/docs-italia-pandoc-filters/tree/master/fil
 ### collegamento a Normattiva con `xmlLegesLinker`
 
 Questo strumento permette di inserire automaticamente i collegamenti a
-[Normattiva](normattiva.it), modificando un file in formato HTML. Per
+[Normattiva](http://www.normattiva.it/), modificando un file in formato HTML. Per
 applicare il linker a documenti di altro formato (come `.rst` o
 `.docx`) potete usare pandoc così:
 
