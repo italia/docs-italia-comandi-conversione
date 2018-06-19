@@ -59,4 +59,7 @@ could have names ending in `...-to-pandoc`.
 
 ### In the wild
 
-The `pandoc-to-sphinx` command in this repo is a sink
+- The `pandoc-to-sphinx` command in this repo is a sink
+- [pandoc-placetable](https://github.com/mb21/pandoc-placetable#usage)
+  can be used as a source from CSV
+ 
