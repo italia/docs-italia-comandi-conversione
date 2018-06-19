@@ -33,7 +33,7 @@ Questi script eseguono una [conversione del formato di un documento](http://guid
 Tutti gli script si basano sul _fork italiano_ di [`pandoc`](https://pandoc.org),
 che verrà scaricato localmente durante l'installazione. 
 
-L'installazione local di questo repository comprende:
+L'installazione locale di questo repository comprende:
 
 - [`pandoc`](https://pandoc.org), il principale comando di conversione;
 - [`pandoc-to-sphinx`](doc/comandi/pandoc-to-sphinx.md) per
