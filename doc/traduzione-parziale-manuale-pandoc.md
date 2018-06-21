@@ -42,3 +42,9 @@ fedeli a quelli del manuale originale di modo che sia facile
 aggiornare la nostra traduzione in futuro, quando l'originale
 cambierà.
 
+#### Formato
+
+Tenete presente che il manuale originale è in formato markdown, mentre
+qui preferiamo usare un formato `.rst`. Se copiate ed incollate
+contenuti, potreste dover cambiare la sintassi
+
