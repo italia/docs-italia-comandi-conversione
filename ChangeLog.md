@@ -1,5 +1,7 @@
 # Note sulle versioni di docs-italia-comandi-conversione
 
+Leggi `sviluppo.md` per info sulla gestione del change log
+
 ## versione da assegnare -- data di rilascio da definire
 
 * ...
