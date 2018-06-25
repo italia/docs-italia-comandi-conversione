@@ -39,7 +39,7 @@ il che include Linux e Mac. L'uso degli script con un sistema Windows
 
 ## Installazione
 
-Puoi installare questi comandi con
+Potete installare questi comandi con
 [stack](https://docs.haskellstack.org/en/stable/README/#how-to-install)
 e `git` nei seguenti passi:
 
@@ -51,6 +51,17 @@ Il comando `converti` fa uso dei nostri [filtri
 pandoc](https://github.com/italia/docs-italia-pandoc-filters), quindi
 per usare quel comando è necessario [installare prima i
 filtri](https://github.com/italia/docs-italia-pandoc-filters#installazione).
+
+### Distribuzione eseguibili per ubuntu
+
+La procedura d'installazione spiegata sopra richiede alcuni gigabytes di spazio sul disco,  Se disponete di un sistema Ubuntu 16.04 potete risparmiare tempo e
+spazio sul disco utilizzando le versioni eseguibili dei comandi che
+distribuiamo [su
+Github](https://github.com/italia/docs-italia-comandi-conversione/releases).
+
+Per installarli vi consigliamo di scegliere la versione più recente,
+scaricare gli eseguibili in allegato e salvarli in una cartella che
+sia sul vostro [`$PATH`](doc/aggiornamento-path.md#cos%C3%A8-il-path)
 
 ## Contribuire
 
