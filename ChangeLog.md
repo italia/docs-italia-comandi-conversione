@@ -4,7 +4,9 @@ Leggi `sviluppo.md` per info sulla gestione del change log
 
 ## versione da assegnare -- data di rilascio da definire
 
-* ...
+* Il comando `converti` adesso applica correttamente
+  `pandoc-to-sphinx`, quindi questa versione elimina un altro errore
+  che produceva cartelle `index/` vuote come risultato di `converti`
 
 ## 0.2.1.1 -- Giugno 14, 2018
 
@@ -21,15 +23,15 @@ Leggi `sviluppo.md` per info sulla gestione del change log
 
 ## 0.2.0.2 -- Giugno 13, 2018
 
-* Risolvo issue #15
+* Risolve issue #15
 * Modifiche interne
 
 ## 0.2 -- Giugno 7, 2018
 
-* Ristrutturo completamente il modulo grazie ai suggerimenti ed alle
-  esperienze di Pablo Persico
+* Presenta un pacchetto completamente ristrutturato grazie ai
+  suggerimenti ed alle esperienze di Pablo Persico
 
 ## 0.1 -- Maggio 9, 2018
 
-* Converto quelli che prima erano semplici script Turtle in un modulo
-  Haskell installabile ed usabile da Alberto Torin
+* Offre un modulo Haskell installabile ed usabile da Alberto Torin, a
+  partire da quelli che prima erano semplici script Turtle

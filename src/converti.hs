@@ -95,7 +95,7 @@ convert i d = version <> " " <> inputName' i <> " " <> parseOpts <> " " <> write
   where inputName' = pack . inputName
 toRST i = convert i (pack doc :: Text)
 toNative i = convert i (pack docNative :: Text)
-makeSphinx = "pandoc-to-sphinx " <> pack doc
+makeSphinx = "pandoc -t json " <> pack doc <> " | pandoc-to-sphinx"
 linkNormattiva = version <> " " <> pack docUnlinked <> " -t html | " <> pack linker <> " | pandoc -f html -o " <> pack doc <> " " <> writeOpts
 
 main = do
