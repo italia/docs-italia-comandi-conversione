@@ -72,9 +72,10 @@ filtri](https://github.com/italia/docs-italia-pandoc-filters#installazione).
 
 ### Distribuzione eseguibili per ubuntu
 
-La procedura d'installazione spiegata sopra richiede alcuni gigabytes di spazio sul disco,  Se disponete di un sistema Ubuntu 16.04 potete risparmiare tempo e
-spazio sul disco utilizzando le versioni eseguibili dei comandi che
-distribuiamo [su
+La procedura d'installazione spiegata sopra richiede alcuni gigabytes
+di spazio sul disco. Se disponete di un sistema Ubuntu 16.04 potete
+risparmiare spazio ed ottenere un'installazione più rapida utilizzando
+le versioni eseguibili dei comandi che distribuiamo [su
 Github](https://github.com/italia/docs-italia-comandi-conversione/releases).
 
 Per installarli scegliete la versione più recente, scaricare
