@@ -59,9 +59,10 @@ spazio sul disco utilizzando le versioni eseguibili dei comandi che
 distribuiamo [su
 Github](https://github.com/italia/docs-italia-comandi-conversione/releases).
 
-Per installarli vi consigliamo di scegliere la versione più recente,
-scaricare gli eseguibili in allegato e salvarli in una cartella che
-sia sul vostro [`$PATH`](doc/aggiornamento-path.md#cos%C3%A8-il-path)
+Per installarli scegliete la versione più recente, scaricare
+l'archivio `comandi-conversione.zip` e salvate gli eseguibili lì
+contenuti in una cartella che sia sul vostro
+[`$PATH`](doc/aggiornamento-path.md#cos%C3%A8-il-path)
 
 ## Contribuire
 
