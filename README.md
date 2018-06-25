@@ -8,36 +8,37 @@
 
 ## Contenuto del repository
 
-Questo repository contiene una serie di [script e
-comandi](https://it.wikipedia.org/wiki/Shell_(informatica)#Shell_testuali)
+Questo repository contiene una serie di
+[comandi](https://it.wikipedia.org/wiki/Shell_(informatica)#Shell_testuali)
 da installare sul proprio computer che permettono di convertire dei
 documenti di testo verso una serie di formati, tra cui quello previsto
 dalla piattaforma di [Docs Italia](https://docs.italia.it).
 
-Il vantaggio è che questi script permettono di semplificare la
-conversione dei documenti applicando filtri e correzioni avanzate dei
-possibili errori.
-
-Questi script vengono eseguiti da riga di comando. 
+Rispetto al [convertitore
+web](https://github.com/italia/docs-italia-convertitore-web), i
+comandi offrono un controllo più fine, prestazioni migliori,
+l'automatizzazione di alcuni compiti ripetitivi, e la soluzione di
+alcuni problemi specifici. Lo svantaggio è una maggiore complessità di
+installazione.
 
 ## Requisiti
 
-Questi script sono compatibili con Linux e Mac OS (ovvero richiedono
+Questi comandi sono compatibili con Linux e Mac OS (ovvero richiedono
 un sistema operativo compatibile con
-[Posix](https://it.wikipedia.org/wiki/POSIX)). L'uso degli script con
+[Posix](https://it.wikipedia.org/wiki/POSIX)). L'uso dei comandi con
 un sistema Windows è attualmente in fase di studio.
 
-Prima di usare i comandi contenuti in questo repository consigliamo di
-familiarizzarsi con l'uso di [pandoc](https://pandoc.org).
+I comandi sono consigliati agli utenti che abbiano familiarità con
+l'uso della riga di comando o vogliano acquisirla.
 
 ## Maggiori informazioni
 
-Questi script eseguono una [conversione del formato di un
+Per eseguire la [conversione del formato di un
 documento](http://guida-docs-italia.readthedocs.io/it/latest/index/scrivere-un-documento.html#migrazione-su-docs-italia-di-documentazione-esistente)
-in maniera automatica.
-
-Tutti gli script si basano sul _fork italiano_ di [`pandoc`](https://pandoc.org),
-che verrà scaricato localmente durante l'installazione. 
+facciamo affidamento principalmente sul comando
+[`pandoc`](https://pandoc.org) di cui forniamo un [_fork
+italiano_](doc/fork-italiano.md), cioè una versione migliorata dagli
+sviluppatori del Team Digitale.
 
 L'installazione locale di questo repository comprende:
 
@@ -80,10 +81,6 @@ Per installarli scegliete la versione più recente, scaricare
 l'archivio `comandi-conversione.zip` e salvate gli eseguibili lì
 contenuti in una cartella che sia sul vostro
 [`$PATH`](doc/aggiornamento-path.md#cos%C3%A8-il-path)
-
-## Convertire un documento
-
-[DA COMPLETARE]
 
 ## Come contribuire allo sviluppo dei comandi
 
