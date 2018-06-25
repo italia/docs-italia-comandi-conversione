@@ -1,3 +1,4 @@
+
 # Comandi per la conversione dei documenti nel formato di Docs Italia
 
 > Script e comandi basati su pandoc per la conversione dei documenti
@@ -8,27 +9,32 @@
 ## Contenuto del repository
 
 Questo repository contiene una serie di [script e
-comandi](https://it.wikipedia.org/wiki/Shell_(informatica)#Shell_testuali) da
-installare sul proprio computer che permettono di convertire dei documenti di
-testo verso una serie di formati, tra cui quello previsto dalla piattaforma di
-[Docs Italia](https://docs.italia.it). 
+comandi](https://it.wikipedia.org/wiki/Shell_(informatica)#Shell_testuali)
+da installare sul proprio computer che permettono di convertire dei
+documenti di testo verso una serie di formati, tra cui quello previsto
+dalla piattaforma di [Docs Italia](https://docs.italia.it).
 
-Il vantaggio è che questi script permettono di semplificare la conversione
-dei documenti applicando filtri e correzioni avanzate dei possibili errori.
+Il vantaggio è che questi script permettono di semplificare la
+conversione dei documenti applicando filtri e correzioni avanzate dei
+possibili errori.
 
 Questi script vengono eseguiti da riga di comando. 
 
-
 ## Requisiti
 
-Questi script sono compatibili con Linux e Mac OS (ovvero richiedono un sistema operativo compatibile con [Posix](https://it.wikipedia.org/wiki/POSIX)). L'uso degli script con un sistema Windows è attualmente in fase di studio. 
+Questi script sono compatibili con Linux e Mac OS (ovvero richiedono
+un sistema operativo compatibile con
+[Posix](https://it.wikipedia.org/wiki/POSIX)). L'uso degli script con
+un sistema Windows è attualmente in fase di studio.
 
 Prima di usare i comandi contenuti in questo repository consigliamo di
-familiarizzarsi con l'uso di [pandoc](https://pandoc.org). 
+familiarizzarsi con l'uso di [pandoc](https://pandoc.org).
 
 ## Maggiori informazioni
 
-Questi script eseguono una [conversione del formato di un documento](http://guida-docs-italia.readthedocs.io/it/latest/index/scrivere-un-documento.html#migrazione-su-docs-italia-di-documentazione-esistente) in maniera automatica. 
+Questi script eseguono una [conversione del formato di un
+documento](http://guida-docs-italia.readthedocs.io/it/latest/index/scrivere-un-documento.html#migrazione-su-docs-italia-di-documentazione-esistente)
+in maniera automatica.
 
 Tutti gli script si basano sul _fork italiano_ di [`pandoc`](https://pandoc.org),
 che verrà scaricato localmente durante l'installazione. 
@@ -39,15 +45,14 @@ L'installazione locale di questo repository comprende:
 - [`pandoc-to-sphinx`](doc/comandi/pandoc-to-sphinx.md) per
   dividere un documento RST in più pagine da pubblicare su Docs Italia;
 - [`pandoc-font-to-style`](doc/comandi/pandoc-font-to-style.md) per
-  tenere conto della font nella conversione (e convertire correttamente i blocchi di codice, per esempio);
+  tenere conto della font nella conversione (e convertire
+  correttamente i blocchi di codice, per esempio);
 - [`converti`](doc/comandi/converti.md), un'alternativa a `pandoc`
   consigliabile per gli utenti più esperti, che applica automaticamente le
   [buone pratiche di traduzione con pandoc](doc/buone-pratiche.md)
 
-
 I comandi hanno nomi e documentazione in inglese qualora ne sia
 immaginabile l'uso al di fuori del contesto italiano.
-
 
 ## Installazione
 
@@ -80,11 +85,10 @@ contenuti in una cartella che sia sul vostro
 
 [DA COMPLETARE]
 
-
 ## Come contribuire allo sviluppo dei comandi
 
-Qualsiasi contributo o suggerimento è benvenuto e può
-essere proposto tramite le [issues](https://github.com/italia/pandoc-docs2rst/issues).
+Qualsiasi contributo o suggerimento è benvenuto e può essere proposto
+tramite le [issues](https://github.com/italia/pandoc-docs2rst/issues).
 
 ---
 
