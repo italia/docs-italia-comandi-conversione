@@ -14,7 +14,8 @@ per la conversione da un formato all'altro.
 Pandoc può convertire fra diversi formati di _markup_ e formati binari
 incluso diversi dialetti di [Markdown], [HTML], [LaTeX] e [Word
 docx]. Per la lista completa dei formati di ingresso ed uscita, si
-vedano le opzioni `--from` e `--to` [più avanti][Opzioni generali].
+vedano le opzioni `--from` e `--to` [nel manuale (in
+inglese)][http://pandoc.org/MANUAL.html#general-options].
 
 Pandoc ha una struttura modulare: è composto da un'insieme di lettori
 che interpretano un documento scritto in un formato e ne estraggono
