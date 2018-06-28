@@ -1,6 +1,3 @@
-% Guida all'uso di Pandoc
-% Francesco Occhipinti, Pablo Persico, Alberto Torin, ...
-% Giugno 2018
 
 Sinossi
 =======
