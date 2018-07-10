@@ -3,8 +3,8 @@
 
 Il manuale originale di pandoc è
 [qui](https://github.com/jgm/pandoc/blob/master/MANUAL.txt) ed una
-traduzione parziale in italiano è in questo repo nella cartella
-`doc/comandi/pandoc.md`.
+traduzione parziale in italiano è in questa cartella col titolo
+`MANUALE.txt`.
 
 Si tratta di passare in rassegna parti del manuale di pandoc che
 sembrano interessanti per gli utenti italiani ed aggiungerli alla
