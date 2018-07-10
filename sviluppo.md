@@ -1,4 +1,12 @@
 
+#### Questo progetto duplica Pandoc
+
+Questo progetto contiene una copia dell'eseguibile `pandoc`, così che
+gli utenti di Docs Italia che installano questo progetto si ritrovino
+anche la giusta versione di pandoc installata, sia essa un fork o
+no. Il codice è molto breve quindi se upstream dovesse cambiare
+basterebbe poco ad aggiornare la nostra copia.
+
 #### Formato Sphinx e formato Docs Italia
 
 Docs Italia è costruito estendendo rST e Sphinx e la logica di
