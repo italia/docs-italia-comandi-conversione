@@ -1,7 +1,7 @@
 
 # `pandoc-to-sphinx`
 
-This is a [_pandoc source_](../pandoc-sinks-and-sources.md) producing
+This is a [_pandoc sink_](../pandoc-sinks-and-sources.md) producing
 a set of files ready to be published on ReadTheDocs
 
 #### Splitting level logic
