@@ -1,4 +1,17 @@
 
+#### Formato Sphinx e formato Docs Italia
+
+Docs Italia è costruito estendendo rST e Sphinx e la logica di
+conversione segue questo criterio. Nel corso dello sviluppo e dei test
+d'uso abbiamo sviluppato diversi comandi e potremmo definire le loro
+responsabilità come segue:
+
+- formato rST, definito da docutils, prodotto con `pandoc`
+- formato Sphinx, definito da sphinx, prodotto con `pandoc-to-sphinx`
+- formato Docs Italia, definito da tema e convenzioni, prodotto con `converti`
+
+Quindi ciò che è specifico di Docs Italia dovrebbe andare in `converti`
+
 #### Doctests
 
 `converti` contiene doctests che possono essere eseguiti così:
