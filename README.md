@@ -42,7 +42,7 @@ sviluppatori del Team Digitale.
 
 L'installazione locale di questo repository comprende:
 
-- [`pandoc`](https://pandoc.org), il principale comando di conversione;
+- [`pandoc`](doc/comandi/pandoc.md), il principale comando di conversione;
 - [`pandoc-to-sphinx`](doc/comandi/pandoc-to-sphinx.md) per
   dividere un documento RST in più pagine da pubblicare su Docs Italia;
 - [`pandoc-font-to-style`](doc/comandi/pandoc-font-to-style.md) per
