@@ -86,9 +86,12 @@ contenuti in una cartella che sia sul vostro
 ## Come contribuire allo sviluppo dei comandi
 
 Qualsiasi contributo o suggerimento è benvenuto e può essere proposto
-tramite le [issues](https://github.com/italia/pandoc-docs2rst/issues).
+tramite le
+[issues](https://github.com/italia/pandoc-docs2rst/issues). Chi è
+interessato a contribuire al codice può dare un'occhiata alle [note di
+sviluppo](sviluppo.md).
 
----
+                                 ---
 
 ## Software License
 

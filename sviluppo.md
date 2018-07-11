@@ -1,4 +1,14 @@
 
+## Il codice
+
+Il codice di ciascun comando è contenuto in `src`. In genere si tratta
+di comandi _self-contained_, pronti per essere estratti e distribuiti
+singolarmente. Abbiamo deciso di mantenerli tutti in uno stesso
+repository per semplificarne la gestione e l'installazione da parte
+dei nostri utenti.
+
+## Altre note
+
 #### Questo progetto duplica Pandoc
 
 Questo progetto contiene una copia dell'eseguibile `pandoc`, così che
@@ -6,6 +16,9 @@ gli utenti di Docs Italia che installano questo progetto si ritrovino
 anche la giusta versione di pandoc installata, sia essa un fork o
 no. Il codice è molto breve quindi se upstream dovesse cambiare
 basterebbe poco ad aggiornare la nostra copia.
+
+Per avere più informazioni sulla gestione del nostro fork vedi [le
+note sul fork](doc/fork-italiano.md).
 
 #### Formato Sphinx e formato Docs Italia
 
