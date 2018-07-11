@@ -1,8 +1,8 @@
 
 # pandoc
 
-`pandoc <https://pandoc.org/>`__ è un programma da linea di comando
-che permette di convertire documenti in formato DOCX e ODT verso
+[pandoc](https://pandoc.org) è un programma da riga di comando che
+permette di convertire documenti in formato `.docx` e `.odt` verso
 diversi [formati di
 markup](https://it.wikipedia.org/wiki/Linguaggio_di_markup>), incluso
 il formato `.rst`.
@@ -25,7 +25,7 @@ lanciandolo così:
 Ci sono una serie di opzioni ed accorgimenti che è consigliabile
 adottare quando si converte un documento tramite pandoc: li abbiamo
 raccolti in questa pagina sulle [buone pratiche di
-conversione](../buone-pratiche.md).
+conversione](../buone-pratiche.md#opzioni).
 
 #### Comunità e documentazione
 
