@@ -9,6 +9,27 @@ pandoc 2.2 con l'aggiunta dei seguenti branch:
 
 Commit e138e75c399bfe8b7e0ee49449ff4343907205a7
 
+#### Strategia di gestione del fork
+
+Idealmente ci piacerebbe fare a meno di usare un nostro fork. In
+pratica per servire meglio i nostri utenti ha senso essere autonomi
+dalle decisioni del resto della comunità pandoc, mentre restiamo in
+comunicazione con essa per ottenere una qualità migliore del software
+nel lungo periodo.
+
+È capitato di adottare alcune funzionalità in anteprima nel nostro
+fork mentre il processo di revisione ed approvazione faceva il suo
+corso, così che dopo alcuni mesi abbiamo potuto smettere di applicare
+determinate patch al nostro fork ed abbiamo potuto fare affidamento
+direttamente alla versione upstream.
+
+##### Convergenza tramite i filtri
+
+Un'altro processo che abbiamo seguito è stato quello di risolvere
+alcuni problemi immediatamente tramite i filtri, anche per testarne
+l'impatto sull'usabilità. Una volta che gli utenti si sono dimostrati
+soddisfatti abbiamo fatto confluire la logica upstream
+
 ##### Versione del fork
 
 È utile assegnare un nome di versione originale al nostro fork per

@@ -24,6 +24,9 @@ contengono spazi vanno circondati da apici così:
 
       $ converti "un documento con spazi nel nome.ext"
 
+Il comando fornisce diverse [opzioni, documentate
+qui](converti-opzioni.md).
+
 #### Compatibilità
 
 Questi script richiedono un sistema operativo compatibile con Posix,
@@ -43,8 +46,11 @@ nelle [buone pratiche](../buone-pratiche.md).
 
 Esistono anche altri modi di semplificare processi basati su pandoc,
 come [panzer](https://github.com/msprev/panzer) e gli altri tool
-descritti [nella sezione _workflow_ del wiki di pandoc](
-https://github.com/jgm/pandoc/wiki/Pandoc-Extras#workflow)
+descritti nella sezione
+[workflow](https://github.com/jgm/pandoc/wiki/Pandoc-Extras#workflow)
+e nella sezione [wrappers and
+interfaces](https://github.com/jgm/pandoc/wiki/Pandoc-wrappers-and-interfaces)
+del wiki di pandoc
 
 ### Contenuti della cartella risultante
 
