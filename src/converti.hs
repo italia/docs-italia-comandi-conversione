@@ -126,7 +126,7 @@ writeOpts o = makeOpts (wrap <> ["--standalone"]) writeRSTFilters
   where wrap = if (celleComplesseOption o) then ["--wrap none"] else []
 
 parseOpts :: Options -> Text
-parseOpts o = makeOpts ["--extract-media .", "-f docx+styles"] (parseOpenXMLFilters (preservaCitazioniOption o))
+parseOpts o = makeOpts ["--extract-media .", "-f docx+styles"] (parseOpenXMLFilters (not $ preservaCitazioniOption o))
 
 -- for openXML parsing
 parseOpenXMLFilters q = [ "filtro-didascalia",
