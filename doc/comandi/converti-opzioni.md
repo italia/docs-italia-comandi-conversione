@@ -50,7 +50,7 @@ Se state sviluppando un servizio basato su `converti`, un'altra
 possibilità é quella di indicare le opzioni in un file JSON. Per
 esempio così:
 
-bash```
+```bash
 $ cat opzioni.json
 {
   dividi-sezioni: true
