@@ -43,7 +43,7 @@ selezionare queste opzioni usando la checkbox corrispondente
 nell'interfaccia web del convertitore.
 
 Se state usando `converti` da riga di comando, queste opzioni possono
-essere indicate lanciando `converti documento.odt --dividi-sezioni`,
+essere indicate lanciando `converti --dividi-sezioni documento.odt`,
 per esempio.
 
 Se state sviluppando un servizio basato su `converti`, un'altra
