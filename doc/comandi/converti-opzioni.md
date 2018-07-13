@@ -53,7 +53,7 @@ esempio così:
 ```bash
 $ cat opzioni.json
 {
-  dividi-sezioni: true
+  dividi-sezioni: true,
   celle-complesse: true
 }
 $ converti documento.odt --opzioni-json opzioni.json
