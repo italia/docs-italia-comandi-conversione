@@ -24,6 +24,9 @@ contengono spazi vanno circondati da apici così:
 
       $ converti "un documento con spazi nel nome.ext"
 
+Il comando fornisce diverse [opzioni, documentate
+qui](converti-opzioni.md).
+
 #### Compatibilità
 
 Questi script richiedono un sistema operativo compatibile con Posix,
