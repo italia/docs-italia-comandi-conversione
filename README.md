@@ -48,9 +48,9 @@ L'installazione locale di questo repository comprende:
 - [`pandoc-font-to-style`](doc/comandi/pandoc-font-to-style.md) per
   tenere conto della font nella conversione (e convertire
   correttamente i blocchi di codice, per esempio);
-- [`converti`](doc/comandi/converti.md), un'alternativa a `pandoc`
-  consigliabile per gli utenti più esperti, che applica automaticamente le
-  [buone pratiche di traduzione con pandoc](doc/buone-pratiche.md)
+- [`converti`](doc/comandi/converti.md), un'alternativa a `pandoc` che
+  applica automaticamente le [buone pratiche di traduzione con
+  pandoc](doc/buone-pratiche.md)
 
 I comandi hanno nomi e documentazione in inglese qualora ne sia
 immaginabile l'uso al di fuori del contesto italiano.
