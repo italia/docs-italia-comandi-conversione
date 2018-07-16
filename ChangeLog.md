@@ -4,6 +4,10 @@ Leggi `sviluppo.md` per info sulla gestione del change log
 
 ## versione da assegnare -- data di rilascio da definire
 
+* ...
+
+## 0.3 -- Luglio 16
+
 * `converti` fornisce nuove opzioni ed il comportamento di default è
   diverso. Per ottenere lo stesso risultato di prima vanno ora usate
   le opzioni --dividi-sezioni, --collegamento-normativa,
