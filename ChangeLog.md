@@ -8,6 +8,8 @@ Leggi `sviluppo.md` per info sulla gestione del change log
   diverso. Per ottenere lo stesso risultato di prima vanno ora usate
   le opzioni --dividi-sezioni, --collegamento-normativa,
   --celle-complesse. Il comportamento di default è ora più robusto
+* Gli eseguibili non erano portabili, vedi issue #35. Questa versione
+  usa un flag in `stack.yml` che risolve il problema
 
 ## 0.2.2 -- Giugno 25
 

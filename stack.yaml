@@ -28,15 +28,19 @@ resolver: lts-10.10
 # Dependency packages to be pulled from upstream that are not in the resolver
 # (e.g., acme-missiles-0.3)
 
+# vedi https://stackoverflow.com/questions/35491660/can-i-automatically-embed-pandocs-default-templates-in-my-application e https://github.com/italia/docs-italia-comandi-conversione/issues/35#issuecomment-401947775
+
 extra-deps:
 - archive: https://github.com/italia/pandoc/archive/1327c564cccf5dfa387a2956443990d9854c85cd.zip
 - pandoc-types-1.17.4.2
+- file-embed-0.0.10
+
+flags:
+ pandoc:
+  embed_data_files: true
 
 packages:
 - .
-
-# Override default flag values for local packages and extra-deps
-# flags: {}
 
 # Extra package databases containing global packages
 # extra-package-dbs: []
