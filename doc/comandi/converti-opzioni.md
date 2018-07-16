@@ -4,22 +4,26 @@
 Elenchiamo subito le opzioni. Dopo l'elenco trovate una spiegazione
 sul come usarle
 
-### `collegamento-normativa`
+### `collegamento-normattiva`
 
-Quando attivate questa opzione, `converti` prova a trasformare tutti i
-riferimenti a leggi in collegamenti ipertestuali a Normattiva. Lo
-svantaggio è che il processo potrebbe introdurre errori di sintassi
-rST
+Con questa opzione `converti` trasforma tutti i riferimenti a leggi e
+normative in collegamenti ipertestuali al [sito di
+Normattiva](http://www.normattiva.it/). Lo svantaggio è che il
+processo può introdurre errori di sintassi rST
 
 ### `celle-complesse`
 
-Se il vostro documento include celle di tabelle con molto testo ed una
-formattazione specifica, questo potrebbe causare errori di sintassi
-rST. Questo è dovuto al fatto che il contenuto di una cella viene
-portato a capo. Per evitare questo problema, `converti` evita di
-spezzare le righe quando selezionate l'opzione `celle-complesse`. Così
-facendo potete ottenere un documento senza errori di sintassi, ma con
-righe molto lunghe
+Questa opzione agisce sul contenuto delle celle delle tabelle. Come
+opzione predefinita, un contenuto di una cella troppo lungo viene
+mandato a capo, creando spesso degli errori nella sintassi RST.
+
+Attivando l'opzione `celle-complesse`, il processo di conversione
+evita di mandare a capo il contenuto delle celle mantenendolo tutto
+sulla stessa riga.
+
+In questo modo, è possibile evitare gli errori di sintassi, ma in
+compenso le righe del testo e delle tabelle possono diventare molto
+lunghe, quindi difficili per la navigazione.
 
 ### `preserva-citazioni`
 
@@ -43,12 +47,11 @@ selezionare queste opzioni usando la checkbox corrispondente
 nell'interfaccia web del convertitore.
 
 Se state usando `converti` da riga di comando, queste opzioni possono
-essere indicate lanciando `converti --dividi-sezioni documento.odt`,
+essere applicate lanciando `converti --dividi-sezioni documento.odt`,
 per esempio.
 
-Se state sviluppando un servizio basato su `converti`, un'altra
-possibilità é quella di indicare le opzioni in un file JSON. Per
-esempio così:
+Se invece state sviluppando un servizio basato su converti, potete
+indicare le opzioni in un file JSON in questo modo:
 
 ```bash
 $ cat opzioni.json

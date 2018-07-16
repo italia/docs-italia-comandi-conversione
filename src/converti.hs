@@ -24,7 +24,7 @@ import qualified Data.ByteString.Lazy as B
 
 data UserOptions = UserOptions {
   documentoCommandOption :: Maybe String,
-  collegamentoNormativaCommandOption :: Maybe Bool,
+  collegamentoNormattivaCommandOption :: Maybe Bool,
   celleComplesseCommandOption :: Maybe Bool,
   preservaCitazioniCommandOption :: Maybe Bool,
   dividiSezioniCommandOption :: Maybe Bool
@@ -33,14 +33,14 @@ data UserOptions = UserOptions {
 instance FromJSON UserOptions where
   parseJSON = withObject "UserOptions" $ \ v -> UserOptions
     <$> v .:? "documento"
-    <*> v .:? "collegamento-normativa"
+    <*> v .:? "collegamento-normattiva"
     <*> v .:? "celle-complesse"
     <*> v .:? "preserva-citazioni"
     <*> v .:? "dividi-sezioni"
 
 data Options = Options {
   documentoOption :: String,
-  collegamentoNormativaOption :: Bool,
+  collegamentoNormattivaOption :: Bool,
   celleComplesseOption :: Bool,
   preservaCitazioniOption :: Bool,
   dividiSezioniOption :: Bool
@@ -49,7 +49,7 @@ data Options = Options {
 applyDefaults :: UserOptions -> Options
 applyDefaults o = Options {
   documentoOption = def "documento.docx" $ documentoCommandOption o,
-  collegamentoNormativaOption = def False $ collegamentoNormativaCommandOption o,
+  collegamentoNormattivaOption = def False $ collegamentoNormattivaCommandOption o,
   celleComplesseOption = def False $ celleComplesseCommandOption o,
   preservaCitazioniOption = def False $ preservaCitazioniCommandOption o,
   dividiSezioniOption = def False $ dividiSezioniCommandOption o
@@ -67,7 +67,7 @@ jsonOptions = JsonOptions <$> option str (
 commandLineOptions :: Parser CommandLineOptions
 commandLineOptions = DirectOptions <$> (UserOptions
           <$> optional (argument str (metavar "documento.ext"))
-          <*> optional (switch (long "collegamento-normativa"
+          <*> optional (switch (long "collegamento-normattiva"
                                <> help "sostituisce i riferimenti alle leggi con links a Normattiva"
                                <> showDefault))
           <*> optional (switch (long "celle-complesse"
@@ -100,7 +100,7 @@ converti opts = do
   void $ withCurrentDirectory (fileToFolder d) (do
     mys (toRST opts (pack d))
     maybeLinker <- findExecutable (unpack linker)
-    when (collegamentoNormativaOption opts && isJust maybeLinker) (do
+    when (collegamentoNormattivaOption opts && isJust maybeLinker) (do
       renameFile (unpack doc) (unpack docUnlinked)
       void $ mys (linkNormattiva opts)
       )
