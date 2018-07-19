@@ -8,6 +8,9 @@ Leggi `sviluppo.md` per info sulla gestione del change log
 
 ## versione da assegnare -- data di rilascio da definire
 
+nuova interfaccia:
+ * aggiunta l'opzione `--level` a `pandoc-to-sphinx`
+
 correzione errori:
  * adesso `converti` funziona coi formati accettati da pandoc , risolvendo #42
 

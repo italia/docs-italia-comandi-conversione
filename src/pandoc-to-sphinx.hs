@@ -22,20 +22,30 @@ import Control.Monad (when)
 import System.FilePath.Posix (dropExtension, addExtension)
 import Turtle (shell)
 
-main = T.getContents >>=
-       split . fromRight (Pandoc nullMeta []) . readJSON def >>
-       shell "test -e media && cp -r media index" empty
+data Options = Options {
+  levelOption :: Maybe Int
+  }
 
-split :: Pandoc -> IO ()
-split (Pandoc meta blocks) = do
+options :: Parser Options
+options = Options <$> optional (option auto (long "level"))
+
+main = do
+    opts <- execParser (info options fullDesc)
+    (T.getContents >>=
+     split opts . fromRight (Pandoc nullMeta []) . readJSON def >>
+     shell "test -e media && cp -r media index" empty)
+
+split :: Options -> Pandoc -> IO ()
+split opts (Pandoc meta blocks) = do
   exists <- doesPathExist "index"  
   when exists (removeDirectoryRecursive "index")
   createDirectory "index"  
   paths <- sequence (map sectionPath sections)
   sequence $ map writeBlocks' $ zip paths sections
   writeBlocks "index.rst" (makeIndex paths intro)
-    where (intro, sections) = breakSections blocks
+    where (intro, sections) = breakSections level blocks
           writeBlocks' (path, blocks) = writeBlocks path blocks
+          level = defaultMaybe (autoLevel blocks) (levelOption opts)
 
 makeIndex :: [String] -> [[Block]] -> [Block]
 makeIndex paths intro = join intro <> [tocTree 2 paths]
@@ -72,10 +82,10 @@ untilM p f i = do
   r <- p i
   if r then pure i else untilM p f (f i)
 
-breakSections body = (intro, sections)
+breakSections level body = (intro, sections)
   where intro = take 1 broken
         sections = drop 1 broken
-        broken = multiBreak (isHeading (level body)) body
+        broken = multiBreak (isHeading level) body
 
 headDefault :: a -> [a] -> a
 headDefault d = defaultMaybe d . maybeHead
@@ -90,8 +100,8 @@ maybeHead l
   | otherwise = Just (head l)
 
 -- | if we have only one header 2 break by header 3 and so on
-level :: [Block] -> Int
-level body = headDefault 1 $ filter hasSeveral [1, 2, 3, 4, 5]
+autoLevel :: [Block] -> Int
+autoLevel body = headDefault 1 $ filter hasSeveral [1, 2, 3, 4, 5]
   where hasSeveral l = (length $ query (collectHeading l) body) > 1
         collectHeading l i = if isHeading l i then [i] else []
 
@@ -148,3 +158,4 @@ simplify i = [i]
 isHeading :: Int -> Block -> Bool
 isHeading a (Header b _ _) = a == b
 isHeading _ _ = False
+
