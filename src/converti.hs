@@ -109,9 +109,9 @@ converti opts = do
   where d = documentoOption opts
         mys c = shell c empty -- for readability
 
-toRST o i = spaced [pandoc,
-                    inputNameText i,
-                    parseOpts o, writeOpts o,
+toRST o d = spaced [pandoc,
+                    inputNameText d,
+                    parseOpts o d, writeOpts o,
                     "-o", doc]
 
 makeSphinx = spaced [pandoc, doc, "-t json",
@@ -125,8 +125,13 @@ writeOpts :: Options -> Text
 writeOpts o = makeOpts (wrap <> ["--standalone"]) writeRSTFilters
   where wrap = if (celleComplesseOption o) then ["--wrap none"] else []
 
-parseOpts :: Options -> Text
-parseOpts o = makeOpts ["--extract-media .", "-f docx+styles"] (parseOpenXMLFilters (not $ preservaCitazioniOption o))
+parseOpts :: Options -> Text -> Text
+parseOpts o d = makeOpts opts filters
+  where opts = ["--extract-media ."] <> formatOptions
+        filters = (parseOpenXMLFilters (not $ preservaCitazioniOption o))
+        formatOptions = case takeExtension (unpack d) of
+          ".docx" -> ["-f docx+styles"]
+          _ ->  []
 
 -- for openXML parsing
 parseOpenXMLFilters q = [ "filtro-didascalia",
