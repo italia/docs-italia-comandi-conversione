@@ -6,6 +6,11 @@ Leggi `sviluppo.md` per info sulla gestione del change log
 
 * ...
 
+## versione da assegnare -- data di rilascio da definire
+
+Modifiche interne:
+* aggiornato il fork alla versione 2.2.2.174 ed altre dipendenze
+
 ## 0.3 -- Luglio 16
 
 * `converti` fornisce nuove opzioni ed il comportamento di default è
