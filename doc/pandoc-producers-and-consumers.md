@@ -62,4 +62,6 @@ producers could have names ending in `...-to-pandoc`.
 - The `pandoc-to-sphinx` command in this repo is a consumer
 - [pandoc-placetable](https://github.com/mb21/pandoc-placetable#usage)
   can be used as a producer from CSV
- 
+
+This idea has been presented [here in
+pandoc-discuss](https://groups.google.com/forum/#!topic/pandoc-discuss/kc5wJsNe0L0)
