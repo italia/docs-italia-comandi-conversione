@@ -6,16 +6,16 @@ Leggi `sviluppo.md` per info sulla gestione del change log
 
 * ...
 
-## versione da assegnare -- data di rilascio da definire
+## 0.4 -- Luglio 24
 
 nuova interfaccia:
- * aggiunta l'opzione `--level` a `pandoc-to-sphinx`
+ * aggiunta l'opzione `--level` a `pandoc-to-sphinx`, chiude #13
 
 correzione errori:
  * adesso `converti` funziona coi formati accettati da pandoc , risolvendo #42
 
 modifiche interne:
- * aggiornato il fork alla versione 2.2.2.174 ed altre dipendenze
+ * aggiornato il fork alla versione 2.2.2.174 ed altre dipendenze, chiude #48
 
 ## 0.3 -- Luglio 16
 
