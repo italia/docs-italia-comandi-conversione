@@ -16,6 +16,9 @@ Leggi `sviluppo.md` per info sulla gestione del change log
 
 ## 0.4 -- Luglio 24
 
+ho distribuito questa release in maniera erronea. Le funzionalità
+seguenti si possono trovare in 0.4.2.1
+
 nuova interfaccia:
  * aggiunta l'opzione `--level` a `pandoc-to-sphinx`, chiude #13
 

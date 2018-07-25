@@ -62,7 +62,7 @@ Ubuntu. Il processo di rilascio per adesso consiste semplicemente in:
 - `stack build`
 - `git tag v...`
 - `git push --tags`
-- `nautilus .stack-work/install/x86_64-linux/lts-10.10/8.2.2/bin/`
+- `nautilus .stack-work/install/x86_64-linux/<resolver>/<compiler>/bin/`
 - creo un archivio `.zip` per ogni comando, un archivio che li
   contenga tutti è troppo voluminoso per Github
 - nuova release su Github, selezionando il tag e caricando l'archivio
