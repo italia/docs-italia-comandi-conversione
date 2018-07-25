@@ -76,4 +76,21 @@ Ubuntu. Il processo di rilascio per adesso consiste semplicemente in:
   nel campo _assets_ e non nella descrizione (dove è scritto "Attach
   binaries", non sopra)
 
+#### La label `esempi di formattazione`
 
+Ho assegnato [questa
+label](https://github.com/italia/docs-italia-comandi-conversione/labels/esempi%20di%20formattazione)
+alle issues che si possono riscontrare su documenti contenuti nel
+nostro repo con gli [esempi di
+formattazione](https://github.com/italia/docs-italia-esempiformattazione-docs).
+
+In generale gli errori negli esempi di formattazione hanno per noi una
+priorità maggiore di errori trovati in documenti formattati in maniera
+arbitraria. Se un tipo di formattazione non è convertito
+correttamente, significa che non possiamo fornire all'utente un modo
+di esprimere quella specifica semantica in quello specifico formato.
+
+Alcuni formati o alcune formattazioni potrebbero essere poco
+frequenti, ma è probabile che un giorno vorremo investire alcuni
+sprint nel migliorare la conversione da alcuni formati specifici: in
+quel caso è una buona idea partire dagli esempi di formattazione.
