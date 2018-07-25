@@ -23,7 +23,6 @@ import qualified Data.ByteString.Lazy as B
 -- throughout this file we work in Text and convert to other types when needed
 
 data UserOptions = UserOptions {
-  documentoCommandOption :: Maybe String,
   collegamentoNormattivaCommandOption :: Maybe Bool,
   celleComplesseCommandOption :: Maybe Bool,
   preservaCitazioniCommandOption :: Maybe Bool,
@@ -32,14 +31,12 @@ data UserOptions = UserOptions {
 
 instance FromJSON UserOptions where
   parseJSON = withObject "UserOptions" $ \ v -> UserOptions
-    <$> v .:? "documento"
-    <*> v .:? "collegamento-normattiva"
+    <$> v .:? "collegamento-normattiva"
     <*> v .:? "celle-complesse"
     <*> v .:? "preserva-citazioni"
     <*> v .:? "dividi-sezioni"
 
 data Options = Options {
-  documentoOption :: String,
   collegamentoNormattivaOption :: Bool,
   celleComplesseOption :: Bool,
   preservaCitazioniOption :: Bool,
@@ -48,15 +45,14 @@ data Options = Options {
 
 applyDefaults :: UserOptions -> Options
 applyDefaults o = Options {
-  documentoOption = def "documento.docx" $ documentoCommandOption o,
   collegamentoNormattivaOption = def False $ collegamentoNormattivaCommandOption o,
   celleComplesseOption = def False $ celleComplesseCommandOption o,
   preservaCitazioniOption = def False $ preservaCitazioniCommandOption o,
   dividiSezioniOption = def False $ dividiSezioniCommandOption o
   }
 
-data CommandLineOptions = DirectOptions UserOptions |
-                          JsonOptions String |
+data CommandLineOptions = DirectOptions String UserOptions |
+                          JsonOptions String String |
                           Version
 
 options = commandLineOptions <|> jsonOptions <|> version
@@ -67,48 +63,50 @@ version = flag' Version (
   <> help "mostra la versione dei comandi di conversione")
 
 jsonOptions :: Parser CommandLineOptions
-jsonOptions = JsonOptions <$> option str (
-  long "opzioni-json"
-  <> help "permette di indicare un file JSON da cui leggere le opzioni di converti")
-
+jsonOptions = JsonOptions
+                     <$> argument str (metavar "documento.ext")
+                     <*> option str (long "opzioni-json"
+                                     <> help "permette di indicare un file JSON da cui leggere le opzioni di converti")
+                     
 commandLineOptions :: Parser CommandLineOptions
-commandLineOptions = DirectOptions <$> (UserOptions
-          <$> optional (argument str (metavar "documento.ext"))
-          <*> optional (switch (long "collegamento-normattiva"
-                               <> help "sostituisce i riferimenti alle leggi con links a Normattiva"
-                               <> showDefault))
-          <*> optional (switch (long "celle-complesse"
-                               <> help "evita errori nelle celle di tabella complesse scrivendo righe molto lunghe"
-                               <> showDefault))
-          <*> optional (switch (long "preserva-citazioni"
-                               <> help "evita di rimuovere le citazioni"
-                               <> showDefault))
-          <*> optional (switch (long "dividi-sezioni"
-                               <> help "produce un file .rst per ogni capitolo"
-                               <> showDefault)))
+commandLineOptions = DirectOptions
+                     <$> argument str (metavar "documento.ext")
+                     <*> (UserOptions
+                          <$> optional (switch (long "collegamento-normattiva"
+                                                <> help "sostituisce i riferimenti alle leggi con links a Normattiva"
+                                                <> showDefault))
+                          <*> optional (switch (long "celle-complesse"
+                                                <> help "evita errori nelle celle di tabella complesse scrivendo righe molto lunghe"
+                                                <> showDefault))
+                          <*> optional (switch (long "preserva-citazioni"
+                                                <> help "evita di rimuovere le citazioni"
+                                                <> showDefault))
+                          <*> optional (switch (long "dividi-sezioni"
+                                                <> help "produce un file .rst per ogni capitolo"
+                                                <> showDefault)))
 
 main = do
   opts <- execParser (info options fullDesc)
-  userOptions <- case opts of
-    DirectOptions o -> pure o
-    JsonOptions json -> do
+  (document, userOptions) <- case opts of
+    DirectOptions d o -> pure (d, o)
+    JsonOptions d json -> do
       b <- B.readFile json
       case (decode b) of
         Nothing -> die "Errore nel parsing del file JSON con le opzioni"
-        Just o -> return o
+        Just o -> pure (d, o)
     Version -> do
       putStrLn "comandi di conversione 0.4.1.2"
       exitSuccess
-  converti (applyDefaults userOptions)
+  converti document (applyDefaults userOptions)
 
 -- this function is a good high-level description of the logic
-converti :: Options -> IO ()
-converti opts = do
+converti :: String -> Options -> IO ()
+converti document opts = do
   checkExecutables
-  createDirectoryIfMissing True (fileToFolder d)
-  copyFile d (inToCopy d)
-  void $ withCurrentDirectory (fileToFolder d) (do
-    mys (toRST opts (pack d))
+  createDirectoryIfMissing True (fileToFolder document)
+  copyFile document (inToCopy document)
+  void $ withCurrentDirectory (fileToFolder document) (do
+    mys (toRST opts (pack document))
     maybeLinker <- findExecutable (unpack linker)
     when (collegamentoNormattivaOption opts && isJust maybeLinker) (do
       renameFile (unpack doc) (unpack docUnlinked)
@@ -116,8 +114,7 @@ converti opts = do
       )
     when (dividiSezioniOption opts) (void $ mys makeSphinx)
     )
-  where d = documentoOption opts
-        mys c = shell c empty -- for readability
+  where mys c = shell c empty -- for readability
 
 toRST o d = spaced [pandoc,
                     inputNameText d,
