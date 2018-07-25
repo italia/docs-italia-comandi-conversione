@@ -6,6 +6,10 @@ Leggi `sviluppo.md` per info sulla gestione del change log
 
 * ...
 
+## 0.4.1.2 -- Luglio 25
+
+* correggo un errore in `--version`
+
 ## 0.4.1 -- Luglio 25
 
 * aggiunta opzione `--version` a `converti`

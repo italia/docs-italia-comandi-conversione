@@ -62,7 +62,7 @@ data CommandLineOptions = DirectOptions UserOptions |
 options = commandLineOptions <|> jsonOptions <|> version
 
 version :: Parser CommandLineOptions
-version = JsonOptions <$> option str (
+version = flag' Version (
   long "version"
   <> help "mostra la versione dei comandi di conversione")
 
@@ -97,7 +97,7 @@ main = do
         Nothing -> die "Errore nel parsing del file JSON con le opzioni"
         Just o -> return o
     Version -> do
-      print "comandi di conversione 0.4.1"
+      putStrLn "comandi di conversione 0.4.1.2"
       exitSuccess
   converti (applyDefaults userOptions)
 
