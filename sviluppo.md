@@ -58,12 +58,13 @@ Ubuntu. Il processo di rilascio per adesso consiste semplicemente in:
 
 - scelta di un nuovo numero di versione in base alla package versioning policy di haskell ed in base alle note accumulate nel change log
 - aggiornamento del change log e del file `.cabal` col nuovo numero di versione
+- aggiornamento del testo di `--version` nel codice di ogni comando
 - `stack build`
 - `git tag v...`
 - `git push --tags`
 - `nautilus .stack-work/install/x86_64-linux/lts-10.10/8.2.2/bin/`
-- creo un archivio `comandi.zip` con Nautilus selezionando i binari e
-  cliccando su "compress" dal menu contestuale.
+- creo un archivio `.zip` per ogni comando, un archivio che li
+  contenga tutti è troppo voluminoso per Github
 - nuova release su Github, selezionando il tag e caricando l'archivio
 
 

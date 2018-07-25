@@ -6,6 +6,10 @@ Leggi `sviluppo.md` per info sulla gestione del change log
 
 * ...
 
+## 0.4.1 -- Luglio 25
+
+* aggiunta opzione `--version` a `converti`
+
 ## 0.4 -- Luglio 24
 
 nuova interfaccia:

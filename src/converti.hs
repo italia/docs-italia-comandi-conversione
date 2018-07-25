@@ -55,9 +55,16 @@ applyDefaults o = Options {
   dividiSezioniOption = def False $ dividiSezioniCommandOption o
   }
 
-data CommandLineOptions = DirectOptions UserOptions | JsonOptions String
+data CommandLineOptions = DirectOptions UserOptions |
+                          JsonOptions String |
+                          Version
 
-options = commandLineOptions <|> jsonOptions
+options = commandLineOptions <|> jsonOptions <|> version
+
+version :: Parser CommandLineOptions
+version = JsonOptions <$> option str (
+  long "version"
+  <> help "mostra la versione dei comandi di conversione")
 
 jsonOptions :: Parser CommandLineOptions
 jsonOptions = JsonOptions <$> option str (
@@ -87,8 +94,11 @@ main = do
     JsonOptions json -> do
       b <- B.readFile json
       case (decode b) of
-        Nothing -> die "Error parsing the JSON option file"
+        Nothing -> die "Errore nel parsing del file JSON con le opzioni"
         Just o -> return o
+    Version -> do
+      print "comandi di conversione 0.4.1"
+      exitSuccess
   converti (applyDefaults userOptions)
 
 -- this function is a good high-level description of the logic

@@ -47,6 +47,7 @@ con 174.
 - aggiorno `italia/master`, o partendo da jgm/master ed applicando i
   patch o facendo pull
 - aggiorno il numero di versione aggiungendo `174`, vedi sopra
+- aggiorno risultato dell'opzione `--version` di pandoc
 - eseguo i test di pandoc
 - `git push --force italia master`
 - aggiorno le dipendenze in `docs-italia-comandi-conversione`
