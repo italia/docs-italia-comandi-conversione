@@ -44,19 +44,25 @@ nelle dipendenze. se continueremo a mantenere questi doctest potremo
 [includerli nel file
 cabal](https://github.com/sol/doctest#cabal-integration)
 
-#### Gestione del changelog
+#### Gestione del changelog e formato dei commit
 
-Ogni volta che si modifica il codice, consiglio di aggiungere una nota
-sui cambiamenti effettuati nel change log. L'idea è tener traccia di
-cambiamenti che servano per le release notes e per scegliere un nuovo
-numero di versione
+Aggiorniamo il changelog prima di una nuova distribuzione. Per
+agevolare questo passaggio è utile:
+
+- nella prima riga dei commit fare riferimento all'issue
+  corrispondente, così gli utenti potranno trovare nel changelog il
+  numero di release dove la loro issue è risolta
+- nella prima riga del commit specificare se si tratta di una nuova
+  interfaccia o di un cambiamento di interfaccia (non
+  backwards-compatible)
 
 #### Distribuzione binaria
 
 Dalla versione 0.2.1.1 distribuiamo i binari dei comandi, per
 Ubuntu. Il processo di rilascio per adesso consiste semplicemente in:
 
-- scelta di un nuovo numero di versione in base alla package versioning policy di haskell ed in base alle note accumulate nel change log
+- aggiornamento del changelog sulla base di `git log <tag>..HEAD --oneline`
+- scelta di un nuovo numero di versione in base alla package versioning policy di haskell ed in base ai cambiamenti di interfaccia
 - aggiornamento del change log e del file `.cabal` col nuovo numero di versione
 - aggiornamento del testo di `--version` nel codice di ogni comando
 - `stack build`
@@ -65,6 +71,9 @@ Ubuntu. Il processo di rilascio per adesso consiste semplicemente in:
 - `nautilus .stack-work/install/x86_64-linux/<resolver>/<compiler>/bin/`
 - creo un archivio `.zip` per ogni comando, un archivio che li
   contenga tutti è troppo voluminoso per Github
-- nuova release su Github, selezionando il tag e caricando l'archivio
+- nuova release su Github, selezionando il tag e caricando gli archivi
+- le regole di ansible del convertitore web cercheranno gli archivi
+  nel campo _assets_ e non nella descrizione (dove è scritto "Attach
+  binaries", non sopra)
 
 

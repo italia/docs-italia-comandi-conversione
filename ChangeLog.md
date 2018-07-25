@@ -2,10 +2,6 @@
 
 Leggi `sviluppo.md` per info sulla gestione del change log
 
-## versione da assegnare -- data di rilascio da definire
-
-* ...
-
 ## 0.4.1.2 -- Luglio 25
 
 * correggo un errore in `--version`

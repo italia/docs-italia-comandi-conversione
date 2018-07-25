@@ -125,7 +125,7 @@ toRST o d = spaced [pandoc,
                     "-o", doc]
 
 makeSphinx = spaced [pandoc, doc, "-t json",
-                     "|", "pandoc-to-sphinx"]
+                     "|", "pandoc-to-sphinx", "--level", "1"]
 
 linkNormattiva o = spaced [pandoc, docUnlinked, "-t html",
                            "|", linker, "|",
