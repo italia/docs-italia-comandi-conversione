@@ -89,10 +89,10 @@ untilM p f i = do
   r <- p i
   if r then pure i else untilM p f (f i)
 
-breakSections level body = (intro, sections)
-  where intro = take 1 broken
-        sections = drop 1 broken
-        broken = multiBreak (isHeading level) body
+breakSections level body =
+  break startsWithHeading $ multiBreak (isHeading level) body
+  where startsWithHeading [] = False
+        startsWithHeading (h:t) = isHeading level h
 
 headDefault :: a -> [a] -> a
 headDefault d = defaultMaybe d . maybeHead
