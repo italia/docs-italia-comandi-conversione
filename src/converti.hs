@@ -8,7 +8,8 @@ import Turtle hiding (splitDirectories,
                       options,
                       option,
                       switch,
-                      die
+                      die,
+                      header
                      )
 import Data.Text (pack, unpack, intercalate)
 import System.FilePath.Posix
@@ -17,6 +18,7 @@ import Data.Maybe (isJust)
 import Options.Applicative
 import Data.Aeson hiding (Options)
 import System.Exit
+import qualified Text.PrettyPrint.ANSI.Leijen as P
 
 import qualified Data.ByteString.Lazy as B
 
@@ -85,8 +87,19 @@ commandLineOptions = DirectOptions
                                                 <> help "produce un file .rst per ogni capitolo"
                                                 <> showDefault)))
 
+convertiProgDesc =  "converte il documento in formato rST." P.<$>
+                    "Nel caso più semplice, potete convertire un documento lanciando:" P.<$>
+                    "" P.<$>
+                    "    $ converti documento.ext" P.<$>
+                    "" P.<$>
+                    "La documentazione più dettagliata si trova al seguente indirizzo:" P.<$>
+                    "https://github.com/italia/docs-italia-comandi-conversione/blob/master/doc/comandi/converti.md"
+
 main = do
-  opts <- execParser (info options fullDesc)
+  opts <- execParser (info (options <**> helper) (
+                          fullDesc <>
+                          progDescDoc (Just convertiProgDesc) <>
+                          header "converti - comando semplificato per la conversione di formato"))
   (document, userOptions) <- case opts of
     DirectOptions d o -> pure (d, o)
     JsonOptions d json -> do
