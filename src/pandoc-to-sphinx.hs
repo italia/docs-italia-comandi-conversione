@@ -143,7 +143,7 @@ tocTree depth paths = RawBlock "rst" $
 
 -- | get the path corresponding to some heading
 -- >>> getPath (Header 2 ("", [], []) [Str "my section accénted"])
--- "index/my-section-accénted.rst"
+-- "index/my-section-acc\233nted.rst"
 getPath :: Block -> String
 getPath (Header _  _ i) = "index/" <> adapt (foldl j "" $ walk simplify' i) <> ".rst"
   where j s1 (Str s2) = s1 <> s2
