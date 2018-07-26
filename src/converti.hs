@@ -207,6 +207,7 @@ inToOut :: FilePath -> FilePath
 inToOut = addExtension "document"
 -- | useful for creating commands
 --
+-- >>> :set -XOverloadedStrings
 -- >>> spaced ["command", "--option", "argument"]
 -- "command --option argument"
 spaced :: [Text] -> Text
