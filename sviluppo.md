@@ -38,6 +38,7 @@ Quindi ciò che è specifico di Docs Italia dovrebbe andare in `converti`
 `converti` contiene doctests che possono essere eseguiti così:
 
     $ stack exec doctest src/converti.hs
+    $ stack exec doctest src/pandoc-to-sphinx.hs
 
 potrebbe essere necessario installare `doctest` precedentemente, non è
 nelle dipendenze. se continueremo a mantenere questi doctest potremo
