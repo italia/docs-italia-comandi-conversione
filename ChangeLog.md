@@ -2,6 +2,12 @@
 
 Leggi `sviluppo.md` per info sulla gestione del change log
 
+## 0.5 -- Luglio 26
+
+cambio interfaccia:
+* il documento è un argomento necessario di `converti`, chiude #59
+* `converti` divide in base al primo livello, chiude #26
+
 ## 0.4.1.2 -- Luglio 25
 
 * correggo un errore in `--version`

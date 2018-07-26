@@ -66,6 +66,7 @@ Ubuntu. Il processo di rilascio per adesso consiste semplicemente in:
 - aggiornamento del change log e del file `.cabal` col nuovo numero di versione
 - aggiornamento del testo di `--version` nel codice di ogni comando
 - `stack build`
+- `git commit -am "new release"`
 - `git tag v...`
 - `git push --tags`
 - `nautilus .stack-work/install/x86_64-linux/<resolver>/<compiler>/bin/`
