@@ -108,7 +108,7 @@ main = do
         Nothing -> die "Errore nel parsing del file JSON con le opzioni"
         Just o -> pure (d, o)
     Version -> do
-      putStrLn "comandi di conversione 0.5"
+      putStrLn "comandi conversione 0.5"
       exitSuccess
   converti document (applyDefaults userOptions)
 

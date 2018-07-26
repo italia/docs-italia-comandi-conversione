@@ -21,22 +21,29 @@ import Control.Applicative ((<$>))
 import Control.Monad (when)
 import System.FilePath.Posix (dropExtension, addExtension)
 import Turtle (shell)
+import System.Exit
 
-data Options = Options {
+data Options = Version | Options {
   levelOption :: Maybe Int
   }
 
 options :: Parser Options
-options = Options <$> optional (option auto (long "level"))
+options = flag' Version (long "version") <|>
+          (Options <$> optional (option auto (long "level")))
 
 main = do
     opts <- execParser (info options fullDesc)
-    (T.getContents >>=
-     split opts . fromRight (Pandoc nullMeta []) . readJSON def >>
-     shell "test -e media && cp -r media index" empty)
+    case opts of
+      Version -> do
+        putStrLn "comandi conversione 0.5"
+        exitSuccess
+      Options maybeLevel -> (
+        T.getContents >>=
+        split maybeLevel . fromRight (Pandoc nullMeta []) . readJSON def >>
+        shell "test -e media && cp -r media index" empty)
 
-split :: Options -> Pandoc -> IO ()
-split opts (Pandoc meta blocks) = do
+split :: Maybe Int -> Pandoc -> IO ()
+split maybeLevel (Pandoc meta blocks) = do
   exists <- doesPathExist "index"  
   when exists (removeDirectoryRecursive "index")
   createDirectory "index"  
@@ -45,7 +52,7 @@ split opts (Pandoc meta blocks) = do
   writeBlocks "index.rst" (makeIndex paths intro)
     where (intro, sections) = breakSections level blocks
           writeBlocks' (path, blocks) = writeBlocks path blocks
-          level = defaultMaybe (autoLevel blocks) (levelOption opts)
+          level = defaultMaybe (autoLevel blocks) maybeLevel
 
 makeIndex :: [String] -> [[Block]] -> [Block]
 makeIndex paths intro = join intro <> [tocTree 2 paths]

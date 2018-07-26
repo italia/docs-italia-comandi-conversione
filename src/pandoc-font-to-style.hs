@@ -67,23 +67,25 @@ asCode [] = pure ()
 asCode fonts = interact' (writeJSON def . walkFonts)
   where walkFonts = walk (inlines fonts) . walk (blocks fonts)
 
-data Options = Options {
+data Options = Version | Options {
   listOption :: Bool,
   asCodeOption :: [String]
   }
 
 docFontToStyle :: Options -> IO ()
+docFontToStyle Version = putStrLn "comandi conversione 0.5"
 docFontToStyle (Options userList userAsCode) = do
   when (userList) list
   unless (null userAsCode) (asCode userAsCode)
 
 options :: Parser Options
-options = Options
-          <$> flag False True (long "list"
-                               <> help "list fonts in the document"
-                               <> showDefault)
-          <*> many (strOption (long "as-code"
-                         <> help "font to format as code"
-                         <> metavar "\"FONT NAME\""))
+options = flag' Version (long "version") <|>
+          (Options
+           <$> flag False True (long "list"
+                                <> help "list fonts in the document"
+                                <> showDefault)
+           <*> many (strOption (long "as-code"
+                                <> help "font to format as code"
+                                <> metavar "\"FONT NAME\"")))
 
 main = execParser (info options fullDesc) >>= docFontToStyle
