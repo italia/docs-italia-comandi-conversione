@@ -62,16 +62,19 @@ Dalla versione 0.2.1.1 distribuiamo i binari dei comandi, per
 Ubuntu. Il processo di rilascio per adesso consiste semplicemente in:
 
 - aggiornamento del changelog sulla base di `git log <tag>..HEAD --oneline`
-- scelta di un nuovo numero di versione in base alla package versioning policy di haskell ed in base ai cambiamenti di interfaccia
+- scelta di un nuovo numero di versione in base alla package
+  versioning policy di haskell ed in base ai cambiamenti di
+  interfaccia
 - aggiornamento del change log e del file `.cabal` col nuovo numero di versione
 - aggiornamento del testo di `--version` nel codice di ogni comando
 - `stack build`
 - `git commit -am "new release"`
 - `git tag v...`
 - `git push --tags`
-- `nautilus .stack-work/install/x86_64-linux/<resolver>/<compiler>/bin/`
-- creo un archivio `.zip` per ogni comando, un archivio che li
-  contenga tutti è troppo voluminoso per Github
+- `cd .stack-work/install/x86_64-linux/<resolver>/<compiler>/bin/`
+- ls | while read command; do zip ${command}.zip $command; done
+- un archivio che contenga tutti i comandi sarebbe più comodo ma
+  troppo voluminoso per Github
 - nuova release su Github, selezionando il tag e caricando gli archivi
 - le regole di ansible del convertitore web cercheranno gli archivi
   nel campo _assets_ e non nella descrizione (dove è scritto "Attach
