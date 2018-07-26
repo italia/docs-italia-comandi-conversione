@@ -177,13 +177,13 @@ addFilter f = "--filter " <> f
 -- | convert the input file to the output folder
 --
 -- >>> fileToFolder "somedir/otherdir/file.ext"
--- "risultato-conversione/otherdir/file"
+-- "risultati-conversione/otherdir/file"
 -- >>> fileToFolder "file.ext"
--- "risultato-conversione/file"
+-- "risultati-conversione/file"
 fileToFolder i = case maybeParent of
   Nothing -> joinPath [res, baseName]
   Just parent -> joinPath [res, parent, baseName]
-  where res = "risultato-conversione"
+  where res = "risultati-conversione"
         baseName = takeBaseName i
         maybeParent = maybeHead $ drop 1 $ reverse $ splitDirectories i
 
@@ -196,7 +196,7 @@ inputName i = addExtension "originale" (takeExtension i)
 -- | move the input file to the destination folder
 --
 -- >>> inToCopy "somedir/otherdir/file.ext"
--- "risultato-conversione/otherdir/file/originale.ext"
+-- "risultati-conversione/otherdir/file/originale.ext"
 inToCopy :: FilePath -> FilePath
 inToCopy i = joinPath [fileToFolder i, inputName i]
 -- | convert the input file to the output file

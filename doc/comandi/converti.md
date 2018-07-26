@@ -13,10 +13,10 @@ Potete convertire un file chiamato `documento.ext` lanciando:
 
     $ converti documento.ext
 
-Il comando creerà una cartella `risultato-conversione/documento`
+Il comando creerà una cartella `risultati-conversione/documento`
 contenente i files `.rst` pronti da pubblicare:
 
-    $ ls risultato-conversione/documento/
+    $ ls risultati-conversione/documento/
     documento.rst  index  index.rst  originale.docx
 
 Tenete a mente che quando si usa la riga di comando i nomi che
@@ -105,10 +105,10 @@ $ find carta-docente/ | while read documento; do converti $documento; done
 
 Il comando eseguirà `converti` su ciascun file. `converti` tiene conto
 della cartella genitore nel salvare il file in
-`risultato-conversione`, quindi i files `.rst` risultano raggruppati:
+`risultati-conversione`, quindi i files `.rst` risultano raggruppati:
 
 ```bash
-$ ls risultato-conversione/carta-docente/
+$ ls risultati-conversione/carta-docente/
 linee-guida-fatturazione/
 linee-guida-esercenti/
 domande-frequenti-esercenti/
