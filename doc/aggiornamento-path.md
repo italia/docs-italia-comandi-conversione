@@ -27,6 +27,29 @@ questo non fosse abbastanza chiaro o non funzionasse sul vostro
 sistema, potete aprire una issue per permetterci di approfondire il
 caso
 
+#### Verificare che il `$PATH` sia corretto
+
+Se pensate di aver aggiornato il path correttamente, potete verificare
+eseguendo:
+
+    $ echo $PATH
+
+Vi verrà mostrato un'elenco di cartelle. Tutti i comandi contenuti in
+quelle cartelle sono utilizzabili direttamente dalla riga di comando
+
+#### Usare un comando senza modificare il `$PATH`
+
+Un comando si può usare anche senza modificare il path usando il suo
+percorso assoluto, per esempio se avete un comando in posizione
+`/home/francesco/comando` potete eseguirlo così:
+
+    $ /home/francesco/comando # argomenti ed opzioni
+
+Oppure:
+
+    $ cd /home/francesco
+    $ ./comando # argomenti ed opzioni
+
 #### Introduzione alle variabili da riga di comando
 
 Le variabili non sono niente di magico o complicato. Si tratta di un
