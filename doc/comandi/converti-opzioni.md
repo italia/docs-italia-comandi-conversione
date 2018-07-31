@@ -2,14 +2,14 @@
 ## Opzioni di `converti`
 
 Elenchiamo subito le opzioni. Dopo l'elenco trovate una spiegazione
-sul come usarle
+sul come usarle.
 
 ### `collegamento-normattiva`
 
 Con questa opzione `converti` trasforma tutti i riferimenti a leggi e
 normative in collegamenti ipertestuali al [sito di
 Normattiva](http://www.normattiva.it/). Lo svantaggio è che il
-processo può introdurre errori di sintassi rST
+processo può introdurre errori di sintassi RST.
 
 ### `celle-complesse`
 
@@ -31,14 +31,14 @@ Molti utenti di Microsoft Word indentano il testo quando vogliono
 formattare una citazione. Di conseguenza, pandoc interpreta il testo
 indentato come citazione. Spesso non è quello che vogliamo, quindi
 `converti` rimuove tutte le citazioni dai documenti. Se volete
-preservare le citazioni potete farlo usando questa opzione
+preservare le citazioni potete farlo usando questa opzione.
 
 ### `dividi-sezioni`
 
 Selezionando questa opzione chiedete a `converti` di spezzare il file
 `.rst` convertito in base ai capitoli, che verranno raccolti in una
 cartella `index/` e elencati in un file `index.rst`. Questo processo
-potrebbe causare errori di sintassi rST
+potrebbe causare errori di sintassi RST.
 
 ## Come usare le opzioni
 
@@ -62,4 +62,4 @@ $ cat opzioni.json
 $ converti documento.odt --opzioni-json opzioni.json
 ```
 
-Il valore di default di tutte le opzioni è `false`
+Il valore di default di tutte le opzioni è `false`.
