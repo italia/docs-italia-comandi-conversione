@@ -10,7 +10,7 @@ import qualified Data.Text.IO as T
 import Data.Text(Text(..))
 import Data.Monoid ((<>))
 import Options.Applicative
-import Control.Monad (sequence_, join)
+import Control.Monad (sequence_, join, void)
 import Data.Either (fromRight)
 import Data.List (intercalate)
 import System.Directory (createDirectory,
@@ -22,14 +22,17 @@ import Control.Monad (when)
 import System.FilePath.Posix (dropExtension, addExtension)
 import Turtle (shell)
 import System.Exit
+import Data.Maybe (isNothing)
 
 data Options = Version | Options {
-  levelOption :: Maybe Int
+  levelOption :: Maybe Int,
+  secondLevelOption :: Maybe Int
   }
 
 options :: Parser Options
 options = flag' Version (long "version") <|>
-          (Options <$> optional (option auto (long "level")))
+          (Options <$> optional (option auto (long "level")) 
+                   <*> optional (option auto (long "second-level")))
 
 main = do
     opts <- execParser (info options fullDesc)
@@ -37,33 +40,51 @@ main = do
       Version -> do
         putStrLn "comandi conversione 0.5"
         exitSuccess
-      Options maybeLevel -> (
-        T.getContents >>=
-        split maybeLevel . fromRight (Pandoc nullMeta []) . readJSON def >>
-        shell "test -e media && cp -r media index" empty)
+      (Options maybeLevel1 maybeLevel2) -> do
+        checkLevels maybeLevel1 maybeLevel2
+        T.getContents >>= splitWrite maybeLevel1 maybeLevel2 . parseDoc
+        shell "test -e media && cp -r media index" empty
+  where checkLevels (Just l1) (Just l2) =
+          when (l1 >= l2) (die "the second level is not higher than the first")
+        checkLevels _ _ = pure ()
+        parseDoc = fromRight (Pandoc nullMeta []) . readJSON def
 
-split :: Maybe Int -> Pandoc -> IO ()
-split maybeLevel (Pandoc meta blocks) = do
-  exists <- doesPathExist "index"  
-  when exists (removeDirectoryRecursive "index")
-  createDirectory "index"  
-  paths <- sequence (map sectionPath sections)
-  sequence $ map writeBlocks' $ zip paths sections
-  writeBlocks "index.rst" (makeIndex paths intro)
+data ToWrite = ToWrite { fileNameToWrite :: String, blocksToWrite :: [Block] }
+
+splitWrite :: Maybe Int -> Maybe Int -> Pandoc -> IO [()]
+splitWrite l1 l2 (Pandoc meta blocks)= do
+  (root:firstSplit) <- split False l1 (ToWrite "index.rst" blocks)
+  writeRoot root
+  if isNothing l2
+    then (mapM writeBlocks firstSplit)
+    else (do
+         secondSplit <- mapM (split True l2) firstSplit
+         mapM createEmpty (map (dropExtension . fileNameToWrite) firstSplit)
+         mapM writeBlocks (join secondSplit))
+  where writeRoot (ToWrite _ []) = pure ()
+        writeRoot (ToWrite path blocks) = writeDoc path (Pandoc meta blocks)
+
+split :: Bool -> Maybe Int -> ToWrite -> IO [ToWrite]
+split nested maybeLevel (ToWrite parent blocks) = do
+  paths <- sequence (map (sectionPath prefix) sections)
+  pure (ToWrite parent (makeToc paths intro):(zipWith ToWrite paths sections))
     where (intro, sections) = breakSections level blocks
-          writeBlocks' (path, blocks) = writeBlocks path blocks
           level = defaultMaybe (autoLevel blocks) maybeLevel
+          makeToc :: [String] -> [Block] -> [Block]
+          makeToc paths intro = intro <> [tocTree 2 paths]
+          prefix = if nested then (dropExtension parent) <> "/" else ""
+          sectionPath :: String -> [Block] -> IO String
+          sectionPath p [] = pure (p <> "empty-section")
+          sectionPath p s = availablePath $ (p <> getPath (head s))
 
-makeIndex :: [String] -> [[Block]] -> [Block]
-makeIndex paths intro = join intro <> [tocTree 2 paths]
+createEmpty dir = do
+  exists <- doesPathExist dir
+  when exists (removeDirectoryRecursive dir)
+  createDirectory dir
 
-sectionPath :: [Block] -> IO String
-sectionPath [] = pure "empty-section"
-sectionPath s = availablePath $ getPath $ head s
-
-writeBlocks :: FilePath -> [Block] -> IO ()
-writeBlocks [] _ = pure ()
-writeBlocks path blocks = writeDoc path (Pandoc nullMeta blocks)
+writeBlocks :: ToWrite -> IO ()
+writeBlocks (ToWrite _ []) = pure ()
+writeBlocks (ToWrite path blocks) = writeDoc path (Pandoc nullMeta blocks)
 
 writeDoc :: FilePath -> Pandoc -> IO ()
 writeDoc path doc = do
@@ -89,10 +110,9 @@ untilM p f i = do
   r <- p i
   if r then pure i else untilM p f (f i)
 
-breakSections level body =
-  break startsWithHeading $ multiBreak (isHeading level) body
-  where startsWithHeading [] = False
-        startsWithHeading (h:t) = isHeading level h
+-- everything before the first header is the intro
+breakSections :: Int -> [Block] -> ([Block], [[Block]])
+breakSections level blocks = breakIntro (isHeading level) blocks
 
 headDefault :: a -> [a] -> a
 headDefault d = defaultMaybe d . maybeHead
@@ -112,6 +132,19 @@ autoLevel body = headDefault 1 $ filter hasSeveral [1, 2, 3, 4, 5]
   where hasSeveral l = (length $ query (collectHeading l) body) > 1
         collectHeading l i = if isHeading l i then [i] else []
 
+-- | see breakSections to get the purpose
+-- >>> breakIntro (==' ') "bla bla bla b"
+-- ("bla",[" bla"," bla"," b"])
+-- >>> breakIntro (=='*') "bla bla bla b"
+-- ("bla bla bla b",[])
+breakIntro :: (a -> Bool) -> [a] -> ([a], [[a]])
+breakIntro p l
+  | p (head h) = ([], multiBroken)
+  | otherwise  = (h, t)
+  where multiBroken = multiBreak p l
+        h = head multiBroken
+        t = tail multiBroken
+
 -- | Multiple version of break, like a `split` that keeps the delimiter
 -- >>> multiBreak (==' ') "bla bla bla b"
 -- ["bla"," bla"," bla"," b"]
@@ -129,11 +162,12 @@ multiBreak p l@(h:t)
    :maxdepth: 2
    :caption: Indice dei contenuti
 
-   index/che-cos-e-docs-italia.rst
-   index/starter-kit.rst
+   che-cos-e-docs-italia.rst
+   starter-kit.rst
 
 -}
 tocTree :: Int -> [String] -> Block
+tocTree _ [] = Null
 tocTree depth paths = RawBlock "rst" $
            ".. toctree::" <>
            "\n  :maxdepth: " <> show depth <>
@@ -143,9 +177,9 @@ tocTree depth paths = RawBlock "rst" $
 
 -- | get the path corresponding to some heading
 -- >>> getPath (Header 2 ("", [], []) [Str "section", Space, Str "accénted"])
--- "index/section-acc\233nted.rst"
+-- "section-acc\233nted.rst"
 getPath :: Block -> String
-getPath (Header _  _ i) = "index/" <> adapt (foldl j "" $ walk simplify' i) <> ".rst"
+getPath (Header _  _ i) = adapt (foldl j "" $ walk simplify' i) <> ".rst"
   where j s1 (Str s2) = s1 <> s2
         j s1 _ = s1 <> "unknown-inline"
         adapt = map replace . limit -- adapt for the file system

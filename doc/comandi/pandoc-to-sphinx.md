@@ -9,16 +9,27 @@ published on ReadTheDocs
 
 Given a `document.ext` file in a format supported by pandoc, running:
 
-    $ pandoc document.ext -t json | pandoc-to-sphinx --level 2
+    $ pandoc document.ext -s -t json | pandoc-to-sphinx --level 2
 
-Will produce an `index.rst` file pointing to other `.rst` files in an
-`index/` directory, depending on the selected level
+Will produce an `index.rst` file pointing to other `.rst` files
+depending on the selected level.
+
+The `-s` option causes metadata like title and subtitle to be included
+in the JSON.
 
 #### `level` option
 
 This is used to choose how to divide the files. For example, with
 `--level 2`, every second level section will be turned into an `.rst`
-file in the `index/` folder
+file.
+
+#### `second-level` option
+
+Using this option, second level indexes are generated. The second
+level cannot be smaller than the first one. A valid example of
+invokation is:
+
+    $ pandoc doc.ext -s -t json | pandoc-to-sphinx --level 2 --second-level 3
 
 #### Splitting level logic
 

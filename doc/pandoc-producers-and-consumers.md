@@ -19,6 +19,9 @@ document by running:
     `gogle.com` points nowhere
     the certificate for `githb.com` cannot be verified
 
+Add the `-s` option when invoking pandoc in order to include metadata
+like title and subtitle in the JSON.
+
 #### Producer example
 
 Let's consider a command that reads the contents of a directory and
