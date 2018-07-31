@@ -37,19 +37,6 @@ eseguendo:
 Vi verrà mostrato un'elenco di cartelle. Tutti i comandi contenuti in
 quelle cartelle sono utilizzabili direttamente dalla riga di comando
 
-#### Usare un comando senza modificare il `$PATH`
-
-Un comando si può usare anche senza modificare il path usando il suo
-percorso assoluto, per esempio se avete un comando in posizione
-`/home/francesco/comando` potete eseguirlo così:
-
-    $ /home/francesco/comando # argomenti ed opzioni
-
-Oppure:
-
-    $ cd /home/francesco
-    $ ./comando # argomenti ed opzioni
-
 #### Introduzione alle variabili da riga di comando
 
 Le variabili non sono niente di magico o complicato. Si tratta di un
