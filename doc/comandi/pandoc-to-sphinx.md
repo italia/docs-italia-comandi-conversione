@@ -11,8 +11,8 @@ Given a `document.ext` file in a format supported by pandoc, running:
 
     $ pandoc document.ext -t json | pandoc-to-sphinx --level 2
 
-Will produce an `index.rst` file pointing to other `.rst` files in an
-`index/` directory, depending on the selected level
+Will produce an `index.rst` file pointing to other `.rst` files
+depending on the selected level
 
 #### `level` option
 
