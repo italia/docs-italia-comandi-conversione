@@ -81,7 +81,9 @@ Github](https://github.com/italia/docs-italia-comandi-conversione/releases).
 Per installarli scegliete la versione più recente, scaricare
 l'archivio `comandi-conversione.zip` e salvate gli eseguibili lì
 contenuti in una cartella che sia sul vostro
-[`$PATH`](doc/aggiornamento-path.md#cos%C3%A8-il-path)
+[`$PATH`](doc/aggiornamento-path.md#cos%C3%A8-il-path).
+
+Alcuni utenti hanno usato i comandi con successo anche su Ubuntu 14.04
 
 ## Come contribuire allo sviluppo dei comandi
 
