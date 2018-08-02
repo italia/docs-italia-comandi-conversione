@@ -75,7 +75,7 @@ split nested maybeLevel (ToWrite parent blocks) = do
     where (intro, sections) = breakSections level blocks
           level = defaultMaybe (autoLevel blocks) maybeLevel
           makeToc :: [String] -> [Block] -> [Block]
-          makeToc paths intro = intro <> [tocTree 2 paths]
+          makeToc paths intro = intro <> [tocTree 3 paths]
           prefix = if nested then (dropExtension parent) <> "/" else ""
           sectionPath :: String -> [Block] -> IO String
           sectionPath p [] = pure (p <> "empty-section")
@@ -179,28 +179,47 @@ tocTree depth paths = RawBlock "rst" $
            "\n" <>
            concatMap (\x -> "\n  "<>x) paths
 
--- | get the path corresponding to some heading
+-- | get the path corresponding to some heading. use the identifier
+-- if available, otherwise build a slug from the content
+--
 -- >>> getPath (Header 2 ("", [], []) [Str "section", Space, Str "accénted"])
 -- "section-acc\233nted.rst"
 getPath :: Block -> String
-getPath (Header _  _ i) = adapt (foldl j "" $ walk simplify' i) <> ".rst"
-  where j s1 (Str s2) = s1 <> s2
-        j s1 _ = s1 <> "unknown-inline"
-        adapt = map replace . limit -- adapt for the file system
+getPath (Header _ ("", _, _) i) = adapt (inlinesToText i) <> ".rst"
+  where adapt = map replace . limit -- adapt for the file system
         limit = take 50 -- file names cannot be too long
         replace '/' = '-'
         replace o = o
-
-simplify' = concatMap simplify
-
-simplify :: Inline -> [Inline]
-simplify (Emph i) = i
-simplify (Strong i) = i
-simplify (Link _ i _) = i
-simplify Space = [Str "-"]
-simplify i = [i]
+getPath (Header _ (iden, _, _)  _) = iden <> ".rst"
 
 isHeading :: Int -> Block -> Bool
-isHeading a (Header b _ _) = a == b
+isHeading a (Header b _ i) = a == b && (inlinesToText i /= "")
 isHeading _ _ = False
 
+-- | convert inlines to text. headers could contain any kind of
+-- inlines, some of which cannot be converted to text for a file
+-- name. we keep the text and drop the rest, removing also some inline
+-- containers. other inline containers will be simply dropped.
+--
+-- >>> inlinesToText [Str "section", Space, Str "accénted"]
+-- "section-acc\233nted"
+-- >>> inlinesToText [Str "line", LineBreak, Str "break"]
+-- "line-break"
+-- >>> inlinesToText [Str "inline", Emph [Str "styled", Str "why?"]]
+-- "inline-styled-why?"
+-- >>> inlinesToText [Str "other", Note [], Str "inline"]
+-- "other-inline"
+inlinesToText :: [Inline] -> String
+inlinesToText = intercalate "-" . concatMap inlineToText
+  where inlineToText (Str s) = [s]
+        inlineToText (Math _ s) = [s]
+        inlineToText (Code _ s) = [s]
+        inlineToText (Emph i) = c i
+        inlineToText (Strong i) = c i
+        inlineToText (Link _ i _) = c i
+        inlineToText (Quoted _ i) = c i
+        inlineToText (Cite _ i) = c i
+        inlineToText (Image _ i _) = c i
+        inlineToText (Span _ i) = c i
+        inlineToText _ = []
+        c = concatMap inlineToText
