@@ -125,7 +125,7 @@ converti document opts = do
       renameFile (unpack doc) (unpack docUnlinked)
       void $ mys (linkNormattiva opts)
       )
-    when (dividiSezioniOption opts) (void $ mys makeSphinx)
+    when (dividiSezioniOption opts) (void $ mys (makeSphinx opts))
     )
   where mys c = shell c empty -- for readability
 
@@ -134,10 +134,11 @@ toRST o d = spaced [pandoc,
                     parseOpts o d, writeOpts o,
                     "-o", doc]
 
-makeSphinx = spaced [pandoc, doc, "-t json",
+makeSphinx o = spaced ([pandoc, doc, "-t json",
                      "|", "pandoc-to-sphinx",
                      "--level", "1",
-                     "--second-level", "2"]
+                     "--second-level", "2"] <> wrap)
+  where wrap = if (celleComplesseOption o) then ["--wrap-none"] else []
 
 linkNormattiva o = spaced [pandoc, docUnlinked, "-t html",
                            "|", linker, "|",

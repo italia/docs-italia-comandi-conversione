@@ -25,13 +25,15 @@ import System.Exit
 import Data.Maybe (isNothing)
 
 data Options = Version | Options {
+  wrapNoneOption :: Bool,
   levelOption :: Maybe Int,
   secondLevelOption :: Maybe Int
   }
 
 options :: Parser Options
 options = flag' Version (long "version") <|>
-          (Options <$> optional (option auto (long "level")) 
+          (Options <$> flag False True (long "wrap-none")
+                   <*> optional (option auto (long "level"))
                    <*> optional (option auto (long "second-level")))
 
 main = do
@@ -40,9 +42,9 @@ main = do
       Version -> do
         putStrLn "comandi conversione 0.5"
         exitSuccess
-      (Options maybeLevel1 maybeLevel2) -> do
+      (Options wrapNone maybeLevel1 maybeLevel2) -> do
         checkLevels maybeLevel1 maybeLevel2
-        T.getContents >>= splitWrite maybeLevel1 maybeLevel2 . parseDoc
+        T.getContents >>= splitWrite wrapNone maybeLevel1 maybeLevel2 . parseDoc
         shell "test -e media && cp -r media index" empty
   where checkLevels (Just l1) (Just l2) =
           when (l1 >= l2) (die "the second level is not higher than the first")
@@ -51,18 +53,20 @@ main = do
 
 data ToWrite = ToWrite { fileNameToWrite :: String, blocksToWrite :: [Block] }
 
-splitWrite :: Maybe Int -> Maybe Int -> Pandoc -> IO [()]
-splitWrite l1 l2 (Pandoc meta blocks)= do
+splitWrite :: Bool -> Maybe Int -> Maybe Int -> Pandoc -> IO [()]
+splitWrite wrapNone l1 l2 (Pandoc meta blocks)= do
   (root:firstSplit) <- split False l1 (ToWrite "index.rst" blocks)
   writeRoot root
   if isNothing l2
-    then (mapM writeBlocks firstSplit)
+    then (mapM (writeBlocks opts) firstSplit)
     else (do
          secondSplit <- mapM (split True l2) firstSplit
          mapM createEmpty (map (dropExtension . fileNameToWrite) firstSplit)
-         mapM writeBlocks (join secondSplit))
+         mapM (writeBlocks opts) (join secondSplit))
   where writeRoot (ToWrite _ []) = pure ()
-        writeRoot (ToWrite path blocks) = writeDoc path (Pandoc meta blocks)
+        writeRoot (ToWrite path blocks) = writeDoc opts path (Pandoc meta blocks)
+        opts = if wrapNone then def { writerWrapText = WrapNone } else def
+
 
 split :: Bool -> Maybe Int -> ToWrite -> IO [ToWrite]
 split nested maybeLevel (ToWrite parent blocks) = do
@@ -82,13 +86,13 @@ createEmpty dir = do
   when exists (removeDirectoryRecursive dir)
   createDirectory dir
 
-writeBlocks :: ToWrite -> IO ()
-writeBlocks (ToWrite _ []) = pure ()
-writeBlocks (ToWrite path blocks) = writeDoc path (Pandoc nullMeta blocks)
+writeBlocks :: WriterOptions -> ToWrite -> IO ()
+writeBlocks opts (ToWrite _ []) = pure ()
+writeBlocks opts (ToWrite path blocks) = writeDoc opts path (Pandoc nullMeta blocks)
 
-writeDoc :: FilePath -> Pandoc -> IO ()
-writeDoc path doc = do
-  text <- runIOorExplode $ writeRST def { writerWrapText = WrapNone } doc
+writeDoc :: WriterOptions -> FilePath -> Pandoc -> IO ()
+writeDoc opts path doc = do
+  text <- runIOorExplode $ writeRST opts doc
   T.writeFile path text
 
 availablePath :: String -> IO String
