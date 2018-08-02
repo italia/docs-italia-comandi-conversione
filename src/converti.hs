@@ -119,25 +119,29 @@ converti document opts = do
   createDirectoryIfMissing True (fileToFolder document)
   copyFile document (inToCopy document)
   void $ withCurrentDirectory (fileToFolder document) (do
-    mys (toRST opts (pack document))
+    mys (toRST opts document')
     maybeLinker <- findExecutable (unpack linker)
     when (collegamentoNormattivaOption opts && isJust maybeLinker) (do
       renameFile (unpack doc) (unpack docUnlinked)
       void $ mys (linkNormattiva opts)
       )
-    when (dividiSezioniOption opts) (void $ mys (makeSphinx opts))
+    when (dividiSezioniOption opts) (void $ mys (makeSphinx opts document'))
     )
   where mys c = shell c empty -- for readability
+        document' = pack document
 
 toRST o d = spaced [pandoc,
                     inputNameText d,
                     parseOpts o d, writeOpts o,
                     "-o", doc]
 
-makeSphinx o = spaced ([pandoc, doc, "-t json",
-                     "|", "pandoc-to-sphinx",
-                     "--level", "1",
-                     "--second-level", "2"] <> wrap)
+makeSphinx o d = spaced ([pandoc,
+                          inputNameText d,
+                          parseOpts o d, writeOpts o,
+                          "-t json",
+                          "|", "pandoc-to-sphinx",
+                          "--level", "1",
+                          "--second-level", "2"] <> wrap)
   where wrap = if (celleComplesseOption o) then ["--wrap-none"] else []
 
 linkNormattiva o = spaced [pandoc, docUnlinked, "-t html",
