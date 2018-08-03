@@ -26,6 +26,7 @@ import qualified Data.ByteString.Lazy as B
 
 data UserOptions = UserOptions {
   collegamentoNormattivaCommandOption :: Maybe Bool,
+  livelloSingoloCommandOption :: Maybe Bool,
   celleComplesseCommandOption :: Maybe Bool,
   preservaCitazioniCommandOption :: Maybe Bool,
   dividiSezioniCommandOption :: Maybe Bool
@@ -34,12 +35,14 @@ data UserOptions = UserOptions {
 instance FromJSON UserOptions where
   parseJSON = withObject "UserOptions" $ \ v -> UserOptions
     <$> v .:? "collegamento-normattiva"
+    <*> v .:? "livello-singolo"
     <*> v .:? "celle-complesse"
     <*> v .:? "preserva-citazioni"
     <*> v .:? "dividi-sezioni"
 
 data Options = Options {
   collegamentoNormattivaOption :: Bool,
+  livelloSingoloOption :: Bool,
   celleComplesseOption :: Bool,
   preservaCitazioniOption :: Bool,
   dividiSezioniOption :: Bool
@@ -48,6 +51,7 @@ data Options = Options {
 applyDefaults :: UserOptions -> Options
 applyDefaults o = Options {
   collegamentoNormattivaOption = def False $ collegamentoNormattivaCommandOption o,
+  livelloSingoloOption = def False $ livelloSingoloCommandOption o,
   celleComplesseOption = def False $ celleComplesseCommandOption o,
   preservaCitazioniOption = def False $ preservaCitazioniCommandOption o,
   dividiSezioniOption = def False $ dividiSezioniCommandOption o
@@ -76,6 +80,9 @@ commandLineOptions = DirectOptions
                      <*> (UserOptions
                           <$> optional (switch (long "collegamento-normattiva"
                                                 <> help "sostituisce i riferimenti alle leggi con links a Normattiva"
+                                                <> showDefault))
+                          <*> optional (switch (long "livello-singolo"
+                                                <> help "produce una struttura di files divisi solo per sezioni di primo livello"
                                                 <> showDefault))
                           <*> optional (switch (long "celle-complesse"
                                                 <> help "evita errori nelle celle di tabella complesse scrivendo righe molto lunghe"
@@ -140,9 +147,13 @@ makeSphinx o d = spaced ([pandoc,
                           parseOpts o d, writeOpts o,
                           "-t json",
                           "|", "pandoc-to-sphinx",
-                          "--level", "1",
-                          "--second-level", "2"] <> wrap)
+                          "--level", "1"] <>
+                          secondLevel <>
+                          wrap)
   where wrap = if (celleComplesseOption o) then ["--wrap-none"] else []
+        secondLevel = if (livelloSingoloOption o)
+                      then []
+                      else ["--second-level", "2"]
 
 linkNormattiva o = spaced [pandoc, docUnlinked, "-t html",
                            "|", linker, "|",

@@ -4,6 +4,13 @@
 Elenchiamo subito le opzioni. Dopo l'elenco trovate una spiegazione
 sul come usarle.
 
+### `livello-singolo`
+
+Normalmente `converti` prova a dividere il file in base a sezioni di
+primo livello e sezioni di secondo livello. Settando questa opzione si
+ottiene una struttura di files divisa solo in base alle sezioni di
+primo livello
+
 ### `collegamento-normattiva`
 
 Con questa opzione `converti` trasforma tutti i riferimenti a leggi e
