@@ -1,4 +1,5 @@
 {-# LANGUAGE OverloadedStrings #-}
+{-# LANGUAGE QuasiQuotes #-}
 module Main where
 
 import Text.Pandoc
@@ -23,6 +24,7 @@ import System.FilePath.Posix (dropExtension, addExtension)
 import Turtle (shell)
 import System.Exit
 import Data.Maybe (isNothing)
+import Data.String.Here hiding (template)
 
 data Options = Version | Options {
   wrapNoneOption :: Bool,
@@ -65,7 +67,10 @@ splitWrite wrapNone l1 l2 (Pandoc meta blocks)= do
          mapM (writeBlocks opts) (join secondSplit))
   where writeRoot (ToWrite _ []) = pure ()
         writeRoot (ToWrite path blocks) = writeDoc opts path (Pandoc meta blocks)
-        opts = if wrapNone then def { writerWrapText = WrapNone } else def
+        opts = if wrapNone
+               then def { writerWrapText = WrapNone,
+                          writerTemplate = Just template }
+               else def { writerTemplate = Just template }
 
 
 split :: Bool -> Maybe Int -> ToWrite -> IO [ToWrite]
@@ -223,3 +228,61 @@ inlinesToText = intercalate "-" . concatMap inlineToText
         inlineToText (Span _ i) = c i
         inlineToText _ = []
         c = concatMap inlineToText
+
+-- the template has been added in order to show the subtitle, see
+-- https://github.com/jgm/pandoc/issues/4583 and
+-- https://github.com/italia/docs-italia-comandi-conversione/issues/71
+template = [here|
+$if(title)$
+$title$
+
+$endif$
+$if(subtitle)$
+.. highlights ::
+
+  $subtitle$
+
+$endif$
+$for(author)$
+:Author: $author$
+$endfor$
+$if(date)$
+:Date:   $date$
+$endif$
+$if(author)$
+
+$else$
+$if(date)$
+
+$endif$
+$endif$
+$if(rawtex)$
+.. role:: raw-latex(raw)
+   :format: latex
+..
+
+$endif$
+$for(include-before)$
+$include-before$
+
+$endfor$
+$if(toc)$
+.. contents::
+   :depth: $toc-depth$
+..
+
+$endif$
+$if(number-sections)$
+.. section-numbering::
+
+$endif$
+$for(header-includes)$
+$header-includes$
+
+$endfor$
+$body$
+$for(include-after)$
+
+$include-after$
+$endfor$
+|]

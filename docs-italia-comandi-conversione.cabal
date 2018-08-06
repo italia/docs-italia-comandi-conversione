@@ -49,7 +49,8 @@ executable pandoc-to-sphinx
                        pandoc == 2.2.2.174,
                        pandoc-types,
                        optparse-applicative,
-                       aeson
+                       aeson,
+                       here
   hs-source-dirs:      src
   default-language:    Haskell2010
   ghc-options: -threaded

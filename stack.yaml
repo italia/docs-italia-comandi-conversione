@@ -31,7 +31,7 @@ resolver: lts-12.0
 # vedi https://stackoverflow.com/questions/35491660/can-i-automatically-embed-pandocs-default-templates-in-my-application e https://github.com/italia/docs-italia-comandi-conversione/issues/35#issuecomment-401947775
 
 extra-deps:
-- archive: https://github.com/italia/pandoc/archive/80333781fd71f6bd8c358dbd28681cd6b6eaf44b.zip
+- archive: https://github.com/italia/pandoc/archive/e36a3a8933809440de97221c4acb30f35740c8f7.zip
 - file-embed-0.0.10
 - haddock-library-1.6.0
 - HsYAML-0.1.1.1

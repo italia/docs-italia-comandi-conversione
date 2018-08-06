@@ -44,7 +44,7 @@ con 174.
 
 ##### Aggiornamento del fork
 
-- aggiorno `italia/master`, o partendo da jgm/master ed applicando i
+- aggiorno `italia/master`, o partendo da jgm/master ed applicando le
   patch o facendo pull
 - aggiorno il numero di versione aggiungendo `174`, vedi sopra
 - aggiorno risultato dell'opzione `--version` di pandoc
