@@ -42,7 +42,7 @@ main = do
     opts <- execParser (info options fullDesc)
     case opts of
       Version -> do
-        putStrLn "comandi conversione 0.5"
+        putStrLn "comandi conversione 0.6"
         exitSuccess
       (Options wrapNone maybeLevel1 maybeLevel2) -> do
         checkLevels maybeLevel1 maybeLevel2

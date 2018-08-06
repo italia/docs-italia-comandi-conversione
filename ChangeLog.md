@@ -2,6 +2,37 @@
 
 Leggi `sviluppo.md` per info sulla gestione del change log
 
+
+## 0.6 -- Agosto 6
+
+cambio interfaccia:
+- le sezioni vengono sempre divise, closes #88
+- rinomino risultati-conversione, closes #51
+- divido usando due livelli di indici, closes #31
+
+Dunque l'opzione `--dividi-sezioni` non esiste più, il documento verrà
+sempre diviso. La cartella è rinominata quindi i risultati vanno
+cercati con il nuovo nome, sostituendo `o` con `i`. La divisione in
+due livelli non ha impatto su chi chiama il comando, è solo una
+differenza nel risultato
+
+nuova interfaccia:
+- aggiungo l'opzione `--livello-singolo`
+- aggiungo opzioni `--version`, closes #14
+
+L'opzione `--livello-singolo` è documentata insieme alle altre che
+riguardano anche il convertitore web
+
+correzione errori e nuove features:
+
+- scriviamo il sottotitolo in una direttiva `highlights`, closes #71
+- miglioro la logica per i nomi dei files, closes #87, closes #86
+- faccio il parse dal documento originale, closes #85
+- aggiungo opzione --wrap-none a pandoc-to-sphinx, closes #39
+- correggo la divisione in sezioni, closes #50
+- fornisco un testo di help dettagliato, closes #64
+- migliorie interne ai test, closes #65
+
 ## 0.5 -- Luglio 26
 
 cambio interfaccia:

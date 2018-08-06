@@ -73,7 +73,7 @@ data Options = Version | Options {
   }
 
 docFontToStyle :: Options -> IO ()
-docFontToStyle Version = putStrLn "comandi conversione 0.5"
+docFontToStyle Version = putStrLn "comandi conversione 0.6"
 docFontToStyle (Options userList userAsCode) = do
   when (userList) list
   unless (null userAsCode) (asCode userAsCode)
