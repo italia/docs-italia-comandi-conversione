@@ -5,7 +5,7 @@ Leggi `sviluppo.md` per info sulla gestione del change log
 
 ## 0.6 -- Agosto 6
 
-cambio interfaccia:
+#### cambio interfaccia:
 - le sezioni vengono sempre divise, closes #88
 - rinomino risultati-conversione, closes #51
 - divido usando due livelli di indici, closes #31
@@ -16,14 +16,14 @@ cercati con il nuovo nome, sostituendo `o` con `i`. La divisione in
 due livelli non ha impatto su chi chiama il comando, è solo una
 differenza nel risultato
 
-nuova interfaccia:
+#### nuova interfaccia:
 - aggiungo l'opzione `--livello-singolo`
 - aggiungo opzioni `--version`, closes #14
 
 L'opzione `--livello-singolo` è documentata insieme alle altre che
 riguardano anche il convertitore web
 
-correzione errori e nuove features:
+#### correzione errori e nuove features:
 
 - scriviamo il sottotitolo in una direttiva `highlights`, closes #71
 - miglioro la logica per i nomi dei files, closes #87, closes #86
