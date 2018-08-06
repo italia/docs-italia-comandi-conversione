@@ -28,8 +28,7 @@ data UserOptions = UserOptions {
   collegamentoNormattivaCommandOption :: Maybe Bool,
   livelloSingoloCommandOption :: Maybe Bool,
   celleComplesseCommandOption :: Maybe Bool,
-  preservaCitazioniCommandOption :: Maybe Bool,
-  dividiSezioniCommandOption :: Maybe Bool
+  preservaCitazioniCommandOption :: Maybe Bool
   }
 
 instance FromJSON UserOptions where
@@ -38,14 +37,12 @@ instance FromJSON UserOptions where
     <*> v .:? "livello-singolo"
     <*> v .:? "celle-complesse"
     <*> v .:? "preserva-citazioni"
-    <*> v .:? "dividi-sezioni"
 
 data Options = Options {
   collegamentoNormattivaOption :: Bool,
   livelloSingoloOption :: Bool,
   celleComplesseOption :: Bool,
-  preservaCitazioniOption :: Bool,
-  dividiSezioniOption :: Bool
+  preservaCitazioniOption :: Bool
   }
 
 applyDefaults :: UserOptions -> Options
@@ -53,8 +50,7 @@ applyDefaults o = Options {
   collegamentoNormattivaOption = def False $ collegamentoNormattivaCommandOption o,
   livelloSingoloOption = def False $ livelloSingoloCommandOption o,
   celleComplesseOption = def False $ celleComplesseCommandOption o,
-  preservaCitazioniOption = def False $ preservaCitazioniCommandOption o,
-  dividiSezioniOption = def False $ dividiSezioniCommandOption o
+  preservaCitazioniOption = def False $ preservaCitazioniCommandOption o
   }
 
 data CommandLineOptions = DirectOptions String UserOptions |
@@ -89,9 +85,6 @@ commandLineOptions = DirectOptions
                                                 <> showDefault))
                           <*> optional (switch (long "preserva-citazioni"
                                                 <> help "evita di rimuovere le citazioni"
-                                                <> showDefault))
-                          <*> optional (switch (long "dividi-sezioni"
-                                                <> help "produce un file .rst per ogni capitolo"
                                                 <> showDefault)))
 
 convertiProgDesc =  "converte il documento in formato rST." P.<$>
@@ -126,21 +119,15 @@ converti document opts = do
   createDirectoryIfMissing True (fileToFolder document)
   copyFile document (inToCopy document)
   void $ withCurrentDirectory (fileToFolder document) (do
-    mys (toRST opts document')
     maybeLinker <- findExecutable (unpack linker)
     when (collegamentoNormattivaOption opts && isJust maybeLinker) (do
       renameFile (unpack doc) (unpack docUnlinked)
       void $ mys (linkNormattiva opts)
       )
-    when (dividiSezioniOption opts) (void $ mys (makeSphinx opts document'))
+    mys (makeSphinx opts document')
     )
   where mys c = shell c empty -- for readability
         document' = pack document
-
-toRST o d = spaced [pandoc,
-                    inputNameText d,
-                    parseOpts o d, writeOpts o,
-                    "-o", doc]
 
 makeSphinx o d = spaced ([pandoc,
                           inputNameText d,
@@ -247,7 +234,7 @@ spaced = intercalate " "
 -- paths
 --
 linker = "xmLeges-Linker-1.13a.exe" :: Text
-doc = "documento.rst" :: Text
+doc = "documento.rst" :: Text -- currently not used
 -- the following are for troubleshooting
 docUnlinked = "documento-senza-collegamenti.rst" :: Text
 -- change to switch the executable name everywhere, useful to quickly

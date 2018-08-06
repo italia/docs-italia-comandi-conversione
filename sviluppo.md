@@ -53,9 +53,8 @@ agevolare questo passaggio è utile:
 - nella prima riga dei commit fare riferimento all'issue
   corrispondente, così gli utenti potranno trovare nel changelog il
   numero di release dove la loro issue è risolta
-- nella prima riga del commit specificare se si tratta di una nuova
-  interfaccia o di un cambiamento di interfaccia (non
-  backwards-compatible)
+- nella prima riga del commit specificare se si tratta di una `nuova
+  interfaccia` o di un `cambio interfaccia` (non backwards-compatible)
 
 #### Distribuzione binaria
 
