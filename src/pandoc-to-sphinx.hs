@@ -122,7 +122,10 @@ untilM p f i = do
 -- everything before the first header is the intro
 breakSections :: Int -> [Block] -> ([Block], [[Block]])
 breakSections level blocks = breakIntro (isStart level) blocks
-  where isStart lev (h:[]) = if isHeading lev h then [h] else []
+  where -- if there is a RawBlock before an header, it's an anchor
+        -- that has been added in order for references to point to it,
+        -- so we want to break the section before the anchor
+        isStart lev (h:[]) = if isHeading lev h then [h] else []
         isStart lev (b:h:l) = if isRaw b && isHeading lev h then [b,h] else []
         isRaw (Para [RawInline _ _]) = True
         isRaw _ = False
@@ -145,10 +148,8 @@ autoLevel body = headDefault 1 $ filter hasSeveral [1, 2, 3, 4, 5]
   where hasSeveral l = (length $ query (collectHeading l) body) > 1
         collectHeading l i = if isHeading l i then [i] else []
 
--- if there is a RawBlock before an header, it's an anchor that has been added in order for references to point to it, so we want to break the section before the anchor
-
 -- | see breakSections to get the purpose
--- >>> breakIntro prefixBreakTest "brh h rhb brhb"
+-- >>> breakIntro testRHOrH "brh h rhb brhb"
 -- ("b",["rh ","h ","rhb b","rhb"])
 -- >>> breakIntro (const []) "bbrhb bla bla"
 -- ("bbrhb bla bla",[])
@@ -161,13 +162,13 @@ breakIntro c l
         t = tail multiBroken
 
 -- | Multiple version of prefixBreak
--- >>> multiPrefixBreak prefixBreakTest "" "brhbbb"
+-- >>> multiPrefixBreak testRHOrH "" "brhbbb"
 -- ["b","rhbbb"]
--- >>> multiPrefixBreak prefixBreakTest "" "brhbbhb"
+-- >>> multiPrefixBreak testRHOrH "" "brhbbhb"
 -- ["b","rhbb","hb"]
--- >>> multiPrefixBreak prefixBreakTest "" "rh h rhb brhb"
+-- >>> multiPrefixBreak testRHOrH "" "rh h rhb brhb"
 -- ["rh ","h ","rhb b","rhb"]
--- >>> multiPrefixBreak prefixBreakTest "" "brh h rhb brhb"
+-- >>> multiPrefixBreak testRHOrH "" "brh h rhb brhb"
 -- ["b","rh ","h ","rhb b","rhb"]
 multiPrefixBreak :: Eq a => ([a] -> [a]) -> [a] -> [a] -> [[a]]
 multiPrefixBreak c p [] = []
@@ -182,7 +183,7 @@ multiPrefixBreak c p l@(h:t)
 
 -- | break a list when a predicate would be true on the second section,
 -- similar to `break` from the prelude
--- >>> prefixBreak prefixBreakTest "brhb bla bla"
+-- >>> prefixBreak testRHOrH "brhb bla bla"
 -- ("b","rh","b bla bla")
 prefixBreak :: Eq a => ([a] -> [a]) -> [a] -> ([a], [a], [a])
 prefixBreak _ [] = ([], [], [])
@@ -195,10 +196,10 @@ prefixBreak c l@(h:t)
 -- replicate the logic for breaking on a raw block and an header, in a
 -- way that's simpler and more understandable for the doctests. we
 -- want to move testing logic to a test module eventually
-prefixBreakTest :: [Char] -> [Char]
-prefixBreakTest ('r':'h':l) = "rh"
-prefixBreakTest ('h':l) = "h"
-prefixBreakTest _ = []
+testRHOrH :: [Char] -> [Char]
+testRHOrH ('r':'h':l) = "rh"
+testRHOrH ('h':l) = "h"
+testRHOrH _ = []
 
 -- | strip a prefix from a list
 -- >>> stripList "he" "heya"
