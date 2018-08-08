@@ -13,7 +13,7 @@ import Data.Monoid ((<>))
 import Options.Applicative
 import Control.Monad (sequence_, join, void)
 import Data.Either (fromRight)
-import Data.List (intercalate)
+import Data.List (intercalate, isPrefixOf)
 import System.Directory (createDirectory,
                          removeDirectoryRecursive,
                          doesFileExist,
@@ -84,7 +84,7 @@ split nested maybeLevel (ToWrite parent blocks) = do
           prefix = if nested then (dropExtension parent) <> "/" else ""
           sectionPath :: String -> [Block] -> IO String
           sectionPath p [] = pure (p <> "empty-section")
-          sectionPath p s = availablePath $ (p <> getPath (head s))
+          sectionPath p s = availablePath $ (p <> getPath s)
 
 createEmpty dir = do
   exists <- doesPathExist dir
@@ -121,7 +121,11 @@ untilM p f i = do
 
 -- everything before the first header is the intro
 breakSections :: Int -> [Block] -> ([Block], [[Block]])
-breakSections level blocks = breakIntro (isHeading level) blocks
+breakSections level blocks = breakIntro (isStart level) blocks
+  where isStart lev (h:[]) = if isHeading lev h then [h] else []
+        isStart lev (b:h:l) = if isRaw b && isHeading lev h then [b,h] else []
+        isRaw (Para [RawInline _ _]) = True
+        isRaw _ = False
 
 headDefault :: a -> [a] -> a
 headDefault d = defaultMaybe d . maybeHead
@@ -141,29 +145,70 @@ autoLevel body = headDefault 1 $ filter hasSeveral [1, 2, 3, 4, 5]
   where hasSeveral l = (length $ query (collectHeading l) body) > 1
         collectHeading l i = if isHeading l i then [i] else []
 
+-- if there is a RawBlock before an header, it's an anchor that has been added in order for references to point to it, so we want to break the section before the anchor
+
 -- | see breakSections to get the purpose
--- >>> breakIntro (==' ') "bla bla bla b"
--- ("bla",[" bla"," bla"," b"])
--- >>> breakIntro (=='*') "bla bla bla b"
--- ("bla bla bla b",[])
-breakIntro :: (a -> Bool) -> [a] -> ([a], [[a]])
-breakIntro p l
-  | p (head h) = ([], multiBroken)
-  | otherwise  = (h, t)
-  where multiBroken = multiBreak p l
+-- >>> breakIntro prefixBreakTest "brh h rhb brhb"
+-- ("b",["rh ","h ","rhb b","rhb"])
+-- >>> breakIntro (const []) "bbrhb bla bla"
+-- ("bbrhb bla bla",[])
+breakIntro :: Eq a => ([a] -> [a]) -> [a] -> ([a], [[a]])
+breakIntro c l
+  | null (c h) = (h, t)
+  | otherwise  = ([], multiBroken)
+  where multiBroken = multiPrefixBreak c [] l
         h = head multiBroken
         t = tail multiBroken
 
--- | Multiple version of break, like a `split` that keeps the delimiter
--- >>> multiBreak (==' ') "bla bla bla b"
--- ["bla"," bla"," bla"," b"]
-multiBreak :: (a -> Bool) -> [a] -> [[a]]
-multiBreak p [] = []
-multiBreak p l@(h:t)
-  | p h       = (h : t1) : multiBreak p t2
-  | otherwise = l1 : multiBreak p l2
-  where (t1, t2) = break p t
-        (l1, l2) = break p l
+-- | Multiple version of prefixBreak
+-- >>> multiPrefixBreak prefixBreakTest "" "brhbbb"
+-- ["b","rhbbb"]
+-- >>> multiPrefixBreak prefixBreakTest "" "brhbbhb"
+-- ["b","rhbb","hb"]
+-- >>> multiPrefixBreak prefixBreakTest "" "rh h rhb brhb"
+-- ["rh ","h ","rhb b","rhb"]
+-- >>> multiPrefixBreak prefixBreakTest "" "brh h rhb brhb"
+-- ["b","rh ","h ","rhb b","rhb"]
+multiPrefixBreak :: Eq a => ([a] -> [a]) -> [a] -> [a] -> [[a]]
+multiPrefixBreak c p [] = []
+multiPrefixBreak c p l@(h:t)
+  | null (c l) = prep (p <> [h] <> t1) (multiPrefixBreak c tm t2)
+  | otherwise  = prep (p <> l1) (multiPrefixBreak c lm l2)
+   where (l1, lm, l2) = prefixBreak c l
+         (t1, tm, t2) = prefixBreak c t
+         -- prepend only if l1 is not empty
+         prep l1 l2 | null l1   = l2
+                    | otherwise = l1 : l2
+
+-- | break a list when a predicate would be true on the second section,
+-- similar to `break` from the prelude
+-- >>> prefixBreak prefixBreakTest "brhb bla bla"
+-- ("b","rh","b bla bla")
+prefixBreak :: Eq a => ([a] -> [a]) -> [a] -> ([a], [a], [a])
+prefixBreak _ [] = ([], [], [])
+prefixBreak c l@(h:t)
+  | null match = (h:b1, b2, b3)
+  | otherwise  = ([], match, stripList match l)
+  where match = c l
+        (b1, b2, b3) = prefixBreak c t
+
+-- replicate the logic for breaking on a raw block and an header, in a
+-- way that's simpler and more understandable for the doctests. we
+-- want to move testing logic to a test module eventually
+prefixBreakTest :: [Char] -> [Char]
+prefixBreakTest ('r':'h':l) = "rh"
+prefixBreakTest ('h':l) = "h"
+prefixBreakTest _ = []
+
+-- | strip a prefix from a list
+-- >>> stripList "he" "heya"
+-- "ya"
+stripList :: Eq a => [a] -> [a] -> [a]
+stripList [] l = l
+stripList _ [] = []
+stripList (h1:t1) (h2:t2)
+  | h1 == h2 = stripList t1 t2
+  | otherwise = t2
 
 {-
 
@@ -187,15 +232,16 @@ tocTree depth paths = RawBlock "rst" $
 -- | get the path corresponding to some heading. use the identifier
 -- if available, otherwise build a slug from the content
 --
--- >>> getPath (Header 2 ("", [], []) [Str "section", Space, Str "accénted"])
+-- >>> getPath [Header 2 ("", [], []) [Str "section", Space, Str "accénted"], Null]
 -- "section-acc\233nted.rst"
-getPath :: Block -> String
-getPath (Header _ ("", _, _) i) = adapt (inlinesToText i) <> ".rst"
+getPath :: [Block] -> String
+getPath ((Header _ ("", _, _) i):_) = adapt (inlinesToText i) <> ".rst"
   where adapt = map replace . limit -- adapt for the file system
         limit = take 50 -- file names cannot be too long
         replace '/' = '-'
         replace o = o
-getPath (Header _ (iden, _, _)  _) = iden <> ".rst"
+getPath (Header _ (iden, _, _)  _:_) = iden <> ".rst"
+getPath (Para [RawInline _ _]:r) = getPath r
 
 isHeading :: Int -> Block -> Bool
 isHeading a (Header b _ i) = a == b && (inlinesToText i /= "")

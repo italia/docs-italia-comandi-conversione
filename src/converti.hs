@@ -159,7 +159,8 @@ parseOpts o d = makeOpts opts filters
           _ ->  []
 
 -- for openXML parsing
-parseOpenXMLFilters q = [ "filtro-didascalia",
+parseOpenXMLFilters q = [ "filtro-references",
+                          "filtro-didascalia",
                           "filtro-rimuovi-div"] <> -- per `-f docx+styles`
                         quotes :: [Text]
   where quotes = if q then ["filtro-quotes"] else []
