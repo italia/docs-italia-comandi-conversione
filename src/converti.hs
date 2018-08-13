@@ -153,20 +153,20 @@ writeOpts o = makeOpts (wrap <> ["--standalone"]) writeRSTFilters
 parseOpts :: Options -> Text -> Text
 parseOpts o d = makeOpts opts filters
   where opts = ["--extract-media ."] <> formatOptions
-        filters = (parseOpenXMLFilters (not $ preservaCitazioniOption o))
+        filters = (parseFilters (not $ preservaCitazioniOption o))
         formatOptions = case takeExtension (unpack d) of
           ".docx" -> ["-f docx+styles"]
           _ ->  []
 
--- for openXML parsing
-parseOpenXMLFilters q = [ "filtro-references",
-                          "filtro-didascalia",
-                          "filtro-rimuovi-div"] <> -- per `-f docx+styles`
-                        quotes :: [Text]
+parseFilters q = [ "filtro-google-docs",
+                   "filtro-references",
+                   "filtro-didascalia",
+                   "filtro-rimuovi-div"] <> -- per `-f docx+styles`
+                 quotes :: [Text]
   where quotes = if q then ["filtro-quotes"] else []
--- for rST writing
+
 writeRSTFilters = ["filtro-stile-liste" ] :: [Text]
-allFilters = parseOpenXMLFilters True <> writeRSTFilters
+allFilters = parseFilters True <> writeRSTFilters
 
 checkExecutables = do
   maybeExecutables <- sequence $ map findExecutable allFilters'
