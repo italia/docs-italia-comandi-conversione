@@ -72,12 +72,11 @@ splitWrite wrapNone l1 l2 (Pandoc meta blocks)= do
                           writerTemplate = Just template }
                else def { writerTemplate = Just template }
 
-
 split :: Bool -> Maybe Int -> ToWrite -> IO [ToWrite]
 split nested maybeLevel (ToWrite parent blocks) = do
   paths <- sequence (map (sectionPath prefix) sections)
   pure (ToWrite parent (makeToc paths intro):(zipWith ToWrite paths sections))
-    where (intro, sections) = breakSections level blocks
+    where (intro, sectionsToUpdate) = breakSections level blocks
           level = defaultMaybe (autoLevel blocks) maybeLevel
           makeToc :: [String] -> [Block] -> [Block]
           makeToc paths intro = intro <> [tocTree 3 paths]
@@ -85,6 +84,13 @@ split nested maybeLevel (ToWrite parent blocks) = do
           sectionPath :: String -> [Block] -> IO String
           sectionPath p [] = pure (p <> "empty-section")
           sectionPath p s = availablePath $ (p <> getPath s)
+          sections = if nested
+                     then map (walk updateImage) sectionsToUpdate
+                     else sectionsToUpdate
+          updateImage :: Inline -> Inline
+          updateImage (Image a i (target, title)) =
+            Image a i ("../" <> target, title)
+          updateImage i = i
 
 createEmpty dir = do
   exists <- doesPathExist dir
