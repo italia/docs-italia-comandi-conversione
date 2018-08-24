@@ -231,10 +231,10 @@ tocTree :: Int -> [String] -> Block
 tocTree _ [] = Null
 tocTree depth paths = RawBlock "rst" $
            ".. toctree::" <>
-           "\n  :maxdepth: " <> show depth <>
-           "\n  :caption: Indice dei contenuti" <>
-           "\n" <>
-           concatMap (\x -> "\n  "<>x) paths
+           "\n   :maxdepth: " <> show depth <>
+           "\n   :caption: Indice dei contenuti" <>
+           "\n"  <>
+           concatMap (\x -> "\n   "<>x) paths
 
 -- | get the path corresponding to some heading. use the identifier
 -- if available, otherwise build a slug from the content
