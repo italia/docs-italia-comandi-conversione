@@ -93,6 +93,15 @@ tramite le
 interessato a contribuire al codice può dare un'occhiata alle [note di
 sviluppo](sviluppo.md).
 
+## Riconoscimenti
+
+Fra i molti collaboratori si ringraziano Alberto Torin
+([@atorin](https://github.com/atorin/docs2rst)) per la guida ed il
+contributo costante allo sviluppo della logica di conversione, e Pablo
+Persico ([@pablopers](https://github.com/pablopers)) per
+l'instancabile attività di test, l'entusiasmo ed il cricicismo
+costruttivo
+
                                  ---
 
 ## Software License
