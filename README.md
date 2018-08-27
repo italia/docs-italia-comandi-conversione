@@ -102,7 +102,7 @@ Persico ([@pablopers](https://github.com/pablopers)) per
 l'instancabile attività di test, l'entusiasmo ed il cricicismo
 costruttivo
 
-                                 ---
+---
 
 ## Software License
 
