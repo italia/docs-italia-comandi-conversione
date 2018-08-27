@@ -40,6 +40,12 @@ indentato come citazione. Spesso non è quello che vogliamo, quindi
 `converti` rimuove tutte le citazioni dai documenti. Se volete
 preservare le citazioni potete farlo usando questa opzione.
 
+### `mostra-comandi`
+
+Mostra i comandi principali eseguiti da _converti_. Può servire per
+investigare eventuali errori o per capire come viene usato _pandoc_ o
+gli altri comandi.
+
 ## Come usare le opzioni
 
 Se siete arrivati a questa pagina dal convertitore web, potete

@@ -28,7 +28,8 @@ data UserOptions = UserOptions {
   collegamentoNormattivaCommandOption :: Maybe Bool,
   livelloSingoloCommandOption :: Maybe Bool,
   celleComplesseCommandOption :: Maybe Bool,
-  preservaCitazioniCommandOption :: Maybe Bool
+  preservaCitazioniCommandOption :: Maybe Bool,
+  mostraComandiCommandOption :: Maybe Bool
   }
 
 instance FromJSON UserOptions where
@@ -37,12 +38,14 @@ instance FromJSON UserOptions where
     <*> v .:? "livello-singolo"
     <*> v .:? "celle-complesse"
     <*> v .:? "preserva-citazioni"
+    <*> v .:? "mostra-comandi"
 
 data Options = Options {
   collegamentoNormattivaOption :: Bool,
   livelloSingoloOption :: Bool,
   celleComplesseOption :: Bool,
-  preservaCitazioniOption :: Bool
+  preservaCitazioniOption :: Bool,
+  mostraComandiOption :: Bool
   }
 
 applyDefaults :: UserOptions -> Options
@@ -50,7 +53,8 @@ applyDefaults o = Options {
   collegamentoNormattivaOption = def False $ collegamentoNormattivaCommandOption o,
   livelloSingoloOption = def False $ livelloSingoloCommandOption o,
   celleComplesseOption = def False $ celleComplesseCommandOption o,
-  preservaCitazioniOption = def False $ preservaCitazioniCommandOption o
+  preservaCitazioniOption = def False $ preservaCitazioniCommandOption o,
+  mostraComandiOption = def False $ mostraComandiCommandOption o
   }
 
 data CommandLineOptions = DirectOptions String UserOptions |
@@ -85,6 +89,9 @@ commandLineOptions = DirectOptions
                                                 <> showDefault))
                           <*> optional (switch (long "preserva-citazioni"
                                                 <> help "evita di rimuovere le citazioni"
+                                                <> showDefault))
+                          <*> optional (switch (long "mostra-comandi"
+                                                <> help "mostra i comandi invocati da converti"
                                                 <> showDefault)))
 
 convertiProgDesc =  "converte il documento in formato rST." P.<$>
@@ -126,7 +133,9 @@ converti document opts = do
       )
     mys (makeSphinx opts document')
     )
-  where mys c = shell c empty -- for readability
+  where mys c = do
+          when (mostraComandiOption opts) $ sequence_ $ fmap echo $ textToLines c
+          shell c empty -- for readability
         document' = pack document
 
 makeSphinx o d = spaced ([pandoc,
