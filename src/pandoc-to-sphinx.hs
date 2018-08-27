@@ -3,17 +3,20 @@
 module Main where
 
 import Text.Pandoc
-import Text.Pandoc.JSON
-import Text.Pandoc.Options
+import Text.Pandoc.JSON()
+import Text.Pandoc.Options()
+import Text.Pandoc.Pretty()
+import Data.Text()
+import Data.String (IsString(..))
 import Text.Pandoc.Walk (query, walk)
 import Text.Pandoc.Class (runIOorExplode)
+import Text.Pandoc.Shared (stringify)
 import qualified Data.Text.IO as T
-import Data.Text(Text(..))
 import Data.Monoid ((<>))
 import Options.Applicative
-import Control.Monad (sequence_, join, void)
+import Control.Monad (join)
 import Data.Either (fromRight)
-import Data.List (intercalate, isPrefixOf)
+import Data.List (intercalate)
 import System.Directory (createDirectory,
                          removeDirectoryRecursive,
                          doesFileExist,
@@ -24,7 +27,7 @@ import System.FilePath.Posix (dropExtension, addExtension)
 import Turtle (shell)
 import System.Exit
 import Data.Maybe (isNothing)
-import Data.String.Here hiding (template)
+import Data.String.Here hiding (template, i)
 
 data Options = Version | Options {
   wrapNoneOption :: Bool,
@@ -38,6 +41,7 @@ options = flag' Version (long "version") <|>
                    <*> optional (option auto (long "level"))
                    <*> optional (option auto (long "second-level")))
 
+main :: IO ExitCode
 main = do
     opts <- execParser (info options fullDesc)
     case opts of
@@ -66,54 +70,59 @@ splitWrite wrapNone l1 l2 (Pandoc meta blocks)= do
          mapM createEmpty (map (dropExtension . fileNameToWrite) firstSplit)
          mapM (writeBlocks opts) (join secondSplit))
   where writeRoot (ToWrite _ []) = pure ()
-        writeRoot (ToWrite path blocks) = writeDoc opts path (Pandoc meta blocks)
+        writeRoot (ToWrite path blocks') =
+          writeDoc opts path (Pandoc meta (title:subtitle:blocks'))
+        title = titleBlock meta
+        subtitle = subtitleBlock meta
         opts = if wrapNone
                then def { writerWrapText = WrapNone,
                           writerTemplate = Just template }
                else def { writerTemplate = Just template }
 
 split :: Bool -> Maybe Int -> ToWrite -> IO [ToWrite]
-split nested maybeLevel (ToWrite parent blocks) = do
+split second maybeLevel (ToWrite parent blocks) = do
   paths <- sequence (map (sectionPath prefix) sections)
   pure (ToWrite parent (makeToc paths intro):(zipWith ToWrite paths sections))
     where (intro, sectionsToUpdate) = breakSections level blocks
           level = defaultMaybe (autoLevel blocks) maybeLevel
           makeToc :: [String] -> [Block] -> [Block]
-          makeToc paths intro = intro <> [tocTree 3 paths]
-          prefix = if nested then (dropExtension parent) <> "/" else ""
+          makeToc paths intro' = intro' <> [tocTree second 3 paths]
+          prefix = if second then (dropExtension parent) <> "/" else ""
           sectionPath :: String -> [Block] -> IO String
           sectionPath p [] = pure (p <> "empty-section")
           sectionPath p s = availablePath $ (p <> getPath s)
-          sections = if nested
+          sections = if second
                      then map (walk updateImage) sectionsToUpdate
                      else sectionsToUpdate
           updateImage :: Inline -> Inline
-          updateImage (Image a i (target, title)) =
-            Image a i ("../" <> target, title)
-          updateImage i = i
+          updateImage (Image att ima (target, title)) =
+            Image att ima ("../" <> target, title)
+          updateImage inl = inl
 
+createEmpty :: FilePath -> IO ()
 createEmpty dir = do
   exists <- doesPathExist dir
   when exists (removeDirectoryRecursive dir)
   createDirectory dir
 
 writeBlocks :: WriterOptions -> ToWrite -> IO ()
-writeBlocks opts (ToWrite _ []) = pure ()
+writeBlocks _ (ToWrite _ []) = pure ()
 writeBlocks opts (ToWrite path blocks) = writeDoc opts path (Pandoc nullMeta blocks)
 
 writeDoc :: WriterOptions -> FilePath -> Pandoc -> IO ()
 writeDoc opts path doc = do
-  text <- runIOorExplode $ writeRST opts doc
-  T.writeFile path text
+  contents <- runIOorExplode $ writeRST opts doc
+  T.writeFile path contents
 
 availablePath :: String -> IO String
 availablePath path = do
   (available, c) <- untilM isAvailable increment (path, 1)
-  pure $ render (available, c)
-  where render (p, 1) = p
-        render o = withNumber o
+  pure $ fileName (available, c)
+  where fileName (p, 1) = p
+        fileName o = withNumber o
         withNumber (p, c) = addExtension (dropExtension p <> "-" <> show c) ".rst"
-        isAvailable x = not <$> (doesFileExist $ render x)
+        isAvailable :: (String, Int) -> IO Bool
+        isAvailable x = not <$> (doesFileExist $ fileName x)
         increment (p, c) = (p, c+1)
 
 -- | like `until` but for monadic functions
@@ -131,8 +140,9 @@ breakSections level blocks = breakIntro (isStart level) blocks
   where -- if there is a RawBlock before an header, it's an anchor
         -- that has been added in order for references to point to it,
         -- so we want to break the section before the anchor
-        isStart lev (h:[]) = if isHeading lev h then [h] else []
-        isStart lev (b:h:l) = if isRaw b && isHeading lev h then [b,h] else []
+        isStart _ [] = []
+        isStart lev (b:h:_) = if isRaw b && isHeading lev h then [b,h] else []
+        isStart lev (h:_) = if isHeading lev h then [h] else []
         isRaw (Para [RawInline _ _]) = True
         isRaw _ = False
 
@@ -177,15 +187,16 @@ breakIntro c l
 -- >>> multiPrefixBreak testRHOrH "" "brh h rhb brhb"
 -- ["b","rh ","h ","rhb b","rhb"]
 multiPrefixBreak :: Eq a => ([a] -> [a]) -> [a] -> [a] -> [[a]]
-multiPrefixBreak c p [] = []
+multiPrefixBreak _ _ [] = []
 multiPrefixBreak c p l@(h:t)
   | null (c l) = prep (p <> [h] <> t1) (multiPrefixBreak c tm t2)
   | otherwise  = prep (p <> l1) (multiPrefixBreak c lm l2)
    where (l1, lm, l2) = prefixBreak c l
          (t1, tm, t2) = prefixBreak c t
-         -- prepend only if l1 is not empty
-         prep l1 l2 | null l1   = l2
-                    | otherwise = l1 : l2
+         -- prepend only if j1 is not empty
+         prep :: [a] -> [[a]] -> [[a]]
+         prep j1 j2 | null j1   = j2
+                    | otherwise = j1 : j2
 
 -- | break a list when a predicate would be true on the second section,
 -- similar to `break` from the prelude
@@ -203,8 +214,8 @@ prefixBreak c l@(h:t)
 -- way that's simpler and more understandable for the doctests. we
 -- want to move testing logic to a test module eventually
 testRHOrH :: [Char] -> [Char]
-testRHOrH ('r':'h':l) = "rh"
-testRHOrH ('h':l) = "h"
+testRHOrH ('r':'h':_) = "rh"
+testRHOrH ('h':_) = "h"
 testRHOrH _ = []
 
 -- | strip a prefix from a list
@@ -227,14 +238,49 @@ stripList (h1:t1) (h2:t2)
    starter-kit.rst
 
 -}
-tocTree :: Int -> [String] -> Block
-tocTree _ [] = Null
-tocTree depth paths = RawBlock "rst" $
-           ".. toctree::" <>
-           "\n   :maxdepth: " <> show depth <>
-           "\n   :caption: Indice dei contenuti" <>
-           "\n"  <>
-           concatMap (\x -> "\n   "<>x) paths
+tocTree :: Bool -> Int -> [String] -> Block
+tocTree _ _ [] = Null
+tocTree second depth paths = rawDirective "toctree" (depthOpt:captionOpts) paths
+  where depthOpt = ("maxdepth", show depth)
+        captionOpts = if second
+                      then []
+                      else [("caption", "Indice dei contenuti")]
+
+titleBlock :: Meta -> Block
+titleBlock m =
+  if l > 0
+     then RawBlock "rst" $
+          border </>
+          titleText </>
+          border </>
+          ""
+     else Null
+   where titleText = stringify $ docTitle m
+         l = length titleText
+         border = replicate l '='
+
+subtitleBlock :: Meta -> Block
+subtitleBlock m = rawDirective "highlights" [] [stringify inlines]
+  where inlines = case lookupMeta "subtitle" m of
+          Just (MetaBlocks [Plain xs])  -> xs
+          Just (MetaInlines xs)         -> xs
+          _                             -> []
+
+-- http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#directives
+rawDirective :: String -> [(String, String)] -> [String] -> Block
+rawDirective "" [] [] = Null
+rawDirective type_ dirOptions content = RawBlock "rst" $
+           ".. " <> type_ <> "::" </>
+           mapCat renderOption dirOptions </>
+           "" </>
+           mapCat indent content </>
+           ""
+  where mapCat f = intercalate "\n" . map f -- map and concatenate the results
+        indent s = "   " <> s
+        renderOption (name,body) = indent (":" <> name <> ": " <> body)
+
+(</>) :: (Semigroup a, Data.String.IsString a) => a -> a -> a
+(</>) a b = a <> "\n" <> b
 
 -- | get the path corresponding to some heading. use the identifier
 -- if available, otherwise build a slug from the content
@@ -249,6 +295,7 @@ getPath ((Header _ ("", _, _) i):_) = adapt (inlinesToText i) <> ".rst"
         replace o = o
 getPath (Header _ (iden, _, _)  _:_) = iden <> ".rst"
 getPath (Para [RawInline _ _]:r) = getPath r
+getPath _ = "unknown-section-start-structure.rst"
 
 isHeading :: Int -> Block -> Bool
 isHeading a (Header b _ i) = a == b && (inlinesToText i /= "")
@@ -285,17 +332,8 @@ inlinesToText = intercalate "-" . concatMap inlineToText
 -- the template has been added in order to show the subtitle, see
 -- https://github.com/jgm/pandoc/issues/4583 and
 -- https://github.com/italia/docs-italia-comandi-conversione/issues/71
+template :: String
 template = [here|
-$if(title)$
-$title$
-
-$endif$
-$if(subtitle)$
-.. highlights ::
-
-  $subtitle$
-
-$endif$
 $for(author)$
 :Author: $author$
 $endfor$
