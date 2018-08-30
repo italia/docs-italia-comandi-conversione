@@ -12,6 +12,7 @@ import Turtle hiding (splitDirectories,
                       header
                      )
 import Data.Text (pack, unpack, intercalate)
+import qualified Data.Text.IO as TIO
 import System.FilePath.Posix
 import System.Directory
 import Data.Maybe (isJust)
@@ -178,14 +179,14 @@ writeRSTFilters = ["filtro-stile-liste" ] :: [Text]
 allFilters = parseFilters True <> writeRSTFilters
 
 checkExecutables = do
-  maybeExecutables <- sequence $ map findExecutable allFilters'
-  maybeNotify (dropWhile isJust maybeExecutables)
-    where allFilters' = map unpack allFilters
+  maybeExecutables <- sequence $ map (findExecutable . unpack) allExes
+  sequence $ map maybeNotify $ zip maybeExecutables allExes
+    where allExes = linker:allFilters :: [Text]
 
-maybeNotify []       = pure ()
-maybeNotify missing  = print (errore $ head missing)
-  where errore c = "`converti` si basa sui filtri di Docs Italia che non sono disponibili sul tuo sistema. Puoi installarli seguendo le istruzioni che trovi su https://github.com/italia/docs-italia-pandoc-filters"
-  -- where errore c = "`converti` si basa sul comando " <> c <> " che non è disponibile sul tuo sistema. Puoi installarlo seguendo le istruzioni che trovi su https://github.com/italia/docs-italia-pandoc-filters"
+maybeNotify :: (Maybe FilePath, Text) -> IO ()
+maybeNotify (Nothing, c) = TIO.putStrLn (errore c)
+  where errore c = "`converti` si basa sul comando " <> c <> " che non è disponibile sul tuo sistema. Puoi installarlo seguendo le istruzioni che trovi su https://github.com/italia/docs-italia-pandoc-filters"
+maybeNotify _  = pure ()
 
 maybeHead [] = Nothing
 maybeHead l = Just (head l)
