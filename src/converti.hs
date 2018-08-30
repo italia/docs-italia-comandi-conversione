@@ -23,7 +23,9 @@ import qualified Text.PrettyPrint.ANSI.Leijen as P
 
 import qualified Data.ByteString.Lazy as B
 
--- throughout this file we work in Text and convert to other types when needed
+-- throughout this file we work in Text and convert to other types
+-- when needed. Only the path manipulation functions work with
+-- String, that get converted to Text right after
 
 data UserOptions = UserOptions {
   collegamentoNormattivaCommandOption :: Maybe Bool,
@@ -127,34 +129,42 @@ converti document opts = do
   createDirectoryIfMissing True (fileToFolder document)
   copyFile document (inToCopy document)
   void $ withCurrentDirectory (fileToFolder document) (do
+    mys (pandocFilters opts ori par)
     maybeLinker <- findExecutable (unpack linker)
     when (collegamentoNormattivaOption opts && isJust maybeLinker) (do
-      renameFile (unpack doc) (unpack docUnlinked)
-      void $ mys (linkNormattiva opts)
+      void $ mys (linkNormattiva opts par tem)
+      renameFile (unpack tem) (unpack par)
       )
-    mys (makeSphinx opts document')
+    mys (pandocToSphinx opts par)
     )
   where mys c = do
           when (mostraComandiOption opts) $ sequence_ $ fmap echo $ textToLines c
           shell c empty -- for readability
-        document' = pack document
+        ori = (pack . originalWithExtension) document :: Text
+        par = "partial.json" :: Text -- partially converted lossless format
+        tem = "temporary.json" :: Text -- won't stay in the result
 
-makeSphinx o d = spaced ([pandoc,
-                          inputNameText d,
-                          parseOpts o d, writeOpts o,
-                          "-t json",
-                          "|", "pandoc-to-sphinx",
-                          "--level", "1"] <>
-                          secondLevel <>
-                          wrap)
+pandocFilters o from to = spaced ([pandoc,
+                                   from,
+                                   parseOpts o from, writeOpts o,
+                                   "-o",
+                                   to])
+
+pandocToSphinx :: Options -> Text -> Text
+pandocToSphinx o from = spaced (["cat",
+                                from,
+                                "|", "pandoc-to-sphinx",
+                                "--level", "1"] <>
+                               secondLevel <>
+                               wrap)
   where wrap = if (celleComplesseOption o) then ["--wrap-none"] else []
         secondLevel = if (livelloSingoloOption o)
                       then []
                       else ["--second-level", "2"]
 
-linkNormattiva o = spaced [pandoc, docUnlinked, "-t html",
+linkNormattiva o from to = spaced [pandoc, from, "-t html",
                            "|", linker, "|",
-                           pandoc, "-f html", "-o", doc, writeOpts o]
+                           pandoc, "-f html", "-o", to, writeOpts o]
 
 writeOpts :: Options -> Text
 writeOpts o = makeOpts (wrap <> ["--standalone"]) writeRSTFilters
@@ -216,24 +226,27 @@ fileToFolder i = case maybeParent of
         baseName = takeBaseName i
         maybeParent = maybeHead $ drop 1 $ reverse $ splitDirectories i
 
--- | move the input file to the destination folder
+-- | use the extension from the input doc to make its new name
 --
--- >>> inputName "somedir/otherdir/file.ext"
+-- >>> originalWithExtension "somedir/otherdir/file.ext"
 -- "originale.ext"
-inputName :: FilePath -> FilePath
-inputName i = addExtension "originale" (takeExtension i)
+originalWithExtension :: FilePath -> FilePath
+originalWithExtension i = addExtension "originale" (takeExtension i)
+
 -- | move the input file to the destination folder
 --
 -- >>> inToCopy "somedir/otherdir/file.ext"
 -- "risultati-conversione/otherdir/file/originale.ext"
 inToCopy :: FilePath -> FilePath
-inToCopy i = joinPath [fileToFolder i, inputName i]
+inToCopy i = joinPath [fileToFolder i, originalWithExtension i]
+
 -- | convert the input file to the output file
 --
 -- >>> inToOut "newExt"
 -- "document.newExt"
 inToOut :: FilePath -> FilePath
 inToOut = addExtension "document"
+
 -- | useful for creating commands
 --
 -- >>> :set -XOverloadedStrings
@@ -245,15 +258,8 @@ spaced = intercalate " "
 -- paths
 --
 linker = "xmLeges-Linker-1.13a.exe" :: Text
-doc = "documento.rst" :: Text -- currently not used
--- the following are for troubleshooting
-docUnlinked = "documento-senza-collegamenti.rst" :: Text
 -- change to switch the executable name everywhere, useful to quickly
 -- test forks or different versions
 pandoc = "pandoc" :: Text
 
-inputNameText = textify inputName
-
-textify :: (String -> String) -> Text -> Text
-textify f = pack . f . unpack
 
