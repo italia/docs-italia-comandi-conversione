@@ -75,6 +75,7 @@ jsonOptions :: Parser CommandLineOptions
 jsonOptions = JsonOptions
                      <$> argument str (metavar "documento.ext")
                      <*> option str (long "opzioni-json"
+                                     <> short 'j'
                                      <> help "permette di indicare un file JSON da cui leggere le opzioni di converti")
                      
 commandLineOptions :: Parser CommandLineOptions
@@ -82,9 +83,11 @@ commandLineOptions = DirectOptions
                      <$> argument str (metavar "documento.ext")
                      <*> (UserOptions
                           <$> optional (switch (long "collegamento-normattiva"
+                                                <> short 'n'
                                                 <> help "sostituisce i riferimenti alle leggi con links a Normattiva"
                                                 <> showDefault))
                           <*> optional (switch (long "livello-singolo"
+                                                <> short 's'
                                                 <> help "produce una struttura di files divisi solo per sezioni di primo livello"
                                                 <> showDefault))
                           <*> optional (switch (long "celle-complesse"
@@ -94,7 +97,8 @@ commandLineOptions = DirectOptions
                                                 <> help "evita di rimuovere le citazioni"
                                                 <> showDefault))
                           <*> optional (switch (long "mostra-comandi"
-                                                <> help "mostra i comandi invocati da converti"
+                                                <> short 'v'
+                                                <> help "mostra i comandi invocati da converti (verbose)"
                                                 <> showDefault)))
 
 convertiProgDesc =  "converte il documento in formato rST." P.<$>
