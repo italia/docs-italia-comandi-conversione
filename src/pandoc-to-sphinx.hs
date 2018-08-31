@@ -41,6 +41,7 @@ options = flag' Version (long "version") <|>
                    <*> optional (option auto (long "level"))
                    <*> optional (option auto (long "second-level")))
 
+-- the core logic goes through @splitWrite@ -> @split@ -> etcetera
 main :: IO ExitCode
 main = do
     opts <- execParser (info options fullDesc)
@@ -59,14 +60,23 @@ main = do
 
 data ToWrite = ToWrite { fileNameToWrite :: String, blocksToWrite :: [Block] }
 
+-- split the sections and write the different parts. This contains the
+-- custom logic for writing the different parts of a multi-level
+-- document, while the common logic related to splitting a file into
+-- sections is provided by @split@
 splitWrite :: Bool -> Maybe Int -> Maybe Int -> Pandoc -> IO [()]
 splitWrite wrapNone l1 l2 (Pandoc meta blocks)= do
   (root:firstSplit) <- split False l1 (ToWrite "index.rst" blocks)
+  -- `index.rst` is written regardless of what happens next. its table
+  -- of contents points at the first split files which can contain
+  -- other tables of contents or not
   writeRoot root
   if isNothing l2
     then (mapM (writeBlocks opts) firstSplit)
     else (do
          secondSplit <- mapM (split True l2) firstSplit
+         -- create an empty folder for every section formerly split,
+         -- in order to host the future files
          mapM createEmpty (map (dropExtension . fileNameToWrite) firstSplit)
          mapM (writeBlocks opts) (join secondSplit))
   where writeRoot (ToWrite _ []) = pure ()
@@ -79,6 +89,10 @@ splitWrite wrapNone l1 l2 (Pandoc meta blocks)= do
                           writerTemplate = Just template }
                else def { writerTemplate = Just template }
 
+-- @split@ takes a list of potentially writable contents grouped by
+-- file name and turns it into another list, where some contents get
+-- replaced by files with a table of contents that point to other
+-- files. The main logic for splitting is given by @breakSections@
 split :: Bool -> Maybe Int -> ToWrite -> IO [ToWrite]
 split second maybeLevel (ToWrite parent blocks) = do
   paths <- sequence (map (sectionPath prefix) sections)
@@ -98,6 +112,19 @@ split second maybeLevel (ToWrite parent blocks) = do
           updateImage (Image att ima (target, title)) =
             Image att ima ("../" <> target, title)
           updateImage inl = inl
+
+-- given an header level and a collection of blocks return the blocks
+-- before the first header and the other blocks grouped by the header
+-- they follow. This is based upon @breakIntro@ which can be tested
+-- with simpler data structures
+breakSections :: Int -> [Block] -> ([Block], [[Block]])
+breakSections level blocks = breakIntro isStart blocks
+  where -- if there is a RawBlock before an header, it's an anchor
+        -- that has been added in order for references to point to it,
+        -- so we want to break the section before the anchor
+        isStart = testStart isRaw (isHeading level)
+        isRaw (Para [RawInline _ _]) = True
+        isRaw _ = False
 
 createEmpty :: FilePath -> IO ()
 createEmpty dir = do
@@ -134,18 +161,6 @@ untilM p f i = do
   r <- p i
   if r then pure i else untilM p f (f i)
 
--- everything before the first header is the intro
-breakSections :: Int -> [Block] -> ([Block], [[Block]])
-breakSections level blocks = breakIntro (isStart level) blocks
-  where -- if there is a RawBlock before an header, it's an anchor
-        -- that has been added in order for references to point to it,
-        -- so we want to break the section before the anchor
-        isStart _ [] = []
-        isStart lev (b:h:_) = if isRaw b && isHeading lev h then [b,h] else []
-        isStart lev (h:_) = if isHeading lev h then [h] else []
-        isRaw (Para [RawInline _ _]) = True
-        isRaw _ = False
-
 headDefault :: a -> [a] -> a
 headDefault d = defaultMaybe d . maybeHead
 
@@ -164,11 +179,13 @@ autoLevel body = headDefault 1 $ filter hasSeveral [1, 2, 3, 4, 5]
   where hasSeveral l = (length $ query (collectHeading l) body) > 1
         collectHeading l i = if isHeading l i then [i] else []
 
--- | see breakSections to get the purpose
--- >>> breakIntro testRHOrH "brh h rhb brhb"
+-- | testable logic core for breakSections
+-- >>> breakIntro testDemo "brh h rhb brhb"
 -- ("b",["rh ","h ","rhb b","rhb"])
 -- >>> breakIntro (const []) "bbrhb bla bla"
 -- ("bbrhb bla bla",[])
+-- >>> breakIntro testDemo "bh h hb bhb"
+-- ("b",["h ","h ","hb b","hb"])
 breakIntro :: Eq a => ([a] -> [a]) -> [a] -> ([a], [[a]])
 breakIntro c l
   | null (c h) = (h, t)
@@ -178,13 +195,13 @@ breakIntro c l
         t = tail multiBroken
 
 -- | Multiple version of prefixBreak
--- >>> multiPrefixBreak testRHOrH "" "brhbbb"
+-- >>> multiPrefixBreak testDemo "" "brhbbb"
 -- ["b","rhbbb"]
--- >>> multiPrefixBreak testRHOrH "" "brhbbhb"
+-- >>> multiPrefixBreak testDemo "" "brhbbhb"
 -- ["b","rhbb","hb"]
--- >>> multiPrefixBreak testRHOrH "" "rh h rhb brhb"
+-- >>> multiPrefixBreak testDemo "" "rh h rhb brhb"
 -- ["rh ","h ","rhb b","rhb"]
--- >>> multiPrefixBreak testRHOrH "" "brh h rhb brhb"
+-- >>> multiPrefixBreak testDemo "" "brh h rhb brhb"
 -- ["b","rh ","h ","rhb b","rhb"]
 multiPrefixBreak :: Eq a => ([a] -> [a]) -> [a] -> [a] -> [[a]]
 multiPrefixBreak _ _ [] = []
@@ -200,7 +217,7 @@ multiPrefixBreak c p l@(h:t)
 
 -- | break a list when a predicate would be true on the second section,
 -- similar to `break` from the prelude
--- >>> prefixBreak testRHOrH "brhb bla bla"
+-- >>> prefixBreak testDemo "brhb bla bla"
 -- ("b","rh","b bla bla")
 prefixBreak :: Eq a => ([a] -> [a]) -> [a] -> ([a], [a], [a])
 prefixBreak _ [] = ([], [], [])
@@ -210,13 +227,30 @@ prefixBreak c l@(h:t)
   where match = c l
         (b1, b2, b3) = prefixBreak c t
 
+-- abstract way to test for a starting raw and header blocks in a
+-- sequence. here we identify and return elements starting a
+-- sequence. if no starter elements are identified, an empty list is
+-- returned
+testStart :: (a -> Bool) -> (a -> Bool) -> [a] -> [a]
+testStart _     _     []        = []
+testStart testR testH (b1:rest) = case rest of
+  (b2:_) -> if testH b1
+            then [b1]
+            else if (testR b1 && testH b2)
+                 then [b1, b2]
+                 else []
+  _      -> if testH b1 then [b1] else []
+
 -- replicate the logic for breaking on a raw block and an header, in a
 -- way that's simpler and more understandable for the doctests. we
 -- want to move testing logic to a test module eventually
-testRHOrH :: [Char] -> [Char]
-testRHOrH ('r':'h':_) = "rh"
-testRHOrH ('h':_) = "h"
-testRHOrH _ = []
+-- >>> testDemo "arhbc"
+-- ""
+-- >>> testDemo "rhbc"
+-- "rh"
+-- >>> testDemo "hbc"
+-- "h"
+testDemo = testStart (=='r') (=='h')
 
 -- | strip a prefix from a list
 -- >>> stripList "he" "heya"
@@ -228,16 +262,6 @@ stripList (h1:t1) (h2:t2)
   | h1 == h2 = stripList t1 t2
   | otherwise = t2
 
-{-
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Indice dei contenuti
-
-   che-cos-e-docs-italia.rst
-   starter-kit.rst
-
--}
 tocTree :: Bool -> Int -> [String] -> Block
 tocTree _ _ [] = Null
 tocTree second depth paths = rawDirective "toctree" (depthOpt:captionOpts) paths
@@ -266,7 +290,18 @@ subtitleBlock m = rawDirective "highlights" [] [stringify inlines]
           Just (MetaInlines xs)         -> xs
           _                             -> []
 
--- http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#directives
+{-
+
+.. type:: (argument currently omitted)
+   :option-name-1: option-body-1
+   :option-name-2: option-body-2
+
+   content content content
+   content content
+
+http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#directives
+
+-}
 rawDirective :: String -> [(String, String)] -> [String] -> Block
 rawDirective "" [] [] = Null
 rawDirective type_ dirOptions content = RawBlock "rst" $
