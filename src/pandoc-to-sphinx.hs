@@ -264,11 +264,12 @@ stripList (h1:t1) (h2:t2)
 
 tocTree :: Bool -> Int -> [String] -> Block
 tocTree _ _ [] = Null
-tocTree second depth paths = rawDirective "toctree" (depthOpt:captionOpts) paths
+tocTree second depth paths = rawDirective "toctree" (depthOpt:topOpts) paths
   where depthOpt = ("maxdepth", show depth)
-        captionOpts = if second
-                      then []
-                      else [("caption", "Indice dei contenuti")]
+        topOpts = if second
+                  then []
+                  else [("caption", "Indice dei contenuti"),
+                        ("numbered", "")]
 
 titleBlock :: Meta -> Block
 titleBlock m =
