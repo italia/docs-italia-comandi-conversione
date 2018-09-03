@@ -140,6 +140,7 @@ converti document opts = do
       renameFile (unpack tem) (unpack par)
       )
     mys (pandocToSphinx opts par)
+    when (not $ mostraComandiOption opts) (removeFile $ unpack par)
     )
   where mys c = do
           when (mostraComandiOption opts) $ sequence_ $ fmap echo $ textToLines c
