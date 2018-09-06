@@ -52,7 +52,6 @@ main = do
       (Options wrapNone maybeLevel1 maybeLevel2) -> do
         checkLevels maybeLevel1 maybeLevel2
         T.getContents >>= splitWrite wrapNone maybeLevel1 maybeLevel2 . parseDoc
-        shell "test -e media && cp -r media index" empty
   where checkLevels (Just l1) (Just l2) =
           when (l1 >= l2) (die "the second level is not higher than the first")
         checkLevels _ _ = pure ()
