@@ -1,4 +1,9 @@
 
+#### Status
+
+This is pre-alpha at the moment, i observed some syntax errors which
+seemed introduced by the execution of the script
+
 ## pandoc-font-to-style
 
 this command works as a [pandoc

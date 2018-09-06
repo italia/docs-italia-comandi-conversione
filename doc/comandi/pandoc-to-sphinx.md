@@ -42,5 +42,6 @@ first level containing multiple sections.
 
 #### Status
 
-This is pre-alpha at the moment, it's an usable evolutionary prototype
+This is alpha at the moment, it worked successfully for a limited
+number of users and cases
 

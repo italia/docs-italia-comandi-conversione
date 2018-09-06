@@ -43,14 +43,14 @@ sviluppatori del Team Digitale.
 L'installazione locale di questo repository comprende:
 
 - [`pandoc`](doc/comandi/pandoc.md), il principale comando di conversione;
+- [`converti`](doc/comandi/converti.md), un'alternativa a `pandoc` che
+  applica automaticamente le [buone pratiche di traduzione con
+  pandoc](doc/buone-pratiche.md);
 - [`pandoc-to-sphinx`](doc/comandi/pandoc-to-sphinx.md) per
   dividere un documento RST in più pagine da pubblicare su Docs Italia;
 - [`pandoc-font-to-style`](doc/comandi/pandoc-font-to-style.md) per
   tenere conto della font nella conversione (e convertire
-  correttamente i blocchi di codice, per esempio);
-- [`converti`](doc/comandi/converti.md), un'alternativa a `pandoc` che
-  applica automaticamente le [buone pratiche di traduzione con
-  pandoc](doc/buone-pratiche.md)
+  correttamente i blocchi di codice, per esempio)
 
 I comandi hanno nomi e documentazione in inglese qualora ne sia
 immaginabile l'uso al di fuori del contesto italiano.
@@ -84,6 +84,14 @@ contenuti in una cartella che sia sul vostro
 [`$PATH`](doc/aggiornamento-path.md#cos%C3%A8-il-path).
 
 Alcuni utenti hanno usato i comandi con successo anche su Ubuntu 14.04
+
+## Come convertire un documento
+
+Nel caso più semplice sarà sufficiente eseguire `converti
+documento.ext`, o `pandoc documento.ext -o risultato.rst` se si
+desidera un controllo più fine. Per maggiori informazioni rimandiamo
+alla documentazione di [`converti`](doc/comandi/converti.md) o
+[`pandoc`](doc/comandi/pandoc.md)
 
 ## Come contribuire allo sviluppo dei comandi
 

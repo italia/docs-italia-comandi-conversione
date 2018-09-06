@@ -24,7 +24,10 @@ In generale un compito di conversione potrebbe richiedere opzioni
 specifiche o lo sviluppo e l'uso di filtri ad-hoc. Se da un lato fare
 riferimento a `converti` ci permette di convergere, l'esperienza con
 l'uso diretto di pandoc e degli altri comandi aiuta a districarsi nei
-casi più complessi
+casi più complessi.
+
+Lanciando `converti` con l'opzione `--mostra-comandi` si può capire
+meglio cosa succede durante l'esecuzione dello script.
 
 ### Opzioni pandoc
 
@@ -69,7 +72,6 @@ Partendo da un file `document.rst` il comando sopra produrrà un file
 
 ### Divisione in sezioni
 
-Questa viene effettuata quando specificate l'opzione
-`--dividi-sezioni`. L'effetto è quello di applicare `pandoc-to-sphinx`
-al documento convertito. Per maggiori dettagli rimandiamo alla
-documentazione di [`pandoc-to-sphinx`](comandi/pandoc-to-sphinx.md)
+Questa viene eseguita applicando `pandoc-to-sphinx` al documento
+convertito. Per maggiori dettagli rimandiamo alla documentazione di
+[`pandoc-to-sphinx`](comandi/pandoc-to-sphinx.md)
