@@ -15,6 +15,8 @@ import Data.Text (pack, unpack, intercalate)
 import qualified Data.Text.IO as TIO
 import System.FilePath.Posix
 import System.Directory
+import System.Directory.Internal.Prelude (isAlreadyExistsError)
+import Control.Exception
 import Data.Maybe (isJust)
 import Options.Applicative
 import Data.Aeson hiding (Options)
@@ -32,7 +34,8 @@ data UserOptions = UserOptions {
   livelloSingoloCommandOption :: Maybe Bool,
   celleComplesseCommandOption :: Maybe Bool,
   preservaCitazioniCommandOption :: Maybe Bool,
-  mostraComandiCommandOption :: Maybe Bool
+  mostraComandiCommandOption :: Maybe Bool,
+  sovrascriviCommandOption :: Maybe Bool
   }
 
 instance FromJSON UserOptions where
@@ -42,13 +45,15 @@ instance FromJSON UserOptions where
     <*> v .:? "celle-complesse"
     <*> v .:? "preserva-citazioni"
     <*> v .:? "mostra-comandi"
+    <*> v .:? "sovrascrivi"
 
 data Options = Options {
   collegamentoNormattivaOption :: Bool,
   livelloSingoloOption :: Bool,
   celleComplesseOption :: Bool,
   preservaCitazioniOption :: Bool,
-  mostraComandiOption :: Bool
+  mostraComandiOption :: Bool,
+  sovrascriviOption :: Bool
   }
 
 applyDefaults :: UserOptions -> Options
@@ -57,7 +62,8 @@ applyDefaults o = Options {
   livelloSingoloOption = def False $ livelloSingoloCommandOption o,
   celleComplesseOption = def False $ celleComplesseCommandOption o,
   preservaCitazioniOption = def False $ preservaCitazioniCommandOption o,
-  mostraComandiOption = def False $ mostraComandiCommandOption o
+  mostraComandiOption = def False $ mostraComandiCommandOption o,
+  sovrascriviOption = def False $ sovrascriviCommandOption o
   }
 
 data CommandLineOptions = DirectOptions String UserOptions |
@@ -99,6 +105,10 @@ commandLineOptions = DirectOptions
                           <*> optional (switch (long "mostra-comandi"
                                                 <> short 'v'
                                                 <> help "mostra i comandi invocati da converti (verbose)"
+                                                <> showDefault))
+                          <*> optional (switch (long "sovrascrivi"
+                                                <> short 'f'
+                                                <> help "forza la sovrascrittura della cartella risultato"
                                                 <> showDefault)))
 
 convertiProgDesc =  "converte il documento in formato rST." P.<$>
@@ -130,7 +140,7 @@ main = do
 converti :: String -> Options -> IO ()
 converti document opts = do
   checkExecutables
-  createDirectoryIfMissing True (fileToFolder document)
+  clearResultDirectory (sovrascriviOption opts) (fileToFolder document)
   copyFile document (inToCopy document)
   void $ withCurrentDirectory (fileToFolder document) (do
     mys (pandocFilters opts ori par)
@@ -148,6 +158,23 @@ converti document opts = do
         ori = (pack . originalWithExtension) document :: Text
         par = "partial.json" :: Text -- partially converted lossless format
         tem = "temporary.json" :: Text -- won't stay in the result
+
+clearResultDirectory overwrite dir = do
+  e <- doesPathExist dir
+  when e askRemoval
+  -- `createDirectoryIfMissing` creates also the parents
+  createDirectoryIfMissing True dir
+  where
+      askRemoval = do
+        if overwrite
+          then remove
+          else (do
+            putStrLn (dir <> " esiste già. Premi invio per uscire da `converti`, o scrivi \"s\" per sovrascrivere la cartella ed i suoi contenuti:")
+            line <- getLine
+            if (null line)
+              then exitSuccess
+              else remove)
+      remove = removeDirectoryRecursive dir
 
 pandocFilters o from to = spaced ([pandoc,
                                    from,
