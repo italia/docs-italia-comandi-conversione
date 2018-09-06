@@ -284,8 +284,11 @@ titleBlock m =
          border = replicate l '='
 
 subtitleBlock :: Meta -> Block
-subtitleBlock m = rawDirective "highlights" [] [stringify inlines]
-  where inlines = case lookupMeta "subtitle" m of
+subtitleBlock m
+  | null stringified = Null
+  | otherwise = rawDirective "highlights" [] [stringified]
+  where stringified = stringify inlines
+        inlines = case lookupMeta "subtitle" m of
           Just (MetaBlocks [Plain xs])  -> xs
           Just (MetaInlines xs)         -> xs
           _                             -> []
