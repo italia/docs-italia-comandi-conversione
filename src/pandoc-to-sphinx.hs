@@ -42,16 +42,16 @@ options = flag' Version (long "version") <|>
                    <*> optional (option auto (long "second-level")))
 
 -- the core logic goes through @splitWrite@ -> @split@ -> etcetera
-main :: IO ExitCode
+main :: IO ()
 main = do
     opts <- execParser (info options fullDesc)
     case opts of
       Version -> do
         putStrLn "comandi conversione 0.6"
-        exitSuccess
       (Options wrapNone maybeLevel1 maybeLevel2) -> do
         checkLevels maybeLevel1 maybeLevel2
         T.getContents >>= splitWrite wrapNone maybeLevel1 maybeLevel2 . parseDoc
+        pure ()
   where checkLevels (Just l1) (Just l2) =
           when (l1 >= l2) (die "the second level is not higher than the first")
         checkLevels _ _ = pure ()
