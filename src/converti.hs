@@ -213,7 +213,8 @@ parseOpts o d = makeOpts opts filters
 parseFilters q = [ "filtro-google-docs",
                    "filtro-references",
                    "filtro-didascalia",
-                   "filtro-rimuovi-div"] <> -- per `-f docx+styles`
+                   "filtro-rimuovi-div",    -- per `-f docx+styles`
+                   "filtro-merge-codes"] <> -- per `-f docx+styles`
                  quotes :: [Text]
   where quotes = if q then ["filtro-quotes"] else []
 
