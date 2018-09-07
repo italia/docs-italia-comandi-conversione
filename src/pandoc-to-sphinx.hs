@@ -320,18 +320,21 @@ rawDirective type_ dirOptions content = RawBlock "rst" $
 (</>) :: (Semigroup a, Data.String.IsString a) => a -> a -> a
 (</>) a b = a <> "\n" <> b
 
+-- adapt for the file system
+toFileName :: String -> String
+toFileName = map replace . limit
+  where limit = take 50 -- file names cannot be too long
+        replace '/' = '-'
+        replace o = o
+
 -- | get the path corresponding to some heading. use the identifier
 -- if available, otherwise build a slug from the content
 --
 -- >>> getPath [Header 2 ("", [], []) [Str "section", Space, Str "accénted"], Null]
 -- "section-acc\233nted.rst"
 getPath :: [Block] -> String
-getPath ((Header _ ("", _, _) i):_) = adapt (inlinesToText i) <> ".rst"
-  where adapt = map replace . limit -- adapt for the file system
-        limit = take 50 -- file names cannot be too long
-        replace '/' = '-'
-        replace o = o
-getPath (Header _ (iden, _, _)  _:_) = iden <> ".rst"
+getPath ((Header _ ("", _, _) i):_) = toFileName (inlinesToText i) <> ".rst"
+getPath (Header _ (iden, _, _)  _:_) = toFileName iden <> ".rst"
 getPath (Para [RawInline _ _]:r) = getPath r
 getPath _ = "unknown-section-start-structure.rst"
 
