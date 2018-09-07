@@ -7,6 +7,53 @@ singolarmente. Abbiamo deciso di mantenerli tutti in uno stesso
 repository per semplificarne la gestione e l'installazione da parte
 dei nostri utenti.
 
+## Gestione del changelog e formato dei commit
+
+Aggiorniamo il changelog prima di una nuova distribuzione. Per
+agevolare questo passaggio è utile:
+
+- nella prima riga dei commit fare riferimento all'issue
+  corrispondente, così gli utenti potranno trovare nel changelog il
+  numero di release dove la loro issue è risolta
+- nella prima riga del commit specificare se si tratta di una `nuova
+  interfaccia` o di un `cambio interfaccia` (non backwards-compatible)
+
+## Distribuzione binaria
+
+Dalla versione 0.2.1.1 distribuiamo i binari dei comandi, per
+Ubuntu. Il processo di rilascio per adesso consiste semplicemente in:
+
+- aggiornamento del changelog sulla base di `git log <tag>..HEAD --oneline`
+- scelta di un nuovo numero di versione in base alla package
+  versioning policy di haskell ed in base ai cambiamenti di
+  interfaccia
+- aggiornamento del change log e del file `.cabal` col nuovo numero di versione
+- aggiornamento del testo di `--version` nel codice di ogni comando
+- `stack build`
+- `git commit -am "nuova release"`
+- `git tag v...`
+- `git push --tags`
+- `cd .stack-work/install/x86_64-linux/<resolver>/<compiler>/bin/`
+- ls | while read command; do zip ${command}.zip $command; done
+- un archivio che contenga tutti i comandi sarebbe più comodo ma
+  troppo voluminoso per Github
+- nuova release su Github, selezionando il tag e caricando gli archivi
+- le regole di ansible del convertitore web cercheranno gli archivi
+  nel campo _assets_ e non nella descrizione (dove è scritto "Attach
+  binaries", non sopra)
+
+## Doctests
+
+`converti` contiene doctests che possono essere eseguiti così:
+
+    $ stack exec doctest src/converti.hs
+    $ stack exec doctest src/pandoc-to-sphinx.hs
+
+potrebbe essere necessario installare `doctest` precedentemente, non è
+nelle dipendenze. se continueremo a mantenere questi doctest potremo
+[includerli nel file
+cabal](https://github.com/sol/doctest#cabal-integration)
+
 ## Altre note
 
 #### Questo progetto duplica Pandoc
@@ -31,68 +78,52 @@ responsabilità come segue:
 - formato Sphinx, definito da sphinx, prodotto con `pandoc-to-sphinx`
 - formato Docs Italia, definito da tema e convenzioni, prodotto con `converti`
 
-Quindi ciò che è specifico di Docs Italia dovrebbe andare in `converti`
+Quindi ciò che è specifico di Docs Italia dovrebbe andare in
+`converti`. Nelle ultime fasi del progetto, ho incluso in
+`pandoc-to-sphinx` alcune caratteristiche specifiche di Docs Italia,
+come l'uso di `highlights` per il sottotitolo.
 
-#### Doctests
+#### Il futuro di `pandoc-to-sphinx`
 
-`converti` contiene doctests che possono essere eseguiti così:
+Nell'Aprile 2018 ho [presentato `pandoc-to-sphinx` alla comunità
+pandoc](https://groups.google.com/forum/#!topic/pandoc-discuss/5W-l10MzeG8)
+e si è discusso di aggiungere `sphinx` ai formati supportati da
+pandoc. L'interfaccia potrebbe essere simile a quella usata adesso per
+produrre slideshows, che sono formati da diversi files come una
+documentazione per Sphinx. Il vantaggio principale che vedo
+nell'utilizzare un writer pandoc è che si può riutilizzare la logica
+del writer RST.
 
-    $ stack exec doctest src/converti.hs
-    $ stack exec doctest src/pandoc-to-sphinx.hs
+Al momento credo che se continueremo ad estendere `pandoc-to-sphinx`,
+sarà meglio prima convertirlo in un writer per pandoc, ma la cosa va
+valutata. Il formato che vogliamo produrre per Docs Italia potrebbe
+differire troppo dallo standard Sphinx, per esempio per ottenere i
+migliori risultati col tema a disposizione, o per semplificare la
+compilazione di documentazioni definendo un set di convenzioni.
 
-potrebbe essere necessario installare `doctest` precedentemente, non è
-nelle dipendenze. se continueremo a mantenere questi doctest potremo
-[includerli nel file
-cabal](https://github.com/sol/doctest#cabal-integration)
-
-#### Gestione del changelog e formato dei commit
-
-Aggiorniamo il changelog prima di una nuova distribuzione. Per
-agevolare questo passaggio è utile:
-
-- nella prima riga dei commit fare riferimento all'issue
-  corrispondente, così gli utenti potranno trovare nel changelog il
-  numero di release dove la loro issue è risolta
-- nella prima riga del commit specificare se si tratta di una `nuova
-  interfaccia` o di un `cambio interfaccia` (non backwards-compatible)
-
-#### Distribuzione binaria
-
-Dalla versione 0.2.1.1 distribuiamo i binari dei comandi, per
-Ubuntu. Il processo di rilascio per adesso consiste semplicemente in:
-
-- aggiornamento del changelog sulla base di `git log <tag>..HEAD --oneline`
-- scelta di un nuovo numero di versione in base alla package
-  versioning policy di haskell ed in base ai cambiamenti di
-  interfaccia
-- aggiornamento del change log e del file `.cabal` col nuovo numero di versione
-- aggiornamento del testo di `--version` nel codice di ogni comando
-- `stack build`
-- `git commit -am "nuova release"`
-- `git tag v...`
-- `git push --tags`
-- `cd .stack-work/install/x86_64-linux/<resolver>/<compiler>/bin/`
-- ls | while read command; do zip ${command}.zip $command; done
-- un archivio che contenga tutti i comandi sarebbe più comodo ma
-  troppo voluminoso per Github
-- nuova release su Github, selezionando il tag e caricando gli archivi
-- le regole di ansible del convertitore web cercheranno gli archivi
-  nel campo _assets_ e non nella descrizione (dove è scritto "Attach
-  binaries", non sopra)
+Un writer dedicato a Docs Italia non verrebbe accettato upstream,
+quindi nel caso il formato differisca sarebbe forse meglio continuare
+a mantenere un comando esterno come è ora `pandoc-to-sphinx`. Il
+problema di riutilizzare logica presente in `Text.Pandoc.Writer.RST`
+comunque rimarrebbe aperto
 
 #### La label `esempi di formattazione`
 
 Ho assegnato [questa
-label](https://github.com/italia/docs-italia-comandi-conversione/labels/esempi%20di%20formattazione)
+label](https://github.com/italia/docs-italia-comandi-conversione/labels/templates%20di%20conversione)
 alle issues che si possono riscontrare su documenti contenuti nel
 nostro repo con gli [esempi di
-formattazione](https://github.com/italia/docs-italia-esempiformattazione-docs).
+formattazione](https://github.com/italia/docs-italia-esempiformattazione-docs)
+(a proposito del nome, gli _esempi di formattazione_ sono anche utili
+come _templates di conversione_, è un termine usato precedentemente
+per intendere un concetto simile).
 
-In generale gli errori negli esempi di formattazione hanno per noi una
+In generale gli errori nei templates di conversione hanno per noi una
 priorità maggiore di errori trovati in documenti formattati in maniera
 arbitraria. Se un tipo di formattazione non è convertito
-correttamente, significa che non possiamo fornire all'utente un modo
-di esprimere quella specifica semantica in quello specifico formato.
+correttamente, significa che non possiamo consigliare agli utenti un
+modo di esprimere quella specifica semantica in quello specifico
+formato.
 
 Alcuni formati o alcune formattazioni potrebbero essere poco
 frequenti, ma è probabile che un giorno vorremo investire alcuni
