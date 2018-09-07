@@ -69,10 +69,11 @@ note sul fork](doc/fork-italiano.md).
 
 #### Formato Sphinx e formato Docs Italia
 
-Docs Italia è costruito estendendo rST e Sphinx e la logica di
-conversione segue questo criterio. Nel corso dello sviluppo e dei test
-d'uso abbiamo sviluppato diversi comandi e potremmo definire le loro
-responsabilità come segue:
+Docs Italia è costruito estendendo rST e
+[Sphinx](https://rest-sphinx-memo.readthedocs.io/en/latest/ReST.html)
+e la logica di conversione segue questo criterio. Nel corso dello
+sviluppo e dei test d'uso abbiamo sviluppato diversi comandi e
+potremmo definire le loro responsabilità come segue:
 
 - formato rST, definito da docutils, prodotto con `pandoc`
 - formato Sphinx, definito da sphinx, prodotto con `pandoc-to-sphinx`
@@ -99,7 +100,9 @@ sarà meglio prima convertirlo in un writer per pandoc, ma la cosa va
 valutata. Il formato che vogliamo produrre per Docs Italia potrebbe
 differire troppo dallo standard Sphinx, per esempio per ottenere i
 migliori risultati col tema a disposizione, o per semplificare la
-compilazione di documentazioni definendo un set di convenzioni.
+compilazione di documentazioni definendo un [set di convenzioni
+(documento con accessibilità
+limitata)](https://docs.google.com/document/d/1KxqDqT-ydveMc2_eQbDVSt-73Toc-auUPvOcNbUDLwg).
 
 Un writer dedicato a Docs Italia non verrebbe accettato upstream,
 quindi nel caso il formato differisca sarebbe forse meglio continuare
