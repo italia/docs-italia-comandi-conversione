@@ -14,7 +14,7 @@ before_install:
 
 install:
   - travis_wait stack --no-terminal --skip-ghc-check setup
-  - travis_wait stack --no-terminal --skip-ghc-check test --only-snapshot
+  - stack install doctest
   
 script:
   - stack --no-terminal build && stack --no-terminal exec doctest src/pandoc-to-sphinx.hs && stack --no-terminal exec doctest src/converti.hs
