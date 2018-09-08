@@ -1,4 +1,6 @@
 
+[![Build Status](https://travis-ci.org/italia/docs-italia-comandi-conversione.svg?branch=master)](https://travis-ci.org/italia/docs-italia-comandi-conversione)
+
 # Comandi per la conversione dei documenti nel formato di Docs Italia
 
 > Script e comandi basati su pandoc per la conversione dei documenti
