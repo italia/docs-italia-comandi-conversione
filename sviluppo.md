@@ -23,6 +23,10 @@ agevolare questo passaggio è utile:
 Dalla versione 0.2.1.1 distribuiamo i binari dei comandi, per
 Ubuntu. Il processo di rilascio per adesso consiste semplicemente in:
 
+- installazione in locale e verifica degli effetti sul [repo dei test
+  di
+  regressione](https://github.com/danse/docs-italia-test-conversione),
+  preparazione di un branch di aggiornamendo del repo se è il caso
 - aggiornamento del changelog sulla base di `git log <tag>..HEAD --oneline`
 - scelta di un nuovo numero di versione in base alla package
   versioning policy di haskell ed in base ai cambiamenti di
