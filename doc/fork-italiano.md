@@ -73,4 +73,12 @@ direttamente alla versione upstream.
 Un'altro processo che abbiamo seguito è stato quello di risolvere
 alcuni problemi immediatamente tramite i filtri, anche per testarne
 l'impatto sull'usabilità. Una volta che gli utenti si sono dimostrati
-soddisfatti abbiamo fatto confluire la logica upstream. Mantengo alcune [note sul processo di 
+soddisfatti abbiamo fatto confluire la logica upstream.
+
+Da questo punto di vista, la complessità dell'applicare i filtri in
+`converti` è ripagata dalla possibilità di sperimentare in concreto le
+nostre idee in maniera modulare.
+
+Sviluppare una nuova funzionalità come filtro è di solito un metodo
+rapido e facilmente testabile, anche se non sempre è possibile o
+opportuno.

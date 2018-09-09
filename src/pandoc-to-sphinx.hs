@@ -47,7 +47,7 @@ main = do
     opts <- execParser (info options fullDesc)
     case opts of
       Version -> do
-        putStrLn "comandi conversione 0.6"
+        putStrLn "comandi conversione 0.7"
       (Options wrapNone maybeLevel1 maybeLevel2) -> do
         checkLevels maybeLevel1 maybeLevel2
         T.getContents >>= splitWrite wrapNone maybeLevel1 maybeLevel2 . parseDoc

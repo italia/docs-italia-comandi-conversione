@@ -3,6 +3,43 @@
 Leggi `sviluppo.md` per info sulla gestione del change log
 
 
+## 0.7 -- Settembre 9, 2018
+
+Questa release serve a riassumere il lavoro alla luce delle
+segnalazioni e le priorità più recenti prima di un'interruzione nello
+sviluppo. Non pianifichiamo di farne il deployment nel servizio web
+visto che non sarebbe possibile testarla quanto la release precedente,
+0.6.
+
+Credo che i cambiamenti di interfaccia non richiedano nessun
+aggiornamento della logica del convertitore web. Questa versione usa
+però più filtri della precedente, e si basa sulla versione 0.2 di
+`docs-italia-pandoc-filters`
+
+#### cambio interfaccia:
+- `converti` chiede o rimuove le cartelle se esistono già, closes #105
+- aggiungo l'opzione `numbered` all'indice principale, closes #91
+- adotto il filtro-google-docs, closes #80
+- uso il `filtro-references` tenendone conto per la divisione in sezioni
+
+#### nuove interfacce:
+- opzioni brevi per `converti`, closes #60
+- aggiungo l'opzione `mostra-comandi`, closes #62
+
+#### correzioni:
+
+- aggiorno il fork includendo una soluzione per il codice in ODT
+- limito la lunghezza del nome dei files generati da identificatori lunghi
+- avoid to write the subtitle directive in case of an empty subtitle meta
+- applico il `filtro-merge-codes`, closes #93
+- avoid copying `media/` to `index/`, closes #97
+- rimuovo un errore insidioso nella logica di divisione in sezioni, closes #70
+- aggiorno la logica del collegamento a normattiva, closes #70
+- miglioro il report nel caso manchino alcuni eseguibili
+- ripristino la conversione del titolo, closes #98
+- indentazione della TOC con tre spazi come segnalato da @atorin
+- aggiorno le immagini durande la divisione in sezioni, closes #95
+
 ## 0.6 -- Agosto 6
 
 #### cambio interfaccia:

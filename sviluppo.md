@@ -23,19 +23,19 @@ agevolare questo passaggio è utile:
 Dalla versione 0.2.1.1 distribuiamo i binari dei comandi, per
 Ubuntu. Il processo di rilascio per adesso consiste semplicemente in:
 
-- installazione in locale e verifica degli effetti sul [repo dei test
-  di
-  regressione](https://github.com/danse/docs-italia-test-conversione),
-  preparazione di un branch di aggiornamendo del repo se è il caso
 - aggiornamento del changelog sulla base di `git log <tag>..HEAD --oneline`
 - scelta di un nuovo numero di versione in base alla package
   versioning policy di haskell ed in base ai cambiamenti di
   interfaccia
-- aggiornamento del change log e del file `.cabal` col nuovo numero di versione
+- aggiornamento del file `.cabal` col nuovo numero di versione
 - aggiornamento del testo di `--version` nel codice di ogni comando
-- `stack build`
+- `stack build && . run-doctests.sh`
 - `git commit -am "nuova release"`
 - `git tag v...`
+- installazione in locale e verifica degli effetti sul [repo dei test
+  di
+  regressione](https://github.com/danse/docs-italia-test-conversione),
+  preparazione di un branch di aggiornamendo del repo se è il caso
 - `git push --tags`
 - `cd .stack-work/install/x86_64-linux/<resolver>/<compiler>/bin/`
 - ls | while read command; do zip ${command}.zip $command; done
@@ -60,13 +60,15 @@ cabal](https://github.com/sol/doctest#cabal-integration)
 
 ## Altre note
 
-#### Questo progetto duplica Pandoc
+#### Questo progetto duplica l'eseguibile `pandoc`
 
 Questo progetto contiene una copia dell'eseguibile `pandoc`, così che
 gli utenti di Docs Italia che installano questo progetto si ritrovino
 anche la giusta versione di pandoc installata, sia essa un fork o
 no. Il codice è molto breve quindi se upstream dovesse cambiare
-basterebbe poco ad aggiornare la nostra copia.
+basterebbe poco ad aggiornare la nostra copia. Finora è sempre stato
+sufficiente aggiornare la dipendenza dalla libreria di pandoc, senza
+dover toccare `src/pandoc.hs`.
 
 Per avere più informazioni sulla gestione del nostro fork vedi [le
 note sul fork](doc/fork-italiano.md).
@@ -90,7 +92,8 @@ come l'uso di `highlights` per il sottotitolo.
 
 #### Il futuro di `pandoc-to-sphinx`
 
-Nell'Aprile 2018 ho [presentato `pandoc-to-sphinx` alla comunità
+Nell'Aprile 2018 ho [presentato un prototipo di `pandoc-to-sphinx`
+alla comunità
 pandoc](https://groups.google.com/forum/#!topic/pandoc-discuss/5W-l10MzeG8)
 e si è discusso di aggiungere `sphinx` ai formati supportati da
 pandoc. L'interfaccia potrebbe essere simile a quella usata adesso per
@@ -104,9 +107,9 @@ sarà meglio prima convertirlo in un writer per pandoc, ma la cosa va
 valutata. Il formato che vogliamo produrre per Docs Italia potrebbe
 differire troppo dallo standard Sphinx, per esempio per ottenere i
 migliori risultati col tema a disposizione, o per semplificare la
-compilazione di documentazioni definendo un [set di convenzioni
-(documento con accessibilità
-limitata)](https://docs.google.com/document/d/1KxqDqT-ydveMc2_eQbDVSt-73Toc-auUPvOcNbUDLwg).
+compilazione di documentazioni definendo un [set di
+convenzioni](https://docs.google.com/document/d/1KxqDqT-ydveMc2_eQbDVSt-73Toc-auUPvOcNbUDLwg)
+(documento con accessibilità limitata).
 
 Un writer dedicato a Docs Italia non verrebbe accettato upstream,
 quindi nel caso il formato differisca sarebbe forse meglio continuare

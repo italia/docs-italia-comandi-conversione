@@ -16,7 +16,10 @@ primo livello
 Con questa opzione `converti` trasforma tutti i riferimenti a leggi e
 normative in collegamenti ipertestuali al [sito di
 Normattiva](http://www.normattiva.it/). Lo svantaggio è che il
-processo può introdurre errori di sintassi RST.
+processo può introdurre errori di sintassi RST. Abbiamo inoltre
+riscontrato che l'uso di questa opzione [danneggia i riferimenti
+interni al
+documento](https://github.com/italia/docs-italia-comandi-conversione/issues/108).
 
 ### `celle-complesse`
 
