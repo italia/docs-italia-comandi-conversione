@@ -1,0 +1,55 @@
+# https://github.com/italia/publiccode.yml
+publiccode-yaml-version: "http://w3id.org/publiccode/version/0.1"
+name: Filtri Pandoc per Docs Italia
+url: "https://example.com/italia/docs-italia-pandoc-filters.git"
+softwareVersion: "0.2"
+releaseDate: "2018-09-09"
+# You can use any string, but it's better if you stick to
+# values suggested:
+# http://yml.publiccode.net/version/0.1/schema.html#key-platforms
+platforms:
+  - linux
+
+# Allowed values are accessible here:
+# http://w3id.org/publiccode/version/0.1/tags.html
+#
+# Only stick to these tags! If you need additional tags (localised),
+# you have the chance of adding them under the description/freeTags key
+tags:
+  - texttools
+
+developmentStatus: development
+
+softwareType: "configurationFiles"
+
+description:
+  ## This example uses English: you can use any language you want
+  ita:
+    localisedName: filtri Pandoc per Docs Italia
+    genericName: filtri Pandoc
+    shortDescription: >
+          filtri Pandoc sviluppati per Docs Italia
+
+    longDescription: >
+          un insieme di filtri usati dai comandi di conversione o
+          utilizzabili per risolvere alcuni problemi specifici di
+          conversione
+
+    featureList:
+       - ogni filtro fornisce funzionalità diverse
+
+legal:
+  # The license is an SPDX expression, and may not be a single license
+  license: AGPL-3.0-or-later
+
+maintenance:
+  type: "community"
+
+  contacts:
+    - name: Francesco Occhipinti
+    - name: Alberto Torin
+
+localisation:
+  localisationReady: no
+  availableLanguages:
+    - ita
