@@ -3,7 +3,7 @@
 
 Questo comando semplifica la conversione di documenti `.docx` o `.odt`
 per la pubblicazione in [Docs Italia](http://docs.italia.it/). Se
-avete familiarità con [pandoc](pandoc.org) ed i principi di base di
+avete familiarità con [pandoc](https://github.com/italia/docs-italia-comandi-conversione/blob/master/doc/comandi/pandoc.md) ed i principi di base di
 Docs Italia, questo comando è un buon punto di partenza per
 semplificare il vostro processo.
 
